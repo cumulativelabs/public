@@ -9,6 +9,7 @@ import './styles/home-story.css';
 import './styles/home-systems.css';
 import './styles/home-closing.css';
 import './styles/home-responsive.css';
+import './styles/visual-fidelity.css';
 
 const root = document.getElementById('root');
 if (!root) throw new Error('Root element not found.');
