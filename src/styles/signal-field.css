@@ -1,0 +1,352 @@
+/* Signal field density and pointer interaction pass. Loaded after visual-fidelity.css. */
+.visual-field {
+  --signal-pointer-x: 72%;
+  --signal-pointer-y: 42%;
+  isolation: isolate;
+}
+
+.visual-field__fallback-particles,
+.visual-field__particle-canvas,
+.visual-field__pointer-light {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.visual-field__fallback-particles {
+  z-index: 1;
+  overflow: hidden;
+  opacity: 0.72;
+  mix-blend-mode: screen;
+}
+
+.visual-field__fallback-particle {
+  position: absolute;
+  border-radius: 50%;
+  background: #ff5b9d;
+  box-shadow: 0 0 8px rgba(255, 45, 141, 0.58);
+  animation: signal-particle-breathe 7.5s ease-in-out infinite;
+}
+
+.visual-field__fallback-particle--amber {
+  background: #ff8a31;
+  box-shadow: 0 0 9px rgba(255, 122, 0, 0.62);
+}
+
+.visual-field__fallback-particle--purple {
+  background: #9e55ec;
+  box-shadow: 0 0 9px rgba(138, 43, 226, 0.64);
+}
+
+.visual-field__particle-canvas {
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  opacity: 0.94;
+  mix-blend-mode: screen;
+}
+
+.visual-field__waves--threaded {
+  z-index: 3;
+  right: -3%;
+  bottom: -4%;
+  width: 106%;
+  height: 68%;
+  overflow: visible;
+}
+
+.visual-field__thread {
+  fill: none;
+  stroke-linecap: round;
+  transform-box: fill-box;
+  transform-origin: center;
+  will-change: stroke-dashoffset, opacity;
+}
+
+.visual-field__thread--glow {
+  stroke-width: 10;
+  opacity: 0.14;
+}
+
+.visual-field__thread--primary {
+  filter: drop-shadow(0 0 5px rgba(255, 45, 141, 0.28));
+}
+
+.visual-field__thread--medium {
+  filter: drop-shadow(0 0 3px rgba(138, 43, 226, 0.12));
+}
+
+.visual-field__thread--fine {
+  opacity: 0.16;
+}
+
+.visual-field__thread--dotted {
+  stroke-dasharray: 1 8;
+  animation: signal-thread-travel 22s linear infinite;
+}
+
+.visual-field__thread--primary.visual-field__thread--dotted {
+  stroke-dasharray: 1.4 5.4;
+  animation-duration: 17s;
+}
+
+.visual-field__thread--medium.visual-field__thread--dotted {
+  stroke-dasharray: 1 7;
+  animation-duration: 25s;
+}
+
+.visual-field__rings {
+  z-index: 2;
+}
+
+.visual-field__pointer-light {
+  z-index: 4;
+  opacity: 0;
+  background:
+    radial-gradient(
+      circle 172px at var(--signal-pointer-x) var(--signal-pointer-y),
+      rgba(255, 238, 249, 0.12),
+      rgba(255, 45, 141, 0.085) 22%,
+      rgba(138, 43, 226, 0.055) 46%,
+      transparent 72%
+    );
+  mix-blend-mode: screen;
+  transition: opacity 320ms ease;
+}
+
+.visual-field--pointer-active .visual-field__pointer-light {
+  opacity: 1;
+}
+
+/* Hero: diffuse at the edges, richer and more concentrated around the symbol. */
+.hero-section__field .visual-field__fallback-particles,
+.hero-section__field .visual-field__particle-canvas {
+  -webkit-mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.76) 38%, #000 57%, #000);
+  mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.76) 38%, #000 57%, #000);
+}
+
+.hero-section__field .visual-field__waves--threaded {
+  right: -4%;
+  bottom: -3.5%;
+  width: 109%;
+  height: 65%;
+}
+
+.hero-section__field .visual-field__thread--primary {
+  opacity: 0.92;
+}
+
+.hero-section__field .visual-field__thread--medium {
+  opacity: 0.46;
+}
+
+.hero-section__field .visual-field__thread--fine {
+  opacity: 0.2;
+}
+
+.hero-section__field .visual-field__fallback-particles {
+  opacity: 0.9;
+}
+
+.hero-section__field .visual-field__particle-canvas {
+  opacity: 1;
+}
+
+/* Keep a restrained signal horizon without letting it read as a planet. */
+.hero-section__horizon {
+  right: -7%;
+  bottom: 15.5%;
+  left: 50%;
+  height: 10.5%;
+  opacity: 0.58;
+  transform: perspective(820px) rotateX(74deg);
+}
+
+.hero-section__horizon::before {
+  padding-top: 1px;
+  filter: drop-shadow(0 -1px 7px rgba(255, 122, 0, 0.42)) drop-shadow(0 -6px 17px rgba(255, 45, 141, 0.25));
+}
+
+.hero-section__horizon::after {
+  opacity: 0.48;
+}
+
+/* Mission: a quieter field where scattered signals begin to align. */
+.mission-section__visual .visual-field__fallback-particles,
+.mission-section__visual .visual-field__particle-canvas {
+  -webkit-mask-image: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.72) 15%, #000 38%, #000);
+  mask-image: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.72) 15%, #000 38%, #000);
+}
+
+.mission-section__visual .visual-field__fallback-particles {
+  opacity: 0.62;
+}
+
+.mission-section__visual .visual-field__particle-canvas {
+  opacity: 0.74;
+}
+
+.mission-section__visual .visual-field__waves--threaded {
+  right: -17%;
+  bottom: -17%;
+  width: 142%;
+  height: 118%;
+}
+
+.mission-section__visual .visual-field__thread--primary {
+  opacity: 0.78;
+}
+
+.mission-section__visual .visual-field__thread--medium {
+  opacity: 0.36;
+}
+
+.mission-section__visual .visual-field__thread--fine {
+  opacity: 0.14;
+}
+
+/* Closing: the most coherent and accumulated version of the field. */
+.closing-section__field .visual-field__fallback-particles,
+.closing-section__field .visual-field__particle-canvas {
+  -webkit-mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.62) 34%, #000 56%, #000);
+  mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.62) 34%, #000 56%, #000);
+}
+
+.closing-section__field .visual-field__waves--threaded {
+  right: -2%;
+  bottom: -7%;
+  width: 105%;
+  height: 72%;
+}
+
+.closing-section__field .visual-field__thread--primary {
+  opacity: 0.96;
+}
+
+.closing-section__field .visual-field__thread--medium {
+  opacity: 0.54;
+}
+
+.closing-section__field .visual-field__thread--fine {
+  opacity: 0.24;
+}
+
+.closing-section__field .visual-field__fallback-particles {
+  opacity: 0.84;
+}
+
+.closing-section__field .visual-field__particle-canvas {
+  opacity: 0.96;
+}
+
+/* Restrained ambient continuity through the structured sections. */
+.approach-section::after {
+  opacity: 0.14;
+  background-size: 37px 37px, 100% 100%;
+}
+
+.work-section::after {
+  opacity: 0.18;
+  background-size: 43px 43px, 100% 100%;
+  mask-image: radial-gradient(circle at 75% 35%, #000, rgba(0, 0, 0, 0.56) 34%, transparent 72%);
+}
+
+.proving-section::after {
+  opacity: 0.16;
+  background-size: 41px 41px, 100% 100%;
+  mask-image: radial-gradient(circle at 70% 48%, #000, rgba(0, 0, 0, 0.5) 38%, transparent 75%);
+}
+
+.principles-section::after {
+  opacity: 0.11;
+  background-size: 48px 48px, 100% 100%;
+}
+
+@keyframes signal-thread-travel {
+  to {
+    stroke-dashoffset: -190;
+  }
+}
+
+@keyframes signal-particle-breathe {
+  0%,
+  100% {
+    filter: brightness(0.86);
+    transform: translate3d(0, 0, 0) scale(0.82);
+  }
+
+  50% {
+    filter: brightness(1.18);
+    transform: translate3d(0, -4px, 0) scale(1.12);
+  }
+}
+
+@media (max-width: 720px) {
+  .visual-field__thread[data-mobile-hidden='true'] {
+    display: none;
+  }
+
+  .visual-field__fallback-particle:nth-child(n + 37) {
+    display: none;
+  }
+
+  .visual-field__pointer-light {
+    display: none;
+  }
+
+  .hero-section__field .visual-field__waves--threaded {
+    right: -20%;
+    bottom: -0.5%;
+    width: 132%;
+    height: 47%;
+  }
+
+  .hero-section__field .visual-field__particle-canvas {
+    opacity: 0.8;
+  }
+
+  .hero-section__field .visual-field__fallback-particles {
+    opacity: 0.7;
+  }
+
+  .hero-section__horizon {
+    right: -24%;
+    bottom: 13.2%;
+    left: 34%;
+    height: 6.5%;
+    opacity: 0.28;
+  }
+
+  .mission-section__visual .visual-field__waves--threaded {
+    right: -31%;
+    bottom: -10%;
+    width: 164%;
+    height: 105%;
+  }
+
+  .closing-section__field .visual-field__waves--threaded {
+    right: -24%;
+    bottom: -2%;
+    width: 135%;
+    height: 58%;
+  }
+
+  .closing-section__field .visual-field__particle-canvas {
+    opacity: 0.78;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .visual-field__thread,
+  .visual-field__fallback-particle {
+    animation: none !important;
+  }
+
+  .visual-field__pointer-light {
+    display: none;
+  }
+
+  .visual-field__particle-canvas {
+    opacity: 0.8;
+  }
+}
