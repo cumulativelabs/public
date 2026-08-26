@@ -46,6 +46,18 @@ type CanvasParticle = {
   colorIndex: number;
 };
 
+type ParticleMotion = {
+  maxMovement: number;
+  maxResidual: number;
+};
+
+type CachedBounds = {
+  left: number;
+  top: number;
+  width: number;
+  height: number;
+};
+
 const FIELD_SETTINGS: Record<VisualPhase, FieldSettings> = {
   scatter: {
     threadCount: 26,
@@ -110,16 +122,25 @@ const FIELD_SETTINGS: Record<VisualPhase, FieldSettings> = {
 };
 
 const PARTICLE_COLORS = [
-  [255, 122, 0],
-  [255, 45, 141],
-  [138, 43, 226],
-  [248, 126, 196],
+  'rgb(255 122 0)',
+  'rgb(255 45 141)',
+  'rgb(138 43 226)',
+  'rgb(248 126 196)',
 ] as const;
 
 const POINTER_RADIUS = 166;
+const POINTER_RADIUS_SQUARED = POINTER_RADIUS * POINTER_RADIUS;
 const POINTER_MAX_DISPLACEMENT = 32;
 const POINTER_SPRING = 0.024;
 const POINTER_DAMPING = 0.88;
+const MAX_CANVAS_PIXEL_RATIO = 1.3;
+const INTERACTIVE_PARTICLE_SCALE = 0.7;
+const STATIC_PARTICLE_SCALE = 0.56;
+const MAX_INTERACTIVE_PARTICLES = 170;
+const MAX_STATIC_PARTICLES = 86;
+const SETTLED_STRENGTH = 0.004;
+const SETTLED_MOVEMENT = 0.035;
+const SETTLED_RESIDUAL = 0.18;
 
 function deterministicUnit(seed: number) {
   const value = Math.sin(seed * 12.9898 + 78.233) * 43758.5453;
@@ -298,23 +319,34 @@ function createCanvasParticles(
 function drawParticles(
   context: CanvasRenderingContext2D,
   particles: CanvasParticle[],
+  logicalWidth: number,
+  logicalHeight: number,
   timestamp: number,
   pointerX: number,
   pointerY: number,
   pointerStrength: number,
   staticOnly: boolean,
+  driftEnabled: boolean,
   delta: number,
-) {
-  context.clearRect(0, 0, context.canvas.width, context.canvas.height);
+): ParticleMotion {
+  context.clearRect(0, 0, logicalWidth, logicalHeight);
+  context.save();
   context.globalCompositeOperation = 'lighter';
 
   const time = timestamp * 0.001;
+  const damping = staticOnly ? 1 : Math.pow(POINTER_DAMPING, delta);
+  let maxMovement = 0;
+  let maxResidual = 0;
 
   for (const particle of particles) {
-    const idleX = staticOnly ? particle.baseX : particle.baseX + Math.sin(time * particle.speed + particle.phase) * particle.driftX;
-    const idleY = staticOnly
-      ? particle.baseY
-      : particle.baseY + Math.cos(time * particle.speed * 0.82 + particle.phase) * particle.driftY;
+    const idleX =
+      staticOnly || !driftEnabled
+        ? particle.baseX
+        : particle.baseX + Math.sin(time * particle.speed + particle.phase) * particle.driftX;
+    const idleY =
+      staticOnly || !driftEnabled
+        ? particle.baseY
+        : particle.baseY + Math.cos(time * particle.speed * 0.82 + particle.phase) * particle.driftY;
     let targetX = idleX;
     let targetY = idleY;
     let influence = 0;
@@ -322,9 +354,10 @@ function drawParticles(
     if (!staticOnly && pointerStrength > 0.005) {
       const deltaX = pointerX - particle.x;
       const deltaY = pointerY - particle.y;
-      const distance = Math.hypot(deltaX, deltaY);
+      const distanceSquared = deltaX * deltaX + deltaY * deltaY;
 
-      if (distance < POINTER_RADIUS && distance > 0.001) {
+      if (distanceSquared < POINTER_RADIUS_SQUARED && distanceSquared > 0.000001) {
+        const distance = Math.sqrt(distanceSquared);
         const normalized = 1 - distance / POINTER_RADIUS;
         influence = normalized * normalized * pointerStrength;
         const displacement = POINTER_MAX_DISPLACEMENT * particle.depth * influence;
@@ -336,30 +369,45 @@ function drawParticles(
     if (staticOnly) {
       particle.x = targetX;
       particle.y = targetY;
+      particle.velocityX = 0;
+      particle.velocityY = 0;
     } else {
       particle.velocityX += (targetX - particle.x) * POINTER_SPRING * delta;
       particle.velocityY += (targetY - particle.y) * POINTER_SPRING * delta;
-      particle.velocityX *= Math.pow(POINTER_DAMPING, delta);
-      particle.velocityY *= Math.pow(POINTER_DAMPING, delta);
+      particle.velocityX *= damping;
+      particle.velocityY *= damping;
       particle.x += particle.velocityX * delta;
       particle.y += particle.velocityY * delta;
+
+      const movement = Math.abs(particle.velocityX) + Math.abs(particle.velocityY);
+      const residual = Math.abs(targetX - particle.x) + Math.abs(targetY - particle.y);
+      if (movement > maxMovement) maxMovement = movement;
+      if (residual > maxResidual) maxResidual = residual;
     }
 
     const color = PARTICLE_COLORS[particle.colorIndex] ?? PARTICLE_COLORS[1];
-    const twinkle = staticOnly ? 1 : 0.76 + Math.sin(time * (0.8 + particle.speed) + particle.phase) * 0.24;
-    const alpha = Math.min(1, particle.alpha * twinkle + influence * 0.42);
-    const radius = particle.size * (1 + influence * 0.34);
+    const twinkle = staticOnly || !driftEnabled ? 1 : 0.8 + Math.sin(time * (0.8 + particle.speed) + particle.phase) * 0.2;
+    const alpha = Math.min(1, particle.alpha * twinkle + influence * 0.4);
+    const radius = particle.size * (1 + influence * 0.3);
+    const shouldGlow = influence > 0.08 || (particle.depth > 0.86 && particle.alpha > 0.52);
 
+    context.fillStyle = color;
+
+    if (shouldGlow) {
+      context.globalAlpha = Math.min(0.22, alpha * (0.13 + influence * 0.14));
+      context.beginPath();
+      context.arc(particle.x, particle.y, radius * (2.35 + influence * 0.65), 0, Math.PI * 2);
+      context.fill();
+    }
+
+    context.globalAlpha = alpha;
     context.beginPath();
-    context.fillStyle = `rgba(${color[0]}, ${color[1]}, ${color[2]}, ${alpha.toFixed(3)})`;
-    context.shadowColor = `rgba(${color[0]}, ${color[1]}, ${color[2]}, ${(alpha * 0.72).toFixed(3)})`;
-    context.shadowBlur = 4 + particle.depth * 7 + influence * 12;
     context.arc(particle.x, particle.y, radius, 0, Math.PI * 2);
     context.fill();
   }
 
-  context.shadowBlur = 0;
-  context.globalCompositeOperation = 'source-over';
+  context.restore();
+  return { maxMovement, maxResidual };
 }
 
 export function VisualField({ phase, className = '', compact = false }: VisualFieldProps) {
@@ -380,7 +428,7 @@ export function VisualField({ phase, className = '', compact = false }: VisualFi
     const canvas = canvasRef.current;
     if (!root || !canvas) return;
 
-    const context = canvas.getContext('2d');
+    const context = canvas.getContext('2d', { alpha: true, desynchronized: true });
     if (!context) return;
 
     const host = root.closest<HTMLElement>('section') ?? root;
@@ -398,26 +446,98 @@ export function VisualField({ phase, className = '', compact = false }: VisualFi
     let pointerY = 0;
     let pointerStrength = 0;
     let pointerTargetStrength = 0;
+    let pointerActive = false;
+    let pointerUpdatePending = false;
+    let pendingClientX = 0;
+    let pendingClientY = 0;
+    let boundsDirty = true;
+    let bounds: CachedBounds = { left: 0, top: 0, width: 1, height: 1 };
 
     const isInteractive = () => settings.interactive && finePointer && !reducedMotion && !compact;
 
+    const refreshBounds = () => {
+      const nextBounds = root.getBoundingClientRect();
+      bounds = {
+        left: nextBounds.left,
+        top: nextBounds.top,
+        width: Math.max(1, nextBounds.width),
+        height: Math.max(1, nextBounds.height),
+      };
+      boundsDirty = false;
+    };
+
     const renderStatic = () => {
-      drawParticles(context, particles, 0, 0, 0, 0, true, 1);
+      drawParticles(context, particles, width, height, 0, 0, 0, 0, true, false, 1);
+    };
+
+    const applyPendingPointer = () => {
+      if (!pointerUpdatePending || !isInteractive()) return;
+      pointerUpdatePending = false;
+      if (boundsDirty) refreshBounds();
+
+      const nextX = pendingClientX - bounds.left;
+      const nextY = pendingClientY - bounds.top;
+
+      if (nextX < 0 || nextX > bounds.width || nextY < 0 || nextY > bounds.height) {
+        pointerTargetStrength = 0;
+        if (pointerActive) {
+          pointerActive = false;
+          root.classList.remove('visual-field--pointer-active');
+        }
+        return;
+      }
+
+      pointerX = nextX;
+      pointerY = nextY;
+      pointerTargetStrength = 1;
+      root.style.setProperty('--signal-pointer-x', `${nextX.toFixed(1)}px`);
+      root.style.setProperty('--signal-pointer-y', `${nextY.toFixed(1)}px`);
+      if (!pointerActive) {
+        pointerActive = true;
+        root.classList.add('visual-field--pointer-active');
+      }
     };
 
     const frame = (timestamp: number) => {
       animationFrame = 0;
-      if (!isVisible || reducedMotion) return;
+      if (!isVisible || reducedMotion || !isInteractive()) return;
 
+      applyPendingPointer();
       const delta = lastTimestamp === 0 ? 1 : Math.min(2, (timestamp - lastTimestamp) / 16.667);
       lastTimestamp = timestamp;
-      pointerStrength += (pointerTargetStrength - pointerStrength) * Math.min(1, 0.1 * delta);
-      drawParticles(context, particles, timestamp, pointerX, pointerY, pointerStrength, false, delta);
+      pointerStrength += (pointerTargetStrength - pointerStrength) * Math.min(1, 0.14 * delta);
+
+      const motion = drawParticles(
+        context,
+        particles,
+        width,
+        height,
+        timestamp,
+        pointerX,
+        pointerY,
+        pointerStrength,
+        false,
+        pointerTargetStrength > 0,
+        delta,
+      );
+
+      const settled =
+        pointerTargetStrength === 0 &&
+        pointerStrength < SETTLED_STRENGTH &&
+        motion.maxMovement < SETTLED_MOVEMENT &&
+        motion.maxResidual < SETTLED_RESIDUAL;
+
+      if (settled) {
+        pointerStrength = 0;
+        renderStatic();
+        return;
+      }
+
       animationFrame = window.requestAnimationFrame(frame);
     };
 
     const start = () => {
-      if (animationFrame !== 0 || !isVisible || reducedMotion) return;
+      if (animationFrame !== 0 || !isVisible || reducedMotion || !isInteractive()) return;
       lastTimestamp = 0;
       animationFrame = window.requestAnimationFrame(frame);
     };
@@ -429,71 +549,74 @@ export function VisualField({ phase, className = '', compact = false }: VisualFi
     };
 
     const resize = () => {
-      const bounds = root.getBoundingClientRect();
+      refreshBounds();
       width = Math.max(1, Math.round(bounds.width));
       height = Math.max(1, Math.round(bounds.height));
-      const pixelRatio = Math.min(window.devicePixelRatio || 1, 1.75);
+      const pixelRatio = Math.min(window.devicePixelRatio || 1, MAX_CANVAS_PIXEL_RATIO);
       canvas.width = Math.max(1, Math.round(width * pixelRatio));
       canvas.height = Math.max(1, Math.round(height * pixelRatio));
       context.setTransform(pixelRatio, 0, 0, pixelRatio, 0, 0);
+
       const baseCount = width <= 720 ? settings.mobileParticles : settings.desktopParticles;
-      const count = compact ? Math.round(baseCount * 0.72) : baseCount;
+      const qualityScale = isInteractive() ? INTERACTIVE_PARTICLE_SCALE : STATIC_PARTICLE_SCALE;
+      const cap = isInteractive() ? MAX_INTERACTIVE_PARTICLES : MAX_STATIC_PARTICLES;
+      const compactScale = compact ? 0.78 : 1;
+      const count = Math.max(28, Math.min(cap, Math.round(baseCount * qualityScale * compactScale)));
       particles = createCanvasParticles(width, height, count, settings, phase);
+      root.dataset.canvasParticles = String(count);
+      root.dataset.renderMode = isInteractive() ? 'pointer-on-demand' : 'static';
       renderStatic();
-      start();
+      if (pointerTargetStrength > 0) start();
     };
 
     const handlePointerMove = (event: PointerEvent) => {
       if (!isInteractive() || event.pointerType === 'touch') return;
-      const bounds = root.getBoundingClientRect();
-      const nextX = event.clientX - bounds.left;
-      const nextY = event.clientY - bounds.top;
-
-      if (nextX < 0 || nextX > bounds.width || nextY < 0 || nextY > bounds.height) {
-        pointerTargetStrength = 0;
-        root.classList.remove('visual-field--pointer-active');
-        return;
-      }
-
-      pointerX = nextX;
-      pointerY = nextY;
-      pointerTargetStrength = 1;
-      root.style.setProperty('--signal-pointer-x', `${nextX}px`);
-      root.style.setProperty('--signal-pointer-y', `${nextY}px`);
-      root.classList.add('visual-field--pointer-active');
+      pendingClientX = event.clientX;
+      pendingClientY = event.clientY;
+      pointerUpdatePending = true;
       start();
     };
 
     const handlePointerLeave = () => {
+      pointerUpdatePending = false;
       pointerTargetStrength = 0;
-      root.classList.remove('visual-field--pointer-active');
+      if (pointerActive) {
+        pointerActive = false;
+        root.classList.remove('visual-field--pointer-active');
+      }
+      start();
     };
 
     const handleReducedMotion = (event: MediaQueryListEvent) => {
       reducedMotion = event.matches;
       root.dataset.reducedMotion = reducedMotion ? 'true' : 'false';
+      pointerUpdatePending = false;
       pointerTargetStrength = 0;
+      pointerStrength = 0;
+      pointerActive = false;
       root.classList.remove('visual-field--pointer-active');
-      if (reducedMotion) {
-        stop();
-        renderStatic();
-      } else {
-        start();
-      }
+      stop();
+      renderStatic();
     };
 
     const handleFinePointer = (event: MediaQueryListEvent) => {
       finePointer = event.matches;
+      root.dataset.renderMode = isInteractive() ? 'pointer-on-demand' : 'static';
       if (!finePointer) handlePointerLeave();
+      resize();
+    };
+
+    const markBoundsDirty = () => {
+      boundsDirty = true;
     };
 
     const visibilityObserver = new IntersectionObserver(
       ([entry]) => {
         isVisible = entry?.isIntersecting ?? true;
-        if (isVisible) start();
-        else stop();
+        if (!isVisible) stop();
+        else if (pointerTargetStrength > 0 || pointerStrength > SETTLED_STRENGTH) start();
       },
-      { rootMargin: '120px 0px', threshold: 0.01 },
+      { rootMargin: '80px 0px', threshold: 0.01 },
     );
 
     const resizeObserver = new ResizeObserver(resize);
@@ -501,6 +624,7 @@ export function VisualField({ phase, className = '', compact = false }: VisualFi
     resizeObserver.observe(root);
     host.addEventListener('pointermove', handlePointerMove, { passive: true });
     host.addEventListener('pointerleave', handlePointerLeave);
+    window.addEventListener('scroll', markBoundsDirty, { passive: true });
     reducedMotionQuery.addEventListener('change', handleReducedMotion);
     finePointerQuery.addEventListener('change', handleFinePointer);
     root.dataset.reducedMotion = reducedMotion ? 'true' : 'false';
@@ -512,6 +636,7 @@ export function VisualField({ phase, className = '', compact = false }: VisualFi
       resizeObserver.disconnect();
       host.removeEventListener('pointermove', handlePointerMove);
       host.removeEventListener('pointerleave', handlePointerLeave);
+      window.removeEventListener('scroll', markBoundsDirty);
       reducedMotionQuery.removeEventListener('change', handleReducedMotion);
       finePointerQuery.removeEventListener('change', handleFinePointer);
     };
@@ -523,6 +648,7 @@ export function VisualField({ phase, className = '', compact = false }: VisualFi
       className={`visual-field visual-field--${phase} ${compact ? 'visual-field--compact' : ''} ${className}`.trim()}
       data-visual-layer={phase}
       data-pointer-interaction={settings.interactive && !compact ? 'enabled' : 'disabled'}
+      data-render-strategy="on-demand"
       aria-hidden="true"
     >
       <div className="visual-field__bloom" />

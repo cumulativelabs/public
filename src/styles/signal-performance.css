@@ -1,0 +1,30 @@
+/*
+ * Pointer-performance controls for the decorative signal field.
+ * The canvas now renders only while a fine pointer is actively interacting
+ * or while particles are easing home after exit.
+ */
+.visual-field__particle-canvas {
+  contain: paint;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+.visual-field__thread {
+  will-change: auto;
+}
+
+.visual-field__thread--dotted {
+  will-change: stroke-dashoffset;
+}
+
+/* Avoid running three independent animation systems during pointer movement. */
+.visual-field--pointer-active .visual-field__fallback-particle,
+.visual-field--pointer-active .visual-field__thread--dotted {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .visual-field__particle-canvas {
+    transform: none;
+  }
+}
