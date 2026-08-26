@@ -8,3 +8,7 @@ dist/
 coverage/
 .vscode/
 .idea/
+
+# Generated from the tracked, optimized public-safe asset sources.
+public/favicons/apple-touch-icon.png
+public/og/cumulative-labs-og.jpg

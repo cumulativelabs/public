@@ -1,0 +1,287 @@
+/*
+ * Final desktop optical alignment against the locked founder reference.
+ * Base section geometry lives in the master-* files; this file owns the
+ * measured desktop calibration without affecting the mobile translation.
+ */
+
+@media (min-width: 781px) {
+  :root {
+    --shell: min(92rem, calc(100vw - clamp(4.9rem, 8.2vw, 7rem)));
+  }
+
+  /* Header */
+  .site-header__inner {
+    width: min(96rem, calc(100vw - clamp(2.7rem, 4vw, 4.2rem)));
+    gap: 2rem;
+  }
+
+  .site-header__brand {
+    width: clamp(17rem, 28vw, 22rem);
+  }
+
+  /* Hero */
+  .hero-section__inner {
+    grid-template-columns: minmax(0, 0.89fr) minmax(18rem, 1.11fr);
+    padding-top: clamp(3rem, 5.15vw, 5rem);
+  }
+
+  .hero-section__copy {
+    max-width: clamp(21rem, 40vw, 35rem);
+  }
+
+  .hero-section h1 {
+    font-size: clamp(2.85rem, 4.55vw, 4.78rem);
+    line-height: 0.95;
+  }
+
+  .hero-section__body {
+    max-width: clamp(17rem, 29vw, 25rem);
+  }
+
+  .hero-section__mark {
+    width: clamp(17.5rem, 31vw, 28rem);
+    transform: translate(0.65rem, clamp(-3.25rem, -3.2vw, -2.4rem));
+  }
+
+  .hero-section__mark .brand-symbol {
+    width: 55%;
+  }
+
+  .hero-section__horizon {
+    right: -11%;
+    bottom: 18%;
+    left: 37%;
+    height: 48%;
+    opacity: 0.96;
+    transform: perspective(720px) rotateX(58deg);
+  }
+
+  .hero-section__horizon::before {
+    padding-top: 2.5px;
+  }
+
+  .hero-section__field .visual-field__waves--threaded {
+    right: -7%;
+    bottom: -2.5%;
+    width: 114%;
+    height: 55%;
+  }
+
+  .hero-section__field .visual-field__thread--glow {
+    stroke-width: 7;
+    opacity: 0.12;
+  }
+
+  .hero-section__field .visual-field__thread--primary {
+    stroke-width: 1.35 !important;
+    opacity: 0.9 !important;
+  }
+
+  .hero-section__field .visual-field__thread--medium {
+    stroke-width: 0.72 !important;
+    opacity: 0.43 !important;
+  }
+
+  .hero-section__field .visual-field__thread--fine {
+    stroke-width: 0.46 !important;
+    stroke-dasharray: 0.5 5.2;
+    opacity: 0.3 !important;
+  }
+
+  .hero-section__field .visual-field__threads path:nth-child(2n + 1) {
+    stroke-dasharray: 0.6 5.3;
+  }
+
+  .hero-section__field .visual-field__threads path:nth-child(5n + 2) {
+    transform: translateY(-8px) scaleY(1.08);
+  }
+
+  .hero-section__field .visual-field__threads path:nth-child(7n + 3) {
+    transform: translateY(10px) scaleY(0.92);
+  }
+
+  .hero-section__field .visual-field__fallback-particles,
+  .hero-section__field .visual-field__particle-canvas {
+    -webkit-mask-image:
+      linear-gradient(90deg, rgba(0, 0, 0, 0.34), rgba(0, 0, 0, 0.7) 41%, #000 58%, #000),
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.82), #000 40%, #000);
+    mask-image:
+      linear-gradient(90deg, rgba(0, 0, 0, 0.34), rgba(0, 0, 0, 0.7) 41%, #000 58%, #000),
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.82), #000 40%, #000);
+  }
+
+  .hero-section__field .visual-field__fallback-particles,
+  .hero-section__field .visual-field__particle-canvas {
+    opacity: 1;
+  }
+
+  /* Mission and compact Why Cumulative contrast */
+  .mission-section::before {
+    background:
+      linear-gradient(90deg, rgba(5, 14, 26, 1) 0%, rgba(5, 14, 26, 0.97) 43%, rgba(3, 9, 18, 0.62) 65%, rgba(3, 8, 17, 0.45)),
+      radial-gradient(circle at 76% 48%, rgba(124, 34, 175, 0.09), transparent 25rem);
+  }
+
+  .mission-section .mission-section__copy {
+    justify-content: flex-start;
+    padding-top: clamp(1.65rem, 2.9vw, 2.45rem);
+    padding-bottom: clamp(0.8rem, 1.2vw, 1.1rem);
+  }
+
+  .mission-section .mission-section__copy .body-large {
+    max-width: 19.4rem;
+    margin-bottom: clamp(0.48rem, 0.75vw, 0.68rem);
+    color: var(--master-body);
+    font-size: clamp(0.68rem, 0.8vw, 0.82rem);
+    line-height: 1.42;
+  }
+
+  .mission-section__field .visual-field__waves--threaded {
+    right: -7%;
+    bottom: -34%;
+    width: 66%;
+    height: 145%;
+  }
+
+  .mission-section__field .visual-field__fallback-particles,
+  .mission-section__field .visual-field__particle-canvas {
+    -webkit-mask-image: linear-gradient(90deg, transparent 38%, rgba(0, 0, 0, 0.28) 51%, #000 68%, #000);
+    mask-image: linear-gradient(90deg, transparent 38%, rgba(0, 0, 0, 0.28) 51%, #000 68%, #000);
+  }
+
+  .mission-section__field .visual-field__thread--primary {
+    stroke-width: 1.25 !important;
+  }
+
+  .mission-section__field .visual-field__thread--medium {
+    stroke-width: 0.7 !important;
+    opacity: 0.39 !important;
+  }
+
+  .mission-section__field .visual-field__thread--fine {
+    stroke-width: 0.44 !important;
+    stroke-dasharray: 0.5 5.4;
+    opacity: 0.2 !important;
+  }
+
+  .mission-section .mission-section__contrast {
+    gap: 0.65rem;
+  }
+
+  .mission-section .mission-contrast {
+    gap: 0.22rem;
+    padding-top: 0.22rem;
+  }
+
+  .mission-section .mission-contrast__index {
+    font-size: 0.38rem;
+  }
+
+  .mission-section .mission-contrast h3 {
+    margin-bottom: 0.03rem;
+    font-size: 0.43rem;
+    line-height: 1.12;
+  }
+
+  .mission-section .mission-contrast p {
+    font-size: 0.3rem;
+    line-height: 1.18;
+  }
+
+  /* Approach */
+  .approach-section .section-heading--center {
+    max-width: 55rem;
+    margin: 0 auto clamp(0.75rem, 1vw, 0.95rem);
+  }
+
+  .approach-section .section-heading--center h2 {
+    font-size: clamp(1.1rem, 1.55vw, 1.65rem);
+    line-height: 1.15;
+    text-transform: none;
+  }
+
+  .approach-stage:nth-child(1) .approach-stage__icon {
+    border-color: rgba(255, 122, 0, 0.55);
+  }
+
+  .approach-stage:nth-child(2) .approach-stage__icon,
+  .approach-stage:nth-child(3) .approach-stage__icon {
+    border-color: rgba(255, 45, 141, 0.48);
+  }
+
+  .approach-stage:nth-child(4) .approach-stage__icon {
+    border-color: rgba(255, 60, 155, 0.42);
+  }
+
+  .approach-stage:nth-child(5) .approach-stage__icon {
+    border-color: rgba(138, 43, 226, 0.58);
+  }
+
+  /* Work */
+  .work-section__master-grid {
+    grid-template-columns: minmax(11.5rem, 0.52fr) minmax(0, 1fr) minmax(0, 1fr);
+    gap: clamp(0.72rem, 1.35vw, 1.15rem);
+  }
+
+  .work-section__intro {
+    justify-content: flex-start;
+    padding-top: clamp(0.8rem, 1.45vw, 1.25rem);
+  }
+
+  .system-card {
+    padding: clamp(0.7rem, 1.05vw, 0.95rem);
+  }
+
+  /* Principles */
+  .principles-section .shell {
+    justify-content: flex-start;
+    padding-top: clamp(0.45rem, 0.72vw, 0.7rem);
+  }
+
+  .principles-section .section-heading--center {
+    margin-top: -0.55rem;
+    margin-bottom: 0.1rem;
+  }
+
+  .principles-section .principles-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-auto-rows: clamp(7.75rem, 12.45vw, 10.75rem);
+  }
+
+  .principles-section .principle-card,
+  .principles-section .principle-card:nth-child(4),
+  .principles-section .principle-card:nth-child(5) {
+    height: 100%;
+    min-height: 0;
+  }
+
+  /* Closing */
+  .closing-section__master-grid {
+    grid-template-columns: minmax(0, 1.2fr) minmax(7.5rem, 0.5fr) minmax(10rem, 0.7fr);
+  }
+
+  .closing-section__mark {
+    width: clamp(7.8rem, 14vw, 12rem);
+    transform: translateX(clamp(-3.7rem, -4vw, -2.8rem));
+  }
+
+  .closing-section__mark .brand-symbol {
+    width: 62%;
+  }
+
+  .closing-section__brand {
+    transform: translateX(clamp(-2.6rem, -3vw, -2rem));
+  }
+
+  .closing-section__field .visual-field__waves--threaded {
+    right: -6%;
+    bottom: -17%;
+    width: 112%;
+    height: 93%;
+  }
+
+  .closing-section__field .visual-field__thread--fine {
+    stroke-dasharray: 0.5 5.3;
+    opacity: 0.24 !important;
+  }
+}

@@ -1,0 +1,252 @@
+/* -------------------------------------------------------------------------- */
+/* Mission + compact Why Cumulative                                           */
+/* -------------------------------------------------------------------------- */
+
+.mission-section {
+  height: clamp(13.625rem, 21.6vw, 19.375rem);
+  background:
+    radial-gradient(circle at 77% 48%, rgba(116, 34, 164, 0.17), transparent 25rem),
+    linear-gradient(180deg, #07111f, #040b16);
+}
+
+.mission-section::before {
+  background:
+    linear-gradient(90deg, rgba(5, 14, 26, 1) 0%, rgba(5, 14, 26, 0.96) 44%, rgba(3, 9, 18, 0.52) 67%, rgba(3, 8, 17, 0.24)),
+    radial-gradient(circle at 76% 48%, rgba(124, 34, 175, 0.16), transparent 24rem);
+}
+
+.mission-section__layout {
+  position: relative;
+  z-index: 5;
+  height: 100%;
+}
+
+.mission-section__copy {
+  display: flex;
+  width: clamp(24rem, 44%, 35rem);
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(1.3rem, 2.5vw, 2.5rem) 0;
+}
+
+.mission-section__copy .section-label {
+  margin-bottom: clamp(0.55rem, 0.8vw, 0.8rem);
+}
+
+.mission-section__copy h2 {
+  margin-bottom: clamp(0.55rem, 0.9vw, 0.85rem);
+  font-size: clamp(1.75rem, 2.65vw, 2.75rem);
+  font-weight: 500;
+  letter-spacing: 0.025em;
+  line-height: 1.03;
+  text-transform: uppercase;
+}
+
+.mission-section__copy h2 > span,
+.mission-section__copy h2 .gradient-text {
+  display: block;
+}
+
+.mission-section__copy .body-large {
+  max-width: 31rem;
+  margin-bottom: clamp(0.75rem, 1vw, 1rem);
+}
+
+.mission-section__field {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.mission-section__field .visual-field__waves--threaded {
+  right: -8%;
+  bottom: -31%;
+  width: 75%;
+  height: 135%;
+}
+
+.mission-section__field .visual-field__fallback-particles,
+.mission-section__field .visual-field__particle-canvas {
+  -webkit-mask-image: linear-gradient(90deg, transparent 34%, rgba(0, 0, 0, 0.38) 49%, #000 67%, #000);
+  mask-image: linear-gradient(90deg, transparent 34%, rgba(0, 0, 0, 0.38) 49%, #000 67%, #000);
+}
+
+.mission-section__field .visual-field__rings {
+  top: 6%;
+  right: 5%;
+  width: 16rem;
+  opacity: 0.12;
+}
+
+.mission-section__contrast {
+  display: grid;
+  max-width: 35rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(0.65rem, 1.2vw, 1rem);
+}
+
+.mission-contrast {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.45rem;
+  padding-top: 0.48rem;
+  border-top: 1px solid rgba(177, 191, 217, 0.13);
+}
+
+.mission-contrast--structured {
+  border-top-color: rgba(255, 61, 145, 0.27);
+}
+
+.mission-contrast__index {
+  color: #ff8a50;
+  font-size: clamp(0.45rem, 0.5vw, 0.55rem);
+  letter-spacing: 0.12em;
+}
+
+.mission-contrast h3 {
+  margin-bottom: 0.18rem;
+  color: #eef1f6;
+  font-size: clamp(0.55rem, 0.66vw, 0.72rem);
+  font-weight: 650;
+  line-height: 1.25;
+}
+
+.mission-contrast p {
+  color: #7f8a9d;
+  font-size: clamp(0.43rem, 0.52vw, 0.58rem);
+  line-height: 1.38;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Approach                                                                   */
+/* -------------------------------------------------------------------------- */
+
+.approach-section {
+  height: clamp(13.375rem, 20.9vw, 18.75rem);
+  background: #040b16;
+}
+
+.approach-section::before {
+  background:
+    radial-gradient(circle at 50% 48%, rgba(77, 42, 145, 0.11), transparent 26rem),
+    linear-gradient(180deg, #050d19, #040a14);
+}
+
+.approach-section .shell {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-heading--center {
+  max-width: 54rem;
+  margin: 0 auto clamp(0.9rem, 1.4vw, 1.25rem);
+  text-align: center;
+}
+
+.section-heading--center .section-label {
+  justify-content: center;
+  margin-bottom: clamp(0.35rem, 0.55vw, 0.55rem);
+}
+
+.section-heading--center h2 {
+  font-size: clamp(1.15rem, 1.75vw, 1.85rem);
+  font-weight: 400;
+  letter-spacing: 0.015em;
+  line-height: 1.15;
+  text-transform: none;
+}
+
+.approach-path {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: clamp(0.6rem, 1.7vw, 1.75rem);
+}
+
+.approach-stage {
+  position: relative;
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  text-align: center;
+  transition: transform 180ms ease;
+}
+
+.approach-stage:hover,
+.approach-stage:focus-visible {
+  transform: translateY(-2px);
+}
+
+.approach-stage__number {
+  display: none;
+}
+
+.approach-stage__icon {
+  display: grid;
+  width: clamp(2.95rem, 5.2vw, 4.25rem);
+  height: clamp(2.95rem, 5.2vw, 4.25rem);
+  margin: 0 auto clamp(0.4rem, 0.7vw, 0.65rem);
+  place-items: center;
+  border: 1px solid rgba(255, 76, 143, 0.42);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 45, 141, 0.08), transparent 70%);
+  color: #ff8352;
+  box-shadow: 0 0 1.3rem rgba(255, 45, 141, 0.055);
+}
+
+.approach-stage:nth-child(2) .approach-stage__icon,
+.approach-stage:nth-child(4) .approach-stage__icon {
+  color: #ff4d98;
+}
+
+.approach-stage:nth-child(5) .approach-stage__icon {
+  color: #a45af0;
+}
+
+.approach-stage__icon .line-icon {
+  width: clamp(1.55rem, 2.7vw, 2.15rem);
+  height: clamp(1.55rem, 2.7vw, 2.15rem);
+}
+
+.approach-stage h3 {
+  margin-bottom: 0.22rem;
+  color: #eef1f5;
+  font-size: clamp(0.58rem, 0.72vw, 0.8rem);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.approach-stage p {
+  max-width: 9rem;
+  margin: 0 auto;
+  color: #8a94a6;
+  font-size: clamp(0.46rem, 0.57vw, 0.63rem);
+  line-height: 1.45;
+}
+
+.approach-stage__connector {
+  position: absolute;
+  top: clamp(1.35rem, 2.55vw, 2.1rem);
+  right: calc(clamp(0.6rem, 1.7vw, 1.75rem) * -0.74);
+  display: block;
+  width: 0.52rem;
+  height: 0.52rem;
+  background: transparent;
+  transform: none;
+}
+
+.approach-stage__connector i {
+  display: block;
+  width: 0.42rem;
+  height: 0.42rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.66);
+  border-right: 1px solid rgba(255, 255, 255, 0.66);
+  transform: rotate(45deg);
+}
+

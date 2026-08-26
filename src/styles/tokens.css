@@ -1,0 +1,68 @@
+:root {
+  color-scheme: dark;
+
+  --amber: #ff7a00;
+  --pink: #ff2d8d;
+  --purple: #8a2be2;
+  --midnight: #081220;
+  --slate: #1e293b;
+  --cloud: #f8fafc;
+
+  /* Semantic aliases used throughout the component layer. */
+  --color-amber: var(--amber);
+  --color-pink: var(--pink);
+  --color-purple: var(--purple);
+  --color-cloud: var(--cloud);
+  --color-white: #ffffff;
+  --color-midnight-deep: #03070f;
+  --color-muted: #7f8ca0;
+  --color-muted-strong: #b6c2d2;
+  --color-border: rgba(179, 198, 224, 0.14);
+  --gradient-brand-horizontal: linear-gradient(90deg, var(--amber), var(--pink) 52%, var(--purple));
+
+  --ink-950: #03070f;
+  --ink-925: #050b15;
+  --ink-900: #07101d;
+  --ink-850: #0a1525;
+  --ink-800: #0d1a2b;
+  --text-primary: #f8fafc;
+  --text-secondary: #b6c2d2;
+  --text-muted: #7f8ca0;
+  --border-subtle: rgba(179, 198, 224, 0.14);
+  --border-strong: rgba(203, 216, 236, 0.25);
+  --surface: rgba(11, 23, 39, 0.68);
+  --surface-strong: rgba(9, 20, 35, 0.9);
+
+  --brand-gradient: linear-gradient(110deg, var(--amber) 0%, var(--pink) 48%, var(--purple) 100%);
+  --brand-gradient-soft: linear-gradient(110deg, rgba(255, 122, 0, 0.24), rgba(255, 45, 141, 0.17), rgba(138, 43, 226, 0.22));
+  --page-glow: radial-gradient(circle at 72% 18%, rgba(93, 59, 213, 0.12), transparent 35%);
+
+  --font-sans: "Avenir Next", Avenir, "Segoe UI", "Helvetica Neue", Arial, system-ui, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  --shell: min(88rem, calc(100vw - 3rem));
+  --header-height: 6rem;
+  --section-space: clamp(6rem, 10vw, 10rem);
+
+  --radius-sm: 0.55rem;
+  --radius-md: 0.9rem;
+  --radius-lg: 1.35rem;
+  --radius-xl: 1.8rem;
+  --radius-pill: 999px;
+
+  --shadow-soft: 0 2rem 6rem rgba(0, 0, 0, 0.25);
+  --shadow-card: 0 1.75rem 5rem rgba(0, 0, 0, 0.3);
+  --shadow-glow: 0 0 3.5rem rgba(255, 45, 141, 0.11);
+
+  --ease-standard: cubic-bezier(0.2, 0.75, 0.2, 1);
+  --duration-fast: 180ms;
+  --duration-medium: 420ms;
+}
+
+@media (max-width: 42rem) {
+  :root {
+    --shell: min(100% - 2rem, 88rem);
+    --header-height: 5rem;
+    --section-space: clamp(5rem, 18vw, 7.25rem);
+  }
+}
