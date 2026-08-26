@@ -5,28 +5,22 @@ import { ClosingManifesto } from './sections/ClosingManifesto';
 import { HeroSection } from './sections/HeroSection';
 import { MissionSection } from './sections/MissionSection';
 import { PrinciplesSection } from './sections/PrinciplesSection';
-import { ProvingGroundSection } from './sections/ProvingGroundSection';
-import { SiteFooter } from './sections/SiteFooter';
-import { WhyCumulativeSection } from './sections/WhyCumulativeSection';
 import { WorkSection } from './sections/WorkSection';
 
 export default function App() {
   useReveal();
 
   return (
-    <div className="site-canvas">
+    <div className="site-canvas site-canvas--master">
       <SiteHeader />
       <main id="main-content">
         <HeroSection />
         <MissionSection />
-        <WhyCumulativeSection />
         <ApproachSection />
         <WorkSection />
-        <ProvingGroundSection />
         <PrinciplesSection />
         <ClosingManifesto />
       </main>
-      <SiteFooter />
     </div>
   );
 }

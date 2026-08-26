@@ -6,7 +6,8 @@ import { site } from '../content/site';
 export function MissionSection() {
   return (
     <section id="mission" className="mission-section section" data-visual-phase="explore">
-      <div className="shell mission-section__grid">
+      <VisualField phase="explore" compact className="mission-section__field" />
+      <div className="shell shell--wide mission-section__layout">
         <div className="mission-section__copy" data-reveal>
           <SectionLabel>{site.mission.label}</SectionLabel>
           <h2 className="display-heading">
@@ -14,14 +15,17 @@ export function MissionSection() {
             <GradientText>{site.mission.headline[1]}</GradientText>
           </h2>
           <p className="body-large">{site.mission.body}</p>
-        </div>
-        <div className="mission-section__visual" data-reveal>
-          <VisualField phase="explore" compact />
-          <div className="mission-section__signal" aria-hidden="true">
-            <span />
-            <span />
-            <span />
-            <span />
+
+          <div className="mission-section__contrast" data-visual-phase="challenge">
+            {site.whyCumulative.contrasts.map((contrast, index) => (
+              <article key={contrast.title} className={`mission-contrast mission-contrast--${contrast.tone}`}>
+                <span className="mission-contrast__index">0{index + 1}</span>
+                <div>
+                  <h3>{contrast.title}</h3>
+                  <p>{contrast.body}</p>
+                </div>
+              </article>
+            ))}
           </div>
         </div>
       </div>

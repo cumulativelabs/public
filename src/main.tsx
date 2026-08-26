@@ -5,12 +5,13 @@ import App from './App';
 import './styles/tokens.css';
 import './styles/global.css';
 import './styles/home-foundation.css';
-import './styles/home-story.css';
-import './styles/home-systems.css';
-import './styles/home-closing.css';
-import './styles/home-responsive.css';
-import './styles/visual-fidelity.css';
 import './styles/signal-field.css';
+import './styles/master-foundation.css';
+import './styles/master-story.css';
+import './styles/master-work.css';
+import './styles/master-closing.css';
+import './styles/master-responsive.css';
+import './styles/master-alignment.css';
 
 const root = document.getElementById('root');
 if (!root) throw new Error('Root element not found.');

@@ -31,22 +31,9 @@ function NetworkVisual() {
       <path d="M18 186 94 166l59 12 73-35 52 17 68-24 72 19 82-11" />
       <path d="M72 136 94 166M124 153l29 25M179 74l47 69M226 130l52 30M288 43l58 93M346 115l72 40M416 86l2 69" />
       {[
-        [18, 168],
-        [72, 136],
-        [94, 166],
-        [124, 153],
-        [153, 178],
-        [179, 74],
-        [226, 130],
-        [226, 143],
-        [278, 160],
-        [288, 43],
-        [346, 115],
-        [346, 136],
-        [416, 86],
-        [418, 155],
-        [500, 129],
-        [500, 144],
+        [18, 168], [72, 136], [94, 166], [124, 153], [153, 178], [179, 74],
+        [226, 130], [226, 143], [278, 160], [288, 43], [346, 115], [346, 136],
+        [416, 86], [418, 155], [500, 129], [500, 144],
       ].map(([x, y]) => (
         <circle key={`${x}-${y}`} cx={x} cy={y} r="4" />
       ))}
@@ -57,23 +44,34 @@ function NetworkVisual() {
 export function WorkSection() {
   return (
     <section id="work" className="work-section section" data-visual-phase="preserve">
-      <div className="shell shell--wide">
+      <div className="shell shell--wide work-section__master-grid">
         <div className="work-section__intro" data-reveal>
           <SectionLabel>{site.work.label}</SectionLabel>
-          <h2 className="display-heading display-heading--compact">
+          <h2>
             <span>{site.work.headline[0]}</span>
             <span>{site.work.headline[1]}</span>
           </h2>
           <p>{site.work.intro}</p>
+          <a className="button button--secondary work-section__cta" href="#league-vector">
+            Explore Our Work
+            <span aria-hidden="true">→</span>
+          </a>
         </div>
 
-        <div className="systems-grid">
-          {site.work.systems.map((system) => (
-            <article className="system-card" key={system.title} data-reveal tabIndex={0}>
+        {site.work.systems.map((system) => {
+          const isLeagueVector = system.title === 'League Vector';
+          return (
+            <article
+              id={isLeagueVector ? 'league-vector' : undefined}
+              className={`system-card ${isLeagueVector ? 'system-card--league' : 'system-card--research'}`}
+              key={system.title}
+              data-reveal
+              tabIndex={0}
+            >
               <div className="system-card__header">
                 <div>
-                  <p>{system.descriptor}</p>
                   <h3>{system.title}</h3>
+                  <p>{system.descriptor}</p>
                 </div>
                 <StatusBadge>{system.status}</StatusBadge>
               </div>
@@ -81,10 +79,17 @@ export function WorkSection() {
               <div className="system-card__copy">
                 <p>{system.body}</p>
                 {'detail' in system ? <p className="system-card__detail">{system.detail}</p> : null}
+                {isLeagueVector ? (
+                  <aside className="system-card__proving">
+                    <strong>{site.provingGround.headline}</strong>
+                    <p>{site.provingGround.body}</p>
+                    <span>{site.provingGround.support}</span>
+                  </aside>
+                ) : null}
               </div>
             </article>
-          ))}
-        </div>
+          );
+        })}
       </div>
     </section>
   );
