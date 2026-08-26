@@ -6,6 +6,9 @@ import {
   mobileNavigationReducer,
 } from './mobileNavigation';
 
+const horizontalLogoSource = `${import.meta.env.BASE_URL}brand/cumulative-labs-horizontal.svg`;
+const symbolLogoSource = `${import.meta.env.BASE_URL}brand/cumulative-labs-symbol.svg`;
+
 export function SiteHeader() {
   const [scrolled, setScrolled] = useState(false);
   const [menu, dispatch] = useReducer(mobileNavigationReducer, initialMobileNavigationState);
@@ -71,7 +74,7 @@ export function SiteHeader() {
         <div className="site-header__inner shell shell--wide">
           <a className="site-header__brand" href="#top" aria-label="Cumulative Labs home">
             <img
-              src="/brand/cumulative-labs-horizontal.svg"
+              src={horizontalLogoSource}
               alt="Cumulative Labs"
               width="1450"
               height="360"
@@ -121,7 +124,7 @@ export function SiteHeader() {
           aria-label="Site navigation"
         >
           <div className="mobile-navigation__topline">
-            <img src="/brand/cumulative-labs-symbol.svg" alt="" aria-hidden="true" />
+            <img src={symbolLogoSource} alt="" aria-hidden="true" />
             <button
               className="mobile-navigation__close"
               type="button"
