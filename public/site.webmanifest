@@ -1,0 +1,17 @@
+{
+  "name": "Cumulative Labs",
+  "short_name": "Cumulative Labs",
+  "description": "Intelligence That Compounds.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#081220",
+  "theme_color": "#081220",
+  "icons": [
+    {
+      "src": "/favicons/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
