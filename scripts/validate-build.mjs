@@ -17,6 +17,11 @@ const requiredFiles = [
 ];
 
 const failures = [];
+const html = await readFile(join(dist, 'index.html'), 'utf8');
+for (const text of ['<h1', 'Private Research System', 'League Vector', 'Hypothetical scenario', '<footer']) {
+  if (!html.includes(text)) failures.push(`Prerendered HTML is missing: ${text}`);
+}
+if (!html.includes('not a product demonstration')) failures.push('Illustrative disclaimer missing from HTML');
 for (const file of requiredFiles) {
   try {
     const info = await stat(join(dist, file));

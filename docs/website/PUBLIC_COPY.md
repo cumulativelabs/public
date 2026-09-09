@@ -1,131 +1,189 @@
-# Cumulative Labs Homepage — Public Copy
+# Cumulative Labs Homepage — Draft Public Copy
 
-This file records the public copy implemented by the foundation homepage. The rendered contact address is sourced from `src/content/site.ts` so it can be updated in one place.
+Status: implementation draft for independent QA; not approved for production.
 
-## Metadata
+This record reflects `src/content/site.ts`. Contact destinations remain centralized there. The original proposal remains in `HOMEPAGE_REFRESH_DRAFT_2026-09-09.md`.
 
-**Page title**
+## seo
+
 Cumulative Labs — Intelligence That Compounds.
 
-**Description**
-Cumulative Labs builds systems in which verified knowledge survives, accumulates, and improves every future cycle.
+Cumulative Labs is developing AI research systems around durable, verified knowledge. League Vector is our first applied proving ground, in development.
 
-## Navigation
+## navigation
 
-Mission · Approach · Work · Principles · Contact
+Work
 
-## Hero
+Why Cumulative
 
-**Headline**
-INTELLIGENCE
-THAT
-COMPOUNDS.
+Approach
 
-**Supporting copy**
-We build systems in which verified knowledge survives, accumulates, and improves every future cycle.
+Principles
 
-**Actions**
-Explore Our Work · Our Mission
+Contact
 
-## Our Mission
+## hero
 
-**Headline**
-INTELLIGENCE SHOULD
-NOT RESET.
+Cumulative intelligence, built to endure
 
-Today’s intelligent systems can produce extraordinary work, yet much of what they learn disappears when the task ends. Cumulative Labs is building systems designed to preserve verified knowledge, carry it forward, and use it to improve every future cycle.
+Intelligence
 
-## Why Cumulative
+That
 
-**Most intelligence starts over.**
-Valuable evidence is produced, reviewed, and then disconnected from the next cycle of work. Progress becomes difficult to preserve, evaluate, and build upon.
+Compounds.
 
-**We believe intelligence should accumulate.**
-Each verified result should strengthen what comes next—creating systems that become more capable through durable, evidence-backed learning.
+Cumulative Labs is developing AI research systems designed to preserve verified knowledge—so each new task can build on useful findings from the last.
 
-## Our Approach
+Our first applied proving ground: League Vector, a dynasty fantasy football product in development.
 
-**Headline**
-Knowledge that survives becomes intelligence that grows.
+See What We’re Building
 
-**Explore**
-We explore widely to surface possibilities and new questions.
+Contact the Lab
 
-**Challenge**
-We challenge assumptions and pressure-test ideas.
+## mission
 
-**Verify**
-We evaluate claims against evidence, separating signal from noise and bias.
+Why Cumulative Intelligence
 
-**Preserve**
-We retain verified knowledge in a durable, traceable form.
+Good Work Should
 
-**Improve**
-We use what survives to strengthen the next cycle of work.
+Carry Forward.
 
-## What We’re Building
+A useful conclusion can outlast the task that produced it. We’re exploring how to preserve findings that survive scrutiny, keep them traceable, and make them available to future work.
 
-**Headline**
-TWO SYSTEMS.
-ONE MISSION.
+Starting over
 
-Our systems are designed to turn fragmented information into durable knowledge and better decisions.
+Evidence is reviewed, but its conclusion is disconnected from the next task.
 
-### Private Research System
+Building forward
 
-**Descriptor:** A Cumulative Labs System
-**Status:** Active Research
+A supported finding stays available, with its limits, for the next task to use or revise.
 
-An operating environment for evidence-driven, cumulative intelligence.
+## approach
 
-It is designed to preserve evidence, evaluate work, and support improvement across repeated cycles.
+Our Approach
 
-### League Vector
+From signal to knowledge that survives.
 
-**Descriptor:** Built by Cumulative Labs
-**Status:** In Development
+Explore
 
-Our first applied system—bringing deeper, evidence-driven intelligence to dynasty fantasy sports.
+Search broadly for evidence, possibilities, and new questions.
 
-## Our First Proving Ground
+Challenge
 
-**Headline**
-Complex decisions. Changing evidence. Measurable outcomes.
+Pressure-test assumptions and competing explanations.
 
-Sports decisions involve uncertainty, changing evidence, competing time horizons, and measurable outcomes. That makes League Vector an ideal environment for testing whether cumulative intelligence can improve real decisions over time.
+Verify
 
-League Vector is the first applied environment for the broader Cumulative Labs mission.
+Evaluate claims against available evidence.
 
-## Our Principles
+Preserve
 
-**Evidence Over Confidence**
+Retain useful findings in a durable, traceable form.
+
+Improve
+
+Use what survives to inform the next cycle of work.
+
+## work
+
+What We’re Building
+
+One Research Mission.
+
+Two Layers of Work.
+
+Our underlying research explores how knowledge can endure. League Vector is our first applied product for testing that idea in a changing decision environment.
+
+Private Research System
+
+Cumulative Labs Research
+
+Active Research
+
+An environment we’re developing to help AI research build on retained evidence.
+
+The goal is to preserve useful findings, keep them traceable, and make them available to future work.
+
+League Vector
+
+First Applied Proving Ground
+
+In Development
+
+A dynasty fantasy football product in development, focused on evidence, uncertainty, and changing player value.
+
+We’re testing whether cumulative intelligence can support better-informed decisions over time.
+
+## example
+
+How the Idea Works
+
+A conclusion can change. The learning can stay.
+
+Suppose a research team is comparing two routes for a delivery. An early report favors Route A. A later report reveals a closure.
+
+New evidence
+
+A road-closure report challenges the original route choice.
+
+Claim evaluated
+
+Check whether the report applies to this route and delivery date.
+
+Conclusion revised
+
+If the closure is confirmed, Route A is no longer the supported choice.
+
+Finding retained
+
+Keep the updated conclusion with its evidence and date limits.
+
+Future work can use it
+
+The next route review can use that finding—and check whether it still holds.
+
+Illustrative example of the cumulative-intelligence concept. This hypothetical scenario is not a product demonstration or a claim of autonomous improvement or production-scale performance.
+
+## principles
+
+Our Principles
+
+The standards behind the work.
+
+Evidence Over Confidence
+
 Claims should be supported, challenged, and traceable.
 
-**Knowledge That Survives**
-Useful discoveries should remain available beyond the session that produced them.
+Knowledge That Survives
 
-**Improvement You Can Measure**
-A system should demonstrate that it is getting better—not merely claim that it is.
+Useful discoveries should remain available beyond the task that produced them.
 
-**Built for the Long Term**
-Each completed cycle should strengthen the cycles that follow.
+Improvement You Can Measure
 
-**Integrity in Every Cycle**
-We design for honesty, transparency, and responsibility at every step.
+Improvement should be demonstrated rather than assumed.
 
-## Closing Manifesto
+Built for the Long Term
 
-THE NEXT GENERATION OF INTELLIGENCE
-WILL NOT SIMPLY BE MORE POWERFUL.
-IT WILL REMEMBER WHAT IT PROVES.
+Each completed cycle should leave future work in a stronger position.
 
-**Action:** Contact Cumulative Labs
+Integrity in Every Cycle
 
-## Footer
+Be explicit about uncertainty, evidence, limitations, and what has actually been demonstrated.
 
-CUMULATIVE LABS
+## closing
+
 Intelligence That Compounds.
+
+A Direction Worth
+
+Building Toward.
+
+Interested in research collaboration or what we’re building? Get in touch with Cumulative Labs.
+
+Contact Cumulative Labs
+
+## footer
 
 © 2026 Cumulative Labs. All rights reserved.
 
-Cycle complete. Knowledge retained.
+Research in progress. Built for the long term.

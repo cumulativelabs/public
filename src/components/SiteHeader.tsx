@@ -28,10 +28,13 @@ export function SiteHeader() {
     const previousOverflow = document.body.style.overflow;
     document.body.style.overflow = 'hidden';
 
+    const background = [document.querySelector('header'), document.querySelector('main'), document.querySelector('footer')];
+    background.forEach((element) => element?.setAttribute('inert', ''));
+
     const firstFocusable = mobileDialogRef.current?.querySelector<HTMLElement>(
       'a[href], button:not([disabled])',
     );
-    firstFocusable?.focus();
+    const focusFrame = requestAnimationFrame(() => firstFocusable?.focus());
 
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === 'Escape') {
@@ -59,6 +62,8 @@ export function SiteHeader() {
 
     document.addEventListener('keydown', handleKeyDown);
     return () => {
+      cancelAnimationFrame(focusFrame);
+      background.forEach((element) => element?.removeAttribute('inert'));
       document.body.style.overflow = previousOverflow;
       document.removeEventListener('keydown', handleKeyDown);
       menuButtonRef.current?.focus();
@@ -114,11 +119,17 @@ export function SiteHeader() {
       <div
         className={`mobile-navigation-shell ${menu.open ? 'mobile-navigation-shell--open' : ''}`}
         aria-hidden={!menu.open}
+        inert={!menu.open}
       >
         <div
           id="mobile-navigation"
           ref={mobileDialogRef}
           className="mobile-navigation"
+          onTransitionEnd={(event) => {
+            if (menu.open && event.target === event.currentTarget && !event.currentTarget.contains(document.activeElement)) {
+              event.currentTarget.querySelector<HTMLElement>('button')?.focus();
+            }
+          }}
           role="dialog"
           aria-modal="true"
           aria-label="Site navigation"

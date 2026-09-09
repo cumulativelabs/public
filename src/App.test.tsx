@@ -13,9 +13,21 @@ describe('Cumulative Labs homepage', () => {
     expect((markup.match(/<h1[ >]/g) ?? []).length).toBe(1);
     expect(markup).toContain('Intelligence');
     expect(markup).toContain('Compounds.');
-    expect(markup).toContain('Intelligence Should');
-    expect(markup).toContain('Not Reset.');
-    expect(markup).toContain('Complex decisions. Changing evidence. Measurable outcomes.');
+    expect(markup).toContain('Good Work Should');
+    expect(markup).toContain('Carry Forward.');
+    expect(markup).toContain('Illustrative example');
+  });
+
+  it('puts the work immediately after the hero and labels the concept as hypothetical', () => {
+    const markup = renderApp();
+    const ids = ['top', 'work', 'mission', 'approach', 'example', 'principles', 'contact'];
+    const positions = ids.map((id) => markup.indexOf(`id="${id}"`));
+    expect(positions.every((value, index) => value >= 0 && (index === 0 || value > positions[index - 1]))).toBe(true);
+    expect(markup).toContain('Hypothetical scenario');
+    expect(markup).toContain('not a product demonstration');
+    expect(markup).not.toContain('tabindex="0"');
+    expect(markup).toContain('<footer');
+    expect(markup).toContain('inert=""');
   });
 
   it('renders every real navigation target without placeholder links', () => {
