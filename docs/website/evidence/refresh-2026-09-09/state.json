@@ -3,6 +3,8 @@
   "startingCommit": "4e514b8ee0fb4349a89efcddcfe10adbb225a124",
   "branch": "website-refresh-draft-2026-09-09",
   "independentQA": false,
-  "deployed": false,
-  "evidenceNote": "Chrome viewport screenshots; no physical iPhone or OS reduced-motion emulation. Lighthouse after is final application bytes, before the social JPEG replacement."
+  "evidenceNote": "Chrome viewport screenshots; no physical iPhone or OS reduced-motion emulation. Lighthouse after is final application bytes, before the social JPEG replacement.",
+  "productionDeployed": false,
+  "automaticDraftPreview": "https://452c466f.cumulative-labs.pages.dev",
+  "previewSourceCommit": "03c9892dbd5221f94832eefefff7e1ca5cd619c3"
 }

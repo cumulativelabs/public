@@ -125,6 +125,11 @@
     "sha256": "0e8a89eab7fc57697c2e656d335a2681b44dfed75d0100ecd354fede438fe5c0"
   },
   {
+    "file": "hosted-preview-console.json",
+    "bytes": 2,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  {
     "file": "http-audit.json",
     "bytes": 3481,
     "sha256": "80d5fd86a376030872cc289e0070ce5fe375f7977e569978dc1f909bd0aad699"
@@ -151,8 +156,8 @@
   },
   {
     "file": "state.json",
-    "bytes": 414,
-    "sha256": "6a11bc831df9b1c3c6f043502e2ff613f19a744dd10f5a58bde8d3f459a1cfaa"
+    "bytes": 566,
+    "sha256": "136740f2f600872311d6873b504b4c381e0321fe3ad8a1b5898af4372e8944e2"
   },
   {
     "file": "verification.json",

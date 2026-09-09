@@ -2,7 +2,7 @@
 
 Date: September 9, 2026. Recommendation: **Ready for independent QA**.
 
-This is an implementation-agent report, not independent QA or approval to release. No deployment, merge, custom-domain activation, or domain configuration change was performed.
+This is an implementation-agent report, not independent QA or approval to release. No production deployment, merge, custom-domain activation, or domain configuration change was performed. Pushing the draft branch triggered the repository’s existing automatic preview integration, as recorded below.
 
 ## 1. Live site status
 
@@ -134,3 +134,13 @@ Include physical Safari/iPhone, reduced-motion interaction, and independent revi
 - Main observed for review base: `993734d9712bc17eb65b338b3bab3ef9631af55f`.
 - Implementation commit: `f74db63931452a845f2c9799d8774b0034ba6ad4`.
 - This handoff and evidence are stored in a subsequent documentation commit on the same retained branch. The PR head identifies that commit. No production workflow or domain file changed.
+
+### Verified remote review handoff
+
+[Draft PR #2](https://github.com/cumulativelabs/public/pull/2) is open. GitHub CI passed on `03c9892dbd5221f94832eefefff7e1ca5cd619c3`. The existing hosting integration automatically created [this noindex preview](https://452c466f.cumulative-labs.pages.dev) from that draft ref; no hosting setting was changed. The subsequent report-only commit retains the same implementation.
+
+The preview returns HTTP 200 and `X-Robots-Tag: noindex`. Its JavaScript, CSS, and replacement social JPEG match the local build byte-for-byte. HTML differs only in approximately 10^-11-scale values in three procedural particle style attributes (one size used twice and one animation delay), consistent with floating-point differences between build environments. It is not appropriate to assert an identical full HTML hash. The hosted draft rendered the complete page in Chrome without console warnings/errors.
+
+Production was rechecked after the branch push: HTML SHA-256 remains `66204dad19b1c4a706ecbfc3340234c49768827a62d28b97304699a11f4eeaaf`, and the original `index-CAPnqrQ5.js` / `index-jQxoqg5m.css` are still served. Production is unchanged.
+
+The handoff, evidence manifest, and application copy were directly read back from immutable GitHub commit `03c9892dbd5221f94832eefefff7e1ca5cd619c3` and matched local bytes. A final report-only update records this remote verification. Use the PR head for the latest report and the implementation SHA above for the code candidate.
