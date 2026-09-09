@@ -54,10 +54,10 @@ All screenshots show real website rendering. Desktop is 1440 × 900; primary mob
 | --- | --- | --- |
 | Desktop hero | [Before](evidence/refresh-2026-09-09/before-desktop.png) | [After](evidence/refresh-2026-09-09/after-desktop.png) |
 | Mobile hero | [Before](evidence/refresh-2026-09-09/before-mobile.png) | [After](evidence/refresh-2026-09-09/after-mobile.png) |
-| Work | [Before](evidence/refresh-2026-09-09/before-desktop-work.png) | [After](evidence/refresh-2026-09-09/after-desktop-work.png) |
+| Mobile work | [Before](evidence/refresh-2026-09-09/before-mobile-work.png) | [After](evidence/refresh-2026-09-09/after-mobile-work.png) |
 | Social preview | [Before](evidence/refresh-2026-09-09/before-og.jpg) | [After](evidence/refresh-2026-09-09/after-og.jpg) |
 
-[Desktop example](evidence/refresh-2026-09-09/after-desktop-example.png), [mobile example](evidence/refresh-2026-09-09/after-mobile-example.png), [mobile footer](evidence/refresh-2026-09-09/after-mobile-footer.png), [desktop full page](evidence/refresh-2026-09-09/after-desktop-full.png), [mobile full page](evidence/refresh-2026-09-09/after-mobile-full.png), and [www failure](evidence/refresh-2026-09-09/www-522.png) are retained beside the reports.
+[Desktop work](evidence/refresh-2026-09-09/after-desktop-work.png), [baseline narrative](evidence/refresh-2026-09-09/before-desktop-narrative.png), [Desktop example](evidence/refresh-2026-09-09/after-desktop-example.png), [mobile example](evidence/refresh-2026-09-09/after-mobile-example.png), [mobile footer](evidence/refresh-2026-09-09/after-mobile-footer.png), [desktop full page](evidence/refresh-2026-09-09/after-desktop-full.png), [mobile full page](evidence/refresh-2026-09-09/after-mobile-full.png), and [www failure](evidence/refresh-2026-09-09/www-522.png) are retained beside the reports.
 
 The draft makes the company and product relationship explicit, replaces repeated abstract copy with a readable example, and removes the mobile gap before actions. Comprehension improvement is an implementation assessment; no user study was performed.
 

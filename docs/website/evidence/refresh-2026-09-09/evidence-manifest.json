@@ -85,7 +85,7 @@
     "sha256": "8f3ad63550b890cd522230d31e7e2e2912676dd41197cb4d58f875ac5798f5e6"
   },
   {
-    "file": "before-desktop-work.png",
+    "file": "before-desktop-narrative.png",
     "bytes": 112881,
     "sha256": "83624053834377cf251932f46974c5e61fa20ffdafd41857540d08b9670d683b"
   },
@@ -103,6 +103,11 @@
     "file": "before-mobile-menu.png",
     "bytes": 16297,
     "sha256": "2eab97f74bbd644b807134796cf8c42edd16826310c5499fd6fc5508958981cf"
+  },
+  {
+    "file": "before-mobile-work.png",
+    "bytes": 34022,
+    "sha256": "4bde1fe34f50a7ecc82d3adb0496c67ace88c9003fe157ebf9a8e90420b84d8a"
   },
   {
     "file": "before-mobile.png",
