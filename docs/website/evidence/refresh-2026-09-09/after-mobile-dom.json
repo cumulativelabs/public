@@ -1,0 +1,291 @@
+{
+  "anchors": [
+    {
+      "exists": true,
+      "href": "#main-content"
+    },
+    {
+      "exists": true,
+      "href": "#top"
+    },
+    {
+      "exists": true,
+      "href": "#work"
+    },
+    {
+      "exists": true,
+      "href": "#mission"
+    },
+    {
+      "exists": true,
+      "href": "#approach"
+    },
+    {
+      "exists": true,
+      "href": "#principles"
+    },
+    {
+      "exists": true,
+      "href": "#work"
+    },
+    {
+      "exists": true,
+      "href": "#mission"
+    },
+    {
+      "exists": true,
+      "href": "#approach"
+    },
+    {
+      "exists": true,
+      "href": "#principles"
+    },
+    {
+      "exists": true,
+      "href": "#work"
+    },
+    {
+      "exists": true,
+      "href": "#contact"
+    },
+    {
+      "exists": true,
+      "href": "#work"
+    }
+  ],
+  "headings": [
+    {
+      "tag": "H1",
+      "text": "IntelligenceThatCompounds.",
+      "visible": true
+    },
+    {
+      "tag": "H2",
+      "text": "One Research Mission. Two Layers of Work.",
+      "visible": true
+    },
+    {
+      "tag": "H3",
+      "text": "Private Research System",
+      "visible": true
+    },
+    {
+      "tag": "H3",
+      "text": "League Vector",
+      "visible": true
+    },
+    {
+      "tag": "H2",
+      "text": "Good Work ShouldCarry Forward.",
+      "visible": true
+    },
+    {
+      "tag": "H3",
+      "text": "Starting over",
+      "visible": true
+    },
+    {
+      "tag": "H3",
+      "text": "Building forward",
+      "visible": true
+    },
+    {
+      "tag": "H2",
+      "text": "From signal to knowledge that survives.",
+      "visible": true
+    },
+    {
+      "tag": "H3",
+      "text": "Explore",
+      "visible": true
+    },
+    {
+      "tag": "H3",
+      "text": "Challenge",
+      "visible": true
+    },
+    {
+      "tag": "H3",
+      "text": "Verify",
+      "visible": true
+    },
+    {
+      "tag": "H3",
+      "text": "Preserve",
+      "visible": true
+    },
+    {
+      "tag": "H3",
+      "text": "Improve",
+      "visible": true
+    },
+    {
+      "tag": "H2",
+      "text": "A conclusion can change. The learning can stay.",
+      "visible": true
+    },
+    {
+      "tag": "H3",
+      "text": "New evidence",
+      "visible": true
+    },
+    {
+      "tag": "H3",
+      "text": "Claim evaluated",
+      "visible": true
+    },
+    {
+      "tag": "H3",
+      "text": "Conclusion revised",
+      "visible": true
+    },
+    {
+      "tag": "H3",
+      "text": "Finding retained",
+      "visible": true
+    },
+    {
+      "tag": "H3",
+      "text": "Future work can use it",
+      "visible": true
+    },
+    {
+      "tag": "H2",
+      "text": "The standards behind the work.",
+      "visible": true
+    },
+    {
+      "tag": "H3",
+      "text": "Evidence Over Confidence",
+      "visible": true
+    },
+    {
+      "tag": "H3",
+      "text": "Knowledge That Survives",
+      "visible": true
+    },
+    {
+      "tag": "H3",
+      "text": "Improvement You Can Measure",
+      "visible": true
+    },
+    {
+      "tag": "H3",
+      "text": "Built for the Long Term",
+      "visible": true
+    },
+    {
+      "tag": "H3",
+      "text": "Integrity in Every Cycle",
+      "visible": true
+    },
+    {
+      "tag": "H2",
+      "text": "Intelligence That Compounds.A Direction WorthBuilding Toward.",
+      "visible": true
+    }
+  ],
+  "images": [
+    {
+      "complete": true,
+      "src": "/brand/cumulative-labs-horizontal.svg",
+      "width": 1450
+    },
+    {
+      "complete": true,
+      "src": "/brand/cumulative-labs-symbol.svg",
+      "width": 200
+    },
+    {
+      "complete": true,
+      "src": "/brand/cumulative-labs-symbol.svg",
+      "width": 200
+    },
+    {
+      "complete": true,
+      "src": "/brand/cumulative-labs-symbol.svg",
+      "width": 200
+    }
+  ],
+  "media": [
+    "@media (prefers-reduced-motion: reduce) {\n  html { scroll-behavior: auto; }\n  *, ::before, ::after { scroll-behavior: auto !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }\n  [data-reveal].is-reveal-ready { opacity: 1; transform: none; }\n}",
+    "@media (prefers-reduced-motion: reduce) {\n  .visual-field__thread, .visual-field__fallback-particle { animation: auto ease 0s 1 normal none running none !important; }\n  .visual-field__pointer-light { display: none; }\n  .visual-field__particle-canvas { opacity: 0.8; }\n}",
+    "@media (prefers-reduced-motion: reduce) {\n  .approach-stage, .system-card, .principle-card { transition: none; }\n}",
+    "@media (prefers-reduced-motion: reduce) {\n  .visual-field__particle-canvas { transform: none; }\n}",
+    "@media (prefers-reduced-motion: reduce) {\n  .hero-section *, .hero-section ::before, .hero-section ::after { animation: auto ease 0s 1 normal none running none !important; }\n}"
+  ],
+  "scrollWidth": 390,
+  "styles": [
+    {
+      "color": "rgb(212, 219, 229)",
+      "fontSize": "16px",
+      "height": 105.59375,
+      "lineHeight": "26.4px",
+      "text": "Cumulative Labs is developing AI research systems designed to preserve verified knowledge—so each new task can build on useful findings from the last."
+    },
+    {
+      "color": "rgb(174, 185, 203)",
+      "fontSize": "14.4px",
+      "height": 46.0625,
+      "lineHeight": "23.04px",
+      "text": "Our first applied proving ground: League Vector, a dynasty fantasy football product in development."
+    },
+    {
+      "color": "rgb(248, 250, 252)",
+      "fontSize": "11.52px",
+      "height": 50.3984375,
+      "lineHeight": "11.52px",
+      "text": "See What We’re Building↗"
+    },
+    {
+      "color": "rgb(248, 250, 252)",
+      "fontSize": "11.52px",
+      "height": 50.3984375,
+      "lineHeight": "11.52px",
+      "text": "Contact the Lab"
+    },
+    {
+      "color": "rgb(184, 196, 212)",
+      "fontSize": "16px",
+      "height": 52.796875,
+      "lineHeight": "26.4px",
+      "text": "Claims should be supported, challenged, and traceable."
+    },
+    {
+      "color": "rgb(184, 196, 212)",
+      "fontSize": "16px",
+      "height": 79.1953125,
+      "lineHeight": "26.4px",
+      "text": "Useful discoveries should remain available beyond the task that produced them."
+    },
+    {
+      "color": "rgb(184, 196, 212)",
+      "fontSize": "16px",
+      "height": 52.796875,
+      "lineHeight": "26.4px",
+      "text": "Improvement should be demonstrated rather than assumed."
+    },
+    {
+      "color": "rgb(184, 196, 212)",
+      "fontSize": "16px",
+      "height": 52.796875,
+      "lineHeight": "26.4px",
+      "text": "Each completed cycle should leave future work in a stronger position."
+    },
+    {
+      "color": "rgb(184, 196, 212)",
+      "fontSize": "16px",
+      "height": 79.1953125,
+      "lineHeight": "26.4px",
+      "text": "Be explicit about uncertainty, evidence, limitations, and what has actually been demonstrated."
+    },
+    {
+      "color": "rgb(248, 250, 252)",
+      "fontSize": "11.52px",
+      "height": 52,
+      "lineHeight": "11.52px",
+      "text": "Contact Cumulative Labs→"
+    }
+  ],
+  "width": 390
+}

@@ -1,0 +1,167 @@
+[
+  {
+    "file": "after-1024.png",
+    "bytes": 68021,
+    "sha256": "371b78e30fc2bc45f04045c3b03d179213b2f8a959deadff60559c4ad7d9ab98"
+  },
+  {
+    "file": "after-320.png",
+    "bytes": 33187,
+    "sha256": "3bfbf2b36b6237c0abdda2e032f710c28a57b99ade36ae9c52824bf5ffe2ead3"
+  },
+  {
+    "file": "after-768.png",
+    "bytes": 62980,
+    "sha256": "f792e04a559946556db2dd48f68f8a1fb67ac0fed5916b50fd5e44793e93faad"
+  },
+  {
+    "file": "after-desktop-example.png",
+    "bytes": 86126,
+    "sha256": "82dc9bd02dc9a3de541d768695fc027fc23844cac8917df634449fcd34855d5c"
+  },
+  {
+    "file": "after-desktop-full.png",
+    "bytes": 451018,
+    "sha256": "f9f55a15a67685edfb43b76db4cc85570031356b63298f4e362417a15b1c523c"
+  },
+  {
+    "file": "after-desktop-work.png",
+    "bytes": 87510,
+    "sha256": "c5e4a706c95df64a2de3e54237dd5041d78a68bc86a98e983bbfb10ae4ccfb3d"
+  },
+  {
+    "file": "after-desktop.png",
+    "bytes": 87020,
+    "sha256": "19abf82e7960b9e1d9011b04e77651bbe1dfc357f09adfb5bd8c0d2e57eb4cd2"
+  },
+  {
+    "file": "after-keyboard-focus.png",
+    "bytes": 70280,
+    "sha256": "e47ec11931db26b4150a98db1e1a6d297fe54c4ae22c19c83da7e64ebf20695a"
+  },
+  {
+    "file": "after-mobile-dom.json",
+    "bytes": 7002,
+    "sha256": "2e577af8eac3d8d90eeef801dd2c087821b3ac68d0bba7f4303c6bfe0a54865d"
+  },
+  {
+    "file": "after-mobile-example.png",
+    "bytes": 41602,
+    "sha256": "a68990db350e23897312e807a4b98c5e37ee6c91a293f5681e9de5eefe4a28fc"
+  },
+  {
+    "file": "after-mobile-footer.png",
+    "bytes": 33663,
+    "sha256": "12e6e7fe1a188a71ab01d0238d7aa175b9e38db7dcd529bdccbfaac27b8f406f"
+  },
+  {
+    "file": "after-mobile-full.png",
+    "bytes": 299413,
+    "sha256": "6c02980371155b8ef6f3c9b5c3418c111ce4d6e7d2a53c79b5d0d3be71179274"
+  },
+  {
+    "file": "after-mobile-menu.png",
+    "bytes": 16028,
+    "sha256": "2864f6eeeea891375abb6de2118413295349c30b233cf772043747f8d1c79b1e"
+  },
+  {
+    "file": "after-mobile-work.png",
+    "bytes": 45187,
+    "sha256": "c5ca387035d7555cea26ea8b5e64be0ffa1b8b9272067e1a118eddc141a86c90"
+  },
+  {
+    "file": "after-mobile.png",
+    "bytes": 38285,
+    "sha256": "21bdc0436457bbee4713295697e543f1b24854edb884830ac597d6b8f57f4065"
+  },
+  {
+    "file": "after-og.jpg",
+    "bytes": 40305,
+    "sha256": "07efccf936ec9fc4315d3f2832572637e374336cd1418d252e30e1d4df0dc1e2"
+  },
+  {
+    "file": "baseline-source-comparison.json",
+    "bytes": 2001,
+    "sha256": "8f3ad63550b890cd522230d31e7e2e2912676dd41197cb4d58f875ac5798f5e6"
+  },
+  {
+    "file": "before-desktop-work.png",
+    "bytes": 112881,
+    "sha256": "83624053834377cf251932f46974c5e61fa20ffdafd41857540d08b9670d683b"
+  },
+  {
+    "file": "before-desktop.png",
+    "bytes": 100779,
+    "sha256": "76dd7de0573703f45799b3c4389646e15b6aaef5e91846370285e1b651e6eb16"
+  },
+  {
+    "file": "before-dom.json",
+    "bytes": 6487,
+    "sha256": "49f1dfd66f7ce406653bd7f50de3c2bc9144e51a1c32202465da3d5eae1e14bc"
+  },
+  {
+    "file": "before-mobile-menu.png",
+    "bytes": 16297,
+    "sha256": "2eab97f74bbd644b807134796cf8c42edd16826310c5499fd6fc5508958981cf"
+  },
+  {
+    "file": "before-mobile.png",
+    "bytes": 30329,
+    "sha256": "dd10262379c5f10ddd7436ed6c05502ce943c93714d4d791a76c44babc8891b4"
+  },
+  {
+    "file": "before-og.jpg",
+    "bytes": 13971,
+    "sha256": "abc73f1a01a6f5b368fac7037a876dcb48d5455d10565ef9be9ff59699d82b9b"
+  },
+  {
+    "file": "build-manifest.json",
+    "bytes": 4227,
+    "sha256": "0e8a89eab7fc57697c2e656d335a2681b44dfed75d0100ecd354fede438fe5c0"
+  },
+  {
+    "file": "http-audit.json",
+    "bytes": 3481,
+    "sha256": "80d5fd86a376030872cc289e0070ce5fe375f7977e569978dc1f909bd0aad699"
+  },
+  {
+    "file": "keyboard-focus.json",
+    "bytes": 251,
+    "sha256": "cc76600b3bef76e64b08917a0a6d2b7ddfde8d44d2c1593591fdf436d7730aeb"
+  },
+  {
+    "file": "lighthouse-after.json",
+    "bytes": 43459,
+    "sha256": "c0ace90312672a5ba408b628ceb36fc3e455e22c4fde9ba215c1058942eb8881"
+  },
+  {
+    "file": "lighthouse-before.json",
+    "bytes": 45093,
+    "sha256": "7362934a15b8d838771d2409bf1dd7d28433e2afde8ccf011fa1290a5c838069"
+  },
+  {
+    "file": "live-robots.txt",
+    "bytes": 1908,
+    "sha256": "3dd17b9f921e466410457ea405b90893fd05090c67ef9668372ca7f8b0bf9514"
+  },
+  {
+    "file": "state.json",
+    "bytes": 414,
+    "sha256": "6a11bc831df9b1c3c6f043502e2ff613f19a744dd10f5a58bde8d3f459a1cfaa"
+  },
+  {
+    "file": "verification.json",
+    "bytes": 314,
+    "sha256": "57f7c86527e796f7bae907bed3d2cc1fba36051de439863b6b46527b93918cd4"
+  },
+  {
+    "file": "verification.txt",
+    "bytes": 1436,
+    "sha256": "1e7e02725fe4a2193d231d65e0f8ebb545f05e248ae0007608fefb3602b09c3e"
+  },
+  {
+    "file": "www-522.png",
+    "bytes": 31974,
+    "sha256": "b9746fb76fe2d6389cc36f5de2e59472396fa369de2aea7bd30621dc78af3a49"
+  }
+]

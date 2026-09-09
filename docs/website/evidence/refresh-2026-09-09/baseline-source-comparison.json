@@ -1,0 +1,58 @@
+[
+  {
+    "path": "index.html",
+    "httpSuccess": true,
+    "bytes": 2208,
+    "liveSha256": "66204dad19b1c4a706ecbfc3340234c49768827a62d28b97304699a11f4eeaaf",
+    "localSha256": "66204dad19b1c4a706ecbfc3340234c49768827a62d28b97304699a11f4eeaaf",
+    "identical": true
+  },
+  {
+    "path": "assets/index-CAPnqrQ5.js",
+    "httpSuccess": true,
+    "bytes": 223442,
+    "liveSha256": "997c94ddd75f21f3e0415d700962634d546397c0dc76a16396f7c49af34699c6",
+    "localSha256": "997c94ddd75f21f3e0415d700962634d546397c0dc76a16396f7c49af34699c6",
+    "identical": true
+  },
+  {
+    "path": "assets/index-jQxoqg5m.css",
+    "httpSuccess": true,
+    "bytes": 51824,
+    "liveSha256": "95a0671d4e95bcd340e078b3ae69b5b8e6bb302b1811ced983c118f364dd676c",
+    "localSha256": "95a0671d4e95bcd340e078b3ae69b5b8e6bb302b1811ced983c118f364dd676c",
+    "identical": true
+  },
+  {
+    "path": "robots.txt",
+    "httpSuccess": true,
+    "bytes": 1908,
+    "liveSha256": "3dd17b9f921e466410457ea405b90893fd05090c67ef9668372ca7f8b0bf9514",
+    "localSha256": "9a5bee5d89f2b1632053cd3c89e99717bdd473363ae93673c65793aa7aa6ea43",
+    "identical": false
+  },
+  {
+    "path": "sitemap.xml",
+    "httpSuccess": true,
+    "bytes": 170,
+    "liveSha256": "e3fe20561b7c4de3c3b1125e76c306806755bd764f0125640d97d76810b1bb46",
+    "localSha256": "e3fe20561b7c4de3c3b1125e76c306806755bd764f0125640d97d76810b1bb46",
+    "identical": true
+  },
+  {
+    "path": "brand/cumulative-labs-horizontal.svg",
+    "httpSuccess": true,
+    "bytes": 6402,
+    "liveSha256": "24f32afc84a80cba6ff5a8a48e727670ce58cf1d83ef95f8356a2b2ea99ea85b",
+    "localSha256": "24f32afc84a80cba6ff5a8a48e727670ce58cf1d83ef95f8356a2b2ea99ea85b",
+    "identical": true
+  },
+  {
+    "path": "brand/cumulative-labs-symbol.svg",
+    "httpSuccess": true,
+    "bytes": 1953,
+    "liveSha256": "c8e56446965a7881e9dc1b6e612d89a469d77ef27b0e7cbb661f572a18969be3",
+    "localSha256": "c8e56446965a7881e9dc1b6e612d89a469d77ef27b0e7cbb661f572a18969be3",
+    "identical": true
+  }
+]

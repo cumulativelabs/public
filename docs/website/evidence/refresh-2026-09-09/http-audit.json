@@ -1,0 +1,122 @@
+[
+  {
+    "url": "http://cumulativelabs.com",
+    "url_effective": "https://cumulativelabs.com/",
+    "http_code": 200,
+    "num_redirects": 1,
+    "ssl_verify_result": 0,
+    "size_download": 2208,
+    "time_total": 0.391585,
+    "content_type": "text/html; charset=utf-8",
+    "remote_ip": "104.21.90.235",
+    "error": ""
+  },
+  {
+    "url": "https://cumulativelabs.com",
+    "url_effective": "https://cumulativelabs.com/",
+    "http_code": 200,
+    "num_redirects": 0,
+    "ssl_verify_result": 0,
+    "size_download": 2208,
+    "time_total": 0.234697,
+    "content_type": "text/html; charset=utf-8",
+    "remote_ip": "104.21.90.235",
+    "error": ""
+  },
+  {
+    "url": "http://www.cumulativelabs.com",
+    "url_effective": "http://www.cumulativelabs.com/",
+    "http_code": 522,
+    "num_redirects": 0,
+    "ssl_verify_result": 0,
+    "size_download": 16,
+    "time_total": 0.26863,
+    "content_type": "text/plain; charset=UTF-8",
+    "remote_ip": "104.21.90.235",
+    "error": ""
+  },
+  {
+    "url": "https://www.cumulativelabs.com",
+    "url_effective": "https://www.cumulativelabs.com/",
+    "http_code": 522,
+    "num_redirects": 0,
+    "ssl_verify_result": 0,
+    "size_download": 16,
+    "time_total": 0.160108,
+    "content_type": "text/plain; charset=UTF-8",
+    "remote_ip": "104.21.90.235",
+    "error": ""
+  },
+  {
+    "url": "https://cumulativelabs.com/robots.txt",
+    "url_effective": "https://cumulativelabs.com/robots.txt",
+    "http_code": 200,
+    "num_redirects": 0,
+    "ssl_verify_result": 0,
+    "size_download": 1908,
+    "time_total": 0.23347,
+    "content_type": "text/plain; charset=utf-8",
+    "remote_ip": "104.21.90.235",
+    "error": ""
+  },
+  {
+    "url": "https://cumulativelabs.com/sitemap.xml",
+    "url_effective": "https://cumulativelabs.com/sitemap.xml",
+    "http_code": 200,
+    "num_redirects": 0,
+    "ssl_verify_result": 0,
+    "size_download": 170,
+    "time_total": 0.323028,
+    "content_type": "application/xml",
+    "remote_ip": "104.21.90.235",
+    "error": ""
+  },
+  {
+    "url": "https://cumulativelabs.com/site.webmanifest",
+    "url_effective": "https://cumulativelabs.com/site.webmanifest",
+    "http_code": 200,
+    "num_redirects": 0,
+    "ssl_verify_result": 0,
+    "size_download": 394,
+    "time_total": 0.22927,
+    "content_type": "application/manifest+json",
+    "remote_ip": "104.21.90.235",
+    "error": ""
+  },
+  {
+    "url": "https://cumulativelabs.com/favicons/favicon.svg",
+    "url_effective": "https://cumulativelabs.com/favicons/favicon.svg",
+    "http_code": 200,
+    "num_redirects": 0,
+    "ssl_verify_result": 0,
+    "size_download": 1953,
+    "time_total": 0.238668,
+    "content_type": "image/svg+xml",
+    "remote_ip": "104.21.90.235",
+    "error": ""
+  },
+  {
+    "url": "https://cumulativelabs.com/favicons/apple-touch-icon.png",
+    "url_effective": "https://cumulativelabs.com/favicons/apple-touch-icon.png",
+    "http_code": 200,
+    "num_redirects": 0,
+    "ssl_verify_result": 0,
+    "size_download": 13045,
+    "time_total": 0.210824,
+    "content_type": "image/png",
+    "remote_ip": "104.21.90.235",
+    "error": ""
+  },
+  {
+    "url": "https://cumulativelabs.com/og/cumulative-labs-og.jpg",
+    "url_effective": "https://cumulativelabs.com/og/cumulative-labs-og.jpg",
+    "http_code": 200,
+    "num_redirects": 0,
+    "ssl_verify_result": 0,
+    "size_download": 13971,
+    "time_total": 0.335226,
+    "content_type": "image/jpeg",
+    "remote_ip": "104.21.90.235",
+    "error": ""
+  }
+]

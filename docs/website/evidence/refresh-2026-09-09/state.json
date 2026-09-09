@@ -1,0 +1,8 @@
+{
+  "implementationCommit": "f74db63931452a845f2c9799d8774b0034ba6ad4",
+  "startingCommit": "4e514b8ee0fb4349a89efcddcfe10adbb225a124",
+  "branch": "website-refresh-draft-2026-09-09",
+  "independentQA": false,
+  "deployed": false,
+  "evidenceNote": "Chrome viewport screenshots; no physical iPhone or OS reduced-motion emulation. Lighthouse after is final application bytes, before the social JPEG replacement."
+}
