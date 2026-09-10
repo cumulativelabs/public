@@ -13,7 +13,7 @@ export function ApproachSection() {
 
         <ol className="approach-path">
           {site.approach.stages.map((stage, index) => (
-            <li key={stage.title} className="approach-stage" data-reveal tabIndex={0}>
+            <li key={stage.title} className="approach-stage" data-reveal>
               <span className="approach-stage__number">{stage.number}</span>
               <div className="approach-stage__icon">
                 <LineIcon name={stage.icon} />

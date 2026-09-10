@@ -1,6 +1,6 @@
 # Cumulative Labs Public Website
 
-This repository contains the public website for Cumulative Labs. It is a static Vite, React, and TypeScript project with handcrafted CSS and lightweight SVG/CSS motion.
+This repository contains the public website for Cumulative Labs. It is a static Vite, React, and TypeScript project with handcrafted CSS and lightweight SVG/CSS motion. The production build prerenders the public homepage into HTML; React hydrates its navigation and ambient effects in the browser. No runtime server is required.
 
 ## Local development
 

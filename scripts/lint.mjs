@@ -48,11 +48,12 @@ for (const file of files) {
     }
   }
 
-  contactOccurrences += content.split(contactLiteral).length - 1;
+  // Historical documents and captured audit evidence may quote the public address.
+  if (display.startsWith('src/')) contactOccurrences += content.split(contactLiteral).length - 1;
 }
 
 if (contactOccurrences !== 1) {
-  failures.push(`Public contact address must appear exactly once in scanned source; found ${contactOccurrences}`);
+  failures.push(`Public contact address must appear exactly once in application source; found ${contactOccurrences}`);
 }
 
 if (failures.length > 0) {

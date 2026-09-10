@@ -13,7 +13,7 @@ export function PrinciplesSection() {
 
         <div className="principles-grid">
           {site.principles.items.map((principle, index) => (
-            <article className="principle-card" key={principle.title} data-reveal tabIndex={0}>
+            <article className="principle-card" key={principle.title} data-reveal>
               <span className="principle-card__number">0{index + 1}</span>
               <div className="principle-card__icon">
                 <LineIcon name={principle.icon} />

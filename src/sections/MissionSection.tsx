@@ -1,17 +1,15 @@
 import { GradientText } from '../components/GradientText';
 import { SectionLabel } from '../components/SectionLabel';
-import { VisualField } from '../components/VisualField';
 import { site } from '../content/site';
 
 export function MissionSection() {
   return (
     <section id="mission" className="mission-section section" data-visual-phase="explore">
-      <VisualField phase="explore" compact className="mission-section__field" />
       <div className="shell shell--wide mission-section__layout">
         <div className="mission-section__copy" data-reveal>
           <SectionLabel>{site.mission.label}</SectionLabel>
           <h2 className="display-heading">
-            <span>{site.mission.headline[0]}</span>
+            <span>{site.mission.headline[0]}{' '}</span>
             <GradientText>{site.mission.headline[1]}</GradientText>
           </h2>
           <p className="body-large">{site.mission.body}</p>

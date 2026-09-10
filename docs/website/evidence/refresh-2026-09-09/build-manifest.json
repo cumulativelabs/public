@@ -1,0 +1,156 @@
+[
+  {
+    "build": "before",
+    "path": "assets/index-CAPnqrQ5.js",
+    "bytes": 223442,
+    "gzipBytes": 70166,
+    "sha256": "997c94ddd75f21f3e0415d700962634d546397c0dc76a16396f7c49af34699c6"
+  },
+  {
+    "build": "before",
+    "path": "assets/index-jQxoqg5m.css",
+    "bytes": 51824,
+    "gzipBytes": 11294,
+    "sha256": "95a0671d4e95bcd340e078b3ae69b5b8e6bb302b1811ced983c118f364dd676c"
+  },
+  {
+    "build": "before",
+    "path": "brand/cumulative-labs-horizontal.svg",
+    "bytes": 6402,
+    "gzipBytes": 2516,
+    "sha256": "24f32afc84a80cba6ff5a8a48e727670ce58cf1d83ef95f8356a2b2ea99ea85b"
+  },
+  {
+    "build": "before",
+    "path": "brand/cumulative-labs-symbol.svg",
+    "bytes": 1953,
+    "gzipBytes": 606,
+    "sha256": "c8e56446965a7881e9dc1b6e612d89a469d77ef27b0e7cbb661f572a18969be3"
+  },
+  {
+    "build": "before",
+    "path": "favicons/apple-touch-icon.png",
+    "bytes": 13045,
+    "gzipBytes": 12913,
+    "sha256": "266251f48a9518e2a1cf65fd3767c7ae74a598cf02081ee72fba58bb1ec0cbc2"
+  },
+  {
+    "build": "before",
+    "path": "favicons/favicon.svg",
+    "bytes": 1953,
+    "gzipBytes": 606,
+    "sha256": "c8e56446965a7881e9dc1b6e612d89a469d77ef27b0e7cbb661f572a18969be3"
+  },
+  {
+    "build": "before",
+    "path": "index.html",
+    "bytes": 2208,
+    "gzipBytes": 658,
+    "sha256": "66204dad19b1c4a706ecbfc3340234c49768827a62d28b97304699a11f4eeaaf"
+  },
+  {
+    "build": "before",
+    "path": "og/cumulative-labs-og.jpg",
+    "bytes": 13971,
+    "gzipBytes": 9633,
+    "sha256": "abc73f1a01a6f5b368fac7037a876dcb48d5455d10565ef9be9ff59699d82b9b"
+  },
+  {
+    "build": "before",
+    "path": "robots.txt",
+    "bytes": 72,
+    "gzipBytes": 88,
+    "sha256": "9a5bee5d89f2b1632053cd3c89e99717bdd473363ae93673c65793aa7aa6ea43"
+  },
+  {
+    "build": "before",
+    "path": "site.webmanifest",
+    "bytes": 394,
+    "gzipBytes": 239,
+    "sha256": "934f4116800fb7c53d5e3046cf6eae7cf93b81a040654eccfd5e810afa3510a4"
+  },
+  {
+    "build": "before",
+    "path": "sitemap.xml",
+    "bytes": 170,
+    "gzipBytes": 152,
+    "sha256": "e3fe20561b7c4de3c3b1125e76c306806755bd764f0125640d97d76810b1bb46"
+  },
+  {
+    "build": "after",
+    "path": "assets/index-BU9t4Rmq.css",
+    "bytes": 63505,
+    "gzipBytes": 13249,
+    "sha256": "ee60496ffa0a515bd716618aaa6eb798ba32b3edc1e42bae299cc7d28dac9824"
+  },
+  {
+    "build": "after",
+    "path": "assets/index-DBTLrqTR.js",
+    "bytes": 223514,
+    "gzipBytes": 70210,
+    "sha256": "918b57347d663c95c02ed460f1359ae032a8e28d0d36855393e991efb237f9d8"
+  },
+  {
+    "build": "after",
+    "path": "brand/cumulative-labs-horizontal.svg",
+    "bytes": 6402,
+    "gzipBytes": 2516,
+    "sha256": "24f32afc84a80cba6ff5a8a48e727670ce58cf1d83ef95f8356a2b2ea99ea85b"
+  },
+  {
+    "build": "after",
+    "path": "brand/cumulative-labs-symbol.svg",
+    "bytes": 1953,
+    "gzipBytes": 606,
+    "sha256": "c8e56446965a7881e9dc1b6e612d89a469d77ef27b0e7cbb661f572a18969be3"
+  },
+  {
+    "build": "after",
+    "path": "favicons/apple-touch-icon.png",
+    "bytes": 13045,
+    "gzipBytes": 12913,
+    "sha256": "266251f48a9518e2a1cf65fd3767c7ae74a598cf02081ee72fba58bb1ec0cbc2"
+  },
+  {
+    "build": "after",
+    "path": "favicons/favicon.svg",
+    "bytes": 1953,
+    "gzipBytes": 606,
+    "sha256": "c8e56446965a7881e9dc1b6e612d89a469d77ef27b0e7cbb661f572a18969be3"
+  },
+  {
+    "build": "after",
+    "path": "index.html",
+    "bytes": 40265,
+    "gzipBytes": 9010,
+    "sha256": "7edc1faf46dadc018e044936e5f62a11bb4f3705120771b0e02ea0f09ea59fd3"
+  },
+  {
+    "build": "after",
+    "path": "og/cumulative-labs-og.jpg",
+    "bytes": 40305,
+    "gzipBytes": 38585,
+    "sha256": "07efccf936ec9fc4315d3f2832572637e374336cd1418d252e30e1d4df0dc1e2"
+  },
+  {
+    "build": "after",
+    "path": "robots.txt",
+    "bytes": 72,
+    "gzipBytes": 88,
+    "sha256": "9a5bee5d89f2b1632053cd3c89e99717bdd473363ae93673c65793aa7aa6ea43"
+  },
+  {
+    "build": "after",
+    "path": "site.webmanifest",
+    "bytes": 394,
+    "gzipBytes": 239,
+    "sha256": "934f4116800fb7c53d5e3046cf6eae7cf93b81a040654eccfd5e810afa3510a4"
+  },
+  {
+    "build": "after",
+    "path": "sitemap.xml",
+    "bytes": 170,
+    "gzipBytes": 152,
+    "sha256": "e3fe20561b7c4de3c3b1125e76c306806755bd764f0125640d97d76810b1bb46"
+  }
+]

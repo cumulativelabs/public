@@ -5,6 +5,7 @@ import { ClosingManifesto } from './sections/ClosingManifesto';
 import { HeroSection } from './sections/HeroSection';
 import { MissionSection } from './sections/MissionSection';
 import { PrinciplesSection } from './sections/PrinciplesSection';
+import { ExampleSection } from './sections/ExampleSection';
 import { WorkSection } from './sections/WorkSection';
 
 export default function App() {
@@ -13,14 +14,15 @@ export default function App() {
   return (
     <div className="site-canvas site-canvas--master">
       <SiteHeader />
-      <main id="main-content">
+      <main id="main-content" tabIndex={-1}>
         <HeroSection />
+        <WorkSection />
         <MissionSection />
         <ApproachSection />
-        <WorkSection />
+        <ExampleSection />
         <PrinciplesSection />
-        <ClosingManifesto />
       </main>
+      <ClosingManifesto />
     </div>
   );
 }

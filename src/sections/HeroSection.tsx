@@ -6,17 +6,18 @@ import { site } from '../content/site';
 export function HeroSection() {
   return (
     <section id="top" className="hero-section" data-visual-phase="scatter">
-      <VisualField phase="scatter" className="hero-section__field" />
+      <VisualField phase="scatter" compact className="hero-section__field" />
       <div className="hero-section__horizon" aria-hidden="true" />
       <div className="shell shell--wide hero-section__inner">
         <div className="hero-section__copy" data-reveal>
           <p className="hero-section__eyebrow">{site.hero.eyebrow}</p>
           <h1>
-            <span>{site.hero.headline[0]}</span>
-            <span>{site.hero.headline[1]}</span>
+            <span>{site.hero.headline[0]}{' '}</span>
+            <span>{site.hero.headline[1]}{' '}</span>
             <GradientText>{site.hero.headline[2]}</GradientText>
           </h1>
           <p className="hero-section__body">{site.hero.body}</p>
+          <p className="hero-section__support">{site.hero.support}</p>
           <div className="hero-section__actions">
             <a className="button button--primary" href={site.hero.primaryAction.href}>
               {site.hero.primaryAction.label}
@@ -35,7 +36,7 @@ export function HeroSection() {
         </div>
       </div>
 
-      <a className="scroll-indicator" href="#mission">
+      <a className="scroll-indicator" href="#work">
         <span>Scroll to explore</span>
         <i aria-hidden="true" />
       </a>

@@ -1,19 +1,18 @@
 import { BrandSymbol } from '../components/BrandSymbol';
 import { GradientText } from '../components/GradientText';
-import { VisualField } from '../components/VisualField';
 import { contactHref, site } from '../content/site';
 
 export function ClosingManifesto() {
   return (
-    <section id="contact" className="closing-section section" data-visual-phase="compound">
-      <VisualField phase="compound" className="closing-section__field" />
+    <footer id="contact" className="closing-section section" data-visual-phase="compound">
       <div className="shell shell--wide closing-section__master-grid">
         <div className="closing-section__copy" data-reveal>
           <h2>
-            <span>{site.closing.headline[0]}</span>
-            <span>{site.closing.headline[1]}</span>
+            <span>{site.closing.headline[0]}{' '}</span>
+            <span>{site.closing.headline[1]}{' '}</span>
             <GradientText>{site.closing.headline[2]}</GradientText>
           </h2>
+          <p className="closing-section__body">{site.closing.body}</p>
           <a className="button button--secondary" href={contactHref}>
             {site.closing.actionLabel}
             <span aria-hidden="true">→</span>
@@ -39,6 +38,6 @@ export function ClosingManifesto() {
         <p>{site.footer.copyright}</p>
         <p>{site.footer.signature}</p>
       </div>
-    </section>
+    </footer>
   );
 }
