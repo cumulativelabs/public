@@ -28,7 +28,7 @@ export const site = {
   mission: {
     label: 'Why Cumulative Intelligence',
     headline: ['Good Work Should', 'Carry Forward.'],
-    body: 'A useful conclusion can outlast the task that produced it. We’re exploring how to preserve findings that survive scrutiny, keep them traceable, and make them available to future work.',
+    body: 'Starting with a supported conclusion leaves more room to investigate what has changed.',
   },
   whyCumulative: {
     contrasts: [
@@ -83,14 +83,14 @@ export const site = {
   work: {
     label: 'What We’re Building',
     headline: ['One Research Mission.', 'Two Layers of Work.'],
-    intro: 'Our underlying research explores how knowledge can endure. League Vector is our first applied product for testing that idea in a changing decision environment.',
+    intro: 'An underlying research effort and its first applied product.',
     systems: [
       {
         title: 'Private Research System',
         descriptor: 'Cumulative Labs Research',
         status: 'Active Research',
-        body: 'An environment we’re developing to help AI research build on retained evidence.',
-        detail: 'The goal is to preserve useful findings, keep them traceable, and make them available to future work.',
+        body: 'An environment we’re developing to study cumulative intelligence.',
+        detail: '',
       },
       {
         title: 'League Vector',
@@ -104,13 +104,13 @@ export const site = {
   example: {
     label: 'How the Idea Works',
     headline: 'A conclusion can change. The learning can stay.',
-    scenario: 'Suppose a research team is comparing two routes for a delivery. An early report favors Route A. A later report reveals a closure.',
+    scenario: 'Suppose a team is choosing a delivery route, then planning another delivery a week later.',
     stages: [
-      { title: 'New evidence', body: 'A road-closure report challenges the original route choice.' },
-      { title: 'Claim evaluated', body: 'Check whether the report applies to this route and delivery date.' },
-      { title: 'Conclusion revised', body: 'If the closure is confirmed, Route A is no longer the supported choice.' },
-      { title: 'Finding retained', body: 'Keep the updated conclusion with its evidence and date limits.' },
-      { title: 'Future work can use it', body: 'The next route review can use that finding—and check whether it still holds.' },
+      { title: 'Task 1 · Discover', body: 'An early report favors Route A. A closure notice challenges that choice.' },
+      { title: 'Check and revise', body: 'The team confirms the closure applies to the route and delivery date, ruling out A.' },
+      { title: 'Retain the finding', body: 'It saves that conclusion with the source notice, review date, and affected dates.' },
+      { title: 'Task 2 · Reuse', body: 'A week later, the team retrieves the finding and checks the notice is still current and covers the new delivery date. It reuses the prior analysis.' },
+      { title: 'Update again', body: 'Without repeating the completed analysis, it investigates changes. A new reopening notice makes A eligible; it revises the finding with that source.' },
     ],
     caption: 'Illustrative example of the cumulative-intelligence concept. This hypothetical scenario is not a product demonstration or a claim of autonomous improvement or production-scale performance.',
   },
@@ -125,7 +125,7 @@ export const site = {
       },
       {
         title: 'Knowledge That Survives',
-        body: 'Useful discoveries should remain available beyond the task that produced them.',
+        body: 'Retained findings should include their sources and limits.',
         icon: 'layers',
       },
       {
@@ -135,7 +135,7 @@ export const site = {
       },
       {
         title: 'Built for the Long Term',
-        body: 'Each completed cycle should leave future work in a stronger position.',
+        body: 'Favor durable understanding over short-lived gains.',
         icon: 'cycle',
       },
       {
@@ -148,7 +148,7 @@ export const site = {
   closing: {
     headline: [
       'Intelligence That Compounds.',
-      'A Direction Worth',
+      'That’s What We’re',
       'Building Toward.',
     ],
     body: 'Interested in research collaboration or what we’re building? Get in touch with Cumulative Labs.',

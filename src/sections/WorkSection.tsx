@@ -22,7 +22,7 @@ export function WorkSection() {
             <h3>{system.title}</h3>
             <div className="system-card__copy">
               <p>{system.body}</p>
-              <p className="system-card__detail">{system.detail}</p>
+              {system.detail && <p className="system-card__detail">{system.detail}</p>}
             </div>
           </article>
         ))}

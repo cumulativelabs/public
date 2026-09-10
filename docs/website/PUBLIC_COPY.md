@@ -48,7 +48,7 @@ Good Work Should
 
 Carry Forward.
 
-A useful conclusion can outlast the task that produced it. We’re exploring how to preserve findings that survive scrutiny, keep them traceable, and make them available to future work.
+Starting with a supported conclusion leaves more room to investigate what has changed.
 
 Starting over
 
@@ -92,7 +92,7 @@ One Research Mission.
 
 Two Layers of Work.
 
-Our underlying research explores how knowledge can endure. League Vector is our first applied product for testing that idea in a changing decision environment.
+An underlying research effort and its first applied product.
 
 Private Research System
 
@@ -100,9 +100,7 @@ Cumulative Labs Research
 
 Active Research
 
-An environment we’re developing to help AI research build on retained evidence.
-
-The goal is to preserve useful findings, keep them traceable, and make them available to future work.
+An environment we’re developing to study cumulative intelligence.
 
 League Vector
 
@@ -120,27 +118,27 @@ How the Idea Works
 
 A conclusion can change. The learning can stay.
 
-Suppose a research team is comparing two routes for a delivery. An early report favors Route A. A later report reveals a closure.
+Suppose a team is choosing a delivery route, then planning another delivery a week later.
 
-New evidence
+Task 1 · Discover
 
-A road-closure report challenges the original route choice.
+An early report favors Route A. A closure notice challenges that choice.
 
-Claim evaluated
+Check and revise
 
-Check whether the report applies to this route and delivery date.
+The team confirms the closure applies to the route and delivery date, ruling out A.
 
-Conclusion revised
+Retain the finding
 
-If the closure is confirmed, Route A is no longer the supported choice.
+It saves that conclusion with the source notice, review date, and affected dates.
 
-Finding retained
+Task 2 · Reuse
 
-Keep the updated conclusion with its evidence and date limits.
+A week later, the team retrieves the finding and checks the notice is still current and covers the new delivery date. It reuses the prior analysis.
 
-Future work can use it
+Update again
 
-The next route review can use that finding—and check whether it still holds.
+Without repeating the completed analysis, it investigates changes. A new reopening notice makes A eligible; it revises the finding with that source.
 
 Illustrative example of the cumulative-intelligence concept. This hypothetical scenario is not a product demonstration or a claim of autonomous improvement or production-scale performance.
 
@@ -156,7 +154,7 @@ Claims should be supported, challenged, and traceable.
 
 Knowledge That Survives
 
-Useful discoveries should remain available beyond the task that produced them.
+Retained findings should include their sources and limits.
 
 Improvement You Can Measure
 
@@ -164,7 +162,7 @@ Improvement should be demonstrated rather than assumed.
 
 Built for the Long Term
 
-Each completed cycle should leave future work in a stronger position.
+Favor durable understanding over short-lived gains.
 
 Integrity in Every Cycle
 
@@ -174,7 +172,7 @@ Be explicit about uncertainty, evidence, limitations, and what has actually been
 
 Intelligence That Compounds.
 
-A Direction Worth
+That’s What We’re
 
 Building Toward.
 
