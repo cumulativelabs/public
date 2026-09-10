@@ -1,0 +1,19 @@
+{
+  "resized": {
+    "overflow": false,
+    "hero": 740.015625,
+    "mode": "autonomous"
+  },
+  "returned": {
+    "visualLayer": "knowledge",
+    "conceptual": "true",
+    "pointerActive": "true",
+    "renderMode": "interactive",
+    "pointerInteraction": "enabled",
+    "ready": "true",
+    "pointerX": "680.0",
+    "pointerY": "319.9"
+  },
+  "economy": "economy",
+  "method": "Real-time narrative screenshots; desktop-to-mobile-to-desktop viewport resize; synthetic 11ms draw cost to exercise the economy governor."
+}

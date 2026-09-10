@@ -1,13 +1,12 @@
 import { BrandSymbol } from '../components/BrandSymbol';
 import { GradientText } from '../components/GradientText';
-import { VisualField } from '../components/VisualField';
+import { HeroKnowledgeField } from '../components/HeroKnowledgeField';
 import { site } from '../content/site';
 
 export function HeroSection() {
   return (
     <section id="top" className="hero-section" data-visual-phase="scatter">
-      <VisualField phase="scatter" compact className="hero-section__field" />
-      <div className="hero-section__horizon" aria-hidden="true" />
+      <HeroKnowledgeField />
       <div className="shell shell--wide hero-section__inner">
         <div className="hero-section__copy" data-reveal>
           <p className="hero-section__eyebrow">{site.hero.eyebrow}</p>
@@ -30,8 +29,6 @@ export function HeroSection() {
         </div>
 
         <div className="hero-section__mark" aria-hidden="true" data-reveal>
-          <div className="hero-section__mark-orbit hero-section__mark-orbit--outer" />
-          <div className="hero-section__mark-orbit hero-section__mark-orbit--inner" />
           <BrandSymbol />
         </div>
       </div>

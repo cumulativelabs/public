@@ -1,0 +1,171 @@
+[
+  {
+    "name": "production",
+    "root": "<div class=\"visual-field visual-field--scatter visual-field--compact hero-section__field\" data-visual-layer=\"scatter\" data-pointer-interaction=\"disabled\" data-render-strategy=\"on-demand\" aria-hidden=\"true\" data-reduced-motion=\"false\" data-canvas-particles=\"86\" data-render-mode=\"static\"><div class=\"visual-field__bloom\"></div><div class=\"visual-field__fallback-particles\"><span class=\"visual-field__fallback-particle visual-field__fallback-particle--amber\" style=\"left:90.87593255608226%;top:71.61063",
+    "dataset": {
+      "visualLayer": "scatter",
+      "pointerInteraction": "disabled",
+      "renderStrategy": "on-demand",
+      "reducedMotion": "false",
+      "canvasParticles": "86",
+      "renderMode": "static"
+    },
+    "bounds": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 834.125,
+      "top": 0,
+      "right": 1440,
+      "bottom": 834.125,
+      "left": 0
+    },
+    "fine": true,
+    "reduced": false,
+    "canvas": [
+      1440,
+      834
+    ],
+    "rootOpacity": "0.6",
+    "canvasOpacity": "1",
+    "assets": [
+      "https://cumulativelabs.com/assets/index-BR4BnvYN.js",
+      "https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495"
+    ],
+    "heroHeight": 834.125,
+    "pointer": {
+      "events": 45,
+      "active": false,
+      "x": ""
+    },
+    "canvasChanged": false,
+    "beforeHash": "e9c0e1b471eb830b7c9aa620d8d998ee8eaa1df8b7e1c11f8ea581ab8296a2cd",
+    "afterHash": "e9c0e1b471eb830b7c9aa620d8d998ee8eaa1df8b7e1c11f8ea581ab8296a2cd",
+    "listenerTypes": [
+      "pointermove",
+      "pointermove",
+      "pointerleave"
+    ],
+    "errors": []
+  },
+  {
+    "name": "main-local",
+    "root": "<div class=\"visual-field visual-field--scatter visual-field--compact hero-section__field\" data-visual-layer=\"scatter\" data-pointer-interaction=\"disabled\" data-render-strategy=\"on-demand\" aria-hidden=\"true\" data-reduced-motion=\"false\" data-canvas-particles=\"86\" data-render-mode=\"static\"><div class=\"visual-field__bloom\"></div><div class=\"visual-field__fallback-particles\"><span class=\"visual-field__fallback-particle visual-field__fallback-particle--amber\" style=\"left:90.87593255608226%;top:71.61063",
+    "dataset": {
+      "visualLayer": "scatter",
+      "pointerInteraction": "disabled",
+      "renderStrategy": "on-demand",
+      "reducedMotion": "false",
+      "canvasParticles": "86",
+      "renderMode": "static"
+    },
+    "bounds": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 834.125,
+      "top": 0,
+      "right": 1440,
+      "bottom": 834.125,
+      "left": 0
+    },
+    "fine": true,
+    "reduced": false,
+    "canvas": [
+      1440,
+      834
+    ],
+    "rootOpacity": "0.6",
+    "canvasOpacity": "1",
+    "assets": [
+      "http://127.0.0.1:4179/assets/index-BR4BnvYN.js"
+    ],
+    "heroHeight": 834.125,
+    "pointer": {
+      "events": 45,
+      "active": false,
+      "x": ""
+    },
+    "canvasChanged": false,
+    "beforeHash": "e9c0e1b471eb830b7c9aa620d8d998ee8eaa1df8b7e1c11f8ea581ab8296a2cd",
+    "afterHash": "e9c0e1b471eb830b7c9aa620d8d998ee8eaa1df8b7e1c11f8ea581ab8296a2cd",
+    "listenerTypes": [
+      "pointermove",
+      "pointermove",
+      "pointerleave"
+    ],
+    "errors": []
+  },
+  {
+    "name": "production-webkit-390",
+    "geometry": {
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 780.6875,
+        "top": 0,
+        "right": 390,
+        "bottom": 780.6875,
+        "left": 0
+      },
+      "mark": {
+        "x": 147,
+        "y": 636.6875,
+        "width": 96,
+        "height": 96,
+        "top": 636.6875,
+        "right": 243,
+        "bottom": 732.6875,
+        "left": 147
+      },
+      "copy": {
+        "x": 20,
+        "y": 112.796875,
+        "width": 350,
+        "height": 495.890625,
+        "top": 112.796875,
+        "right": 370,
+        "bottom": 608.6875,
+        "left": 20
+      },
+      "overflow": false
+    }
+  },
+  {
+    "name": "production-webkit-430",
+    "geometry": {
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 430,
+        "height": 767.21875,
+        "top": 0,
+        "right": 430,
+        "bottom": 767.21875,
+        "left": 0
+      },
+      "mark": {
+        "x": 167,
+        "y": 623.21875,
+        "width": 96,
+        "height": 96,
+        "top": 623.21875,
+        "right": 263,
+        "bottom": 719.21875,
+        "left": 167
+      },
+      "copy": {
+        "x": 20,
+        "y": 112.796875,
+        "width": 390,
+        "height": 482.421875,
+        "top": 112.796875,
+        "right": 410,
+        "bottom": 595.21875,
+        "left": 20
+      },
+      "overflow": false
+    }
+  }
+]
