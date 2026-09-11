@@ -1,7 +1,7 @@
 {
   "TASK_ID": "CL-HERO-TABLET-CONTRAST-REMEDIATION-20260911-001",
   "TASK_TITLE": "Hero v2 - tablet seam and contrast remediation",
-  "TERMINAL_STATUS": "HANDOFF_CREATED; source REMOTE_PERSISTED; controller reconciliation PENDING",
+  "TERMINAL_STATUS": "REMOTE_PERSISTED",
   "STARTING_COMMIT": "2a6905b6656052fe4cbadf64fc2e1d6ef223f771",
   "BRANCH": "hero-visual-v2",
   "SUBSTANTIVE_COMMIT": "25e508b8301ecdc474821cc805095b68409819f4",
@@ -57,7 +57,7 @@
   "REMOTE_READBACK_STATUS": {
     "source_commit_tree_parent": "VERIFIED via remote Git API",
     "preview_bytes": "VERIFIED all9 returned files match local build",
-    "report_commit_bytes": "Completion receipt at https://github.com/cumulativelabs/public/pull/3#issuecomment-5634224458"
+    "report_commit_bytes": "VERIFIED at a994d9d41c964ad7252cf12da2dd30e75b1861c7; full REPORT/HANDOFF/manifest bytes matched. Final evidence-only descendant readback is recorded in the external final-head receipt."
   },
   "PREVIEW_URL": "https://9a5c0834.cumulative-labs.pages.dev/",
   "PREVIEW_VERIFICATION": "HTTP200/noindex; HTML and8 assets byte-identical; both-engine tablet/desktop/phone screenshots inspected.",

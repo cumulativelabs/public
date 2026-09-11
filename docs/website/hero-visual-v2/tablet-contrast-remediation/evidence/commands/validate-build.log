@@ -1,0 +1,5 @@
+
+> cumulative-labs-public-website@0.1.0 validate:build
+> node scripts/validate-build.mjs
+
+Build validation passed across 11 text assets.

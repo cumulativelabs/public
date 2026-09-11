@@ -1,0 +1,31 @@
+{
+  "commit": "a994d9d41c964ad7252cf12da2dd30e75b1861c7",
+  "tree": "7685c3660f66fe5ecd5df2f75f8c497dd4b32d77",
+  "parent": [
+    "25e508b8301ecdc474821cc805095b68409819f4"
+  ],
+  "artifacts": [
+    {
+      "path": "docs/website/hero-visual-v2/tablet-contrast-remediation/REPORT.md",
+      "blob": "2b3e1f6a53d8d05f9a93c3298a56a15a0909f813",
+      "sha256": "bb39f89dc099571cc438f116c95b7b9775e262afc15f01db61369b0ae8d41efb",
+      "bytes": 13936,
+      "fullBytesEqual": true
+    },
+    {
+      "path": "docs/website/hero-visual-v2/tablet-contrast-remediation/HANDOFF.json",
+      "blob": "d5fd6a27fdc0f766c1be75b54812190a1d8292ed",
+      "sha256": "7fa4a4432b9afc52130b9c90ff56ba5886478b3eddb6d7b0cc738c66f70cacd3",
+      "bytes": 5317,
+      "fullBytesEqual": true
+    },
+    {
+      "path": "docs/website/hero-visual-v2/tablet-contrast-remediation/EVIDENCE_MANIFEST.json",
+      "blob": "2e247a46d48b979f73e23c22dc5279bed4fbd5ac",
+      "sha256": "45ad868cf22ef509c02514e94005ecccdfcc0b0d06da17544c9e2b8351355376",
+      "bytes": 19017,
+      "fullBytesEqual": true
+    }
+  ],
+  "method": "Direct remote Git commit API and full base64-decoded contents API readback; exact byte comparison."
+}
