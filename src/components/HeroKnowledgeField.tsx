@@ -11,6 +11,29 @@ export function HeroKnowledgeField() {
   const rootRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   useEffect(() => {
+    const root = rootRef.current;
+    if (!root) return;
+    const plate = root.querySelector('picture img') as HTMLImageElement | null;
+    // A picture may retain its old decoded image while the new media source loads.
+    // Keep the live/fallback scene visible, but never paint that stale plate in the
+    // other breakpoint's coordinate system.
+    const syncPlate = () => {
+      const variant = matchMedia('(max-width: 780px)').matches ? 'mobile' : 'desktop';
+      root.dataset.artReady = String(Boolean(plate?.complete && plate.naturalWidth && plate.currentSrc.endsWith(`hero-nexus-anchored-${variant}.svg`)));
+    };
+    const media = matchMedia('(max-width: 780px)');
+    media.addEventListener('change', syncPlate);
+    plate?.addEventListener('load', syncPlate);
+    plate?.addEventListener('error', syncPlate);
+    syncPlate();
+    return () => {
+      media.removeEventListener('change', syncPlate);
+      plate?.removeEventListener('load', syncPlate);
+      plate?.removeEventListener('error', syncPlate);
+      delete root.dataset.artReady;
+    };
+  }, []);
+  useEffect(() => {
     const root = rootRef.current; const canvas = canvasRef.current;
     if (!root || !canvas) return;
     const context = canvas.getContext('2d', { alpha: true, desynchronized: true });
