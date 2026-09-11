@@ -1,0 +1,80 @@
+{
+  "TASK_ID": "CL-HERO-TABLET-CONTRAST-REMEDIATION-20260911-001",
+  "TASK_TITLE": "Hero v2 - tablet seam and contrast remediation",
+  "TERMINAL_STATUS": "HANDOFF_CREATED; source REMOTE_PERSISTED; controller reconciliation PENDING",
+  "STARTING_COMMIT": "2a6905b6656052fe4cbadf64fc2e1d6ef223f771",
+  "BRANCH": "hero-visual-v2",
+  "SUBSTANTIVE_COMMIT": "25e508b8301ecdc474821cc805095b68409819f4",
+  "TREE": "f6ae72efc1de33370eabe7f100a45da8a2c78a3a",
+  "PARENT": "2a6905b6656052fe4cbadf64fc2e1d6ef223f771",
+  "FINAL_HEAD": {
+    "source_head": "25e508b8301ecdc474821cc805095b68409819f4",
+    "evidence_commit_receipt": "https://github.com/cumulativelabs/public/pull/3#issuecomment-5634224458",
+    "semantics": "The exact containing report commit/tree is supplied by this external remote-readback receipt; a file cannot contain its own Git commit hash."
+  },
+  "FILES_CHANGED": [
+    "scripts/hero-anchor-browser.mjs",
+    "scripts/hero-contrast-browser.mjs",
+    "scripts/hero-contrast-renderer.ts",
+    "scripts/hero-cursor-browser.mjs",
+    "scripts/hero-focus-browser.mjs",
+    "scripts/hero-menu-focus-probe.mjs",
+    "scripts/hero-remediation-performance.mjs",
+    "scripts/hero-tablet-browser.mjs",
+    "src/styles/hero-visual-v2.css",
+    "docs/website/hero-visual-v2/tablet-contrast-remediation"
+  ],
+  "REPORT_PATH": "docs/website/hero-visual-v2/tablet-contrast-remediation/REPORT.md",
+  "EVIDENCE_PATHS": [
+    "docs/website/hero-visual-v2/tablet-contrast-remediation/evidence"
+  ],
+  "QA_VIS_001_REPRODUCTION": "Both engines at 768x1024 before edits; plate left about 260px, width504.531px; before.json and screenshots.",
+  "SEAM_FIX": "431-780px shared-plane edge mask; geometry, artwork and ports unchanged.",
+  "CONTRAST_METHOD": "Frozen live renderer, actual composited hidden-text background; computed solid foreground/browser gradient; solid glyph interiors for gradient, conservative line rectangles otherwise. See contrast-summary.json.",
+  "CONTRAST_RESULTS": {
+    "gradient_minimum": 3.231753928951826,
+    "body_minimum": 11.492416591366094,
+    "support_minimum": 7.935838742710886,
+    "primary_CTA_minimum": 17.294415913048788,
+    "secondary_CTA_minimum": 9.478770407388414,
+    "focus_minimum": 6.6026040497834675,
+    "all_assessed_samples_meet_threshold": true
+  },
+  "CONTRAST_LIMITATIONS": [
+    "Finite states and pointer location, not an all-state guarantee.",
+    "Raw gradient panel-edge minima excluded from glyph assessment; raw evidence retained.",
+    "Inherited WebKit reduced-motion menu automatic-entry focus limitation; see comparison.",
+    "No comprehensive zoom/screen-reader/physical-device certification."
+  ],
+  "PHONE_DESIGN_PRESERVATION": "Unfocused <=430px appearance unchanged; focused-only CTA outline backing added.",
+  "ALIGNMENT_RESULT": "18-case matrix no assertion failures; six permanent rings; no observed seam/overflow/detached output.",
+  "CURSOR_RESULT": "Pointer checks passed; focused instrumentation mapping<0.045px/axis and stable C after scroll/resize.",
+  "BUILD_RESULTS": "All requested commands exit0; 29 tests/6 files.",
+  "BROWSER_RESULTS": "Chromium/WebKit seven-size matrix plus fallbacks and breakpoint resize; no console/page errors. Independent retest required.",
+  "PERFORMANCE_RESULT": "Short alternating local samples show similar cost; JS/art unchanged, CSS+754B; zero CLS samples. No battery/device certification.",
+  "PUBLIC_CLAIM_REVIEW": "No public wording or claims changed.",
+  "PRIVACY_REVIEW": "Public-safe source/evidence; no private governance/local identifiers added; public noreply commit identity.",
+  "REMOTE_READBACK_STATUS": {
+    "source_commit_tree_parent": "VERIFIED via remote Git API",
+    "preview_bytes": "VERIFIED all9 returned files match local build",
+    "report_commit_bytes": "Completion receipt at https://github.com/cumulativelabs/public/pull/3#issuecomment-5634224458"
+  },
+  "PREVIEW_URL": "https://9a5c0834.cumulative-labs.pages.dev/",
+  "PREVIEW_VERIFICATION": "HTTP200/noindex; HTML and8 assets byte-identical; both-engine tablet/desktop/phone screenshots inspected.",
+  "BLOCKERS": [
+    "Independent exact-state QA and controller registration remain pending.",
+    "Inherited reduced-motion WebKit automatic menu-entry focus requires independent adjudication; unchanged from starting candidate."
+  ],
+  "FAILURE_CLASS": {
+    "prior_QA": "WORK / SUBSTANTIVE FAILURE (tablet seam); EVIDENCE / SUPPORT FAILURE (contrast gap)",
+    "remediation": "Sampled seam/contrast corrections verified by owner; not independent acceptance",
+    "harness": "Two focus measurement failures preserved; target guard and Option-Tab correction implemented",
+    "inherited": "WebKit reduced-motion automatic menu-entry focus limitation reproduced on starting and candidate"
+  },
+  "QA_STATE": "Independent retest required on new exact candidate; prior independent FAIL retained; never self-approved.",
+  "CONTROLLER_REGISTRATION": "PENDING",
+  "MERGE_STATE": "NOT MERGED",
+  "DEPLOYMENT_STATE": "NOT DEPLOYED (production)",
+  "PUBLICATION_STATE": "No production publication; only authorized branch-preview/source persistence.",
+  "NEXT_ACTION": "Controller reads back final handoff/receipt, reconciles registration, dispatches separate exact-state independent QA. Founder release decision waits for that result."
+}

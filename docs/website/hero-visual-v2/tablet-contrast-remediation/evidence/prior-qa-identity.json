@@ -1,0 +1,23 @@
+{
+  "candidate": "2a6905b6656052fe4cbadf64fc2e1d6ef223f771",
+  "verdict": "FAIL",
+  "source_handling": "Supplied independent QA directory read-only; no source evidence overwritten. Private/local source location intentionally excluded from this public record.",
+  "files": [
+    {
+      "name": "REPORT.md",
+      "sha256": "d7021c8d5521a67e6111c12d29cbbf8bca83ed012f55db7f05b3a8cfcc009a2a"
+    },
+    {
+      "name": "HANDOFF.json",
+      "sha256": "2eef2df3146e19d6ea102e9a123996fb9f3410c1abcf4e00dd5e49f7f5d83ff7"
+    },
+    {
+      "name": "supplemental-results.json",
+      "sha256": "f4717f750afa166d20992e022a4ecd0caec5dd935d11b25a41a2f34c0dbdc508"
+    },
+    {
+      "name": "cursor-followup.json",
+      "sha256": "1a7b4f3c23f029f80d0c2ed117192b50b149a3b6c43ed9a2bac9d4e9f178c997"
+    }
+  ]
+}

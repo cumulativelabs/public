@@ -1,0 +1,7721 @@
+{
+  "method": "Keyboard traversal (macOS WebKit Option-Tab, Chromium Tab); explicit menu-close focus before traversal; computed colors against text/icon-hidden and outline-hidden composited screenshots at the same positions; solid foreground, no antialiased edge sampling. Conservative full text-line and rectangular outline strips, including rounded-corner bounding areas. Reduced-motion state.",
+  "results": [
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "label": "skip",
+      "meta": {
+        "tag": "A",
+        "name": "Skip to content",
+        "rect": {
+          "x": 12,
+          "y": 12,
+          "width": 149.609375,
+          "height": 49.59375,
+          "top": 12,
+          "right": 161.609375,
+          "bottom": 61.59375,
+          "left": 12
+        },
+        "rects": [
+          {
+            "x": 28,
+            "y": 25,
+            "width": 117.609375,
+            "height": 22,
+            "top": 25,
+            "right": 145.609375,
+            "bottom": 47,
+            "left": 28,
+            "color": "rgb(8, 18, 32)",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "text": "Skip to content"
+          }
+        ],
+        "icons": [],
+        "fontSize": "16px",
+        "fontWeight": "700",
+        "color": "rgb(8, 18, 32)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "3px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 10.31183722471764,
+          "worst": {
+            "x": 7,
+            "y": 7,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              3,
+              8,
+              17
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "Skip to content",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "minimumRatio": 17.957514799304366,
+            "worst": {
+              "x": 28,
+              "y": 25,
+              "foreground": [
+                8,
+                18,
+                32
+              ],
+              "background": [
+                248,
+                250,
+                252
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "label": "header",
+      "meta": {
+        "tag": "A",
+        "name": "Cumulative Labs home",
+        "rect": {
+          "x": 96,
+          "y": 13.734375,
+          "width": 272,
+          "height": 67.515625,
+          "top": 13.734375,
+          "right": 368,
+          "bottom": 81.25,
+          "left": 96
+        },
+        "rects": [],
+        "icons": [],
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "color": "rgb(248, 250, 252)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 10.31183722471764,
+          "worst": {
+            "x": 89,
+            "y": 6,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              3,
+              8,
+              17
+            ]
+          }
+        },
+        "text": null,
+        "icons": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "label": "header",
+      "meta": {
+        "tag": "A",
+        "name": "Work",
+        "rect": {
+          "x": 796.03125,
+          "y": 25.5,
+          "width": 41.5625,
+          "height": 44,
+          "top": 25.5,
+          "right": 837.59375,
+          "bottom": 69.5,
+          "left": 796.03125
+        },
+        "rects": [
+          {
+            "x": 796.03125,
+            "y": 39.15625,
+            "width": 41.5625,
+            "height": 16,
+            "top": 39.15625,
+            "right": 837.59375,
+            "bottom": 55.15625,
+            "left": 796.03125,
+            "color": "rgb(255, 255, 255)",
+            "fontSize": "11.68px",
+            "fontWeight": "700",
+            "text": "Work"
+          }
+        ],
+        "icons": [],
+        "fontSize": "11.68px",
+        "fontWeight": "700",
+        "color": "rgb(255, 255, 255)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 10.231369187100531,
+          "worst": {
+            "x": 843,
+            "y": 76,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              5,
+              9,
+              19
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "Work",
+            "fontSize": "11.68px",
+            "fontWeight": "700",
+            "minimumRatio": 19.943554961072767,
+            "worst": {
+              "x": 799,
+              "y": 40,
+              "foreground": [
+                255,
+                255,
+                255
+              ],
+              "background": [
+                4,
+                9,
+                18
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "label": "header",
+      "meta": {
+        "tag": "A",
+        "name": "Why Cumulative",
+        "rect": {
+          "x": 866.390625,
+          "y": 25.5,
+          "width": 120.46875,
+          "height": 44,
+          "top": 25.5,
+          "right": 986.859375,
+          "bottom": 69.5,
+          "left": 866.390625
+        },
+        "rects": [
+          {
+            "x": 866.390625,
+            "y": 39.15625,
+            "width": 120.46875,
+            "height": 16,
+            "top": 39.15625,
+            "right": 986.859375,
+            "bottom": 55.15625,
+            "left": 866.390625,
+            "color": "rgb(255, 255, 255)",
+            "fontSize": "11.68px",
+            "fontWeight": "700",
+            "text": "Why Cumulative"
+          }
+        ],
+        "icons": [],
+        "fontSize": "11.68px",
+        "fontWeight": "700",
+        "color": "rgb(255, 255, 255)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 10.17034162133851,
+          "worst": {
+            "x": 965,
+            "y": 74,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              6,
+              10,
+              20
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "Why Cumulative",
+            "fontSize": "11.68px",
+            "fontWeight": "700",
+            "minimumRatio": 19.667863599286537,
+            "worst": {
+              "x": 983,
+              "y": 44,
+              "foreground": [
+                255,
+                255,
+                255
+              ],
+              "background": [
+                7,
+                11,
+                21
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "label": "header",
+      "meta": {
+        "tag": "A",
+        "name": "Approach",
+        "rect": {
+          "x": 1015.65625,
+          "y": 25.5,
+          "width": 73.78125,
+          "height": 44,
+          "top": 25.5,
+          "right": 1089.4375,
+          "bottom": 69.5,
+          "left": 1015.65625
+        },
+        "rects": [
+          {
+            "x": 1015.65625,
+            "y": 39.15625,
+            "width": 73.78125,
+            "height": 16,
+            "top": 39.15625,
+            "right": 1089.4375,
+            "bottom": 55.15625,
+            "left": 1015.65625,
+            "color": "rgb(255, 255, 255)",
+            "fontSize": "11.68px",
+            "fontWeight": "700",
+            "text": "Approach"
+          }
+        ],
+        "icons": [],
+        "fontSize": "11.68px",
+        "fontWeight": "700",
+        "color": "rgb(255, 255, 255)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 10.151040966078963,
+          "worst": {
+            "x": 1087,
+            "y": 76,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              7,
+              10,
+              21
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "Approach",
+            "fontSize": "11.68px",
+            "fontWeight": "700",
+            "minimumRatio": 19.667863599286537,
+            "worst": {
+              "x": 1046,
+              "y": 44,
+              "foreground": [
+                255,
+                255,
+                255
+              ],
+              "background": [
+                7,
+                11,
+                21
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "label": "header",
+      "meta": {
+        "tag": "A",
+        "name": "Principles",
+        "rect": {
+          "x": 1118.234375,
+          "y": 25.5,
+          "width": 76.96875,
+          "height": 44,
+          "top": 25.5,
+          "right": 1195.203125,
+          "bottom": 69.5,
+          "left": 1118.234375
+        },
+        "rects": [
+          {
+            "x": 1118.234375,
+            "y": 39.15625,
+            "width": 76.96875,
+            "height": 16,
+            "top": 39.15625,
+            "right": 1195.203125,
+            "bottom": 55.15625,
+            "left": 1118.234375,
+            "color": "rgb(255, 255, 255)",
+            "fontSize": "11.68px",
+            "fontWeight": "700",
+            "text": "Principles"
+          }
+        ],
+        "icons": [],
+        "fontSize": "11.68px",
+        "fontWeight": "700",
+        "color": "rgb(255, 255, 255)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 10.101551271320442,
+          "worst": {
+            "x": 1147,
+            "y": 76,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              7,
+              11,
+              22
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "Principles",
+            "fontSize": "11.68px",
+            "fontWeight": "700",
+            "minimumRatio": 19.65393141601433,
+            "worst": {
+              "x": 1172,
+              "y": 44,
+              "foreground": [
+                255,
+                255,
+                255
+              ],
+              "background": [
+                7,
+                11,
+                22
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "label": "header",
+      "meta": {
+        "tag": "A",
+        "name": "Contact",
+        "rect": {
+          "x": 1224,
+          "y": 25.5,
+          "width": 120,
+          "height": 44,
+          "top": 25.5,
+          "right": 1344,
+          "bottom": 69.5,
+          "left": 1224
+        },
+        "rects": [
+          {
+            "x": 1241,
+            "y": 39.15625,
+            "width": 62.9375,
+            "height": 16,
+            "top": 39.15625,
+            "right": 1303.9375,
+            "bottom": 55.15625,
+            "left": 1241,
+            "color": "rgb(255, 255, 255)",
+            "fontSize": "11.68px",
+            "fontWeight": "700",
+            "text": "Contact"
+          }
+        ],
+        "icons": [],
+        "fontSize": "11.68px",
+        "fontWeight": "700",
+        "color": "rgb(255, 255, 255)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 10.143820154047932,
+          "worst": {
+            "x": 1217,
+            "y": 74,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              7,
+              10,
+              22
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "Contact",
+            "fontSize": "11.68px",
+            "fontWeight": "700",
+            "minimumRatio": 18.08255512068944,
+            "worst": {
+              "x": 1298,
+              "y": 44,
+              "foreground": [
+                255,
+                255,
+                255
+              ],
+              "background": [
+                18,
+                22,
+                32
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "label": "CTA-primary",
+      "meta": {
+        "tag": "A",
+        "name": "See What We’re Building↗",
+        "rect": {
+          "x": 96,
+          "y": 646.125,
+          "width": 241.375,
+          "height": 52,
+          "top": 646.125,
+          "right": 337.375,
+          "bottom": 698.125,
+          "left": 96
+        },
+        "rects": [
+          {
+            "x": 117,
+            "y": 663.359375,
+            "width": 175.75,
+            "height": 16,
+            "top": 663.359375,
+            "right": 292.75,
+            "bottom": 679.359375,
+            "left": 117,
+            "color": "rgb(248, 250, 252)",
+            "fontSize": "11.52px",
+            "fontWeight": "700",
+            "text": "See What We’re Building"
+          },
+          {
+            "x": 306.34375,
+            "y": 663.359375,
+            "width": 10.03125,
+            "height": 16,
+            "top": 663.359375,
+            "right": 316.375,
+            "bottom": 679.359375,
+            "left": 306.34375,
+            "color": "rgb(248, 250, 252)",
+            "fontSize": "11.52px",
+            "fontWeight": "700",
+            "text": "↗"
+          }
+        ],
+        "icons": [],
+        "fontSize": "11.52px",
+        "fontWeight": "700",
+        "color": "rgb(248, 250, 252)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "3px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 10.262988426865045,
+          "worst": {
+            "x": 92,
+            "y": 703,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              3,
+              9,
+              18
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "See What We’re Building",
+            "fontSize": "11.52px",
+            "fontWeight": "700",
+            "minimumRatio": 17.434120859946592,
+            "worst": {
+              "x": 117,
+              "y": 663,
+              "foreground": [
+                248,
+                250,
+                252
+              ],
+              "background": [
+                16,
+                21,
+                33
+              ]
+            }
+          },
+          {
+            "text": "↗",
+            "fontSize": "11.52px",
+            "fontWeight": "700",
+            "minimumRatio": 17.434120859946592,
+            "worst": {
+              "x": 306,
+              "y": 663,
+              "foreground": [
+                248,
+                250,
+                252
+              ],
+              "background": [
+                16,
+                21,
+                33
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "label": "CTA-secondary",
+      "meta": {
+        "tag": "A",
+        "name": "Contact the Lab",
+        "rect": {
+          "x": 350.171875,
+          "y": 646.125,
+          "width": 159.53125,
+          "height": 52,
+          "top": 646.125,
+          "right": 509.703125,
+          "bottom": 698.125,
+          "left": 350.171875
+        },
+        "rects": [
+          {
+            "x": 371.171875,
+            "y": 663.359375,
+            "width": 117.53125,
+            "height": 16,
+            "top": 663.359375,
+            "right": 488.703125,
+            "bottom": 679.359375,
+            "left": 371.171875,
+            "color": "rgb(248, 250, 252)",
+            "fontSize": "11.52px",
+            "fontWeight": "700",
+            "text": "Contact the Lab"
+          }
+        ],
+        "icons": [],
+        "fontSize": "11.52px",
+        "fontWeight": "700",
+        "color": "rgb(248, 250, 252)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "3px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 9.734482827525916,
+          "worst": {
+            "x": 514,
+            "y": 642,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              17,
+              16,
+              21
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "Contact the Lab",
+            "fontSize": "11.52px",
+            "fontWeight": "700",
+            "minimumRatio": 19.0493681970728,
+            "worst": {
+              "x": 484,
+              "y": 676,
+              "foreground": [
+                248,
+                250,
+                252
+              ],
+              "background": [
+                4,
+                9,
+                19
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 1024,
+      "label": "skip",
+      "meta": {
+        "tag": "A",
+        "name": "Skip to content",
+        "rect": {
+          "x": 12,
+          "y": 12,
+          "width": 149.609375,
+          "height": 49.59375,
+          "top": 12,
+          "right": 161.609375,
+          "bottom": 61.59375,
+          "left": 12
+        },
+        "rects": [
+          {
+            "x": 28,
+            "y": 25,
+            "width": 117.609375,
+            "height": 22,
+            "top": 25,
+            "right": 145.609375,
+            "bottom": 47,
+            "left": 28,
+            "color": "rgb(8, 18, 32)",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "text": "Skip to content"
+          }
+        ],
+        "icons": [],
+        "fontSize": "16px",
+        "fontWeight": "700",
+        "color": "rgb(8, 18, 32)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "3px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 10.31183722471764,
+          "worst": {
+            "x": 7,
+            "y": 7,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              3,
+              8,
+              17
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "Skip to content",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "minimumRatio": 17.957514799304366,
+            "worst": {
+              "x": 28,
+              "y": 25,
+              "foreground": [
+                8,
+                18,
+                32
+              ],
+              "background": [
+                248,
+                250,
+                252
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 1024,
+      "label": "header",
+      "meta": {
+        "tag": "A",
+        "name": "Cumulative Labs home",
+        "rect": {
+          "x": 40,
+          "y": 13.734375,
+          "width": 272,
+          "height": 67.515625,
+          "top": 13.734375,
+          "right": 312,
+          "bottom": 81.25,
+          "left": 40
+        },
+        "rects": [],
+        "icons": [],
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "color": "rgb(248, 250, 252)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 10.31183722471764,
+          "worst": {
+            "x": 33,
+            "y": 6,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              3,
+              8,
+              17
+            ]
+          }
+        },
+        "text": null,
+        "icons": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 1024,
+      "label": "header",
+      "meta": {
+        "tag": "A",
+        "name": "Work",
+        "rect": {
+          "x": 459.09375,
+          "y": 25.5,
+          "width": 41.5625,
+          "height": 44,
+          "top": 25.5,
+          "right": 500.65625,
+          "bottom": 69.5,
+          "left": 459.09375
+        },
+        "rects": [
+          {
+            "x": 459.09375,
+            "y": 39.15625,
+            "width": 41.5625,
+            "height": 16,
+            "top": 39.15625,
+            "right": 500.65625,
+            "bottom": 55.15625,
+            "left": 459.09375,
+            "color": "rgb(255, 255, 255)",
+            "fontSize": "11.68px",
+            "fontWeight": "700",
+            "text": "Work"
+          }
+        ],
+        "icons": [],
+        "fontSize": "11.68px",
+        "fontWeight": "700",
+        "color": "rgb(255, 255, 255)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 10.31183722471764,
+          "worst": {
+            "x": 452,
+            "y": 18,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              3,
+              8,
+              17
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "Work",
+            "fontSize": "11.68px",
+            "fontWeight": "700",
+            "minimumRatio": 19.943554961072767,
+            "worst": {
+              "x": 479,
+              "y": 44,
+              "foreground": [
+                255,
+                255,
+                255
+              ],
+              "background": [
+                4,
+                9,
+                18
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 1024,
+      "label": "header",
+      "meta": {
+        "tag": "A",
+        "name": "Why Cumulative",
+        "rect": {
+          "x": 529.453125,
+          "y": 25.5,
+          "width": 120.46875,
+          "height": 44,
+          "top": 25.5,
+          "right": 649.921875,
+          "bottom": 69.5,
+          "left": 529.453125
+        },
+        "rects": [
+          {
+            "x": 529.453125,
+            "y": 39.15625,
+            "width": 120.46875,
+            "height": 16,
+            "top": 39.15625,
+            "right": 649.921875,
+            "bottom": 55.15625,
+            "left": 529.453125,
+            "color": "rgb(255, 255, 255)",
+            "fontSize": "11.68px",
+            "fontWeight": "700",
+            "text": "Why Cumulative"
+          }
+        ],
+        "icons": [],
+        "fontSize": "11.68px",
+        "fontWeight": "700",
+        "color": "rgb(255, 255, 255)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 10.224604872858965,
+          "worst": {
+            "x": 649,
+            "y": 74,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              5,
+              9,
+              20
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "Why Cumulative",
+            "fontSize": "11.68px",
+            "fontWeight": "700",
+            "minimumRatio": 19.70510280945275,
+            "worst": {
+              "x": 605,
+              "y": 44,
+              "foreground": [
+                255,
+                255,
+                255
+              ],
+              "background": [
+                6,
+                11,
+                20
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 1024,
+      "label": "header",
+      "meta": {
+        "tag": "A",
+        "name": "Approach",
+        "rect": {
+          "x": 678.71875,
+          "y": 25.5,
+          "width": 73.78125,
+          "height": 44,
+          "top": 25.5,
+          "right": 752.5,
+          "bottom": 69.5,
+          "left": 678.71875
+        },
+        "rects": [
+          {
+            "x": 678.71875,
+            "y": 39.15625,
+            "width": 73.78125,
+            "height": 16,
+            "top": 39.15625,
+            "right": 752.5,
+            "bottom": 55.15625,
+            "left": 678.71875,
+            "color": "rgb(255, 255, 255)",
+            "fontSize": "11.68px",
+            "fontWeight": "700",
+            "text": "Approach"
+          }
+        ],
+        "icons": [],
+        "fontSize": "11.68px",
+        "fontWeight": "700",
+        "color": "rgb(255, 255, 255)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 10.163377161873818,
+          "worst": {
+            "x": 713,
+            "y": 74,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              6,
+              10,
+              21
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "Approach",
+            "fontSize": "11.68px",
+            "fontWeight": "700",
+            "minimumRatio": 19.65393141601433,
+            "worst": {
+              "x": 731,
+              "y": 44,
+              "foreground": [
+                255,
+                255,
+                255
+              ],
+              "background": [
+                7,
+                11,
+                22
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 1024,
+      "label": "header",
+      "meta": {
+        "tag": "A",
+        "name": "Principles",
+        "rect": {
+          "x": 781.296875,
+          "y": 25.5,
+          "width": 76.96875,
+          "height": 44,
+          "top": 25.5,
+          "right": 858.265625,
+          "bottom": 69.5,
+          "left": 781.296875
+        },
+        "rects": [
+          {
+            "x": 781.296875,
+            "y": 39.15625,
+            "width": 76.96875,
+            "height": 16,
+            "top": 39.15625,
+            "right": 858.265625,
+            "bottom": 55.15625,
+            "left": 781.296875,
+            "color": "rgb(255, 255, 255)",
+            "fontSize": "11.68px",
+            "fontWeight": "700",
+            "text": "Principles"
+          }
+        ],
+        "icons": [],
+        "fontSize": "11.68px",
+        "fontWeight": "700",
+        "color": "rgb(255, 255, 255)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 10.143820154047932,
+          "worst": {
+            "x": 791,
+            "y": 74,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              7,
+              10,
+              22
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "Principles",
+            "fontSize": "11.68px",
+            "fontWeight": "700",
+            "minimumRatio": 19.529689586010946,
+            "worst": {
+              "x": 857,
+              "y": 44,
+              "foreground": [
+                255,
+                255,
+                255
+              ],
+              "background": [
+                8,
+                12,
+                23
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 1024,
+      "label": "header",
+      "meta": {
+        "tag": "A",
+        "name": "Contact",
+        "rect": {
+          "x": 887.0625,
+          "y": 25.5,
+          "width": 96.9375,
+          "height": 44,
+          "top": 25.5,
+          "right": 984,
+          "bottom": 69.5,
+          "left": 887.0625
+        },
+        "rects": [
+          {
+            "x": 904.0625,
+            "y": 39.15625,
+            "width": 62.9375,
+            "height": 16,
+            "top": 39.15625,
+            "right": 967,
+            "bottom": 55.15625,
+            "left": 904.0625,
+            "color": "rgb(255, 255, 255)",
+            "fontSize": "11.68px",
+            "fontWeight": "700",
+            "text": "Contact"
+          }
+        ],
+        "icons": [],
+        "fontSize": "11.68px",
+        "fontWeight": "700",
+        "color": "rgb(255, 255, 255)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 10.143820154047932,
+          "worst": {
+            "x": 881,
+            "y": 74,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              7,
+              10,
+              22
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "Contact",
+            "fontSize": "11.68px",
+            "fontWeight": "700",
+            "minimumRatio": 18.200054439202898,
+            "worst": {
+              "x": 920,
+              "y": 44,
+              "foreground": [
+                255,
+                255,
+                255
+              ],
+              "background": [
+                18,
+                21,
+                32
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 1024,
+      "label": "CTA-primary",
+      "meta": {
+        "tag": "A",
+        "name": "See What We’re Building↗",
+        "rect": {
+          "x": 40,
+          "y": 578.953125,
+          "width": 241.375,
+          "height": 52,
+          "top": 578.953125,
+          "right": 281.375,
+          "bottom": 630.953125,
+          "left": 40
+        },
+        "rects": [
+          {
+            "x": 61,
+            "y": 596.1875,
+            "width": 175.75,
+            "height": 16,
+            "top": 596.1875,
+            "right": 236.75,
+            "bottom": 612.1875,
+            "left": 61,
+            "color": "rgb(248, 250, 252)",
+            "fontSize": "11.52px",
+            "fontWeight": "700",
+            "text": "See What We’re Building"
+          },
+          {
+            "x": 250.34375,
+            "y": 596.1875,
+            "width": 10.03125,
+            "height": 16,
+            "top": 596.1875,
+            "right": 260.375,
+            "bottom": 612.1875,
+            "left": 250.34375,
+            "color": "rgb(248, 250, 252)",
+            "fontSize": "11.52px",
+            "fontWeight": "700",
+            "text": "↗"
+          }
+        ],
+        "icons": [],
+        "fontSize": "11.52px",
+        "fontWeight": "700",
+        "color": "rgb(248, 250, 252)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "3px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 10.164664952810899,
+          "worst": {
+            "x": 286,
+            "y": 575,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              7,
+              10,
+              19
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "See What We’re Building",
+            "fontSize": "11.52px",
+            "fontWeight": "700",
+            "minimumRatio": 17.434120859946592,
+            "worst": {
+              "x": 61,
+              "y": 596,
+              "foreground": [
+                248,
+                250,
+                252
+              ],
+              "background": [
+                16,
+                21,
+                33
+              ]
+            }
+          },
+          {
+            "text": "↗",
+            "fontSize": "11.52px",
+            "fontWeight": "700",
+            "minimumRatio": 17.434120859946592,
+            "worst": {
+              "x": 250,
+              "y": 596,
+              "foreground": [
+                248,
+                250,
+                252
+              ],
+              "background": [
+                16,
+                21,
+                33
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 1024,
+      "label": "CTA-secondary",
+      "meta": {
+        "tag": "A",
+        "name": "Contact the Lab",
+        "rect": {
+          "x": 294.171875,
+          "y": 578.953125,
+          "width": 159.53125,
+          "height": 52,
+          "top": 578.953125,
+          "right": 453.703125,
+          "bottom": 630.953125,
+          "left": 294.171875
+        },
+        "rects": [
+          {
+            "x": 315.171875,
+            "y": 596.1875,
+            "width": 117.53125,
+            "height": 16,
+            "top": 596.1875,
+            "right": 432.703125,
+            "bottom": 612.1875,
+            "left": 315.171875,
+            "color": "rgb(248, 250, 252)",
+            "fontSize": "11.52px",
+            "fontWeight": "700",
+            "text": "Contact the Lab"
+          }
+        ],
+        "icons": [],
+        "fontSize": "11.52px",
+        "fontWeight": "700",
+        "color": "rgb(248, 250, 252)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "3px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 10.193955511584017,
+          "worst": {
+            "x": 456,
+            "y": 573,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              8,
+              9,
+              19
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "Contact the Lab",
+            "fontSize": "11.52px",
+            "fontWeight": "700",
+            "minimumRatio": 18.77527811532927,
+            "worst": {
+              "x": 419,
+              "y": 610,
+              "foreground": [
+                248,
+                250,
+                252
+              ],
+              "background": [
+                8,
+                11,
+                21
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "label": "skip",
+      "meta": {
+        "tag": "A",
+        "name": "Skip to content",
+        "rect": {
+          "x": 12,
+          "y": 12,
+          "width": 149.609375,
+          "height": 49.59375,
+          "top": 12,
+          "right": 161.609375,
+          "bottom": 61.59375,
+          "left": 12
+        },
+        "rects": [
+          {
+            "x": 28,
+            "y": 25,
+            "width": 117.609375,
+            "height": 22,
+            "top": 25,
+            "right": 145.609375,
+            "bottom": 47,
+            "left": 28,
+            "color": "rgb(8, 18, 32)",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "text": "Skip to content"
+          }
+        ],
+        "icons": [],
+        "fontSize": "16px",
+        "fontWeight": "700",
+        "color": "rgb(8, 18, 32)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "3px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 10.31183722471764,
+          "worst": {
+            "x": 7,
+            "y": 7,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              3,
+              8,
+              17
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "Skip to content",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "minimumRatio": 17.957514799304366,
+            "worst": {
+              "x": 28,
+              "y": 25,
+              "foreground": [
+                8,
+                18,
+                32
+              ],
+              "background": [
+                248,
+                250,
+                252
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "label": "header",
+      "meta": {
+        "tag": "A",
+        "name": "Cumulative Labs home",
+        "rect": {
+          "x": 20,
+          "y": 12.078125,
+          "width": 208,
+          "height": 51.640625,
+          "top": 12.078125,
+          "right": 228,
+          "bottom": 63.71875,
+          "left": 20
+        },
+        "rects": [],
+        "icons": [],
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "color": "rgb(248, 250, 252)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 10.31183722471764,
+          "worst": {
+            "x": 13,
+            "y": 5,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              3,
+              8,
+              17
+            ]
+          }
+        },
+        "text": null,
+        "icons": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "label": "header",
+      "meta": {
+        "tag": "BUTTON",
+        "name": "Open navigation menu",
+        "rect": {
+          "x": 700,
+          "y": 13.890625,
+          "width": 48,
+          "height": 48,
+          "top": 13.890625,
+          "right": 748,
+          "bottom": 61.890625,
+          "left": 700
+        },
+        "rects": [],
+        "icons": [
+          {
+            "rect": {
+              "x": 716,
+              "y": 34.65625,
+              "width": 16,
+              "height": 1,
+              "top": 34.65625,
+              "right": 732,
+              "bottom": 35.65625,
+              "left": 716
+            },
+            "color": "rgb(255, 255, 255)"
+          },
+          {
+            "rect": {
+              "x": 716,
+              "y": 40.125,
+              "width": 16,
+              "height": 1,
+              "top": 40.125,
+              "right": 732,
+              "bottom": 41.125,
+              "left": 716
+            },
+            "color": "rgb(255, 255, 255)"
+          }
+        ],
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "color": "rgb(255, 255, 255)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 10.250409381581553,
+          "worst": {
+            "x": 693,
+            "y": 66,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              4,
+              9,
+              18
+            ]
+          }
+        },
+        "text": null,
+        "icons": [
+          {
+            "minimumRatio": 19.96802919147959,
+            "worst": {
+              "x": 716,
+              "y": 34,
+              "foreground": [
+                255,
+                255,
+                255
+              ],
+              "background": [
+                3,
+                9,
+                18
+              ]
+            }
+          },
+          {
+            "minimumRatio": 19.96802919147959,
+            "worst": {
+              "x": 716,
+              "y": 40,
+              "foreground": [
+                255,
+                255,
+                255
+              ],
+              "background": [
+                3,
+                9,
+                18
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "label": "CTA-primary",
+      "meta": {
+        "tag": "A",
+        "name": "See What We’re Building↗",
+        "rect": {
+          "x": 20,
+          "y": 542.4375,
+          "width": 688,
+          "height": 50.390625,
+          "top": 542.4375,
+          "right": 708,
+          "bottom": 592.828125,
+          "left": 20
+        },
+        "rects": [
+          {
+            "x": 264.3125,
+            "y": 558.875,
+            "width": 175.75,
+            "height": 16,
+            "top": 558.875,
+            "right": 440.0625,
+            "bottom": 574.875,
+            "left": 264.3125,
+            "color": "rgb(248, 250, 252)",
+            "fontSize": "11.52px",
+            "fontWeight": "700",
+            "text": "See What We’re Building"
+          },
+          {
+            "x": 453.65625,
+            "y": 558.875,
+            "width": 10.03125,
+            "height": 16,
+            "top": 558.875,
+            "right": 463.6875,
+            "bottom": 574.875,
+            "left": 453.65625,
+            "color": "rgb(248, 250, 252)",
+            "fontSize": "11.52px",
+            "fontWeight": "700",
+            "text": "↗"
+          }
+        ],
+        "icons": [],
+        "fontSize": "11.52px",
+        "fontWeight": "700",
+        "color": "rgb(248, 250, 252)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "3px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 8.734322840866563,
+          "worst": {
+            "x": 712,
+            "y": 597,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              38,
+              20,
+              54
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "See What We’re Building",
+            "fontSize": "11.52px",
+            "fontWeight": "700",
+            "minimumRatio": 17.434120859946592,
+            "worst": {
+              "x": 264,
+              "y": 558,
+              "foreground": [
+                248,
+                250,
+                252
+              ],
+              "background": [
+                16,
+                21,
+                33
+              ]
+            }
+          },
+          {
+            "text": "↗",
+            "fontSize": "11.52px",
+            "fontWeight": "700",
+            "minimumRatio": 17.434120859946592,
+            "worst": {
+              "x": 453,
+              "y": 558,
+              "foreground": [
+                248,
+                250,
+                252
+              ],
+              "background": [
+                16,
+                21,
+                33
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "label": "CTA-secondary",
+      "meta": {
+        "tag": "A",
+        "name": "Contact the Lab",
+        "rect": {
+          "x": 20,
+          "y": 604.828125,
+          "width": 688,
+          "height": 50.390625,
+          "top": 604.828125,
+          "right": 708,
+          "bottom": 655.21875,
+          "left": 20
+        },
+        "rects": [
+          {
+            "x": 305.234375,
+            "y": 621.265625,
+            "width": 117.53125,
+            "height": 16,
+            "top": 621.265625,
+            "right": 422.765625,
+            "bottom": 637.265625,
+            "left": 305.234375,
+            "color": "rgb(248, 250, 252)",
+            "fontSize": "11.52px",
+            "fontWeight": "700",
+            "text": "Contact the Lab"
+          }
+        ],
+        "icons": [],
+        "fontSize": "11.52px",
+        "fontWeight": "700",
+        "color": "rgb(248, 250, 252)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "3px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 7.3006413342960075,
+          "worst": {
+            "x": 711,
+            "y": 660,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              68,
+              25,
+              72
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "Contact the Lab",
+            "fontSize": "11.52px",
+            "fontWeight": "700",
+            "minimumRatio": 9.931179544343363,
+            "worst": {
+              "x": 419,
+              "y": 635,
+              "foreground": [
+                248,
+                250,
+                252
+              ],
+              "background": [
+                76,
+                60,
+                61
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "label": "menu-close",
+      "meta": {
+        "tag": "BUTTON",
+        "name": "Close navigation menu",
+        "rect": {
+          "x": 672,
+          "y": 20,
+          "width": 48,
+          "height": 48,
+          "top": 20,
+          "right": 720,
+          "bottom": 68,
+          "left": 672
+        },
+        "rects": [],
+        "icons": [
+          {
+            "rect": {
+              "x": 689.1444091796875,
+              "y": 37.144378662109375,
+              "width": 13.711181640625,
+              "height": 13.71124267578125,
+              "top": 37.144378662109375,
+              "right": 702.8555908203125,
+              "bottom": 50.855621337890625,
+              "left": 689.1444091796875
+            },
+            "color": "rgb(255, 255, 255)"
+          },
+          {
+            "rect": {
+              "x": 689.1444091796875,
+              "y": 37.144378662109375,
+              "width": 13.711181640625,
+              "height": 13.71124267578125,
+              "top": 37.144378662109375,
+              "right": 702.8555908203125,
+              "bottom": 50.855621337890625,
+              "left": 689.1444091796875
+            },
+            "color": "rgb(255, 255, 255)"
+          }
+        ],
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "color": "rgb(255, 255, 255)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 9.345750653156523,
+          "worst": {
+            "x": 681,
+            "y": 73,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              23,
+              16,
+              49
+            ]
+          }
+        },
+        "text": null,
+        "icons": [
+          {
+            "minimumRatio": 18.333347398308504,
+            "worst": {
+              "x": 692,
+              "y": 48,
+              "foreground": [
+                255,
+                255,
+                255
+              ],
+              "background": [
+                21,
+                16,
+                46
+              ]
+            }
+          },
+          {
+            "minimumRatio": 18.333347398308504,
+            "worst": {
+              "x": 692,
+              "y": 48,
+              "foreground": [
+                255,
+                255,
+                255
+              ],
+              "background": [
+                21,
+                16,
+                46
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "label": "menu-link-0",
+      "meta": {
+        "tag": "A",
+        "name": "01Work",
+        "rect": {
+          "x": 273,
+          "y": 100,
+          "width": 447,
+          "height": 73.59375,
+          "top": 100,
+          "right": 720,
+          "bottom": 173.59375,
+          "left": 273
+        },
+        "rects": [
+          {
+            "x": 273,
+            "y": 128.96875,
+            "width": 16.765625,
+            "height": 14,
+            "top": 128.96875,
+            "right": 289.765625,
+            "bottom": 142.96875,
+            "left": 273,
+            "color": "rgb(255, 122, 75)",
+            "fontSize": "10.4px",
+            "fontWeight": "700",
+            "text": "01"
+          },
+          {
+            "x": 305.765625,
+            "y": 122.296875,
+            "width": 66.390625,
+            "height": 27,
+            "top": 122.296875,
+            "right": 372.15625,
+            "bottom": 149.296875,
+            "left": 305.765625,
+            "color": "rgb(248, 250, 252)",
+            "fontSize": "20px",
+            "fontWeight": "520",
+            "text": "Work"
+          }
+        ],
+        "icons": [],
+        "fontSize": "20px",
+        "fontWeight": "520",
+        "color": "rgb(248, 250, 252)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 9.249950912472514,
+          "worst": {
+            "x": 658,
+            "y": 94,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              25,
+              16,
+              53
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "01",
+            "fontSize": "10.4px",
+            "fontWeight": "700",
+            "minimumRatio": 7.639684657524045,
+            "worst": {
+              "x": 273,
+              "y": 128,
+              "foreground": [
+                255,
+                122,
+                75
+              ],
+              "background": [
+                5,
+                11,
+                21
+              ]
+            }
+          },
+          {
+            "text": "Work",
+            "fontSize": "20px",
+            "fontWeight": "520",
+            "minimumRatio": 18.843525693852218,
+            "worst": {
+              "x": 305,
+              "y": 122,
+              "foreground": [
+                248,
+                250,
+                252
+              ],
+              "background": [
+                5,
+                11,
+                21
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "label": "menu-link-1",
+      "meta": {
+        "tag": "A",
+        "name": "02Why Cumulative",
+        "rect": {
+          "x": 273,
+          "y": 173.59375,
+          "width": 447,
+          "height": 73.59375,
+          "top": 173.59375,
+          "right": 720,
+          "bottom": 247.1875,
+          "left": 273
+        },
+        "rects": [
+          {
+            "x": 273,
+            "y": 202.5625,
+            "width": 16.765625,
+            "height": 14,
+            "top": 202.5625,
+            "right": 289.765625,
+            "bottom": 216.5625,
+            "left": 273,
+            "color": "rgb(255, 122, 75)",
+            "fontSize": "10.4px",
+            "fontWeight": "700",
+            "text": "02"
+          },
+          {
+            "x": 305.765625,
+            "y": 195.890625,
+            "width": 189.3125,
+            "height": 27,
+            "top": 195.890625,
+            "right": 495.078125,
+            "bottom": 222.890625,
+            "left": 305.765625,
+            "color": "rgb(248, 250, 252)",
+            "fontSize": "20px",
+            "fontWeight": "520",
+            "text": "Why Cumulative"
+          }
+        ],
+        "icons": [],
+        "fontSize": "20px",
+        "fontWeight": "520",
+        "color": "rgb(248, 250, 252)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 9.312577166892941,
+          "worst": {
+            "x": 658,
+            "y": 166,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              24,
+              16,
+              50
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "02",
+            "fontSize": "10.4px",
+            "fontWeight": "700",
+            "minimumRatio": 7.639684657524045,
+            "worst": {
+              "x": 273,
+              "y": 202,
+              "foreground": [
+                255,
+                122,
+                75
+              ],
+              "background": [
+                5,
+                11,
+                21
+              ]
+            }
+          },
+          {
+            "text": "Why Cumulative",
+            "fontSize": "20px",
+            "fontWeight": "520",
+            "minimumRatio": 18.302379122381268,
+            "worst": {
+              "x": 493,
+              "y": 195,
+              "foreground": [
+                248,
+                250,
+                252
+              ],
+              "background": [
+                13,
+                13,
+                33
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "label": "menu-link-2",
+      "meta": {
+        "tag": "A",
+        "name": "03Approach",
+        "rect": {
+          "x": 273,
+          "y": 247.1875,
+          "width": 447,
+          "height": 73.59375,
+          "top": 247.1875,
+          "right": 720,
+          "bottom": 320.78125,
+          "left": 273
+        },
+        "rects": [
+          {
+            "x": 273,
+            "y": 276.15625,
+            "width": 16.765625,
+            "height": 14,
+            "top": 276.15625,
+            "right": 289.765625,
+            "bottom": 290.15625,
+            "left": 273,
+            "color": "rgb(255, 122, 75)",
+            "fontSize": "10.4px",
+            "fontWeight": "700",
+            "text": "03"
+          },
+          {
+            "x": 305.765625,
+            "y": 269.484375,
+            "width": 116.59375,
+            "height": 27,
+            "top": 269.484375,
+            "right": 422.359375,
+            "bottom": 296.484375,
+            "left": 305.765625,
+            "color": "rgb(248, 250, 252)",
+            "fontSize": "20px",
+            "fontWeight": "520",
+            "text": "Approach"
+          }
+        ],
+        "icons": [],
+        "fontSize": "20px",
+        "fontWeight": "520",
+        "color": "rgb(248, 250, 252)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 9.568286809792669,
+          "worst": {
+            "x": 640,
+            "y": 240,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              19,
+              15,
+              41
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "03",
+            "fontSize": "10.4px",
+            "fontWeight": "700",
+            "minimumRatio": 7.639684657524045,
+            "worst": {
+              "x": 273,
+              "y": 276,
+              "foreground": [
+                255,
+                122,
+                75
+              ],
+              "background": [
+                5,
+                11,
+                21
+              ]
+            }
+          },
+          {
+            "text": "Approach",
+            "fontSize": "20px",
+            "fontWeight": "520",
+            "minimumRatio": 18.78465633722973,
+            "worst": {
+              "x": 307,
+              "y": 287,
+              "foreground": [
+                248,
+                250,
+                252
+              ],
+              "background": [
+                7,
+                11,
+                22
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "label": "menu-link-3",
+      "meta": {
+        "tag": "A",
+        "name": "04Principles",
+        "rect": {
+          "x": 273,
+          "y": 320.78125,
+          "width": 447,
+          "height": 73.59375,
+          "top": 320.78125,
+          "right": 720,
+          "bottom": 394.375,
+          "left": 273
+        },
+        "rects": [
+          {
+            "x": 273,
+            "y": 349.75,
+            "width": 16.765625,
+            "height": 14,
+            "top": 349.75,
+            "right": 289.765625,
+            "bottom": 363.75,
+            "left": 273,
+            "color": "rgb(255, 122, 75)",
+            "fontSize": "10.4px",
+            "fontWeight": "700",
+            "text": "04"
+          },
+          {
+            "x": 305.765625,
+            "y": 343.078125,
+            "width": 119.6875,
+            "height": 27,
+            "top": 343.078125,
+            "right": 425.453125,
+            "bottom": 370.078125,
+            "left": 305.765625,
+            "color": "rgb(248, 250, 252)",
+            "fontSize": "20px",
+            "fontWeight": "520",
+            "text": "Principles"
+          }
+        ],
+        "icons": [],
+        "fontSize": "20px",
+        "fontWeight": "520",
+        "color": "rgb(248, 250, 252)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 9.865456800579944,
+          "worst": {
+            "x": 638,
+            "y": 314,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              12,
+              13,
+              32
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "04",
+            "fontSize": "10.4px",
+            "fontWeight": "700",
+            "minimumRatio": 7.639684657524045,
+            "worst": {
+              "x": 273,
+              "y": 349,
+              "foreground": [
+                255,
+                122,
+                75
+              ],
+              "background": [
+                5,
+                11,
+                21
+              ]
+            }
+          },
+          {
+            "text": "Principles",
+            "fontSize": "20px",
+            "fontWeight": "520",
+            "minimumRatio": 18.843525693852218,
+            "worst": {
+              "x": 305,
+              "y": 343,
+              "foreground": [
+                248,
+                250,
+                252
+              ],
+              "background": [
+                5,
+                11,
+                21
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "label": "menu-link-4",
+      "meta": {
+        "tag": "A",
+        "name": "05Contact",
+        "rect": {
+          "x": 273,
+          "y": 394.375,
+          "width": 447,
+          "height": 73.59375,
+          "top": 394.375,
+          "right": 720,
+          "bottom": 467.96875,
+          "left": 273
+        },
+        "rects": [
+          {
+            "x": 273,
+            "y": 423.34375,
+            "width": 16.765625,
+            "height": 14,
+            "top": 423.34375,
+            "right": 289.765625,
+            "bottom": 437.34375,
+            "left": 273,
+            "color": "rgb(255, 122, 75)",
+            "fontSize": "10.4px",
+            "fontWeight": "700",
+            "text": "05"
+          },
+          {
+            "x": 305.765625,
+            "y": 416.671875,
+            "width": 100.953125,
+            "height": 27,
+            "top": 416.671875,
+            "right": 406.71875,
+            "bottom": 443.671875,
+            "left": 305.765625,
+            "color": "rgb(248, 250, 252)",
+            "fontSize": "20px",
+            "fontWeight": "520",
+            "text": "Contact"
+          }
+        ],
+        "icons": [],
+        "fontSize": "20px",
+        "fontWeight": "520",
+        "color": "rgb(248, 250, 252)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 10.00336475779667,
+          "worst": {
+            "x": 268,
+            "y": 387,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              7,
+              13,
+              23
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "05",
+            "fontSize": "10.4px",
+            "fontWeight": "700",
+            "minimumRatio": 7.639684657524045,
+            "worst": {
+              "x": 273,
+              "y": 423,
+              "foreground": [
+                255,
+                122,
+                75
+              ],
+              "background": [
+                5,
+                11,
+                21
+              ]
+            }
+          },
+          {
+            "text": "Contact",
+            "fontSize": "20px",
+            "fontWeight": "520",
+            "minimumRatio": 18.602070527985628,
+            "worst": {
+              "x": 311,
+              "y": 416,
+              "foreground": [
+                248,
+                250,
+                252
+              ],
+              "background": [
+                7,
+                13,
+                23
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "menu": {
+        "last": "05Contact",
+        "wrapped": "Close navigation menu",
+        "restored": true,
+        "closed": "false",
+        "inert": null
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "label": "skip",
+      "meta": {
+        "tag": "A",
+        "name": "Skip to content",
+        "rect": {
+          "x": 12,
+          "y": 12,
+          "width": 149.609375,
+          "height": 49.59375,
+          "top": 12,
+          "right": 161.609375,
+          "bottom": 61.59375,
+          "left": 12
+        },
+        "rects": [
+          {
+            "x": 28,
+            "y": 25,
+            "width": 117.609375,
+            "height": 22,
+            "top": 25,
+            "right": 145.609375,
+            "bottom": 47,
+            "left": 28,
+            "color": "rgb(8, 18, 32)",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "text": "Skip to content"
+          }
+        ],
+        "icons": [],
+        "fontSize": "16px",
+        "fontWeight": "700",
+        "color": "rgb(8, 18, 32)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "3px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 10.31183722471764,
+          "worst": {
+            "x": 7,
+            "y": 7,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              3,
+              8,
+              17
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "Skip to content",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "minimumRatio": 17.957514799304366,
+            "worst": {
+              "x": 28,
+              "y": 25,
+              "foreground": [
+                8,
+                18,
+                32
+              ],
+              "background": [
+                248,
+                250,
+                252
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "label": "header",
+      "meta": {
+        "tag": "A",
+        "name": "Cumulative Labs home",
+        "rect": {
+          "x": 20,
+          "y": 12.078125,
+          "width": 208,
+          "height": 51.640625,
+          "top": 12.078125,
+          "right": 228,
+          "bottom": 63.71875,
+          "left": 20
+        },
+        "rects": [],
+        "icons": [],
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "color": "rgb(248, 250, 252)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 10.31183722471764,
+          "worst": {
+            "x": 13,
+            "y": 5,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              3,
+              8,
+              17
+            ]
+          }
+        },
+        "text": null,
+        "icons": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "label": "header",
+      "meta": {
+        "tag": "BUTTON",
+        "name": "Open navigation menu",
+        "rect": {
+          "x": 322,
+          "y": 13.890625,
+          "width": 48,
+          "height": 48,
+          "top": 13.890625,
+          "right": 370,
+          "bottom": 61.890625,
+          "left": 322
+        },
+        "rects": [],
+        "icons": [
+          {
+            "rect": {
+              "x": 338,
+              "y": 34.65625,
+              "width": 16,
+              "height": 1,
+              "top": 34.65625,
+              "right": 354,
+              "bottom": 35.65625,
+              "left": 338
+            },
+            "color": "rgb(255, 255, 255)"
+          },
+          {
+            "rect": {
+              "x": 338,
+              "y": 40.125,
+              "width": 16,
+              "height": 1,
+              "top": 40.125,
+              "right": 354,
+              "bottom": 41.125,
+              "left": 338
+            },
+            "color": "rgb(255, 255, 255)"
+          }
+        ],
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "color": "rgb(255, 255, 255)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 10.250409381581553,
+          "worst": {
+            "x": 315,
+            "y": 66,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              4,
+              9,
+              18
+            ]
+          }
+        },
+        "text": null,
+        "icons": [
+          {
+            "minimumRatio": 19.96802919147959,
+            "worst": {
+              "x": 338,
+              "y": 34,
+              "foreground": [
+                255,
+                255,
+                255
+              ],
+              "background": [
+                3,
+                9,
+                18
+              ]
+            }
+          },
+          {
+            "minimumRatio": 19.96802919147959,
+            "worst": {
+              "x": 338,
+              "y": 40,
+              "foreground": [
+                255,
+                255,
+                255
+              ],
+              "background": [
+                3,
+                9,
+                18
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "label": "CTA-primary",
+      "meta": {
+        "tag": "A",
+        "name": "See What We’re Building↗",
+        "rect": {
+          "x": 20,
+          "y": 496.046875,
+          "width": 350,
+          "height": 50.390625,
+          "top": 496.046875,
+          "right": 370,
+          "bottom": 546.4375,
+          "left": 20
+        },
+        "rects": [
+          {
+            "x": 95.3125,
+            "y": 512.484375,
+            "width": 175.75,
+            "height": 16,
+            "top": 512.484375,
+            "right": 271.0625,
+            "bottom": 528.484375,
+            "left": 95.3125,
+            "color": "rgb(248, 250, 252)",
+            "fontSize": "11.52px",
+            "fontWeight": "700",
+            "text": "See What We’re Building"
+          },
+          {
+            "x": 284.65625,
+            "y": 512.484375,
+            "width": 10.03125,
+            "height": 16,
+            "top": 512.484375,
+            "right": 294.6875,
+            "bottom": 528.484375,
+            "left": 284.65625,
+            "color": "rgb(248, 250, 252)",
+            "fontSize": "11.52px",
+            "fontWeight": "700",
+            "text": "↗"
+          }
+        ],
+        "icons": [],
+        "fontSize": "11.52px",
+        "fontWeight": "700",
+        "color": "rgb(248, 250, 252)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "3px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 9.000392040457479,
+          "worst": {
+            "x": 373,
+            "y": 551,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              31,
+              19,
+              51
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "See What We’re Building",
+            "fontSize": "11.52px",
+            "fontWeight": "700",
+            "minimumRatio": 17.434120859946592,
+            "worst": {
+              "x": 95,
+              "y": 512,
+              "foreground": [
+                248,
+                250,
+                252
+              ],
+              "background": [
+                16,
+                21,
+                33
+              ]
+            }
+          },
+          {
+            "text": "↗",
+            "fontSize": "11.52px",
+            "fontWeight": "700",
+            "minimumRatio": 17.434120859946592,
+            "worst": {
+              "x": 284,
+              "y": 512,
+              "foreground": [
+                248,
+                250,
+                252
+              ],
+              "background": [
+                16,
+                21,
+                33
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "label": "CTA-secondary",
+      "meta": {
+        "tag": "A",
+        "name": "Contact the Lab",
+        "rect": {
+          "x": 20,
+          "y": 558.4375,
+          "width": 350,
+          "height": 50.390625,
+          "top": 558.4375,
+          "right": 370,
+          "bottom": 608.828125,
+          "left": 20
+        },
+        "rects": [
+          {
+            "x": 136.234375,
+            "y": 574.875,
+            "width": 117.53125,
+            "height": 16,
+            "top": 574.875,
+            "right": 253.765625,
+            "bottom": 590.875,
+            "left": 136.234375,
+            "color": "rgb(248, 250, 252)",
+            "fontSize": "11.52px",
+            "fontWeight": "700",
+            "text": "Contact the Lab"
+          }
+        ],
+        "icons": [],
+        "fontSize": "11.52px",
+        "fontWeight": "700",
+        "color": "rgb(248, 250, 252)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "3px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 7.007906350286361,
+          "worst": {
+            "x": 15,
+            "y": 613,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              67,
+              38,
+              35
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "Contact the Lab",
+            "fontSize": "11.52px",
+            "fontWeight": "700",
+            "minimumRatio": 16.558218682064023,
+            "worst": {
+              "x": 242,
+              "y": 579,
+              "foreground": [
+                248,
+                250,
+                252
+              ],
+              "background": [
+                37,
+                20,
+                42
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "label": "menu-close",
+      "meta": {
+        "tag": "BUTTON",
+        "name": "Close navigation menu",
+        "rect": {
+          "x": 314.703125,
+          "y": 20,
+          "width": 48,
+          "height": 48,
+          "top": 20,
+          "right": 362.703125,
+          "bottom": 68,
+          "left": 314.703125
+        },
+        "rects": [],
+        "icons": [
+          {
+            "rect": {
+              "x": 331.8475036621094,
+              "y": 37.144378662109375,
+              "width": 13.71124267578125,
+              "height": 13.71124267578125,
+              "top": 37.144378662109375,
+              "right": 345.5587463378906,
+              "bottom": 50.855621337890625,
+              "left": 331.8475036621094
+            },
+            "color": "rgb(255, 255, 255)"
+          },
+          {
+            "rect": {
+              "x": 331.8475036621094,
+              "y": 37.144378662109375,
+              "width": 13.71124267578125,
+              "height": 13.71124267578125,
+              "top": 37.144378662109375,
+              "right": 345.5587463378906,
+              "bottom": 50.855621337890625,
+              "left": 331.8475036621094
+            },
+            "color": "rgb(255, 255, 255)"
+          }
+        ],
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "color": "rgb(255, 255, 255)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 9.345750653156523,
+          "worst": {
+            "x": 333,
+            "y": 73,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              23,
+              16,
+              49
+            ]
+          }
+        },
+        "text": null,
+        "icons": [
+          {
+            "minimumRatio": 18.17644646101636,
+            "worst": {
+              "x": 338,
+              "y": 40,
+              "foreground": [
+                255,
+                255,
+                255
+              ],
+              "background": [
+                22,
+                17,
+                47
+              ]
+            }
+          },
+          {
+            "minimumRatio": 18.17644646101636,
+            "worst": {
+              "x": 338,
+              "y": 40,
+              "foreground": [
+                255,
+                255,
+                255
+              ],
+              "background": [
+                22,
+                17,
+                47
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "label": "menu-link-0",
+      "meta": {
+        "tag": "A",
+        "name": "01Work",
+        "rect": {
+          "x": 28.296875,
+          "y": 100,
+          "width": 334.40625,
+          "height": 73.59375,
+          "top": 100,
+          "right": 362.703125,
+          "bottom": 173.59375,
+          "left": 28.296875
+        },
+        "rects": [
+          {
+            "x": 28.296875,
+            "y": 128.96875,
+            "width": 16.765625,
+            "height": 14,
+            "top": 128.96875,
+            "right": 45.0625,
+            "bottom": 142.96875,
+            "left": 28.296875,
+            "color": "rgb(255, 122, 75)",
+            "fontSize": "10.4px",
+            "fontWeight": "700",
+            "text": "01"
+          },
+          {
+            "x": 61.0625,
+            "y": 122.296875,
+            "width": 66.390625,
+            "height": 27,
+            "top": 122.296875,
+            "right": 127.453125,
+            "bottom": 149.296875,
+            "left": 61.0625,
+            "color": "rgb(248, 250, 252)",
+            "fontSize": "20px",
+            "fontWeight": "520",
+            "text": "Work"
+          }
+        ],
+        "icons": [],
+        "fontSize": "20px",
+        "fontWeight": "520",
+        "color": "rgb(248, 250, 252)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 9.213950838815306,
+          "worst": {
+            "x": 284,
+            "y": 180,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              24,
+              18,
+              50
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "01",
+            "fontSize": "10.4px",
+            "fontWeight": "700",
+            "minimumRatio": 7.591452612432334,
+            "worst": {
+              "x": 44,
+              "y": 128,
+              "foreground": [
+                255,
+                122,
+                75
+              ],
+              "background": [
+                6,
+                12,
+                22
+              ]
+            }
+          },
+          {
+            "text": "Work",
+            "fontSize": "20px",
+            "fontWeight": "520",
+            "minimumRatio": 18.17077628216014,
+            "worst": {
+              "x": 126,
+              "y": 122,
+              "foreground": [
+                248,
+                250,
+                252
+              ],
+              "background": [
+                14,
+                14,
+                34
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "label": "menu-link-1",
+      "meta": {
+        "tag": "A",
+        "name": "02Why Cumulative",
+        "rect": {
+          "x": 28.296875,
+          "y": 173.59375,
+          "width": 334.40625,
+          "height": 73.59375,
+          "top": 173.59375,
+          "right": 362.703125,
+          "bottom": 247.1875,
+          "left": 28.296875
+        },
+        "rects": [
+          {
+            "x": 28.296875,
+            "y": 202.5625,
+            "width": 16.765625,
+            "height": 14,
+            "top": 202.5625,
+            "right": 45.0625,
+            "bottom": 216.5625,
+            "left": 28.296875,
+            "color": "rgb(255, 122, 75)",
+            "fontSize": "10.4px",
+            "fontWeight": "700",
+            "text": "02"
+          },
+          {
+            "x": 61.0625,
+            "y": 195.890625,
+            "width": 189.3125,
+            "height": 27,
+            "top": 195.890625,
+            "right": 250.375,
+            "bottom": 222.890625,
+            "left": 61.0625,
+            "color": "rgb(248, 250, 252)",
+            "fontSize": "20px",
+            "fontWeight": "520",
+            "text": "Why Cumulative"
+          }
+        ],
+        "icons": [],
+        "fontSize": "20px",
+        "fontWeight": "520",
+        "color": "rgb(248, 250, 252)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 9.180705126166666,
+          "worst": {
+            "x": 276,
+            "y": 166,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              25,
+              18,
+              51
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "02",
+            "fontSize": "10.4px",
+            "fontWeight": "700",
+            "minimumRatio": 7.541792078602218,
+            "worst": {
+              "x": 30,
+              "y": 202,
+              "foreground": [
+                255,
+                122,
+                75
+              ],
+              "background": [
+                7,
+                13,
+                23
+              ]
+            }
+          },
+          {
+            "text": "Why Cumulative",
+            "fontSize": "20px",
+            "fontWeight": "520",
+            "minimumRatio": 17.724645415624128,
+            "worst": {
+              "x": 247,
+              "y": 195,
+              "foreground": [
+                248,
+                250,
+                252
+              ],
+              "background": [
+                19,
+                15,
+                44
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "label": "menu-link-2",
+      "meta": {
+        "tag": "A",
+        "name": "03Approach",
+        "rect": {
+          "x": 28.296875,
+          "y": 247.1875,
+          "width": 334.40625,
+          "height": 73.59375,
+          "top": 247.1875,
+          "right": 362.703125,
+          "bottom": 320.78125,
+          "left": 28.296875
+        },
+        "rects": [
+          {
+            "x": 28.296875,
+            "y": 276.15625,
+            "width": 16.765625,
+            "height": 14,
+            "top": 276.15625,
+            "right": 45.0625,
+            "bottom": 290.15625,
+            "left": 28.296875,
+            "color": "rgb(255, 122, 75)",
+            "fontSize": "10.4px",
+            "fontWeight": "700",
+            "text": "03"
+          },
+          {
+            "x": 61.0625,
+            "y": 269.484375,
+            "width": 116.59375,
+            "height": 27,
+            "top": 269.484375,
+            "right": 177.65625,
+            "bottom": 296.484375,
+            "left": 61.0625,
+            "color": "rgb(248, 250, 252)",
+            "fontSize": "20px",
+            "fontWeight": "520",
+            "text": "Approach"
+          }
+        ],
+        "icons": [],
+        "fontSize": "20px",
+        "fontWeight": "520",
+        "color": "rgb(248, 250, 252)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 9.568286809792669,
+          "worst": {
+            "x": 292,
+            "y": 240,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              19,
+              15,
+              41
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "03",
+            "fontSize": "10.4px",
+            "fontWeight": "700",
+            "minimumRatio": 7.639684657524045,
+            "worst": {
+              "x": 28,
+              "y": 276,
+              "foreground": [
+                255,
+                122,
+                75
+              ],
+              "background": [
+                5,
+                11,
+                21
+              ]
+            }
+          },
+          {
+            "text": "Approach",
+            "fontSize": "20px",
+            "fontWeight": "520",
+            "minimumRatio": 18.40470734174676,
+            "worst": {
+              "x": 171,
+              "y": 269,
+              "foreground": [
+                248,
+                250,
+                252
+              ],
+              "background": [
+                11,
+                13,
+                30
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "label": "menu-link-3",
+      "meta": {
+        "tag": "A",
+        "name": "04Principles",
+        "rect": {
+          "x": 28.296875,
+          "y": 320.78125,
+          "width": 334.40625,
+          "height": 73.59375,
+          "top": 320.78125,
+          "right": 362.703125,
+          "bottom": 394.375,
+          "left": 28.296875
+        },
+        "rects": [
+          {
+            "x": 28.296875,
+            "y": 349.75,
+            "width": 16.765625,
+            "height": 14,
+            "top": 349.75,
+            "right": 45.0625,
+            "bottom": 363.75,
+            "left": 28.296875,
+            "color": "rgb(255, 122, 75)",
+            "fontSize": "10.4px",
+            "fontWeight": "700",
+            "text": "04"
+          },
+          {
+            "x": 61.0625,
+            "y": 343.078125,
+            "width": 119.6875,
+            "height": 27,
+            "top": 343.078125,
+            "right": 180.75,
+            "bottom": 370.078125,
+            "left": 61.0625,
+            "color": "rgb(248, 250, 252)",
+            "fontSize": "20px",
+            "fontWeight": "520",
+            "text": "Principles"
+          }
+        ],
+        "icons": [],
+        "fontSize": "20px",
+        "fontWeight": "520",
+        "color": "rgb(248, 250, 252)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 9.732868494612031,
+          "worst": {
+            "x": 254,
+            "y": 314,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              14,
+              15,
+              33
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "04",
+            "fontSize": "10.4px",
+            "fontWeight": "700",
+            "minimumRatio": 7.541792078602218,
+            "worst": {
+              "x": 33,
+              "y": 363,
+              "foreground": [
+                255,
+                122,
+                75
+              ],
+              "background": [
+                7,
+                13,
+                23
+              ]
+            }
+          },
+          {
+            "text": "Principles",
+            "fontSize": "20px",
+            "fontWeight": "520",
+            "minimumRatio": 18.461742846863903,
+            "worst": {
+              "x": 175,
+              "y": 345,
+              "foreground": [
+                248,
+                250,
+                252
+              ],
+              "background": [
+                8,
+                14,
+                25
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "label": "menu-link-4",
+      "meta": {
+        "tag": "A",
+        "name": "05Contact",
+        "rect": {
+          "x": 28.296875,
+          "y": 394.375,
+          "width": 334.40625,
+          "height": 73.59375,
+          "top": 394.375,
+          "right": 362.703125,
+          "bottom": 467.96875,
+          "left": 28.296875
+        },
+        "rects": [
+          {
+            "x": 28.296875,
+            "y": 423.34375,
+            "width": 16.765625,
+            "height": 14,
+            "top": 423.34375,
+            "right": 45.0625,
+            "bottom": 437.34375,
+            "left": 28.296875,
+            "color": "rgb(255, 122, 75)",
+            "fontSize": "10.4px",
+            "fontWeight": "700",
+            "text": "05"
+          },
+          {
+            "x": 61.0625,
+            "y": 416.671875,
+            "width": 100.953125,
+            "height": 27,
+            "top": 416.671875,
+            "right": 162.015625,
+            "bottom": 443.671875,
+            "left": 61.0625,
+            "color": "rgb(248, 250, 252)",
+            "fontSize": "20px",
+            "fontWeight": "520",
+            "text": "Contact"
+          }
+        ],
+        "icons": [],
+        "fontSize": "20px",
+        "fontWeight": "520",
+        "color": "rgb(248, 250, 252)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 10.00336475779667,
+          "worst": {
+            "x": 61,
+            "y": 387,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              7,
+              13,
+              23
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "05",
+            "fontSize": "10.4px",
+            "fontWeight": "700",
+            "minimumRatio": 7.585883901107159,
+            "worst": {
+              "x": 38,
+              "y": 436,
+              "foreground": [
+                255,
+                122,
+                75
+              ],
+              "background": [
+                6,
+                12,
+                23
+              ]
+            }
+          },
+          {
+            "text": "Contact",
+            "fontSize": "20px",
+            "fontWeight": "520",
+            "minimumRatio": 18.710824413454233,
+            "worst": {
+              "x": 70,
+              "y": 431,
+              "foreground": [
+                248,
+                250,
+                252
+              ],
+              "background": [
+                6,
+                12,
+                23
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "menu": {
+        "last": "05Contact",
+        "wrapped": "Close navigation menu",
+        "restored": true,
+        "closed": "false",
+        "inert": null
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "label": "skip",
+      "meta": {
+        "tag": "A",
+        "name": "Skip to content",
+        "rect": {
+          "x": 12,
+          "y": 12,
+          "width": 149.609375,
+          "height": 49.59375,
+          "top": 12,
+          "right": 161.609375,
+          "bottom": 61.59375,
+          "left": 12
+        },
+        "rects": [
+          {
+            "x": 28,
+            "y": 25.868896484375,
+            "width": 117.60000610351562,
+            "height": 21.85595703125,
+            "top": 25.868896484375,
+            "right": 145.60000610351562,
+            "bottom": 47.724853515625,
+            "left": 28,
+            "color": "rgb(8, 18, 32)",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "text": "Skip to content"
+          }
+        ],
+        "icons": [],
+        "fontSize": "16px",
+        "fontWeight": "700",
+        "color": "rgb(8, 18, 32)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "3px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 10.31183722471764,
+          "worst": {
+            "x": 7,
+            "y": 7,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              3,
+              8,
+              17
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "Skip to content",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "minimumRatio": 17.957514799304366,
+            "worst": {
+              "x": 28,
+              "y": 25,
+              "foreground": [
+                8,
+                18,
+                32
+              ],
+              "background": [
+                248,
+                250,
+                252
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "label": "header",
+      "meta": {
+        "tag": "A",
+        "name": "Cumulative Labs home",
+        "rect": {
+          "x": 96,
+          "y": 13.734375,
+          "width": 272,
+          "height": 67.515625,
+          "top": 13.734375,
+          "right": 368,
+          "bottom": 81.25,
+          "left": 96
+        },
+        "rects": [],
+        "icons": [],
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "color": "rgb(248, 250, 252)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 10.31183722471764,
+          "worst": {
+            "x": 89,
+            "y": 6,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              3,
+              8,
+              17
+            ]
+          }
+        },
+        "text": null,
+        "icons": []
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "label": "header",
+      "meta": {
+        "tag": "A",
+        "name": "Work",
+        "rect": {
+          "x": 796.03125,
+          "y": 25.5,
+          "width": 41.5625,
+          "height": 44,
+          "top": 25.5,
+          "right": 837.59375,
+          "bottom": 69.5,
+          "left": 796.03125
+        },
+        "rects": [
+          {
+            "x": 796.03125,
+            "y": 39.51476287841797,
+            "width": 41.55743408203125,
+            "height": 15.954849243164062,
+            "top": 39.51476287841797,
+            "right": 837.5886840820312,
+            "bottom": 55.46961212158203,
+            "left": 796.03125,
+            "color": "rgb(255, 255, 255)",
+            "fontSize": "11.68px",
+            "fontWeight": "700",
+            "text": "Work"
+          }
+        ],
+        "icons": [],
+        "fontSize": "11.68px",
+        "fontWeight": "700",
+        "color": "rgb(255, 255, 255)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 10.24390151592043,
+          "worst": {
+            "x": 821,
+            "y": 74,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              4,
+              9,
+              19
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "Work",
+            "fontSize": "11.68px",
+            "fontWeight": "700",
+            "minimumRatio": 19.943554961072767,
+            "worst": {
+              "x": 796,
+              "y": 39,
+              "foreground": [
+                255,
+                255,
+                255
+              ],
+              "background": [
+                4,
+                9,
+                18
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "label": "header",
+      "meta": {
+        "tag": "A",
+        "name": "Why Cumulative",
+        "rect": {
+          "x": 866.390625,
+          "y": 25.5,
+          "width": 120.46875,
+          "height": 44,
+          "top": 25.5,
+          "right": 986.859375,
+          "bottom": 69.5,
+          "left": 866.390625
+        },
+        "rects": [
+          {
+            "x": 866.390625,
+            "y": 39.51476287841797,
+            "width": 120.467529296875,
+            "height": 15.954849243164062,
+            "top": 39.51476287841797,
+            "right": 986.858154296875,
+            "bottom": 55.46961212158203,
+            "left": 866.390625,
+            "color": "rgb(255, 255, 255)",
+            "fontSize": "11.68px",
+            "fontWeight": "700",
+            "text": "Why Cumulative"
+          }
+        ],
+        "icons": [],
+        "fontSize": "11.68px",
+        "fontWeight": "700",
+        "color": "rgb(255, 255, 255)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 10.17034162133851,
+          "worst": {
+            "x": 961,
+            "y": 74,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              6,
+              10,
+              20
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "Why Cumulative",
+            "fontSize": "11.68px",
+            "fontWeight": "700",
+            "minimumRatio": 19.681268473435836,
+            "worst": {
+              "x": 983,
+              "y": 44,
+              "foreground": [
+                255,
+                255,
+                255
+              ],
+              "background": [
+                7,
+                11,
+                20
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "label": "header",
+      "meta": {
+        "tag": "A",
+        "name": "Approach",
+        "rect": {
+          "x": 1015.65625,
+          "y": 25.5,
+          "width": 73.78125,
+          "height": 44,
+          "top": 25.5,
+          "right": 1089.4375,
+          "bottom": 69.5,
+          "left": 1015.65625
+        },
+        "rects": [
+          {
+            "x": 1015.65625,
+            "y": 39.51476287841797,
+            "width": 73.7708740234375,
+            "height": 15.954849243164062,
+            "top": 39.51476287841797,
+            "right": 1089.4271240234375,
+            "bottom": 55.46961212158203,
+            "left": 1015.65625,
+            "color": "rgb(255, 255, 255)",
+            "fontSize": "11.68px",
+            "fontWeight": "700",
+            "text": "Approach"
+          }
+        ],
+        "icons": [],
+        "fontSize": "11.68px",
+        "fontWeight": "700",
+        "color": "rgb(255, 255, 255)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 10.151040966078963,
+          "worst": {
+            "x": 1085,
+            "y": 76,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              7,
+              10,
+              21
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "Approach",
+            "fontSize": "11.68px",
+            "fontWeight": "700",
+            "minimumRatio": 19.54399166998816,
+            "worst": {
+              "x": 1046,
+              "y": 44,
+              "foreground": [
+                255,
+                255,
+                255
+              ],
+              "background": [
+                8,
+                12,
+                22
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "label": "header",
+      "meta": {
+        "tag": "A",
+        "name": "Principles",
+        "rect": {
+          "x": 1118.234375,
+          "y": 25.5,
+          "width": 76.96875,
+          "height": 44,
+          "top": 25.5,
+          "right": 1195.203125,
+          "bottom": 69.5,
+          "left": 1118.234375
+        },
+        "rects": [
+          {
+            "x": 1118.234375,
+            "y": 39.51476287841797,
+            "width": 76.9595947265625,
+            "height": 15.954849243164062,
+            "top": 39.51476287841797,
+            "right": 1195.1939697265625,
+            "bottom": 55.46961212158203,
+            "left": 1118.234375,
+            "color": "rgb(255, 255, 255)",
+            "fontSize": "11.68px",
+            "fontWeight": "700",
+            "text": "Principles"
+          }
+        ],
+        "icons": [],
+        "fontSize": "11.68px",
+        "fontWeight": "700",
+        "color": "rgb(255, 255, 255)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 10.143820154047932,
+          "worst": {
+            "x": 1141,
+            "y": 74,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              7,
+              10,
+              22
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "Principles",
+            "fontSize": "11.68px",
+            "fontWeight": "700",
+            "minimumRatio": 19.529689586010946,
+            "worst": {
+              "x": 1172,
+              "y": 44,
+              "foreground": [
+                255,
+                255,
+                255
+              ],
+              "background": [
+                8,
+                12,
+                23
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "label": "header",
+      "meta": {
+        "tag": "A",
+        "name": "Contact",
+        "rect": {
+          "x": 1224,
+          "y": 25.5,
+          "width": 120,
+          "height": 44,
+          "top": 25.5,
+          "right": 1344,
+          "bottom": 69.5,
+          "left": 1224
+        },
+        "rects": [
+          {
+            "x": 1241.0028076171875,
+            "y": 39.51476287841797,
+            "width": 62.931884765625,
+            "height": 15.954849243164062,
+            "top": 39.51476287841797,
+            "right": 1303.9346923828125,
+            "bottom": 55.46961212158203,
+            "left": 1241.0028076171875,
+            "color": "rgb(255, 255, 255)",
+            "fontSize": "11.68px",
+            "fontWeight": "700",
+            "text": "Contact"
+          }
+        ],
+        "icons": [],
+        "fontSize": "11.68px",
+        "fontWeight": "700",
+        "color": "rgb(255, 255, 255)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 10.143820154047932,
+          "worst": {
+            "x": 1217,
+            "y": 74,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              7,
+              10,
+              22
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "Contact",
+            "fontSize": "11.68px",
+            "fontWeight": "700",
+            "minimumRatio": 18.08255512068944,
+            "worst": {
+              "x": 1298,
+              "y": 44,
+              "foreground": [
+                255,
+                255,
+                255
+              ],
+              "background": [
+                18,
+                22,
+                32
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "label": "CTA-primary",
+      "meta": {
+        "tag": "A",
+        "name": "See What We’re Building↗",
+        "rect": {
+          "x": 96,
+          "y": 646.109375,
+          "width": 241.65625,
+          "height": 52,
+          "top": 646.109375,
+          "right": 337.65625,
+          "bottom": 698.109375,
+          "left": 96
+        },
+        "rects": [
+          {
+            "x": 117,
+            "y": 664.2333984375,
+            "width": 176.02560424804688,
+            "height": 15.736328125,
+            "top": 664.2333984375,
+            "right": 293.0256042480469,
+            "bottom": 679.9697265625,
+            "left": 117,
+            "color": "rgb(248, 250, 252)",
+            "fontSize": "11.52px",
+            "fontWeight": "700",
+            "text": "See What We’re Building"
+          },
+          {
+            "x": 306.625,
+            "y": 664.2333984375,
+            "width": 10.02294921875,
+            "height": 15.736328125,
+            "top": 664.2333984375,
+            "right": 316.64794921875,
+            "bottom": 679.9697265625,
+            "left": 306.625,
+            "color": "rgb(248, 250, 252)",
+            "fontSize": "11.52px",
+            "fontWeight": "700",
+            "text": "↗"
+          }
+        ],
+        "icons": [],
+        "fontSize": "11.52px",
+        "fontWeight": "700",
+        "color": "rgb(248, 250, 252)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "3px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 10.28186631973497,
+          "worst": {
+            "x": 91,
+            "y": 703,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              2,
+              9,
+              17
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "See What We’re Building",
+            "fontSize": "11.52px",
+            "fontWeight": "700",
+            "minimumRatio": 17.294415913048788,
+            "worst": {
+              "x": 117,
+              "y": 671,
+              "foreground": [
+                248,
+                250,
+                252
+              ],
+              "background": [
+                17,
+                22,
+                33
+              ]
+            }
+          },
+          {
+            "text": "↗",
+            "fontSize": "11.52px",
+            "fontWeight": "700",
+            "minimumRatio": 17.294415913048788,
+            "worst": {
+              "x": 306,
+              "y": 671,
+              "foreground": [
+                248,
+                250,
+                252
+              ],
+              "background": [
+                17,
+                22,
+                33
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "label": "CTA-secondary",
+      "meta": {
+        "tag": "A",
+        "name": "Contact the Lab",
+        "rect": {
+          "x": 350.453125,
+          "y": 646.109375,
+          "width": 159.8125,
+          "height": 52,
+          "top": 646.109375,
+          "right": 510.265625,
+          "bottom": 698.109375,
+          "left": 350.453125
+        },
+        "rects": [
+          {
+            "x": 371.453125,
+            "y": 664.2333984375,
+            "width": 117.80352783203125,
+            "height": 15.736328125,
+            "top": 664.2333984375,
+            "right": 489.25665283203125,
+            "bottom": 679.9697265625,
+            "left": 371.453125,
+            "color": "rgb(248, 250, 252)",
+            "fontSize": "11.52px",
+            "fontWeight": "700",
+            "text": "Contact the Lab"
+          }
+        ],
+        "icons": [],
+        "fontSize": "11.52px",
+        "fontWeight": "700",
+        "color": "rgb(248, 250, 252)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "3px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 9.329681931013816,
+          "worst": {
+            "x": 515,
+            "y": 642,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              23,
+              21,
+              24
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "Contact the Lab",
+            "fontSize": "11.52px",
+            "fontWeight": "700",
+            "minimumRatio": 19.0493681970728,
+            "worst": {
+              "x": 483,
+              "y": 664,
+              "foreground": [
+                248,
+                250,
+                252
+              ],
+              "background": [
+                4,
+                9,
+                19
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 1024,
+      "label": "skip",
+      "meta": {
+        "tag": "A",
+        "name": "Skip to content",
+        "rect": {
+          "x": 12,
+          "y": 12,
+          "width": 149.609375,
+          "height": 49.59375,
+          "top": 12,
+          "right": 161.609375,
+          "bottom": 61.59375,
+          "left": 12
+        },
+        "rects": [
+          {
+            "x": 28,
+            "y": 25.868896484375,
+            "width": 117.60000610351562,
+            "height": 21.85595703125,
+            "top": 25.868896484375,
+            "right": 145.60000610351562,
+            "bottom": 47.724853515625,
+            "left": 28,
+            "color": "rgb(8, 18, 32)",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "text": "Skip to content"
+          }
+        ],
+        "icons": [],
+        "fontSize": "16px",
+        "fontWeight": "700",
+        "color": "rgb(8, 18, 32)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "3px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 10.31183722471764,
+          "worst": {
+            "x": 7,
+            "y": 7,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              3,
+              8,
+              17
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "Skip to content",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "minimumRatio": 17.957514799304366,
+            "worst": {
+              "x": 28,
+              "y": 25,
+              "foreground": [
+                8,
+                18,
+                32
+              ],
+              "background": [
+                248,
+                250,
+                252
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 1024,
+      "label": "header",
+      "meta": {
+        "tag": "A",
+        "name": "Cumulative Labs home",
+        "rect": {
+          "x": 40,
+          "y": 13.734375,
+          "width": 272,
+          "height": 67.515625,
+          "top": 13.734375,
+          "right": 312,
+          "bottom": 81.25,
+          "left": 40
+        },
+        "rects": [],
+        "icons": [],
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "color": "rgb(248, 250, 252)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 10.31183722471764,
+          "worst": {
+            "x": 33,
+            "y": 6,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              3,
+              8,
+              17
+            ]
+          }
+        },
+        "text": null,
+        "icons": []
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 1024,
+      "label": "header",
+      "meta": {
+        "tag": "A",
+        "name": "Work",
+        "rect": {
+          "x": 459.09375,
+          "y": 25.5,
+          "width": 41.5625,
+          "height": 44,
+          "top": 25.5,
+          "right": 500.65625,
+          "bottom": 69.5,
+          "left": 459.09375
+        },
+        "rects": [
+          {
+            "x": 459.09375,
+            "y": 39.51476287841797,
+            "width": 41.55743408203125,
+            "height": 15.954849243164062,
+            "top": 39.51476287841797,
+            "right": 500.65118408203125,
+            "bottom": 55.46961212158203,
+            "left": 459.09375,
+            "color": "rgb(255, 255, 255)",
+            "fontSize": "11.68px",
+            "fontWeight": "700",
+            "text": "Work"
+          }
+        ],
+        "icons": [],
+        "fontSize": "11.68px",
+        "fontWeight": "700",
+        "color": "rgb(255, 255, 255)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 10.31183722471764,
+          "worst": {
+            "x": 452,
+            "y": 18,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              3,
+              8,
+              17
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "Work",
+            "fontSize": "11.68px",
+            "fontWeight": "700",
+            "minimumRatio": 19.943554961072767,
+            "worst": {
+              "x": 479,
+              "y": 44,
+              "foreground": [
+                255,
+                255,
+                255
+              ],
+              "background": [
+                4,
+                9,
+                18
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 1024,
+      "label": "header",
+      "meta": {
+        "tag": "A",
+        "name": "Why Cumulative",
+        "rect": {
+          "x": 529.453125,
+          "y": 25.5,
+          "width": 120.46875,
+          "height": 44,
+          "top": 25.5,
+          "right": 649.921875,
+          "bottom": 69.5,
+          "left": 529.453125
+        },
+        "rects": [
+          {
+            "x": 529.453125,
+            "y": 39.51476287841797,
+            "width": 120.467529296875,
+            "height": 15.954849243164062,
+            "top": 39.51476287841797,
+            "right": 649.920654296875,
+            "bottom": 55.46961212158203,
+            "left": 529.453125,
+            "color": "rgb(255, 255, 255)",
+            "fontSize": "11.68px",
+            "fontWeight": "700",
+            "text": "Why Cumulative"
+          }
+        ],
+        "icons": [],
+        "fontSize": "11.68px",
+        "fontWeight": "700",
+        "color": "rgb(255, 255, 255)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 10.189433797297431,
+          "worst": {
+            "x": 655,
+            "y": 75,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              5,
+              10,
+              19
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "Why Cumulative",
+            "fontSize": "11.68px",
+            "fontWeight": "700",
+            "minimumRatio": 19.691665459686853,
+            "worst": {
+              "x": 605,
+              "y": 44,
+              "foreground": [
+                255,
+                255,
+                255
+              ],
+              "background": [
+                6,
+                11,
+                21
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 1024,
+      "label": "header",
+      "meta": {
+        "tag": "A",
+        "name": "Approach",
+        "rect": {
+          "x": 678.71875,
+          "y": 25.5,
+          "width": 73.78125,
+          "height": 44,
+          "top": 25.5,
+          "right": 752.5,
+          "bottom": 69.5,
+          "left": 678.71875
+        },
+        "rects": [
+          {
+            "x": 678.71875,
+            "y": 39.51476287841797,
+            "width": 73.7708740234375,
+            "height": 15.954849243164062,
+            "top": 39.51476287841797,
+            "right": 752.4896240234375,
+            "bottom": 55.46961212158203,
+            "left": 678.71875,
+            "color": "rgb(255, 255, 255)",
+            "fontSize": "11.68px",
+            "fontWeight": "700",
+            "text": "Approach"
+          }
+        ],
+        "icons": [],
+        "fontSize": "11.68px",
+        "fontWeight": "700",
+        "color": "rgb(255, 255, 255)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 10.163377161873818,
+          "worst": {
+            "x": 725,
+            "y": 74,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              6,
+              10,
+              21
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "Approach",
+            "fontSize": "11.68px",
+            "fontWeight": "700",
+            "minimumRatio": 19.667863599286537,
+            "worst": {
+              "x": 731,
+              "y": 44,
+              "foreground": [
+                255,
+                255,
+                255
+              ],
+              "background": [
+                7,
+                11,
+                21
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 1024,
+      "label": "header",
+      "meta": {
+        "tag": "A",
+        "name": "Principles",
+        "rect": {
+          "x": 781.296875,
+          "y": 25.5,
+          "width": 76.96875,
+          "height": 44,
+          "top": 25.5,
+          "right": 858.265625,
+          "bottom": 69.5,
+          "left": 781.296875
+        },
+        "rects": [
+          {
+            "x": 781.296875,
+            "y": 39.51476287841797,
+            "width": 76.95953369140625,
+            "height": 15.954849243164062,
+            "top": 39.51476287841797,
+            "right": 858.2564086914062,
+            "bottom": 55.46961212158203,
+            "left": 781.296875,
+            "color": "rgb(255, 255, 255)",
+            "fontSize": "11.68px",
+            "fontWeight": "700",
+            "text": "Principles"
+          }
+        ],
+        "icons": [],
+        "fontSize": "11.68px",
+        "fontWeight": "700",
+        "color": "rgb(255, 255, 255)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 10.143820154047932,
+          "worst": {
+            "x": 789,
+            "y": 74,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              7,
+              10,
+              22
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "Principles",
+            "fontSize": "11.68px",
+            "fontWeight": "700",
+            "minimumRatio": 19.529689586010946,
+            "worst": {
+              "x": 857,
+              "y": 44,
+              "foreground": [
+                255,
+                255,
+                255
+              ],
+              "background": [
+                8,
+                12,
+                23
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 1024,
+      "label": "header",
+      "meta": {
+        "tag": "A",
+        "name": "Contact",
+        "rect": {
+          "x": 887.0625,
+          "y": 25.5,
+          "width": 96.9375,
+          "height": 44,
+          "top": 25.5,
+          "right": 984,
+          "bottom": 69.5,
+          "left": 887.0625
+        },
+        "rects": [
+          {
+            "x": 904.0653076171875,
+            "y": 39.51476287841797,
+            "width": 62.931884765625,
+            "height": 15.954849243164062,
+            "top": 39.51476287841797,
+            "right": 966.9971923828125,
+            "bottom": 55.46961212158203,
+            "left": 904.0653076171875,
+            "color": "rgb(255, 255, 255)",
+            "fontSize": "11.68px",
+            "fontWeight": "700",
+            "text": "Contact"
+          }
+        ],
+        "icons": [],
+        "fontSize": "11.68px",
+        "fontWeight": "700",
+        "color": "rgb(255, 255, 255)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 10.124053426521966,
+          "worst": {
+            "x": 925,
+            "y": 76,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              8,
+              10,
+              23
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "Contact",
+            "fontSize": "11.68px",
+            "fontWeight": "700",
+            "minimumRatio": 18.08255512068944,
+            "worst": {
+              "x": 920,
+              "y": 44,
+              "foreground": [
+                255,
+                255,
+                255
+              ],
+              "background": [
+                18,
+                22,
+                32
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 1024,
+      "label": "CTA-primary",
+      "meta": {
+        "tag": "A",
+        "name": "See What We’re Building↗",
+        "rect": {
+          "x": 40,
+          "y": 578.890625,
+          "width": 241.65625,
+          "height": 52,
+          "top": 578.890625,
+          "right": 281.65625,
+          "bottom": 630.890625,
+          "left": 40
+        },
+        "rects": [
+          {
+            "x": 61,
+            "y": 597.0146484375,
+            "width": 176.02560424804688,
+            "height": 15.736328125,
+            "top": 597.0146484375,
+            "right": 237.02560424804688,
+            "bottom": 612.7509765625,
+            "left": 61,
+            "color": "rgb(248, 250, 252)",
+            "fontSize": "11.52px",
+            "fontWeight": "700",
+            "text": "See What We’re Building"
+          },
+          {
+            "x": 250.625,
+            "y": 597.0146484375,
+            "width": 10.02294921875,
+            "height": 15.736328125,
+            "top": 597.0146484375,
+            "right": 260.64794921875,
+            "bottom": 612.7509765625,
+            "left": 250.625,
+            "color": "rgb(248, 250, 252)",
+            "fontSize": "11.52px",
+            "fontWeight": "700",
+            "text": "↗"
+          }
+        ],
+        "icons": [],
+        "fontSize": "11.52px",
+        "fontWeight": "700",
+        "color": "rgb(248, 250, 252)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "3px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 10.189613458297375,
+          "worst": {
+            "x": 286,
+            "y": 575,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              6,
+              10,
+              17
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "See What We’re Building",
+            "fontSize": "11.52px",
+            "fontWeight": "700",
+            "minimumRatio": 17.294415913048788,
+            "worst": {
+              "x": 61,
+              "y": 604,
+              "foreground": [
+                248,
+                250,
+                252
+              ],
+              "background": [
+                17,
+                22,
+                33
+              ]
+            }
+          },
+          {
+            "text": "↗",
+            "fontSize": "11.52px",
+            "fontWeight": "700",
+            "minimumRatio": 17.294415913048788,
+            "worst": {
+              "x": 250,
+              "y": 604,
+              "foreground": [
+                248,
+                250,
+                252
+              ],
+              "background": [
+                17,
+                22,
+                33
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 1024,
+      "label": "CTA-secondary",
+      "meta": {
+        "tag": "A",
+        "name": "Contact the Lab",
+        "rect": {
+          "x": 294.453125,
+          "y": 578.890625,
+          "width": 159.8125,
+          "height": 52,
+          "top": 578.890625,
+          "right": 454.265625,
+          "bottom": 630.890625,
+          "left": 294.453125
+        },
+        "rects": [
+          {
+            "x": 315.453125,
+            "y": 597.0146484375,
+            "width": 117.80352783203125,
+            "height": 15.736328125,
+            "top": 597.0146484375,
+            "right": 433.25665283203125,
+            "bottom": 612.7509765625,
+            "left": 315.453125,
+            "color": "rgb(248, 250, 252)",
+            "fontSize": "11.52px",
+            "fontWeight": "700",
+            "text": "Contact the Lab"
+          }
+        ],
+        "icons": [],
+        "fontSize": "11.52px",
+        "fontWeight": "700",
+        "color": "rgb(248, 250, 252)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "3px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 10.127736649570881,
+          "worst": {
+            "x": 289,
+            "y": 574,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              10,
+              10,
+              19
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "Contact the Lab",
+            "fontSize": "11.52px",
+            "fontWeight": "700",
+            "minimumRatio": 18.77527811532927,
+            "worst": {
+              "x": 369,
+              "y": 600,
+              "foreground": [
+                248,
+                250,
+                252
+              ],
+              "background": [
+                8,
+                11,
+                21
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 768,
+      "label": "skip",
+      "meta": {
+        "tag": "A",
+        "name": "Skip to content",
+        "rect": {
+          "x": 12,
+          "y": 12,
+          "width": 149.609375,
+          "height": 49.59375,
+          "top": 12,
+          "right": 161.609375,
+          "bottom": 61.59375,
+          "left": 12
+        },
+        "rects": [
+          {
+            "x": 28,
+            "y": 25.868896484375,
+            "width": 117.60000610351562,
+            "height": 21.85595703125,
+            "top": 25.868896484375,
+            "right": 145.60000610351562,
+            "bottom": 47.724853515625,
+            "left": 28,
+            "color": "rgb(8, 18, 32)",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "text": "Skip to content"
+          }
+        ],
+        "icons": [],
+        "fontSize": "16px",
+        "fontWeight": "700",
+        "color": "rgb(8, 18, 32)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "3px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 10.31183722471764,
+          "worst": {
+            "x": 7,
+            "y": 7,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              3,
+              8,
+              17
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "Skip to content",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "minimumRatio": 17.957514799304366,
+            "worst": {
+              "x": 28,
+              "y": 25,
+              "foreground": [
+                8,
+                18,
+                32
+              ],
+              "background": [
+                248,
+                250,
+                252
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 768,
+      "label": "header",
+      "meta": {
+        "tag": "A",
+        "name": "Cumulative Labs home",
+        "rect": {
+          "x": 20,
+          "y": 12.078125,
+          "width": 208,
+          "height": 51.640625,
+          "top": 12.078125,
+          "right": 228,
+          "bottom": 63.71875,
+          "left": 20
+        },
+        "rects": [],
+        "icons": [],
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "color": "rgb(248, 250, 252)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 10.31183722471764,
+          "worst": {
+            "x": 13,
+            "y": 5,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              3,
+              8,
+              17
+            ]
+          }
+        },
+        "text": null,
+        "icons": []
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 768,
+      "label": "header",
+      "meta": {
+        "tag": "BUTTON",
+        "name": "Open navigation menu",
+        "rect": {
+          "x": 700,
+          "y": 13.890625,
+          "width": 48,
+          "height": 48,
+          "top": 13.890625,
+          "right": 748,
+          "bottom": 61.890625,
+          "left": 700
+        },
+        "rects": [],
+        "icons": [
+          {
+            "rect": {
+              "x": 716,
+              "y": 34.65625,
+              "width": 16,
+              "height": 1,
+              "top": 34.65625,
+              "right": 732,
+              "bottom": 35.65625,
+              "left": 716
+            },
+            "color": "rgb(255, 255, 255)"
+          },
+          {
+            "rect": {
+              "x": 716,
+              "y": 40.125,
+              "width": 16,
+              "height": 1,
+              "top": 40.125,
+              "right": 732,
+              "bottom": 41.125,
+              "left": 716
+            },
+            "color": "rgb(255, 255, 255)"
+          }
+        ],
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "color": "rgb(255, 255, 255)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 10.250409381581553,
+          "worst": {
+            "x": 693,
+            "y": 66,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              4,
+              9,
+              18
+            ]
+          }
+        },
+        "text": null,
+        "icons": [
+          {
+            "minimumRatio": 19.96802919147959,
+            "worst": {
+              "x": 716,
+              "y": 34,
+              "foreground": [
+                255,
+                255,
+                255
+              ],
+              "background": [
+                3,
+                9,
+                18
+              ]
+            }
+          },
+          {
+            "minimumRatio": 19.96802919147959,
+            "worst": {
+              "x": 716,
+              "y": 40,
+              "foreground": [
+                255,
+                255,
+                255
+              ],
+              "background": [
+                3,
+                9,
+                18
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 768,
+      "label": "CTA-primary",
+      "meta": {
+        "tag": "A",
+        "name": "See What We’re Building↗",
+        "rect": {
+          "x": 20,
+          "y": 542.34375,
+          "width": 688,
+          "height": 50.390625,
+          "top": 542.34375,
+          "right": 708,
+          "bottom": 592.734375,
+          "left": 20
+        },
+        "rects": [
+          {
+            "x": 264.171875,
+            "y": 559.6708984375,
+            "width": 176.02560424804688,
+            "height": 15.736328125,
+            "top": 559.6708984375,
+            "right": 440.1974792480469,
+            "bottom": 575.4072265625,
+            "left": 264.171875,
+            "color": "rgb(248, 250, 252)",
+            "fontSize": "11.52px",
+            "fontWeight": "700",
+            "text": "See What We’re Building"
+          },
+          {
+            "x": 453.796875,
+            "y": 559.6708984375,
+            "width": 10.02294921875,
+            "height": 15.736328125,
+            "top": 559.6708984375,
+            "right": 463.81982421875,
+            "bottom": 575.4072265625,
+            "left": 453.796875,
+            "color": "rgb(248, 250, 252)",
+            "fontSize": "11.52px",
+            "fontWeight": "700",
+            "text": "↗"
+          }
+        ],
+        "icons": [],
+        "fontSize": "11.52px",
+        "fontWeight": "700",
+        "color": "rgb(248, 250, 252)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "3px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 8.589560092742982,
+          "worst": {
+            "x": 712,
+            "y": 597,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              40,
+              21,
+              57
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "See What We’re Building",
+            "fontSize": "11.52px",
+            "fontWeight": "700",
+            "minimumRatio": 17.294415913048788,
+            "worst": {
+              "x": 264,
+              "y": 567,
+              "foreground": [
+                248,
+                250,
+                252
+              ],
+              "background": [
+                17,
+                22,
+                33
+              ]
+            }
+          },
+          {
+            "text": "↗",
+            "fontSize": "11.52px",
+            "fontWeight": "700",
+            "minimumRatio": 17.294415913048788,
+            "worst": {
+              "x": 453,
+              "y": 567,
+              "foreground": [
+                248,
+                250,
+                252
+              ],
+              "background": [
+                17,
+                22,
+                33
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 768,
+      "label": "CTA-secondary",
+      "meta": {
+        "tag": "A",
+        "name": "Contact the Lab",
+        "rect": {
+          "x": 20,
+          "y": 604.734375,
+          "width": 688,
+          "height": 50.390625,
+          "top": 604.734375,
+          "right": 708,
+          "bottom": 655.125,
+          "left": 20
+        },
+        "rects": [
+          {
+            "x": 305.09375,
+            "y": 622.0615234375,
+            "width": 117.80352783203125,
+            "height": 15.736328125,
+            "top": 622.0615234375,
+            "right": 422.89727783203125,
+            "bottom": 637.7978515625,
+            "left": 305.09375,
+            "color": "rgb(248, 250, 252)",
+            "fontSize": "11.52px",
+            "fontWeight": "700",
+            "text": "Contact the Lab"
+          }
+        ],
+        "icons": [],
+        "fontSize": "11.52px",
+        "fontWeight": "700",
+        "color": "rgb(248, 250, 252)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "3px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 7.292871305865153,
+          "worst": {
+            "x": 711,
+            "y": 660,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              67,
+              26,
+              72
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "Contact the Lab",
+            "fontSize": "11.52px",
+            "fontWeight": "700",
+            "minimumRatio": 9.478770407388414,
+            "worst": {
+              "x": 419,
+              "y": 635,
+              "foreground": [
+                248,
+                250,
+                252
+              ],
+              "background": [
+                79,
+                63,
+                64
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 768,
+      "label": "menu-close",
+      "meta": {
+        "tag": "BUTTON",
+        "name": "Close navigation menu",
+        "rect": {
+          "x": 672,
+          "y": 20,
+          "width": 48,
+          "height": 48,
+          "top": 20,
+          "right": 720,
+          "bottom": 68,
+          "left": 672
+        },
+        "rects": [],
+        "icons": [
+          {
+            "rect": {
+              "x": 689.282470703125,
+              "y": 37.28248596191406,
+              "width": 13.71124267578125,
+              "height": 13.71124267578125,
+              "top": 37.28248596191406,
+              "right": 702.9937133789062,
+              "bottom": 50.99372863769531,
+              "left": 689.282470703125
+            },
+            "color": "rgb(255, 255, 255)"
+          },
+          {
+            "rect": {
+              "x": 689.282470703125,
+              "y": 37.00627136230469,
+              "width": 13.71124267578125,
+              "height": 13.71124267578125,
+              "top": 37.00627136230469,
+              "right": 702.9937133789062,
+              "bottom": 50.71751403808594,
+              "left": 689.282470703125
+            },
+            "color": "rgb(255, 255, 255)"
+          }
+        ],
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "color": "rgb(255, 255, 255)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 9.457268476991857,
+          "worst": {
+            "x": 665,
+            "y": 73,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              22,
+              14,
+              49
+            ]
+          }
+        },
+        "text": null,
+        "icons": [
+          {
+            "minimumRatio": 18.663243234532434,
+            "worst": {
+              "x": 689,
+              "y": 50,
+              "foreground": [
+                255,
+                255,
+                255
+              ],
+              "background": [
+                20,
+                13,
+                45
+              ]
+            }
+          },
+          {
+            "minimumRatio": 18.663243234532434,
+            "worst": {
+              "x": 689,
+              "y": 50,
+              "foreground": [
+                255,
+                255,
+                255
+              ],
+              "background": [
+                20,
+                13,
+                45
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 768,
+      "label": "menu-link-0",
+      "meta": {
+        "tag": "A",
+        "name": "01Work",
+        "rect": {
+          "x": 273,
+          "y": 100,
+          "width": 447,
+          "height": 73.59375,
+          "top": 100,
+          "right": 720,
+          "bottom": 173.59375,
+          "left": 273
+        },
+        "rects": [
+          {
+            "x": 273,
+            "y": 129.19369506835938,
+            "width": 16.764801025390625,
+            "height": 14.20635986328125,
+            "top": 129.19369506835938,
+            "right": 289.7648010253906,
+            "bottom": 143.40005493164062,
+            "left": 273,
+            "color": "rgb(255, 122, 75)",
+            "fontSize": "10.4px",
+            "fontWeight": "700",
+            "text": "01"
+          },
+          {
+            "x": 305.765625,
+            "y": 122.63690185546875,
+            "width": 66.3800048828125,
+            "height": 27.3199462890625,
+            "top": 122.63690185546875,
+            "right": 372.1456298828125,
+            "bottom": 149.95684814453125,
+            "left": 305.765625,
+            "color": "rgb(248, 250, 252)",
+            "fontSize": "20px",
+            "fontWeight": "520",
+            "text": "Work"
+          }
+        ],
+        "icons": [],
+        "fontSize": "20px",
+        "fontWeight": "520",
+        "color": "rgb(248, 250, 252)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 9.359307574985282,
+          "worst": {
+            "x": 640,
+            "y": 93,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              24,
+              15,
+              50
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "01",
+            "fontSize": "10.4px",
+            "fontWeight": "700",
+            "minimumRatio": 7.639684657524045,
+            "worst": {
+              "x": 273,
+              "y": 129,
+              "foreground": [
+                255,
+                122,
+                75
+              ],
+              "background": [
+                5,
+                11,
+                21
+              ]
+            }
+          },
+          {
+            "text": "Work",
+            "fontSize": "20px",
+            "fontWeight": "520",
+            "minimumRatio": 18.843525693852218,
+            "worst": {
+              "x": 305,
+              "y": 122,
+              "foreground": [
+                248,
+                250,
+                252
+              ],
+              "background": [
+                5,
+                11,
+                21
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 768,
+      "label": "menu-link-1",
+      "meta": {
+        "tag": "A",
+        "name": "02Why Cumulative",
+        "rect": {
+          "x": 273,
+          "y": 173.59375,
+          "width": 447,
+          "height": 73.59375,
+          "top": 173.59375,
+          "right": 720,
+          "bottom": 247.1875,
+          "left": 273
+        },
+        "rects": [
+          {
+            "x": 273,
+            "y": 202.78744506835938,
+            "width": 16.764801025390625,
+            "height": 14.20635986328125,
+            "top": 202.78744506835938,
+            "right": 289.7648010253906,
+            "bottom": 216.99380493164062,
+            "left": 273,
+            "color": "rgb(255, 122, 75)",
+            "fontSize": "10.4px",
+            "fontWeight": "700",
+            "text": "02"
+          },
+          {
+            "x": 305.765625,
+            "y": 196.23065185546875,
+            "width": 189.30001831054688,
+            "height": 27.3199462890625,
+            "top": 196.23065185546875,
+            "right": 495.0656433105469,
+            "bottom": 223.55059814453125,
+            "left": 305.765625,
+            "color": "rgb(248, 250, 252)",
+            "fontSize": "20px",
+            "fontWeight": "520",
+            "text": "Why Cumulative"
+          }
+        ],
+        "icons": [],
+        "fontSize": "20px",
+        "fontWeight": "520",
+        "color": "rgb(248, 250, 252)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 9.438107009971333,
+          "worst": {
+            "x": 642,
+            "y": 166,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              23,
+              14,
+              49
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "02",
+            "fontSize": "10.4px",
+            "fontWeight": "700",
+            "minimumRatio": 7.639684657524045,
+            "worst": {
+              "x": 273,
+              "y": 202,
+              "foreground": [
+                255,
+                122,
+                75
+              ],
+              "background": [
+                5,
+                11,
+                21
+              ]
+            }
+          },
+          {
+            "text": "Why Cumulative",
+            "fontSize": "20px",
+            "fontWeight": "520",
+            "minimumRatio": 18.47148440997567,
+            "worst": {
+              "x": 488,
+              "y": 196,
+              "foreground": [
+                248,
+                250,
+                252
+              ],
+              "background": [
+                11,
+                12,
+                31
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 768,
+      "label": "menu-link-2",
+      "meta": {
+        "tag": "A",
+        "name": "03Approach",
+        "rect": {
+          "x": 273,
+          "y": 247.1875,
+          "width": 447,
+          "height": 73.59375,
+          "top": 247.1875,
+          "right": 720,
+          "bottom": 320.78125,
+          "left": 273
+        },
+        "rects": [
+          {
+            "x": 273,
+            "y": 276.3811950683594,
+            "width": 16.764801025390625,
+            "height": 14.20635986328125,
+            "top": 276.3811950683594,
+            "right": 289.7648010253906,
+            "bottom": 290.5875549316406,
+            "left": 273,
+            "color": "rgb(255, 122, 75)",
+            "fontSize": "10.4px",
+            "fontWeight": "700",
+            "text": "03"
+          },
+          {
+            "x": 305.765625,
+            "y": 269.82440185546875,
+            "width": 116.58001708984375,
+            "height": 27.3199462890625,
+            "top": 269.82440185546875,
+            "right": 422.34564208984375,
+            "bottom": 297.14434814453125,
+            "left": 305.765625,
+            "color": "rgb(248, 250, 252)",
+            "fontSize": "20px",
+            "fontWeight": "520",
+            "text": "Approach"
+          }
+        ],
+        "icons": [],
+        "fontSize": "20px",
+        "fontWeight": "520",
+        "color": "rgb(248, 250, 252)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 9.721660044043425,
+          "worst": {
+            "x": 629,
+            "y": 240,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              16,
+              13,
+              40
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "03",
+            "fontSize": "10.4px",
+            "fontWeight": "700",
+            "minimumRatio": 7.639684657524045,
+            "worst": {
+              "x": 273,
+              "y": 276,
+              "foreground": [
+                255,
+                122,
+                75
+              ],
+              "background": [
+                5,
+                11,
+                21
+              ]
+            }
+          },
+          {
+            "text": "Approach",
+            "fontSize": "20px",
+            "fontWeight": "520",
+            "minimumRatio": 18.770832656698797,
+            "worst": {
+              "x": 307,
+              "y": 288,
+              "foreground": [
+                248,
+                250,
+                252
+              ],
+              "background": [
+                7,
+                11,
+                23
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 768,
+      "label": "menu-link-3",
+      "meta": {
+        "tag": "A",
+        "name": "04Principles",
+        "rect": {
+          "x": 273,
+          "y": 320.78125,
+          "width": 447,
+          "height": 73.59375,
+          "top": 320.78125,
+          "right": 720,
+          "bottom": 394.375,
+          "left": 273
+        },
+        "rects": [
+          {
+            "x": 273,
+            "y": 349.9749450683594,
+            "width": 16.764801025390625,
+            "height": 14.20635986328125,
+            "top": 349.9749450683594,
+            "right": 289.7648010253906,
+            "bottom": 364.1813049316406,
+            "left": 273,
+            "color": "rgb(255, 122, 75)",
+            "fontSize": "10.4px",
+            "fontWeight": "700",
+            "text": "04"
+          },
+          {
+            "x": 305.765625,
+            "y": 343.41815185546875,
+            "width": 119.68002319335938,
+            "height": 27.3199462890625,
+            "top": 343.41815185546875,
+            "right": 425.4456481933594,
+            "bottom": 370.73809814453125,
+            "left": 305.765625,
+            "color": "rgb(248, 250, 252)",
+            "fontSize": "20px",
+            "fontWeight": "520",
+            "text": "Principles"
+          }
+        ],
+        "icons": [],
+        "fontSize": "20px",
+        "fontWeight": "520",
+        "color": "rgb(248, 250, 252)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 9.945254855883677,
+          "worst": {
+            "x": 630,
+            "y": 313,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              10,
+              12,
+              31
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "04",
+            "fontSize": "10.4px",
+            "fontWeight": "700",
+            "minimumRatio": 7.639684657524045,
+            "worst": {
+              "x": 273,
+              "y": 349,
+              "foreground": [
+                255,
+                122,
+                75
+              ],
+              "background": [
+                5,
+                11,
+                21
+              ]
+            }
+          },
+          {
+            "text": "Principles",
+            "fontSize": "20px",
+            "fontWeight": "520",
+            "minimumRatio": 18.843525693852218,
+            "worst": {
+              "x": 305,
+              "y": 343,
+              "foreground": [
+                248,
+                250,
+                252
+              ],
+              "background": [
+                5,
+                11,
+                21
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 768,
+      "label": "menu-link-4",
+      "meta": {
+        "tag": "A",
+        "name": "05Contact",
+        "rect": {
+          "x": 273,
+          "y": 394.375,
+          "width": 447,
+          "height": 73.59375,
+          "top": 394.375,
+          "right": 720,
+          "bottom": 467.96875,
+          "left": 273
+        },
+        "rects": [
+          {
+            "x": 273,
+            "y": 423.5686950683594,
+            "width": 16.764801025390625,
+            "height": 14.20635986328125,
+            "top": 423.5686950683594,
+            "right": 289.7648010253906,
+            "bottom": 437.7750549316406,
+            "left": 273,
+            "color": "rgb(255, 122, 75)",
+            "fontSize": "10.4px",
+            "fontWeight": "700",
+            "text": "05"
+          },
+          {
+            "x": 305.765625,
+            "y": 417.01190185546875,
+            "width": 100.94003295898438,
+            "height": 27.3199462890625,
+            "top": 417.01190185546875,
+            "right": 406.7056579589844,
+            "bottom": 444.33184814453125,
+            "left": 305.765625,
+            "color": "rgb(248, 250, 252)",
+            "fontSize": "20px",
+            "fontWeight": "520",
+            "text": "Contact"
+          }
+        ],
+        "icons": [],
+        "fontSize": "20px",
+        "fontWeight": "520",
+        "color": "rgb(248, 250, 252)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 10.00336475779667,
+          "worst": {
+            "x": 268,
+            "y": 387,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              7,
+              13,
+              23
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "05",
+            "fontSize": "10.4px",
+            "fontWeight": "700",
+            "minimumRatio": 7.639684657524045,
+            "worst": {
+              "x": 273,
+              "y": 423,
+              "foreground": [
+                255,
+                122,
+                75
+              ],
+              "background": [
+                5,
+                11,
+                21
+              ]
+            }
+          },
+          {
+            "text": "Contact",
+            "fontSize": "20px",
+            "fontWeight": "520",
+            "minimumRatio": 18.602070527985628,
+            "worst": {
+              "x": 307,
+              "y": 417,
+              "foreground": [
+                248,
+                250,
+                252
+              ],
+              "background": [
+                7,
+                13,
+                23
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 768,
+      "menu": {
+        "last": "05Contact",
+        "wrapped": "Close navigation menu",
+        "restored": true,
+        "closed": "false",
+        "inert": null
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "label": "skip",
+      "meta": {
+        "tag": "A",
+        "name": "Skip to content",
+        "rect": {
+          "x": 12,
+          "y": 12,
+          "width": 149.609375,
+          "height": 49.59375,
+          "top": 12,
+          "right": 161.609375,
+          "bottom": 61.59375,
+          "left": 12
+        },
+        "rects": [
+          {
+            "x": 28,
+            "y": 25.868896484375,
+            "width": 117.60000610351562,
+            "height": 21.85595703125,
+            "top": 25.868896484375,
+            "right": 145.60000610351562,
+            "bottom": 47.724853515625,
+            "left": 28,
+            "color": "rgb(8, 18, 32)",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "text": "Skip to content"
+          }
+        ],
+        "icons": [],
+        "fontSize": "16px",
+        "fontWeight": "700",
+        "color": "rgb(8, 18, 32)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "3px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 10.31183722471764,
+          "worst": {
+            "x": 7,
+            "y": 7,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              3,
+              8,
+              17
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "Skip to content",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "minimumRatio": 17.957514799304366,
+            "worst": {
+              "x": 28,
+              "y": 25,
+              "foreground": [
+                8,
+                18,
+                32
+              ],
+              "background": [
+                248,
+                250,
+                252
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "label": "header",
+      "meta": {
+        "tag": "A",
+        "name": "Cumulative Labs home",
+        "rect": {
+          "x": 20,
+          "y": 12.078125,
+          "width": 208,
+          "height": 51.640625,
+          "top": 12.078125,
+          "right": 228,
+          "bottom": 63.71875,
+          "left": 20
+        },
+        "rects": [],
+        "icons": [],
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "color": "rgb(248, 250, 252)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 10.31183722471764,
+          "worst": {
+            "x": 13,
+            "y": 5,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              3,
+              8,
+              17
+            ]
+          }
+        },
+        "text": null,
+        "icons": []
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "label": "header",
+      "meta": {
+        "tag": "BUTTON",
+        "name": "Open navigation menu",
+        "rect": {
+          "x": 322,
+          "y": 13.890625,
+          "width": 48,
+          "height": 48,
+          "top": 13.890625,
+          "right": 370,
+          "bottom": 61.890625,
+          "left": 322
+        },
+        "rects": [],
+        "icons": [
+          {
+            "rect": {
+              "x": 338,
+              "y": 34.65625,
+              "width": 16,
+              "height": 1,
+              "top": 34.65625,
+              "right": 354,
+              "bottom": 35.65625,
+              "left": 338
+            },
+            "color": "rgb(255, 255, 255)"
+          },
+          {
+            "rect": {
+              "x": 338,
+              "y": 40.125,
+              "width": 16,
+              "height": 1,
+              "top": 40.125,
+              "right": 354,
+              "bottom": 41.125,
+              "left": 338
+            },
+            "color": "rgb(255, 255, 255)"
+          }
+        ],
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "color": "rgb(255, 255, 255)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 10.250409381581553,
+          "worst": {
+            "x": 315,
+            "y": 66,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              4,
+              9,
+              18
+            ]
+          }
+        },
+        "text": null,
+        "icons": [
+          {
+            "minimumRatio": 19.96802919147959,
+            "worst": {
+              "x": 338,
+              "y": 34,
+              "foreground": [
+                255,
+                255,
+                255
+              ],
+              "background": [
+                3,
+                9,
+                18
+              ]
+            }
+          },
+          {
+            "minimumRatio": 19.96802919147959,
+            "worst": {
+              "x": 338,
+              "y": 40,
+              "foreground": [
+                255,
+                255,
+                255
+              ],
+              "background": [
+                3,
+                9,
+                18
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "label": "CTA-primary",
+      "meta": {
+        "tag": "A",
+        "name": "See What We’re Building↗",
+        "rect": {
+          "x": 20,
+          "y": 495.90625,
+          "width": 350,
+          "height": 50.390625,
+          "top": 495.90625,
+          "right": 370,
+          "bottom": 546.296875,
+          "left": 20
+        },
+        "rects": [
+          {
+            "x": 95.171875,
+            "y": 513.2333984375,
+            "width": 176.02560424804688,
+            "height": 15.736328125,
+            "top": 513.2333984375,
+            "right": 271.1974792480469,
+            "bottom": 528.9697265625,
+            "left": 95.171875,
+            "color": "rgb(248, 250, 252)",
+            "fontSize": "11.52px",
+            "fontWeight": "700",
+            "text": "See What We’re Building"
+          },
+          {
+            "x": 284.796875,
+            "y": 513.2333984375,
+            "width": 10.02294921875,
+            "height": 15.736328125,
+            "top": 513.2333984375,
+            "right": 294.81982421875,
+            "bottom": 528.9697265625,
+            "left": 284.796875,
+            "color": "rgb(248, 250, 252)",
+            "fontSize": "11.52px",
+            "fontWeight": "700",
+            "text": "↗"
+          }
+        ],
+        "icons": [],
+        "fontSize": "11.52px",
+        "fontWeight": "700",
+        "color": "rgb(248, 250, 252)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "3px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 8.91231948190645,
+          "worst": {
+            "x": 373,
+            "y": 551,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              32,
+              20,
+              52
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "See What We’re Building",
+            "fontSize": "11.52px",
+            "fontWeight": "700",
+            "minimumRatio": 17.294415913048788,
+            "worst": {
+              "x": 95,
+              "y": 521,
+              "foreground": [
+                248,
+                250,
+                252
+              ],
+              "background": [
+                17,
+                22,
+                33
+              ]
+            }
+          },
+          {
+            "text": "↗",
+            "fontSize": "11.52px",
+            "fontWeight": "700",
+            "minimumRatio": 17.294415913048788,
+            "worst": {
+              "x": 284,
+              "y": 521,
+              "foreground": [
+                248,
+                250,
+                252
+              ],
+              "background": [
+                17,
+                22,
+                33
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "label": "CTA-secondary",
+      "meta": {
+        "tag": "A",
+        "name": "Contact the Lab",
+        "rect": {
+          "x": 20,
+          "y": 558.296875,
+          "width": 350,
+          "height": 50.390625,
+          "top": 558.296875,
+          "right": 370,
+          "bottom": 608.6875,
+          "left": 20
+        },
+        "rects": [
+          {
+            "x": 136.09375,
+            "y": 575.6240234375,
+            "width": 117.80352783203125,
+            "height": 15.736328125,
+            "top": 575.6240234375,
+            "right": 253.89727783203125,
+            "bottom": 591.3603515625,
+            "left": 136.09375,
+            "color": "rgb(248, 250, 252)",
+            "fontSize": "11.52px",
+            "fontWeight": "700",
+            "text": "Contact the Lab"
+          }
+        ],
+        "icons": [],
+        "fontSize": "11.52px",
+        "fontWeight": "700",
+        "color": "rgb(248, 250, 252)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "3px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 6.6026040497834675,
+          "worst": {
+            "x": 15,
+            "y": 613,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              72,
+              42,
+              38
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "Contact the Lab",
+            "fontSize": "11.52px",
+            "fontWeight": "700",
+            "minimumRatio": 16.267001429500613,
+            "worst": {
+              "x": 242,
+              "y": 579,
+              "foreground": [
+                248,
+                250,
+                252
+              ],
+              "background": [
+                40,
+                21,
+                44
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "label": "menu-close",
+      "meta": {
+        "tag": "BUTTON",
+        "name": "Close navigation menu",
+        "rect": {
+          "x": 314.703125,
+          "y": 20,
+          "width": 48,
+          "height": 48,
+          "top": 20,
+          "right": 362.703125,
+          "bottom": 68,
+          "left": 314.703125
+        },
+        "rects": [],
+        "icons": [
+          {
+            "rect": {
+              "x": 331.985595703125,
+              "y": 37.28248596191406,
+              "width": 13.71124267578125,
+              "height": 13.71124267578125,
+              "top": 37.28248596191406,
+              "right": 345.69683837890625,
+              "bottom": 50.99372863769531,
+              "left": 331.985595703125
+            },
+            "color": "rgb(255, 255, 255)"
+          },
+          {
+            "rect": {
+              "x": 331.985595703125,
+              "y": 37.00627136230469,
+              "width": 13.71124267578125,
+              "height": 13.71124267578125,
+              "top": 37.00627136230469,
+              "right": 345.69683837890625,
+              "bottom": 50.71751403808594,
+              "left": 331.985595703125
+            },
+            "color": "rgb(255, 255, 255)"
+          }
+        ],
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "color": "rgb(255, 255, 255)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 9.457268476991857,
+          "worst": {
+            "x": 307,
+            "y": 73,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              22,
+              14,
+              49
+            ]
+          }
+        },
+        "text": null,
+        "icons": [
+          {
+            "minimumRatio": 18.451679972218898,
+            "worst": {
+              "x": 338,
+              "y": 40,
+              "foreground": [
+                255,
+                255,
+                255
+              ],
+              "background": [
+                21,
+                15,
+                45
+              ]
+            }
+          },
+          {
+            "minimumRatio": 18.451679972218898,
+            "worst": {
+              "x": 338,
+              "y": 40,
+              "foreground": [
+                255,
+                255,
+                255
+              ],
+              "background": [
+                21,
+                15,
+                45
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "label": "menu-link-0",
+      "meta": {
+        "tag": "A",
+        "name": "01Work",
+        "rect": {
+          "x": 28.296875,
+          "y": 100,
+          "width": 334.40625,
+          "height": 73.59375,
+          "top": 100,
+          "right": 362.703125,
+          "bottom": 173.59375,
+          "left": 28.296875
+        },
+        "rects": [
+          {
+            "x": 28.296875,
+            "y": 129.19369506835938,
+            "width": 16.764801025390625,
+            "height": 14.20635986328125,
+            "top": 129.19369506835938,
+            "right": 45.061676025390625,
+            "bottom": 143.40005493164062,
+            "left": 28.296875,
+            "color": "rgb(255, 122, 75)",
+            "fontSize": "10.4px",
+            "fontWeight": "700",
+            "text": "01"
+          },
+          {
+            "x": 61.0625,
+            "y": 122.63690185546875,
+            "width": 66.3800048828125,
+            "height": 27.3199462890625,
+            "top": 122.63690185546875,
+            "right": 127.4425048828125,
+            "bottom": 149.95684814453125,
+            "left": 61.0625,
+            "color": "rgb(248, 250, 252)",
+            "fontSize": "20px",
+            "fontWeight": "520",
+            "text": "Work"
+          }
+        ],
+        "icons": [],
+        "fontSize": "20px",
+        "fontWeight": "520",
+        "color": "rgb(248, 250, 252)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 9.345750653156523,
+          "worst": {
+            "x": 283,
+            "y": 180,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              23,
+              16,
+              49
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "01",
+            "fontSize": "10.4px",
+            "fontWeight": "700",
+            "minimumRatio": 7.639684657524045,
+            "worst": {
+              "x": 28,
+              "y": 129,
+              "foreground": [
+                255,
+                122,
+                75
+              ],
+              "background": [
+                5,
+                11,
+                21
+              ]
+            }
+          },
+          {
+            "text": "Work",
+            "fontSize": "20px",
+            "fontWeight": "520",
+            "minimumRatio": 18.3456194629061,
+            "worst": {
+              "x": 126,
+              "y": 122,
+              "foreground": [
+                248,
+                250,
+                252
+              ],
+              "background": [
+                12,
+                13,
+                32
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "label": "menu-link-1",
+      "meta": {
+        "tag": "A",
+        "name": "02Why Cumulative",
+        "rect": {
+          "x": 28.296875,
+          "y": 173.59375,
+          "width": 334.40625,
+          "height": 73.59375,
+          "top": 173.59375,
+          "right": 362.703125,
+          "bottom": 247.1875,
+          "left": 28.296875
+        },
+        "rects": [
+          {
+            "x": 28.296875,
+            "y": 202.78744506835938,
+            "width": 16.764801025390625,
+            "height": 14.20635986328125,
+            "top": 202.78744506835938,
+            "right": 45.061676025390625,
+            "bottom": 216.99380493164062,
+            "left": 28.296875,
+            "color": "rgb(255, 122, 75)",
+            "fontSize": "10.4px",
+            "fontWeight": "700",
+            "text": "02"
+          },
+          {
+            "x": 61.0625,
+            "y": 196.23065185546875,
+            "width": 189.30001831054688,
+            "height": 27.3199462890625,
+            "top": 196.23065185546875,
+            "right": 250.36251831054688,
+            "bottom": 223.55059814453125,
+            "left": 61.0625,
+            "color": "rgb(248, 250, 252)",
+            "fontSize": "20px",
+            "fontWeight": "520",
+            "text": "Why Cumulative"
+          }
+        ],
+        "icons": [],
+        "fontSize": "20px",
+        "fontWeight": "520",
+        "color": "rgb(248, 250, 252)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 9.326318325145776,
+          "worst": {
+            "x": 274,
+            "y": 167,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              24,
+              16,
+              49
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "02",
+            "fontSize": "10.4px",
+            "fontWeight": "700",
+            "minimumRatio": 7.541792078602218,
+            "worst": {
+              "x": 30,
+              "y": 202,
+              "foreground": [
+                255,
+                122,
+                75
+              ],
+              "background": [
+                7,
+                13,
+                23
+              ]
+            }
+          },
+          {
+            "text": "Why Cumulative",
+            "fontSize": "20px",
+            "fontWeight": "520",
+            "minimumRatio": 17.9732985119607,
+            "worst": {
+              "x": 244,
+              "y": 196,
+              "foreground": [
+                248,
+                250,
+                252
+              ],
+              "background": [
+                18,
+                13,
+                42
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "label": "menu-link-2",
+      "meta": {
+        "tag": "A",
+        "name": "03Approach",
+        "rect": {
+          "x": 28.296875,
+          "y": 247.1875,
+          "width": 334.40625,
+          "height": 73.59375,
+          "top": 247.1875,
+          "right": 362.703125,
+          "bottom": 320.78125,
+          "left": 28.296875
+        },
+        "rects": [
+          {
+            "x": 28.296875,
+            "y": 276.3811950683594,
+            "width": 16.764801025390625,
+            "height": 14.20635986328125,
+            "top": 276.3811950683594,
+            "right": 45.061676025390625,
+            "bottom": 290.5875549316406,
+            "left": 28.296875,
+            "color": "rgb(255, 122, 75)",
+            "fontSize": "10.4px",
+            "fontWeight": "700",
+            "text": "03"
+          },
+          {
+            "x": 61.0625,
+            "y": 269.82440185546875,
+            "width": 116.58001708984375,
+            "height": 27.3199462890625,
+            "top": 269.82440185546875,
+            "right": 177.64251708984375,
+            "bottom": 297.14434814453125,
+            "left": 61.0625,
+            "color": "rgb(248, 250, 252)",
+            "fontSize": "20px",
+            "fontWeight": "520",
+            "text": "Approach"
+          }
+        ],
+        "icons": [],
+        "fontSize": "20px",
+        "fontWeight": "520",
+        "color": "rgb(248, 250, 252)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 9.69388433594285,
+          "worst": {
+            "x": 261,
+            "y": 240,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              17,
+              13,
+              41
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "03",
+            "fontSize": "10.4px",
+            "fontWeight": "700",
+            "minimumRatio": 7.639684657524045,
+            "worst": {
+              "x": 28,
+              "y": 276,
+              "foreground": [
+                255,
+                122,
+                75
+              ],
+              "background": [
+                5,
+                11,
+                21
+              ]
+            }
+          },
+          {
+            "text": "Approach",
+            "fontSize": "20px",
+            "fontWeight": "520",
+            "minimumRatio": 18.592658353218795,
+            "worst": {
+              "x": 175,
+              "y": 269,
+              "foreground": [
+                248,
+                250,
+                252
+              ],
+              "background": [
+                10,
+                11,
+                30
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "label": "menu-link-3",
+      "meta": {
+        "tag": "A",
+        "name": "04Principles",
+        "rect": {
+          "x": 28.296875,
+          "y": 320.78125,
+          "width": 334.40625,
+          "height": 73.59375,
+          "top": 320.78125,
+          "right": 362.703125,
+          "bottom": 394.375,
+          "left": 28.296875
+        },
+        "rects": [
+          {
+            "x": 28.296875,
+            "y": 349.9749450683594,
+            "width": 16.764801025390625,
+            "height": 14.20635986328125,
+            "top": 349.9749450683594,
+            "right": 45.061676025390625,
+            "bottom": 364.1813049316406,
+            "left": 28.296875,
+            "color": "rgb(255, 122, 75)",
+            "fontSize": "10.4px",
+            "fontWeight": "700",
+            "text": "04"
+          },
+          {
+            "x": 61.0625,
+            "y": 343.41815185546875,
+            "width": 119.68002319335938,
+            "height": 27.3199462890625,
+            "top": 343.41815185546875,
+            "right": 180.74252319335938,
+            "bottom": 370.73809814453125,
+            "left": 61.0625,
+            "color": "rgb(248, 250, 252)",
+            "fontSize": "20px",
+            "fontWeight": "520",
+            "text": "Principles"
+          }
+        ],
+        "icons": [],
+        "fontSize": "20px",
+        "fontWeight": "520",
+        "color": "rgb(248, 250, 252)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 9.818381056566746,
+          "worst": {
+            "x": 295,
+            "y": 313,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              12,
+              14,
+              32
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "04",
+            "fontSize": "10.4px",
+            "fontWeight": "700",
+            "minimumRatio": 7.541792078602218,
+            "worst": {
+              "x": 32,
+              "y": 363,
+              "foreground": [
+                255,
+                122,
+                75
+              ],
+              "background": [
+                7,
+                13,
+                23
+              ]
+            }
+          },
+          {
+            "text": "Principles",
+            "fontSize": "20px",
+            "fontWeight": "520",
+            "minimumRatio": 18.602070527985628,
+            "worst": {
+              "x": 83,
+              "y": 343,
+              "foreground": [
+                248,
+                250,
+                252
+              ],
+              "background": [
+                7,
+                13,
+                23
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "label": "menu-link-4",
+      "meta": {
+        "tag": "A",
+        "name": "05Contact",
+        "rect": {
+          "x": 28.296875,
+          "y": 394.375,
+          "width": 334.40625,
+          "height": 73.59375,
+          "top": 394.375,
+          "right": 362.703125,
+          "bottom": 467.96875,
+          "left": 28.296875
+        },
+        "rects": [
+          {
+            "x": 28.296875,
+            "y": 423.5686950683594,
+            "width": 16.764801025390625,
+            "height": 14.20635986328125,
+            "top": 423.5686950683594,
+            "right": 45.061676025390625,
+            "bottom": 437.7750549316406,
+            "left": 28.296875,
+            "color": "rgb(255, 122, 75)",
+            "fontSize": "10.4px",
+            "fontWeight": "700",
+            "text": "05"
+          },
+          {
+            "x": 61.0625,
+            "y": 417.01190185546875,
+            "width": 100.94003295898438,
+            "height": 27.3199462890625,
+            "top": 417.01190185546875,
+            "right": 162.00253295898438,
+            "bottom": 444.33184814453125,
+            "left": 61.0625,
+            "color": "rgb(248, 250, 252)",
+            "fontSize": "20px",
+            "fontWeight": "520",
+            "text": "Contact"
+          }
+        ],
+        "icons": [],
+        "fontSize": "20px",
+        "fontWeight": "520",
+        "color": "rgb(248, 250, 252)",
+        "outline": "rgb(255, 155, 202)",
+        "outlineWidth": "2px",
+        "outlineOffset": "5px",
+        "focusVisible": true
+      },
+      "ratios": {
+        "outline": {
+          "minimumRatio": 10.00336475779667,
+          "worst": {
+            "x": 47,
+            "y": 387,
+            "foreground": [
+              255,
+              155,
+              202
+            ],
+            "background": [
+              7,
+              13,
+              23
+            ]
+          }
+        },
+        "text": [
+          {
+            "text": "05",
+            "fontSize": "10.4px",
+            "fontWeight": "700",
+            "minimumRatio": 7.541792078602218,
+            "worst": {
+              "x": 38,
+              "y": 435,
+              "foreground": [
+                255,
+                122,
+                75
+              ],
+              "background": [
+                7,
+                13,
+                23
+              ]
+            }
+          },
+          {
+            "text": "Contact",
+            "fontSize": "20px",
+            "fontWeight": "520",
+            "minimumRatio": 18.602070527985628,
+            "worst": {
+              "x": 104,
+              "y": 428,
+              "foreground": [
+                248,
+                250,
+                252
+              ],
+              "background": [
+                7,
+                13,
+                23
+              ]
+            }
+          }
+        ],
+        "icons": []
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "menu": {
+        "last": "05Contact",
+        "wrapped": "Close navigation menu",
+        "restored": true,
+        "closed": "false",
+        "inert": null
+      }
+    }
+  ]
+}

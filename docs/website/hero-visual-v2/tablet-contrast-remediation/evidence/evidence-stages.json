@@ -1,0 +1,13 @@
+{
+  "before": "Unmodified starting production build, both engines; QA-VIS-001 reproduced.",
+  "matrix": "Successful first matrix after tablet mask, before desktop scrim/focus correction; raw result retained, redundant screenshots omitted.",
+  "contrast": "Preliminary conservative line rectangles; gradient raster-edge samples INVALID as a contrast verdict. Raw output retained.",
+  "contrast-diagnostic": "Desktop glyph-interior low contrast confirmed before scrim; live renderer states and foreground/background evidence retained.",
+  "contrast-final": "After desktop scrim, before focus-only CSS. Raw gradient rectangle minima include unpainted panel-edge pixels: use contrast-summary.json solid-glyph assessment. Focus-only rule does not alter this unfocused composition.",
+  "focus": "Preliminary measurement had transition interference and plain-Tab WebKit target loss; NOT acceptance evidence.",
+  "focus-final": "Transitions disabled; plain-Tab WebKit target loss persisted. Raw failure retained.",
+  "focus-verified": "Final focused-only CSS, transitions frozen; macOS WebKit Option-Tab. Every measurement rejects body as an invalid target. Quantitative controls passed.",
+  "matrix-final": "Final normal visual composition after scrim. Later focus-only CSS verified separately by focus-verified; no normal-layout changes.",
+  "tablet-final": "Final shared-plane masks and scrim; breakpoint sequence and static/fallback policies.",
+  "system_remediation": "Two focus-harness failures (focus and focus-final) routed to the retained harness guard: reject body targets, freeze transitions, use documented macOS Option-Tab semantics. Owner: implementation harness; separate QA should verify effectiveness. No browser preference/global setting changed."
+}
