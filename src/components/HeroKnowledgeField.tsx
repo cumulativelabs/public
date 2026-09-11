@@ -1,6 +1,6 @@
 import { useEffect, useId, useRef, type CSSProperties } from 'react';
 import { createKnowledgeScene, mapPointer, type Pointer, type SceneLayout } from '../visuals/knowledgeScene';
-import { drawKnowledgeScene } from '../visuals/drawKnowledgeScene';
+import { drawIntakeTethers, drawKnowledgeScene } from '../visuals/drawKnowledgeScene';
 import { NEXUS_ART, nexusPlaneStyle } from '../visuals/nexusGeometry';
 const scene = createKnowledgeScene();
 type Connection = EventTarget & { saveData?: boolean };
@@ -10,6 +10,7 @@ export function HeroKnowledgeField() {
   const coreGradientId = `nexus-core-${useId().replaceAll(':', '')}`;
   const rootRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const tetherRef = useRef<HTMLCanvasElement>(null);
   useEffect(() => {
     const root = rootRef.current;
     if (!root) return;
@@ -38,6 +39,8 @@ export function HeroKnowledgeField() {
     if (!root || !canvas) return;
     const context = canvas.getContext('2d', { alpha: true, desynchronized: true });
     if (!context) return; // Keep the server-rendered, decorative SVG composition.
+    const tetherCanvas = tetherRef.current;
+    const tetherContext = tetherCanvas?.getContext('2d', { alpha: true, desynchronized: true });
     const host = root.closest('section');
     const anchor = host?.querySelector<HTMLElement>('.hero-section__mark');
     if (!host || !anchor) return;
@@ -71,6 +74,10 @@ export function HeroKnowledgeField() {
     };
     const render = () => {
       drawKnowledgeScene(context, scene, layout, width, height, elapsed, pointer, staticOnly(), intakePointer);
+      if (tetherContext) drawIntakeTethers(tetherContext, layout, width, height, intakePointer, !interactive());
+      root.dataset.intakePointerX = intakePointer.x.toFixed(3);
+      root.dataset.intakePointerY = intakePointer.y.toFixed(3);
+      root.dataset.intakeStrength = intakePointer.strength.toFixed(5);
       root.dataset.ready = 'true';
     };
     const frame = (now: number) => {
@@ -122,6 +129,10 @@ export function HeroKnowledgeField() {
       const dpr = Math.min(devicePixelRatio || 1, mobile ? 1.4 : 1.5);
       canvas.width = Math.round(width * dpr); canvas.height = Math.round(height * dpr);
       context.setTransform(canvas.width / width, 0, 0, canvas.height / height, 0, 0);
+      if (tetherCanvas && tetherContext) {
+        tetherCanvas.width = canvas.width; tetherCanvas.height = canvas.height;
+        tetherContext.setTransform(canvas.width / width, 0, 0, canvas.height / height, 0, 0);
+      }
       resetPointer(); mode(); if (!document.hidden) render(); schedule();
     };
     const onPointer = (event: PointerEvent) => {
@@ -182,6 +193,7 @@ export function HeroKnowledgeField() {
         ))}
       </svg>
       <canvas ref={canvasRef} className="hero-knowledge__canvas" />
+      <canvas ref={tetherRef} className="hero-knowledge__tethers" />
     </div>
   );
 }

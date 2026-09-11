@@ -69,6 +69,45 @@ function makeOutbound(index: number, count: number): Curve {
   };
 }
 
+/** Interaction-only fibers: production starts/tangents are read, never deformed. */
+export function drawIntakeTethers(context: CanvasRenderingContext2D, layout: SceneLayout, width: number, height: number, pointer: Pointer, disabled: boolean) {
+  context.clearRect(0, 0, width, height);
+  const strength = disabled || !layout.intakeExtension ? 0 : pointer.strength * ease((layout.cx - 555 * layout.scale - pointer.x) / 100);
+  if (strength < 0.001) return;
+  context.save();
+  context.lineCap = 'round';
+  for (let i = 0; i < 16; i += 1) {
+    const curve = makeInbound(5 + i * 5, 86);
+    const start = localPoint({ x: curve.x0, y: curve.y0 }, layout);
+    const tangent = localPoint({ x: curve.c1x, y: curve.c1y }, layout);
+    const angle = (i / 16) * Math.PI * 2;
+    const radius = 8 + randomUnit(i + 3100) * 12;
+    const tip = { x: pointer.x + Math.cos(angle) * radius, y: pointer.y + Math.sin(angle) * radius };
+    const run = Math.max(40, start.x - tip.x);
+    const color = i % 3 === 0 ? '255,102,137' : '255,151,77';
+    const gradient = context.createLinearGradient(start.x, start.y, tip.x, tip.y);
+    gradient.addColorStop(0, `rgba(${color},0.10)`);
+    gradient.addColorStop(0.28, `rgba(${color},0.65)`);
+    gradient.addColorStop(0.72, `rgba(${color},0.95)`);
+    gradient.addColorStop(1, `rgba(${color},0.45)`);
+    context.beginPath();
+    context.moveTo(start.x, start.y);
+    // Reverse the authored intake tangent, then relax into the cursor bundle.
+    context.bezierCurveTo(start.x - (tangent.x - start.x) * 0.5, start.y - (tangent.y - start.y) * 0.5,
+      tip.x + run * (0.48 + randomUnit(i + 3140) * 0.16), tip.y + (i - 7.5) * 3, tip.x, tip.y);
+    context.strokeStyle = gradient;
+    context.globalAlpha = strength * 0.18; context.lineWidth = 5; context.stroke();
+    context.globalAlpha = strength * 0.95; context.lineWidth = 0.9 + randomUnit(i + 3180) * 0.65; context.stroke();
+  }
+  const glow = context.createRadialGradient(pointer.x, pointer.y, 0, pointer.x, pointer.y, 26);
+  glow.addColorStop(0, 'rgba(255,177,103,0.30)');
+  glow.addColorStop(0.35, 'rgba(255,120,73,0.14)');
+  glow.addColorStop(1, 'rgba(255,92,83,0)');
+  context.globalAlpha = strength; context.fillStyle = glow;
+  context.fillRect(pointer.x - 26, pointer.y - 26, 52, 52);
+  context.restore();
+}
+
 function drawStream(context: CanvasRenderingContext2D, curve: Curve, layout: SceneLayout, pointer: Pointer, color: string, alpha: number, width: number, depth: number, luminous = false, intakePointer = pointer) {
   context.beginPath();
   const influence = traceCurve(context, curve, layout, pointer, depth, intakePointer);

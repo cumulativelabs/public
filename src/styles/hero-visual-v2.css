@@ -13,6 +13,7 @@
 .hero-knowledge[data-art-ready='false'] .hero-knowledge__plate { visibility: hidden; }
 .hero-knowledge__plate img { width: 100%; height: 100%; display: block; object-fit: fill; opacity: .92; }
 .hero-knowledge__canvas { position: absolute; inset: 0; z-index: 1; width: 100%; height: 100%; contain: strict; opacity: .66; }
+.hero-knowledge__tethers { position: absolute; inset: 0; z-index: 1; width: 100%; height: 100%; contain: strict; pointer-events: none; opacity: .9; }
 .hero-knowledge__fallback { z-index: 0; }
 .hero-knowledge__canvas, .hero-knowledge__fallback {
   pointer-events: none;

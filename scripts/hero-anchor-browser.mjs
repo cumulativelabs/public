@@ -72,10 +72,10 @@ for(const [engineName,engine,exe] of [['chromium',chromium,process.env.CHROMIUM_
       verify(await measure(page),label+' pointer');
     }
     await page.emulateMedia({reducedMotion:'reduce'});await page.waitForTimeout(150);
-    const reducedBefore=await page.locator('.hero-knowledge canvas').evaluate(c=>c.toDataURL());
+    const reducedBefore=await page.locator('.hero-knowledge__canvas').evaluate(c=>c.toDataURL());
     const draws=await page.evaluate(()=>window.__nexus.draws);await page.waitForTimeout(180);
     check(draws===await page.evaluate(()=>window.__nexus.draws),`${label}: reduced motion redrawing`);
-    check(reducedBefore===await page.locator('.hero-knowledge canvas').evaluate(c=>c.toDataURL()),`${label}: reduced motion pixel change`);
+    check(reducedBefore===await page.locator('.hero-knowledge__canvas').evaluate(c=>c.toDataURL()),`${label}: reduced motion pixel change`);
     verify(await measure(page),label+' reduced');
     await page.emulateMedia({reducedMotion:'no-preference'});
     await page.evaluate(()=>{Object.defineProperty(document,'hidden',{configurable:true,get:()=>true});document.dispatchEvent(new Event('visibilitychange'));});
