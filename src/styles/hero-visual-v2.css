@@ -17,15 +17,15 @@
   inset: 9%; filter: none;
   background: radial-gradient(ellipse, #efa66609, #da578e09 40%, transparent 72%);
 }
-.hero-section__mark .brand-symbol { width: 44%; filter: drop-shadow(0 0 23px #dc5a8d10); }
+.hero-section__mark .brand-symbol { width: 31%; filter: drop-shadow(0 0 18px #ff4b971f) drop-shadow(0 0 38px #9448e61a); }
 .hero-section__inner { z-index: 3; }
 @media (max-width: 1000px) and (min-width: 781px) {
-  .hero-section__mark .brand-symbol { width: 47%; }
+  .hero-section__mark .brand-symbol { width: 34%; }
 }
 @media (max-width: 780px) {
   .hero-section { padding-bottom: 1.4rem; background: radial-gradient(ellipse at 96% 60%, #5232501c, transparent 65%), radial-gradient(ellipse at 70% 94%, #59296625, transparent 47%), #030811; }
   .hero-section__mark { width: 6.25rem; margin: 0.55rem 18% 0 auto; }
-  .hero-section__mark .brand-symbol { width: 74%; }
+  .hero-section__mark .brand-symbol { width: 56%; }
   .hero-knowledge__canvas, .hero-knowledge__fallback {
     mask-image: linear-gradient(to bottom, transparent 35%, #0003 67%, #000 90%);
     -webkit-mask-image: linear-gradient(to bottom, transparent 35%, #0003 67%, #000 90%);
