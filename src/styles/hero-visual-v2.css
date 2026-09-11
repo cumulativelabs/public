@@ -4,7 +4,10 @@
 }
 .hero-section::before { opacity: 0.04; }
 .hero-knowledge { position: absolute; inset: 0; z-index: 1; overflow: hidden; pointer-events: none; }
-.hero-knowledge__canvas { position: absolute; inset: 0; width: 100%; height: 100%; contain: strict; }
+.hero-knowledge__plate { position: absolute; inset: 0; z-index: 0; display: block; pointer-events: none; }
+.hero-knowledge__plate img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: center; opacity: .92; }
+.hero-knowledge__canvas { position: absolute; inset: 0; z-index: 1; width: 100%; height: 100%; contain: strict; opacity: .66; }
+.hero-knowledge__fallback { z-index: 0; }
 .hero-knowledge__canvas, .hero-knowledge__fallback {
   pointer-events: none;
   mask-image: linear-gradient(90deg, #0005 0%, #0004 28%, #0009 46%, #000 62%);
@@ -24,13 +27,15 @@
 }
 @media (max-width: 780px) {
   .hero-section { padding-bottom: 1.4rem; background: radial-gradient(ellipse at 96% 60%, #5232501c, transparent 65%), radial-gradient(ellipse at 70% 94%, #59296625, transparent 47%), #030811; }
-  .hero-section__mark { width: 6.25rem; margin: 0.55rem 18% 0 auto; }
-  .hero-section__mark .brand-symbol { width: 56%; }
+  .hero-section__mark { width: 8.15rem; margin: -0.35rem 11% 0 auto; }
+  .hero-section__mark .brand-symbol { width: 49%; }
   .hero-knowledge__canvas, .hero-knowledge__fallback {
-    mask-image: linear-gradient(to bottom, transparent 35%, #0003 67%, #000 90%);
-    -webkit-mask-image: linear-gradient(to bottom, transparent 35%, #0003 67%, #000 90%);
+    mask-image: linear-gradient(to bottom, #00000026 8%, #00000040 30%, #0000008f 49%, #000 68%);
+    -webkit-mask-image: linear-gradient(to bottom, #00000026 8%, #00000040 30%, #0000008f 49%, #000 68%);
   }
   .hero-knowledge__fallback { width: 120%; height: 11rem; right: -12%; top: auto; bottom: -0.3rem; }
+  .hero-knowledge__plate img { object-fit: cover; object-position: center bottom; opacity: 1; }
+  .hero-knowledge__canvas { opacity: .48; }
   .hero-section__actions .button { position: relative; z-index: 1; }
 }
 @media (prefers-reduced-motion: reduce) {

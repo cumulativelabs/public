@@ -78,7 +78,12 @@ export function HeroKnowledgeField() {
       bounds = root.getBoundingClientRect(); boundsDirty = false;
       width = Math.max(1, Math.round(bounds.width)); height = Math.max(1, Math.round(bounds.height));
       const box = anchor.getBoundingClientRect(); const mobile = width <= 780;
-      layout = { cx: box.left - bounds.left + box.width / 2, cy: box.top - bounds.top + box.height / 2, scale: mobile ? Math.min(0.72, width / 650) : Math.min(1.15, box.width / 390), flatten: mobile ? 0.58 : 1 };
+      layout = {
+        cx: box.left - bounds.left + box.width / 2,
+        cy: box.top - bounds.top + box.height / 2,
+        scale: mobile ? Math.min(0.88, width / 500) : Math.min(1.15, box.width / 390),
+        flatten: mobile ? 0.9 : 1,
+      };
       const dpr = Math.min(devicePixelRatio || 1, mobile ? 1.4 : 1.5);
       canvas.width = Math.round(width * dpr); canvas.height = Math.round(height * dpr);
       context.setTransform(dpr, 0, 0, dpr, 0, 0);
@@ -126,6 +131,10 @@ export function HeroKnowledgeField() {
   }, []);
   return (
     <div ref={rootRef} className="hero-knowledge" data-visual-layer="knowledge" data-conceptual="true" aria-hidden="true">
+      <picture className="hero-knowledge__plate">
+        <source media="(max-width: 780px)" srcSet="/visuals/hero-nexus-plate-mobile.svg" />
+        <img src="/visuals/hero-nexus-plate-desktop.svg" alt="" decoding="async" fetchPriority="high" />
+      </picture>
       <svg className="hero-knowledge__fallback" viewBox="-470 -310 900 620" focusable="false">
         <g fill="none" stroke="#c47eb1" strokeWidth="0.8" opacity="0.55">
           {scene.strata.map((path, i) => <polyline key={i} points={path.filter((_, n) => n % 3 === 0).map(p => `${p.x.toFixed(1)},${p.y.toFixed(1)}`).join(' ')} />)}

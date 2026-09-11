@@ -213,6 +213,46 @@ function drawSignalDust(context: CanvasRenderingContext2D, layout: SceneLayout, 
   }
 }
 
+function drawPowerField(context: CanvasRenderingContext2D, layout: SceneLayout, time: number, staticOnly: boolean) {
+  const x = layout.cx; const y = layout.cy; const s = layout.scale;
+  // Tight output rails: dense enough to feel powerful, narrow enough to read as retained structure.
+  for (let i = 0; i < 34; i += 1) {
+    const lane = (i - 16.5) / 16.5;
+    const y0 = y + lane * 12 * s;
+    const y1 = y + lane * (22 + Math.abs(lane) * 18) * s;
+    const x1 = x + (155 + (i % 5) * 18) * s;
+    context.strokeStyle = i % 6 === 0 ? '#f0b0ff' : i % 2 === 0 ? '#d057ef' : '#8258e8';
+    context.globalAlpha = i % 6 === 0 ? 0.34 : 0.08 + (1 - Math.abs(lane)) * 0.12;
+    context.lineWidth = i % 6 === 0 ? 0.95 : 0.45;
+    context.beginPath(); context.moveTo(x + 72 * s, y0); context.quadraticCurveTo(x + 105 * s, y + lane * 8 * s, x1, y1); context.stroke();
+  }
+  // Instrument-like retained nodes and vertical supports close to the core, where mobile can actually show them.
+  for (let i = 0; i < 26; i += 1) {
+    const px = x + (92 + randomUnit(i + 2700) * 175) * s;
+    const py = y + (randomUnit(i + 2740) - 0.5) * 178 * s;
+    const length = (20 + randomUnit(i + 2780) * 70) * s;
+    context.strokeStyle = i % 4 === 0 ? '#e65bd6' : '#885add';
+    context.globalAlpha = i % 4 === 0 ? 0.17 : 0.055;
+    context.lineWidth = 0.5;
+    context.beginPath(); context.moveTo(px, py - length * 0.5); context.lineTo(px, py + length * 0.5); context.stroke();
+    const pulse = staticOnly ? 0.55 : 0.35 + 0.2 * Math.sin(time * 0.8 + i);
+    context.strokeStyle = i % 3 === 0 ? '#f69cea' : '#c686f4'; context.globalAlpha = pulse;
+    const box = (i % 5 === 0 ? 5.4 : 3.1) * s;
+    context.strokeRect(px - box / 2, py - box / 2, box, box);
+  }
+  // Tiny radial fragments around the nexus imply processing without becoming a literal HUD.
+  for (let i = 0; i < 56; i += 1) {
+    const a = randomUnit(i + 2840) * Math.PI * 2;
+    const radius = (112 + randomUnit(i + 2880) * 72) * s;
+    const px = x + Math.cos(a) * radius;
+    const py = y + Math.sin(a) * radius * 0.72;
+    context.fillStyle = a > Math.PI * 0.5 && a < Math.PI * 1.5 ? '#ff7855' : '#c16df4';
+    context.globalAlpha = 0.08 + randomUnit(i + 2920) * 0.26;
+    const r = (0.45 + randomUnit(i + 2960) * 1.15) * s;
+    context.beginPath(); context.arc(px, py, r, 0, Math.PI * 2); context.fill();
+  }
+}
+
 function drawEvidenceClusters(context: CanvasRenderingContext2D, layout: SceneLayout, time: number, staticOnly: boolean) {
   const groups = [
     { x: -335, y: -145, phase: 0 },
@@ -270,6 +310,7 @@ export function drawKnowledgeScene(context: CanvasRenderingContext2D, scene: Kno
     if (i % 6 === 0) drawPulse(context, curve, layout, time, i * 0.08 + 0.33, '#eedaff');
   });
   drawBeam(context, layout, pointer);
+  drawPowerField(context, layout, time, staticOnly);
   drawMicroNodes(context, outbound, layout, 'out', time, staticOnly);
   drawRetainedLattice(context, layout, time, staticOnly);
 
