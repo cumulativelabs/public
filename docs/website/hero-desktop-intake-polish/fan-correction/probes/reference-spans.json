@@ -1,0 +1,42 @@
+[
+  {
+    "nativeX": 550,
+    "productionSpan": 548.924929679329,
+    "rejectedPRSpan": 349.4925092404158,
+    "correctedOriginalSpan": 548.924929679329,
+    "rejectedRatio": 0.6366854379242393,
+    "correctedRatio": 1
+  },
+  {
+    "nativeX": 650,
+    "productionSpan": 523.894109789438,
+    "rejectedPRSpan": 284.49390217030873,
+    "correctedOriginalSpan": 523.894109789438,
+    "rejectedRatio": 0.5430370314425785,
+    "correctedRatio": 1
+  },
+  {
+    "nativeX": 750,
+    "productionSpan": 420.3764739643052,
+    "rejectedPRSpan": 221.27536866280502,
+    "correctedOriginalSpan": 420.3764739643052,
+    "rejectedRatio": 0.5263742915394305,
+    "correctedRatio": 1
+  },
+  {
+    "nativeX": 850,
+    "productionSpan": 276.848053029549,
+    "rejectedPRSpan": 152.43764996506746,
+    "correctedOriginalSpan": 276.848053029549,
+    "rejectedRatio": 0.5506184648833243,
+    "correctedRatio": 1
+  },
+  {
+    "nativeX": 950,
+    "productionSpan": 115.50510836324634,
+    "rejectedPRSpan": 69.14782078942699,
+    "correctedOriginalSpan": 115.50510836324634,
+    "rejectedRatio": 0.5986559535701867,
+    "correctedRatio": 1
+  }
+]

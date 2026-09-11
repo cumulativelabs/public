@@ -1,5 +1,7 @@
 # Desktop hero intake persistence
 
+**Superseded visual candidate:** the Founder rejected this version because it narrowed the production fan. See the [fan correction and current validation](fan-correction/README.md). The evidence below remains the historical record for `9a6067c`.
+
 The orange/pink intake now enters continuously from off-screen left, retaining the existing convergence and purple output. This is a desktop-only extension of the existing SVG and canvas strands.
 
 ## Candidate

@@ -1,0 +1,125 @@
+{
+  "results": [
+    {
+      "engine": "chromium",
+      "policy": "reduced-motion",
+      "pixelIdentical": true,
+      "data": {
+        "visualLayer": "knowledge",
+        "conceptual": "true",
+        "artReady": "true",
+        "pointerActive": "false",
+        "renderMode": "reduced-motion",
+        "pointerInteraction": "disabled",
+        "ready": "true"
+      },
+      "pass": true
+    },
+    {
+      "engine": "chromium",
+      "policy": "save-data",
+      "pixelIdentical": true,
+      "data": {
+        "visualLayer": "knowledge",
+        "conceptual": "true",
+        "artReady": "true",
+        "pointerActive": "false",
+        "renderMode": "static-budget",
+        "pointerInteraction": "disabled",
+        "ready": "true"
+      },
+      "pass": true
+    },
+    {
+      "engine": "chromium",
+      "policy": "low-core",
+      "pixelIdentical": true,
+      "data": {
+        "visualLayer": "knowledge",
+        "conceptual": "true",
+        "artReady": "true",
+        "pointerActive": "false",
+        "renderMode": "static-budget",
+        "pointerInteraction": "disabled",
+        "ready": "true"
+      },
+      "pass": true
+    },
+    {
+      "engine": "chromium",
+      "policy": "touch",
+      "pixelIdentical": false,
+      "data": {
+        "visualLayer": "knowledge",
+        "conceptual": "true",
+        "artReady": "true",
+        "pointerActive": "false",
+        "renderMode": "autonomous",
+        "pointerInteraction": "enabled",
+        "ready": "true"
+      },
+      "pass": true
+    },
+    {
+      "engine": "webkit",
+      "policy": "reduced-motion",
+      "pixelIdentical": true,
+      "data": {
+        "visualLayer": "knowledge",
+        "conceptual": "true",
+        "artReady": "true",
+        "pointerActive": "false",
+        "renderMode": "reduced-motion",
+        "pointerInteraction": "disabled",
+        "ready": "true"
+      },
+      "pass": true
+    },
+    {
+      "engine": "webkit",
+      "policy": "save-data",
+      "pixelIdentical": true,
+      "data": {
+        "visualLayer": "knowledge",
+        "conceptual": "true",
+        "artReady": "true",
+        "pointerActive": "false",
+        "renderMode": "static-budget",
+        "pointerInteraction": "disabled",
+        "ready": "true"
+      },
+      "pass": true
+    },
+    {
+      "engine": "webkit",
+      "policy": "low-core",
+      "pixelIdentical": true,
+      "data": {
+        "visualLayer": "knowledge",
+        "conceptual": "true",
+        "artReady": "true",
+        "pointerActive": "false",
+        "renderMode": "static-budget",
+        "pointerInteraction": "disabled",
+        "ready": "true"
+      },
+      "pass": true
+    },
+    {
+      "engine": "webkit",
+      "policy": "touch",
+      "pixelIdentical": false,
+      "data": {
+        "visualLayer": "knowledge",
+        "conceptual": "true",
+        "artReady": "true",
+        "pointerActive": "false",
+        "renderMode": "autonomous",
+        "pointerInteraction": "enabled",
+        "ready": "true"
+      },
+      "pass": true
+    }
+  ],
+  "failures": []
+}
