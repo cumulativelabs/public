@@ -1,0 +1,3430 @@
+[
+  {
+    "engine": "chromium",
+    "build": "baseline",
+    "width": 1440,
+    "height": 900,
+    "dpr": 2,
+    "pointer": {
+      "x": 120,
+      "y": 711
+    },
+    "coordinates": "native screenshot pixels; multiply CSS coordinates by 2",
+    "measured": [
+      {
+        "id": "contrast-0",
+        "selector": ".hero-section__eyebrow",
+        "text": "Cumulative intelligence, built to endure",
+        "fontSize": "11.2px",
+        "fontWeight": "400",
+        "color": "rgb(191, 200, 215)",
+        "fill": "rgb(191, 200, 215)",
+        "gradient": null,
+        "rect": {
+          "x": 192,
+          "y": 328,
+          "width": 1376,
+          "height": 38.0625
+        },
+        "rects": [
+          {
+            "x": 192,
+            "y": 332,
+            "width": 555.0625,
+            "height": 30
+          }
+        ],
+        "minimumRatio": 11.895133397917292,
+        "worst": {
+          "x": 193,
+          "y": 332,
+          "foreground": [
+            191,
+            200,
+            215
+          ],
+          "background": [
+            3,
+            8,
+            18
+          ]
+        },
+        "sampledPixels": 16650,
+        "glyphCoreMinimum": 11.895133397917292,
+        "glyphCoreWorst": {
+          "x": 201,
+          "y": 338,
+          "foreground": [
+            191,
+            200,
+            215
+          ],
+          "background": [
+            3,
+            8,
+            18
+          ],
+          "coverage": 1
+        },
+        "glyphCorePixels": 509,
+        "thinGlyphMinimum": 11.895133397917292,
+        "thinGlyphPixels": 1290,
+        "threshold": 4.5,
+        "meetsSampledThreshold": true,
+        "assessmentMinimum": 11.895133397917292,
+        "assessmentBasis": "solid glyph interiors in paired composited screenshots; >=50% coverage glyphs for thin text without opaque interiors, otherwise conservative rectangle fallback; line-rectangle minimum retained"
+      },
+      {
+        "id": "contrast-1",
+        "selector": ".hero-section h1 > span",
+        "text": "Intelligence",
+        "fontSize": "74.88px",
+        "fontWeight": "450",
+        "color": "rgb(248, 250, 252)",
+        "fill": "rgb(248, 250, 252)",
+        "gradient": null,
+        "rect": {
+          "x": 192,
+          "y": 414.0625,
+          "width": 1376,
+          "height": 146.75
+        },
+        "rects": [
+          {
+            "x": 192,
+            "y": 384.0625,
+            "width": 980.21875,
+            "height": 204
+          }
+        ],
+        "minimumRatio": 16.9818200800311,
+        "worst": {
+          "x": 976,
+          "y": 535,
+          "foreground": [
+            248,
+            250,
+            252
+          ],
+          "background": [
+            29,
+            22,
+            26
+          ]
+        },
+        "sampledPixels": 198940,
+        "glyphCoreMinimum": 17.225147368107475,
+        "glyphCoreWorst": {
+          "x": 973,
+          "y": 532,
+          "foreground": [
+            248,
+            250,
+            252
+          ],
+          "background": [
+            26,
+            21,
+            25
+          ],
+          "coverage": 1
+        },
+        "glyphCorePixels": 37652,
+        "thinGlyphMinimum": 17.225147368107475,
+        "thinGlyphPixels": 39504,
+        "threshold": 3,
+        "meetsSampledThreshold": true,
+        "assessmentMinimum": 17.225147368107475,
+        "assessmentBasis": "solid glyph interiors in paired composited screenshots; >=50% coverage glyphs for thin text without opaque interiors, otherwise conservative rectangle fallback; line-rectangle minimum retained"
+      },
+      {
+        "id": "contrast-2",
+        "selector": ".hero-section h1 > span",
+        "text": "That",
+        "fontSize": "74.88px",
+        "fontWeight": "450",
+        "color": "rgb(248, 250, 252)",
+        "fill": "rgb(248, 250, 252)",
+        "gradient": null,
+        "rect": {
+          "x": 192,
+          "y": 566.78125,
+          "width": 1376,
+          "height": 146.75
+        },
+        "rects": [
+          {
+            "x": 192,
+            "y": 536.78125,
+            "width": 356.09375,
+            "height": 204
+          }
+        ],
+        "minimumRatio": 19.16397640718603,
+        "worst": {
+          "x": 194,
+          "y": 537,
+          "foreground": [
+            248,
+            250,
+            252
+          ],
+          "background": [
+            3,
+            8,
+            18
+          ]
+        },
+        "sampledPixels": 72268,
+        "glyphCoreMinimum": 19.16397640718603,
+        "glyphCoreWorst": {
+          "x": 195,
+          "y": 580,
+          "foreground": [
+            248,
+            250,
+            252
+          ],
+          "background": [
+            3,
+            8,
+            18
+          ],
+          "coverage": 1
+        },
+        "glyphCorePixels": 11780,
+        "thinGlyphMinimum": 19.16397640718603,
+        "thinGlyphPixels": 13371,
+        "threshold": 3,
+        "meetsSampledThreshold": true,
+        "assessmentMinimum": 19.16397640718603,
+        "assessmentBasis": "solid glyph interiors in paired composited screenshots; >=50% coverage glyphs for thin text without opaque interiors, otherwise conservative rectangle fallback; line-rectangle minimum retained"
+      },
+      {
+        "id": "contrast-3",
+        "selector": ".hero-section h1 > span",
+        "text": "Compounds.",
+        "fontSize": "74.88px",
+        "fontWeight": "450",
+        "color": "rgba(0, 0, 0, 0)",
+        "fill": "rgba(0, 0, 0, 0)",
+        "gradient": "linear-gradient(92deg, rgb(255, 122, 0), rgb(255, 45, 141), rgb(138, 43, 226))",
+        "rect": {
+          "x": 192,
+          "y": 720.25,
+          "width": 990.6875,
+          "height": 158.71875
+        },
+        "rects": [
+          {
+            "x": 192,
+            "y": 690.25,
+            "width": 990.6875,
+            "height": 204
+          }
+        ],
+        "minimumRatio": 1,
+        "worst": {
+          "x": 192,
+          "y": 878,
+          "foreground": [
+            2,
+            7,
+            17
+          ],
+          "background": [
+            2,
+            7,
+            17
+          ]
+        },
+        "sampledPixels": 156420,
+        "glyphCoreMinimum": 3.317333170415126,
+        "glyphCoreWorst": {
+          "x": 1167,
+          "y": 837,
+          "foreground": [
+            141,
+            43,
+            223
+          ],
+          "background": [
+            9,
+            11,
+            18
+          ],
+          "coverage": 1.0021827923205398
+        },
+        "glyphCorePixels": 35329,
+        "thinGlyphMinimum": 3.317333170415126,
+        "thinGlyphPixels": 37521,
+        "threshold": 3,
+        "meetsSampledThreshold": true,
+        "assessmentMinimum": 3.317333170415126,
+        "assessmentBasis": "solid glyph interiors in paired composited screenshots; >=50% coverage glyphs for thin text without opaque interiors, otherwise conservative rectangle fallback; line-rectangle minimum retained"
+      },
+      {
+        "id": "contrast-4",
+        "selector": ".hero-section__body",
+        "text": "Cumulative Labs is developing AI research systems designed to preserve verified knowledge—so each new task can build on useful findings from the last.",
+        "fontSize": "17.6px",
+        "fontWeight": "400",
+        "color": "rgb(212, 219, 229)",
+        "fill": "rgb(212, 219, 229)",
+        "gradient": null,
+        "rect": {
+          "x": 192,
+          "y": 934.96875,
+          "width": 1088,
+          "height": 174.09375
+        },
+        "rects": [
+          {
+            "x": 192,
+            "y": 938.96875,
+            "width": 1016.84375,
+            "height": 48
+          },
+          {
+            "x": 192,
+            "y": 997,
+            "width": 1063.125,
+            "height": 48
+          },
+          {
+            "x": 192,
+            "y": 1055.03125,
+            "width": 346,
+            "height": 48
+          }
+        ],
+        "minimumRatio": 12.268613426764375,
+        "worst": {
+          "x": 1177,
+          "y": 985,
+          "foreground": [
+            212,
+            219,
+            229
+          ],
+          "background": [
+            30,
+            27,
+            27
+          ]
+        },
+        "sampledPixels": 115038,
+        "glyphCoreMinimum": 12.597634904681113,
+        "glyphCoreWorst": {
+          "x": 1021,
+          "y": 1032,
+          "foreground": [
+            212,
+            219,
+            229
+          ],
+          "background": [
+            31,
+            23,
+            26
+          ],
+          "coverage": 1
+        },
+        "glyphCorePixels": 7196,
+        "thinGlyphMinimum": 12.597634904681113,
+        "thinGlyphPixels": 12617,
+        "threshold": 4.5,
+        "meetsSampledThreshold": true,
+        "assessmentMinimum": 12.597634904681113,
+        "assessmentBasis": "solid glyph interiors in paired composited screenshots; >=50% coverage glyphs for thin text without opaque interiors, otherwise conservative rectangle fallback; line-rectangle minimum retained"
+      },
+      {
+        "id": "contrast-5",
+        "selector": ".hero-section__support",
+        "text": "Our first applied proving ground: League Vector, a dynasty fantasy football product in development.",
+        "fontSize": "14.88px",
+        "fontWeight": "400",
+        "color": "rgb(174, 185, 203)",
+        "fill": "rgb(174, 185, 203)",
+        "gradient": null,
+        "rect": {
+          "x": 192,
+          "y": 1141.0625,
+          "width": 1056,
+          "height": 95.1875
+        },
+        "rects": [
+          {
+            "x": 192,
+            "y": 1143.0625,
+            "width": 1008.90625,
+            "height": 40
+          },
+          {
+            "x": 192,
+            "y": 1190.65625,
+            "width": 337.3125,
+            "height": 40
+          }
+        ],
+        "minimumRatio": 9.64985341326079,
+        "worst": {
+          "x": 1057,
+          "y": 1156,
+          "foreground": [
+            174,
+            185,
+            203
+          ],
+          "background": [
+            18,
+            14,
+            20
+          ]
+        },
+        "sampledPixels": 52455,
+        "glyphCoreMinimum": 9.688529905604204,
+        "glyphCoreWorst": {
+          "x": 938,
+          "y": 1167,
+          "foreground": [
+            174,
+            185,
+            203
+          ],
+          "background": [
+            16,
+            14,
+            19
+          ],
+          "coverage": 0.980434017328897
+        },
+        "glyphCorePixels": 2956,
+        "thinGlyphMinimum": 9.688529905604204,
+        "thinGlyphPixels": 5968,
+        "threshold": 4.5,
+        "meetsSampledThreshold": true,
+        "assessmentMinimum": 9.688529905604204,
+        "assessmentBasis": "solid glyph interiors in paired composited screenshots; >=50% coverage glyphs for thin text without opaque interiors, otherwise conservative rectangle fallback; line-rectangle minimum retained"
+      },
+      {
+        "id": "contrast-6",
+        "selector": ".hero-section__actions a",
+        "text": "See What We’re Building↗",
+        "fontSize": "11.52px",
+        "fontWeight": "700",
+        "color": "rgb(248, 250, 252)",
+        "fill": "rgb(248, 250, 252)",
+        "gradient": null,
+        "rect": {
+          "x": 192,
+          "y": 1292.25,
+          "width": 482.75,
+          "height": 104
+        },
+        "rects": [
+          {
+            "x": 234,
+            "y": 1326.71875,
+            "width": 351.5,
+            "height": 32
+          },
+          {
+            "x": 612.6875,
+            "y": 1326.71875,
+            "width": 20.0625,
+            "height": 32
+          }
+        ],
+        "minimumRatio": 17.434120859946592,
+        "worst": {
+          "x": 234,
+          "y": 1327,
+          "foreground": [
+            248,
+            250,
+            252
+          ],
+          "background": [
+            16,
+            21,
+            33
+          ]
+        },
+        "sampledPixels": 11470,
+        "glyphCoreMinimum": 17.434120859946592,
+        "glyphCoreWorst": {
+          "x": 238,
+          "y": 1334,
+          "foreground": [
+            248,
+            250,
+            252
+          ],
+          "background": [
+            16,
+            21,
+            33
+          ],
+          "coverage": 0.9911817722044273
+        },
+        "glyphCorePixels": 2066,
+        "thinGlyphMinimum": 17.434120859946592,
+        "thinGlyphPixels": 2674,
+        "threshold": 4.5,
+        "meetsSampledThreshold": true,
+        "assessmentMinimum": 17.434120859946592,
+        "assessmentBasis": "solid glyph interiors in paired composited screenshots; >=50% coverage glyphs for thin text without opaque interiors, otherwise conservative rectangle fallback; line-rectangle minimum retained"
+      },
+      {
+        "id": "contrast-7",
+        "selector": ".hero-section__actions a",
+        "text": "Contact the Lab",
+        "fontSize": "11.52px",
+        "fontWeight": "700",
+        "color": "rgb(248, 250, 252)",
+        "fill": "rgb(248, 250, 252)",
+        "gradient": null,
+        "rect": {
+          "x": 700.34375,
+          "y": 1292.25,
+          "width": 319.0625,
+          "height": 104
+        },
+        "rects": [
+          {
+            "x": 742.34375,
+            "y": 1326.71875,
+            "width": 235.0625,
+            "height": 32
+          }
+        ],
+        "minimumRatio": 19.0493681970728,
+        "worst": {
+          "x": 967,
+          "y": 1352,
+          "foreground": [
+            248,
+            250,
+            252
+          ],
+          "background": [
+            4,
+            9,
+            19
+          ]
+        },
+        "sampledPixels": 7254,
+        "glyphCoreMinimum": 19.072730243983607,
+        "glyphCoreWorst": {
+          "x": 749,
+          "y": 1334,
+          "foreground": [
+            248,
+            250,
+            252
+          ],
+          "background": [
+            3,
+            9,
+            19
+          ],
+          "coverage": 1
+        },
+        "glyphCorePixels": 1296,
+        "thinGlyphMinimum": 19.072730243983607,
+        "thinGlyphPixels": 1634,
+        "threshold": 4.5,
+        "meetsSampledThreshold": true,
+        "assessmentMinimum": 19.072730243983607,
+        "assessmentBasis": "solid glyph interiors in paired composited screenshots; >=50% coverage glyphs for thin text without opaque interiors, otherwise conservative rectangle fallback; line-rectangle minimum retained"
+      },
+      {
+        "id": "contrast-8",
+        "selector": ".desktop-navigation a",
+        "text": "Work",
+        "fontSize": "11.68px",
+        "fontWeight": "700",
+        "color": "rgb(226, 230, 237)",
+        "fill": "rgb(226, 230, 237)",
+        "gradient": null,
+        "rect": {
+          "x": 1592.0625,
+          "y": 51,
+          "width": 83.125,
+          "height": 88
+        },
+        "rects": [
+          {
+            "x": 1592.0625,
+            "y": 78.3125,
+            "width": 83.125,
+            "height": 32
+          }
+        ],
+        "minimumRatio": 15.921329676852015,
+        "worst": {
+          "x": 1672,
+          "y": 107,
+          "foreground": [
+            226,
+            230,
+            237
+          ],
+          "background": [
+            4,
+            9,
+            19
+          ]
+        },
+        "sampledPixels": 2542,
+        "glyphCoreMinimum": 15.93144436553019,
+        "glyphCoreWorst": {
+          "x": 1625,
+          "y": 86,
+          "foreground": [
+            226,
+            230,
+            237
+          ],
+          "background": [
+            4,
+            9,
+            18
+          ],
+          "coverage": 1
+        },
+        "glyphCorePixels": 519,
+        "thinGlyphMinimum": 15.93144436553019,
+        "thinGlyphPixels": 696,
+        "threshold": 4.5,
+        "meetsSampledThreshold": true,
+        "assessmentMinimum": 15.93144436553019,
+        "assessmentBasis": "solid glyph interiors in paired composited screenshots; >=50% coverage glyphs for thin text without opaque interiors, otherwise conservative rectangle fallback; line-rectangle minimum retained"
+      },
+      {
+        "id": "contrast-9",
+        "selector": ".desktop-navigation a",
+        "text": "Why Cumulative",
+        "fontSize": "11.68px",
+        "fontWeight": "700",
+        "color": "rgb(226, 230, 237)",
+        "fill": "rgb(226, 230, 237)",
+        "gradient": null,
+        "rect": {
+          "x": 1732.78125,
+          "y": 51,
+          "width": 240.9375,
+          "height": 88
+        },
+        "rects": [
+          {
+            "x": 1732.78125,
+            "y": 78.3125,
+            "width": 240.9375,
+            "height": 32
+          }
+        ],
+        "minimumRatio": 15.711214742430021,
+        "worst": {
+          "x": 1841,
+          "y": 88,
+          "foreground": [
+            226,
+            230,
+            237
+          ],
+          "background": [
+            7,
+            11,
+            21
+          ]
+        },
+        "sampledPixels": 7440,
+        "glyphCoreMinimum": 15.891338348317603,
+        "glyphCoreWorst": {
+          "x": 1942,
+          "y": 91,
+          "foreground": [
+            226,
+            230,
+            237
+          ],
+          "background": [
+            5,
+            9,
+            20
+          ],
+          "coverage": 1
+        },
+        "glyphCorePixels": 1345,
+        "thinGlyphMinimum": 15.711214742430021,
+        "thinGlyphPixels": 1808,
+        "threshold": 4.5,
+        "meetsSampledThreshold": true,
+        "assessmentMinimum": 15.891338348317603,
+        "assessmentBasis": "solid glyph interiors in paired composited screenshots; >=50% coverage glyphs for thin text without opaque interiors, otherwise conservative rectangle fallback; line-rectangle minimum retained"
+      },
+      {
+        "id": "contrast-10",
+        "selector": ".desktop-navigation a",
+        "text": "Approach",
+        "fontSize": "11.68px",
+        "fontWeight": "700",
+        "color": "rgb(226, 230, 237)",
+        "fill": "rgb(226, 230, 237)",
+        "gradient": null,
+        "rect": {
+          "x": 2031.3125,
+          "y": 51,
+          "width": 147.5625,
+          "height": 88
+        },
+        "rects": [
+          {
+            "x": 2031.3125,
+            "y": 78.3125,
+            "width": 147.5625,
+            "height": 32
+          }
+        ],
+        "minimumRatio": 15.700085342324332,
+        "worst": {
+          "x": 2092,
+          "y": 88,
+          "foreground": [
+            226,
+            230,
+            237
+          ],
+          "background": [
+            7,
+            11,
+            22
+          ]
+        },
+        "sampledPixels": 4526,
+        "glyphCoreMinimum": 15.700085342324332,
+        "glyphCoreWorst": {
+          "x": 2093,
+          "y": 88,
+          "foreground": [
+            226,
+            230,
+            237
+          ],
+          "background": [
+            7,
+            11,
+            22
+          ],
+          "coverage": 0.9954061640414501
+        },
+        "glyphCorePixels": 860,
+        "thinGlyphMinimum": 15.700085342324332,
+        "thinGlyphPixels": 1151,
+        "threshold": 4.5,
+        "meetsSampledThreshold": true,
+        "assessmentMinimum": 15.700085342324332,
+        "assessmentBasis": "solid glyph interiors in paired composited screenshots; >=50% coverage glyphs for thin text without opaque interiors, otherwise conservative rectangle fallback; line-rectangle minimum retained"
+      },
+      {
+        "id": "contrast-11",
+        "selector": ".desktop-navigation a",
+        "text": "Principles",
+        "fontSize": "11.68px",
+        "fontWeight": "700",
+        "color": "rgb(226, 230, 237)",
+        "fill": "rgb(226, 230, 237)",
+        "gradient": null,
+        "rect": {
+          "x": 2236.46875,
+          "y": 51,
+          "width": 153.9375,
+          "height": 88
+        },
+        "rects": [
+          {
+            "x": 2236.46875,
+            "y": 78.3125,
+            "width": 153.9375,
+            "height": 32
+          }
+        ],
+        "minimumRatio": 15.600837650203543,
+        "worst": {
+          "x": 2344,
+          "y": 88,
+          "foreground": [
+            226,
+            230,
+            237
+          ],
+          "background": [
+            8,
+            12,
+            23
+          ]
+        },
+        "sampledPixels": 4743,
+        "glyphCoreMinimum": 15.7961766981945,
+        "glyphCoreWorst": {
+          "x": 2284,
+          "y": 86,
+          "foreground": [
+            226,
+            230,
+            237
+          ],
+          "background": [
+            6,
+            10,
+            21
+          ],
+          "coverage": 1
+        },
+        "glyphCorePixels": 884,
+        "thinGlyphMinimum": 15.7961766981945,
+        "thinGlyphPixels": 1213,
+        "threshold": 4.5,
+        "meetsSampledThreshold": true,
+        "assessmentMinimum": 15.7961766981945,
+        "assessmentBasis": "solid glyph interiors in paired composited screenshots; >=50% coverage glyphs for thin text without opaque interiors, otherwise conservative rectangle fallback; line-rectangle minimum retained"
+      },
+      {
+        "id": "contrast-12",
+        "selector": ".desktop-navigation a",
+        "text": "Contact",
+        "fontSize": "11.68px",
+        "fontWeight": "700",
+        "color": "rgb(226, 230, 237)",
+        "fill": "rgb(226, 230, 237)",
+        "gradient": null,
+        "rect": {
+          "x": 2448,
+          "y": 51,
+          "width": 240,
+          "height": 88
+        },
+        "rects": [
+          {
+            "x": 2482,
+            "y": 78.3125,
+            "width": 125.875,
+            "height": 32
+          }
+        ],
+        "minimumRatio": 15.600837650203543,
+        "worst": {
+          "x": 2597,
+          "y": 88,
+          "foreground": [
+            226,
+            230,
+            237
+          ],
+          "background": [
+            8,
+            12,
+            23
+          ]
+        },
+        "sampledPixels": 3875,
+        "glyphCoreMinimum": 15.600837650203543,
+        "glyphCoreWorst": {
+          "x": 2597,
+          "y": 88,
+          "foreground": [
+            226,
+            230,
+            237
+          ],
+          "background": [
+            8,
+            12,
+            23
+          ],
+          "coverage": 0.9615319076424981
+        },
+        "glyphCorePixels": 689,
+        "thinGlyphMinimum": 15.600837650203543,
+        "thinGlyphPixels": 953,
+        "threshold": 4.5,
+        "meetsSampledThreshold": true,
+        "assessmentMinimum": 15.600837650203543,
+        "assessmentBasis": "solid glyph interiors in paired composited screenshots; >=50% coverage glyphs for thin text without opaque interiors, otherwise conservative rectangle fallback; line-rectangle minimum retained"
+      }
+    ]
+  },
+  {
+    "engine": "chromium",
+    "build": "candidate",
+    "width": 1440,
+    "height": 900,
+    "dpr": 2,
+    "pointer": {
+      "x": 120,
+      "y": 711
+    },
+    "coordinates": "native screenshot pixels; multiply CSS coordinates by 2",
+    "measured": [
+      {
+        "id": "contrast-0",
+        "selector": ".hero-section__eyebrow",
+        "text": "Cumulative intelligence, built to endure",
+        "fontSize": "11.2px",
+        "fontWeight": "400",
+        "color": "rgb(191, 200, 215)",
+        "fill": "rgb(191, 200, 215)",
+        "gradient": null,
+        "rect": {
+          "x": 192,
+          "y": 328,
+          "width": 1376,
+          "height": 38.0625
+        },
+        "rects": [
+          {
+            "x": 192,
+            "y": 332,
+            "width": 555.0625,
+            "height": 30
+          }
+        ],
+        "minimumRatio": 11.648559555567454,
+        "worst": {
+          "x": 693,
+          "y": 354,
+          "foreground": [
+            191,
+            200,
+            215
+          ],
+          "background": [
+            10,
+            11,
+            18
+          ]
+        },
+        "sampledPixels": 16650,
+        "glyphCoreMinimum": 11.655334220943926,
+        "glyphCoreWorst": {
+          "x": 421,
+          "y": 340,
+          "foreground": [
+            191,
+            200,
+            215
+          ],
+          "background": [
+            9,
+            11,
+            19
+          ],
+          "coverage": 1
+        },
+        "glyphCorePixels": 509,
+        "thinGlyphMinimum": 11.655334220943926,
+        "thinGlyphPixels": 1291,
+        "threshold": 4.5,
+        "meetsSampledThreshold": true,
+        "assessmentMinimum": 11.655334220943926,
+        "assessmentBasis": "solid glyph interiors in paired composited screenshots; >=50% coverage glyphs for thin text without opaque interiors, otherwise conservative rectangle fallback; line-rectangle minimum retained"
+      },
+      {
+        "id": "contrast-1",
+        "selector": ".hero-section h1 > span",
+        "text": "Intelligence",
+        "fontSize": "74.88px",
+        "fontWeight": "450",
+        "color": "rgb(248, 250, 252)",
+        "fill": "rgb(248, 250, 252)",
+        "gradient": null,
+        "rect": {
+          "x": 192,
+          "y": 414.0625,
+          "width": 1376,
+          "height": 146.75
+        },
+        "rects": [
+          {
+            "x": 192,
+            "y": 384.0625,
+            "width": 980.21875,
+            "height": 204
+          }
+        ],
+        "minimumRatio": 2.2312077708818254,
+        "worst": {
+          "x": 1048,
+          "y": 585,
+          "foreground": [
+            248,
+            250,
+            252
+          ],
+          "background": [
+            244,
+            145,
+            74
+          ]
+        },
+        "sampledPixels": 198940,
+        "glyphCoreMinimum": 2.626274773679305,
+        "glyphCoreWorst": {
+          "x": 1119,
+          "y": 530,
+          "foreground": [
+            248,
+            250,
+            252
+          ],
+          "background": [
+            225,
+            133,
+            69
+          ],
+          "coverage": 1
+        },
+        "glyphCorePixels": 37657,
+        "thinGlyphMinimum": 2.626274773679305,
+        "thinGlyphPixels": 39511,
+        "threshold": 3,
+        "meetsSampledThreshold": false,
+        "assessmentMinimum": 2.626274773679305,
+        "assessmentBasis": "solid glyph interiors in paired composited screenshots; >=50% coverage glyphs for thin text without opaque interiors, otherwise conservative rectangle fallback; line-rectangle minimum retained"
+      },
+      {
+        "id": "contrast-2",
+        "selector": ".hero-section h1 > span",
+        "text": "That",
+        "fontSize": "74.88px",
+        "fontWeight": "450",
+        "color": "rgb(248, 250, 252)",
+        "fill": "rgb(248, 250, 252)",
+        "gradient": null,
+        "rect": {
+          "x": 192,
+          "y": 566.78125,
+          "width": 1376,
+          "height": 146.75
+        },
+        "rects": [
+          {
+            "x": 192,
+            "y": 536.78125,
+            "width": 356.09375,
+            "height": 204
+          }
+        ],
+        "minimumRatio": 18.413434397471796,
+        "worst": {
+          "x": 312,
+          "y": 659,
+          "foreground": [
+            248,
+            250,
+            252
+          ],
+          "background": [
+            13,
+            14,
+            20
+          ]
+        },
+        "sampledPixels": 72268,
+        "glyphCoreMinimum": 18.413434397471796,
+        "glyphCoreWorst": {
+          "x": 390,
+          "y": 659,
+          "foreground": [
+            248,
+            250,
+            252
+          ],
+          "background": [
+            13,
+            14,
+            20
+          ],
+          "coverage": 1
+        },
+        "glyphCorePixels": 11780,
+        "thinGlyphMinimum": 18.413434397471796,
+        "thinGlyphPixels": 13362,
+        "threshold": 3,
+        "meetsSampledThreshold": true,
+        "assessmentMinimum": 18.413434397471796,
+        "assessmentBasis": "solid glyph interiors in paired composited screenshots; >=50% coverage glyphs for thin text without opaque interiors, otherwise conservative rectangle fallback; line-rectangle minimum retained"
+      },
+      {
+        "id": "contrast-3",
+        "selector": ".hero-section h1 > span",
+        "text": "Compounds.",
+        "fontSize": "74.88px",
+        "fontWeight": "450",
+        "color": "rgba(0, 0, 0, 0)",
+        "fill": "rgba(0, 0, 0, 0)",
+        "gradient": "linear-gradient(92deg, rgb(255, 122, 0), rgb(255, 45, 141), rgb(138, 43, 226))",
+        "rect": {
+          "x": 192,
+          "y": 720.25,
+          "width": 990.6875,
+          "height": 158.71875
+        },
+        "rects": [
+          {
+            "x": 192,
+            "y": 690.25,
+            "width": 990.6875,
+            "height": 204
+          }
+        ],
+        "minimumRatio": 1,
+        "worst": {
+          "x": 192,
+          "y": 878,
+          "foreground": [
+            7,
+            9,
+            17
+          ],
+          "background": [
+            7,
+            9,
+            17
+          ]
+        },
+        "sampledPixels": 156420,
+        "glyphCoreMinimum": 1.0001339679164456,
+        "glyphCoreWorst": {
+          "x": 831,
+          "y": 793,
+          "foreground": [
+            221,
+            44,
+            166
+          ],
+          "background": [
+            203,
+            82,
+            113
+          ],
+          "coverage": 1
+        },
+        "glyphCorePixels": 35330,
+        "thinGlyphMinimum": 1.0001339679164456,
+        "thinGlyphPixels": 37520,
+        "threshold": 3,
+        "meetsSampledThreshold": false,
+        "assessmentMinimum": 1.0001339679164456,
+        "assessmentBasis": "solid glyph interiors in paired composited screenshots; >=50% coverage glyphs for thin text without opaque interiors, otherwise conservative rectangle fallback; line-rectangle minimum retained"
+      },
+      {
+        "id": "contrast-4",
+        "selector": ".hero-section__body",
+        "text": "Cumulative Labs is developing AI research systems designed to preserve verified knowledge—so each new task can build on useful findings from the last.",
+        "fontSize": "17.6px",
+        "fontWeight": "400",
+        "color": "rgb(212, 219, 229)",
+        "fill": "rgb(212, 219, 229)",
+        "gradient": null,
+        "rect": {
+          "x": 192,
+          "y": 934.96875,
+          "width": 1088,
+          "height": 174.09375
+        },
+        "rects": [
+          {
+            "x": 192,
+            "y": 938.96875,
+            "width": 1016.84375,
+            "height": 48
+          },
+          {
+            "x": 192,
+            "y": 997,
+            "width": 1063.125,
+            "height": 48
+          },
+          {
+            "x": 192,
+            "y": 1055.03125,
+            "width": 346,
+            "height": 48
+          }
+        ],
+        "minimumRatio": 1.7254321323282236,
+        "worst": {
+          "x": 1006,
+          "y": 1043,
+          "foreground": [
+            212,
+            219,
+            229
+          ],
+          "background": [
+            240,
+            143,
+            73
+          ]
+        },
+        "sampledPixels": 115038,
+        "glyphCoreMinimum": 1.8749972368229315,
+        "glyphCoreWorst": {
+          "x": 796,
+          "y": 959,
+          "foreground": [
+            212,
+            219,
+            229
+          ],
+          "background": [
+            230,
+            137,
+            71
+          ],
+          "coverage": 1
+        },
+        "glyphCorePixels": 7245,
+        "thinGlyphMinimum": 1.8749972368229315,
+        "thinGlyphPixels": 12624,
+        "threshold": 4.5,
+        "meetsSampledThreshold": false,
+        "assessmentMinimum": 1.8749972368229315,
+        "assessmentBasis": "solid glyph interiors in paired composited screenshots; >=50% coverage glyphs for thin text without opaque interiors, otherwise conservative rectangle fallback; line-rectangle minimum retained"
+      },
+      {
+        "id": "contrast-5",
+        "selector": ".hero-section__support",
+        "text": "Our first applied proving ground: League Vector, a dynasty fantasy football product in development.",
+        "fontSize": "14.88px",
+        "fontWeight": "400",
+        "color": "rgb(174, 185, 203)",
+        "fill": "rgb(174, 185, 203)",
+        "gradient": null,
+        "rect": {
+          "x": 192,
+          "y": 1141.0625,
+          "width": 1056,
+          "height": 95.1875
+        },
+        "rects": [
+          {
+            "x": 192,
+            "y": 1143.0625,
+            "width": 1008.90625,
+            "height": 40
+          },
+          {
+            "x": 192,
+            "y": 1190.65625,
+            "width": 337.3125,
+            "height": 40
+          }
+        ],
+        "minimumRatio": 1.170700916672188,
+        "worst": {
+          "x": 704,
+          "y": 1151,
+          "foreground": [
+            174,
+            185,
+            203
+          ],
+          "background": [
+            250,
+            142,
+            82
+          ]
+        },
+        "sampledPixels": 52455,
+        "glyphCoreMinimum": 1.4182539543300299,
+        "glyphCoreWorst": {
+          "x": 832,
+          "y": 1168,
+          "foreground": [
+            174,
+            185,
+            203
+          ],
+          "background": [
+            251,
+            106,
+            128
+          ],
+          "coverage": 1
+        },
+        "glyphCorePixels": 2962,
+        "thinGlyphMinimum": 1.3977843899751576,
+        "thinGlyphPixels": 5984,
+        "threshold": 4.5,
+        "meetsSampledThreshold": false,
+        "assessmentMinimum": 1.4182539543300299,
+        "assessmentBasis": "solid glyph interiors in paired composited screenshots; >=50% coverage glyphs for thin text without opaque interiors, otherwise conservative rectangle fallback; line-rectangle minimum retained"
+      },
+      {
+        "id": "contrast-6",
+        "selector": ".hero-section__actions a",
+        "text": "See What We’re Building↗",
+        "fontSize": "11.52px",
+        "fontWeight": "700",
+        "color": "rgb(248, 250, 252)",
+        "fill": "rgb(248, 250, 252)",
+        "gradient": null,
+        "rect": {
+          "x": 192,
+          "y": 1292.25,
+          "width": 482.75,
+          "height": 104
+        },
+        "rects": [
+          {
+            "x": 234,
+            "y": 1326.71875,
+            "width": 351.5,
+            "height": 32
+          },
+          {
+            "x": 612.6875,
+            "y": 1326.71875,
+            "width": 20.0625,
+            "height": 32
+          }
+        ],
+        "minimumRatio": 17.434120859946592,
+        "worst": {
+          "x": 234,
+          "y": 1327,
+          "foreground": [
+            248,
+            250,
+            252
+          ],
+          "background": [
+            16,
+            21,
+            33
+          ]
+        },
+        "sampledPixels": 11470,
+        "glyphCoreMinimum": 17.434120859946592,
+        "glyphCoreWorst": {
+          "x": 238,
+          "y": 1334,
+          "foreground": [
+            248,
+            250,
+            252
+          ],
+          "background": [
+            16,
+            21,
+            33
+          ],
+          "coverage": 0.9911817722044273
+        },
+        "glyphCorePixels": 2066,
+        "thinGlyphMinimum": 17.434120859946592,
+        "thinGlyphPixels": 2674,
+        "threshold": 4.5,
+        "meetsSampledThreshold": true,
+        "assessmentMinimum": 17.434120859946592,
+        "assessmentBasis": "solid glyph interiors in paired composited screenshots; >=50% coverage glyphs for thin text without opaque interiors, otherwise conservative rectangle fallback; line-rectangle minimum retained"
+      },
+      {
+        "id": "contrast-7",
+        "selector": ".hero-section__actions a",
+        "text": "Contact the Lab",
+        "fontSize": "11.52px",
+        "fontWeight": "700",
+        "color": "rgb(248, 250, 252)",
+        "fill": "rgb(248, 250, 252)",
+        "gradient": null,
+        "rect": {
+          "x": 700.34375,
+          "y": 1292.25,
+          "width": 319.0625,
+          "height": 104
+        },
+        "rects": [
+          {
+            "x": 742.34375,
+            "y": 1326.71875,
+            "width": 235.0625,
+            "height": 32
+          }
+        ],
+        "minimumRatio": 18.401157783559817,
+        "worst": {
+          "x": 743,
+          "y": 1327,
+          "foreground": [
+            248,
+            250,
+            252
+          ],
+          "background": [
+            13,
+            14,
+            21
+          ]
+        },
+        "sampledPixels": 7254,
+        "glyphCoreMinimum": 18.889605998302784,
+        "glyphCoreWorst": {
+          "x": 890,
+          "y": 1349,
+          "foreground": [
+            248,
+            250,
+            252
+          ],
+          "background": [
+            7,
+            10,
+            20
+          ],
+          "coverage": 1
+        },
+        "glyphCorePixels": 1296,
+        "thinGlyphMinimum": 18.889605998302784,
+        "thinGlyphPixels": 1634,
+        "threshold": 4.5,
+        "meetsSampledThreshold": true,
+        "assessmentMinimum": 18.889605998302784,
+        "assessmentBasis": "solid glyph interiors in paired composited screenshots; >=50% coverage glyphs for thin text without opaque interiors, otherwise conservative rectangle fallback; line-rectangle minimum retained"
+      },
+      {
+        "id": "contrast-8",
+        "selector": ".desktop-navigation a",
+        "text": "Work",
+        "fontSize": "11.68px",
+        "fontWeight": "700",
+        "color": "rgb(226, 230, 237)",
+        "fill": "rgb(226, 230, 237)",
+        "gradient": null,
+        "rect": {
+          "x": 1592.0625,
+          "y": 51,
+          "width": 83.125,
+          "height": 88
+        },
+        "rects": [
+          {
+            "x": 1592.0625,
+            "y": 78.3125,
+            "width": 83.125,
+            "height": 32
+          }
+        ],
+        "minimumRatio": 15.921329676852015,
+        "worst": {
+          "x": 1672,
+          "y": 107,
+          "foreground": [
+            226,
+            230,
+            237
+          ],
+          "background": [
+            4,
+            9,
+            19
+          ]
+        },
+        "sampledPixels": 2542,
+        "glyphCoreMinimum": 15.93144436553019,
+        "glyphCoreWorst": {
+          "x": 1625,
+          "y": 86,
+          "foreground": [
+            226,
+            230,
+            237
+          ],
+          "background": [
+            4,
+            9,
+            18
+          ],
+          "coverage": 1
+        },
+        "glyphCorePixels": 519,
+        "thinGlyphMinimum": 15.93144436553019,
+        "thinGlyphPixels": 696,
+        "threshold": 4.5,
+        "meetsSampledThreshold": true,
+        "assessmentMinimum": 15.93144436553019,
+        "assessmentBasis": "solid glyph interiors in paired composited screenshots; >=50% coverage glyphs for thin text without opaque interiors, otherwise conservative rectangle fallback; line-rectangle minimum retained"
+      },
+      {
+        "id": "contrast-9",
+        "selector": ".desktop-navigation a",
+        "text": "Why Cumulative",
+        "fontSize": "11.68px",
+        "fontWeight": "700",
+        "color": "rgb(226, 230, 237)",
+        "fill": "rgb(226, 230, 237)",
+        "gradient": null,
+        "rect": {
+          "x": 1732.78125,
+          "y": 51,
+          "width": 240.9375,
+          "height": 88
+        },
+        "rects": [
+          {
+            "x": 1732.78125,
+            "y": 78.3125,
+            "width": 240.9375,
+            "height": 32
+          }
+        ],
+        "minimumRatio": 15.711214742430021,
+        "worst": {
+          "x": 1841,
+          "y": 88,
+          "foreground": [
+            226,
+            230,
+            237
+          ],
+          "background": [
+            7,
+            11,
+            21
+          ]
+        },
+        "sampledPixels": 7440,
+        "glyphCoreMinimum": 15.891338348317603,
+        "glyphCoreWorst": {
+          "x": 1942,
+          "y": 91,
+          "foreground": [
+            226,
+            230,
+            237
+          ],
+          "background": [
+            5,
+            9,
+            20
+          ],
+          "coverage": 1
+        },
+        "glyphCorePixels": 1345,
+        "thinGlyphMinimum": 15.711214742430021,
+        "thinGlyphPixels": 1808,
+        "threshold": 4.5,
+        "meetsSampledThreshold": true,
+        "assessmentMinimum": 15.891338348317603,
+        "assessmentBasis": "solid glyph interiors in paired composited screenshots; >=50% coverage glyphs for thin text without opaque interiors, otherwise conservative rectangle fallback; line-rectangle minimum retained"
+      },
+      {
+        "id": "contrast-10",
+        "selector": ".desktop-navigation a",
+        "text": "Approach",
+        "fontSize": "11.68px",
+        "fontWeight": "700",
+        "color": "rgb(226, 230, 237)",
+        "fill": "rgb(226, 230, 237)",
+        "gradient": null,
+        "rect": {
+          "x": 2031.3125,
+          "y": 51,
+          "width": 147.5625,
+          "height": 88
+        },
+        "rects": [
+          {
+            "x": 2031.3125,
+            "y": 78.3125,
+            "width": 147.5625,
+            "height": 32
+          }
+        ],
+        "minimumRatio": 15.700085342324332,
+        "worst": {
+          "x": 2092,
+          "y": 88,
+          "foreground": [
+            226,
+            230,
+            237
+          ],
+          "background": [
+            7,
+            11,
+            22
+          ]
+        },
+        "sampledPixels": 4526,
+        "glyphCoreMinimum": 15.700085342324332,
+        "glyphCoreWorst": {
+          "x": 2093,
+          "y": 88,
+          "foreground": [
+            226,
+            230,
+            237
+          ],
+          "background": [
+            7,
+            11,
+            22
+          ],
+          "coverage": 0.9954061640414501
+        },
+        "glyphCorePixels": 860,
+        "thinGlyphMinimum": 15.700085342324332,
+        "thinGlyphPixels": 1151,
+        "threshold": 4.5,
+        "meetsSampledThreshold": true,
+        "assessmentMinimum": 15.700085342324332,
+        "assessmentBasis": "solid glyph interiors in paired composited screenshots; >=50% coverage glyphs for thin text without opaque interiors, otherwise conservative rectangle fallback; line-rectangle minimum retained"
+      },
+      {
+        "id": "contrast-11",
+        "selector": ".desktop-navigation a",
+        "text": "Principles",
+        "fontSize": "11.68px",
+        "fontWeight": "700",
+        "color": "rgb(226, 230, 237)",
+        "fill": "rgb(226, 230, 237)",
+        "gradient": null,
+        "rect": {
+          "x": 2236.46875,
+          "y": 51,
+          "width": 153.9375,
+          "height": 88
+        },
+        "rects": [
+          {
+            "x": 2236.46875,
+            "y": 78.3125,
+            "width": 153.9375,
+            "height": 32
+          }
+        ],
+        "minimumRatio": 15.600837650203543,
+        "worst": {
+          "x": 2344,
+          "y": 88,
+          "foreground": [
+            226,
+            230,
+            237
+          ],
+          "background": [
+            8,
+            12,
+            23
+          ]
+        },
+        "sampledPixels": 4743,
+        "glyphCoreMinimum": 15.7961766981945,
+        "glyphCoreWorst": {
+          "x": 2284,
+          "y": 86,
+          "foreground": [
+            226,
+            230,
+            237
+          ],
+          "background": [
+            6,
+            10,
+            21
+          ],
+          "coverage": 1
+        },
+        "glyphCorePixels": 884,
+        "thinGlyphMinimum": 15.7961766981945,
+        "thinGlyphPixels": 1213,
+        "threshold": 4.5,
+        "meetsSampledThreshold": true,
+        "assessmentMinimum": 15.7961766981945,
+        "assessmentBasis": "solid glyph interiors in paired composited screenshots; >=50% coverage glyphs for thin text without opaque interiors, otherwise conservative rectangle fallback; line-rectangle minimum retained"
+      },
+      {
+        "id": "contrast-12",
+        "selector": ".desktop-navigation a",
+        "text": "Contact",
+        "fontSize": "11.68px",
+        "fontWeight": "700",
+        "color": "rgb(226, 230, 237)",
+        "fill": "rgb(226, 230, 237)",
+        "gradient": null,
+        "rect": {
+          "x": 2448,
+          "y": 51,
+          "width": 240,
+          "height": 88
+        },
+        "rects": [
+          {
+            "x": 2482,
+            "y": 78.3125,
+            "width": 125.875,
+            "height": 32
+          }
+        ],
+        "minimumRatio": 15.600837650203543,
+        "worst": {
+          "x": 2597,
+          "y": 88,
+          "foreground": [
+            226,
+            230,
+            237
+          ],
+          "background": [
+            8,
+            12,
+            23
+          ]
+        },
+        "sampledPixels": 3875,
+        "glyphCoreMinimum": 15.600837650203543,
+        "glyphCoreWorst": {
+          "x": 2597,
+          "y": 88,
+          "foreground": [
+            226,
+            230,
+            237
+          ],
+          "background": [
+            8,
+            12,
+            23
+          ],
+          "coverage": 0.9615319076424981
+        },
+        "glyphCorePixels": 689,
+        "thinGlyphMinimum": 15.600837650203543,
+        "thinGlyphPixels": 953,
+        "threshold": 4.5,
+        "meetsSampledThreshold": true,
+        "assessmentMinimum": 15.600837650203543,
+        "assessmentBasis": "solid glyph interiors in paired composited screenshots; >=50% coverage glyphs for thin text without opaque interiors, otherwise conservative rectangle fallback; line-rectangle minimum retained"
+      }
+    ]
+  },
+  {
+    "engine": "webkit",
+    "build": "baseline",
+    "width": 1440,
+    "height": 900,
+    "dpr": 2,
+    "pointer": {
+      "x": 120,
+      "y": 711
+    },
+    "coordinates": "native screenshot pixels; multiply CSS coordinates by 2",
+    "measured": [
+      {
+        "id": "contrast-0",
+        "selector": ".hero-section__eyebrow",
+        "text": "Cumulative intelligence, built to endure",
+        "fontSize": "11.2px",
+        "fontWeight": "400",
+        "color": "rgb(191, 200, 215)",
+        "fill": "rgb(191, 200, 215)",
+        "gradient": null,
+        "rect": {
+          "x": 192,
+          "y": 328,
+          "width": 1376,
+          "height": 38.03125
+        },
+        "rects": [
+          {
+            "x": 192,
+            "y": 331.7164611816406,
+            "width": 555.0494995117188,
+            "height": 30.59832763671875
+          }
+        ],
+        "minimumRatio": 11.895133397917292,
+        "worst": {
+          "x": 192,
+          "y": 332,
+          "foreground": [
+            191,
+            200,
+            215
+          ],
+          "background": [
+            3,
+            8,
+            18
+          ]
+        },
+        "sampledPixels": 16650,
+        "glyphCoreMinimum": 11.895133397917292,
+        "glyphCoreWorst": {
+          "x": 200,
+          "y": 338,
+          "foreground": [
+            191,
+            200,
+            215
+          ],
+          "background": [
+            3,
+            8,
+            18
+          ],
+          "coverage": 1
+        },
+        "glyphCorePixels": 499,
+        "thinGlyphMinimum": 11.895133397917292,
+        "thinGlyphPixels": 1300,
+        "threshold": 4.5,
+        "meetsSampledThreshold": true,
+        "assessmentMinimum": 11.895133397917292,
+        "assessmentBasis": "solid glyph interiors in paired composited screenshots; >=50% coverage glyphs for thin text without opaque interiors, otherwise conservative rectangle fallback; line-rectangle minimum retained"
+      },
+      {
+        "id": "contrast-1",
+        "selector": ".hero-section h1 > span",
+        "text": "Intelligence",
+        "fontSize": "74.879997px",
+        "fontWeight": "450",
+        "color": "rgb(248, 250, 252)",
+        "fill": "rgb(248, 250, 252)",
+        "gradient": null,
+        "rect": {
+          "x": 192,
+          "y": 414.03125,
+          "width": 1376,
+          "height": 146.75
+        },
+        "rects": [
+          {
+            "x": 192,
+            "y": 385.120361328125,
+            "width": 980.3292236328125,
+            "height": 204.57177734375
+          }
+        ],
+        "minimumRatio": 16.99445642915238,
+        "worst": {
+          "x": 976,
+          "y": 535,
+          "foreground": [
+            248,
+            250,
+            252
+          ],
+          "background": [
+            29,
+            22,
+            25
+          ]
+        },
+        "sampledPixels": 198940,
+        "glyphCoreMinimum": 17.02311150615683,
+        "glyphCoreWorst": {
+          "x": 975,
+          "y": 534,
+          "foreground": [
+            248,
+            250,
+            252
+          ],
+          "background": [
+            28,
+            22,
+            26
+          ],
+          "coverage": 1
+        },
+        "glyphCorePixels": 37457,
+        "thinGlyphMinimum": 17.02311150615683,
+        "thinGlyphPixels": 39401,
+        "threshold": 3,
+        "meetsSampledThreshold": true,
+        "assessmentMinimum": 17.02311150615683,
+        "assessmentBasis": "solid glyph interiors in paired composited screenshots; >=50% coverage glyphs for thin text without opaque interiors, otherwise conservative rectangle fallback; line-rectangle minimum retained"
+      },
+      {
+        "id": "contrast-2",
+        "selector": ".hero-section h1 > span",
+        "text": "That",
+        "fontSize": "74.879997px",
+        "fontWeight": "450",
+        "color": "rgb(248, 250, 252)",
+        "fill": "rgb(248, 250, 252)",
+        "gradient": null,
+        "rect": {
+          "x": 192,
+          "y": 566.75,
+          "width": 1376,
+          "height": 146.75
+        },
+        "rects": [
+          {
+            "x": 192,
+            "y": 537.839111328125,
+            "width": 356.1292724609375,
+            "height": 204.57177734375
+          }
+        ],
+        "minimumRatio": 19.16397640718603,
+        "worst": {
+          "x": 193,
+          "y": 538,
+          "foreground": [
+            248,
+            250,
+            252
+          ],
+          "background": [
+            3,
+            8,
+            18
+          ]
+        },
+        "sampledPixels": 72624,
+        "glyphCoreMinimum": 19.16397640718603,
+        "glyphCoreWorst": {
+          "x": 196,
+          "y": 582,
+          "foreground": [
+            248,
+            250,
+            252
+          ],
+          "background": [
+            3,
+            8,
+            18
+          ],
+          "coverage": 1
+        },
+        "glyphCorePixels": 11784,
+        "thinGlyphMinimum": 19.16397640718603,
+        "thinGlyphPixels": 13528,
+        "threshold": 3,
+        "meetsSampledThreshold": true,
+        "assessmentMinimum": 19.16397640718603,
+        "assessmentBasis": "solid glyph interiors in paired composited screenshots; >=50% coverage glyphs for thin text without opaque interiors, otherwise conservative rectangle fallback; line-rectangle minimum retained"
+      },
+      {
+        "id": "contrast-3",
+        "selector": ".hero-section h1 > span",
+        "text": "Compounds.",
+        "fontSize": "74.879997px",
+        "fontWeight": "450",
+        "color": "rgba(0, 0, 0, 0)",
+        "fill": "rgba(0, 0, 0, 0)",
+        "gradient": "linear-gradient(92deg, rgb(255, 122, 0), rgb(255, 45, 141), rgb(138, 43, 226))",
+        "rect": {
+          "x": 192,
+          "y": 720.21875,
+          "width": 990.8125,
+          "height": 158.71875
+        },
+        "rects": [
+          {
+            "x": 192,
+            "y": 691.307861328125,
+            "width": 990.8123779296875,
+            "height": 204.57177734375
+          }
+        ],
+        "minimumRatio": 3.2112577389033667,
+        "worst": {
+          "x": 1176,
+          "y": 872,
+          "foreground": [
+            139,
+            43,
+            224
+          ],
+          "background": [
+            17,
+            14,
+            19
+          ]
+        },
+        "sampledPixels": 156420,
+        "glyphCoreMinimum": 3.3112589953343408,
+        "glyphCoreWorst": {
+          "x": 1170,
+          "y": 837,
+          "foreground": [
+            141,
+            43,
+            223
+          ],
+          "background": [
+            10,
+            11,
+            19
+          ],
+          "coverage": 1
+        },
+        "glyphCorePixels": 35372,
+        "thinGlyphMinimum": 3.300697120685176,
+        "thinGlyphPixels": 37523,
+        "threshold": 3,
+        "meetsSampledThreshold": true,
+        "assessmentMinimum": 3.3112589953343408,
+        "assessmentBasis": "solid glyph interiors in paired composited screenshots; >=50% coverage glyphs for thin text without opaque interiors, otherwise conservative rectangle fallback; line-rectangle minimum retained"
+      },
+      {
+        "id": "contrast-4",
+        "selector": ".hero-section__body",
+        "text": "Cumulative Labs is developing AI research systems designed to preserve verified knowledge—so each new task can build on useful findings from the last.",
+        "fontSize": "17.6px",
+        "fontWeight": "400",
+        "color": "rgb(212, 219, 229)",
+        "fill": "rgb(212, 219, 229)",
+        "gradient": null,
+        "rect": {
+          "x": 192,
+          "y": 934.9375,
+          "width": 1088,
+          "height": 174.09375
+        },
+        "rects": [
+          {
+            "x": 192,
+            "y": 939.9115600585938,
+            "width": 1017.4560546875,
+            "height": 48.0831298828125
+          },
+          {
+            "x": 192,
+            "y": 997.9428100585938,
+            "width": 1063.1103515625,
+            "height": 48.08306884765625
+          },
+          {
+            "x": 192,
+            "y": 1055.97412109375,
+            "width": 345.9808349609375,
+            "height": 48.0830078125
+          }
+        ],
+        "minimumRatio": 12.053675454408074,
+        "worst": {
+          "x": 1178,
+          "y": 986,
+          "foreground": [
+            212,
+            219,
+            229
+          ],
+          "background": [
+            30,
+            29,
+            30
+          ]
+        },
+        "sampledPixels": 115383,
+        "glyphCoreMinimum": 12.661369843682774,
+        "glyphCoreWorst": {
+          "x": 1020,
+          "y": 1032,
+          "foreground": [
+            212,
+            219,
+            229
+          ],
+          "background": [
+            29,
+            23,
+            26
+          ],
+          "coverage": 1
+        },
+        "glyphCorePixels": 7047,
+        "thinGlyphMinimum": 12.661369843682774,
+        "thinGlyphPixels": 12716,
+        "threshold": 4.5,
+        "meetsSampledThreshold": true,
+        "assessmentMinimum": 12.661369843682774,
+        "assessmentBasis": "solid glyph interiors in paired composited screenshots; >=50% coverage glyphs for thin text without opaque interiors, otherwise conservative rectangle fallback; line-rectangle minimum retained"
+      },
+      {
+        "id": "contrast-5",
+        "selector": ".hero-section__support",
+        "text": "Our first applied proving ground: League Vector, a dynasty fantasy football product in development.",
+        "fontSize": "14.88px",
+        "fontWeight": "400",
+        "color": "rgb(174, 185, 203)",
+        "fill": "rgb(174, 185, 203)",
+        "gradient": null,
+        "rect": {
+          "x": 192,
+          "y": 1141.03125,
+          "width": 1056,
+          "height": 95.1875
+        },
+        "rects": [
+          {
+            "x": 192,
+            "y": 1144.5020751953125,
+            "width": 1009.429443359375,
+            "height": 40.652099609375
+          },
+          {
+            "x": 192,
+            "y": 1192.0958251953125,
+            "width": 337.2998046875,
+            "height": 40.652099609375
+          }
+        ],
+        "minimumRatio": 9.611743024557725,
+        "worst": {
+          "x": 1095,
+          "y": 1167,
+          "foreground": [
+            174,
+            185,
+            203
+          ],
+          "background": [
+            17,
+            15,
+            21
+          ]
+        },
+        "sampledPixels": 53503,
+        "glyphCoreMinimum": 9.697589755868329,
+        "glyphCoreWorst": {
+          "x": 1084,
+          "y": 1169,
+          "foreground": [
+            174,
+            185,
+            203
+          ],
+          "background": [
+            15,
+            14,
+            20
+          ],
+          "coverage": 1
+        },
+        "glyphCorePixels": 2889,
+        "thinGlyphMinimum": 9.682354497554742,
+        "thinGlyphPixels": 5964,
+        "threshold": 4.5,
+        "meetsSampledThreshold": true,
+        "assessmentMinimum": 9.697589755868329,
+        "assessmentBasis": "solid glyph interiors in paired composited screenshots; >=50% coverage glyphs for thin text without opaque interiors, otherwise conservative rectangle fallback; line-rectangle minimum retained"
+      },
+      {
+        "id": "contrast-6",
+        "selector": ".hero-section__actions a",
+        "text": "See What We’re Building↗",
+        "fontSize": "11.52px",
+        "fontWeight": "700",
+        "color": "rgb(248, 250, 252)",
+        "fill": "rgb(248, 250, 252)",
+        "gradient": null,
+        "rect": {
+          "x": 192,
+          "y": 1292.21875,
+          "width": 483.3125,
+          "height": 104
+        },
+        "rects": [
+          {
+            "x": 234,
+            "y": 1328.466796875,
+            "width": 352.05120849609375,
+            "height": 31.47265625
+          },
+          {
+            "x": 613.25,
+            "y": 1328.466796875,
+            "width": 20.0458984375,
+            "height": 31.47265625
+          }
+        ],
+        "minimumRatio": 17.294415913048788,
+        "worst": {
+          "x": 235,
+          "y": 1350,
+          "foreground": [
+            248,
+            250,
+            252
+          ],
+          "background": [
+            17,
+            22,
+            33
+          ]
+        },
+        "sampledPixels": 11130,
+        "glyphCoreMinimum": 17.294415913048788,
+        "glyphCoreWorst": {
+          "x": 237,
+          "y": 1350,
+          "foreground": [
+            248,
+            250,
+            252
+          ],
+          "background": [
+            17,
+            22,
+            33
+          ],
+          "coverage": 1
+        },
+        "glyphCorePixels": 2074,
+        "thinGlyphMinimum": 17.294415913048788,
+        "thinGlyphPixels": 2620,
+        "threshold": 4.5,
+        "meetsSampledThreshold": true,
+        "assessmentMinimum": 17.294415913048788,
+        "assessmentBasis": "solid glyph interiors in paired composited screenshots; >=50% coverage glyphs for thin text without opaque interiors, otherwise conservative rectangle fallback; line-rectangle minimum retained"
+      },
+      {
+        "id": "contrast-7",
+        "selector": ".hero-section__actions a",
+        "text": "Contact the Lab",
+        "fontSize": "11.52px",
+        "fontWeight": "700",
+        "color": "rgb(248, 250, 252)",
+        "fill": "rgb(248, 250, 252)",
+        "gradient": null,
+        "rect": {
+          "x": 700.90625,
+          "y": 1292.21875,
+          "width": 319.625,
+          "height": 104
+        },
+        "rects": [
+          {
+            "x": 742.90625,
+            "y": 1328.466796875,
+            "width": 235.6070556640625,
+            "height": 31.47265625
+          }
+        ],
+        "minimumRatio": 19.0493681970728,
+        "worst": {
+          "x": 967,
+          "y": 1329,
+          "foreground": [
+            248,
+            250,
+            252
+          ],
+          "background": [
+            4,
+            9,
+            19
+          ]
+        },
+        "sampledPixels": 7050,
+        "glyphCoreMinimum": 19.0493681970728,
+        "glyphCoreWorst": {
+          "x": 958,
+          "y": 1349,
+          "foreground": [
+            248,
+            250,
+            252
+          ],
+          "background": [
+            4,
+            9,
+            19
+          ],
+          "coverage": 0.9791164938978278
+        },
+        "glyphCorePixels": 1297,
+        "thinGlyphMinimum": 19.0493681970728,
+        "thinGlyphPixels": 1621,
+        "threshold": 4.5,
+        "meetsSampledThreshold": true,
+        "assessmentMinimum": 19.0493681970728,
+        "assessmentBasis": "solid glyph interiors in paired composited screenshots; >=50% coverage glyphs for thin text without opaque interiors, otherwise conservative rectangle fallback; line-rectangle minimum retained"
+      },
+      {
+        "id": "contrast-8",
+        "selector": ".desktop-navigation a",
+        "text": "Work",
+        "fontSize": "11.68px",
+        "fontWeight": "700",
+        "color": "rgb(226, 230, 237)",
+        "fill": "rgb(226, 230, 237)",
+        "gradient": null,
+        "rect": {
+          "x": 1592.0625,
+          "y": 51,
+          "width": 83.125,
+          "height": 88
+        },
+        "rects": [
+          {
+            "x": 1592.0625,
+            "y": 79.02952575683594,
+            "width": 83.1148681640625,
+            "height": 31.909698486328125
+          }
+        ],
+        "minimumRatio": 15.921329676852015,
+        "worst": {
+          "x": 1673,
+          "y": 105,
+          "foreground": [
+            226,
+            230,
+            237
+          ],
+          "background": [
+            4,
+            9,
+            19
+          ]
+        },
+        "sampledPixels": 2460,
+        "glyphCoreMinimum": 15.93144436553019,
+        "glyphCoreWorst": {
+          "x": 1623,
+          "y": 86,
+          "foreground": [
+            226,
+            230,
+            237
+          ],
+          "background": [
+            4,
+            9,
+            18
+          ],
+          "coverage": 0.9864052681297318
+        },
+        "glyphCorePixels": 517,
+        "thinGlyphMinimum": 15.93144436553019,
+        "thinGlyphPixels": 687,
+        "threshold": 4.5,
+        "meetsSampledThreshold": true,
+        "assessmentMinimum": 15.93144436553019,
+        "assessmentBasis": "solid glyph interiors in paired composited screenshots; >=50% coverage glyphs for thin text without opaque interiors, otherwise conservative rectangle fallback; line-rectangle minimum retained"
+      },
+      {
+        "id": "contrast-9",
+        "selector": ".desktop-navigation a",
+        "text": "Why Cumulative",
+        "fontSize": "11.68px",
+        "fontWeight": "700",
+        "color": "rgb(226, 230, 237)",
+        "fill": "rgb(226, 230, 237)",
+        "gradient": null,
+        "rect": {
+          "x": 1732.78125,
+          "y": 51,
+          "width": 240.9375,
+          "height": 88
+        },
+        "rects": [
+          {
+            "x": 1732.78125,
+            "y": 79.02952575683594,
+            "width": 240.93505859375,
+            "height": 31.909698486328125
+          }
+        ],
+        "minimumRatio": 15.711214742430021,
+        "worst": {
+          "x": 1966,
+          "y": 88,
+          "foreground": [
+            226,
+            230,
+            237
+          ],
+          "background": [
+            7,
+            11,
+            21
+          ]
+        },
+        "sampledPixels": 7200,
+        "glyphCoreMinimum": 15.836674577074353,
+        "glyphCoreWorst": {
+          "x": 1961,
+          "y": 89,
+          "foreground": [
+            226,
+            230,
+            237
+          ],
+          "background": [
+            5,
+            10,
+            19
+          ],
+          "coverage": 1
+        },
+        "glyphCorePixels": 1313,
+        "thinGlyphMinimum": 15.711214742430021,
+        "thinGlyphPixels": 1776,
+        "threshold": 4.5,
+        "meetsSampledThreshold": true,
+        "assessmentMinimum": 15.836674577074353,
+        "assessmentBasis": "solid glyph interiors in paired composited screenshots; >=50% coverage glyphs for thin text without opaque interiors, otherwise conservative rectangle fallback; line-rectangle minimum retained"
+      },
+      {
+        "id": "contrast-10",
+        "selector": ".desktop-navigation a",
+        "text": "Approach",
+        "fontSize": "11.68px",
+        "fontWeight": "700",
+        "color": "rgb(226, 230, 237)",
+        "fill": "rgb(226, 230, 237)",
+        "gradient": null,
+        "rect": {
+          "x": 2031.3125,
+          "y": 51,
+          "width": 147.5625,
+          "height": 88
+        },
+        "rects": [
+          {
+            "x": 2031.3125,
+            "y": 79.02952575683594,
+            "width": 147.541748046875,
+            "height": 31.909698486328125
+          }
+        ],
+        "minimumRatio": 15.612262536871885,
+        "worst": {
+          "x": 2093,
+          "y": 88,
+          "foreground": [
+            226,
+            230,
+            237
+          ],
+          "background": [
+            8,
+            12,
+            22
+          ]
+        },
+        "sampledPixels": 4380,
+        "glyphCoreMinimum": 15.612262536871885,
+        "glyphCoreWorst": {
+          "x": 2093,
+          "y": 88,
+          "foreground": [
+            226,
+            230,
+            237
+          ],
+          "background": [
+            8,
+            12,
+            22
+          ],
+          "coverage": 1
+        },
+        "glyphCorePixels": 850,
+        "thinGlyphMinimum": 15.612262536871885,
+        "thinGlyphPixels": 1145,
+        "threshold": 4.5,
+        "meetsSampledThreshold": true,
+        "assessmentMinimum": 15.612262536871885,
+        "assessmentBasis": "solid glyph interiors in paired composited screenshots; >=50% coverage glyphs for thin text without opaque interiors, otherwise conservative rectangle fallback; line-rectangle minimum retained"
+      },
+      {
+        "id": "contrast-11",
+        "selector": ".desktop-navigation a",
+        "text": "Principles",
+        "fontSize": "11.68px",
+        "fontWeight": "700",
+        "color": "rgb(226, 230, 237)",
+        "fill": "rgb(226, 230, 237)",
+        "gradient": null,
+        "rect": {
+          "x": 2236.46875,
+          "y": 51,
+          "width": 153.9375,
+          "height": 88
+        },
+        "rects": [
+          {
+            "x": 2236.46875,
+            "y": 79.02952575683594,
+            "width": 153.919189453125,
+            "height": 31.909698486328125
+          }
+        ],
+        "minimumRatio": 15.600837650203543,
+        "worst": {
+          "x": 2344,
+          "y": 89,
+          "foreground": [
+            226,
+            230,
+            237
+          ],
+          "background": [
+            8,
+            12,
+            23
+          ]
+        },
+        "sampledPixels": 4590,
+        "glyphCoreMinimum": 15.777003472065488,
+        "glyphCoreWorst": {
+          "x": 2379,
+          "y": 100,
+          "foreground": [
+            226,
+            230,
+            237
+          ],
+          "background": [
+            7,
+            10,
+            21
+          ],
+          "coverage": 1
+        },
+        "glyphCorePixels": 873,
+        "thinGlyphMinimum": 15.777003472065488,
+        "thinGlyphPixels": 1203,
+        "threshold": 4.5,
+        "meetsSampledThreshold": true,
+        "assessmentMinimum": 15.777003472065488,
+        "assessmentBasis": "solid glyph interiors in paired composited screenshots; >=50% coverage glyphs for thin text without opaque interiors, otherwise conservative rectangle fallback; line-rectangle minimum retained"
+      },
+      {
+        "id": "contrast-12",
+        "selector": ".desktop-navigation a",
+        "text": "Contact",
+        "fontSize": "11.68px",
+        "fontWeight": "700",
+        "color": "rgb(226, 230, 237)",
+        "fill": "rgb(226, 230, 237)",
+        "gradient": null,
+        "rect": {
+          "x": 2448,
+          "y": 51,
+          "width": 240,
+          "height": 88
+        },
+        "rects": [
+          {
+            "x": 2482.005615234375,
+            "y": 79.02952575683594,
+            "width": 125.86376953125,
+            "height": 31.909698486328125
+          }
+        ],
+        "minimumRatio": 15.582135412108313,
+        "worst": {
+          "x": 2596,
+          "y": 88,
+          "foreground": [
+            226,
+            230,
+            237
+          ],
+          "background": [
+            9,
+            12,
+            23
+          ]
+        },
+        "sampledPixels": 3720,
+        "glyphCoreMinimum": 15.600837650203543,
+        "glyphCoreWorst": {
+          "x": 2597,
+          "y": 88,
+          "foreground": [
+            226,
+            230,
+            237
+          ],
+          "background": [
+            8,
+            12,
+            23
+          ],
+          "coverage": 1
+        },
+        "glyphCorePixels": 688,
+        "thinGlyphMinimum": 15.582135412108313,
+        "thinGlyphPixels": 954,
+        "threshold": 4.5,
+        "meetsSampledThreshold": true,
+        "assessmentMinimum": 15.600837650203543,
+        "assessmentBasis": "solid glyph interiors in paired composited screenshots; >=50% coverage glyphs for thin text without opaque interiors, otherwise conservative rectangle fallback; line-rectangle minimum retained"
+      }
+    ]
+  },
+  {
+    "engine": "webkit",
+    "build": "candidate",
+    "width": 1440,
+    "height": 900,
+    "dpr": 2,
+    "pointer": {
+      "x": 120,
+      "y": 711
+    },
+    "coordinates": "native screenshot pixels; multiply CSS coordinates by 2",
+    "measured": [
+      {
+        "id": "contrast-0",
+        "selector": ".hero-section__eyebrow",
+        "text": "Cumulative intelligence, built to endure",
+        "fontSize": "11.2px",
+        "fontWeight": "400",
+        "color": "rgb(191, 200, 215)",
+        "fill": "rgb(191, 200, 215)",
+        "gradient": null,
+        "rect": {
+          "x": 192,
+          "y": 328,
+          "width": 1376,
+          "height": 38.03125
+        },
+        "rects": [
+          {
+            "x": 192,
+            "y": 331.7164611816406,
+            "width": 555.0494995117188,
+            "height": 30.59832763671875
+          }
+        ],
+        "minimumRatio": 11.648559555567454,
+        "worst": {
+          "x": 696,
+          "y": 354,
+          "foreground": [
+            191,
+            200,
+            215
+          ],
+          "background": [
+            10,
+            11,
+            18
+          ]
+        },
+        "sampledPixels": 16650,
+        "glyphCoreMinimum": 11.655334220943926,
+        "glyphCoreWorst": {
+          "x": 695,
+          "y": 340,
+          "foreground": [
+            191,
+            200,
+            215
+          ],
+          "background": [
+            9,
+            11,
+            19
+          ],
+          "coverage": 1
+        },
+        "glyphCorePixels": 499,
+        "thinGlyphMinimum": 11.655334220943926,
+        "thinGlyphPixels": 1300,
+        "threshold": 4.5,
+        "meetsSampledThreshold": true,
+        "assessmentMinimum": 11.655334220943926,
+        "assessmentBasis": "solid glyph interiors in paired composited screenshots; >=50% coverage glyphs for thin text without opaque interiors, otherwise conservative rectangle fallback; line-rectangle minimum retained"
+      },
+      {
+        "id": "contrast-1",
+        "selector": ".hero-section h1 > span",
+        "text": "Intelligence",
+        "fontSize": "74.879997px",
+        "fontWeight": "450",
+        "color": "rgb(248, 250, 252)",
+        "fill": "rgb(248, 250, 252)",
+        "gradient": null,
+        "rect": {
+          "x": 192,
+          "y": 414.03125,
+          "width": 1376,
+          "height": 146.75
+        },
+        "rects": [
+          {
+            "x": 192,
+            "y": 385.120361328125,
+            "width": 980.3292236328125,
+            "height": 204.57177734375
+          }
+        ],
+        "minimumRatio": 2.2216762198769913,
+        "worst": {
+          "x": 1048,
+          "y": 585,
+          "foreground": [
+            248,
+            250,
+            252
+          ],
+          "background": [
+            245,
+            145,
+            75
+          ]
+        },
+        "sampledPixels": 198940,
+        "glyphCoreMinimum": 2.516054011566547,
+        "glyphCoreWorst": {
+          "x": 1119,
+          "y": 530,
+          "foreground": [
+            248,
+            250,
+            252
+          ],
+          "background": [
+            230,
+            136,
+            71
+          ],
+          "coverage": 1
+        },
+        "glyphCorePixels": 37454,
+        "thinGlyphMinimum": 2.516054011566547,
+        "thinGlyphPixels": 39399,
+        "threshold": 3,
+        "meetsSampledThreshold": false,
+        "assessmentMinimum": 2.516054011566547,
+        "assessmentBasis": "solid glyph interiors in paired composited screenshots; >=50% coverage glyphs for thin text without opaque interiors, otherwise conservative rectangle fallback; line-rectangle minimum retained"
+      },
+      {
+        "id": "contrast-2",
+        "selector": ".hero-section h1 > span",
+        "text": "That",
+        "fontSize": "74.879997px",
+        "fontWeight": "450",
+        "color": "rgb(248, 250, 252)",
+        "fill": "rgb(248, 250, 252)",
+        "gradient": null,
+        "rect": {
+          "x": 192,
+          "y": 566.75,
+          "width": 1376,
+          "height": 146.75
+        },
+        "rects": [
+          {
+            "x": 192,
+            "y": 537.839111328125,
+            "width": 356.1292724609375,
+            "height": 204.57177734375
+          }
+        ],
+        "minimumRatio": 18.413434397471796,
+        "worst": {
+          "x": 271,
+          "y": 659,
+          "foreground": [
+            248,
+            250,
+            252
+          ],
+          "background": [
+            13,
+            14,
+            20
+          ]
+        },
+        "sampledPixels": 72624,
+        "glyphCoreMinimum": 18.413434397471796,
+        "glyphCoreWorst": {
+          "x": 285,
+          "y": 659,
+          "foreground": [
+            248,
+            250,
+            252
+          ],
+          "background": [
+            13,
+            14,
+            20
+          ],
+          "coverage": 1
+        },
+        "glyphCorePixels": 11784,
+        "thinGlyphMinimum": 18.413434397471796,
+        "thinGlyphPixels": 13522,
+        "threshold": 3,
+        "meetsSampledThreshold": true,
+        "assessmentMinimum": 18.413434397471796,
+        "assessmentBasis": "solid glyph interiors in paired composited screenshots; >=50% coverage glyphs for thin text without opaque interiors, otherwise conservative rectangle fallback; line-rectangle minimum retained"
+      },
+      {
+        "id": "contrast-3",
+        "selector": ".hero-section h1 > span",
+        "text": "Compounds.",
+        "fontSize": "74.879997px",
+        "fontWeight": "450",
+        "color": "rgba(0, 0, 0, 0)",
+        "fill": "rgba(0, 0, 0, 0)",
+        "gradient": "linear-gradient(92deg, rgb(255, 122, 0), rgb(255, 45, 141), rgb(138, 43, 226))",
+        "rect": {
+          "x": 192,
+          "y": 720.21875,
+          "width": 990.8125,
+          "height": 158.71875
+        },
+        "rects": [
+          {
+            "x": 192,
+            "y": 691.307861328125,
+            "width": 990.8123779296875,
+            "height": 204.57177734375
+          }
+        ],
+        "minimumRatio": 1.0001429552412007,
+        "worst": {
+          "x": 924,
+          "y": 871,
+          "foreground": [
+            198,
+            44,
+            181
+          ],
+          "background": [
+            189,
+            77,
+            105
+          ]
+        },
+        "sampledPixels": 156420,
+        "glyphCoreMinimum": 1.0014508063169534,
+        "glyphCoreWorst": {
+          "x": 866,
+          "y": 824,
+          "foreground": [
+            213,
+            45,
+            172
+          ],
+          "background": [
+            172,
+            104,
+            57
+          ],
+          "coverage": 1
+        },
+        "glyphCorePixels": 35372,
+        "thinGlyphMinimum": 1.0014508063169534,
+        "thinGlyphPixels": 37526,
+        "threshold": 3,
+        "meetsSampledThreshold": false,
+        "assessmentMinimum": 1.0014508063169534,
+        "assessmentBasis": "solid glyph interiors in paired composited screenshots; >=50% coverage glyphs for thin text without opaque interiors, otherwise conservative rectangle fallback; line-rectangle minimum retained"
+      },
+      {
+        "id": "contrast-4",
+        "selector": ".hero-section__body",
+        "text": "Cumulative Labs is developing AI research systems designed to preserve verified knowledge—so each new task can build on useful findings from the last.",
+        "fontSize": "17.6px",
+        "fontWeight": "400",
+        "color": "rgb(212, 219, 229)",
+        "fill": "rgb(212, 219, 229)",
+        "gradient": null,
+        "rect": {
+          "x": 192,
+          "y": 934.9375,
+          "width": 1088,
+          "height": 174.09375
+        },
+        "rects": [
+          {
+            "x": 192,
+            "y": 939.9115600585938,
+            "width": 1017.4560546875,
+            "height": 48.0831298828125
+          },
+          {
+            "x": 192,
+            "y": 997.9428100585938,
+            "width": 1063.1103515625,
+            "height": 48.08306884765625
+          },
+          {
+            "x": 192,
+            "y": 1055.97412109375,
+            "width": 345.9808349609375,
+            "height": 48.0830078125
+          }
+        ],
+        "minimumRatio": 1.6994658790581387,
+        "worst": {
+          "x": 1006,
+          "y": 1043,
+          "foreground": [
+            212,
+            219,
+            229
+          ],
+          "background": [
+            242,
+            144,
+            74
+          ]
+        },
+        "sampledPixels": 115383,
+        "glyphCoreMinimum": 1.882729873977479,
+        "glyphCoreWorst": {
+          "x": 796,
+          "y": 960,
+          "foreground": [
+            212,
+            219,
+            229
+          ],
+          "background": [
+            229,
+            137,
+            71
+          ],
+          "coverage": 1
+        },
+        "glyphCorePixels": 7046,
+        "thinGlyphMinimum": 1.882729873977479,
+        "thinGlyphPixels": 12716,
+        "threshold": 4.5,
+        "meetsSampledThreshold": false,
+        "assessmentMinimum": 1.882729873977479,
+        "assessmentBasis": "solid glyph interiors in paired composited screenshots; >=50% coverage glyphs for thin text without opaque interiors, otherwise conservative rectangle fallback; line-rectangle minimum retained"
+      },
+      {
+        "id": "contrast-5",
+        "selector": ".hero-section__support",
+        "text": "Our first applied proving ground: League Vector, a dynasty fantasy football product in development.",
+        "fontSize": "14.88px",
+        "fontWeight": "400",
+        "color": "rgb(174, 185, 203)",
+        "fill": "rgb(174, 185, 203)",
+        "gradient": null,
+        "rect": {
+          "x": 192,
+          "y": 1141.03125,
+          "width": 1056,
+          "height": 95.1875
+        },
+        "rects": [
+          {
+            "x": 192,
+            "y": 1144.5020751953125,
+            "width": 1009.429443359375,
+            "height": 40.652099609375
+          },
+          {
+            "x": 192,
+            "y": 1192.0958251953125,
+            "width": 337.2998046875,
+            "height": 40.652099609375
+          }
+        ],
+        "minimumRatio": 1.1315144092552931,
+        "worst": {
+          "x": 700,
+          "y": 1156,
+          "foreground": [
+            174,
+            185,
+            203
+          ],
+          "background": [
+            252,
+            146,
+            81
+          ]
+        },
+        "sampledPixels": 53503,
+        "glyphCoreMinimum": 1.3930505693456117,
+        "glyphCoreWorst": {
+          "x": 731,
+          "y": 1172,
+          "foreground": [
+            174,
+            185,
+            203
+          ],
+          "background": [
+            224,
+            133,
+            69
+          ],
+          "coverage": 1
+        },
+        "glyphCorePixels": 2898,
+        "thinGlyphMinimum": 1.3799806812946396,
+        "thinGlyphPixels": 5964,
+        "threshold": 4.5,
+        "meetsSampledThreshold": false,
+        "assessmentMinimum": 1.3930505693456117,
+        "assessmentBasis": "solid glyph interiors in paired composited screenshots; >=50% coverage glyphs for thin text without opaque interiors, otherwise conservative rectangle fallback; line-rectangle minimum retained"
+      },
+      {
+        "id": "contrast-6",
+        "selector": ".hero-section__actions a",
+        "text": "See What We’re Building↗",
+        "fontSize": "11.52px",
+        "fontWeight": "700",
+        "color": "rgb(248, 250, 252)",
+        "fill": "rgb(248, 250, 252)",
+        "gradient": null,
+        "rect": {
+          "x": 192,
+          "y": 1292.21875,
+          "width": 483.3125,
+          "height": 104
+        },
+        "rects": [
+          {
+            "x": 234,
+            "y": 1328.466796875,
+            "width": 352.05120849609375,
+            "height": 31.47265625
+          },
+          {
+            "x": 613.25,
+            "y": 1328.466796875,
+            "width": 20.0458984375,
+            "height": 31.47265625
+          }
+        ],
+        "minimumRatio": 17.294415913048788,
+        "worst": {
+          "x": 235,
+          "y": 1350,
+          "foreground": [
+            248,
+            250,
+            252
+          ],
+          "background": [
+            17,
+            22,
+            33
+          ]
+        },
+        "sampledPixels": 11130,
+        "glyphCoreMinimum": 17.294415913048788,
+        "glyphCoreWorst": {
+          "x": 237,
+          "y": 1350,
+          "foreground": [
+            248,
+            250,
+            252
+          ],
+          "background": [
+            17,
+            22,
+            33
+          ],
+          "coverage": 1
+        },
+        "glyphCorePixels": 2074,
+        "thinGlyphMinimum": 17.294415913048788,
+        "thinGlyphPixels": 2620,
+        "threshold": 4.5,
+        "meetsSampledThreshold": true,
+        "assessmentMinimum": 17.294415913048788,
+        "assessmentBasis": "solid glyph interiors in paired composited screenshots; >=50% coverage glyphs for thin text without opaque interiors, otherwise conservative rectangle fallback; line-rectangle minimum retained"
+      },
+      {
+        "id": "contrast-7",
+        "selector": ".hero-section__actions a",
+        "text": "Contact the Lab",
+        "fontSize": "11.52px",
+        "fontWeight": "700",
+        "color": "rgb(248, 250, 252)",
+        "fill": "rgb(248, 250, 252)",
+        "gradient": null,
+        "rect": {
+          "x": 700.90625,
+          "y": 1292.21875,
+          "width": 319.625,
+          "height": 104
+        },
+        "rects": [
+          {
+            "x": 742.90625,
+            "y": 1328.466796875,
+            "width": 235.6070556640625,
+            "height": 31.47265625
+          }
+        ],
+        "minimumRatio": 18.508161393917003,
+        "worst": {
+          "x": 977,
+          "y": 1358,
+          "foreground": [
+            248,
+            250,
+            252
+          ],
+          "background": [
+            14,
+            12,
+            24
+          ]
+        },
+        "sampledPixels": 7050,
+        "glyphCoreMinimum": 18.889605998302784,
+        "glyphCoreWorst": {
+          "x": 889,
+          "y": 1349,
+          "foreground": [
+            248,
+            250,
+            252
+          ],
+          "background": [
+            7,
+            10,
+            20
+          ],
+          "coverage": 1
+        },
+        "glyphCorePixels": 1297,
+        "thinGlyphMinimum": 18.866690143309917,
+        "thinGlyphPixels": 1621,
+        "threshold": 4.5,
+        "meetsSampledThreshold": true,
+        "assessmentMinimum": 18.889605998302784,
+        "assessmentBasis": "solid glyph interiors in paired composited screenshots; >=50% coverage glyphs for thin text without opaque interiors, otherwise conservative rectangle fallback; line-rectangle minimum retained"
+      },
+      {
+        "id": "contrast-8",
+        "selector": ".desktop-navigation a",
+        "text": "Work",
+        "fontSize": "11.68px",
+        "fontWeight": "700",
+        "color": "rgb(226, 230, 237)",
+        "fill": "rgb(226, 230, 237)",
+        "gradient": null,
+        "rect": {
+          "x": 1592.0625,
+          "y": 51,
+          "width": 83.125,
+          "height": 88
+        },
+        "rects": [
+          {
+            "x": 1592.0625,
+            "y": 79.02952575683594,
+            "width": 83.1148681640625,
+            "height": 31.909698486328125
+          }
+        ],
+        "minimumRatio": 15.921329676852015,
+        "worst": {
+          "x": 1673,
+          "y": 105,
+          "foreground": [
+            226,
+            230,
+            237
+          ],
+          "background": [
+            4,
+            9,
+            19
+          ]
+        },
+        "sampledPixels": 2460,
+        "glyphCoreMinimum": 15.93144436553019,
+        "glyphCoreWorst": {
+          "x": 1623,
+          "y": 86,
+          "foreground": [
+            226,
+            230,
+            237
+          ],
+          "background": [
+            4,
+            9,
+            18
+          ],
+          "coverage": 0.9864052681297318
+        },
+        "glyphCorePixels": 517,
+        "thinGlyphMinimum": 15.93144436553019,
+        "thinGlyphPixels": 687,
+        "threshold": 4.5,
+        "meetsSampledThreshold": true,
+        "assessmentMinimum": 15.93144436553019,
+        "assessmentBasis": "solid glyph interiors in paired composited screenshots; >=50% coverage glyphs for thin text without opaque interiors, otherwise conservative rectangle fallback; line-rectangle minimum retained"
+      },
+      {
+        "id": "contrast-9",
+        "selector": ".desktop-navigation a",
+        "text": "Why Cumulative",
+        "fontSize": "11.68px",
+        "fontWeight": "700",
+        "color": "rgb(226, 230, 237)",
+        "fill": "rgb(226, 230, 237)",
+        "gradient": null,
+        "rect": {
+          "x": 1732.78125,
+          "y": 51,
+          "width": 240.9375,
+          "height": 88
+        },
+        "rects": [
+          {
+            "x": 1732.78125,
+            "y": 79.02952575683594,
+            "width": 240.93505859375,
+            "height": 31.909698486328125
+          }
+        ],
+        "minimumRatio": 15.711214742430021,
+        "worst": {
+          "x": 1966,
+          "y": 88,
+          "foreground": [
+            226,
+            230,
+            237
+          ],
+          "background": [
+            7,
+            11,
+            21
+          ]
+        },
+        "sampledPixels": 7200,
+        "glyphCoreMinimum": 15.836674577074353,
+        "glyphCoreWorst": {
+          "x": 1961,
+          "y": 89,
+          "foreground": [
+            226,
+            230,
+            237
+          ],
+          "background": [
+            5,
+            10,
+            19
+          ],
+          "coverage": 1
+        },
+        "glyphCorePixels": 1313,
+        "thinGlyphMinimum": 15.711214742430021,
+        "thinGlyphPixels": 1776,
+        "threshold": 4.5,
+        "meetsSampledThreshold": true,
+        "assessmentMinimum": 15.836674577074353,
+        "assessmentBasis": "solid glyph interiors in paired composited screenshots; >=50% coverage glyphs for thin text without opaque interiors, otherwise conservative rectangle fallback; line-rectangle minimum retained"
+      },
+      {
+        "id": "contrast-10",
+        "selector": ".desktop-navigation a",
+        "text": "Approach",
+        "fontSize": "11.68px",
+        "fontWeight": "700",
+        "color": "rgb(226, 230, 237)",
+        "fill": "rgb(226, 230, 237)",
+        "gradient": null,
+        "rect": {
+          "x": 2031.3125,
+          "y": 51,
+          "width": 147.5625,
+          "height": 88
+        },
+        "rects": [
+          {
+            "x": 2031.3125,
+            "y": 79.02952575683594,
+            "width": 147.541748046875,
+            "height": 31.909698486328125
+          }
+        ],
+        "minimumRatio": 15.612262536871885,
+        "worst": {
+          "x": 2093,
+          "y": 88,
+          "foreground": [
+            226,
+            230,
+            237
+          ],
+          "background": [
+            8,
+            12,
+            22
+          ]
+        },
+        "sampledPixels": 4380,
+        "glyphCoreMinimum": 15.612262536871885,
+        "glyphCoreWorst": {
+          "x": 2093,
+          "y": 88,
+          "foreground": [
+            226,
+            230,
+            237
+          ],
+          "background": [
+            8,
+            12,
+            22
+          ],
+          "coverage": 1
+        },
+        "glyphCorePixels": 850,
+        "thinGlyphMinimum": 15.612262536871885,
+        "thinGlyphPixels": 1145,
+        "threshold": 4.5,
+        "meetsSampledThreshold": true,
+        "assessmentMinimum": 15.612262536871885,
+        "assessmentBasis": "solid glyph interiors in paired composited screenshots; >=50% coverage glyphs for thin text without opaque interiors, otherwise conservative rectangle fallback; line-rectangle minimum retained"
+      },
+      {
+        "id": "contrast-11",
+        "selector": ".desktop-navigation a",
+        "text": "Principles",
+        "fontSize": "11.68px",
+        "fontWeight": "700",
+        "color": "rgb(226, 230, 237)",
+        "fill": "rgb(226, 230, 237)",
+        "gradient": null,
+        "rect": {
+          "x": 2236.46875,
+          "y": 51,
+          "width": 153.9375,
+          "height": 88
+        },
+        "rects": [
+          {
+            "x": 2236.46875,
+            "y": 79.02952575683594,
+            "width": 153.919189453125,
+            "height": 31.909698486328125
+          }
+        ],
+        "minimumRatio": 15.600837650203543,
+        "worst": {
+          "x": 2344,
+          "y": 89,
+          "foreground": [
+            226,
+            230,
+            237
+          ],
+          "background": [
+            8,
+            12,
+            23
+          ]
+        },
+        "sampledPixels": 4590,
+        "glyphCoreMinimum": 15.777003472065488,
+        "glyphCoreWorst": {
+          "x": 2379,
+          "y": 100,
+          "foreground": [
+            226,
+            230,
+            237
+          ],
+          "background": [
+            7,
+            10,
+            21
+          ],
+          "coverage": 1
+        },
+        "glyphCorePixels": 873,
+        "thinGlyphMinimum": 15.777003472065488,
+        "thinGlyphPixels": 1203,
+        "threshold": 4.5,
+        "meetsSampledThreshold": true,
+        "assessmentMinimum": 15.777003472065488,
+        "assessmentBasis": "solid glyph interiors in paired composited screenshots; >=50% coverage glyphs for thin text without opaque interiors, otherwise conservative rectangle fallback; line-rectangle minimum retained"
+      },
+      {
+        "id": "contrast-12",
+        "selector": ".desktop-navigation a",
+        "text": "Contact",
+        "fontSize": "11.68px",
+        "fontWeight": "700",
+        "color": "rgb(226, 230, 237)",
+        "fill": "rgb(226, 230, 237)",
+        "gradient": null,
+        "rect": {
+          "x": 2448,
+          "y": 51,
+          "width": 240,
+          "height": 88
+        },
+        "rects": [
+          {
+            "x": 2482.005615234375,
+            "y": 79.02952575683594,
+            "width": 125.86376953125,
+            "height": 31.909698486328125
+          }
+        ],
+        "minimumRatio": 15.582135412108313,
+        "worst": {
+          "x": 2596,
+          "y": 88,
+          "foreground": [
+            226,
+            230,
+            237
+          ],
+          "background": [
+            9,
+            12,
+            23
+          ]
+        },
+        "sampledPixels": 3720,
+        "glyphCoreMinimum": 15.600837650203543,
+        "glyphCoreWorst": {
+          "x": 2597,
+          "y": 88,
+          "foreground": [
+            226,
+            230,
+            237
+          ],
+          "background": [
+            8,
+            12,
+            23
+          ],
+          "coverage": 1
+        },
+        "glyphCorePixels": 688,
+        "thinGlyphMinimum": 15.582135412108313,
+        "thinGlyphPixels": 954,
+        "threshold": 4.5,
+        "meetsSampledThreshold": true,
+        "assessmentMinimum": 15.600837650203543,
+        "assessmentBasis": "solid glyph interiors in paired composited screenshots; >=50% coverage glyphs for thin text without opaque interiors, otherwise conservative rectangle fallback; line-rectangle minimum retained"
+      }
+    ]
+  }
+]

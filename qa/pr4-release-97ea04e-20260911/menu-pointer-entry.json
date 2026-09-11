@@ -1,0 +1,114 @@
+[
+  {
+    "engine": "chromium",
+    "build": "starting",
+    "reducedMotion": "reduce",
+    "initial": {
+      "tag": "BUTTON",
+      "name": "Close navigation menu",
+      "expanded": "true"
+    },
+    "escaped": {
+      "restored": true,
+      "expanded": "false"
+    }
+  },
+  {
+    "engine": "chromium",
+    "build": "starting",
+    "reducedMotion": "no-preference",
+    "initial": {
+      "tag": "BUTTON",
+      "name": "Close navigation menu",
+      "expanded": "true"
+    },
+    "escaped": {
+      "restored": true,
+      "expanded": "false"
+    }
+  },
+  {
+    "engine": "chromium",
+    "build": "candidate",
+    "reducedMotion": "reduce",
+    "initial": {
+      "tag": "BUTTON",
+      "name": "Close navigation menu",
+      "expanded": "true"
+    },
+    "escaped": {
+      "restored": true,
+      "expanded": "false"
+    }
+  },
+  {
+    "engine": "chromium",
+    "build": "candidate",
+    "reducedMotion": "no-preference",
+    "initial": {
+      "tag": "BUTTON",
+      "name": "Close navigation menu",
+      "expanded": "true"
+    },
+    "escaped": {
+      "restored": true,
+      "expanded": "false"
+    }
+  },
+  {
+    "engine": "webkit",
+    "build": "starting",
+    "reducedMotion": "reduce",
+    "initial": {
+      "tag": "BODY",
+      "name": null,
+      "expanded": "true"
+    },
+    "escaped": {
+      "restored": true,
+      "expanded": "false"
+    }
+  },
+  {
+    "engine": "webkit",
+    "build": "starting",
+    "reducedMotion": "no-preference",
+    "initial": {
+      "tag": "BUTTON",
+      "name": "Close navigation menu",
+      "expanded": "true"
+    },
+    "escaped": {
+      "restored": true,
+      "expanded": "false"
+    }
+  },
+  {
+    "engine": "webkit",
+    "build": "candidate",
+    "reducedMotion": "reduce",
+    "initial": {
+      "tag": "BODY",
+      "name": null,
+      "expanded": "true"
+    },
+    "escaped": {
+      "restored": true,
+      "expanded": "false"
+    }
+  },
+  {
+    "engine": "webkit",
+    "build": "candidate",
+    "reducedMotion": "no-preference",
+    "initial": {
+      "tag": "BUTTON",
+      "name": "Close navigation menu",
+      "expanded": "true"
+    },
+    "escaped": {
+      "restored": true,
+      "expanded": "false"
+    }
+  }
+]

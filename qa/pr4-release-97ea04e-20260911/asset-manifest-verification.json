@@ -1,0 +1,80 @@
+[
+  {
+    "path": "assets/index-BYjBqNig.css",
+    "sha256": "09342af51004da8a14dc0759331851ad8911455eff7e5fe228fe0add3b7bf2cc",
+    "bytes": 67526,
+    "localMatches": true
+  },
+  {
+    "path": "assets/index-CIZ7VDhw.js",
+    "sha256": "1dd37278f64a22e0082efd6ac5de5abfc75e850e53a9793e102821d9bb466162",
+    "bytes": 233913,
+    "localMatches": true
+  },
+  {
+    "path": "brand/cumulative-labs-horizontal.svg",
+    "sha256": "24f32afc84a80cba6ff5a8a48e727670ce58cf1d83ef95f8356a2b2ea99ea85b",
+    "bytes": 6402,
+    "localMatches": true
+  },
+  {
+    "path": "brand/cumulative-labs-symbol.svg",
+    "sha256": "c8e56446965a7881e9dc1b6e612d89a469d77ef27b0e7cbb661f572a18969be3",
+    "bytes": 1953,
+    "localMatches": true
+  },
+  {
+    "path": "favicons/apple-touch-icon.png",
+    "sha256": "266251f48a9518e2a1cf65fd3767c7ae74a598cf02081ee72fba58bb1ec0cbc2",
+    "bytes": 13045,
+    "localMatches": true
+  },
+  {
+    "path": "favicons/favicon.svg",
+    "sha256": "c8e56446965a7881e9dc1b6e612d89a469d77ef27b0e7cbb661f572a18969be3",
+    "bytes": 1953,
+    "localMatches": true
+  },
+  {
+    "path": "index.html",
+    "sha256": "ab13b7d846574aeae651d42536a7fa5519230d1203c99b18474307e082a43d77",
+    "bytes": 21640,
+    "localMatches": true
+  },
+  {
+    "path": "og/cumulative-labs-og.jpg",
+    "sha256": "07efccf936ec9fc4315d3f2832572637e374336cd1418d252e30e1d4df0dc1e2",
+    "bytes": 40305,
+    "localMatches": true
+  },
+  {
+    "path": "robots.txt",
+    "sha256": "9a5bee5d89f2b1632053cd3c89e99717bdd473363ae93673c65793aa7aa6ea43",
+    "bytes": 72,
+    "localMatches": true
+  },
+  {
+    "path": "site.webmanifest",
+    "sha256": "934f4116800fb7c53d5e3046cf6eae7cf93b81a040654eccfd5e810afa3510a4",
+    "bytes": 394,
+    "localMatches": true
+  },
+  {
+    "path": "sitemap.xml",
+    "sha256": "e3fe20561b7c4de3c3b1125e76c306806755bd764f0125640d97d76810b1bb46",
+    "bytes": 170,
+    "localMatches": true
+  },
+  {
+    "path": "visuals/hero-nexus-anchored-desktop.svg",
+    "sha256": "ab8e1fde8f2e702333d38c08a3bfbc0149eb13a736675a8bc5da46f15ba4ca38",
+    "bytes": 63174,
+    "localMatches": true
+  },
+  {
+    "path": "visuals/hero-nexus-anchored-mobile.svg",
+    "sha256": "ccee6d6018639288a2c47cd8ec2170208c14cd696f5c2907c7cb1930eeabe3db",
+    "bytes": 33265,
+    "localMatches": true
+  }
+]

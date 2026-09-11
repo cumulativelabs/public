@@ -1,0 +1,14 @@
+[
+  {
+    "check": "matrix",
+    "exit_code": 0
+  },
+  {
+    "check": "policy",
+    "exit_code": 0
+  },
+  {
+    "check": "tether",
+    "exit_code": 0
+  }
+]

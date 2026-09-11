@@ -1,0 +1,139 @@
+{
+  "defects": [
+    {
+      "id": "PR4-QA-01",
+      "severity": "P1 / release-blocking accessibility regression",
+      "title": "DPR2 mask bitmap is not sized to its CSS canvas",
+      "source": "src/components/HeroKnowledgeField.tsx:140-190; src/styles/hero-visual-v2.css:16",
+      "reproduction": "Fresh Chromium or WebKit, 1440x900 CSS viewport, deviceScaleFactor=2, normal motion; wait for fonts; pointer (120,711), settle 1.3s. Also reproduced at center x150 and 1280 center x280.",
+      "observed": "Mask bitmap 2393x1387 on a 1595.0625x924.921875 CSS canvas; computed mask-size auto. Cutouts are displaced into whitespace and strands cross unprotected headline/body/support glyphs.",
+      "causeAssessment": "Source creates a DPR-scaled mask PNG and assigns maskImage without defining its CSS size. This is consistent with the actual oversized/displaced cutouts in both engines. No corrective styles or candidate edits were applied.",
+      "nativePixelEvidence": {
+        "chromium": {
+          "bodyRatio": 1.8749972368,
+          "supportRatio": 1.4182539543,
+          "baselineBodyRatio": 12.598,
+          "baselineSupportRatio": 9.689
+        },
+        "webkit": {
+          "bodyRatio": 1.883,
+          "supportRatio": 1.393,
+          "baselineBodyRatio": 12.661,
+          "baselineSupportRatio": 9.698
+        }
+      },
+      "thresholds": {
+        "largeText": 3,
+        "normalText": 4.5
+      },
+      "evidence": [
+        "dpr-contrast-results.json",
+        "native-confirmation.json",
+        "native-confirmation/",
+        "supplemental/chromium-hosted-dpr2.png",
+        "supplemental/webkit-hosted-dpr2.png"
+      ],
+      "releaseImpact": "New substantial text-contrast failure on high-density desktop rendering; do not merge this exact candidate."
+    }
+  ],
+  "nits": [
+    {
+      "id": "INHERITED-01",
+      "title": "WebKit reduced-motion automatic menu-entry focus",
+      "verifiedAgainst": "5c254645479892fdeed1bff4799b7c89f375e810 read-only production build",
+      "detail": "Both baseline and candidate leave focus on BODY when opening the menu under reduced motion. Subsequent keyboard traversal stays in the menu; Escape closes it and restores toggle focus. Normal-motion entry focuses Close. Nonblocking inherited issue.",
+      "evidence": [
+        "menu-pointer-entry.json",
+        "supplemental-results.json"
+      ]
+    }
+  ],
+  "contrastDPR1": {
+    "states": 10,
+    "measurements": 130,
+    "minimumLarge": 3.3009784265,
+    "minimumNormal": 8.1285385203,
+    "failures": 0
+  },
+  "contrastDPR2": {
+    "states": 8,
+    "allStatesHaveFailures": true,
+    "nativeConfirmationStates": 4,
+    "baselineFailedMeasurements": 0,
+    "candidateFailedMeasurements": 8
+  },
+  "visibility": {
+    "states": 18,
+    "minimumDistinctJoin": 10,
+    "minimumDistinctGap": 9,
+    "minimumDistinctNearCursor": 7
+  },
+  "performance": [
+    {
+      "build": "baseline",
+      "state": "active",
+      "scriptMsPerSecond": 30.100999999999996,
+      "layoutCount": 0,
+      "draws": 112,
+      "tether": 0,
+      "cls": 0,
+      "mode": "interactive",
+      "quality": "normal"
+    },
+    {
+      "build": "baseline",
+      "state": "offscreen",
+      "scriptMsPerSecond": 0.019999999999992246,
+      "layoutCount": 0,
+      "draws": 0,
+      "tether": 0,
+      "cls": 0,
+      "mode": "paused",
+      "quality": "normal"
+    },
+    {
+      "build": "baseline",
+      "state": "hidden",
+      "scriptMsPerSecond": 0,
+      "layoutCount": 0,
+      "draws": 0,
+      "tether": 0,
+      "cls": 0,
+      "mode": "paused",
+      "quality": "normal"
+    },
+    {
+      "build": "candidate",
+      "state": "active",
+      "scriptMsPerSecond": 25.44749999999999,
+      "layoutCount": 0,
+      "draws": 76,
+      "tether": 76,
+      "cls": 0,
+      "mode": "interactive",
+      "quality": "normal"
+    },
+    {
+      "build": "candidate",
+      "state": "offscreen",
+      "scriptMsPerSecond": 0.019499999999991746,
+      "layoutCount": 0,
+      "draws": 0,
+      "tether": 0,
+      "cls": 0,
+      "mode": "paused",
+      "quality": "normal"
+    },
+    {
+      "build": "candidate",
+      "state": "hidden",
+      "scriptMsPerSecond": 0,
+      "layoutCount": 0,
+      "draws": 0,
+      "tether": 0,
+      "cls": 0,
+      "mode": "paused",
+      "quality": "normal"
+    }
+  ]
+}

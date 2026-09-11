@@ -1,0 +1,9 @@
+import {mkdir,writeFile} from 'node:fs/promises';import {sampleContrast} from './contrast-sample-css.mjs';
+const {chromium,webkit}=await import(process.env.PLAYWRIGHT_MODULE);const out=new URL('.',import.meta.url).pathname;await mkdir(out+'dpr-contrast',{recursive:true});const rows=[];
+for(const [name,engine,executablePath] of [['chromium',chromium,process.env.CHROMIUM_EXECUTABLE],['webkit',webkit,process.env.WEBKIT_EXECUTABLE]]){
+ const b=await engine.launch({executablePath});for(const [width,height,label,x,dy] of [[1280,800,'center280',280,0],[1440,900,'center150',150,0],[1440,900,'upper',150,-210],[1440,900,'lower',120,280]]){
+  const p=await b.newPage({viewport:{width,height},deviceScaleFactor:2});await p.addInitScript(()=>{window.__freeze=false;const raf=requestAnimationFrame;window.requestAnimationFrame=cb=>raf.call(window,t=>{if(!window.__freeze)cb(t)})});await p.goto(process.env.HERO_URL,{waitUntil:'networkidle'});await p.evaluate(()=>document.fonts.ready);const cy=await p.locator('.hero-section__mark').evaluate(e=>{const r=e.getBoundingClientRect();return r.y+r.height/2});await p.mouse.move(x,cy+dy);await p.waitForTimeout(1300);
+  const mask=await p.evaluate(()=>{window.__freeze=true;const c=document.querySelector('.hero-knowledge__tethers'),s=getComputedStyle(c);return{canvasPixels:[c.width,c.height],cssSize:[c.getBoundingClientRect().width,c.getBoundingClientRect().height],maskSize:s.maskSize,maskPosition:s.maskPosition,dpr:devicePixelRatio}});await p.waitForTimeout(80);const measured=await sampleContrast(p,out+'dpr-contrast',`${name}-${width}-${label}`);rows.push({engine:name,width,height,label,mask,measured});await writeFile(out+'dpr-contrast-results.json',JSON.stringify(rows,null,2));console.log(name,width,label,measured.filter(m=>!m.meetsSampledThreshold).map(m=>({text:m.text,ratio:m.assessmentMinimum})));await p.close();
+ }await b.close();
+}
+if(rows.some(r=>r.measured.some(m=>!m.meetsSampledThreshold)))process.exitCode=1;

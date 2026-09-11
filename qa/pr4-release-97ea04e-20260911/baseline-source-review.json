@@ -1,0 +1,23 @@
+{
+  "baselineCommit": "5c254645479892fdeed1bff4799b7c89f375e810",
+  "baselineTree": "db5099c970456f44b414cc1dea52243cf19d519c",
+  "previousCommit": "875695ca36f14eaf9f4045a402ab47f76c37a86a",
+  "substantiveParent": "875695ca36f14eaf9f4045a402ab47f76c37a86a",
+  "desktopSVG": {
+    "beforeBytes": 46830,
+    "afterBytes": 63174,
+    "baselineElementsMissingOrModified": 0
+  },
+  "baselineBuiltAssets": [
+    {
+      "path": "assets/index-PQu7MiT7.css",
+      "sha256": "ea7e374c31c4fbd0807983fb5f5d84236a37788b28c56ce365123eb55b0437e1",
+      "bytes": 67307
+    },
+    {
+      "path": "assets/index-DEsgdTzj.js",
+      "sha256": "aa8724a6ba71c4a09db7f3a91aa108487588e8bd22d8680b33e37ea0f5106ec4",
+      "bytes": 229638
+    }
+  ]
+}

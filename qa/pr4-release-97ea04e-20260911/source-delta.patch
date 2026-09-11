@@ -1,0 +1,348 @@
+diff --git a/src/components/HeroKnowledgeField.tsx b/src/components/HeroKnowledgeField.tsx
+index af2160e..2bd33a7 100644
+--- a/src/components/HeroKnowledgeField.tsx
++++ b/src/components/HeroKnowledgeField.tsx
+@@ -1,6 +1,7 @@
+-import { useEffect, useId, useRef, type CSSProperties } from 'react';
++import { useEffect, useId, useRef, useState, type CSSProperties } from 'react';
++import { createPortal } from 'react-dom';
+ import { createKnowledgeScene, mapPointer, type Pointer, type SceneLayout } from '../visuals/knowledgeScene';
+-import { drawKnowledgeScene } from '../visuals/drawKnowledgeScene';
++import { drawIntakeTethers, drawKnowledgeScene } from '../visuals/drawKnowledgeScene';
+ import { NEXUS_ART, nexusPlaneStyle } from '../visuals/nexusGeometry';
+ const scene = createKnowledgeScene();
+ type Connection = EventTarget & { saveData?: boolean };
+@@ -10,6 +11,14 @@ export function HeroKnowledgeField() {
+   const coreGradientId = `nexus-core-${useId().replaceAll(':', '')}`;
+   const rootRef = useRef<HTMLDivElement>(null);
+   const canvasRef = useRef<HTMLCanvasElement>(null);
++  const tetherRef = useRef<HTMLCanvasElement>(null);
++  const [tetherHost, setTetherHost] = useState<HTMLElement | null>(null);
++  useEffect(() => {
++    const media = matchMedia('(max-width: 780px)');
++    const syncHost = () => setTetherHost(media.matches ? rootRef.current : rootRef.current?.closest('.hero-section')?.querySelector<HTMLElement>('.hero-section__copy') ?? null);
++    syncHost(); media.addEventListener('change', syncHost);
++    return () => media.removeEventListener('change', syncHost);
++  }, []);
+   useEffect(() => {
+     const root = rootRef.current;
+     if (!root) return;
+@@ -35,9 +44,11 @@ export function HeroKnowledgeField() {
+   }, []);
+   useEffect(() => {
+     const root = rootRef.current; const canvas = canvasRef.current;
+-    if (!root || !canvas) return;
++    if (!root || !canvas || !tetherHost) return;
+     const context = canvas.getContext('2d', { alpha: true, desynchronized: true });
+     if (!context) return; // Keep the server-rendered, decorative SVG composition.
++    const tetherCanvas = tetherRef.current;
++    const tetherContext = tetherCanvas?.getContext('2d', { alpha: true, desynchronized: true });
+     const host = root.closest('section');
+     const anchor = host?.querySelector<HTMLElement>('.hero-section__mark');
+     if (!host || !anchor) return;
+@@ -50,6 +61,7 @@ export function HeroKnowledgeField() {
+     let bounds = root.getBoundingClientRect();
+     let layout: SceneLayout = { cx: 0, cy: 0, scale: 1, flatten: 1 };
+     let pointer: Pointer = { x: -1000, y: -1000, strength: 0 };
++    const intakePointer: Pointer = { x: -1000, y: -1000, strength: 0 };
+     let target = 0; let pending: { x: number; y: number } | null = null;
+     let boundsDirty = true; let visible = false; let disposed = false;
+     let timer = 0; let raf = 0; let last = 0; let elapsed = 0;
+@@ -61,7 +73,7 @@ export function HeroKnowledgeField() {
+       clearTimeout(timer); cancelAnimationFrame(raf); timer = 0; raf = 0; last = 0;
+     };
+     const resetPointer = () => {
+-      pending = null; target = 0; pointer.strength = 0;
++      pending = null; target = 0; pointer.strength = 0; intakePointer.strength = 0;
+       root.dataset.pointerActive = 'false';
+     };
+     const mode = () => {
+@@ -69,7 +81,14 @@ export function HeroKnowledgeField() {
+       root.dataset.pointerInteraction = interactive() ? 'enabled' : 'disabled';
+     };
+     const render = () => {
+-      drawKnowledgeScene(context, scene, layout, width, height, elapsed, pointer, staticOnly());
++      drawKnowledgeScene(context, scene, layout, width, height, elapsed, pointer, staticOnly(), intakePointer);
++      if (tetherCanvas && tetherContext) {
++        tetherCanvas.style.display = !layout.intakeExtension || (interactive() && intakePointer.strength >= 0.001) ? 'block' : 'none';
++        drawIntakeTethers(tetherContext, layout, width, height, intakePointer, !interactive());
++      }
++      root.dataset.intakePointerX = intakePointer.x.toFixed(3);
++      root.dataset.intakePointerY = intakePointer.y.toFixed(3);
++      root.dataset.intakeStrength = intakePointer.strength.toFixed(5);
+       root.dataset.ready = 'true';
+     };
+     const frame = (now: number) => {
+@@ -80,6 +99,7 @@ export function HeroKnowledgeField() {
+       if (pending && interactive()) {
+         if (boundsDirty) { bounds = root.getBoundingClientRect(); boundsDirty = false; }
+         const p = mapPointer(pending, bounds, width, height);
++        if (intakePointer.strength < 0.01) { intakePointer.x = p.x; intakePointer.y = p.y; }
+         pointer.x = p.x; pointer.y = p.y;
+         target = p.x >= 0 && p.y >= 0 && p.x <= width && p.y <= height ? 1 : 0;
+         pending = null;
+@@ -88,6 +108,11 @@ export function HeroKnowledgeField() {
+         mode();
+       }
+       pointer.strength += (target - pointer.strength) * (1 - Math.exp(-delta * 12));
++      // Only the new desktop continuations use this eased attractor.
++      const follow = 1 - Math.exp(-delta * 10);
++      intakePointer.x += (pointer.x - intakePointer.x) * follow;
++      intakePointer.y += (pointer.y - intakePointer.y) * follow;
++      intakePointer.strength = pointer.strength;
+       const started = performance.now(); render();
+       if (performance.now() - started > 8) expensiveFrames += 1;
+       else expensiveFrames = Math.max(0, expensiveFrames - 1);
+@@ -110,10 +135,62 @@ export function HeroKnowledgeField() {
+         cy: box.top - bounds.top + box.height / 2,
+         scale: width / (art.width * art.unitScale),
+         flatten: 1,
++        intakeExtension: mobile ? 0 : 650,
+       };
+       const dpr = Math.min(devicePixelRatio || 1, mobile ? 1.4 : 1.5);
+       canvas.width = Math.round(width * dpr); canvas.height = Math.round(height * dpr);
+       context.setTransform(canvas.width / width, 0, 0, canvas.height / height, 0, 0);
++      if (tetherCanvas && tetherContext) {
++        // Keep the original artwork plane, but composite interaction above the
++        // broad copy scrim. Only glyphs and controls cut holes in this layer.
++        const copy = tetherHost.getBoundingClientRect();
++        tetherCanvas.style.left = `${bounds.left - copy.left}px`;
++        tetherCanvas.style.top = `${bounds.top - copy.top}px`;
++        tetherCanvas.style.width = `${width}px`;
++        tetherCanvas.style.height = `${height}px`;
++        tetherCanvas.style.opacity = mobile ? '0.9' : '1';
++        tetherCanvas.style.zIndex = mobile ? '1' : '0';
++        const mask = document.createElement('canvas');
++        mask.width = canvas.width; mask.height = canvas.height;
++        const ink = mask.getContext('2d');
++        if (ink && !mobile) {
++          ink.scale(canvas.width / width, canvas.height / height);
++          ink.fillStyle = 'white'; ink.fillRect(0, 0, width, height);
++          ink.globalCompositeOperation = 'destination-out';
++          ink.lineWidth = 4; ink.lineJoin = 'round';
++          tetherHost.querySelectorAll('h1, p').forEach(element => {
++            const walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT);
++            while (walker.nextNode()) {
++              const node = walker.currentNode;
++              const style = getComputedStyle(node.parentElement!);
++              ink.font = `${style.fontStyle} ${style.fontWeight} ${style.fontSize} ${style.fontFamily}`;
++              const text = node.textContent ?? '';
++              for (let i = 0; i < text.length; i += 1) {
++                if (!text[i].trim()) continue;
++                const range = document.createRange(); range.setStart(node, i); range.setEnd(node, i + 1);
++                const r = range.getBoundingClientRect();
++                if (!r.width || !r.height) continue;
++                const glyph = style.textTransform === 'uppercase' ? text[i].toUpperCase() : text[i];
++                const metrics = ink.measureText(glyph);
++                const ascent = metrics.fontBoundingBoxAscent;
++                const descent = metrics.fontBoundingBoxDescent;
++                const x = r.x - bounds.x;
++                const y = r.y - bounds.y + (r.height - ascent - descent) / 2 + ascent;
++                ink.fillText(glyph, x, y); ink.strokeText(glyph, x, y);
++              }
++            }
++          });
++          tetherHost.querySelectorAll('.button').forEach(element => {
++            const r = element.getBoundingClientRect();
++            ink.fillRect(r.x - bounds.x - 3, r.y - bounds.y - 3, r.width + 6, r.height + 6);
++          });
++          tetherCanvas.style.maskImage = `url("${mask.toDataURL()}")`;
++        }
++        if (mobile) tetherCanvas.style.maskImage = 'none';
++        tetherCanvas.style.webkitMaskImage = tetherCanvas.style.maskImage;
++        tetherCanvas.width = canvas.width; tetherCanvas.height = canvas.height;
++        tetherContext.setTransform(canvas.width / width, 0, 0, canvas.height / height, 0, 0);
++      }
+       resetPointer(); mode(); if (!document.hidden) render(); schedule();
+     };
+     const onPointer = (event: PointerEvent) => {
+@@ -145,6 +222,7 @@ export function HeroKnowledgeField() {
+     motion.addEventListener('change', onPolicy); fine.addEventListener('change', onPolicy);
+     connection?.addEventListener('change', onPolicy);
+     resize();
++    void document.fonts.ready.then(() => { if (!disposed) resize(); });
+     return () => {
+       disposed = true; stop(); visibilityObserver.disconnect(); resizeObserver.disconnect();
+       host.removeEventListener('pointermove', onPointer, true);
+@@ -155,7 +233,7 @@ export function HeroKnowledgeField() {
+       connection?.removeEventListener('change', onPolicy);
+       delete root.dataset.ready;
+     };
+-  }, []);
++  }, [tetherHost]);
+   return (
+     <div ref={rootRef} className="hero-knowledge" style={nexusPlaneStyle as CSSProperties} data-visual-layer="knowledge" data-conceptual="true" aria-hidden="true">
+       <picture className="hero-knowledge__plate">
+@@ -174,6 +252,7 @@ export function HeroKnowledgeField() {
+         ))}
+       </svg>
+       <canvas ref={canvasRef} className="hero-knowledge__canvas" />
++      {tetherHost && createPortal(<canvas ref={tetherRef} className="hero-knowledge__tethers" aria-hidden="true" />, tetherHost)}
+     </div>
+   );
+ }
+diff --git a/src/styles/hero-visual-v2.css b/src/styles/hero-visual-v2.css
+index 06db9d8..8c24eb7 100644
+--- a/src/styles/hero-visual-v2.css
++++ b/src/styles/hero-visual-v2.css
+@@ -13,6 +13,10 @@
+ .hero-knowledge[data-art-ready='false'] .hero-knowledge__plate { visibility: hidden; }
+ .hero-knowledge__plate img { width: 100%; height: 100%; display: block; object-fit: fill; opacity: .92; }
+ .hero-knowledge__canvas { position: absolute; inset: 0; z-index: 1; width: 100%; height: 100%; contain: strict; opacity: .66; }
++.hero-knowledge__tethers { position: absolute; z-index: 0; contain: strict; pointer-events: none; }
++@media (min-width: 781px) {
++  .hero-section__copy > :not(.hero-knowledge__tethers) { position: relative; z-index: 1; }
++}
+ .hero-knowledge__fallback { z-index: 0; }
+ .hero-knowledge__canvas, .hero-knowledge__fallback {
+   pointer-events: none;
+@@ -42,8 +46,8 @@
+ @media (min-width: 781px) {
+   .hero-section__copy::before {
+     content: ''; position: absolute; z-index: -1; pointer-events: none;
+-    inset: -1rem -3rem -1rem -1rem;
+-    background: linear-gradient(90deg, #030811d9 calc(100% - 3rem), transparent);
++    inset: -1rem -3rem -1rem -7rem;
++    background: linear-gradient(90deg, transparent, #030811d9 6rem, #030811d9 calc(100% - 3rem), transparent);
+     mask-image: linear-gradient(transparent, #000 1rem, #000 calc(100% - 1rem), transparent);
+     -webkit-mask-image: linear-gradient(transparent, #000 1rem, #000 calc(100% - 1rem), transparent);
+   }
+diff --git a/src/visuals/drawKnowledgeScene.ts b/src/visuals/drawKnowledgeScene.ts
+index 3913db5..c388a21 100644
+--- a/src/visuals/drawKnowledgeScene.ts
++++ b/src/visuals/drawKnowledgeScene.ts
+@@ -15,14 +15,25 @@ function localPoint(point: { x: number; y: number }, layout: SceneLayout) {
+   return { x: layout.cx + point.x * layout.scale, y: layout.cy + point.y * layout.scale * layout.flatten };
+ }
+
+-function traceCurve(context: CanvasRenderingContext2D, curve: Curve, layout: SceneLayout, pointer: Pointer, depth: number) {
++function traceCurve(context: CanvasRenderingContext2D, curve: Curve, layout: SceneLayout, pointer: Pointer, depth: number, intakePointer: Pointer) {
+   const start = curve.x0 > 0 ? { ...localPoint({ x: curve.x0, y: curve.y0 }, layout), influence: 0 } : displace(localPoint({ x: curve.x0, y: curve.y0 }, layout), pointer, depth);
+   const c1 = displace(localPoint({ x: curve.c1x, y: curve.c1y }, layout), pointer, depth * 0.8);
+   const c2 = displace(localPoint({ x: curve.c2x, y: curve.c2y }, layout), pointer, depth * 0.5);
+   const end = localPoint({ x: curve.x1, y: curve.y1 }, layout);
+-  context.moveTo(start.x, start.y);
++  let extensionInfluence = 0;
++  if (curve.x0 < 0 && layout.intakeExtension) {
++    const run = layout.intakeExtension;
++    // Prepend a continuation; never relocate the production curve's controls.
++    const from = displace(localPoint({ x: curve.x0 - run, y: curve.y0 }, layout), intakePointer, depth);
++    const bend = displace(localPoint({ x: curve.x0 - run / 3, y: curve.y0 }, layout), intakePointer, depth);
++    // Match the original (possibly displaced) tangent at the join.
++    const ratio = 0.3;
++    context.moveTo(from.x, from.y);
++    context.bezierCurveTo(bend.x, bend.y, start.x - (c1.x - start.x) * ratio, start.y - (c1.y - start.y) * ratio, start.x, start.y);
++    extensionInfluence = Math.max(from.influence, bend.influence);
++  } else context.moveTo(start.x, start.y);
+   context.bezierCurveTo(c1.x, c1.y, c2.x, c2.y, end.x, end.y);
+-  return Math.max(start.influence, c1.influence, c2.influence);
++  return Math.max(start.influence, c1.influence, c2.influence, extensionInfluence);
+ }
+
+ function makeInbound(index: number, count: number): Curve {
+@@ -58,20 +69,70 @@ function makeOutbound(index: number, count: number): Curve {
+   };
+ }
+
+-function drawStream(context: CanvasRenderingContext2D, curve: Curve, layout: SceneLayout, pointer: Pointer, color: string, alpha: number, width: number, depth: number, luminous = false) {
++/** Interaction-only fibers: production starts/tangents are read, never deformed. */
++export function drawIntakeTethers(context: CanvasRenderingContext2D, layout: SceneLayout, width: number, height: number, pointer: Pointer, disabled: boolean) {
++  context.clearRect(0, 0, width, height);
++  const strength = disabled || !layout.intakeExtension ? 0 : pointer.strength * ease((layout.cx - 465 * layout.scale - pointer.x) / (70 * layout.scale));
++  if (strength < 0.001) return;
++  context.save();
++  context.lineCap = 'round';
++  for (let i = 0; i < 16; i += 1) {
++    const curve = makeInbound(5 + i * 5, 86);
++    const start = localPoint({ x: curve.x0, y: curve.y0 }, layout);
++    const tangent = localPoint({ x: curve.c1x, y: curve.c1y }, layout);
++    const angle = (i / 16) * Math.PI * 2;
++    const radius = 8 + randomUnit(i + 3100) * 12;
++    const tip = { x: pointer.x + Math.cos(angle) * radius, y: pointer.y + Math.sin(angle) * radius };
++    const run = Math.max(40, start.x - tip.x);
++    const color = i % 3 === 0 ? '255,102,137' : '255,151,77';
++    const gradient = context.createLinearGradient(start.x, start.y, tip.x, tip.y);
++    gradient.addColorStop(0, `rgba(${color},0.85)`);
++    gradient.addColorStop(0.28, `rgba(${color},0.95)`);
++    gradient.addColorStop(0.72, `rgba(${color},0.95)`);
++    gradient.addColorStop(1, `rgba(${color},0.90)`);
++    context.beginPath();
++    context.moveTo(start.x, start.y);
++    // Reverse the authored intake tangent, then relax into the cursor bundle.
++    context.bezierCurveTo(start.x - (tangent.x - start.x) * 0.5, start.y - (tangent.y - start.y) * 0.5,
++      tip.x + run * (0.48 + randomUnit(i + 3140) * 0.16), tip.y + (i - 7.5) * 3, tip.x, tip.y);
++    context.strokeStyle = gradient;
++    context.globalAlpha = strength * 0.10; context.lineWidth = 4; context.stroke();
++    context.globalAlpha = strength * 0.95; context.lineWidth = 0.9 + randomUnit(i + 3180) * 0.65; context.stroke();
++    // Carry the same selected filament into its existing intake path. This is
++    // an interaction highlight of unchanged production controls, not a new fan.
++    const end = localPoint({ x: curve.x1, y: curve.y1 }, layout);
++    const c2 = localPoint({ x: curve.c2x, y: curve.c2y }, layout);
++    const join = context.createLinearGradient(start.x, start.y, end.x, end.y);
++    join.addColorStop(0, `rgba(${color},0.85)`);
++    join.addColorStop(0.65, `rgba(${color},0.65)`);
++    join.addColorStop(1, `rgba(${color},0.15)`);
++    context.beginPath(); context.moveTo(start.x, start.y);
++    context.bezierCurveTo(tangent.x, tangent.y, c2.x, c2.y, end.x, end.y);
++    context.strokeStyle = join; context.stroke();
++  }
++  const glow = context.createRadialGradient(pointer.x, pointer.y, 0, pointer.x, pointer.y, 26);
++  glow.addColorStop(0, 'rgba(255,177,103,0.30)');
++  glow.addColorStop(0.35, 'rgba(255,120,73,0.14)');
++  glow.addColorStop(1, 'rgba(255,92,83,0)');
++  context.globalAlpha = strength; context.fillStyle = glow;
++  context.fillRect(pointer.x - 26, pointer.y - 26, 52, 52);
++  context.restore();
++}
++
++function drawStream(context: CanvasRenderingContext2D, curve: Curve, layout: SceneLayout, pointer: Pointer, color: string, alpha: number, width: number, depth: number, luminous = false, intakePointer = pointer) {
+   context.beginPath();
+-  const influence = traceCurve(context, curve, layout, pointer, depth);
++  const influence = traceCurve(context, curve, layout, pointer, depth, intakePointer);
+   const boosted = clamp(alpha + influence * 0.2);
+   if (luminous) {
+     context.strokeStyle = color;
+     context.globalAlpha = boosted * 0.07;
+     context.lineWidth = width * 9 + influence * 2;
+     context.stroke();
+-    context.beginPath(); traceCurve(context, curve, layout, pointer, depth);
++    context.beginPath(); traceCurve(context, curve, layout, pointer, depth, intakePointer);
+     context.globalAlpha = boosted * 0.16;
+     context.lineWidth = width * 4.1 + influence;
+     context.stroke();
+-    context.beginPath(); traceCurve(context, curve, layout, pointer, depth);
++    context.beginPath(); traceCurve(context, curve, layout, pointer, depth, intakePointer);
+   }
+   context.strokeStyle = color;
+   context.globalAlpha = boosted;
+@@ -286,7 +347,7 @@ function drawEvidenceClusters(context: CanvasRenderingContext2D, layout: SceneLa
+   }
+ }
+
+-export function drawKnowledgeScene(context: CanvasRenderingContext2D, scene: KnowledgeScene, layout: SceneLayout, width: number, height: number, time: number, pointer: Pointer, staticOnly: boolean) {
++export function drawKnowledgeScene(context: CanvasRenderingContext2D, scene: KnowledgeScene, layout: SceneLayout, width: number, height: number, time: number, pointer: Pointer, staticOnly: boolean, intakePointer = pointer) {
+   context.clearRect(0, 0, width, height);
+   const narrative = staticOnly ? STORY_DURATION : time;
+   context.save(); context.globalCompositeOperation = 'lighter'; context.lineCap = 'round'; context.lineJoin = 'round';
+@@ -298,7 +359,7 @@ export function drawKnowledgeScene(context: CanvasRenderingContext2D, scene: Kno
+   inbound.forEach((curve, i) => {
+     const tier = i % 11 === 0 ? 1 : i % 5 === 0 ? 0.72 : i % 2 === 0 ? 0.42 : 0.26;
+     const hot = i % 6 === 0;
+-    drawStream(context, curve, layout, pointer, hot ? '#ff9b51' : i % 3 === 0 ? '#ff654e' : '#dc4f83', 0.11 + tier * 0.34, 0.38 + tier * 0.82, 0.76, hot);
++    drawStream(context, curve, layout, pointer, hot ? '#ff9b51' : i % 3 === 0 ? '#ff654e' : '#dc4f83', 0.11 + tier * 0.34, 0.38 + tier * 0.82, 0.76, hot, intakePointer);
+     if (i % 7 === 0) drawPulse(context, curve, layout, time, i * 0.11, '#ffd2b4');
+   });
+   drawMicroNodes(context, inbound, layout, 'in', time, staticOnly);
+diff --git a/src/visuals/knowledgeScene.ts b/src/visuals/knowledgeScene.ts
+index 61cfa78..5691529 100644
+--- a/src/visuals/knowledgeScene.ts
++++ b/src/visuals/knowledgeScene.ts
+@@ -4,7 +4,7 @@ export type Pointer = Point & { strength: number };
+ export type Node = Point & { kind: 'retained' | 'signal' | 'evidence' | 'future'; depth: number; seed: number; arrival: number };
+ export type Link = { a: number; b: number; kind: 'retained' | 'candidate' | 'rejected' | 'future'; arrival: number };
+ export type KnowledgeScene = { nodes: Node[]; links: Link[]; strata: Point[][]; routes: Point[][] };
+-export type SceneLayout = { cx: number; cy: number; scale: number; flatten: number };
++export type SceneLayout = { cx: number; cy: number; scale: number; flatten: number; intakeExtension?: number };
+ export const STORY_DURATION = 28;
+ export const POINTER_RADIUS = 155;
+ export const MAX_DISPLACEMENT = 21;

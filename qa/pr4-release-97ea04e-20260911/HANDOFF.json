@@ -1,0 +1,327 @@
+{
+  "TASK_ID": "CL-PR4-RELEASE-QA-20260911-001",
+  "TASK_TITLE": "PR 4 - independent release QA, no visual changes",
+  "TERMINAL_STATUS": "LOCAL_COMPLETE + QA_COMPLETE",
+  "workflow_status": [
+    "LOCAL_COMPLETE",
+    "QA_COMPLETE",
+    "QA_FAIL",
+    "HANDOFF_CREATED"
+  ],
+  "QA_VERDICT": "FAIL",
+  "TARGET_BRANCH": "codex/hero-desktop-intake-polish-20260911",
+  "CANDIDATE_COMMIT": "97ea04ee7c1e80e5a047c278807b593131dbabd3",
+  "CANDIDATE_TREE": "c0c592b283f03b53a032962accb005bc868c743f",
+  "CANDIDATE_PARENT": "57aaffc659db7f2a2f3242fdfb14a89e066024cb",
+  "SUBSTANTIVE_COMMIT": "57aaffc659db7f2a2f3242fdfb14a89e066024cb",
+  "TREE": "a34ad881a83ce3433fc6bb21987ae52183f8b662",
+  "PARENT": "875695ca36f14eaf9f4045a402ab47f76c37a86a",
+  "REPORT_PATH": "qa/pr4-release-97ea04e-20260911/REPORT.md",
+  "EVIDENCE_PATHS": [
+    "qa/pr4-release-97ea04e-20260911/REPORT.md",
+    "qa/pr4-release-97ea04e-20260911/qa-summary.json",
+    "qa/pr4-release-97ea04e-20260911/candidate-status.json",
+    "qa/pr4-release-97ea04e-20260911/build-results.json",
+    "qa/pr4-release-97ea04e-20260911/browser-exits.json",
+    "qa/pr4-release-97ea04e-20260911/asset-manifest-verification.json",
+    "qa/pr4-release-97ea04e-20260911/hosted-assets.json",
+    "qa/pr4-release-97ea04e-20260911/baseline-source-review.json",
+    "qa/pr4-release-97ea04e-20260911/privacy-source-review.json",
+    "qa/pr4-release-97ea04e-20260911/matrix",
+    "qa/pr4-release-97ea04e-20260911/policy",
+    "qa/pr4-release-97ea04e-20260911/tether",
+    "qa/pr4-release-97ea04e-20260911/visibility",
+    "qa/pr4-release-97ea04e-20260911/contrast",
+    "qa/pr4-release-97ea04e-20260911/supplemental-results.json",
+    "qa/pr4-release-97ea04e-20260911/supplemental",
+    "qa/pr4-release-97ea04e-20260911/dpr-contrast-results.json",
+    "qa/pr4-release-97ea04e-20260911/dpr-contrast",
+    "qa/pr4-release-97ea04e-20260911/native-confirmation.json",
+    "qa/pr4-release-97ea04e-20260911/native-confirmation",
+    "qa/pr4-release-97ea04e-20260911/menu-pointer-entry.json",
+    "qa/pr4-release-97ea04e-20260911/keyboard-assessment.json",
+    "qa/pr4-release-97ea04e-20260911/final-probes.json",
+    "qa/pr4-release-97ea04e-20260911/logs"
+  ],
+  "BUILD_RESULTS": [
+    {
+      "check": "ci",
+      "exit_code": 1,
+      "seconds": 70.72
+    },
+    {
+      "check": "ci-network-retry",
+      "exit_code": 0
+    },
+    {
+      "check": "lint",
+      "exit_code": 0,
+      "seconds": 0.76
+    },
+    {
+      "check": "typecheck",
+      "exit_code": 0,
+      "seconds": 1.49
+    },
+    {
+      "check": "test",
+      "exit_code": 0,
+      "seconds": 1.21
+    },
+    {
+      "check": "build",
+      "exit_code": 0,
+      "seconds": 2.49
+    },
+    {
+      "check": "validate-build",
+      "exit_code": 0,
+      "seconds": 0.13
+    },
+    {
+      "check": "diff-check",
+      "exit_code": 0,
+      "seconds": 0.41
+    }
+  ],
+  "BROWSER_RESULTS": "Seven requested viewports, both engines. Matrix 18/18; policy 16/16; reach/exit 8/8. DPR1 visual acceptance passes. DPR2 accessibility FAIL. Keyboard/CTA pass after documented harness assessment correction.",
+  "CONTRAST_RESULT": {
+    "states": 8,
+    "allStatesHaveFailures": true,
+    "nativeConfirmationStates": 4,
+    "baselineFailedMeasurements": 0,
+    "candidateFailedMeasurements": 8
+  },
+  "PERFORMANCE_RESULT": [
+    {
+      "build": "baseline",
+      "state": "active",
+      "scriptMsPerSecond": 30.100999999999996,
+      "layoutCount": 0,
+      "draws": 112,
+      "tether": 0,
+      "cls": 0,
+      "mode": "interactive",
+      "quality": "normal"
+    },
+    {
+      "build": "baseline",
+      "state": "offscreen",
+      "scriptMsPerSecond": 0.019999999999992246,
+      "layoutCount": 0,
+      "draws": 0,
+      "tether": 0,
+      "cls": 0,
+      "mode": "paused",
+      "quality": "normal"
+    },
+    {
+      "build": "baseline",
+      "state": "hidden",
+      "scriptMsPerSecond": 0,
+      "layoutCount": 0,
+      "draws": 0,
+      "tether": 0,
+      "cls": 0,
+      "mode": "paused",
+      "quality": "normal"
+    },
+    {
+      "build": "candidate",
+      "state": "active",
+      "scriptMsPerSecond": 25.44749999999999,
+      "layoutCount": 0,
+      "draws": 76,
+      "tether": 76,
+      "cls": 0,
+      "mode": "interactive",
+      "quality": "normal"
+    },
+    {
+      "build": "candidate",
+      "state": "offscreen",
+      "scriptMsPerSecond": 0.019499999999991746,
+      "layoutCount": 0,
+      "draws": 0,
+      "tether": 0,
+      "cls": 0,
+      "mode": "paused",
+      "quality": "normal"
+    },
+    {
+      "build": "candidate",
+      "state": "hidden",
+      "scriptMsPerSecond": 0,
+      "layoutCount": 0,
+      "draws": 0,
+      "tether": 0,
+      "cls": 0,
+      "mode": "paused",
+      "quality": "normal"
+    }
+  ],
+  "PUBLIC_CLAIM_REVIEW": "No new product-copy claims; bounded QA evidence and limits disclosed.",
+  "PRIVACY_REVIEW": "No new telemetry/dependencies; changed public text scan clear; incidental local log paths normalized.",
+  "DEFECTS": [
+    {
+      "id": "PR4-QA-01",
+      "severity": "P1 / release-blocking accessibility regression",
+      "title": "DPR2 mask bitmap is not sized to its CSS canvas",
+      "source": "src/components/HeroKnowledgeField.tsx:140-190; src/styles/hero-visual-v2.css:16",
+      "reproduction": "Fresh Chromium or WebKit, 1440x900 CSS viewport, deviceScaleFactor=2, normal motion; wait for fonts; pointer (120,711), settle 1.3s. Also reproduced at center x150 and 1280 center x280.",
+      "observed": "Mask bitmap 2393x1387 on a 1595.0625x924.921875 CSS canvas; computed mask-size auto. Cutouts are displaced into whitespace and strands cross unprotected headline/body/support glyphs.",
+      "causeAssessment": "Source creates a DPR-scaled mask PNG and assigns maskImage without defining its CSS size. This is consistent with the actual oversized/displaced cutouts in both engines. No corrective styles or candidate edits were applied.",
+      "nativePixelEvidence": {
+        "chromium": {
+          "bodyRatio": 1.8749972368,
+          "supportRatio": 1.4182539543,
+          "baselineBodyRatio": 12.598,
+          "baselineSupportRatio": 9.689
+        },
+        "webkit": {
+          "bodyRatio": 1.883,
+          "supportRatio": 1.393,
+          "baselineBodyRatio": 12.661,
+          "baselineSupportRatio": 9.698
+        }
+      },
+      "thresholds": {
+        "largeText": 3,
+        "normalText": 4.5
+      },
+      "evidence": [
+        "dpr-contrast-results.json",
+        "native-confirmation.json",
+        "native-confirmation/",
+        "supplemental/chromium-hosted-dpr2.png",
+        "supplemental/webkit-hosted-dpr2.png"
+      ],
+      "releaseImpact": "New substantial text-contrast failure on high-density desktop rendering; do not merge this exact candidate."
+    }
+  ],
+  "NITS": [
+    {
+      "id": "INHERITED-01",
+      "title": "WebKit reduced-motion automatic menu-entry focus",
+      "verifiedAgainst": "5c254645479892fdeed1bff4799b7c89f375e810 read-only production build",
+      "detail": "Both baseline and candidate leave focus on BODY when opening the menu under reduced motion. Subsequent keyboard traversal stays in the menu; Escape closes it and restores toggle focus. Normal-motion entry focuses Close. Nonblocking inherited issue.",
+      "evidence": [
+        "menu-pointer-entry.json",
+        "supplemental-results.json"
+      ]
+    }
+  ],
+  "QA_STATE": "QA_COMPLETE / QA_FAIL",
+  "BLOCKERS": [
+    "PR4-QA-01: new high-DPR glyph-mask sizing/text-contrast regression"
+  ],
+  "FAILURE_CLASS": "WORK / SUBSTANTIVE FAILURE",
+  "MERGE_RECOMMENDATION": "DO_NOT_MERGE",
+  "NEXT_ACTION": "Controller persists/readbacks local QA evidence; hold merge; route the DPR mask defect to separately authorized remediation and fresh exact-candidate QA. Do not rerun completed QA merely for persistence.",
+  "REMOTE_READBACK_STATUS": "PENDING_CONTROLLER",
+  "MERGE_STATE": "NOT_MERGED_BY_QA",
+  "DEPLOYMENT_STATE": "NOT_DEPLOYED_BY_QA",
+  "PUBLICATION_STATE": "LOCAL_QA_ONLY",
+  "CANDIDATE_TRACKED_STATUS": "UNMODIFIED",
+  "TESTED_ORIGINS": {
+    "candidate": "http://127.0.0.1:4317/",
+    "baseline": "http://127.0.0.1:4318/",
+    "immutablePreview": "https://a8683876.cumulative-labs.pages.dev/",
+    "productionHeadersOnly": "https://cumulativelabs.com/"
+  },
+  "TESTED_ASSETS": [
+    {
+      "path": "index.html",
+      "status": 200,
+      "noindex": "noindex",
+      "equal": true,
+      "sha256": "ab13b7d846574aeae651d42536a7fa5519230d1203c99b18474307e082a43d77"
+    },
+    {
+      "path": "visuals/hero-nexus-anchored-desktop.svg",
+      "status": 200,
+      "noindex": "noindex",
+      "equal": true,
+      "sha256": "ab8e1fde8f2e702333d38c08a3bfbc0149eb13a736675a8bc5da46f15ba4ca38"
+    },
+    {
+      "path": "visuals/hero-nexus-anchored-mobile.svg",
+      "status": 200,
+      "noindex": "noindex",
+      "equal": true,
+      "sha256": "ccee6d6018639288a2c47cd8ec2170208c14cd696f5c2907c7cb1930eeabe3db"
+    },
+    {
+      "path": "og/cumulative-labs-og.jpg",
+      "status": 200,
+      "noindex": "noindex",
+      "equal": true,
+      "sha256": "07efccf936ec9fc4315d3f2832572637e374336cd1418d252e30e1d4df0dc1e2"
+    },
+    {
+      "path": "favicons/apple-touch-icon.png",
+      "status": 200,
+      "noindex": "noindex",
+      "equal": true,
+      "sha256": "266251f48a9518e2a1cf65fd3767c7ae74a598cf02081ee72fba58bb1ec0cbc2"
+    },
+    {
+      "path": "favicons/favicon.svg",
+      "status": 200,
+      "noindex": "noindex",
+      "equal": true,
+      "sha256": "c8e56446965a7881e9dc1b6e612d89a469d77ef27b0e7cbb661f572a18969be3"
+    },
+    {
+      "path": "brand/cumulative-labs-horizontal.svg",
+      "status": 200,
+      "noindex": "noindex",
+      "equal": true,
+      "sha256": "24f32afc84a80cba6ff5a8a48e727670ce58cf1d83ef95f8356a2b2ea99ea85b"
+    },
+    {
+      "path": "brand/cumulative-labs-symbol.svg",
+      "status": 200,
+      "noindex": "noindex",
+      "equal": true,
+      "sha256": "c8e56446965a7881e9dc1b6e612d89a469d77ef27b0e7cbb661f572a18969be3"
+    },
+    {
+      "path": "assets/index-BYjBqNig.css",
+      "status": 200,
+      "noindex": "noindex",
+      "equal": true,
+      "sha256": "09342af51004da8a14dc0759331851ad8911455eff7e5fe228fe0add3b7bf2cc"
+    },
+    {
+      "path": "assets/index-CIZ7VDhw.js",
+      "status": 200,
+      "noindex": "noindex",
+      "equal": true,
+      "sha256": "1dd37278f64a22e0082efd6ac5de5abfc75e850e53a9793e102821d9bb466162"
+    },
+    {
+      "path": "robots.txt",
+      "status": 200,
+      "noindex": "noindex",
+      "equal": true,
+      "sha256": "9a5bee5d89f2b1632053cd3c89e99717bdd473363ae93673c65793aa7aa6ea43"
+    },
+    {
+      "path": "site.webmanifest",
+      "status": 200,
+      "noindex": "noindex",
+      "equal": true,
+      "sha256": "934f4116800fb7c53d5e3046cf6eae7cf93b81a040654eccfd5e810afa3510a4"
+    },
+    {
+      "path": "sitemap.xml",
+      "status": 200,
+      "noindex": "noindex",
+      "equal": true,
+      "sha256": "e3fe20561b7c4de3c3b1125e76c306806755bd764f0125640d97d76810b1bb46"
+    }
+  ],
+  "LIMITATIONS": "Finite real-compositor states; axe contrast incomplete; no all-state, physical-device, battery or field certification. No remote persistence by worker.",
+  "PUBLICATION_NOTE": "Controller privacy-redacted internal control-bundle identifiers only. Verdict and candidate unchanged. See CONTROLLER_READBACK.md for native-pixel evidence qualification."
+}

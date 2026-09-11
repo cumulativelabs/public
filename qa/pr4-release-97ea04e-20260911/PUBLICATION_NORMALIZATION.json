@@ -1,0 +1,62 @@
+{
+  "notes": [
+    {
+      "path": "HANDOFF.json",
+      "original_sha256": "8a45f76a83954cf6fdec7540ac9b841816715a4b30dd4b829263ce2d0a6b0b30",
+      "reason": "Private control-bundle metadata removed; full original retained privately by controller."
+    },
+    {
+      "path": "finalize.py",
+      "original_sha256": "89d053c5e863382090be55bb31ca508bffad57b6d727fcfad41ffd0582b71cba",
+      "reason": "Excluded local report-assembly utility containing internal control metadata; not a browser/test evidence input."
+    },
+    {
+      "path": "native-confirmation.json",
+      "original_sha256": "aa5c0c35bf999e3607fe61572719d5bde4335569729d97b10eccc962435a5796",
+      "reason": "Public display normalization of trailing whitespace only; full original privately retained."
+    },
+    {
+      "path": "final-probes.json",
+      "original_sha256": "3109e6c3cd3cb16c22ab63d9681466e754d1876d14d6ae4e7efeab8a8fd2711a",
+      "reason": "Public display normalization of trailing whitespace only; full original privately retained."
+    },
+    {
+      "path": "source-delta.patch",
+      "original_sha256": "9a482865619a684ae26f4b032f2907cdada3134849fd93c312a7ea9f45eba5ec",
+      "reason": "Public display normalization of trailing whitespace only; full original privately retained."
+    },
+    {
+      "path": "dpr-contrast-results.json",
+      "original_sha256": "48f5cb233af83b43487519ae7637d6cb91d8a75bfa7bab16fbcb8ea94de50620",
+      "reason": "Public display normalization of trailing whitespace only; full original privately retained."
+    },
+    {
+      "path": "hosted-assets.json",
+      "original_sha256": "69893322d8474ee1439d9ece4c7d2d870265539dbc91f185a29fe3a136822108",
+      "reason": "Public display normalization of trailing whitespace only; full original privately retained."
+    },
+    {
+      "path": "baseline-source-review.json",
+      "original_sha256": "8120e62bb0d7cb12fc25db62eafb0669cdc4445db8b7fd0f3c16b6f40b592fb2",
+      "reason": "Public display normalization of trailing whitespace only; full original privately retained."
+    },
+    {
+      "path": "visibility/states.json",
+      "original_sha256": "3881534f26a349ca653dcf58981b4c6d2165f8d5c7fcfa417903304cd2e3c4a1",
+      "reason": "Public display normalization of trailing whitespace only; full original privately retained."
+    },
+    {
+      "path": "visibility/identity.json",
+      "original_sha256": "744fa7da2fb28cf2df68bc34083665cf468e97e11a86d54a6b5edd7a3a61ddfd",
+      "reason": "Public display normalization of trailing whitespace only; full original privately retained."
+    },
+    {
+      "path": "visibility/visibility.json",
+      "original_sha256": "036445da41e44f3a4a1a6e2e8c7ae1c82db0753865af8601f897781e265b27ec",
+      "reason": "Public display normalization of trailing whitespace only; full original privately retained."
+    }
+  ],
+  "candidate_source_changed": false,
+  "qa_verdict_changed": false,
+  "recorded_at": "2026-09-11T22:05:18.861560+00:00"
+}

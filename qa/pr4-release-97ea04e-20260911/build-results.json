@@ -1,0 +1,41 @@
+[
+  {
+    "check": "ci",
+    "exit_code": 1,
+    "seconds": 70.72
+  },
+  {
+    "check": "ci-network-retry",
+    "exit_code": 0
+  },
+  {
+    "check": "lint",
+    "exit_code": 0,
+    "seconds": 0.76
+  },
+  {
+    "check": "typecheck",
+    "exit_code": 0,
+    "seconds": 1.49
+  },
+  {
+    "check": "test",
+    "exit_code": 0,
+    "seconds": 1.21
+  },
+  {
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 2.49
+  },
+  {
+    "check": "validate-build",
+    "exit_code": 0,
+    "seconds": 0.13
+  },
+  {
+    "check": "diff-check",
+    "exit_code": 0,
+    "seconds": 0.41
+  }
+]

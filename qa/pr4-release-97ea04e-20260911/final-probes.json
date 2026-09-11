@@ -1,0 +1,588 @@
+{
+  "headers": [
+    {
+      "requested": "http://127.0.0.1:4317/",
+      "final": "http://127.0.0.1:4317/",
+      "status": 200,
+      "xRobotsTag": null,
+      "metaRobots": [],
+      "canonical": [
+        "<link rel=\"canonical\" href=\"https://cumulativelabs.com\" />"
+      ]
+    },
+    {
+      "requested": "https://a8683876.cumulative-labs.pages.dev/",
+      "final": "https://a8683876.cumulative-labs.pages.dev/",
+      "status": 200,
+      "xRobotsTag": "noindex",
+      "metaRobots": [],
+      "canonical": [
+        "<link rel=\"canonical\" href=\"https://cumulativelabs.com\" />"
+      ]
+    },
+    {
+      "requested": "https://cumulativelabs.com/",
+      "final": "https://cumulativelabs.com/",
+      "status": 200,
+      "xRobotsTag": null,
+      "metaRobots": [],
+      "canonical": [
+        "<link rel=\"canonical\" href=\"https://cumulativelabs.com\" />"
+      ]
+    }
+  ],
+  "keyboard": [
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "states": [
+        {
+          "text": "Skip to content",
+          "label": null,
+          "isCTA": false,
+          "href": "#main-content",
+          "visible": true,
+          "outline": "2px",
+          "hit": false
+        },
+        {
+          "text": "",
+          "label": "Cumulative Labs home",
+          "isCTA": false,
+          "href": "#top",
+          "visible": true,
+          "outline": "2px",
+          "hit": true
+        },
+        {
+          "text": "Work",
+          "label": null,
+          "isCTA": false,
+          "href": "#work",
+          "visible": true,
+          "outline": "2px",
+          "hit": true
+        },
+        {
+          "text": "Why Cumulative",
+          "label": null,
+          "isCTA": false,
+          "href": "#mission",
+          "visible": true,
+          "outline": "2px",
+          "hit": true
+        },
+        {
+          "text": "Approach",
+          "label": null,
+          "isCTA": false,
+          "href": "#approach",
+          "visible": true,
+          "outline": "2px",
+          "hit": true
+        },
+        {
+          "text": "Principles",
+          "label": null,
+          "isCTA": false,
+          "href": "#principles",
+          "visible": true,
+          "outline": "2px",
+          "hit": true
+        },
+        {
+          "text": "Contact",
+          "label": null,
+          "isCTA": false,
+          "href": "mailto:accounts@cumulativelabs.ai",
+          "visible": true,
+          "outline": "2px",
+          "hit": true
+        },
+        {
+          "text": "See What We’re Building↗",
+          "label": null,
+          "isCTA": true,
+          "href": "#work",
+          "visible": true,
+          "outline": "2px",
+          "hit": true
+        },
+        {
+          "text": "Contact the Lab",
+          "label": null,
+          "isCTA": true,
+          "href": "#contact",
+          "visible": true,
+          "outline": "2px",
+          "hit": true
+        },
+        {
+          "text": "Scroll to explore",
+          "label": null,
+          "isCTA": false,
+          "href": "#work",
+          "visible": true,
+          "outline": "2px",
+          "hit": true
+        },
+        {
+          "text": "Contact Cumulative Labs→",
+          "label": null,
+          "isCTA": false,
+          "href": "mailto:accounts@cumulativelabs.ai",
+          "visible": true,
+          "outline": "2px",
+          "hit": false
+        },
+        {
+          "text": "accounts@cumulativelabs.ai",
+          "label": null,
+          "isCTA": false,
+          "href": "mailto:accounts@cumulativelabs.ai",
+          "visible": true,
+          "outline": "2px",
+          "hit": false
+        },
+        {
+          "text": "Skip to contentWorkWhy CumulativeApproachPrinciplesContact01",
+          "label": null,
+          "isCTA": false,
+          "href": null,
+          "visible": false,
+          "outline": "3px",
+          "hit": false
+        },
+        {
+          "text": "Skip to content",
+          "label": null,
+          "isCTA": false,
+          "href": "#main-content",
+          "visible": true,
+          "outline": "2px",
+          "hit": false
+        }
+      ],
+      "action": {
+        "url": "http://127.0.0.1:4317/#work",
+        "scrollY": 722
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "states": [
+        {
+          "text": "Skip to content",
+          "label": null,
+          "isCTA": false,
+          "href": "#main-content",
+          "visible": true,
+          "outline": "2px",
+          "hit": false
+        },
+        {
+          "text": "",
+          "label": "Cumulative Labs home",
+          "isCTA": false,
+          "href": "#top",
+          "visible": true,
+          "outline": "2px",
+          "hit": true
+        },
+        {
+          "text": "",
+          "label": "Open navigation menu",
+          "isCTA": false,
+          "href": null,
+          "visible": true,
+          "outline": "2px",
+          "hit": true
+        },
+        {
+          "text": "See What We’re Building↗",
+          "label": null,
+          "isCTA": true,
+          "href": "#work",
+          "visible": true,
+          "outline": "2px",
+          "hit": true
+        },
+        {
+          "text": "Contact the Lab",
+          "label": null,
+          "isCTA": true,
+          "href": "#contact",
+          "visible": true,
+          "outline": "2px",
+          "hit": true
+        },
+        {
+          "text": "Contact Cumulative Labs→",
+          "label": null,
+          "isCTA": false,
+          "href": "mailto:accounts@cumulativelabs.ai",
+          "visible": true,
+          "outline": "2px",
+          "hit": false
+        },
+        {
+          "text": "accounts@cumulativelabs.ai",
+          "label": null,
+          "isCTA": false,
+          "href": "mailto:accounts@cumulativelabs.ai",
+          "visible": true,
+          "outline": "2px",
+          "hit": false
+        },
+        {
+          "text": "Skip to contentWorkWhy CumulativeApproachPrinciplesContact01",
+          "label": null,
+          "isCTA": false,
+          "href": null,
+          "visible": false,
+          "outline": "3px",
+          "hit": false
+        },
+        {
+          "text": "Skip to content",
+          "label": null,
+          "isCTA": false,
+          "href": "#main-content",
+          "visible": true,
+          "outline": "2px",
+          "hit": false
+        },
+        {
+          "text": "",
+          "label": "Cumulative Labs home",
+          "isCTA": false,
+          "href": "#top",
+          "visible": true,
+          "outline": "2px",
+          "hit": true
+        },
+        {
+          "text": "",
+          "label": "Open navigation menu",
+          "isCTA": false,
+          "href": null,
+          "visible": true,
+          "outline": "2px",
+          "hit": true
+        },
+        {
+          "text": "See What We’re Building↗",
+          "label": null,
+          "isCTA": true,
+          "href": "#work",
+          "visible": true,
+          "outline": "2px",
+          "hit": false
+        },
+        {
+          "text": "Contact the Lab",
+          "label": null,
+          "isCTA": true,
+          "href": "#contact",
+          "visible": true,
+          "outline": "2px",
+          "hit": false
+        },
+        {
+          "text": "Contact Cumulative Labs→",
+          "label": null,
+          "isCTA": false,
+          "href": "mailto:accounts@cumulativelabs.ai",
+          "visible": true,
+          "outline": "2px",
+          "hit": false
+        }
+      ],
+      "action": {
+        "url": "http://127.0.0.1:4317/#work",
+        "scrollY": 663
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "states": [
+        {
+          "text": "Skip to content",
+          "label": null,
+          "isCTA": false,
+          "href": "#main-content",
+          "visible": true,
+          "outline": "2px",
+          "hit": false
+        },
+        {
+          "text": "",
+          "label": "Cumulative Labs home",
+          "isCTA": false,
+          "href": "#top",
+          "visible": true,
+          "outline": "2px",
+          "hit": true
+        },
+        {
+          "text": "Work",
+          "label": null,
+          "isCTA": false,
+          "href": "#work",
+          "visible": true,
+          "outline": "2px",
+          "hit": true
+        },
+        {
+          "text": "Why Cumulative",
+          "label": null,
+          "isCTA": false,
+          "href": "#mission",
+          "visible": true,
+          "outline": "2px",
+          "hit": true
+        },
+        {
+          "text": "Approach",
+          "label": null,
+          "isCTA": false,
+          "href": "#approach",
+          "visible": true,
+          "outline": "2px",
+          "hit": true
+        },
+        {
+          "text": "Principles",
+          "label": null,
+          "isCTA": false,
+          "href": "#principles",
+          "visible": true,
+          "outline": "2px",
+          "hit": true
+        },
+        {
+          "text": "Contact",
+          "label": null,
+          "isCTA": false,
+          "href": "mailto:accounts@cumulativelabs.ai",
+          "visible": true,
+          "outline": "2px",
+          "hit": true
+        },
+        {
+          "text": "See What We’re Building↗",
+          "label": null,
+          "isCTA": true,
+          "href": "#work",
+          "visible": true,
+          "outline": "2px",
+          "hit": true
+        },
+        {
+          "text": "Contact the Lab",
+          "label": null,
+          "isCTA": true,
+          "href": "#contact",
+          "visible": true,
+          "outline": "2px",
+          "hit": true
+        },
+        {
+          "text": "Scroll to explore",
+          "label": null,
+          "isCTA": false,
+          "href": "#work",
+          "visible": true,
+          "outline": "2px",
+          "hit": true
+        },
+        {
+          "text": "Contact Cumulative Labs→",
+          "label": null,
+          "isCTA": false,
+          "href": "mailto:accounts@cumulativelabs.ai",
+          "visible": true,
+          "outline": "2px",
+          "hit": false
+        },
+        {
+          "text": "accounts@cumulativelabs.ai",
+          "label": null,
+          "isCTA": false,
+          "href": "mailto:accounts@cumulativelabs.ai",
+          "visible": true,
+          "outline": "2px",
+          "hit": false
+        },
+        {
+          "text": "Skip to contentWorkWhy CumulativeApproachPrinciplesContact01",
+          "label": null,
+          "isCTA": false,
+          "href": null,
+          "visible": false,
+          "outline": "3px",
+          "hit": false
+        },
+        {
+          "text": "Skip to content",
+          "label": null,
+          "isCTA": false,
+          "href": "#main-content",
+          "visible": true,
+          "outline": "2px",
+          "hit": false
+        }
+      ],
+      "action": {
+        "url": "http://127.0.0.1:4317/#work",
+        "scrollY": 722
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "states": [
+        {
+          "text": "Skip to content",
+          "label": null,
+          "isCTA": false,
+          "href": "#main-content",
+          "visible": true,
+          "outline": "2px",
+          "hit": false
+        },
+        {
+          "text": "",
+          "label": "Cumulative Labs home",
+          "isCTA": false,
+          "href": "#top",
+          "visible": true,
+          "outline": "2px",
+          "hit": true
+        },
+        {
+          "text": "",
+          "label": "Open navigation menu",
+          "isCTA": false,
+          "href": null,
+          "visible": true,
+          "outline": "2px",
+          "hit": true
+        },
+        {
+          "text": "See What We’re Building↗",
+          "label": null,
+          "isCTA": true,
+          "href": "#work",
+          "visible": true,
+          "outline": "2px",
+          "hit": true
+        },
+        {
+          "text": "Contact the Lab",
+          "label": null,
+          "isCTA": true,
+          "href": "#contact",
+          "visible": true,
+          "outline": "2px",
+          "hit": true
+        },
+        {
+          "text": "Contact Cumulative Labs→",
+          "label": null,
+          "isCTA": false,
+          "href": "mailto:accounts@cumulativelabs.ai",
+          "visible": true,
+          "outline": "2px",
+          "hit": false
+        },
+        {
+          "text": "accounts@cumulativelabs.ai",
+          "label": null,
+          "isCTA": false,
+          "href": "mailto:accounts@cumulativelabs.ai",
+          "visible": true,
+          "outline": "2px",
+          "hit": false
+        },
+        {
+          "text": "Skip to contentWorkWhy CumulativeApproachPrinciplesContact01",
+          "label": null,
+          "isCTA": false,
+          "href": null,
+          "visible": false,
+          "outline": "3px",
+          "hit": false
+        },
+        {
+          "text": "Skip to content",
+          "label": null,
+          "isCTA": false,
+          "href": "#main-content",
+          "visible": true,
+          "outline": "2px",
+          "hit": false
+        },
+        {
+          "text": "",
+          "label": "Cumulative Labs home",
+          "isCTA": false,
+          "href": "#top",
+          "visible": true,
+          "outline": "2px",
+          "hit": true
+        },
+        {
+          "text": "",
+          "label": "Open navigation menu",
+          "isCTA": false,
+          "href": null,
+          "visible": true,
+          "outline": "2px",
+          "hit": true
+        },
+        {
+          "text": "See What We’re Building↗",
+          "label": null,
+          "isCTA": true,
+          "href": "#work",
+          "visible": true,
+          "outline": "2px",
+          "hit": false
+        },
+        {
+          "text": "Contact the Lab",
+          "label": null,
+          "isCTA": true,
+          "href": "#contact",
+          "visible": true,
+          "outline": "2px",
+          "hit": false
+        },
+        {
+          "text": "Contact Cumulative Labs→",
+          "label": null,
+          "isCTA": false,
+          "href": "mailto:accounts@cumulativelabs.ai",
+          "visible": true,
+          "outline": "2px",
+          "hit": false
+        }
+      ],
+      "action": {
+        "url": "http://127.0.0.1:4317/#work",
+        "scrollY": 663
+      }
+    }
+  ],
+  "versions": {
+    "chromium": "151.0.7922.34",
+    "webkit": "26.6"
+  },
+  "failures": [
+    "chromium 390 keyboard CTA",
+    "webkit 390 keyboard CTA"
+  ]
+}

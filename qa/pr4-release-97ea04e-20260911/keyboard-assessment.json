@@ -1,0 +1,121 @@
+{
+  "method": "Assess first actual traversal of each unique CTA href. Original probe stop compared uppercase CSS presentation with mixed-case textContent, failed to stop, and counted a second traversal after focus wrapping. Raw result retained; this is a harness assertion error, not a product failure.",
+  "results": [
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "firstTraversalCTAs": [
+        {
+          "text": "See What We\u2019re Building\u2197",
+          "label": null,
+          "isCTA": true,
+          "href": "#work",
+          "visible": true,
+          "outline": "2px",
+          "hit": true
+        },
+        {
+          "text": "Contact the Lab",
+          "label": null,
+          "isCTA": true,
+          "href": "#contact",
+          "visible": true,
+          "outline": "2px",
+          "hit": true
+        }
+      ],
+      "pass": true,
+      "action": {
+        "url": "http://127.0.0.1:4317/#work",
+        "scrollY": 722
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "firstTraversalCTAs": [
+        {
+          "text": "See What We\u2019re Building\u2197",
+          "label": null,
+          "isCTA": true,
+          "href": "#work",
+          "visible": true,
+          "outline": "2px",
+          "hit": true
+        },
+        {
+          "text": "Contact the Lab",
+          "label": null,
+          "isCTA": true,
+          "href": "#contact",
+          "visible": true,
+          "outline": "2px",
+          "hit": true
+        }
+      ],
+      "pass": true,
+      "action": {
+        "url": "http://127.0.0.1:4317/#work",
+        "scrollY": 663
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "firstTraversalCTAs": [
+        {
+          "text": "See What We\u2019re Building\u2197",
+          "label": null,
+          "isCTA": true,
+          "href": "#work",
+          "visible": true,
+          "outline": "2px",
+          "hit": true
+        },
+        {
+          "text": "Contact the Lab",
+          "label": null,
+          "isCTA": true,
+          "href": "#contact",
+          "visible": true,
+          "outline": "2px",
+          "hit": true
+        }
+      ],
+      "pass": true,
+      "action": {
+        "url": "http://127.0.0.1:4317/#work",
+        "scrollY": 722
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "firstTraversalCTAs": [
+        {
+          "text": "See What We\u2019re Building\u2197",
+          "label": null,
+          "isCTA": true,
+          "href": "#work",
+          "visible": true,
+          "outline": "2px",
+          "hit": true
+        },
+        {
+          "text": "Contact the Lab",
+          "label": null,
+          "isCTA": true,
+          "href": "#contact",
+          "visible": true,
+          "outline": "2px",
+          "hit": true
+        }
+      ],
+      "pass": true,
+      "action": {
+        "url": "http://127.0.0.1:4317/#work",
+        "scrollY": 663
+      }
+    }
+  ]
+}
