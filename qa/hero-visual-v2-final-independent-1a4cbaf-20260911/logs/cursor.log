@@ -1,0 +1,12 @@
+[
+  {
+    engine: 'chromium',
+    moves: [ [Object], [Object], [Object] ],
+    ambiguousCount: 5
+  },
+  {
+    engine: 'webkit',
+    moves: [ [Object], [Object], [Object] ],
+    ambiguousCount: 1
+  }
+]

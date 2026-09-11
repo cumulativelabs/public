@@ -1,0 +1,28 @@
+{
+  "commit": "6e81f50bcd2a2b9af4d79dcad1ecaaf17e142266",
+  "result": "INCOMPLETE_EVIDENCE_PACKAGE",
+  "missing": [
+    "logs/performance.log",
+    "logs/validate-build.log",
+    "logs/lint.log",
+    "logs/npm-ci.log",
+    "logs/test.log",
+    "logs/tablet.log",
+    "logs/typecheck.log",
+    "logs/diff-check.log",
+    "logs/immutable-matrix.log",
+    "logs/switch.log",
+    "logs/baseline-build.log",
+    "logs/contrast.log",
+    "logs/local-matrix.log",
+    "logs/extra.log",
+    "logs/final.log",
+    "logs/focus.log",
+    "logs/cursor.log",
+    "logs/persistence-check-first.log",
+    "logs/build.log"
+  ],
+  "different": [],
+  "cause": "Git ignore patterns excluded .log evidence from the initial ordinary git add. Substantive QA result unchanged.",
+  "guardrail": "Force-add only the explicitly authorized QA directory, then assert every manifest file has the expected Git index blob before push and verify remote tree against every evidence file."
+}

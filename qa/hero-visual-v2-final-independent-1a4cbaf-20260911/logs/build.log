@@ -1,0 +1,27 @@
+
+> cumulative-labs-public-website@0.1.0 prebuild
+> npm run assets
+
+
+> cumulative-labs-public-website@0.1.0 assets
+> node scripts/generate-assets.mjs
+
+Generated 2 optimized raster assets.
+
+> cumulative-labs-public-website@0.1.0 build
+> tsc -b && vite build
+
+vite v7.3.1 building client environment for production...
+transforming...
+✓ 62 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   2.32 kB │ gzip:  0.68 kB
+dist/assets/index-PQu7MiT7.css   67.31 kB │ gzip: 14.14 kB
+dist/assets/index-DEsgdTzj.js   229.64 kB │ gzip: 72.78 kB
+✓ built in 465ms
+
+> cumulative-labs-public-website@0.1.0 postbuild
+> node scripts/prerender.mjs
+
+Prerendered the complete public homepage.

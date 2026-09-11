@@ -1,0 +1,1 @@
+QA evidence staging check exited 2: literal blank context lines in the saved baseline unified diff were flagged as trailing whitespace at lines 229, 242, 253. Product git diff --check had passed. Raw diff preserved losslessly as baseline-source.diff.gz; readable .diff whitespace-normalized. No product changes.

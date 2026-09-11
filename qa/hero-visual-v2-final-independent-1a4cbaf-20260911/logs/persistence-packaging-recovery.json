@@ -1,0 +1,18 @@
+{
+  "classification": "HANDOFF FAILURE \u2014 evidence packaging; resolved locally, remote check pending",
+  "occurrences": [
+    {
+      "stage": "initial staging",
+      "failure": "Nested diff blank context whitespace at lines 229, 242, 253"
+    },
+    {
+      "stage": "expanded log staging",
+      "failure": "Exact test/typecheck command output ends with extra blank lines"
+    }
+  ],
+  "additionalGap": "Ordinary git add omitted *.log due to repository ignore rule; initial remote readback correctly rejected package.",
+  "guardrail": "Preserve exact collected outputs as gzip; normalize display-only log whitespace; force-add only QA evidence directory; require every evidence file to match index blob; check staged whitespace; then remote tree/blob and full-report-byte equality before claiming persistence.",
+  "benefit": "Prevents missing command transcripts or raw-evidence loss during QA handoff.",
+  "laterMeasurement": "Pending reuse in a later task; current packaging check will provide immediate validation.",
+  "decision": "Keep bounded QA packaging guard; no product or shared policy modification."
+}

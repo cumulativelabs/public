@@ -12,8 +12,8 @@
     "sha256": "dc095399a5dad22320b80a28b1fde0b9b5e2f9ddaa261cf688d08b7153bb6f1e"
   },
   "REPORT.md": {
-    "bytes": 15881,
-    "sha256": "a0c5bbe3756e784c6a8fadae2a00da154c86d363b88e82faed6a7ff633b9cfd7"
+    "bytes": 16545,
+    "sha256": "e83bf679c5127180f5b9de763ff2e1da22372924dbd7cc9fe194a685a1661dba"
   },
   "chromium-320-scrolled.png": {
     "bytes": 122320,
@@ -395,6 +395,26 @@
     "bytes": 4724,
     "sha256": "4f24ab090941c79f0eb41c1f5bfe50d4ca74bcaa96665efe2320bfd3a68509fa"
   },
+  "logs/contrast.log.gz": {
+    "bytes": 110,
+    "sha256": "506639ef1d6c4f5c1423d4fb0d3c430dbc968b1d77473278076a0a44a45747dd"
+  },
+  "logs/persistence-check-first.log.gz": {
+    "bytes": 224,
+    "sha256": "afbabad11c713f53f5409a93c244f12e87f4ad385d97b8472ced38a933712c6f"
+  },
+  "logs/typecheck.log.gz": {
+    "bytes": 89,
+    "sha256": "7f5b98c0e17348acd0bfcebebd1ee048c3f68309abe3a6e2530493d059785167"
+  },
+  "logs/build.log.gz": {
+    "bytes": 384,
+    "sha256": "c48174cd871f9577c1832a7443bf46ab7a377c06b8331f30c38e5cc2fae2cf5c"
+  },
+  "logs/immutable-matrix.log.gz": {
+    "bytes": 145,
+    "sha256": "2d1e73bec0a0141e831c4f0db3a69a1197541d84a59714b5d9bcabd6cbfd7a10"
+  },
   "logs/validate-build.log": {
     "bytes": 137,
     "sha256": "5888f71b594060abb5a074888e242450d336b9aa7bc7b47caf6984ff11967758"
@@ -407,9 +427,21 @@
     "bytes": 895,
     "sha256": "d067c9359a58ab5659cfe0d7457ff35c1082e5fd2461c9a0b7ef9c85ee177dc2"
   },
+  "logs/extra.log.gz": {
+    "bytes": 20,
+    "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+  },
+  "logs/persistence-packaging-recovery.json": {
+    "bytes": 1120,
+    "sha256": "1584367ce1336a5a839ebe6bc281172f988ac787135ca2c18baa0411fe17da56"
+  },
   "logs/test.log": {
-    "bytes": 258,
-    "sha256": "c632fa681f6bdf730f000a0de1057e615ef57ff847b89dbd3e834bafe0abf45b"
+    "bytes": 257,
+    "sha256": "6e453afc9762fa92b3f0059bf4822e18c3098a71ec829e16ac6d66538194ec85"
+  },
+  "logs/npm-ci.log.gz": {
+    "bytes": 442,
+    "sha256": "d6077b939ca84251dbe576b7fcbdac36647e649ab69602aa397d48229afda9cf"
   },
   "logs/command-results.json": {
     "bytes": 426,
@@ -420,16 +452,16 @@
     "sha256": "4eb116463d47f6e3e7669982ff33073a222592fbfd592a4635c1aea38d1a18ca"
   },
   "logs/tablet.log": {
-    "bytes": 0,
-    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "bytes": 1,
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
   },
   "logs/typecheck.log": {
-    "bytes": 75,
-    "sha256": "cd0773e4e8aba54763a976b58e4f8097a97ac5d943e77936fef6c96d532c75e1"
+    "bytes": 74,
+    "sha256": "789e94d75a62dcade187014cee83ce5c986ac2542fa26f47db28121039fa0c30"
   },
   "logs/diff-check.log": {
-    "bytes": 0,
-    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "bytes": 1,
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
   },
   "logs/immutable-matrix.log": {
     "bytes": 268,
@@ -443,6 +475,14 @@
     "bytes": 4166,
     "sha256": "eea8eb1f8ddb4076299dbd4954f6c50bcb6208a2ba100269beeceedd32cbe664"
   },
+  "logs/persistence-readback-first.json": {
+    "bytes": 958,
+    "sha256": "25a440c0374e29b83707c25cb67cdba390ead65c450cae151d6da7f43583b4f6"
+  },
+  "logs/focus.log.gz": {
+    "bytes": 20,
+    "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+  },
   "logs/baseline-build.log": {
     "bytes": 726,
     "sha256": "ac3f4bfd50872cbb45d7a56b56ea4dfba95f3cb0ed5e35f3774bcbfaa55ab921"
@@ -451,21 +491,53 @@
     "bytes": 192,
     "sha256": "435b1df915c071269a2dece4c4bd65ec81ff1677e4e3c0043ef9cb5fe6921d7d"
   },
+  "logs/validate-build.log.gz": {
+    "bytes": 124,
+    "sha256": "7309943a9ce8ab2e91ebfd2e86c1ad0af86f43a4a2dbe6517b63f31e1b7f92a7"
+  },
   "logs/local-matrix.log": {
     "bytes": 268,
     "sha256": "c598fcda08641d74b9b52d5bedabf91c4568baff9841872a8183b4f711c3201e"
   },
   "logs/extra.log": {
-    "bytes": 0,
-    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "bytes": 1,
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  "logs/local-matrix.log.gz": {
+    "bytes": 145,
+    "sha256": "2d1e73bec0a0141e831c4f0db3a69a1197541d84a59714b5d9bcabd6cbfd7a10"
+  },
+  "logs/test.log.gz": {
+    "bytes": 210,
+    "sha256": "41524d21066fdb063171793e1bec5d804e8d0e16ffc87856b21eeabdda8d87e0"
+  },
+  "logs/diff-check.log.gz": {
+    "bytes": 20,
+    "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+  },
+  "logs/switch.log.gz": {
+    "bytes": 37,
+    "sha256": "1debf4de492ba23bf8cb4995750d7c3079f4559e7b6832f16868406b9e3a54e9"
+  },
+  "logs/cursor.log.gz": {
+    "bytes": 111,
+    "sha256": "65626024a5f609b141e8e2a355fb54dd440bff5e4bd84d12e510b1319a01bd56"
   },
   "logs/final.log": {
-    "bytes": 0,
-    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "bytes": 1,
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  "logs/performance.log.gz": {
+    "bytes": 785,
+    "sha256": "7c7a62f5a83348971b339dc145c44bb42903b5ac05ea55375acfea12f8f61e0a"
   },
   "logs/focus.log": {
-    "bytes": 0,
-    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "bytes": 1,
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  "logs/tablet.log.gz": {
+    "bytes": 20,
+    "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
   },
   "logs/cursor.log": {
     "bytes": 201,
@@ -475,9 +547,21 @@
     "bytes": 312,
     "sha256": "d1e2cce4a7f0ef3aea86ee9c0dfca9a6005bf6d77a6950438172d098362c9125"
   },
+  "logs/baseline-build.log.gz": {
+    "bytes": 381,
+    "sha256": "b5d85bec993ea304989070ea3d43e4740c01f5ca7d3af5c0296eba9922ffcc41"
+  },
+  "logs/final.log.gz": {
+    "bytes": 20,
+    "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+  },
   "logs/baseline-source.diff.gz": {
     "bytes": 29871,
     "sha256": "d74fb473fb6bab083fd126b60ab88ecaea4defb9fea67ec848c54e6aeeafb90c"
+  },
+  "logs/lint.log.gz": {
+    "bytes": 114,
+    "sha256": "7a82894407b78b9252636c4cd781ebc3221224fc6a7d884dcf010f588e7ec99c"
   },
   "logs/build.log": {
     "bytes": 726,
