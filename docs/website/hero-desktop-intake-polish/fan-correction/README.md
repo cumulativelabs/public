@@ -1,3 +1,5 @@
+> The Founder rejected the cursor-strand visibility assessment below. Its geometry evidence is retained. See the [composited visibility correction and independent-review handoff](cursor-visibility/README.md) for the new candidate.
+
 # Cursor-reaching desktop intake correction
 
 The Founder rejected the preceding interaction: the broad production fan was restored, but the 155px local influence and roughly 21px maximum displacement could not visibly reach a cursor hundreds of pixels left of it. The screenshot supplied with this assignment showed no unmistakable cursor-reaching fibers. That feedback supersedes the historical assessment of the gentle attraction below.
