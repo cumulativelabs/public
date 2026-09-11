@@ -42,8 +42,8 @@
 @media (min-width: 781px) {
   .hero-section__copy::before {
     content: ''; position: absolute; z-index: -1; pointer-events: none;
-    inset: -1rem -3rem -1rem -1rem;
-    background: linear-gradient(90deg, #030811d9 calc(100% - 3rem), transparent);
+    inset: -1rem -3rem -1rem -7rem;
+    background: linear-gradient(90deg, transparent, #030811d9 6rem, #030811d9 calc(100% - 3rem), transparent);
     mask-image: linear-gradient(transparent, #000 1rem, #000 calc(100% - 1rem), transparent);
     -webkit-mask-image: linear-gradient(transparent, #000 1rem, #000 calc(100% - 1rem), transparent);
   }

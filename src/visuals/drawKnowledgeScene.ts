@@ -25,14 +25,15 @@ function traceCurve(context: CanvasRenderingContext2D, curve: Curve, layout: Sce
   return Math.max(start.influence, c1.influence, c2.influence);
 }
 
-function makeInbound(index: number, count: number): Curve {
+function makeInbound(index: number, count: number, extension = 0): Curve {
   const n = count === 1 ? 0 : index / (count - 1);
   const spread = (n - 0.5) * 470;
   const jitter = (randomUnit(index + 10) - 0.5) * 62;
   return {
-    x0: -470 - randomUnit(index + 22) * 80,
+    // Extend only the desktop approach; retain the final control point and inlet.
+    x0: -470 - randomUnit(index + 22) * 80 - extension,
     y0: spread + jitter,
-    c1x: -315 + randomUnit(index + 44) * 70,
+    c1x: -315 + randomUnit(index + 44) * 70 - extension * 0.54,
     c1y: spread * 1.04 + (randomUnit(index + 66) - 0.5) * 105,
     c2x: -145 + randomUnit(index + 88) * 40,
     c2y: spread * 0.12 + (randomUnit(index + 110) - 0.5) * 28,
@@ -293,7 +294,7 @@ export function drawKnowledgeScene(context: CanvasRenderingContext2D, scene: Kno
   drawAtmosphere(context, layout);
   drawSignalDust(context, layout, time, staticOnly);
 
-  const inbound = Array.from({ length: 86 }, (_, i) => makeInbound(i, 86));
+  const inbound = Array.from({ length: 86 }, (_, i) => makeInbound(i, 86, layout.intakeExtension));
   const outbound = Array.from({ length: 62 }, (_, i) => makeOutbound(i, 62));
   inbound.forEach((curve, i) => {
     const tier = i % 11 === 0 ? 1 : i % 5 === 0 ? 0.72 : i % 2 === 0 ? 0.42 : 0.26;

@@ -13,7 +13,7 @@ for(const [engineName,engine,executablePath] of [['chromium',chromium,process.en
   for(const state of [{time:0},{time:3},{time:8},{time:14},{time:28},{time:56},{time:8,pointer:true},{time:28,static:true}]) {
    await page.evaluate(state=>{
     const root=document.querySelector('.hero-knowledge'),canvas=root.querySelector('canvas'),r=root.getBoundingClientRect(),a=document.querySelector('.hero-section__mark').getBoundingClientRect();const mobile=innerWidth<=780;
-    const layout={cx:a.x+a.width/2-r.x,cy:a.y+a.height/2-r.y,scale:r.width/(mobile?430*76/57:1440),flatten:1};
+    const layout={cx:a.x+a.width/2-r.x,cy:a.y+a.height/2-r.y,scale:r.width/(mobile?430*76/57:1440),flatten:1,intakeExtension:mobile?0:650};
     ContrastRenderer.drawKnowledgeScene(canvas.getContext('2d'),ContrastRenderer.createKnowledgeScene(),layout,r.width,r.height,state.time,{x:layout.cx-180,y:layout.cy-20,strength:state.pointer?1:0},!!state.static);
    },state);
    // Include below-fold CTA labels on the narrowest phone without resizing the layout.

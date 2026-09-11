@@ -110,6 +110,7 @@ export function HeroKnowledgeField() {
         cy: box.top - bounds.top + box.height / 2,
         scale: width / (art.width * art.unitScale),
         flatten: 1,
+        intakeExtension: mobile ? 0 : 650,
       };
       const dpr = Math.min(devicePixelRatio || 1, mobile ? 1.4 : 1.5);
       canvas.width = Math.round(width * dpr); canvas.height = Math.round(height * dpr);
