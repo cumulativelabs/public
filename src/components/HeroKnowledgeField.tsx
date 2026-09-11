@@ -50,6 +50,7 @@ export function HeroKnowledgeField() {
     let bounds = root.getBoundingClientRect();
     let layout: SceneLayout = { cx: 0, cy: 0, scale: 1, flatten: 1 };
     let pointer: Pointer = { x: -1000, y: -1000, strength: 0 };
+    const intakePointer: Pointer = { x: -1000, y: -1000, strength: 0 };
     let target = 0; let pending: { x: number; y: number } | null = null;
     let boundsDirty = true; let visible = false; let disposed = false;
     let timer = 0; let raf = 0; let last = 0; let elapsed = 0;
@@ -61,7 +62,7 @@ export function HeroKnowledgeField() {
       clearTimeout(timer); cancelAnimationFrame(raf); timer = 0; raf = 0; last = 0;
     };
     const resetPointer = () => {
-      pending = null; target = 0; pointer.strength = 0;
+      pending = null; target = 0; pointer.strength = 0; intakePointer.strength = 0;
       root.dataset.pointerActive = 'false';
     };
     const mode = () => {
@@ -69,7 +70,7 @@ export function HeroKnowledgeField() {
       root.dataset.pointerInteraction = interactive() ? 'enabled' : 'disabled';
     };
     const render = () => {
-      drawKnowledgeScene(context, scene, layout, width, height, elapsed, pointer, staticOnly());
+      drawKnowledgeScene(context, scene, layout, width, height, elapsed, pointer, staticOnly(), intakePointer);
       root.dataset.ready = 'true';
     };
     const frame = (now: number) => {
@@ -80,6 +81,7 @@ export function HeroKnowledgeField() {
       if (pending && interactive()) {
         if (boundsDirty) { bounds = root.getBoundingClientRect(); boundsDirty = false; }
         const p = mapPointer(pending, bounds, width, height);
+        if (intakePointer.strength < 0.01) { intakePointer.x = p.x; intakePointer.y = p.y; }
         pointer.x = p.x; pointer.y = p.y;
         target = p.x >= 0 && p.y >= 0 && p.x <= width && p.y <= height ? 1 : 0;
         pending = null;
@@ -88,6 +90,11 @@ export function HeroKnowledgeField() {
         mode();
       }
       pointer.strength += (target - pointer.strength) * (1 - Math.exp(-delta * 12));
+      // Only the new desktop continuations use this eased attractor.
+      const follow = 1 - Math.exp(-delta * 10);
+      intakePointer.x += (pointer.x - intakePointer.x) * follow;
+      intakePointer.y += (pointer.y - intakePointer.y) * follow;
+      intakePointer.strength = pointer.strength;
       const started = performance.now(); render();
       if (performance.now() - started > 8) expensiveFrames += 1;
       else expensiveFrames = Math.max(0, expensiveFrames - 1);
