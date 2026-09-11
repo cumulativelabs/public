@@ -32,6 +32,21 @@
 }
 .hero-section__mark .brand-symbol { width: 31%; filter: drop-shadow(0 0 18px #ff4b971f) drop-shadow(0 0 38px #9448e61a); }
 .hero-section__inner { z-index: 3; }
+/* Keep the keyboard indicator distinct where artwork or the header crosses it. */
+.hero-section__actions a:focus-visible, .skip-link:focus-visible {
+  outline: 2px solid #ff9bca; outline-offset: 3px;
+  box-shadow: 0 0 0 7px #030811;
+}
+/* Bound luminous artwork beneath copy; keep the core and output unobscured. */
+@media (min-width: 781px) {
+  .hero-section__copy::before {
+    content: ''; position: absolute; z-index: -1; pointer-events: none;
+    inset: -1rem -3rem -1rem -1rem;
+    background: linear-gradient(90deg, #030811d9 calc(100% - 3rem), transparent);
+    mask-image: linear-gradient(transparent, #000 1rem, #000 calc(100% - 1rem), transparent);
+    -webkit-mask-image: linear-gradient(transparent, #000 1rem, #000 calc(100% - 1rem), transparent);
+  }
+}
 @media (max-width: 1000px) and (min-width: 781px) {
   .hero-section__mark .brand-symbol { width: 34%; }
 }
@@ -54,6 +69,14 @@
   .hero-knowledge__plate img { object-fit: fill; opacity: 1; }
   .hero-knowledge__canvas { opacity: .48; }
   .hero-section__actions .button { position: relative; z-index: 1; }
+}
+/* The capped phone plate exposes its edges on tablets. Fade the shared plane,
+   including the live/fallback layer, without moving its core or either port. */
+@media (min-width: 431px) and (max-width: 780px) {
+  .hero-knowledge {
+    mask-image: linear-gradient(90deg, transparent, #000 18%, #000 96%, transparent);
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 18%, #000 96%, transparent);
+  }
 }
 @media (prefers-reduced-motion: reduce) {
   .hero-knowledge *, .hero-section__mark { animation: none !important; transition: none !important; }

@@ -11,7 +11,7 @@ const instrument = () => {
   window.__nexus = { arcs: [], draws: 0 };
   const p = CanvasRenderingContext2D.prototype, clear = p.clearRect, arc = p.arc;
   p.clearRect = function(...args) { if (this.canvas.classList.contains('hero-knowledge__canvas')) { window.__nexus.arcs = []; window.__nexus.draws++; } return clear.apply(this,args); };
-  p.arc = function(...args) { if (this.canvas.classList.contains('hero-knowledge__canvas')) window.__nexus.arcs.push(args); return arc.apply(this,args); };
+  p.arc = function(...args) { if (this.canvas.classList.contains('hero-knowledge__canvas')) window.__nexus.arcs.push({ args, permanentStyle: this.globalCompositeOperation === 'source-over' && this.strokeStyle instanceof CanvasGradient }); return arc.apply(this,args); };
 };
 const measure = async page => page.evaluate(async () => {
   const field = document.querySelector('.hero-knowledge'), image = field.querySelector('picture img');
@@ -28,8 +28,8 @@ const measure = async page => page.evaluate(async () => {
   const flare = project(Number(inlet.getAttribute('cx')),Number(inlet.getAttribute('cy')));
   const nativePortRadius = axis.x - Number(svg.dataset.nexusInlet);
   const scale = canvas.width / vb[2] * nativePortRadius / 76;
-  const rings = window.__nexus.arcs.filter(a => Math.abs(a[2]-76*scale)<0.05);
-  const allRings = window.__nexus.arcs.filter(a => [76,85.5,95,104.5,114,123.5].some(r=>Math.abs(a[2]-r*scale)<0.05));
+  const rings = window.__nexus.arcs.filter(a => a.permanentStyle).map(a => a.args).filter(a => Math.abs(a[2]-76*scale)<0.05);
+  const allRings = window.__nexus.arcs.filter(a => a.permanentStyle).map(a => a.args).filter(a => [76,85.5,95,104.5,114,123.5].some(r=>Math.abs(a[2]-r*scale)<0.05));
   const coreOffset = allRings.map(a=>delta({x:canvas.x+a[0],y:canvas.y+a[1]}));
   const fallback = field.querySelector('svg.hero-knowledge__fallback');
   const transform = fallback.getScreenCTM();
@@ -52,7 +52,7 @@ for(const [engineName,engine,exe] of [['chromium',chromium,process.env.CHROMIUM_
     page.on('pageerror',e=>errors.push(e.message)); page.on('console',m=>{if(m.type()==='error')errors.push(m.text());});
     const response=await page.goto(url,{waitUntil:'networkidle'});await page.waitForTimeout(180);
     const initial=await measure(page);verify(initial,label);
-    if(width===1440||width===390||width===430) await page.screenshot({path:`${out}/after-${label}.png`});
+    await page.screenshot({path:`${out}/after-${label}.png`});
     if(width===390&&engineName==='webkit') {
       await page.evaluate(()=>{document.documentElement.style.scrollBehavior='auto';scrollTo(0,document.querySelector('.hero-section__body').getBoundingClientRect().top-100);});
       await page.waitForTimeout(120);await page.screenshot({path:`${out}/after-mobile-scrolled.png`});
