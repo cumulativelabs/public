@@ -25,7 +25,7 @@ Regression support: `src/visuals/fixtures/production-intake.json`, `src/visuals/
 
 ## Fan-width parity
 
-**Passed.** The browser probe checks five static and eight live x-slices at each of the three desktop sizes in both engines: 78 comparisons. All original fan spans match production within 0.001 CSS px; all 115 static paths and 86 live curves are present. Unit tests additionally verify verbatim static paths, exact live curve coordinates, matching join tangents, and a continuation-inclusive envelope no narrower than production.
+**Passed.** The browser probe checks five static and eight live x-slices at each of the three desktop sizes in both engines: 78 comparisons. All original fan spans match production within 0.001 CSS px; all 115 static paths and 86 live curves are present. Unit tests additionally verify verbatim static paths, live curve coordinates within 1e-8 scene units, matching join tangents, and a continuation-inclusive envelope no narrower than production.
 
 Native artwork spans illustrate the rejected regression and its correction ([measurements](probes/reference-spans.json)):
 
@@ -51,7 +51,7 @@ Native artwork spans illustrate the rejected regression and its correction ([mea
 - [Phone/tablet comparison](probes/mobile-comparison.json): all eight screenshots at **768×1024, 430×932, 390×844, and 320×568** are byte-identical to both production and the preceding PR candidate.
 - Visual inspection of the actual 1440×900, 1280×800 and 1024×768 screenshots in both engines confirmed the broad production fan, continuous left entry, preserved readability, no hard plate edge, no detached hotspot/double output, and unobstructed CTAs.
 
-One discarded local iteration used long backward tangent extrapolation, which produced stray diagonals; its [screenshot](probes/discarded-long-tangent.png) is retained. It was replaced by bounded tangent handles before the substantive commit. One test initially imposed an arbitrary fewer-than-half subset limit; the 155px influence radius legitimately reached 49 of 86 curves at that test location. The corrected assertion verifies a proper subset, local extension-only movement, fixed original/output curves, and no mobile extension. All final assertions pass.
+One discarded local iteration used long backward tangent extrapolation, which produced stray diagonals; its [screenshot](probes/discarded-long-tangent.png) is retained. It was replaced by bounded tangent handles before the substantive commit. One test initially imposed an arbitrary fewer-than-half subset limit; the 155px influence radius legitimately reached 49 of 86 curves at that test location. The corrected assertion verifies a proper subset, local extension-only movement, fixed original/output curves, and no mobile extension. All final local assertions pass. The [first remote CI run](https://github.com/cumulativelabs/public/actions/runs/34633377046) subsequently exposed a cross-runtime `Math.sin` last-bit difference of about 1.82e-11 in one fixture coordinate. The test now compares canvas coordinates/envelopes within 1e-8 scene units; SVG preservation remains verbatim and the browser tolerance remains 0.001 CSS px. This test-only portability correction leaves the rendered candidate unchanged.
 
 ## Desktop visual comparisons
 

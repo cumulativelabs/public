@@ -50,9 +50,16 @@ describe('production intake fan preservation', () => {
   it('paints all 86 original live curves unchanged, with no narrower x-slice', () => {
     const current = paintedCurves(650);
     const original = current.filter(c => c[6] === -76);
-    expect(original).toEqual(production.canvasCurves);
+    // Math.sin may differ in its last bits across JS runtimes. Keep the
+    // immutable fixture comparison far below a rendered pixel (1e-8 units).
+    expect(original).toHaveLength(production.canvasCurves.length);
+    original.forEach((curve,i) => curve.forEach((value,j) => {
+      expect(Math.abs(value-production.canvasCurves[i][j])).toBeLessThan(1e-8);
+    }));
     for (const x of [-460,-420,-360,-300,-240,-180,-120,-80]) {
-      expect(envelope(original,x)).toEqual(envelope(production.canvasCurves,x));
+      const actual = envelope(original,x), expected = envelope(production.canvasCurves,x);
+      expect(Math.abs(actual.top-expected.top)).toBeLessThan(1e-8);
+      expect(Math.abs(actual.bottom-expected.bottom)).toBeLessThan(1e-8);
     }
   });
   it('attracts only nearby extensions and leaves the production fan and output fixed', () => {
