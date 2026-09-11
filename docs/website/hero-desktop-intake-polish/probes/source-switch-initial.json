@@ -1,0 +1,144 @@
+{
+  "method": "Fresh built page at1440; hold only mobile SVG response during resize to768, inspect at150ms, then release and inspect settled. Tests live and no-Canvas fallback; no browser preference changes.",
+  "results": [
+    {
+      "engine": "chromium",
+      "noCanvas": false,
+      "heldState": {
+        "artReady": "false",
+        "plateVisibility": "hidden",
+        "source": "",
+        "canvasReady": "true",
+        "fallbackVisible": false,
+        "overflow": false
+      },
+      "settled": {
+        "artReady": "true",
+        "plateVisibility": "visible",
+        "source": "/visuals/hero-nexus-anchored-mobile.svg",
+        "canvasReady": "true",
+        "fallbackVisible": false,
+        "overflow": false
+      },
+      "reversed": {
+        "artReady": "true",
+        "plateVisibility": "visible",
+        "source": "/visuals/hero-nexus-anchored-desktop.svg",
+        "canvasReady": "true",
+        "fallbackVisible": false,
+        "overflow": false
+      },
+      "repeated": {
+        "artReady": "true",
+        "plateVisibility": "visible",
+        "source": "/visuals/hero-nexus-anchored-mobile.svg",
+        "canvasReady": "true",
+        "fallbackVisible": false,
+        "overflow": false
+      }
+    },
+    {
+      "engine": "chromium",
+      "noCanvas": true,
+      "heldState": {
+        "artReady": "false",
+        "plateVisibility": "hidden",
+        "source": "",
+        "fallbackVisible": true,
+        "overflow": false
+      },
+      "settled": {
+        "artReady": "true",
+        "plateVisibility": "visible",
+        "source": "/visuals/hero-nexus-anchored-mobile.svg",
+        "fallbackVisible": true,
+        "overflow": false
+      },
+      "reversed": {
+        "artReady": "true",
+        "plateVisibility": "visible",
+        "source": "/visuals/hero-nexus-anchored-desktop.svg",
+        "fallbackVisible": true,
+        "overflow": false
+      },
+      "repeated": {
+        "artReady": "true",
+        "plateVisibility": "visible",
+        "source": "/visuals/hero-nexus-anchored-mobile.svg",
+        "fallbackVisible": true,
+        "overflow": false
+      }
+    },
+    {
+      "engine": "webkit",
+      "noCanvas": false,
+      "heldState": {
+        "artReady": "true",
+        "plateVisibility": "visible",
+        "source": "/visuals/hero-nexus-anchored-mobile.svg",
+        "canvasReady": "true",
+        "fallbackVisible": false,
+        "overflow": false
+      },
+      "settled": {
+        "artReady": "true",
+        "plateVisibility": "visible",
+        "source": "/visuals/hero-nexus-anchored-mobile.svg",
+        "canvasReady": "true",
+        "fallbackVisible": false,
+        "overflow": false
+      },
+      "reversed": {
+        "artReady": "true",
+        "plateVisibility": "visible",
+        "source": "/visuals/hero-nexus-anchored-desktop.svg",
+        "canvasReady": "true",
+        "fallbackVisible": false,
+        "overflow": false
+      },
+      "repeated": {
+        "artReady": "true",
+        "plateVisibility": "visible",
+        "source": "/visuals/hero-nexus-anchored-mobile.svg",
+        "canvasReady": "true",
+        "fallbackVisible": false,
+        "overflow": false
+      }
+    },
+    {
+      "engine": "webkit",
+      "noCanvas": true,
+      "heldState": {
+        "artReady": "false",
+        "plateVisibility": "hidden",
+        "source": "/visuals/hero-nexus-anchored-mobile.svg",
+        "fallbackVisible": true,
+        "overflow": false
+      },
+      "settled": {
+        "artReady": "true",
+        "plateVisibility": "visible",
+        "source": "/visuals/hero-nexus-anchored-mobile.svg",
+        "fallbackVisible": true,
+        "overflow": false
+      },
+      "reversed": {
+        "artReady": "true",
+        "plateVisibility": "visible",
+        "source": "/visuals/hero-nexus-anchored-desktop.svg",
+        "fallbackVisible": true,
+        "overflow": false
+      },
+      "repeated": {
+        "artReady": "true",
+        "plateVisibility": "visible",
+        "source": "/visuals/hero-nexus-anchored-mobile.svg",
+        "fallbackVisible": true,
+        "overflow": false
+      }
+    }
+  ],
+  "failures": [
+    "webkit stale plate gate false"
+  ]
+}

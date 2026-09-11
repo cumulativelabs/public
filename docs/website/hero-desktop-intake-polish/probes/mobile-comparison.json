@@ -1,0 +1,50 @@
+[
+  {
+    "engine": "chromium",
+    "width": 768,
+    "height": 1024,
+    "screenshotBytesIdentical": true
+  },
+  {
+    "engine": "chromium",
+    "width": 430,
+    "height": 932,
+    "screenshotBytesIdentical": true
+  },
+  {
+    "engine": "chromium",
+    "width": 390,
+    "height": 844,
+    "screenshotBytesIdentical": true
+  },
+  {
+    "engine": "chromium",
+    "width": 320,
+    "height": 568,
+    "screenshotBytesIdentical": true
+  },
+  {
+    "engine": "webkit",
+    "width": 768,
+    "height": 1024,
+    "screenshotBytesIdentical": true
+  },
+  {
+    "engine": "webkit",
+    "width": 430,
+    "height": 932,
+    "screenshotBytesIdentical": true
+  },
+  {
+    "engine": "webkit",
+    "width": 390,
+    "height": 844,
+    "screenshotBytesIdentical": true
+  },
+  {
+    "engine": "webkit",
+    "width": 320,
+    "height": 568,
+    "screenshotBytesIdentical": true
+  }
+]
