@@ -9,5 +9,6 @@
   "focus-verified": "Final focused-only CSS, transitions frozen; macOS WebKit Option-Tab. Every measurement rejects body as an invalid target. Quantitative controls passed.",
   "matrix-final": "Final normal visual composition after scrim. Later focus-only CSS verified separately by focus-verified; no normal-layout changes.",
   "tablet-final": "Final shared-plane masks and scrim; breakpoint sequence and static/fallback policies.",
-  "system_remediation": "Two focus-harness failures (focus and focus-final) routed to the retained harness guard: reject body targets, freeze transitions, use documented macOS Option-Tab semantics. Owner: implementation harness; separate QA should verify effectiveness. No browser preference/global setting changed."
+  "system_remediation": "Two focus-harness failures (focus and focus-final) routed to the retained harness guard: reject body targets, freeze transitions, use documented macOS Option-Tab semantics. Owner: implementation harness; separate QA should verify effectiveness. No browser preference/global setting changed.",
+  "transcript_persistence": "The repository ignores *.log; transcripts were explicitly added in 4acb1bacd37dd067317c80fd1e5c34f030c9ed59. Its staged diff check flagged extra blank EOF lines in four raw npm transcripts. A subsequent evidence-only change removes only redundant trailing newlines; raw originals remain retrievable at that commit. No command output content or exit result changed."
 }

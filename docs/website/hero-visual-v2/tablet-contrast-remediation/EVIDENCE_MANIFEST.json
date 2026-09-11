@@ -68,13 +68,13 @@
     },
     {
       "path": "evidence/commands/test.log",
-      "bytes": 258,
-      "sha256": "3485f0f3d5a849b29370be75049adbe7e5e2d6ee918e84c69b848fff31deaf54"
+      "bytes": 257,
+      "sha256": "195c63e759444e4fd91cf7d5031173b3e2dd6caa3644b7d6d842459ffb69fdcd"
     },
     {
       "path": "evidence/commands/typecheck.log",
-      "bytes": 75,
-      "sha256": "cd0773e4e8aba54763a976b58e4f8097a97ac5d943e77936fef6c96d532c75e1"
+      "bytes": 74,
+      "sha256": "789e94d75a62dcade187014cee83ce5c986ac2542fa26f47db28121039fa0c30"
     },
     {
       "path": "evidence/commands/validate-build.log",
@@ -103,13 +103,13 @@
     },
     {
       "path": "evidence/commands-final/test.log",
-      "bytes": 258,
-      "sha256": "2be33297b79b01312127473b2e9d0a389547fb8e55341c867753053629e50852"
+      "bytes": 257,
+      "sha256": "efb0789d4edf19b45615771b1b7754258d210c803ed25013db0ea15448131fdd"
     },
     {
       "path": "evidence/commands-final/typecheck.log",
-      "bytes": 75,
-      "sha256": "cd0773e4e8aba54763a976b58e4f8097a97ac5d943e77936fef6c96d532c75e1"
+      "bytes": 74,
+      "sha256": "789e94d75a62dcade187014cee83ce5c986ac2542fa26f47db28121039fa0c30"
     },
     {
       "path": "evidence/commands-final/validate-build.log",
@@ -203,8 +203,8 @@
     },
     {
       "path": "evidence/evidence-stages.json",
-      "bytes": 1760,
-      "sha256": "566b9a921d4850810a45f49d0f596ab9621e07c027e5645066d963448aeb8e7f"
+      "bytes": 2156,
+      "sha256": "190ba941ecb22728cdf8dc94eb8fccb8a692442b34d7ef885f4e1b73855aefab"
     },
     {
       "path": "evidence/focus/chromium-390-CTA-secondary.png",
