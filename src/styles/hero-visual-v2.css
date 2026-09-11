@@ -3,9 +3,14 @@
   background: radial-gradient(ellipse at 75% 49%, #5a21402e, transparent 34%), radial-gradient(ellipse at 91% 26%, #39225820, transparent 35%), radial-gradient(ellipse at 54% 48%, #7a211716, transparent 38%), #030811;
 }
 .hero-section::before { opacity: 0.04; }
-.hero-knowledge { position: absolute; inset: 0; z-index: 1; overflow: hidden; pointer-events: none; }
+.hero-knowledge {
+  position: absolute; left: 50%; top: 50%; z-index: 1; pointer-events: none;
+  width: var(--nexus-desktop-width); height: var(--nexus-desktop-height);
+  transform: translate(var(--nexus-desktop-x), var(--nexus-desktop-y));
+  overflow: hidden;
+}
 .hero-knowledge__plate { position: absolute; inset: 0; z-index: 0; display: block; pointer-events: none; }
-.hero-knowledge__plate img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: center; opacity: .92; }
+.hero-knowledge__plate img { width: 100%; height: 100%; display: block; object-fit: fill; opacity: .92; }
 .hero-knowledge__canvas { position: absolute; inset: 0; z-index: 1; width: 100%; height: 100%; contain: strict; opacity: .66; }
 .hero-knowledge__fallback { z-index: 0; }
 .hero-knowledge__canvas, .hero-knowledge__fallback {
@@ -13,9 +18,14 @@
   mask-image: linear-gradient(90deg, #0005 0%, #0004 28%, #0009 46%, #000 62%);
   -webkit-mask-image: linear-gradient(90deg, #0005 0%, #0004 28%, #0009 46%, #000 62%);
 }
-.hero-knowledge__fallback { position: absolute; width: 64%; height: 75%; right: -4%; top: 13%; }
+.hero-knowledge__fallback {
+  position: absolute; left: calc(-1 * var(--nexus-desktop-x)); top: calc(-1 * var(--nexus-desktop-y));
+  width: var(--nexus-fallback-desktop-width); height: auto; aspect-ratio: 1;
+  transform: translate(-50%, -50%); mask-image: none; -webkit-mask-image: none;
+}
 .hero-knowledge[data-ready='true'] .hero-knowledge__fallback { display: none; }
-.hero-section__mark { pointer-events: none; }
+.hero-section__mark { pointer-events: none; z-index: 1; }
+.hero-section__copy { position: relative; z-index: 2; }
 .hero-section__mark::before {
   inset: 9%; filter: none;
   background: radial-gradient(ellipse, #efa66609, #da578e09 40%, transparent 72%);
@@ -33,32 +43,18 @@
     mask-image: linear-gradient(to bottom, #00000026 8%, #00000040 30%, #0000008f 49%, #000 68%);
     -webkit-mask-image: linear-gradient(to bottom, #00000026 8%, #00000040 30%, #0000008f 49%, #000 68%);
   }
-  .hero-knowledge__fallback { width: 120%; height: 11rem; right: -12%; top: auto; bottom: -0.3rem; }
-  .hero-knowledge__plate img { object-fit: cover; object-position: center bottom; opacity: 1; }
+  .hero-knowledge {
+    width: var(--nexus-mobile-width); height: var(--nexus-mobile-height);
+    transform: translate(var(--nexus-mobile-x), var(--nexus-mobile-y));
+  }
+  .hero-knowledge__fallback {
+    left: calc(-1 * var(--nexus-mobile-x)); top: calc(-1 * var(--nexus-mobile-y));
+    width: var(--nexus-fallback-mobile-width); mask-image: none; -webkit-mask-image: none;
+  }
+  .hero-knowledge__plate img { object-fit: fill; opacity: 1; }
   .hero-knowledge__canvas { opacity: .48; }
   .hero-section__actions .button { position: relative; z-index: 1; }
 }
 @media (prefers-reduced-motion: reduce) {
   .hero-knowledge *, .hero-section__mark { animation: none !important; transition: none !important; }
-}
-
-/* Alignment polish: the live mark box is the single source of truth for every nexus ring. */
-.hero-section__mark::after {
-  position: absolute;
-  inset: 18%;
-  border: 1px solid rgba(239, 76, 172, 0.52);
-  border-radius: 50%;
-  box-shadow:
-    0 0 0 11px rgba(206, 79, 224, 0.20),
-    0 0 0 23px rgba(172, 78, 229, 0.11),
-    0 0 0 37px rgba(133, 72, 216, 0.055),
-    0 0 34px rgba(227, 70, 179, 0.18);
-  content: '';
-  pointer-events: none;
-}
-@media (max-width: 780px) {
-  .hero-section__mark::after {
-    inset: 15%;
-    box-shadow: 0 0 0 9px rgba(206, 79, 224, 0.20), 0 0 0 19px rgba(172, 78, 229, 0.11), 0 0 0 31px rgba(133, 72, 216, 0.055), 0 0 30px rgba(227, 70, 179, 0.18);
-  }
 }

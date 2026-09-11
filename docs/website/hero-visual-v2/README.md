@@ -1,5 +1,7 @@
 # Hero visual v2 — Founder visual review
 
+**Latest correction:** [Shared Nexus coordinate plane and measured alignment](anchor-fix/README.md). The report below is the historical initial candidate, not a description of the current renderer.
+
 Status: implementation-owner checks passed; Founder inspection required before independent QA. This is not an independent-QA approval or production authorization.
 
 Branch: `hero-visual-v2`. Baseline: `2c3f238b9e6e0c991655d5eb93f99bd6c8fb815e`, the deployed homepage refresh. No production merge, deployment command, Cloudflare configuration change, or DNS change is part of this work.

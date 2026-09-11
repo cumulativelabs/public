@@ -1,3 +1,4 @@
+import { NEXUS_PORT_RADIUS } from './nexusGeometry';
 import { clamp, displace, ease, randomUnit, STORY_DURATION, type KnowledgeScene, type Pointer, type SceneLayout } from './knowledgeScene';
 
 type Curve = { x0: number; y0: number; c1x: number; c1y: number; c2x: number; c2y: number; x1: number; y1: number };
@@ -15,13 +16,13 @@ function localPoint(point: { x: number; y: number }, layout: SceneLayout) {
 }
 
 function traceCurve(context: CanvasRenderingContext2D, curve: Curve, layout: SceneLayout, pointer: Pointer, depth: number) {
-  const start = displace(localPoint({ x: curve.x0, y: curve.y0 }, layout), pointer, depth);
+  const start = curve.x0 > 0 ? { ...localPoint({ x: curve.x0, y: curve.y0 }, layout), influence: 0 } : displace(localPoint({ x: curve.x0, y: curve.y0 }, layout), pointer, depth);
   const c1 = displace(localPoint({ x: curve.c1x, y: curve.c1y }, layout), pointer, depth * 0.8);
   const c2 = displace(localPoint({ x: curve.c2x, y: curve.c2y }, layout), pointer, depth * 0.5);
-  const end = displace(localPoint({ x: curve.x1, y: curve.y1 }, layout), pointer, depth * 0.18);
+  const end = localPoint({ x: curve.x1, y: curve.y1 }, layout);
   context.moveTo(start.x, start.y);
   context.bezierCurveTo(c1.x, c1.y, c2.x, c2.y, end.x, end.y);
-  return Math.max(start.influence, c1.influence, c2.influence, end.influence);
+  return Math.max(start.influence, c1.influence, c2.influence);
 }
 
 function makeInbound(index: number, count: number): Curve {
@@ -35,8 +36,8 @@ function makeInbound(index: number, count: number): Curve {
     c1y: spread * 1.04 + (randomUnit(index + 66) - 0.5) * 105,
     c2x: -145 + randomUnit(index + 88) * 40,
     c2y: spread * 0.12 + (randomUnit(index + 110) - 0.5) * 28,
-    x1: -76 + randomUnit(index + 132) * 18,
-    y1: (randomUnit(index + 154) - 0.5) * 48,
+    x1: -NEXUS_PORT_RADIUS,
+    y1: (randomUnit(index + 154) - 0.5) * 5,
   };
 }
 
@@ -46,7 +47,7 @@ function makeOutbound(index: number, count: number): Curve {
   const lane = (n - 0.5) * 92;
   const micro = (randomUnit(index + 210) - 0.5) * 18;
   return {
-    x0: 73 - randomUnit(index + 232) * 9,
+    x0: NEXUS_PORT_RADIUS,
     y0: (randomUnit(index + 254) - 0.5) * 18,
     c1x: 165 + randomUnit(index + 276) * 34,
     c1y: lane * 0.08 + (randomUnit(index + 298) - 0.5) * 10,
@@ -78,13 +79,13 @@ function drawStream(context: CanvasRenderingContext2D, curve: Curve, layout: Sce
   context.stroke();
 }
 
-function drawBeam(context: CanvasRenderingContext2D, layout: SceneLayout, pointer: Pointer) {
-  const x0 = layout.cx + 66 * layout.scale;
+function drawBeam(context: CanvasRenderingContext2D, layout: SceneLayout) {
+  const x0 = layout.cx + NEXUS_PORT_RADIUS * layout.scale;
   const x1 = layout.cx + 610 * layout.scale;
   const y = layout.cy;
   const gradient = context.createLinearGradient(x0, y, x1, y);
   gradient.addColorStop(0, '#ff4db5'); gradient.addColorStop(0.32, '#cf5dff'); gradient.addColorStop(1, '#8c4df4');
-  const core = displace({ x: x0, y }, pointer, 0.12);
+  const core = { x: x0, y };
   for (const [w, a] of [[34, 0.025], [18, 0.055], [8, 0.12], [3.2, 0.34], [1.25, 0.96]] as const) {
     context.strokeStyle = gradient; context.globalAlpha = a; context.lineWidth = w * layout.scale;
     context.beginPath(); context.moveTo(core.x, core.y); context.lineTo(x1, y); context.stroke();
@@ -193,7 +194,7 @@ function drawAtmosphere(context: CanvasRenderingContext2D, layout: SceneLayout) 
   const exhaust = context.createRadialGradient(x + 135 * s, y, 5 * s, x + 135 * s, y, 245 * s);
   exhaust.addColorStop(0, 'rgba(224,80,255,0.16)'); exhaust.addColorStop(0.24, 'rgba(170,66,236,0.07)'); exhaust.addColorStop(1, 'rgba(0,0,0,0)');
   context.fillStyle = exhaust; context.fillRect(x + 55 * s, y - 260 * s, 510 * s, 520 * s);
-  const flare = context.createRadialGradient(x - 82 * s, y, 1, x - 82 * s, y, 54 * s);
+  const flare = context.createRadialGradient(x - NEXUS_PORT_RADIUS * s, y, 1, x - NEXUS_PORT_RADIUS * s, y, 54 * s);
   flare.addColorStop(0, 'rgba(255,240,213,0.62)'); flare.addColorStop(0.12, 'rgba(255,150,74,0.26)'); flare.addColorStop(1, 'rgba(255,75,90,0)');
   context.fillStyle = flare; context.fillRect(x - 145 * s, y - 70 * s, 130 * s, 140 * s);
 }
@@ -309,7 +310,7 @@ export function drawKnowledgeScene(context: CanvasRenderingContext2D, scene: Kno
     drawStream(context, curve, layout, pointer, hot ? '#e8a2ff' : i % 3 === 0 ? '#da55d8' : '#8b5bf0', (0.10 + tier * 0.33) * (0.45 + structure * 0.55), 0.3 + tier * 0.72, 0.62, hot);
     if (i % 6 === 0) drawPulse(context, curve, layout, time, i * 0.08 + 0.33, '#eedaff');
   });
-  drawBeam(context, layout, pointer);
+  drawBeam(context, layout);
   drawPowerField(context, layout, time, staticOnly);
   drawMicroNodes(context, outbound, layout, 'out', time, staticOnly);
   drawRetainedLattice(context, layout, time, staticOnly);
@@ -343,6 +344,7 @@ export function drawKnowledgeScene(context: CanvasRenderingContext2D, scene: Kno
   }
 
   drawEvidenceClusters(context, layout, time, staticOnly);
+  context.globalCompositeOperation = 'source-over';
   drawCore(context, layout, time, pointer, staticOnly);
   context.restore();
 }

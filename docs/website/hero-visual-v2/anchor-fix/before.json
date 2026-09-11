@@ -1,0 +1,33 @@
+{
+  "status": 200,
+  "script": [
+    "https://hero-visual-v2.cumulative-labs.pages.dev/assets/index-DF4-_Mml.js"
+  ],
+  "image": "https://hero-visual-v2.cumulative-labs.pages.dev/visuals/hero-nexus-plate-mobile.svg",
+  "imageBox": {
+    "x": 0,
+    "y": 0,
+    "width": 390,
+    "height": 755.875,
+    "top": 0,
+    "right": 390,
+    "bottom": 755.875,
+    "left": 0
+  },
+  "objectFit": "cover",
+  "objectPosition": "50% 100%",
+  "remainingPlateRings": 0,
+  "mappedArtCenter": {
+    "x": 265.97850609756097,
+    "y": 648.9463414634146
+  },
+  "logoCenter": {
+    "x": 266.3046875,
+    "y": 668.2890625
+  },
+  "artOffset": {
+    "x": -0.32618140243903326,
+    "y": -19.34272103658543
+  },
+  "cssExtraRings": "rgba(206, 79, 224, 0.2) 0px 0px 0px 9px, rgba(172, 78, 229, 0.11) 0px 0px 0px 19px, rgba(133, 72, 216, 0.055) 0px 0px 0px 31px, rgba(227, 70, 179, 0.18) 0px 0px 30px 0px"
+}

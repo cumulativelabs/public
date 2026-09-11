@@ -6,7 +6,6 @@ import { site } from '../content/site';
 export function HeroSection() {
   return (
     <section id="top" className="hero-section" data-visual-phase="scatter">
-      <HeroKnowledgeField />
       <div className="shell shell--wide hero-section__inner">
         <div className="hero-section__copy" data-reveal>
           <p className="hero-section__eyebrow">{site.hero.eyebrow}</p>
@@ -29,6 +28,7 @@ export function HeroSection() {
         </div>
 
         <div className="hero-section__mark" aria-hidden="true" data-reveal>
+          <HeroKnowledgeField />
           <BrandSymbol />
         </div>
       </div>

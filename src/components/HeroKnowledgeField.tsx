@@ -1,11 +1,13 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useId, useRef, type CSSProperties } from 'react';
 import { createKnowledgeScene, mapPointer, type Pointer, type SceneLayout } from '../visuals/knowledgeScene';
 import { drawKnowledgeScene } from '../visuals/drawKnowledgeScene';
+import { NEXUS_ART, nexusPlaneStyle } from '../visuals/nexusGeometry';
 const scene = createKnowledgeScene();
 type Connection = EventTarget & { saveData?: boolean };
 
 /** The hero has its own capability gate: compact layout must never disable a mouse. */
 export function HeroKnowledgeField() {
+  const coreGradientId = `nexus-core-${useId().replaceAll(':', '')}`;
   const rootRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   useEffect(() => {
@@ -76,18 +78,20 @@ export function HeroKnowledgeField() {
     };
     const resize = () => {
       bounds = root.getBoundingClientRect(); boundsDirty = false;
-      width = Math.max(1, Math.round(bounds.width)); height = Math.max(1, Math.round(bounds.height));
-      const box = anchor.getBoundingClientRect(); const mobile = width <= 780;
+      width = Math.max(1, bounds.width); height = Math.max(1, bounds.height);
+      const box = anchor.getBoundingClientRect();
+      const mobile = window.matchMedia('(max-width: 780px)').matches;
+      const art = mobile ? NEXUS_ART.mobile : NEXUS_ART.desktop;
       layout = {
         cx: box.left - bounds.left + box.width / 2,
         cy: box.top - bounds.top + box.height / 2,
-        scale: mobile ? Math.min(0.88, width / 500) : Math.min(1.15, box.width / 390),
-        flatten: mobile ? 0.9 : 1,
+        scale: width / (art.width * art.unitScale),
+        flatten: 1,
       };
       const dpr = Math.min(devicePixelRatio || 1, mobile ? 1.4 : 1.5);
       canvas.width = Math.round(width * dpr); canvas.height = Math.round(height * dpr);
-      context.setTransform(dpr, 0, 0, dpr, 0, 0);
-      resetPointer(); mode(); render(); schedule();
+      context.setTransform(canvas.width / width, 0, 0, canvas.height / height, 0, 0);
+      resetPointer(); mode(); if (!document.hidden) render(); schedule();
     };
     const onPointer = (event: PointerEvent) => {
       if (!interactive() || event.pointerType === 'touch') return;
@@ -99,16 +103,16 @@ export function HeroKnowledgeField() {
     const onScroll = () => { boundsDirty = true; onLeave(); };
     const onPolicy = () => {
       reducedMotion = motion.matches; finePointer = fine.matches; saveData = Boolean(connection?.saveData);
-      stop(); resetPointer(); mode(); render(); schedule();
+      stop(); resetPointer(); mode(); if (!document.hidden) render(); schedule();
     };
-    const onVisibility = () => { stop(); resetPointer(); mode(); if (!document.hidden) schedule(); };
+    const onVisibility = () => { stop(); resetPointer(); mode(); if (!document.hidden) { render(); schedule(); } };
     const visibilityObserver = new IntersectionObserver(([entry]) => {
       visible = entry?.isIntersecting ?? false;
       if (!visible) { stop(); resetPointer(); } else schedule();
       mode();
     }, { threshold: 0 });
     const resizeObserver = new ResizeObserver(resize);
-    resizeObserver.observe(root); resizeObserver.observe(anchor); visibilityObserver.observe(root);
+    resizeObserver.observe(root); resizeObserver.observe(anchor); resizeObserver.observe(host); visibilityObserver.observe(root);
     host.addEventListener('pointermove', onPointer, { passive: true, capture: true });
     host.addEventListener('pointerleave', onLeave);
     host.addEventListener('pointercancel', onLeave);
@@ -130,19 +134,21 @@ export function HeroKnowledgeField() {
     };
   }, []);
   return (
-    <div ref={rootRef} className="hero-knowledge" data-visual-layer="knowledge" data-conceptual="true" aria-hidden="true">
+    <div ref={rootRef} className="hero-knowledge" style={nexusPlaneStyle as CSSProperties} data-visual-layer="knowledge" data-conceptual="true" aria-hidden="true">
       <picture className="hero-knowledge__plate">
-        <source media="(max-width: 780px)" srcSet="/visuals/hero-nexus-plate-mobile.svg" />
-        <img src="/visuals/hero-nexus-plate-desktop.svg" alt="" decoding="async" fetchPriority="high" />
+        <source media="(max-width: 780px)" srcSet="/visuals/hero-nexus-anchored-mobile.svg" />
+        <img src="/visuals/hero-nexus-anchored-desktop.svg" alt="" decoding="async" fetchPriority="high" />
       </picture>
-      <svg className="hero-knowledge__fallback" viewBox="-470 -310 900 620" focusable="false">
-        <g fill="none" stroke="#c47eb1" strokeWidth="0.8" opacity="0.55">
-          {scene.strata.map((path, i) => <polyline key={i} points={path.filter((_, n) => n % 3 === 0).map(p => `${p.x.toFixed(1)},${p.y.toFixed(1)}`).join(' ')} />)}
-          {scene.routes.map((path, i) => <polyline key={`r${i}`} points={path.map(p => `${p.x.toFixed(1)},${p.y.toFixed(1)}`).join(' ')} />)}
-        </g>
-        <g fill="#e29bbb" opacity="0.6">
-          {scene.nodes.filter((_, i) => i % 4 === 0).map((p, i) => <circle key={i} cx={p.x} cy={p.y} r="1.7" />)}
-        </g>
+      <svg className="hero-knowledge__fallback" viewBox="-150 -150 300 300" focusable="false">
+        <defs>
+          <linearGradient id={coreGradientId} x1="0" y1="0" x2="1" y2="0">
+            <stop stopColor="#ff8a32" /><stop offset="0.42" stopColor="#ff3a94" /><stop offset="1" stopColor="#9a4df1" />
+          </linearGradient>
+        </defs>
+        <circle cx="0" cy="0" r="68" fill="#030711" fillOpacity="0.9" />
+        {[76, 85.5, 95, 104.5, 114, 123.5].map((radius, i) => (
+          <circle key={radius} cx="0" cy="0" r={radius} fill="none" stroke={`url(#${coreGradientId})`} strokeWidth={i < 2 ? 1.1 : 0.55} opacity={i === 0 ? 0.88 : i === 1 ? 0.45 : 0.1 + (5 - i) * 0.022} />
+        ))}
       </svg>
       <canvas ref={canvasRef} className="hero-knowledge__canvas" />
     </div>
