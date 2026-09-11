@@ -41,3 +41,24 @@
 @media (prefers-reduced-motion: reduce) {
   .hero-knowledge *, .hero-section__mark { animation: none !important; transition: none !important; }
 }
+
+/* Alignment polish: the live mark box is the single source of truth for every nexus ring. */
+.hero-section__mark::after {
+  position: absolute;
+  inset: 18%;
+  border: 1px solid rgba(239, 76, 172, 0.52);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 11px rgba(206, 79, 224, 0.20),
+    0 0 0 23px rgba(172, 78, 229, 0.11),
+    0 0 0 37px rgba(133, 72, 216, 0.055),
+    0 0 34px rgba(227, 70, 179, 0.18);
+  content: '';
+  pointer-events: none;
+}
+@media (max-width: 780px) {
+  .hero-section__mark::after {
+    inset: 15%;
+    box-shadow: 0 0 0 9px rgba(206, 79, 224, 0.20), 0 0 0 19px rgba(172, 78, 229, 0.11), 0 0 0 31px rgba(133, 72, 216, 0.055), 0 0 30px rgba(227, 70, 179, 0.18);
+  }
+}
