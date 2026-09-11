@@ -42,27 +42,84 @@ function makeInbound(index: number, count: number): Curve {
 
 function makeOutbound(index: number, count: number): Curve {
   const n = count === 1 ? 0 : index / (count - 1);
-  const spread = (n - 0.5) * 480;
-  const jitter = (randomUnit(index + 210) - 0.5) * 55;
+  // Retained knowledge leaves the core as a disciplined beam, not a second fan.
+  const lane = (n - 0.5) * 92;
+  const micro = (randomUnit(index + 210) - 0.5) * 18;
   return {
-    x0: 76 - randomUnit(index + 232) * 16,
-    y0: (randomUnit(index + 254) - 0.5) * 42,
-    c1x: 160 + randomUnit(index + 276) * 45,
-    c1y: spread * 0.10 + (randomUnit(index + 298) - 0.5) * 26,
-    c2x: 310 + randomUnit(index + 320) * 75,
-    c2y: spread * 1.02 + (randomUnit(index + 342) - 0.5) * 96,
-    x1: 500 + randomUnit(index + 364) * 95,
-    y1: spread + jitter,
+    x0: 73 - randomUnit(index + 232) * 9,
+    y0: (randomUnit(index + 254) - 0.5) * 18,
+    c1x: 165 + randomUnit(index + 276) * 34,
+    c1y: lane * 0.08 + (randomUnit(index + 298) - 0.5) * 10,
+    c2x: 330 + randomUnit(index + 320) * 58,
+    c2y: lane * 0.46 + (randomUnit(index + 342) - 0.5) * 18,
+    x1: 520 + randomUnit(index + 364) * 96,
+    y1: lane + micro,
   };
 }
 
-function drawStream(context: CanvasRenderingContext2D, curve: Curve, layout: SceneLayout, pointer: Pointer, color: string, alpha: number, width: number, depth: number) {
+function drawStream(context: CanvasRenderingContext2D, curve: Curve, layout: SceneLayout, pointer: Pointer, color: string, alpha: number, width: number, depth: number, luminous = false) {
   context.beginPath();
   const influence = traceCurve(context, curve, layout, pointer, depth);
+  const boosted = clamp(alpha + influence * 0.2);
+  if (luminous) {
+    context.strokeStyle = color;
+    context.globalAlpha = boosted * 0.07;
+    context.lineWidth = width * 9 + influence * 2;
+    context.stroke();
+    context.beginPath(); traceCurve(context, curve, layout, pointer, depth);
+    context.globalAlpha = boosted * 0.16;
+    context.lineWidth = width * 4.1 + influence;
+    context.stroke();
+    context.beginPath(); traceCurve(context, curve, layout, pointer, depth);
+  }
   context.strokeStyle = color;
-  context.globalAlpha = clamp(alpha + influence * 0.18);
-  context.lineWidth = width + influence * 0.45;
+  context.globalAlpha = boosted;
+  context.lineWidth = width + influence * 0.48;
   context.stroke();
+}
+
+function drawBeam(context: CanvasRenderingContext2D, layout: SceneLayout, pointer: Pointer) {
+  const x0 = layout.cx + 66 * layout.scale;
+  const x1 = layout.cx + 610 * layout.scale;
+  const y = layout.cy;
+  const gradient = context.createLinearGradient(x0, y, x1, y);
+  gradient.addColorStop(0, '#ff4db5'); gradient.addColorStop(0.32, '#cf5dff'); gradient.addColorStop(1, '#8c4df4');
+  const core = displace({ x: x0, y }, pointer, 0.12);
+  for (const [w, a] of [[34, 0.025], [18, 0.055], [8, 0.12], [3.2, 0.34], [1.25, 0.96]] as const) {
+    context.strokeStyle = gradient; context.globalAlpha = a; context.lineWidth = w * layout.scale;
+    context.beginPath(); context.moveTo(core.x, core.y); context.lineTo(x1, y); context.stroke();
+  }
+  for (let lane = -3; lane <= 3; lane += 1) {
+    const offset = lane * 4.1 * layout.scale;
+    context.strokeStyle = lane === 0 ? '#f8c8ff' : '#ca71ff';
+    context.globalAlpha = lane === 0 ? 0.8 : 0.22;
+    context.lineWidth = lane === 0 ? 0.85 : 0.55;
+    context.beginPath(); context.moveTo(core.x, core.y + offset * 0.12); context.lineTo(x1, y + offset); context.stroke();
+  }
+}
+
+function drawMicroNodes(context: CanvasRenderingContext2D, curves: Curve[], layout: SceneLayout, side: 'in' | 'out', time: number, staticOnly: boolean) {
+  const count = side === 'in' ? 148 : 88;
+  for (let i = 0; i < count; i += 1) {
+    const curve = curves[i % curves.length];
+    const baseT = 0.12 + randomUnit(i + (side === 'in' ? 1600 : 1900)) * 0.78;
+    const t = staticOnly ? baseT : (baseT + time * (side === 'in' ? 0.008 : 0.011) * (0.4 + randomUnit(i + 1700))) % 0.92;
+    const p = localPoint(bezierPoint(curve, t), layout);
+    const hot = i % 11 === 0;
+    const color = side === 'in' ? (hot ? '#ffd2a6' : '#ff7b4b') : (hot ? '#efd6ff' : '#b76cff');
+    context.fillStyle = color;
+    context.globalAlpha = hot ? 0.74 : 0.18 + randomUnit(i + 1800) * 0.34;
+    const r = (hot ? 1.8 : 0.65 + randomUnit(i + 1850) * 0.95) * layout.scale;
+    if (hot) {
+      context.beginPath(); context.arc(p.x, p.y, r * 5, 0, Math.PI * 2); context.globalAlpha *= 0.08; context.fill();
+      context.globalAlpha = 0.8;
+    }
+    context.beginPath(); context.arc(p.x, p.y, r, 0, Math.PI * 2); context.fill();
+    if (i % 17 === 0) {
+      context.globalAlpha *= 0.55; context.strokeStyle = color; context.lineWidth = 0.55;
+      const box = r * 4.4; context.strokeRect(p.x - box / 2, p.y - box / 2, box, box);
+    }
+  }
 }
 
 function drawPulse(context: CanvasRenderingContext2D, curve: Curve, layout: SceneLayout, time: number, offset: number, color: string) {
@@ -78,33 +135,71 @@ function drawPulse(context: CanvasRenderingContext2D, curve: Curve, layout: Scen
 
 function drawCore(context: CanvasRenderingContext2D, layout: SceneLayout, time: number, pointer: Pointer, staticOnly: boolean) {
   const x = layout.cx; const y = layout.cy; const s = layout.scale;
-  const glow = context.createRadialGradient(x, y, 18 * s, x, y, 118 * s);
-  glow.addColorStop(0, 'rgba(255,72,145,0.20)'); glow.addColorStop(0.38, 'rgba(222,55,155,0.10)'); glow.addColorStop(0.72, 'rgba(123,56,212,0.055)'); glow.addColorStop(1, 'rgba(80,40,160,0)');
-  context.globalAlpha = 1; context.fillStyle = glow; context.beginPath(); context.arc(x, y, 118 * s, 0, Math.PI * 2); context.fill();
-
-  context.fillStyle = 'rgba(4,8,18,0.88)'; context.beginPath(); context.arc(x, y, 72 * s, 0, Math.PI * 2); context.fill();
-  const ring = context.createLinearGradient(x - 76 * s, y, x + 76 * s, y);
-  ring.addColorStop(0, '#ff8a37'); ring.addColorStop(0.5, '#f23792'); ring.addColorStop(1, '#8e45ed');
-  for (let i = 0; i < 3; i += 1) {
-    const radius = (79 + i * 11) * s;
-    context.strokeStyle = ring; context.lineWidth = (i === 0 ? 1.2 : 0.65) * s;
-    context.globalAlpha = i === 0 ? 0.72 : 0.18;
+  const outer = context.createRadialGradient(x, y, 10 * s, x, y, 150 * s);
+  outer.addColorStop(0, 'rgba(255,92,165,0.26)'); outer.addColorStop(0.25, 'rgba(246,53,146,0.14)'); outer.addColorStop(0.52, 'rgba(161,55,218,0.09)'); outer.addColorStop(1, 'rgba(70,24,124,0)');
+  context.globalAlpha = 1; context.fillStyle = outer; context.beginPath(); context.arc(x, y, 150 * s, 0, Math.PI * 2); context.fill();
+  context.fillStyle = 'rgba(3,7,17,0.94)'; context.beginPath(); context.arc(x, y, 68 * s, 0, Math.PI * 2); context.fill();
+  const ring = context.createLinearGradient(x - 105 * s, y - 30 * s, x + 105 * s, y + 30 * s);
+  ring.addColorStop(0, '#ff8a32'); ring.addColorStop(0.42, '#ff3a94'); ring.addColorStop(1, '#9a4df1');
+  for (let i = 0; i < 6; i += 1) {
+    const radius = (76 + i * 9.5) * s;
+    context.strokeStyle = ring; context.lineWidth = (i < 2 ? 1.1 : 0.55) * s;
+    context.globalAlpha = i === 0 ? 0.88 : i === 1 ? 0.45 : 0.10 + (5 - i) * 0.022;
     context.beginPath(); context.arc(x, y, radius, 0, Math.PI * 2); context.stroke();
+  }
+  for (let i = 0; i < 24; i += 1) {
+    const a = i / 24 * Math.PI * 2;
+    const r0 = (106 + (i % 3) * 3) * s;
+    const r1 = r0 + (i % 4 === 0 ? 16 : 8) * s;
+    context.strokeStyle = i < 12 ? '#ff7f57' : '#a75dec'; context.globalAlpha = i % 4 === 0 ? 0.18 : 0.07; context.lineWidth = 0.55;
+    context.beginPath(); context.moveTo(x + Math.cos(a) * r0, y + Math.sin(a) * r0); context.lineTo(x + Math.cos(a) * r1, y + Math.sin(a) * r1); context.stroke();
   }
   if (!staticOnly && pointer.strength > 0.02) {
     const d = Math.hypot(pointer.x - x, pointer.y - y);
     const propagation = ease(1 - d / 440) * pointer.strength;
     if (propagation > 0.01) {
-      const radius = (94 + ((time * 24) % 42)) * s;
-      context.strokeStyle = '#f06cb7'; context.lineWidth = 0.8;
-      context.globalAlpha = propagation * (1 - ((time * 24) % 42) / 42) * 0.28;
-      context.beginPath(); context.arc(x, y, radius, 0, Math.PI * 2); context.stroke();
+      const phase = ((time * 22) % 48) / 48;
+      context.strokeStyle = '#f58ac5'; context.lineWidth = 0.8;
+      context.globalAlpha = propagation * (1 - phase) * 0.32;
+      context.beginPath(); context.arc(x, y, (96 + phase * 48) * s, 0, Math.PI * 2); context.stroke();
     }
   }
 }
 
+function drawRetainedLattice(context: CanvasRenderingContext2D, layout: SceneLayout, time: number, staticOnly: boolean) {
+  const fade = staticOnly ? 1 : ease((time - 5) / 8);
+  for (let i = 0; i < 32; i += 1) {
+    const x = 125 + randomUnit(i + 2200) * 430;
+    const y = (randomUnit(i + 2240) - 0.5) * 250;
+    const p = localPoint({ x, y }, layout);
+    const h = (18 + randomUnit(i + 2280) * 112) * layout.scale;
+    context.strokeStyle = i % 5 === 0 ? '#df55d4' : '#8556d8';
+    context.globalAlpha = fade * (i % 5 === 0 ? 0.12 : 0.035);
+    context.lineWidth = i % 5 === 0 ? 0.75 : 0.4;
+    context.beginPath(); context.moveTo(p.x, p.y - h); context.lineTo(p.x, p.y + h); context.stroke();
+    if (i % 3 === 0) {
+      context.fillStyle = i % 2 ? '#c27df4' : '#f067c6'; context.globalAlpha = fade * 0.45;
+      const yy = p.y + (randomUnit(i + 2320) - 0.5) * h * 1.4;
+      context.strokeRect(p.x - 2, yy - 2, 4, 4);
+    }
+  }
+}
+
+function drawAtmosphere(context: CanvasRenderingContext2D, layout: SceneLayout) {
+  const x = layout.cx; const y = layout.cy; const s = layout.scale;
+  const intake = context.createRadialGradient(x - 105 * s, y, 8 * s, x - 105 * s, y, 285 * s);
+  intake.addColorStop(0, 'rgba(255,112,56,0.19)'); intake.addColorStop(0.2, 'rgba(255,72,76,0.085)'); intake.addColorStop(0.62, 'rgba(211,44,103,0.028)'); intake.addColorStop(1, 'rgba(0,0,0,0)');
+  context.fillStyle = intake; context.globalAlpha = 1; context.fillRect(x - 440 * s, y - 330 * s, 500 * s, 660 * s);
+  const exhaust = context.createRadialGradient(x + 135 * s, y, 5 * s, x + 135 * s, y, 245 * s);
+  exhaust.addColorStop(0, 'rgba(224,80,255,0.16)'); exhaust.addColorStop(0.24, 'rgba(170,66,236,0.07)'); exhaust.addColorStop(1, 'rgba(0,0,0,0)');
+  context.fillStyle = exhaust; context.fillRect(x + 55 * s, y - 260 * s, 510 * s, 520 * s);
+  const flare = context.createRadialGradient(x - 82 * s, y, 1, x - 82 * s, y, 54 * s);
+  flare.addColorStop(0, 'rgba(255,240,213,0.62)'); flare.addColorStop(0.12, 'rgba(255,150,74,0.26)'); flare.addColorStop(1, 'rgba(255,75,90,0)');
+  context.fillStyle = flare; context.fillRect(x - 145 * s, y - 70 * s, 130 * s, 140 * s);
+}
+
 function drawSignalDust(context: CanvasRenderingContext2D, layout: SceneLayout, time: number, staticOnly: boolean) {
-  for (let i = 0; i < 92; i += 1) {
+  for (let i = 0; i < 156; i += 1) {
     const side = i % 2 === 0 ? -1 : 1;
     const x = side * (105 + randomUnit(i + 510) * 455);
     const y = (randomUnit(i + 640) - 0.5) * 500;
@@ -154,49 +249,55 @@ export function drawKnowledgeScene(context: CanvasRenderingContext2D, scene: Kno
   context.clearRect(0, 0, width, height);
   const narrative = staticOnly ? STORY_DURATION : time;
   context.save(); context.globalCompositeOperation = 'lighter'; context.lineCap = 'round'; context.lineJoin = 'round';
+  drawAtmosphere(context, layout);
   drawSignalDust(context, layout, time, staticOnly);
 
-  const inbound = Array.from({ length: 38 }, (_, i) => makeInbound(i, 38));
-  const outbound = Array.from({ length: 40 }, (_, i) => makeOutbound(i, 40));
+  const inbound = Array.from({ length: 86 }, (_, i) => makeInbound(i, 86));
+  const outbound = Array.from({ length: 62 }, (_, i) => makeOutbound(i, 62));
   inbound.forEach((curve, i) => {
-    const tier = i % 7 === 0 ? 1 : i % 3 === 0 ? 0.65 : 0.34;
-    drawStream(context, curve, layout, pointer, i % 4 === 0 ? '#ff8a3e' : '#e8618f', 0.12 + tier * 0.24, 0.45 + tier * 0.62, 0.72);
-    if (i % 5 === 0) drawPulse(context, curve, layout, time, i * 0.13, '#ffd2b4');
+    const tier = i % 11 === 0 ? 1 : i % 5 === 0 ? 0.72 : i % 2 === 0 ? 0.42 : 0.26;
+    const hot = i % 6 === 0;
+    drawStream(context, curve, layout, pointer, hot ? '#ff9b51' : i % 3 === 0 ? '#ff654e' : '#dc4f83', 0.11 + tier * 0.34, 0.38 + tier * 0.82, 0.76, hot);
+    if (i % 7 === 0) drawPulse(context, curve, layout, time, i * 0.11, '#ffd2b4');
   });
+  drawMicroNodes(context, inbound, layout, 'in', time, staticOnly);
 
-  const structure = ease((narrative - 4) / 10);
+  const structure = ease((narrative - 3) / 8);
   outbound.forEach((curve, i) => {
-    const tier = i % 6 === 0 ? 1 : i % 4 === 0 ? 0.62 : 0.3;
-    drawStream(context, curve, layout, pointer, i % 5 === 0 ? '#e653ad' : '#9362ed', (0.10 + tier * 0.25) * (0.30 + structure * 0.70), 0.42 + tier * 0.64, 0.66);
-    if (i % 4 === 0) drawPulse(context, curve, layout, time, i * 0.09 + 0.35, '#d9c3ff');
+    const tier = i % 10 === 0 ? 1 : i % 4 === 0 ? 0.7 : 0.36;
+    const hot = i % 7 === 0;
+    drawStream(context, curve, layout, pointer, hot ? '#e8a2ff' : i % 3 === 0 ? '#da55d8' : '#8b5bf0', (0.10 + tier * 0.33) * (0.45 + structure * 0.55), 0.3 + tier * 0.72, 0.62, hot);
+    if (i % 6 === 0) drawPulse(context, curve, layout, time, i * 0.08 + 0.33, '#eedaff');
   });
+  drawBeam(context, layout, pointer);
+  drawMicroNodes(context, outbound, layout, 'out', time, staticOnly);
+  drawRetainedLattice(context, layout, time, staticOnly);
 
-  // Fine cross-links become more coherent only after structure has formed.
-  for (let i = 0; i < 22; i += 1) {
-    const from = bezierPoint(outbound[i % outbound.length], 0.42 + randomUnit(i + 920) * 0.35);
-    const to = bezierPoint(outbound[(i + 5) % outbound.length], 0.48 + randomUnit(i + 970) * 0.28);
-    const a = displace(localPoint(from, layout), pointer, 0.52); const b = displace(localPoint(to, layout), pointer, 0.52);
-    context.strokeStyle = '#b279ee'; context.globalAlpha = structure * (0.035 + randomUnit(i + 1000) * 0.075); context.lineWidth = 0.45;
+  // Sparse cross-links appear only after output structure exists, preserving a disciplined beam.
+  for (let i = 0; i < 18; i += 1) {
+    const from = bezierPoint(outbound[i % outbound.length], 0.48 + randomUnit(i + 920) * 0.28);
+    const to = bezierPoint(outbound[(i + 7) % outbound.length], 0.52 + randomUnit(i + 970) * 0.24);
+    const a = displace(localPoint(from, layout), pointer, 0.48); const b = displace(localPoint(to, layout), pointer, 0.48);
+    context.strokeStyle = '#ba77f0'; context.globalAlpha = structure * (0.025 + randomUnit(i + 1000) * 0.055); context.lineWidth = 0.42;
     context.beginPath(); context.moveTo(a.x, a.y); context.lineTo(b.x, b.y); context.stroke();
   }
 
-  // Fine vertical energy filaments make the convergence read as a dense nexus instead of a flat graph.
-  for (let i = 0; i < 34; i += 1) {
-    const x = (randomUnit(i + 1200) - 0.5) * 330;
-    const proximity = 1 - Math.min(1, Math.abs(x) / 175);
-    const height = 28 + randomUnit(i + 1240) * 150 * (0.25 + proximity * 0.75);
-    const centerY = (randomUnit(i + 1280) - 0.5) * 54;
-    const top = localPoint({ x, y: centerY - height }, layout);
-    const bottom = localPoint({ x, y: centerY + height }, layout);
-    const response = displace(top, pointer, 0.42);
-    context.strokeStyle = x < 0 ? '#f07d63' : '#a264ec';
-    context.globalAlpha = 0.025 + proximity * 0.11;
-    context.lineWidth = i % 7 === 0 ? 0.9 : 0.45;
+  // Vertical nexus filaments add dimensional depth around the core while staying subordinate to the flow.
+  for (let i = 0; i < 42; i += 1) {
+    const x = (randomUnit(i + 1200) - 0.5) * 360;
+    const proximity = 1 - Math.min(1, Math.abs(x) / 190);
+    const filament = 28 + randomUnit(i + 1240) * 168 * (0.25 + proximity * 0.75);
+    const centerY = (randomUnit(i + 1280) - 0.5) * 58;
+    const top = localPoint({ x, y: centerY - filament }, layout);
+    const bottom = localPoint({ x, y: centerY + filament }, layout);
+    const response = displace(top, pointer, 0.38);
+    context.strokeStyle = x < 0 ? '#ef704f' : '#ad55eb'; context.globalAlpha = 0.018 + proximity * 0.11;
+    context.lineWidth = i % 8 === 0 ? 0.9 : 0.42;
     context.beginPath(); context.moveTo(response.x, response.y); context.lineTo(bottom.x, bottom.y); context.stroke();
     if (i % 3 === 0) {
       const dotY = top.y + (bottom.y - top.y) * randomUnit(i + 1320);
-      context.fillStyle = x < 0 ? '#ffad77' : '#c08af7'; context.globalAlpha = 0.15 + proximity * 0.28;
-      context.beginPath(); context.arc(top.x, dotY, 0.8 + proximity, 0, Math.PI * 2); context.fill();
+      context.fillStyle = x < 0 ? '#ffae79' : '#cf8aff'; context.globalAlpha = 0.13 + proximity * 0.34;
+      context.beginPath(); context.arc(top.x, dotY, 0.75 + proximity * 0.8, 0, Math.PI * 2); context.fill();
     }
   }
 
