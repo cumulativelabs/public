@@ -38,12 +38,12 @@ for (const [name, engine, executablePath] of [['chromium', chromium, process.env
     await page.goto(process.env.HERO_URL, { waitUntil: 'networkidle' });
     await page.evaluate(() => document.fonts.ready);
     const read = () => page.evaluate(() => {
-      const root = document.querySelector('.hero-knowledge'), canvas = root.querySelector('.hero-knowledge__tethers');
+      const root = document.querySelector('.hero-knowledge'), canvas = document.querySelector('.hero-knowledge__tethers');
       const r = root.getBoundingClientRect(), mark = document.querySelector('.hero-section__mark').getBoundingClientRect();
       const cx = mark.x + mark.width / 2 - r.x, s = r.width / 1440;
       const pixels = canvas.getContext('2d').getImageData(0, 0, canvas.width, canvas.height).data;
       let alphaSum = 0, litPixels = 0; for (let i = 3; i < pixels.length; i += 4) { alphaSum += pixels[i]; if (pixels[i] > 20) litPixels++; }
-      return { strokes: window.__tether.strokes, production: window.__tether.curves.filter(c => Math.abs(c[6] - (cx - 76 * s)) < .001 || c[0] >= cx + 76 * s), rings: window.__tether.rings, mark: mark.toJSON(), bounds: r.toJSON(), pointer: { x: +root.dataset.intakePointerX, y: +root.dataset.intakePointerY }, eventPointer: { x: +root.dataset.pointerX, y: +root.dataset.pointerY }, strength: +root.dataset.intakeStrength, alphaSum, litPixels };
+      return { strokes: window.__tether.strokes.filter(s => Math.abs(s.curve[6] - (cx - 76 * r.width / 1440)) > 1), production: window.__tether.curves.filter(c => Math.abs(c[6] - (cx - 76 * s)) < .001 || c[0] >= cx + 76 * s), rings: window.__tether.rings, mark: mark.toJSON(), bounds: r.toJSON(), pointer: { x: +root.dataset.intakePointerX, y: +root.dataset.intakePointerY }, eventPointer: { x: +root.dataset.pointerX, y: +root.dataset.pointerY }, strength: +root.dataset.intakeStrength, alphaSum, litPixels };
     });
     const baseline = await read();
     await page.screenshot({ path: `${out}/${name}-${width}-baseline.png` });

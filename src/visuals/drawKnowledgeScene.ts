@@ -72,7 +72,7 @@ function makeOutbound(index: number, count: number): Curve {
 /** Interaction-only fibers: production starts/tangents are read, never deformed. */
 export function drawIntakeTethers(context: CanvasRenderingContext2D, layout: SceneLayout, width: number, height: number, pointer: Pointer, disabled: boolean) {
   context.clearRect(0, 0, width, height);
-  const strength = disabled || !layout.intakeExtension ? 0 : pointer.strength * ease((layout.cx - 555 * layout.scale - pointer.x) / 100);
+  const strength = disabled || !layout.intakeExtension ? 0 : pointer.strength * ease((layout.cx - 465 * layout.scale - pointer.x) / (70 * layout.scale));
   if (strength < 0.001) return;
   context.save();
   context.lineCap = 'round';
@@ -86,18 +86,29 @@ export function drawIntakeTethers(context: CanvasRenderingContext2D, layout: Sce
     const run = Math.max(40, start.x - tip.x);
     const color = i % 3 === 0 ? '255,102,137' : '255,151,77';
     const gradient = context.createLinearGradient(start.x, start.y, tip.x, tip.y);
-    gradient.addColorStop(0, `rgba(${color},0.10)`);
-    gradient.addColorStop(0.28, `rgba(${color},0.65)`);
+    gradient.addColorStop(0, `rgba(${color},0.85)`);
+    gradient.addColorStop(0.28, `rgba(${color},0.95)`);
     gradient.addColorStop(0.72, `rgba(${color},0.95)`);
-    gradient.addColorStop(1, `rgba(${color},0.45)`);
+    gradient.addColorStop(1, `rgba(${color},0.90)`);
     context.beginPath();
     context.moveTo(start.x, start.y);
     // Reverse the authored intake tangent, then relax into the cursor bundle.
     context.bezierCurveTo(start.x - (tangent.x - start.x) * 0.5, start.y - (tangent.y - start.y) * 0.5,
       tip.x + run * (0.48 + randomUnit(i + 3140) * 0.16), tip.y + (i - 7.5) * 3, tip.x, tip.y);
     context.strokeStyle = gradient;
-    context.globalAlpha = strength * 0.18; context.lineWidth = 5; context.stroke();
+    context.globalAlpha = strength * 0.10; context.lineWidth = 4; context.stroke();
     context.globalAlpha = strength * 0.95; context.lineWidth = 0.9 + randomUnit(i + 3180) * 0.65; context.stroke();
+    // Carry the same selected filament into its existing intake path. This is
+    // an interaction highlight of unchanged production controls, not a new fan.
+    const end = localPoint({ x: curve.x1, y: curve.y1 }, layout);
+    const c2 = localPoint({ x: curve.c2x, y: curve.c2y }, layout);
+    const join = context.createLinearGradient(start.x, start.y, end.x, end.y);
+    join.addColorStop(0, `rgba(${color},0.85)`);
+    join.addColorStop(0.65, `rgba(${color},0.65)`);
+    join.addColorStop(1, `rgba(${color},0.15)`);
+    context.beginPath(); context.moveTo(start.x, start.y);
+    context.bezierCurveTo(tangent.x, tangent.y, c2.x, c2.y, end.x, end.y);
+    context.strokeStyle = join; context.stroke();
   }
   const glow = context.createRadialGradient(pointer.x, pointer.y, 0, pointer.x, pointer.y, 26);
   glow.addColorStop(0, 'rgba(255,177,103,0.30)');

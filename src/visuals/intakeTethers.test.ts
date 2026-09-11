@@ -4,7 +4,7 @@ const layout = { cx: 1080, cy: 430, scale: 1, flatten: 1, intakeExtension: 650 }
 function paint(x: number, y: number, strength = 1, disabled = false, extension = 650) {
   const tips: number[][] = [];
   const context = new Proxy({
-    bezierCurveTo: (...a: number[]) => tips.push(a.slice(-2)),
+    bezierCurveTo: (...a: number[]) => { if (a[4] !== layout.cx - 76 * layout.scale) tips.push(a.slice(-2)); },
     createLinearGradient: () => ({ addColorStop() {} }),
     createRadialGradient: () => ({ addColorStop() {} }),
   }, { get: (o, k) => Reflect.get(o, k) ?? (() => {}) }) as unknown as CanvasRenderingContext2D;
