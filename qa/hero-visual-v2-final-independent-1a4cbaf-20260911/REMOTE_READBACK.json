@@ -1,0 +1,1032 @@
+{
+  "observedAt": "2026-09-11T15:04:27.122521+00:00",
+  "repository": "cumulativelabs/public",
+  "branch": "qa/hero-v2-final-independent-1a4cbaf-20260911",
+  "commit": "d503335c3ae6759c0f1e4fcece69e84cc8679bc0",
+  "tree": "26bc61e74ea6487d0a4f351806b04c09d71f079a",
+  "parent": [
+    "6e81f50bcd2a2b9af4d79dcad1ecaaf17e142266"
+  ],
+  "reportByteReadback": [
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/REPORT.md",
+      "blob": "7dfee130f33ea2cf5390569862ea5cde67809fb5",
+      "sha256": "e83bf679c5127180f5b9de763ff2e1da22372924dbd7cc9fe194a685a1661dba",
+      "bytes": 16545,
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/HANDOFF.json",
+      "blob": "2be05bb041841646e585af15be83da9adb3a5688",
+      "sha256": "8344271dd1c779cf08b9e39d2e080cc41a5ef2d5aec99f24ff8cf46284ad32e8",
+      "bytes": 5594,
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/EVIDENCE_MANIFEST.json",
+      "blob": "82e3292f359bb802fcf306fc0be3a2f39db2a3d6",
+      "sha256": "39720c22fd50048dec3fdd32b91e964ef3c93d422ecee93f75b42b137d5a08be",
+      "bytes": 26202,
+      "equal": true
+    }
+  ],
+  "allEvidenceBlobIdentityMatches": true,
+  "evidenceFilesVerified": 184,
+  "remoteTreeTruncated": false,
+  "evidenceBlobChecks": [
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/HANDOFF.json",
+      "remoteBlob": "2be05bb041841646e585af15be83da9adb3a5688",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/scope-security-review.json",
+      "remoteBlob": "3a290ac9465f14fa73b80d41df3b6c4d8ace93d8",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/asset-weights.json",
+      "remoteBlob": "2a790df8accf56bc8079a3848394d3be2dd5777f",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/REPORT.md",
+      "remoteBlob": "7dfee130f33ea2cf5390569862ea5cde67809fb5",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/chromium-320-scrolled.png",
+      "remoteBlob": "241ef0f3393c32eafc0d0d44b3ce1179d57c7365",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/final-observations.mjs",
+      "remoteBlob": "8c55379301967fc698108f17d534a96f4beac53f",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/contrast-summary.json",
+      "remoteBlob": "35deecccd0df4b09e9d4000454a723c9672187c5",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/EVIDENCE_MANIFEST.json",
+      "remoteBlob": "82e3292f359bb802fcf306fc0be3a2f39db2a3d6",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/checkout-verification.json",
+      "remoteBlob": "4fd0a4351ad5663e2ce8ecffb0583d6d705e4273",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/prior-evidence-hashes.json",
+      "remoteBlob": "9bfeeeec1d395e20886cd67d5dd34bb2d4f88d8b",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/hosted-identity-tablet.png",
+      "remoteBlob": "8979b0195932307fdb1fc94c2626766e587a12db",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/webkit-320-scrolled.png",
+      "remoteBlob": "12e7e6048889605efcd7685f0bae62991a1c9f7f",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/performance-summary.json",
+      "remoteBlob": "c605a76b277a0e8a9048b67b9ffb3e8b9ec0bd0f",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/independent-switch-menu.mjs",
+      "remoteBlob": "fdd7fa5a56232962d57fd4df3943634855984808",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/remote-provenance.json",
+      "remoteBlob": "2ec3a2b3b102a77d2dbad0f0a7d60275ba4398b8",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/independent-contrast.mjs",
+      "remoteBlob": "62accc6def4e91939ad26e18a9eff5285f9188b5",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/network-versions.json",
+      "remoteBlob": "0ca0f65a033c9fdf117c29fb488190375a49102c",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/instrument-hashes.json",
+      "remoteBlob": "177de1b5d783b276d2412246c7052e1467a4c806",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/performance-results.json",
+      "remoteBlob": "4925e0042cf93fa74f3ca1e1e7aa97c0217a2489",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/hosted-identity.json",
+      "remoteBlob": "144f1590fe659d3af72bfb136f0ce77e1a594f74",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/tablet/webkit-resize-820.png",
+      "remoteBlob": "7ec4a23303acd3a4cfe8758716cca713454180c3",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/tablet/webkit-resize-767.png",
+      "remoteBlob": "70998055585465a33de67f32d04ee1aa1037574a",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/tablet/chromium-save-data.png",
+      "remoteBlob": "86b5cf5abe876974e0cafb79ea37a994726d3dee",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/tablet/webkit-save-data.png",
+      "remoteBlob": "20f0e9f84d0ec8fec7aa2ec3bd8a84eb6052cf30",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/tablet/chromium-resize-820.png",
+      "remoteBlob": "897388f8db83d358ee45b1e528933392adf9695b",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/tablet/webkit-no-js.png",
+      "remoteBlob": "030252d00403030aface4b542636253d707cc702",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/tablet/chromium-resize-767.png",
+      "remoteBlob": "ce53a1327cd8ad0336b2a5eaa629f407ef6f57be",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/tablet/tablet-results.json",
+      "remoteBlob": "762105b57b1ed2b46629525d387d9bc1bb02db0e",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/tablet/chromium-no-js.png",
+      "remoteBlob": "a780c54b26c0394ab59466c9b70d4519c085a9b5",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/tablet/webkit-low-core.png",
+      "remoteBlob": "20f0e9f84d0ec8fec7aa2ec3bd8a84eb6052cf30",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/tablet/chromium-resize-430.png",
+      "remoteBlob": "a13541483f2a9bd17504cdd6b7214611733ea38f",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/tablet/chromium-resize-779.png",
+      "remoteBlob": "d25cfedb7bd19330eee977c992b1b804e31fb09d",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/tablet/chromium-no-canvas.png",
+      "remoteBlob": "a780c54b26c0394ab59466c9b70d4519c085a9b5",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/tablet/chromium-resize-781.png",
+      "remoteBlob": "af844b1bc14a7e7033672457cc1b4baa3ba1acc4",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/tablet/chromium-resize-780.png",
+      "remoteBlob": "53fc583915c80083ce359f9270418c6e20f58bdb",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/tablet/webkit-resize-430.png",
+      "remoteBlob": "8c2d5c9544dc3c0d2d9358f8f4ddf1ef19f10d2c",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/tablet/webkit-resize-779.png",
+      "remoteBlob": "9203873772aa046dfcce83329b271676006b7bb5",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/tablet/chromium-low-core.png",
+      "remoteBlob": "86b5cf5abe876974e0cafb79ea37a994726d3dee",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/tablet/webkit-resize-780.png",
+      "remoteBlob": "f2956394295e529b42c3b4a416449a9181787e9a",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/tablet/webkit-resize-781.png",
+      "remoteBlob": "cc6e324c3b32f483c3cc1c0bf2d6063dd401b090",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/tablet/webkit-no-canvas.png",
+      "remoteBlob": "030252d00403030aface4b542636253d707cc702",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/immutable/after-chromium-768x1024.png",
+      "remoteBlob": "575a6c20c52734259d7f133e70ea9c79ae9115e5",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/immutable/after-chromium-1280x800.png",
+      "remoteBlob": "685b6e504eb94a0c44f6102e9a039dbe2b873675",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/immutable/after-chromium-320x568.png",
+      "remoteBlob": "97ccf1210d4c3f6a2f478831ac6314b3e8c371a5",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/immutable/after-chromium-1440x900.png",
+      "remoteBlob": "9979189f298831057b3c0bb8244afe90d856095d",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/immutable/after-webkit-320x568.png",
+      "remoteBlob": "4d5392ef849f67df7b649e45a98d014010be925e",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/immutable/after-mobile-scrolled.png",
+      "remoteBlob": "23007f3647b5373b3e9bfc9321f666ccbf23436e",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/immutable/after-chromium-1024x768.png",
+      "remoteBlob": "beb39799a729070e619fc9f45dd5fffdd9c683b5",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/immutable/after-webkit-1440x900.png",
+      "remoteBlob": "1ab1abd66f8ea38b7e8448f6b9e5fc8547384c5a",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/immutable/after-webkit-1280x800.png",
+      "remoteBlob": "367ccaf2145c6cb7816200d8ba533baa44f6d4ad",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/immutable/after-chromium-390x844.png",
+      "remoteBlob": "7410f4c47d9b782eef59eb48d4419de75ff82849",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/immutable/after-webkit-430x932.png",
+      "remoteBlob": "1110d9eb4cbc72afbda93589ed4236a75f647f18",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/immutable/after-webkit-768x1024.png",
+      "remoteBlob": "c1aaf4a06ef6c73a609cbf8b2d1ba9c5e62d5660",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/immutable/browser-results.json",
+      "remoteBlob": "865cc40ef99bb1b308c549dc791b2c2a5fe5848f",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/immutable/after-chromium-430x932.png",
+      "remoteBlob": "aa3100e3ae00b8e4a5caa5558d66194e1efcbaec",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/immutable/after-webkit-390x844.png",
+      "remoteBlob": "ed2da5a38143a0bb3777bfa8a043bddeec70ba85",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/immutable/after-webkit-1024x768.png",
+      "remoteBlob": "b6cafb322e4f9aea294ca23cea9bab779e182d73",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/cursor/cursor-followup.json",
+      "remoteBlob": "a2fc1ed17f758ee433fe1bfbdf1f6cdb72178b5b",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/cursor/screenshots/webkit-cursor-after.png",
+      "remoteBlob": "6ed70eff5d23f02efec55d93407b914c2b917fbd",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/cursor/screenshots/chromium-cursor-before.png",
+      "remoteBlob": "344dc3522bcea219c2664e1545a92c077a65d2f1",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/cursor/screenshots/chromium-cursor-after.png",
+      "remoteBlob": "1a1b49a32337ce8bc4e117572b7cc473c81aa479",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/cursor/screenshots/webkit-cursor-before.png",
+      "remoteBlob": "41700044591318f4d0936d7bc68eab60461fe08e",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/focus/chromium-390-menu-close.png",
+      "remoteBlob": "c33aead5e104226e77efaf56d73150e92fb1257e",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/focus/chromium-1440-CTA-secondary.png",
+      "remoteBlob": "7db7a33715987254bf2a3da6afd802f3be69c614",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/focus/webkit-390-menu-close.png",
+      "remoteBlob": "8edb5c9cfd2e935fcd073f7f74a60f3b0f3b1280",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/focus/chromium-768-CTA-primary.png",
+      "remoteBlob": "569a937928ed74684d08feddba9a318511dc9bb1",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/focus/chromium-390-CTA-primary.png",
+      "remoteBlob": "069dbd065545c49dc50b9f769bc157f727d55af0",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/focus/chromium-768-menu-close.png",
+      "remoteBlob": "4dc652efb0e3eb1f93e83aaadebece6b8dc49ae7",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/focus/webkit-768-menu-close.png",
+      "remoteBlob": "0cbe9f9b6dbb2e43372941a1ae211a035b087fed",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/focus/webkit-390-CTA-secondary.png",
+      "remoteBlob": "c8b00ad090e87698c7e6a952ae57b702ebe18f9e",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/focus/chromium-1440-CTA-primary.png",
+      "remoteBlob": "231758ce6f87e5b6028b9abef2980db1188a5311",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/focus/chromium-1024-CTA-primary.png",
+      "remoteBlob": "15a968f10824924cf427d1c224ce7eac58503286",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/focus/chromium-1024-CTA-secondary.png",
+      "remoteBlob": "74ec7b71fd949d9fd72f29029446a688c34eac3e",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/focus/webkit-768-CTA-secondary.png",
+      "remoteBlob": "d8ee4b05db72815d3784a7392ed43a17bfc8f83e",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/focus/chromium-768-CTA-secondary.png",
+      "remoteBlob": "418b1c70a49a33eb27551ad64a9c27db2f4fff51",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/focus/webkit-1024-CTA-secondary.png",
+      "remoteBlob": "543194aa65f3f3fae6625ccb8dd6eb0c8613dd2f",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/focus/chromium-390-CTA-secondary.png",
+      "remoteBlob": "878fe92bd0be59412065942e97336778ee18a81a",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/focus/webkit-1440-CTA-secondary.png",
+      "remoteBlob": "1a1c85d64139212d103f09df6c473b20c615dd1c",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/focus/webkit-768-CTA-primary.png",
+      "remoteBlob": "56ed3c739976eefee9e95aa0c72c6a814e39e122",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/focus/webkit-1440-CTA-primary.png",
+      "remoteBlob": "e1a173512028d1f6f841e77b4ebb4c5148681caa",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/focus/webkit-1024-CTA-primary.png",
+      "remoteBlob": "179f0d3831a2ace0d9229b3372014e79ee1b3467",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/focus/focus-results.json",
+      "remoteBlob": "6fcb15c6693fa891d2d4bd7439ae5012fa65602d",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/focus/webkit-390-CTA-primary.png",
+      "remoteBlob": "be1248ae20e0b697e077ed99807a56cf44ef0b2f",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/local/after-chromium-768x1024.png",
+      "remoteBlob": "61b1f1db14eec1de8d869437521728edd5806d70",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/local/after-chromium-1280x800.png",
+      "remoteBlob": "efd73da04358b5a3c134367bc8a8c9b47c59f023",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/local/after-chromium-320x568.png",
+      "remoteBlob": "97ccf1210d4c3f6a2f478831ac6314b3e8c371a5",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/local/after-chromium-1440x900.png",
+      "remoteBlob": "3d57cabfa6ec4e7f07655a92db812ee2701d4312",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/local/after-webkit-320x568.png",
+      "remoteBlob": "4d5392ef849f67df7b649e45a98d014010be925e",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/local/after-mobile-scrolled.png",
+      "remoteBlob": "ef0cd91cd64f08f31efb4aeaa7546745a84e3456",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/local/after-chromium-1024x768.png",
+      "remoteBlob": "35baea84352831687cf9476abe012f92c21ae0c7",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/local/after-webkit-1440x900.png",
+      "remoteBlob": "3aa79f12f76d7e1c8d72ce470021d2157a846ca5",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/local/after-webkit-1280x800.png",
+      "remoteBlob": "a59d2c88678b311d814fb21629314eba3578d7a0",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/local/after-chromium-390x844.png",
+      "remoteBlob": "66bd139340bb149a2b70bb7ba87f10b9d415899a",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/local/after-webkit-430x932.png",
+      "remoteBlob": "0da086d9763425fc864b9fb3441c55d419f38b0a",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/local/after-webkit-768x1024.png",
+      "remoteBlob": "503754feb7aed86d89546dd7565ef93cdbefbb14",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/local/browser-results.json",
+      "remoteBlob": "17408573fcef7d3f52aa95034ab1426495ba93a0",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/local/after-chromium-430x932.png",
+      "remoteBlob": "30f7adae2e1d9fcb90ecfc5cde860ea2bc65a7b6",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/local/after-webkit-390x844.png",
+      "remoteBlob": "8f97509219d0dcf960521d56286648a08d46ea23",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/local/after-webkit-1024x768.png",
+      "remoteBlob": "c3bf66959acd5d4c84a7c568937eff8f50583dbb",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/logs/performance.log",
+      "remoteBlob": "4925e0042cf93fa74f3ca1e1e7aa97c0217a2489",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/logs/contrast.log.gz",
+      "remoteBlob": "ac4730256f930ccd43abb44c09857e51cc790d0c",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/logs/persistence-check-first.log.gz",
+      "remoteBlob": "6302c9eac8b783c4dab6e6477467941fb01b3c1b",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/logs/typecheck.log.gz",
+      "remoteBlob": "cc77a8d05a13a15dad5f5f431cfc1c2ad022cf8f",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/logs/build.log.gz",
+      "remoteBlob": "cef605809ab176ff28392cc175cb1237d6915525",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/logs/immutable-matrix.log.gz",
+      "remoteBlob": "b1a04d69782636f0e776bffd75c253e388eea5a5",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/logs/validate-build.log",
+      "remoteBlob": "1a9c19a139b12e8650657e19966e0453a7e190c3",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/logs/lint.log",
+      "remoteBlob": "571be0c5b87eaeb16aa5f2fc2d3db17b702ada96",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/logs/npm-ci.log",
+      "remoteBlob": "db81f0b6f755b508d7d30792b455bc14faa403df",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/logs/extra.log.gz",
+      "remoteBlob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/logs/persistence-packaging-recovery.json",
+      "remoteBlob": "83d46032192b445c4018ccc62d39fc1d542ca4fd",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/logs/test.log",
+      "remoteBlob": "301d5aba1df541f947721ed090f80684c49a5165",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/logs/npm-ci.log.gz",
+      "remoteBlob": "260736e43c43c7546f90675dd80c7cb7a312e8f8",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/logs/command-results.json",
+      "remoteBlob": "88f29d45771f6cf2b20c8e56394b40ad75090534",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/logs/baseline-source.diff",
+      "remoteBlob": "320add5ef28f6263f18b6e01531050cdbe45a6b3",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/logs/tablet.log",
+      "remoteBlob": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/logs/typecheck.log",
+      "remoteBlob": "e6c9c0f6eb32c16cd56aa2a29403e70daab87a31",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/logs/diff-check.log",
+      "remoteBlob": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/logs/immutable-matrix.log",
+      "remoteBlob": "cec565d9f3ebda374fd2e4fea6809c7fd531f0b4",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/logs/switch.log",
+      "remoteBlob": "2d65631f940ce321c5c76c2c6ad537b152595ef1",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/logs/remediation-source.diff",
+      "remoteBlob": "b9678dfd37812c1d4d3b0a6e9a01ed1c58384d09",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/logs/persistence-readback-first.json",
+      "remoteBlob": "d678bce11cb43a865c683b2007c14159d6620f29",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/logs/focus.log.gz",
+      "remoteBlob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/logs/baseline-build.log",
+      "remoteBlob": "f6dd4d8b0d85d81880f4cc9b82dc5ae01b9fbc17",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/logs/contrast.log",
+      "remoteBlob": "d1dcff5a8c53daa1b534cb0e2edb3adaf1fb5526",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/logs/validate-build.log.gz",
+      "remoteBlob": "35304f4c1766a75d2e93d8259fddb255910d7fad",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/logs/local-matrix.log",
+      "remoteBlob": "cec565d9f3ebda374fd2e4fea6809c7fd531f0b4",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/logs/extra.log",
+      "remoteBlob": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/logs/local-matrix.log.gz",
+      "remoteBlob": "b1a04d69782636f0e776bffd75c253e388eea5a5",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/logs/test.log.gz",
+      "remoteBlob": "fc5290f1db9a31e6013416feb4a845f05d42a36c",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/logs/diff-check.log.gz",
+      "remoteBlob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/logs/switch.log.gz",
+      "remoteBlob": "d3e86f6430a7149e45ec66aacd5f505217decb71",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/logs/cursor.log.gz",
+      "remoteBlob": "e786301e38266ee7d48f362c5de818d60456ba9e",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/logs/final.log",
+      "remoteBlob": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/logs/performance.log.gz",
+      "remoteBlob": "ecff8c94d971f710d97cb584c744f4ad2e047e48",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/logs/focus.log",
+      "remoteBlob": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/logs/tablet.log.gz",
+      "remoteBlob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/logs/cursor.log",
+      "remoteBlob": "67d69c47403636d0972ba866ff1df3ca6604559e",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/logs/persistence-check-first.log",
+      "remoteBlob": "357b71637c64f5ee7d94373b61e921a6435e0eca",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/logs/baseline-build.log.gz",
+      "remoteBlob": "ff3cee9bbe8dc591e3238b5cfb89798cdde6d75c",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/logs/final.log.gz",
+      "remoteBlob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/logs/baseline-source.diff.gz",
+      "remoteBlob": "d707f36cf049f70cb07db2f26f8efc33f1d2440b",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/logs/lint.log.gz",
+      "remoteBlob": "7c682161f9301bd6b563dd3bbcd72abd7d519d1a",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/logs/build.log",
+      "remoteBlob": "bc86bc1ac40de7f667100ba8bcd2a34117430aee",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/extra/webkit-to-mobile-canvas-held.png",
+      "remoteBlob": "207067ed620bf13ad1be559b17ed40d6915f518f",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/extra/webkit-to-desktop-canvas-held.png",
+      "remoteBlob": "adf2dc89ebd4de813c38073ed7f10dae68d2ce27",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/extra/results.json",
+      "remoteBlob": "ae3cc7d53a1d6c20c3bfa1413db9b53dbbc2bdde",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/extra/chromium-to-mobile-fallback-held.png",
+      "remoteBlob": "8e87c8dc721d5c3a792f2208d026e82e136c9ddc",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/extra/webkit-menu-keyboard-reduced.png",
+      "remoteBlob": "54ffc6442b9d3369ed5a4432884d734479e10c55",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/extra/webkit-to-desktop-fallback-held.png",
+      "remoteBlob": "70d0489d8f9631dfe2a502cc68d23ab77e879ad8",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/extra/chromium-to-desktop-canvas-held.png",
+      "remoteBlob": "8cb2bbb2b508de85384a5ebb841a520e8125facd",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/extra/chromium-to-mobile-canvas-held.png",
+      "remoteBlob": "4ed9ff618b6b9c274740f045477f0b6682745777",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/extra/webkit-to-mobile-fallback-held.png",
+      "remoteBlob": "12ebd0c23f090bbf6dc05ec678e7a6db85d5bc1d",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/extra/chromium-menu-keyboard-reduced.png",
+      "remoteBlob": "bfd1ff3d65d5914570b75cf5eefa277b363ff22c",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/extra/chromium-to-desktop-fallback-held.png",
+      "remoteBlob": "bdc9094232a1e0c0b93a512c0d9e4c4b97b0f723",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/review/local-chromium-overview.png",
+      "remoteBlob": "523032ea5022618258b77e8e98dd078e6b7c7aa7",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/review/local-webkit-overview.png",
+      "remoteBlob": "a5965a5467e4c3f34989f03d5e83835225aed343",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/review/immutable-webkit-overview.png",
+      "remoteBlob": "de56f53d3188e3e94e35152e25f9ee6e63e0e691",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/review/immutable-chromium-overview.png",
+      "remoteBlob": "eb1922519e6fd7ddaefa80c7ce8d023ac79a4940",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/switch/webkit-canvas-settled.png",
+      "remoteBlob": "aa2959118b1937234652225a703fa6eaca8576bb",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/switch/chromium-canvas-settled.png",
+      "remoteBlob": "96eb28ce87cb9d00f5983ad893b59320580d741a",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/switch/results.json",
+      "remoteBlob": "f87fa97a94172e0847fdc7555b9a52c1d0535470",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/switch/webkit-fallback-settled.png",
+      "remoteBlob": "00c8c51eb01f6bc218fc494b74b41e3e5cd88453",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/switch/webkit-fallback-held.png",
+      "remoteBlob": "12ebd0c23f090bbf6dc05ec678e7a6db85d5bc1d",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/switch/chromium-canvas-held.png",
+      "remoteBlob": "edcd8510a730adadd49ec2af76362b3424cd82e1",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/switch/webkit-canvas-held.png",
+      "remoteBlob": "410f57011a2cf0306b10dadc9d477fe03f3b2468",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/switch/chromium-fallback-held.png",
+      "remoteBlob": "8e87c8dc721d5c3a792f2208d026e82e136c9ddc",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/switch/chromium-fallback-settled.png",
+      "remoteBlob": "0a1bb98fbcd85a49ef40368766feec4175fd9311",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/contrast/contrast-results.json",
+      "remoteBlob": "1029ecd92274a07009f600663c709eaaf9aa3d7c",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/contrast/chromium-390-t9.3-background.png",
+      "remoteBlob": "54aa17b6fe919aa6fc4c07dfbda1d8e6fc8c5c53",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/contrast/chromium-390-t9.3.png",
+      "remoteBlob": "c0d39bba596e7df3a09c49432b2e1a89ec8ab461",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/contrast/webkit-390-t9.3-background.png",
+      "remoteBlob": "cef8ec5e85951a9a61e8dfd714ab6ef078bface0",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/contrast/chromium-768-t9.3-background.png",
+      "remoteBlob": "925683c1e0008da14def9c5926899435e017001e",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/contrast/webkit-768-t9.3-background.png",
+      "remoteBlob": "4b00a263582809d2e4a2747ab98644bf20b0093b",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/contrast/webkit-390-t9.3.png",
+      "remoteBlob": "621c495ce1a346ced40454561f5e57b3c85bfe7b",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/contrast/chromium-1024-t9.3-background.png",
+      "remoteBlob": "1e0b2c008f2d68febf482927e49b239378841459",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/contrast/webkit-1024-t9.3-background.png",
+      "remoteBlob": "ceac65baa916d91e05d9684678b2fb9e17c07013",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/contrast/chromium-768-t9.3.png",
+      "remoteBlob": "ea1abaa40d01d21f526707ab073347b29231265a",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/contrast/webkit-1440-t9.3.png",
+      "remoteBlob": "f9cfc4442a44559a0acbbc25f831049a59becabe",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/contrast/chromium-1024-t9.3.png",
+      "remoteBlob": "423d19cb683b115cfbec8a71f99973b283dc62cc",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/contrast/chromium-1440-t9.3.png",
+      "remoteBlob": "78b75190ab69cc9c0fb5318f8178bbb4c1b1b53b",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/contrast/webkit-768-t9.3.png",
+      "remoteBlob": "0260e398ea789acf07ab439557d2c14d7da413a6",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/contrast/chromium-1440-t9.3-background.png",
+      "remoteBlob": "e93d529639e6a69391edddee42c61e4f215e23e2",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/contrast/webkit-1440-t9.3-background.png",
+      "remoteBlob": "7202c8add3356b8f882bcee836d57399eced13ef",
+      "equal": true
+    },
+    {
+      "path": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/contrast/webkit-1024-t9.3.png",
+      "remoteBlob": "2f9e2d9a1a97b2d4152ddfe1f036beb800e5fd71",
+      "equal": true
+    }
+  ],
+  "terminal_handoff": {
+    "TASK_ID": "CL-HERO-FINAL-INDEPENDENT-QA-20260911-001",
+    "TASK_TITLE": "Hero v2 - final independent QA after tablet/contrast remediation",
+    "STATUS": "REMOTE_PERSISTED \u2014 QA_COMPLETE / PASS_WITH_NITS",
+    "TERMINAL_STATUS": "QA_COMPLETE",
+    "QA_VERDICT": "PASS_WITH_NITS",
+    "TARGET_BRANCH": "hero-visual-v2",
+    "BRANCH": "qa/hero-v2-final-independent-1a4cbaf-20260911",
+    "FINAL_HEAD": "1a4cbaf9f8e9cf8a88a5091abb23f34fb2c97ce6",
+    "FINAL_TREE": "db5099c970456f44b414cc1dea52243cf19d519c",
+    "SUBSTANTIVE_SOURCE_COMMIT": "e7540c4c443415249cecba7d77731f329ff1fcb5",
+    "SUBSTANTIVE_COMMIT": "e7540c4c443415249cecba7d77731f329ff1fcb5",
+    "SOURCE_TREE": "4a405a1cd16e8d1a20ab7106e27bbeb0387f34c4",
+    "TREE": "4a405a1cd16e8d1a20ab7106e27bbeb0387f34c4",
+    "PARENT": "8ad80c7e9e0ada7c9b831ab2266d18fa6042ad1a",
+    "CHECKOUT_VERIFICATION": "Exact local/remote head, tree and source parent verified; final descendant evidence-only; tracked product diff empty. Main remains 2c3f238b9e6e0c991655d5eb93f99bd6c8fb815e. PR 3 draft/open/unmerged.",
+    "BUILD_RESULTS": "npm ci, lint, typecheck, 29 tests in 6 files, build, validate:build and git diff --check all exit 0.",
+    "HOSTED_IDENTITY_RESULT": "PASS: preview HTTP 200 + noindex; HTML and eight selected static assets byte-identical to fresh build. See hosted-identity.json.",
+    "BROWSER_MATRIX": "PASS: both engines, local and immutable, all seven requested viewport sizes; 18 records per origin; zero failures/errors.",
+    "TABLET_SEAM_RESULT": "PASS: actual pixels in both engines/origins show smooth fade and no old hard internal edge.",
+    "RESPONSIVE_SOURCE_SWITCH_RESULT": "PASS in observed uncached held loads both directions, Canvas/fallback and repeated cached switches; zero visible wrong-source rAF records.",
+    "VISUAL_ALIGNMENT_RESULT": "PASS: coherent C, six permanent rings, intake and output; no duplicate ring system, detached hotspot or double output.",
+    "CURSOR_RESULT": "PASS: perceptible calm response; stable C; mapping errors below 0.045 CSS px after scroll/resize; permanent rings distinguished from pulse.",
+    "PHONE_RESULT": "PASS: preserved composition; 320px actions/core reachable by scrolling; no horizontal overflow or CTA obstruction.",
+    "REDUCED_MOTION_RESULT": "PASS: static stable pixels; synthetic hidden/offscreen/Save-Data/two-core gates checked.",
+    "ACCESSIBILITY_RESULT": "PASS_WITH_NITS within described coverage; visible keyboard controls, menu traversal, Escape/focus return and anchor navigation; no-JS content/art fallback coherent.",
+    "CONTRAST_RESULT": "140 independent state/viewport/engine samples pass; gradient glyph minimum 3.207487:1 (3:1 threshold); body 11.4924, support 7.9358, primary 17.2944, secondary 9.4788; focus outline minimum 6.6026:1. Finite sampled coverage, not all-state guarantee.",
+    "WEBKIT_MENU_FOCUS_ADJUDICATION": "Inherited from exact production baseline: reduced-motion automatic entry leaves BODY focused; next Option-Tab reaches visible close control, navigation and Escape work. Non-blocking separate maintenance nit.",
+    "PERFORMANCE_RESULT": "No material release blocker found in bounded local comparison. All CLS zero; local LCP non-regressing. Real animation cost ~15\u201317 script ms/sec vs ~0.15 static baseline; no battery/thermal/field CWV certification.",
+    "PUBLIC_CLAIM_REVIEW": "PASS: source copy and rendered main text unchanged; decorative artwork does not claim live research results.",
+    "PRIVACY_SECURITY_REVIEW": "No new secrets/private references, analytics, storage or third-party application requests found; inherited dependencies unchanged. No Cloudflare/DNS mutation performed.",
+    "DIFF_SCOPE_REVIEW": "PASS: hero-only application scope; remediation image readiness and CSS masks/scrim/focus backing; final descendant reports/evidence only.",
+    "DEFECTS_FOUND": [],
+    "NITS": [
+      {
+        "id": "QA-NIT-001",
+        "description": "Inherited WebKit reduced-motion automatic menu-entry focus limitation",
+        "blocking": false,
+        "nextAction": "Separate navigation maintenance; do not remediate in QA."
+      }
+    ],
+    "QA_STATE": "QA_COMPLETE \u2014 PASS_WITH_NITS",
+    "QA_EVIDENCE": "qa/hero-visual-v2-final-independent-1a4cbaf-20260911",
+    "REPORT / ARTIFACT PATHS": [
+      "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/REPORT.md",
+      "qa/hero-visual-v2-final-independent-1a4cbaf-20260911/HANDOFF.json"
+    ],
+    "KNOWN_LIMITATIONS": [
+      "Finite time/pointer and browser sampling, not an all-state contrast guarantee",
+      "Headless macOS engines; no physical-device, full screen-reader/high-zoom, battery/thermal or field CWV certification",
+      "Hidden/Save-Data/core-count conditions synthetic",
+      "No provider deployment metadata/account audit history queried",
+      "No-JS menu remains inherited JS-dependent behavior"
+    ],
+    "BLOCKERS": [],
+    "FAILURE_CLASS": "No unresolved failure. Historical evidence-packaging handoff failures recovered; see retained recovery record.",
+    "REMOTE_READBACK_STATUS": "VERIFIED: exact remote report, handoff and manifest bytes; all 184 evidence blob identities; registry entry full bytes and current-ref readback verified.",
+    "MERGE_RECOMMENDATION": "YES",
+    "DEPLOYMENT_RECOMMENDATION": "Founder decision only; do not deploy",
+    "MERGE_STATE": "NOT MERGED",
+    "DEPLOYMENT_STATE": "NOT DEPLOYED",
+    "PUBLICATION_STATE": "QA evidence only; no production publication",
+    "NEXT_ACTION": "Founder review for exact-candidate merge approval; preserve inherited nit separately; controller reconciliation only if registry persistence remains incomplete.",
+    "createdAt": "2026-09-11T14:59:08.903207+00:00"
+  },
+  "registryRegistration": {
+    "status": "VERIFIED",
+    "artifactId": "CL-HERO-FINAL-INDEPENDENT-QA-20260911-001",
+    "fullEntryBytesVerified": true,
+    "currentRefEntryReadbackVerified": true,
+    "privateReceipt": "Retained in the private artifact registry; private control details excluded from public evidence."
+  },
+  "manifestScope": "Manifest covers the QA evidence package at the report commit; excludes this later readback receipt.",
+  "recordedAt": "2026-09-11T15:06:42.850405+00:00"
+}
