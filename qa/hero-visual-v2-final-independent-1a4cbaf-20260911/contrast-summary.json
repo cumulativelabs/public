@@ -1,0 +1,351 @@
+{
+  "combinations": 140,
+  "minima": {
+    ".hero-section__eyebrow Cumulative intelligence, built": {
+      "ratio": 10.842749346073115,
+      "engine": "webkit",
+      "width": 1024,
+      "state": {
+        "time": 11.1,
+        "pointer": true,
+        "dx": -300,
+        "dy": -130
+      },
+      "fontSize": "11.2px",
+      "weight": "400",
+      "threshold": 4.5,
+      "sample": {
+        "x": 300,
+        "y": 180,
+        "foreground": [
+          191,
+          200,
+          215
+        ],
+        "background": [
+          19,
+          21,
+          25
+        ]
+      },
+      "basis": "conservative text-line rectangles"
+    },
+    ".hero-section h1 > span Intelligence": {
+      "ratio": 17.02311150615683,
+      "engine": "webkit",
+      "width": 1440,
+      "state": {
+        "time": 0
+      },
+      "fontSize": "74.879997px",
+      "weight": "450",
+      "threshold": 3,
+      "sample": {
+        "x": 487,
+        "y": 267,
+        "foreground": [
+          248,
+          250,
+          252
+        ],
+        "background": [
+          28,
+          22,
+          26
+        ]
+      },
+      "basis": "conservative text-line rectangles"
+    },
+    ".hero-section h1 > span That": {
+      "ratio": 18.890961826292926,
+      "engine": "chromium",
+      "width": 1024,
+      "state": {
+        "time": 0
+      },
+      "fontSize": "53.248px",
+      "weight": "450",
+      "threshold": 3,
+      "sample": {
+        "x": 160,
+        "y": 257,
+        "foreground": [
+          248,
+          250,
+          252
+        ],
+        "background": [
+          8,
+          10,
+          18
+        ]
+      },
+      "basis": "conservative text-line rectangles"
+    },
+    ".hero-section h1 > span Compounds.": {
+      "ratio": 3.207487146491543,
+      "engine": "webkit",
+      "width": 1024,
+      "state": {
+        "time": 41.8,
+        "pointer": true,
+        "dx": 90,
+        "dy": -20
+      },
+      "fontSize": "53.247997px",
+      "weight": "450",
+      "threshold": 3,
+      "sample": {
+        "x": 389,
+        "y": 354,
+        "foreground": [
+          140,
+          43,
+          224
+        ],
+        "background": [
+          16,
+          15,
+          23
+        ],
+        "coverage": 0.9942539912660667
+      },
+      "basis": "solid glyph interiors; rectangular gradient-panel edge samples excluded"
+    },
+    ".hero-section__body Cumulative Labs is developing ": {
+      "ratio": 11.492416591366094,
+      "engine": "chromium",
+      "width": 1024,
+      "state": {
+        "time": 0
+      },
+      "fontSize": "17.6px",
+      "weight": "400",
+      "threshold": 4.5,
+      "sample": {
+        "x": 344,
+        "y": 454,
+        "foreground": [
+          212,
+          219,
+          229
+        ],
+        "background": [
+          30,
+          34,
+          37
+        ]
+      },
+      "basis": "conservative text-line rectangles"
+    },
+    ".hero-section__support Our first applied proving grou": {
+      "ratio": 7.935838742710886,
+      "engine": "webkit",
+      "width": 430,
+      "state": {
+        "time": 73.1
+      },
+      "fontSize": "14.4px",
+      "weight": "400",
+      "threshold": 4.5,
+      "sample": {
+        "x": 95,
+        "y": 448,
+        "foreground": [
+          174,
+          185,
+          203
+        ],
+        "background": [
+          45,
+          32,
+          29
+        ]
+      },
+      "basis": "conservative text-line rectangles"
+    },
+    ".hero-section__actions a See What We\u2019re Building\u2197": {
+      "ratio": 17.294415913048788,
+      "engine": "webkit",
+      "width": 1440,
+      "state": {
+        "time": 0
+      },
+      "fontSize": "11.52px",
+      "weight": "700",
+      "threshold": 4.5,
+      "sample": {
+        "x": 117,
+        "y": 671,
+        "foreground": [
+          248,
+          250,
+          252
+        ],
+        "background": [
+          17,
+          22,
+          33
+        ]
+      },
+      "basis": "conservative text-line rectangles"
+    },
+    ".hero-section__actions a Contact the Lab": {
+      "ratio": 9.478770407388414,
+      "engine": "webkit",
+      "width": 768,
+      "state": {
+        "time": 0
+      },
+      "fontSize": "11.52px",
+      "weight": "700",
+      "threshold": 4.5,
+      "sample": {
+        "x": 419,
+        "y": 635,
+        "foreground": [
+          248,
+          250,
+          252
+        ],
+        "background": [
+          79,
+          63,
+          64
+        ]
+      },
+      "basis": "conservative text-line rectangles"
+    },
+    ".desktop-navigation a Work": {
+      "ratio": 15.740962418114584,
+      "engine": "chromium",
+      "width": 1280,
+      "state": {
+        "time": 0
+      },
+      "fontSize": "11.68px",
+      "weight": "700",
+      "threshold": 4.5,
+      "sample": {
+        "x": 731,
+        "y": 44,
+        "foreground": [
+          226,
+          230,
+          237
+        ],
+        "background": [
+          6,
+          11,
+          20
+        ]
+      },
+      "basis": "conservative text-line rectangles"
+    },
+    ".desktop-navigation a Why Cumulative": {
+      "ratio": 15.700085342324332,
+      "engine": "chromium",
+      "width": 1280,
+      "state": {
+        "time": 0
+      },
+      "fontSize": "11.68px",
+      "weight": "700",
+      "threshold": 4.5,
+      "sample": {
+        "x": 857,
+        "y": 44,
+        "foreground": [
+          226,
+          230,
+          237
+        ],
+        "background": [
+          7,
+          11,
+          22
+        ]
+      },
+      "basis": "conservative text-line rectangles"
+    },
+    ".desktop-navigation a Approach": {
+      "ratio": 15.612262536871885,
+      "engine": "chromium",
+      "width": 1280,
+      "state": {
+        "time": 0
+      },
+      "fontSize": "11.68px",
+      "weight": "700",
+      "threshold": 4.5,
+      "sample": {
+        "x": 983,
+        "y": 44,
+        "foreground": [
+          226,
+          230,
+          237
+        ],
+        "background": [
+          8,
+          12,
+          22
+        ]
+      },
+      "basis": "conservative text-line rectangles"
+    },
+    ".desktop-navigation a Principles": {
+      "ratio": 15.600837650203543,
+      "engine": "chromium",
+      "width": 1024,
+      "state": {
+        "time": 0
+      },
+      "fontSize": "11.68px",
+      "weight": "700",
+      "threshold": 4.5,
+      "sample": {
+        "x": 857,
+        "y": 44,
+        "foreground": [
+          226,
+          230,
+          237
+        ],
+        "background": [
+          8,
+          12,
+          23
+        ]
+      },
+      "basis": "conservative text-line rectangles"
+    },
+    ".desktop-navigation a Contact": {
+      "ratio": 15.600837650203543,
+      "engine": "chromium",
+      "width": 1440,
+      "state": {
+        "time": 0
+      },
+      "fontSize": "11.68px",
+      "weight": "700",
+      "threshold": 4.5,
+      "sample": {
+        "x": 1298,
+        "y": 44,
+        "foreground": [
+          226,
+          230,
+          237
+        ],
+        "background": [
+          8,
+          12,
+          23
+        ]
+      },
+      "basis": "conservative text-line rectangles"
+    }
+  },
+  "failures": []
+}

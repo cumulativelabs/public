@@ -1,0 +1,83 @@
+diff --git a/src/components/HeroKnowledgeField.tsx b/src/components/HeroKnowledgeField.tsx
+index df7af54..af2160e 100644
+--- a/src/components/HeroKnowledgeField.tsx
++++ b/src/components/HeroKnowledgeField.tsx
+@@ -10,6 +10,29 @@ export function HeroKnowledgeField() {
+   const coreGradientId = `nexus-core-${useId().replaceAll(':', '')}`;
+   const rootRef = useRef<HTMLDivElement>(null);
+   const canvasRef = useRef<HTMLCanvasElement>(null);
++  useEffect(() => {
++    const root = rootRef.current;
++    if (!root) return;
++    const plate = root.querySelector('picture img') as HTMLImageElement | null;
++    // A picture may retain its old decoded image while the new media source loads.
++    // Keep the live/fallback scene visible, but never paint that stale plate in the
++    // other breakpoint's coordinate system.
++    const syncPlate = () => {
++      const variant = matchMedia('(max-width: 780px)').matches ? 'mobile' : 'desktop';
++      root.dataset.artReady = String(Boolean(plate?.complete && plate.naturalWidth && plate.currentSrc.endsWith(`hero-nexus-anchored-${variant}.svg`)));
++    };
++    const media = matchMedia('(max-width: 780px)');
++    media.addEventListener('change', syncPlate);
++    plate?.addEventListener('load', syncPlate);
++    plate?.addEventListener('error', syncPlate);
++    syncPlate();
++    return () => {
++      media.removeEventListener('change', syncPlate);
++      plate?.removeEventListener('load', syncPlate);
++      plate?.removeEventListener('error', syncPlate);
++      delete root.dataset.artReady;
++    };
++  }, []);
+   useEffect(() => {
+     const root = rootRef.current; const canvas = canvasRef.current;
+     if (!root || !canvas) return;
+diff --git a/src/styles/hero-visual-v2.css b/src/styles/hero-visual-v2.css
+index 93cc572..06db9d8 100644
+--- a/src/styles/hero-visual-v2.css
++++ b/src/styles/hero-visual-v2.css
+@@ -10,6 +10,7 @@
+   overflow: hidden;
+ }
+ .hero-knowledge__plate { position: absolute; inset: 0; z-index: 0; display: block; pointer-events: none; }
++.hero-knowledge[data-art-ready='false'] .hero-knowledge__plate { visibility: hidden; }
+ .hero-knowledge__plate img { width: 100%; height: 100%; display: block; object-fit: fill; opacity: .92; }
+ .hero-knowledge__canvas { position: absolute; inset: 0; z-index: 1; width: 100%; height: 100%; contain: strict; opacity: .66; }
+ .hero-knowledge__fallback { z-index: 0; }
+@@ -32,6 +33,21 @@
+ }
+ .hero-section__mark .brand-symbol { width: 31%; filter: drop-shadow(0 0 18px #ff4b971f) drop-shadow(0 0 38px #9448e61a); }
+ .hero-section__inner { z-index: 3; }
++/* Keep the keyboard indicator distinct where artwork or the header crosses it. */
++.hero-section__actions a:focus-visible, .skip-link:focus-visible {
++  outline: 2px solid #ff9bca; outline-offset: 3px;
++  box-shadow: 0 0 0 7px #030811;
++}
++/* Bound luminous artwork beneath copy; keep the core and output unobscured. */
++@media (min-width: 781px) {
++  .hero-section__copy::before {
++    content: ''; position: absolute; z-index: -1; pointer-events: none;
++    inset: -1rem -3rem -1rem -1rem;
++    background: linear-gradient(90deg, #030811d9 calc(100% - 3rem), transparent);
++    mask-image: linear-gradient(transparent, #000 1rem, #000 calc(100% - 1rem), transparent);
++    -webkit-mask-image: linear-gradient(transparent, #000 1rem, #000 calc(100% - 1rem), transparent);
++  }
++}
+ @media (max-width: 1000px) and (min-width: 781px) {
+   .hero-section__mark .brand-symbol { width: 34%; }
+ }
+@@ -55,6 +71,14 @@
+   .hero-knowledge__canvas { opacity: .48; }
+   .hero-section__actions .button { position: relative; z-index: 1; }
+ }
++/* The capped phone plate exposes its edges on tablets. Fade the shared plane,
++   including the live/fallback layer, without moving its core or either port. */
++@media (min-width: 431px) and (max-width: 780px) {
++  .hero-knowledge {
++    mask-image: linear-gradient(90deg, transparent, #000 18%, #000 96%, transparent);
++    -webkit-mask-image: linear-gradient(90deg, transparent, #000 18%, #000 96%, transparent);
++  }
++}
+ @media (prefers-reduced-motion: reduce) {
+   .hero-knowledge *, .hero-section__mark { animation: none !important; transition: none !important; }
+ }

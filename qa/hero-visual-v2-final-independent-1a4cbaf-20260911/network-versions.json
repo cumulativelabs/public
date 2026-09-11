@@ -1,0 +1,47 @@
+[
+  {
+    "engine": "chromium",
+    "version": "151.0.7922.34",
+    "requests": [
+      "https://db4b833b.cumulative-labs.pages.dev/",
+      "https://db4b833b.cumulative-labs.pages.dev/brand/cumulative-labs-horizontal.svg",
+      "https://db4b833b.cumulative-labs.pages.dev/brand/cumulative-labs-symbol.svg",
+      "https://db4b833b.cumulative-labs.pages.dev/assets/index-DEsgdTzj.js",
+      "https://db4b833b.cumulative-labs.pages.dev/assets/index-PQu7MiT7.css",
+      "https://db4b833b.cumulative-labs.pages.dev/visuals/hero-nexus-anchored-mobile.svg"
+    ],
+    "ctaHrefs": [
+      {
+        "text": "See What We’re Building↗",
+        "href": "#work"
+      },
+      {
+        "text": "Contact the Lab",
+        "href": "#contact"
+      }
+    ]
+  },
+  {
+    "engine": "webkit",
+    "version": "26.6",
+    "requests": [
+      "https://db4b833b.cumulative-labs.pages.dev/",
+      "https://db4b833b.cumulative-labs.pages.dev/brand/cumulative-labs-horizontal.svg",
+      "https://db4b833b.cumulative-labs.pages.dev/brand/cumulative-labs-symbol.svg",
+      "https://db4b833b.cumulative-labs.pages.dev/site.webmanifest",
+      "https://db4b833b.cumulative-labs.pages.dev/assets/index-DEsgdTzj.js",
+      "https://db4b833b.cumulative-labs.pages.dev/assets/index-PQu7MiT7.css",
+      "https://db4b833b.cumulative-labs.pages.dev/visuals/hero-nexus-anchored-mobile.svg"
+    ],
+    "ctaHrefs": [
+      {
+        "text": "See What We’re Building↗",
+        "href": "#work"
+      },
+      {
+        "text": "Contact the Lab",
+        "href": "#contact"
+      }
+    ]
+  }
+]

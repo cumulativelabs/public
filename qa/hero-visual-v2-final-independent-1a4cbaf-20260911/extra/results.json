@@ -1,0 +1,4309 @@
+{
+  "method": "Independent rAF observations during held uncached image loads both directions, repeated cached breakpoint switches; independent baseline and candidate menu entry and traversal without manually focusing a menu control.",
+  "results": [
+    {
+      "engine": "chromium",
+      "kind": "responsive-delay",
+      "direction": "to-mobile",
+      "fallback": false,
+      "requested": true,
+      "heldFrames": [
+        {
+          "width": 768,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.5312194824219
+        },
+        {
+          "width": 768,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.5312194824219
+        },
+        {
+          "width": 768,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.5312194824219
+        },
+        {
+          "width": 768,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.5312194824219
+        },
+        {
+          "width": 768,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.5312194824219
+        },
+        {
+          "width": 768,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.5312194824219
+        },
+        {
+          "width": 768,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.5312194824219
+        },
+        {
+          "width": 768,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.5312194824219
+        },
+        {
+          "width": 768,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.5312194824219
+        },
+        {
+          "width": 768,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.5312194824219
+        },
+        {
+          "width": 768,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.5312194824219
+        },
+        {
+          "width": 768,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.5312194824219
+        },
+        {
+          "width": 768,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.5312194824219
+        },
+        {
+          "width": 768,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.5312194824219
+        },
+        {
+          "width": 768,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.5312194824219
+        },
+        {
+          "width": 768,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.5312194824219
+        },
+        {
+          "width": 768,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.5312194824219
+        },
+        {
+          "width": 768,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.5312194824219
+        },
+        {
+          "width": 768,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.5312194824219
+        },
+        {
+          "width": 768,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.5312194824219
+        },
+        {
+          "width": 768,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.5312194824219
+        }
+      ],
+      "allFrameCount": 60,
+      "wrongVisibleFrames": [],
+      "sequence": [
+        {
+          "width": 1440,
+          "ready": "true",
+          "src": "hero-nexus-anchored-desktop.svg"
+        },
+        {
+          "width": 768,
+          "ready": "true",
+          "src": "hero-nexus-anchored-mobile.svg"
+        },
+        {
+          "width": 779,
+          "ready": "true",
+          "src": "hero-nexus-anchored-mobile.svg"
+        },
+        {
+          "width": 781,
+          "ready": "true",
+          "src": "hero-nexus-anchored-desktop.svg"
+        },
+        {
+          "width": 780,
+          "ready": "true",
+          "src": "hero-nexus-anchored-mobile.svg"
+        },
+        {
+          "width": 820,
+          "ready": "true",
+          "src": "hero-nexus-anchored-desktop.svg"
+        },
+        {
+          "width": 767,
+          "ready": "true",
+          "src": "hero-nexus-anchored-mobile.svg"
+        },
+        {
+          "width": 1440,
+          "ready": "true",
+          "src": "hero-nexus-anchored-desktop.svg"
+        },
+        {
+          "width": 768,
+          "ready": "true",
+          "src": "hero-nexus-anchored-mobile.svg"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "kind": "responsive-delay",
+      "direction": "to-mobile",
+      "fallback": true,
+      "requested": true,
+      "heldFrames": [
+        {
+          "width": 1440,
+          "source": "hero-nexus-anchored-desktop.svg",
+          "complete": true,
+          "ready": "true",
+          "visible": "visible",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 768,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.5312194824219
+        },
+        {
+          "width": 768,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.5312194824219
+        },
+        {
+          "width": 768,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.5312194824219
+        },
+        {
+          "width": 768,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.5312194824219
+        },
+        {
+          "width": 768,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.5312194824219
+        },
+        {
+          "width": 768,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.5312194824219
+        },
+        {
+          "width": 768,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.5312194824219
+        },
+        {
+          "width": 768,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.5312194824219
+        },
+        {
+          "width": 768,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.5312194824219
+        },
+        {
+          "width": 768,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.5312194824219
+        },
+        {
+          "width": 768,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.5312194824219
+        },
+        {
+          "width": 768,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.5312194824219
+        },
+        {
+          "width": 768,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.5312194824219
+        },
+        {
+          "width": 768,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.5312194824219
+        },
+        {
+          "width": 768,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.5312194824219
+        },
+        {
+          "width": 768,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.5312194824219
+        },
+        {
+          "width": 768,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.5312194824219
+        },
+        {
+          "width": 768,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.5312194824219
+        },
+        {
+          "width": 768,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.5312194824219
+        }
+      ],
+      "allFrameCount": 62,
+      "wrongVisibleFrames": [],
+      "sequence": [
+        {
+          "width": 1440,
+          "ready": "true",
+          "src": "hero-nexus-anchored-desktop.svg"
+        },
+        {
+          "width": 768,
+          "ready": "true",
+          "src": "hero-nexus-anchored-mobile.svg"
+        },
+        {
+          "width": 779,
+          "ready": "true",
+          "src": "hero-nexus-anchored-mobile.svg"
+        },
+        {
+          "width": 781,
+          "ready": "true",
+          "src": "hero-nexus-anchored-desktop.svg"
+        },
+        {
+          "width": 780,
+          "ready": "true",
+          "src": "hero-nexus-anchored-mobile.svg"
+        },
+        {
+          "width": 820,
+          "ready": "true",
+          "src": "hero-nexus-anchored-desktop.svg"
+        },
+        {
+          "width": 767,
+          "ready": "true",
+          "src": "hero-nexus-anchored-mobile.svg"
+        },
+        {
+          "width": 1440,
+          "ready": "true",
+          "src": "hero-nexus-anchored-desktop.svg"
+        },
+        {
+          "width": 768,
+          "ready": "true",
+          "src": "hero-nexus-anchored-mobile.svg"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "kind": "responsive-delay",
+      "direction": "to-desktop",
+      "fallback": false,
+      "requested": true,
+      "heldFrames": [
+        {
+          "width": 1440,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        }
+      ],
+      "allFrameCount": 62,
+      "wrongVisibleFrames": [],
+      "sequence": [
+        {
+          "width": 768,
+          "ready": "true",
+          "src": "hero-nexus-anchored-mobile.svg"
+        },
+        {
+          "width": 1440,
+          "ready": "true",
+          "src": "hero-nexus-anchored-desktop.svg"
+        },
+        {
+          "width": 779,
+          "ready": "true",
+          "src": "hero-nexus-anchored-mobile.svg"
+        },
+        {
+          "width": 781,
+          "ready": "true",
+          "src": "hero-nexus-anchored-desktop.svg"
+        },
+        {
+          "width": 780,
+          "ready": "true",
+          "src": "hero-nexus-anchored-mobile.svg"
+        },
+        {
+          "width": 820,
+          "ready": "true",
+          "src": "hero-nexus-anchored-desktop.svg"
+        },
+        {
+          "width": 767,
+          "ready": "true",
+          "src": "hero-nexus-anchored-mobile.svg"
+        },
+        {
+          "width": 1440,
+          "ready": "true",
+          "src": "hero-nexus-anchored-desktop.svg"
+        },
+        {
+          "width": 768,
+          "ready": "true",
+          "src": "hero-nexus-anchored-mobile.svg"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "kind": "responsive-delay",
+      "direction": "to-desktop",
+      "fallback": true,
+      "requested": true,
+      "heldFrames": [
+        {
+          "width": 768,
+          "source": "hero-nexus-anchored-mobile.svg",
+          "complete": true,
+          "ready": "true",
+          "visible": "visible",
+          "planeWidth": 504.5312194824219
+        },
+        {
+          "width": 1440,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        }
+      ],
+      "allFrameCount": 64,
+      "wrongVisibleFrames": [],
+      "sequence": [
+        {
+          "width": 768,
+          "ready": "true",
+          "src": "hero-nexus-anchored-mobile.svg"
+        },
+        {
+          "width": 1440,
+          "ready": "true",
+          "src": "hero-nexus-anchored-desktop.svg"
+        },
+        {
+          "width": 779,
+          "ready": "true",
+          "src": "hero-nexus-anchored-mobile.svg"
+        },
+        {
+          "width": 781,
+          "ready": "true",
+          "src": "hero-nexus-anchored-desktop.svg"
+        },
+        {
+          "width": 780,
+          "ready": "true",
+          "src": "hero-nexus-anchored-mobile.svg"
+        },
+        {
+          "width": 820,
+          "ready": "true",
+          "src": "hero-nexus-anchored-desktop.svg"
+        },
+        {
+          "width": 767,
+          "ready": "true",
+          "src": "hero-nexus-anchored-mobile.svg"
+        },
+        {
+          "width": 1440,
+          "ready": "true",
+          "src": "hero-nexus-anchored-desktop.svg"
+        },
+        {
+          "width": 768,
+          "ready": "true",
+          "src": "hero-nexus-anchored-mobile.svg"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "kind": "menu",
+      "build": "baseline",
+      "reducedMotion": "reduce",
+      "openMethod": "click",
+      "initial": {
+        "tag": "BUTTON",
+        "name": "Close navigation menu",
+        "inMenu": true,
+        "focusVisible": false,
+        "rect": {
+          "x": 314.703125,
+          "y": 20,
+          "width": 48,
+          "height": 48,
+          "top": 20,
+          "right": 362.703125,
+          "bottom": 68,
+          "left": 314.703125
+        }
+      },
+      "tabs": [
+        {
+          "tag": "A",
+          "name": "01Work",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 100,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 100,
+            "right": 362.703125,
+            "bottom": 173.59375,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "02Why Cumulative",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 173.59375,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 173.59375,
+            "right": 362.703125,
+            "bottom": 247.1875,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "03Approach",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 247.1875,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 247.1875,
+            "right": 362.703125,
+            "bottom": 320.78125,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "04Principles",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 320.78125,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 320.78125,
+            "right": 362.703125,
+            "bottom": 394.375,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "05Contact",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 394.375,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 394.375,
+            "right": 362.703125,
+            "bottom": 467.96875,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "name": "Close navigation menu",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 314.703125,
+            "y": 20,
+            "width": 48,
+            "height": 48,
+            "top": 20,
+            "right": 362.703125,
+            "bottom": 68,
+            "left": 314.703125
+          }
+        },
+        {
+          "tag": "A",
+          "name": "01Work",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 100,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 100,
+            "right": 362.703125,
+            "bottom": 173.59375,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "02Why Cumulative",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 173.59375,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 173.59375,
+            "right": 362.703125,
+            "bottom": 247.1875,
+            "left": 28.296875
+          }
+        }
+      ],
+      "returned": {
+        "focused": true,
+        "expanded": "false"
+      },
+      "navigation": {
+        "hash": "#work",
+        "inert": false,
+        "expanded": "false"
+      },
+      "errors": []
+    },
+    {
+      "engine": "chromium",
+      "kind": "menu",
+      "build": "baseline",
+      "reducedMotion": "reduce",
+      "openMethod": "keyboard",
+      "initial": {
+        "tag": "BUTTON",
+        "name": "Close navigation menu",
+        "inMenu": true,
+        "focusVisible": true,
+        "rect": {
+          "x": 314.703125,
+          "y": 20,
+          "width": 48,
+          "height": 48,
+          "top": 20,
+          "right": 362.703125,
+          "bottom": 68,
+          "left": 314.703125
+        }
+      },
+      "tabs": [
+        {
+          "tag": "A",
+          "name": "01Work",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 100,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 100,
+            "right": 362.703125,
+            "bottom": 173.59375,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "02Why Cumulative",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 173.59375,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 173.59375,
+            "right": 362.703125,
+            "bottom": 247.1875,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "03Approach",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 247.1875,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 247.1875,
+            "right": 362.703125,
+            "bottom": 320.78125,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "04Principles",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 320.78125,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 320.78125,
+            "right": 362.703125,
+            "bottom": 394.375,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "05Contact",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 394.375,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 394.375,
+            "right": 362.703125,
+            "bottom": 467.96875,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "name": "Close navigation menu",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 314.703125,
+            "y": 20,
+            "width": 48,
+            "height": 48,
+            "top": 20,
+            "right": 362.703125,
+            "bottom": 68,
+            "left": 314.703125
+          }
+        },
+        {
+          "tag": "A",
+          "name": "01Work",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 100,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 100,
+            "right": 362.703125,
+            "bottom": 173.59375,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "02Why Cumulative",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 173.59375,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 173.59375,
+            "right": 362.703125,
+            "bottom": 247.1875,
+            "left": 28.296875
+          }
+        }
+      ],
+      "returned": {
+        "focused": true,
+        "expanded": "false"
+      },
+      "navigation": {
+        "hash": "#work",
+        "inert": false,
+        "expanded": "false"
+      },
+      "errors": []
+    },
+    {
+      "engine": "chromium",
+      "kind": "menu",
+      "build": "baseline",
+      "reducedMotion": "no-preference",
+      "openMethod": "click",
+      "initial": {
+        "tag": "BUTTON",
+        "name": "Close navigation menu",
+        "inMenu": true,
+        "focusVisible": false,
+        "rect": {
+          "x": 314.703125,
+          "y": 20,
+          "width": 48,
+          "height": 48,
+          "top": 20,
+          "right": 362.703125,
+          "bottom": 68,
+          "left": 314.703125
+        }
+      },
+      "tabs": [
+        {
+          "tag": "A",
+          "name": "01Work",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 100,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 100,
+            "right": 362.703125,
+            "bottom": 173.59375,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "02Why Cumulative",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 173.59375,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 173.59375,
+            "right": 362.703125,
+            "bottom": 247.1875,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "03Approach",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 247.1875,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 247.1875,
+            "right": 362.703125,
+            "bottom": 320.78125,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "04Principles",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 320.78125,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 320.78125,
+            "right": 362.703125,
+            "bottom": 394.375,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "05Contact",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 394.375,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 394.375,
+            "right": 362.703125,
+            "bottom": 467.96875,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "name": "Close navigation menu",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 314.703125,
+            "y": 20,
+            "width": 48,
+            "height": 48,
+            "top": 20,
+            "right": 362.703125,
+            "bottom": 68,
+            "left": 314.703125
+          }
+        },
+        {
+          "tag": "A",
+          "name": "01Work",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 100,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 100,
+            "right": 362.703125,
+            "bottom": 173.59375,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "02Why Cumulative",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 173.59375,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 173.59375,
+            "right": 362.703125,
+            "bottom": 247.1875,
+            "left": 28.296875
+          }
+        }
+      ],
+      "returned": {
+        "focused": true,
+        "expanded": "false"
+      },
+      "navigation": {
+        "hash": "#work",
+        "inert": false,
+        "expanded": "false"
+      },
+      "errors": []
+    },
+    {
+      "engine": "chromium",
+      "kind": "menu",
+      "build": "baseline",
+      "reducedMotion": "no-preference",
+      "openMethod": "keyboard",
+      "initial": {
+        "tag": "BUTTON",
+        "name": "Close navigation menu",
+        "inMenu": true,
+        "focusVisible": true,
+        "rect": {
+          "x": 314.703125,
+          "y": 20,
+          "width": 48,
+          "height": 48,
+          "top": 20,
+          "right": 362.703125,
+          "bottom": 68,
+          "left": 314.703125
+        }
+      },
+      "tabs": [
+        {
+          "tag": "A",
+          "name": "01Work",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 100,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 100,
+            "right": 362.703125,
+            "bottom": 173.59375,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "02Why Cumulative",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 173.59375,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 173.59375,
+            "right": 362.703125,
+            "bottom": 247.1875,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "03Approach",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 247.1875,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 247.1875,
+            "right": 362.703125,
+            "bottom": 320.78125,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "04Principles",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 320.78125,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 320.78125,
+            "right": 362.703125,
+            "bottom": 394.375,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "05Contact",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 394.375,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 394.375,
+            "right": 362.703125,
+            "bottom": 467.96875,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "name": "Close navigation menu",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 314.703125,
+            "y": 20,
+            "width": 48,
+            "height": 48,
+            "top": 20,
+            "right": 362.703125,
+            "bottom": 68,
+            "left": 314.703125
+          }
+        },
+        {
+          "tag": "A",
+          "name": "01Work",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 100,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 100,
+            "right": 362.703125,
+            "bottom": 173.59375,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "02Why Cumulative",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 173.59375,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 173.59375,
+            "right": 362.703125,
+            "bottom": 247.1875,
+            "left": 28.296875
+          }
+        }
+      ],
+      "returned": {
+        "focused": true,
+        "expanded": "false"
+      },
+      "navigation": {
+        "hash": "#work",
+        "inert": false,
+        "expanded": "false"
+      },
+      "errors": []
+    },
+    {
+      "engine": "chromium",
+      "kind": "menu",
+      "build": "candidate",
+      "reducedMotion": "reduce",
+      "openMethod": "click",
+      "initial": {
+        "tag": "BUTTON",
+        "name": "Close navigation menu",
+        "inMenu": true,
+        "focusVisible": false,
+        "rect": {
+          "x": 314.703125,
+          "y": 20,
+          "width": 48,
+          "height": 48,
+          "top": 20,
+          "right": 362.703125,
+          "bottom": 68,
+          "left": 314.703125
+        }
+      },
+      "tabs": [
+        {
+          "tag": "A",
+          "name": "01Work",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 100,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 100,
+            "right": 362.703125,
+            "bottom": 173.59375,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "02Why Cumulative",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 173.59375,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 173.59375,
+            "right": 362.703125,
+            "bottom": 247.1875,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "03Approach",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 247.1875,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 247.1875,
+            "right": 362.703125,
+            "bottom": 320.78125,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "04Principles",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 320.78125,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 320.78125,
+            "right": 362.703125,
+            "bottom": 394.375,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "05Contact",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 394.375,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 394.375,
+            "right": 362.703125,
+            "bottom": 467.96875,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "name": "Close navigation menu",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 314.703125,
+            "y": 20,
+            "width": 48,
+            "height": 48,
+            "top": 20,
+            "right": 362.703125,
+            "bottom": 68,
+            "left": 314.703125
+          }
+        },
+        {
+          "tag": "A",
+          "name": "01Work",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 100,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 100,
+            "right": 362.703125,
+            "bottom": 173.59375,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "02Why Cumulative",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 173.59375,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 173.59375,
+            "right": 362.703125,
+            "bottom": 247.1875,
+            "left": 28.296875
+          }
+        }
+      ],
+      "returned": {
+        "focused": true,
+        "expanded": "false"
+      },
+      "navigation": {
+        "hash": "#work",
+        "inert": false,
+        "expanded": "false"
+      },
+      "errors": []
+    },
+    {
+      "engine": "chromium",
+      "kind": "menu",
+      "build": "candidate",
+      "reducedMotion": "reduce",
+      "openMethod": "keyboard",
+      "initial": {
+        "tag": "BUTTON",
+        "name": "Close navigation menu",
+        "inMenu": true,
+        "focusVisible": true,
+        "rect": {
+          "x": 314.703125,
+          "y": 20,
+          "width": 48,
+          "height": 48,
+          "top": 20,
+          "right": 362.703125,
+          "bottom": 68,
+          "left": 314.703125
+        }
+      },
+      "tabs": [
+        {
+          "tag": "A",
+          "name": "01Work",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 100,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 100,
+            "right": 362.703125,
+            "bottom": 173.59375,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "02Why Cumulative",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 173.59375,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 173.59375,
+            "right": 362.703125,
+            "bottom": 247.1875,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "03Approach",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 247.1875,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 247.1875,
+            "right": 362.703125,
+            "bottom": 320.78125,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "04Principles",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 320.78125,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 320.78125,
+            "right": 362.703125,
+            "bottom": 394.375,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "05Contact",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 394.375,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 394.375,
+            "right": 362.703125,
+            "bottom": 467.96875,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "name": "Close navigation menu",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 314.703125,
+            "y": 20,
+            "width": 48,
+            "height": 48,
+            "top": 20,
+            "right": 362.703125,
+            "bottom": 68,
+            "left": 314.703125
+          }
+        },
+        {
+          "tag": "A",
+          "name": "01Work",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 100,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 100,
+            "right": 362.703125,
+            "bottom": 173.59375,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "02Why Cumulative",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 173.59375,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 173.59375,
+            "right": 362.703125,
+            "bottom": 247.1875,
+            "left": 28.296875
+          }
+        }
+      ],
+      "returned": {
+        "focused": true,
+        "expanded": "false"
+      },
+      "navigation": {
+        "hash": "#work",
+        "inert": false,
+        "expanded": "false"
+      },
+      "errors": []
+    },
+    {
+      "engine": "chromium",
+      "kind": "menu",
+      "build": "candidate",
+      "reducedMotion": "no-preference",
+      "openMethod": "click",
+      "initial": {
+        "tag": "BUTTON",
+        "name": "Close navigation menu",
+        "inMenu": true,
+        "focusVisible": false,
+        "rect": {
+          "x": 314.703125,
+          "y": 20,
+          "width": 48,
+          "height": 48,
+          "top": 20,
+          "right": 362.703125,
+          "bottom": 68,
+          "left": 314.703125
+        }
+      },
+      "tabs": [
+        {
+          "tag": "A",
+          "name": "01Work",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 100,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 100,
+            "right": 362.703125,
+            "bottom": 173.59375,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "02Why Cumulative",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 173.59375,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 173.59375,
+            "right": 362.703125,
+            "bottom": 247.1875,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "03Approach",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 247.1875,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 247.1875,
+            "right": 362.703125,
+            "bottom": 320.78125,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "04Principles",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 320.78125,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 320.78125,
+            "right": 362.703125,
+            "bottom": 394.375,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "05Contact",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 394.375,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 394.375,
+            "right": 362.703125,
+            "bottom": 467.96875,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "name": "Close navigation menu",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 314.703125,
+            "y": 20,
+            "width": 48,
+            "height": 48,
+            "top": 20,
+            "right": 362.703125,
+            "bottom": 68,
+            "left": 314.703125
+          }
+        },
+        {
+          "tag": "A",
+          "name": "01Work",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 100,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 100,
+            "right": 362.703125,
+            "bottom": 173.59375,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "02Why Cumulative",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 173.59375,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 173.59375,
+            "right": 362.703125,
+            "bottom": 247.1875,
+            "left": 28.296875
+          }
+        }
+      ],
+      "returned": {
+        "focused": true,
+        "expanded": "false"
+      },
+      "navigation": {
+        "hash": "#work",
+        "inert": false,
+        "expanded": "false"
+      },
+      "errors": []
+    },
+    {
+      "engine": "chromium",
+      "kind": "menu",
+      "build": "candidate",
+      "reducedMotion": "no-preference",
+      "openMethod": "keyboard",
+      "initial": {
+        "tag": "BUTTON",
+        "name": "Close navigation menu",
+        "inMenu": true,
+        "focusVisible": true,
+        "rect": {
+          "x": 314.703125,
+          "y": 20,
+          "width": 48,
+          "height": 48,
+          "top": 20,
+          "right": 362.703125,
+          "bottom": 68,
+          "left": 314.703125
+        }
+      },
+      "tabs": [
+        {
+          "tag": "A",
+          "name": "01Work",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 100,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 100,
+            "right": 362.703125,
+            "bottom": 173.59375,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "02Why Cumulative",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 173.59375,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 173.59375,
+            "right": 362.703125,
+            "bottom": 247.1875,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "03Approach",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 247.1875,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 247.1875,
+            "right": 362.703125,
+            "bottom": 320.78125,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "04Principles",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 320.78125,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 320.78125,
+            "right": 362.703125,
+            "bottom": 394.375,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "05Contact",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 394.375,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 394.375,
+            "right": 362.703125,
+            "bottom": 467.96875,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "name": "Close navigation menu",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 314.703125,
+            "y": 20,
+            "width": 48,
+            "height": 48,
+            "top": 20,
+            "right": 362.703125,
+            "bottom": 68,
+            "left": 314.703125
+          }
+        },
+        {
+          "tag": "A",
+          "name": "01Work",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 100,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 100,
+            "right": 362.703125,
+            "bottom": 173.59375,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "02Why Cumulative",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 173.59375,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 173.59375,
+            "right": 362.703125,
+            "bottom": 247.1875,
+            "left": 28.296875
+          }
+        }
+      ],
+      "returned": {
+        "focused": true,
+        "expanded": "false"
+      },
+      "navigation": {
+        "hash": "#work",
+        "inert": false,
+        "expanded": "false"
+      },
+      "errors": []
+    },
+    {
+      "engine": "webkit",
+      "kind": "responsive-delay",
+      "direction": "to-mobile",
+      "fallback": false,
+      "requested": true,
+      "heldFrames": [
+        {
+          "width": 768,
+          "source": "hero-nexus-anchored-mobile.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.53125
+        },
+        {
+          "width": 768,
+          "source": "hero-nexus-anchored-mobile.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.53125
+        },
+        {
+          "width": 768,
+          "source": "hero-nexus-anchored-mobile.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.53125
+        },
+        {
+          "width": 768,
+          "source": "hero-nexus-anchored-mobile.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.53125
+        },
+        {
+          "width": 768,
+          "source": "hero-nexus-anchored-mobile.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.53125
+        },
+        {
+          "width": 768,
+          "source": "hero-nexus-anchored-mobile.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.53125
+        },
+        {
+          "width": 768,
+          "source": "hero-nexus-anchored-mobile.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.53125
+        },
+        {
+          "width": 768,
+          "source": "hero-nexus-anchored-mobile.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.53125
+        },
+        {
+          "width": 768,
+          "source": "hero-nexus-anchored-mobile.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.53125
+        },
+        {
+          "width": 768,
+          "source": "hero-nexus-anchored-mobile.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.53125
+        },
+        {
+          "width": 768,
+          "source": "hero-nexus-anchored-mobile.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.53125
+        },
+        {
+          "width": 768,
+          "source": "hero-nexus-anchored-mobile.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.53125
+        },
+        {
+          "width": 768,
+          "source": "hero-nexus-anchored-mobile.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.53125
+        },
+        {
+          "width": 768,
+          "source": "hero-nexus-anchored-mobile.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.53125
+        }
+      ],
+      "allFrameCount": 25,
+      "wrongVisibleFrames": [],
+      "sequence": [
+        {
+          "width": 1440,
+          "ready": "true",
+          "src": "hero-nexus-anchored-desktop.svg"
+        },
+        {
+          "width": 768,
+          "ready": "true",
+          "src": "hero-nexus-anchored-mobile.svg"
+        },
+        {
+          "width": 779,
+          "ready": "true",
+          "src": "hero-nexus-anchored-mobile.svg"
+        },
+        {
+          "width": 781,
+          "ready": "true",
+          "src": "hero-nexus-anchored-desktop.svg"
+        },
+        {
+          "width": 780,
+          "ready": "true",
+          "src": "hero-nexus-anchored-mobile.svg"
+        },
+        {
+          "width": 820,
+          "ready": "true",
+          "src": "hero-nexus-anchored-desktop.svg"
+        },
+        {
+          "width": 767,
+          "ready": "true",
+          "src": "hero-nexus-anchored-mobile.svg"
+        },
+        {
+          "width": 1440,
+          "ready": "true",
+          "src": "hero-nexus-anchored-desktop.svg"
+        },
+        {
+          "width": 768,
+          "ready": "true",
+          "src": "hero-nexus-anchored-mobile.svg"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "kind": "responsive-delay",
+      "direction": "to-mobile",
+      "fallback": true,
+      "requested": true,
+      "heldFrames": [
+        {
+          "width": 1440,
+          "source": "hero-nexus-anchored-desktop.svg",
+          "complete": true,
+          "ready": "true",
+          "visible": "visible",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 768,
+          "source": "hero-nexus-anchored-mobile.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.53125
+        },
+        {
+          "width": 768,
+          "source": "hero-nexus-anchored-mobile.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.53125
+        },
+        {
+          "width": 768,
+          "source": "hero-nexus-anchored-mobile.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.53125
+        },
+        {
+          "width": 768,
+          "source": "hero-nexus-anchored-mobile.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.53125
+        },
+        {
+          "width": 768,
+          "source": "hero-nexus-anchored-mobile.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.53125
+        },
+        {
+          "width": 768,
+          "source": "hero-nexus-anchored-mobile.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.53125
+        },
+        {
+          "width": 768,
+          "source": "hero-nexus-anchored-mobile.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.53125
+        },
+        {
+          "width": 768,
+          "source": "hero-nexus-anchored-mobile.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.53125
+        },
+        {
+          "width": 768,
+          "source": "hero-nexus-anchored-mobile.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.53125
+        },
+        {
+          "width": 768,
+          "source": "hero-nexus-anchored-mobile.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.53125
+        },
+        {
+          "width": 768,
+          "source": "hero-nexus-anchored-mobile.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.53125
+        },
+        {
+          "width": 768,
+          "source": "hero-nexus-anchored-mobile.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.53125
+        },
+        {
+          "width": 768,
+          "source": "hero-nexus-anchored-mobile.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.53125
+        },
+        {
+          "width": 768,
+          "source": "hero-nexus-anchored-mobile.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.53125
+        },
+        {
+          "width": 768,
+          "source": "hero-nexus-anchored-mobile.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.53125
+        },
+        {
+          "width": 768,
+          "source": "hero-nexus-anchored-mobile.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.53125
+        },
+        {
+          "width": 768,
+          "source": "hero-nexus-anchored-mobile.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.53125
+        },
+        {
+          "width": 768,
+          "source": "hero-nexus-anchored-mobile.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 504.53125
+        }
+      ],
+      "allFrameCount": 37,
+      "wrongVisibleFrames": [],
+      "sequence": [
+        {
+          "width": 1440,
+          "ready": "true",
+          "src": "hero-nexus-anchored-desktop.svg"
+        },
+        {
+          "width": 768,
+          "ready": "true",
+          "src": "hero-nexus-anchored-mobile.svg"
+        },
+        {
+          "width": 779,
+          "ready": "true",
+          "src": "hero-nexus-anchored-mobile.svg"
+        },
+        {
+          "width": 781,
+          "ready": "true",
+          "src": "hero-nexus-anchored-desktop.svg"
+        },
+        {
+          "width": 780,
+          "ready": "true",
+          "src": "hero-nexus-anchored-mobile.svg"
+        },
+        {
+          "width": 820,
+          "ready": "true",
+          "src": "hero-nexus-anchored-desktop.svg"
+        },
+        {
+          "width": 767,
+          "ready": "true",
+          "src": "hero-nexus-anchored-mobile.svg"
+        },
+        {
+          "width": 1440,
+          "ready": "true",
+          "src": "hero-nexus-anchored-desktop.svg"
+        },
+        {
+          "width": 768,
+          "ready": "true",
+          "src": "hero-nexus-anchored-mobile.svg"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "kind": "responsive-delay",
+      "direction": "to-desktop",
+      "fallback": false,
+      "requested": true,
+      "heldFrames": [
+        {
+          "width": 1440,
+          "source": "hero-nexus-anchored-desktop.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "hero-nexus-anchored-desktop.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "hero-nexus-anchored-desktop.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "hero-nexus-anchored-desktop.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "hero-nexus-anchored-desktop.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "hero-nexus-anchored-desktop.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "hero-nexus-anchored-desktop.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "hero-nexus-anchored-desktop.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "hero-nexus-anchored-desktop.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "hero-nexus-anchored-desktop.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "hero-nexus-anchored-desktop.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "hero-nexus-anchored-desktop.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "hero-nexus-anchored-desktop.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "hero-nexus-anchored-desktop.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "hero-nexus-anchored-desktop.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        }
+      ],
+      "allFrameCount": 32,
+      "wrongVisibleFrames": [],
+      "sequence": [
+        {
+          "width": 768,
+          "ready": "true",
+          "src": "hero-nexus-anchored-mobile.svg"
+        },
+        {
+          "width": 1440,
+          "ready": "true",
+          "src": "hero-nexus-anchored-desktop.svg"
+        },
+        {
+          "width": 779,
+          "ready": "true",
+          "src": "hero-nexus-anchored-mobile.svg"
+        },
+        {
+          "width": 781,
+          "ready": "true",
+          "src": "hero-nexus-anchored-desktop.svg"
+        },
+        {
+          "width": 780,
+          "ready": "true",
+          "src": "hero-nexus-anchored-mobile.svg"
+        },
+        {
+          "width": 820,
+          "ready": "true",
+          "src": "hero-nexus-anchored-desktop.svg"
+        },
+        {
+          "width": 767,
+          "ready": "true",
+          "src": "hero-nexus-anchored-mobile.svg"
+        },
+        {
+          "width": 1440,
+          "ready": "true",
+          "src": "hero-nexus-anchored-desktop.svg"
+        },
+        {
+          "width": 768,
+          "ready": "true",
+          "src": "hero-nexus-anchored-mobile.svg"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "kind": "responsive-delay",
+      "direction": "to-desktop",
+      "fallback": true,
+      "requested": true,
+      "heldFrames": [
+        {
+          "width": 768,
+          "source": "hero-nexus-anchored-mobile.svg",
+          "complete": true,
+          "ready": "true",
+          "visible": "visible",
+          "planeWidth": 504.53125
+        },
+        {
+          "width": 1440,
+          "source": "hero-nexus-anchored-desktop.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "hero-nexus-anchored-desktop.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "hero-nexus-anchored-desktop.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "hero-nexus-anchored-desktop.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "hero-nexus-anchored-desktop.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "hero-nexus-anchored-desktop.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "hero-nexus-anchored-desktop.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "hero-nexus-anchored-desktop.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "hero-nexus-anchored-desktop.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "hero-nexus-anchored-desktop.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "hero-nexus-anchored-desktop.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "hero-nexus-anchored-desktop.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "hero-nexus-anchored-desktop.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "hero-nexus-anchored-desktop.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "hero-nexus-anchored-desktop.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "hero-nexus-anchored-desktop.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        },
+        {
+          "width": 1440,
+          "source": "hero-nexus-anchored-desktop.svg",
+          "complete": false,
+          "ready": "false",
+          "visible": "hidden",
+          "planeWidth": 1595.0625
+        }
+      ],
+      "allFrameCount": 33,
+      "wrongVisibleFrames": [],
+      "sequence": [
+        {
+          "width": 768,
+          "ready": "true",
+          "src": "hero-nexus-anchored-mobile.svg"
+        },
+        {
+          "width": 1440,
+          "ready": "true",
+          "src": "hero-nexus-anchored-desktop.svg"
+        },
+        {
+          "width": 779,
+          "ready": "true",
+          "src": "hero-nexus-anchored-mobile.svg"
+        },
+        {
+          "width": 781,
+          "ready": "true",
+          "src": "hero-nexus-anchored-desktop.svg"
+        },
+        {
+          "width": 780,
+          "ready": "true",
+          "src": "hero-nexus-anchored-mobile.svg"
+        },
+        {
+          "width": 820,
+          "ready": "true",
+          "src": "hero-nexus-anchored-desktop.svg"
+        },
+        {
+          "width": 767,
+          "ready": "true",
+          "src": "hero-nexus-anchored-mobile.svg"
+        },
+        {
+          "width": 1440,
+          "ready": "true",
+          "src": "hero-nexus-anchored-desktop.svg"
+        },
+        {
+          "width": 768,
+          "ready": "true",
+          "src": "hero-nexus-anchored-mobile.svg"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "kind": "menu",
+      "build": "baseline",
+      "reducedMotion": "reduce",
+      "openMethod": "click",
+      "initial": {
+        "tag": "BODY",
+        "name": "Skip to contentWorkWhy CumulativeApproachPrinciplesContact01Work02Why Cumulative",
+        "inMenu": false,
+        "focusVisible": false,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 6532.25,
+          "top": 0,
+          "right": 390,
+          "bottom": 6532.25,
+          "left": 0
+        }
+      },
+      "tabs": [
+        {
+          "tag": "BUTTON",
+          "name": "Close navigation menu",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 314.703125,
+            "y": 20,
+            "width": 48,
+            "height": 48,
+            "top": 20,
+            "right": 362.703125,
+            "bottom": 68,
+            "left": 314.703125
+          }
+        },
+        {
+          "tag": "A",
+          "name": "01Work",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 100,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 100,
+            "right": 362.703125,
+            "bottom": 173.59375,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "02Why Cumulative",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 173.59375,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 173.59375,
+            "right": 362.703125,
+            "bottom": 247.1875,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "03Approach",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 247.1875,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 247.1875,
+            "right": 362.703125,
+            "bottom": 320.78125,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "04Principles",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 320.78125,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 320.78125,
+            "right": 362.703125,
+            "bottom": 394.375,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "05Contact",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 394.375,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 394.375,
+            "right": 362.703125,
+            "bottom": 467.96875,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "name": "Close navigation menu",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 314.703125,
+            "y": 20,
+            "width": 48,
+            "height": 48,
+            "top": 20,
+            "right": 362.703125,
+            "bottom": 68,
+            "left": 314.703125
+          }
+        },
+        {
+          "tag": "A",
+          "name": "01Work",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 100,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 100,
+            "right": 362.703125,
+            "bottom": 173.59375,
+            "left": 28.296875
+          }
+        }
+      ],
+      "returned": {
+        "focused": true,
+        "expanded": "false"
+      },
+      "navigation": {
+        "hash": "#work",
+        "inert": false,
+        "expanded": "false"
+      },
+      "errors": []
+    },
+    {
+      "engine": "webkit",
+      "kind": "menu",
+      "build": "baseline",
+      "reducedMotion": "reduce",
+      "openMethod": "keyboard",
+      "initial": {
+        "tag": "BODY",
+        "name": "Skip to contentWorkWhy CumulativeApproachPrinciplesContact01Work02Why Cumulative",
+        "inMenu": false,
+        "focusVisible": false,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 6532.25,
+          "top": 0,
+          "right": 390,
+          "bottom": 6532.25,
+          "left": 0
+        }
+      },
+      "tabs": [
+        {
+          "tag": "BUTTON",
+          "name": "Close navigation menu",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 314.703125,
+            "y": 20,
+            "width": 48,
+            "height": 48,
+            "top": 20,
+            "right": 362.703125,
+            "bottom": 68,
+            "left": 314.703125
+          }
+        },
+        {
+          "tag": "A",
+          "name": "01Work",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 100,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 100,
+            "right": 362.703125,
+            "bottom": 173.59375,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "02Why Cumulative",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 173.59375,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 173.59375,
+            "right": 362.703125,
+            "bottom": 247.1875,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "03Approach",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 247.1875,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 247.1875,
+            "right": 362.703125,
+            "bottom": 320.78125,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "04Principles",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 320.78125,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 320.78125,
+            "right": 362.703125,
+            "bottom": 394.375,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "05Contact",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 394.375,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 394.375,
+            "right": 362.703125,
+            "bottom": 467.96875,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "name": "Close navigation menu",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 314.703125,
+            "y": 20,
+            "width": 48,
+            "height": 48,
+            "top": 20,
+            "right": 362.703125,
+            "bottom": 68,
+            "left": 314.703125
+          }
+        },
+        {
+          "tag": "A",
+          "name": "01Work",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 100,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 100,
+            "right": 362.703125,
+            "bottom": 173.59375,
+            "left": 28.296875
+          }
+        }
+      ],
+      "returned": {
+        "focused": true,
+        "expanded": "false"
+      },
+      "navigation": {
+        "hash": "#work",
+        "inert": false,
+        "expanded": "false"
+      },
+      "errors": []
+    },
+    {
+      "engine": "webkit",
+      "kind": "menu",
+      "build": "baseline",
+      "reducedMotion": "no-preference",
+      "openMethod": "click",
+      "initial": {
+        "tag": "BUTTON",
+        "name": "Close navigation menu",
+        "inMenu": true,
+        "focusVisible": false,
+        "rect": {
+          "x": 314.703125,
+          "y": 20,
+          "width": 48,
+          "height": 48,
+          "top": 20,
+          "right": 362.703125,
+          "bottom": 68,
+          "left": 314.703125
+        }
+      },
+      "tabs": [
+        {
+          "tag": "A",
+          "name": "01Work",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 100,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 100,
+            "right": 362.703125,
+            "bottom": 173.59375,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "02Why Cumulative",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 173.59375,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 173.59375,
+            "right": 362.703125,
+            "bottom": 247.1875,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "03Approach",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 247.1875,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 247.1875,
+            "right": 362.703125,
+            "bottom": 320.78125,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "04Principles",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 320.78125,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 320.78125,
+            "right": 362.703125,
+            "bottom": 394.375,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "05Contact",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 394.375,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 394.375,
+            "right": 362.703125,
+            "bottom": 467.96875,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "name": "Close navigation menu",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 314.703125,
+            "y": 20,
+            "width": 48,
+            "height": 48,
+            "top": 20,
+            "right": 362.703125,
+            "bottom": 68,
+            "left": 314.703125
+          }
+        },
+        {
+          "tag": "A",
+          "name": "01Work",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 100,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 100,
+            "right": 362.703125,
+            "bottom": 173.59375,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "02Why Cumulative",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 173.59375,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 173.59375,
+            "right": 362.703125,
+            "bottom": 247.1875,
+            "left": 28.296875
+          }
+        }
+      ],
+      "returned": {
+        "focused": true,
+        "expanded": "false"
+      },
+      "navigation": {
+        "hash": "#work",
+        "inert": false,
+        "expanded": "false"
+      },
+      "errors": []
+    },
+    {
+      "engine": "webkit",
+      "kind": "menu",
+      "build": "baseline",
+      "reducedMotion": "no-preference",
+      "openMethod": "keyboard",
+      "initial": {
+        "tag": "BUTTON",
+        "name": "Close navigation menu",
+        "inMenu": true,
+        "focusVisible": true,
+        "rect": {
+          "x": 314.703125,
+          "y": 20,
+          "width": 48,
+          "height": 48,
+          "top": 20,
+          "right": 362.703125,
+          "bottom": 68,
+          "left": 314.703125
+        }
+      },
+      "tabs": [
+        {
+          "tag": "A",
+          "name": "01Work",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 100,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 100,
+            "right": 362.703125,
+            "bottom": 173.59375,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "02Why Cumulative",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 173.59375,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 173.59375,
+            "right": 362.703125,
+            "bottom": 247.1875,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "03Approach",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 247.1875,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 247.1875,
+            "right": 362.703125,
+            "bottom": 320.78125,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "04Principles",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 320.78125,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 320.78125,
+            "right": 362.703125,
+            "bottom": 394.375,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "05Contact",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 394.375,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 394.375,
+            "right": 362.703125,
+            "bottom": 467.96875,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "name": "Close navigation menu",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 314.703125,
+            "y": 20,
+            "width": 48,
+            "height": 48,
+            "top": 20,
+            "right": 362.703125,
+            "bottom": 68,
+            "left": 314.703125
+          }
+        },
+        {
+          "tag": "A",
+          "name": "01Work",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 100,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 100,
+            "right": 362.703125,
+            "bottom": 173.59375,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "02Why Cumulative",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 173.59375,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 173.59375,
+            "right": 362.703125,
+            "bottom": 247.1875,
+            "left": 28.296875
+          }
+        }
+      ],
+      "returned": {
+        "focused": true,
+        "expanded": "false"
+      },
+      "navigation": {
+        "hash": "#work",
+        "inert": false,
+        "expanded": "false"
+      },
+      "errors": []
+    },
+    {
+      "engine": "webkit",
+      "kind": "menu",
+      "build": "candidate",
+      "reducedMotion": "reduce",
+      "openMethod": "click",
+      "initial": {
+        "tag": "BODY",
+        "name": "Skip to contentWorkWhy CumulativeApproachPrinciplesContact01Work02Why Cumulative",
+        "inMenu": false,
+        "focusVisible": false,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 6507.4375,
+          "top": 0,
+          "right": 390,
+          "bottom": 6507.4375,
+          "left": 0
+        }
+      },
+      "tabs": [
+        {
+          "tag": "BUTTON",
+          "name": "Close navigation menu",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 314.703125,
+            "y": 20,
+            "width": 48,
+            "height": 48,
+            "top": 20,
+            "right": 362.703125,
+            "bottom": 68,
+            "left": 314.703125
+          }
+        },
+        {
+          "tag": "A",
+          "name": "01Work",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 100,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 100,
+            "right": 362.703125,
+            "bottom": 173.59375,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "02Why Cumulative",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 173.59375,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 173.59375,
+            "right": 362.703125,
+            "bottom": 247.1875,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "03Approach",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 247.1875,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 247.1875,
+            "right": 362.703125,
+            "bottom": 320.78125,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "04Principles",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 320.78125,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 320.78125,
+            "right": 362.703125,
+            "bottom": 394.375,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "05Contact",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 394.375,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 394.375,
+            "right": 362.703125,
+            "bottom": 467.96875,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "name": "Close navigation menu",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 314.703125,
+            "y": 20,
+            "width": 48,
+            "height": 48,
+            "top": 20,
+            "right": 362.703125,
+            "bottom": 68,
+            "left": 314.703125
+          }
+        },
+        {
+          "tag": "A",
+          "name": "01Work",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 100,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 100,
+            "right": 362.703125,
+            "bottom": 173.59375,
+            "left": 28.296875
+          }
+        }
+      ],
+      "returned": {
+        "focused": true,
+        "expanded": "false"
+      },
+      "navigation": {
+        "hash": "#work",
+        "inert": false,
+        "expanded": "false"
+      },
+      "errors": []
+    },
+    {
+      "engine": "webkit",
+      "kind": "menu",
+      "build": "candidate",
+      "reducedMotion": "reduce",
+      "openMethod": "keyboard",
+      "initial": {
+        "tag": "BODY",
+        "name": "Skip to contentWorkWhy CumulativeApproachPrinciplesContact01Work02Why Cumulative",
+        "inMenu": false,
+        "focusVisible": false,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 6507.4375,
+          "top": 0,
+          "right": 390,
+          "bottom": 6507.4375,
+          "left": 0
+        }
+      },
+      "tabs": [
+        {
+          "tag": "BUTTON",
+          "name": "Close navigation menu",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 314.703125,
+            "y": 20,
+            "width": 48,
+            "height": 48,
+            "top": 20,
+            "right": 362.703125,
+            "bottom": 68,
+            "left": 314.703125
+          }
+        },
+        {
+          "tag": "A",
+          "name": "01Work",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 100,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 100,
+            "right": 362.703125,
+            "bottom": 173.59375,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "02Why Cumulative",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 173.59375,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 173.59375,
+            "right": 362.703125,
+            "bottom": 247.1875,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "03Approach",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 247.1875,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 247.1875,
+            "right": 362.703125,
+            "bottom": 320.78125,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "04Principles",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 320.78125,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 320.78125,
+            "right": 362.703125,
+            "bottom": 394.375,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "05Contact",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 394.375,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 394.375,
+            "right": 362.703125,
+            "bottom": 467.96875,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "name": "Close navigation menu",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 314.703125,
+            "y": 20,
+            "width": 48,
+            "height": 48,
+            "top": 20,
+            "right": 362.703125,
+            "bottom": 68,
+            "left": 314.703125
+          }
+        },
+        {
+          "tag": "A",
+          "name": "01Work",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 100,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 100,
+            "right": 362.703125,
+            "bottom": 173.59375,
+            "left": 28.296875
+          }
+        }
+      ],
+      "returned": {
+        "focused": true,
+        "expanded": "false"
+      },
+      "navigation": {
+        "hash": "#work",
+        "inert": false,
+        "expanded": "false"
+      },
+      "errors": []
+    },
+    {
+      "engine": "webkit",
+      "kind": "menu",
+      "build": "candidate",
+      "reducedMotion": "no-preference",
+      "openMethod": "click",
+      "initial": {
+        "tag": "BUTTON",
+        "name": "Close navigation menu",
+        "inMenu": true,
+        "focusVisible": false,
+        "rect": {
+          "x": 314.703125,
+          "y": 20,
+          "width": 48,
+          "height": 48,
+          "top": 20,
+          "right": 362.703125,
+          "bottom": 68,
+          "left": 314.703125
+        }
+      },
+      "tabs": [
+        {
+          "tag": "A",
+          "name": "01Work",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 100,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 100,
+            "right": 362.703125,
+            "bottom": 173.59375,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "02Why Cumulative",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 173.59375,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 173.59375,
+            "right": 362.703125,
+            "bottom": 247.1875,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "03Approach",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 247.1875,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 247.1875,
+            "right": 362.703125,
+            "bottom": 320.78125,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "04Principles",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 320.78125,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 320.78125,
+            "right": 362.703125,
+            "bottom": 394.375,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "05Contact",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 394.375,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 394.375,
+            "right": 362.703125,
+            "bottom": 467.96875,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "name": "Close navigation menu",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 314.703125,
+            "y": 20,
+            "width": 48,
+            "height": 48,
+            "top": 20,
+            "right": 362.703125,
+            "bottom": 68,
+            "left": 314.703125
+          }
+        },
+        {
+          "tag": "A",
+          "name": "01Work",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 100,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 100,
+            "right": 362.703125,
+            "bottom": 173.59375,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "02Why Cumulative",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 173.59375,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 173.59375,
+            "right": 362.703125,
+            "bottom": 247.1875,
+            "left": 28.296875
+          }
+        }
+      ],
+      "returned": {
+        "focused": true,
+        "expanded": "false"
+      },
+      "navigation": {
+        "hash": "#work",
+        "inert": false,
+        "expanded": "false"
+      },
+      "errors": []
+    },
+    {
+      "engine": "webkit",
+      "kind": "menu",
+      "build": "candidate",
+      "reducedMotion": "no-preference",
+      "openMethod": "keyboard",
+      "initial": {
+        "tag": "BUTTON",
+        "name": "Close navigation menu",
+        "inMenu": true,
+        "focusVisible": true,
+        "rect": {
+          "x": 314.703125,
+          "y": 20,
+          "width": 48,
+          "height": 48,
+          "top": 20,
+          "right": 362.703125,
+          "bottom": 68,
+          "left": 314.703125
+        }
+      },
+      "tabs": [
+        {
+          "tag": "A",
+          "name": "01Work",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 100,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 100,
+            "right": 362.703125,
+            "bottom": 173.59375,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "02Why Cumulative",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 173.59375,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 173.59375,
+            "right": 362.703125,
+            "bottom": 247.1875,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "03Approach",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 247.1875,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 247.1875,
+            "right": 362.703125,
+            "bottom": 320.78125,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "04Principles",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 320.78125,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 320.78125,
+            "right": 362.703125,
+            "bottom": 394.375,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "05Contact",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 394.375,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 394.375,
+            "right": 362.703125,
+            "bottom": 467.96875,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "name": "Close navigation menu",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 314.703125,
+            "y": 20,
+            "width": 48,
+            "height": 48,
+            "top": 20,
+            "right": 362.703125,
+            "bottom": 68,
+            "left": 314.703125
+          }
+        },
+        {
+          "tag": "A",
+          "name": "01Work",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 100,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 100,
+            "right": 362.703125,
+            "bottom": 173.59375,
+            "left": 28.296875
+          }
+        },
+        {
+          "tag": "A",
+          "name": "02Why Cumulative",
+          "inMenu": true,
+          "focusVisible": true,
+          "rect": {
+            "x": 28.296875,
+            "y": 173.59375,
+            "width": 334.40625,
+            "height": 73.59375,
+            "top": 173.59375,
+            "right": 362.703125,
+            "bottom": 247.1875,
+            "left": 28.296875
+          }
+        }
+      ],
+      "returned": {
+        "focused": true,
+        "expanded": "false"
+      },
+      "navigation": {
+        "hash": "#work",
+        "inert": false,
+        "expanded": "false"
+      },
+      "errors": []
+    }
+  ]
+}

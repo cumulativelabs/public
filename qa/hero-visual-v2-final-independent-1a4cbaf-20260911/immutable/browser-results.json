@@ -1,0 +1,728 @@
+{
+  "url": "https://db4b833b.cumulative-labs.pages.dev/",
+  "results": [
+    {
+      "label": "chromium-1440x900",
+      "status": 200,
+      "noindex": "noindex",
+      "initial": {
+        "center": {
+          "x": 1085.265625,
+          "y": 431.0625
+        },
+        "artCenter": {
+          "x": 1085.2656982421875,
+          "y": 431.06250548219964
+        },
+        "artOffset": 0.00007344707302552594,
+        "flare": {
+          "x": 1001.0818440755208,
+          "y": 431.06250548219964
+        },
+        "flareAxisOffset": 0.0000054821996400278294,
+        "flarePortError": 0.00007324218745452526,
+        "ringCount": 1,
+        "permanentRings": 6,
+        "ringOffsets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "fallbackOffset": 1167.7398493298458,
+        "overflow": false,
+        "extraCssRing": "none",
+        "ready": "true",
+        "mode": "autonomous",
+        "image": "https://db4b833b.cumulative-labs.pages.dev/visuals/hero-nexus-anchored-desktop.svg",
+        "draws": 24
+      },
+      "pointer": {
+        "active": "true",
+        "x": 1063,
+        "y": 456.3,
+        "left": -107.7081298828125,
+        "top": -45.24456787109375
+      },
+      "errors": []
+    },
+    {
+      "label": "chromium-1280x800",
+      "status": 200,
+      "noindex": "noindex",
+      "initial": {
+        "center": {
+          "x": 991.484375,
+          "y": 418.140625
+        },
+        "artCenter": {
+          "x": 991.4844482421875,
+          "y": 418.14063048219964
+        },
+        "artOffset": 0.00007344707302552594,
+        "flare": {
+          "x": 907.3005940755208,
+          "y": 418.14063048219964
+        },
+        "flareAxisOffset": 0.0000054821996400278294,
+        "flarePortError": 0.00007324218745452526,
+        "ringCount": 1,
+        "permanentRings": 6,
+        "ringOffsets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "fallbackOffset": 1076.049649479303,
+        "overflow": false,
+        "extraCssRing": "none",
+        "ready": "true",
+        "mode": "autonomous",
+        "image": "https://db4b833b.cumulative-labs.pages.dev/visuals/hero-nexus-anchored-desktop.svg",
+        "draws": 24
+      },
+      "pointer": {
+        "active": "true",
+        "x": 1063,
+        "y": 456.3,
+        "left": -201.4893798828125,
+        "top": -58.16644287109375
+      },
+      "errors": []
+    },
+    {
+      "label": "chromium-1024x768",
+      "status": 200,
+      "noindex": "noindex",
+      "initial": {
+        "center": {
+          "x": 789.9453125,
+          "y": 397.4609375
+        },
+        "artCenter": {
+          "x": 789.9531575520834,
+          "y": 397.4687456142402
+        },
+        "artOffset": 0.0110684908718488,
+        "flare": {
+          "x": 714.3250759548611,
+          "y": 397.4687456142402
+        },
+        "flareAxisOffset": 0.007808114240219766,
+        "flarePortError": 0.007845052083325754,
+        "ringCount": 1,
+        "permanentRings": 6,
+        "ringOffsets": [
+          0.011048543456039806,
+          0.011048543456039806,
+          0.011048543456039806,
+          0.011048543456039806,
+          0.011048543456039806,
+          0.011048543456039806
+        ],
+        "fallbackOffset": 884.3013024863764,
+        "overflow": false,
+        "extraCssRing": "none",
+        "ready": "true",
+        "mode": "autonomous",
+        "image": "https://db4b833b.cumulative-labs.pages.dev/visuals/hero-nexus-anchored-desktop.svg",
+        "draws": 23
+      },
+      "pointer": {
+        "active": "true",
+        "x": 941.7,
+        "y": 407.9,
+        "left": -281.7763671875,
+        "top": -30.423095703125
+      },
+      "errors": []
+    },
+    {
+      "label": "chromium-768x1024",
+      "status": 200,
+      "noindex": "noindex",
+      "initial": {
+        "center": {
+          "x": 602.7265625,
+          "y": 714.8203125
+        },
+        "artCenter": {
+          "x": 602.718739922102,
+          "y": 714.8124809451219
+        },
+        "artOffset": 0.011069145259592279,
+        "flare": {
+          "x": 535.8390201302461,
+          "y": 714.8124809451219
+        },
+        "flareAxisOffset": 0.007831554878066527,
+        "flarePortError": 0.007822577897968586,
+        "ringCount": 1,
+        "permanentRings": 6,
+        "ringOffsets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "fallbackOffset": 935.01197227932,
+        "overflow": false,
+        "extraCssRing": "none",
+        "ready": "true",
+        "mode": "autonomous",
+        "image": "https://db4b833b.cumulative-labs.pages.dev/visuals/hero-nexus-anchored-mobile.svg",
+        "draws": 12
+      },
+      "pointer": null,
+      "errors": []
+    },
+    {
+      "label": "chromium-430x932",
+      "status": 200,
+      "noindex": "noindex",
+      "initial": {
+        "center": {
+          "x": 301.9140625,
+          "y": 654.9140625
+        },
+        "artCenter": {
+          "x": 301.90626518781795,
+          "y": 654.9062476181402
+        },
+        "artOffset": 0.011039495266827725,
+        "flare": {
+          "x": 236.54681751339933,
+          "y": 654.9062476181402
+        },
+        "flareAxisOffset": 0.007814881859758316,
+        "flarePortError": 0.007797312182049154,
+        "ringCount": 1,
+        "permanentRings": 6,
+        "ringOffsets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "fallbackOffset": 721.154997483556,
+        "overflow": false,
+        "extraCssRing": "none",
+        "ready": "true",
+        "mode": "autonomous",
+        "image": "https://db4b833b.cumulative-labs.pages.dev/visuals/hero-nexus-anchored-mobile.svg",
+        "draws": 11
+      },
+      "pointer": null,
+      "errors": []
+    },
+    {
+      "label": "chromium-390x844",
+      "status": 200,
+      "noindex": "noindex",
+      "initial": {
+        "center": {
+          "x": 266.3046875,
+          "y": 668.4296875
+        },
+        "artCenter": {
+          "x": 266.29687783884447,
+          "y": 668.4218434403582
+        },
+        "artOffset": 0.01106887885146157,
+        "flare": {
+          "x": 207.01853481558865,
+          "y": 668.4218434403582
+        },
+        "flareAxisOffset": 0.007844059641797685,
+        "flarePortError": 0.007809661155533831,
+        "ringCount": 1,
+        "permanentRings": 6,
+        "ringOffsets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "fallbackOffset": 719.5251446028973,
+        "overflow": false,
+        "extraCssRing": "none",
+        "ready": "true",
+        "mode": "autonomous",
+        "image": "https://db4b833b.cumulative-labs.pages.dev/visuals/hero-nexus-anchored-mobile.svg",
+        "draws": 11
+      },
+      "pointer": null,
+      "errors": []
+    },
+    {
+      "label": "chromium-320x568",
+      "status": 200,
+      "noindex": "noindex",
+      "initial": {
+        "center": {
+          "x": 204.0078125,
+          "y": 706.1484375
+        },
+        "artCenter": {
+          "x": 204.00000972304233,
+          "y": 706.1405794469322
+        },
+        "artOffset": 0.011073948088550592,
+        "flare": {
+          "x": 155.36152861839116,
+          "y": 706.1405794469322
+        },
+        "flareAxisOffset": 0.007858053067820947,
+        "flarePortError": 0.007802776957674951,
+        "ringCount": 1,
+        "permanentRings": 6,
+        "ringOffsets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "fallbackOffset": 735.0270766065197,
+        "overflow": false,
+        "extraCssRing": "none",
+        "ready": "true",
+        "mode": "autonomous",
+        "image": "https://db4b833b.cumulative-labs.pages.dev/visuals/hero-nexus-anchored-mobile.svg",
+        "draws": 11
+      },
+      "pointer": null,
+      "errors": []
+    },
+    {
+      "label": "chromium no-js",
+      "geometry": {
+        "center": {
+          "x": 266.3046875,
+          "y": 668.4296875
+        },
+        "artCenter": {
+          "x": 266.29687783884447,
+          "y": 668.4218434403582
+        },
+        "artOffset": 0.01106887885146157,
+        "flare": {
+          "x": 207.01853481558865,
+          "y": 668.4218434403582
+        },
+        "flareAxisOffset": 0.007844059641797685,
+        "flarePortError": 0.007809661155533831,
+        "ringCount": 0,
+        "permanentRings": 0,
+        "ringOffsets": [],
+        "fallbackOffset": 0.024732421373724132,
+        "overflow": false,
+        "extraCssRing": "none",
+        "image": "https://db4b833b.cumulative-labs.pages.dev/visuals/hero-nexus-anchored-mobile.svg",
+        "draws": 0
+      }
+    },
+    {
+      "label": "chromium no-canvas",
+      "geometry": {
+        "center": {
+          "x": 266.3046875,
+          "y": 668.4296875
+        },
+        "artCenter": {
+          "x": 266.29687783884447,
+          "y": 668.4218434403582
+        },
+        "artOffset": 0.01106887885146157,
+        "flare": {
+          "x": 207.01853481558865,
+          "y": 668.4218434403582
+        },
+        "flareAxisOffset": 0.007844059641797685,
+        "flarePortError": 0.007809661155533831,
+        "ringCount": 0,
+        "permanentRings": 0,
+        "ringOffsets": [],
+        "fallbackOffset": 0.024732421373724132,
+        "overflow": false,
+        "extraCssRing": "none",
+        "image": "https://db4b833b.cumulative-labs.pages.dev/visuals/hero-nexus-anchored-mobile.svg",
+        "draws": 0
+      }
+    },
+    {
+      "label": "webkit-1440x900",
+      "status": 200,
+      "noindex": "noindex",
+      "initial": {
+        "center": {
+          "x": 1085.265625,
+          "y": 431.046875
+        },
+        "artCenter": {
+          "x": 1085.312451171875,
+          "y": 431.0066583142309
+        },
+        "artOffset": 0.06172578218794894,
+        "flare": {
+          "x": 1001.1285970052083,
+          "y": 431.0066583142309
+        },
+        "flareAxisOffset": 0.04021668576910997,
+        "flarePortError": 0.046826171874954525,
+        "ringCount": 1,
+        "permanentRings": 6,
+        "ringOffsets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "fallbackOffset": 1167.7340815673344,
+        "overflow": false,
+        "extraCssRing": "none",
+        "ready": "true",
+        "mode": "autonomous",
+        "image": "https://db4b833b.cumulative-labs.pages.dev/visuals/hero-nexus-anchored-desktop.svg",
+        "draws": 10
+      },
+      "pointer": {
+        "active": "true",
+        "x": 1062.7,
+        "y": 456.3,
+        "left": -107.661376953125,
+        "top": -45.3004150390625
+      },
+      "errors": []
+    },
+    {
+      "label": "webkit-1280x800",
+      "status": 200,
+      "noindex": "noindex",
+      "initial": {
+        "center": {
+          "x": 991.484375,
+          "y": 418.109375
+        },
+        "artCenter": {
+          "x": 991.531201171875,
+          "y": 418.0691583142309
+        },
+        "artOffset": 0.06172578218794894,
+        "flare": {
+          "x": 907.3473470052083,
+          "y": 418.0691583142309
+        },
+        "flareAxisOffset": 0.04021668576910997,
+        "flarePortError": 0.046826171874954525,
+        "ringCount": 1,
+        "permanentRings": 6,
+        "ringOffsets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "fallbackOffset": 1076.0375064708624,
+        "overflow": false,
+        "extraCssRing": "none",
+        "ready": "true",
+        "mode": "autonomous",
+        "image": "https://db4b833b.cumulative-labs.pages.dev/visuals/hero-nexus-anchored-desktop.svg",
+        "draws": 13
+      },
+      "pointer": {
+        "active": "true",
+        "x": 1062.4,
+        "y": 456.2,
+        "left": -201.442626953125,
+        "top": -58.2379150390625
+      },
+      "errors": []
+    },
+    {
+      "label": "webkit-1024x768",
+      "status": 200,
+      "noindex": "noindex",
+      "initial": {
+        "center": {
+          "x": 789.9453125,
+          "y": 397.4296875
+        },
+        "artCenter": {
+          "x": 789.9181233723959,
+          "y": 397.38921680564647
+        },
+        "artOffset": 0.04875577669698999,
+        "flare": {
+          "x": 714.2900417751736,
+          "y": 397.38921680564647
+        },
+        "flareAxisOffset": 0.040470694353530234,
+        "flarePortError": 0.027189127604174246,
+        "ringCount": 1,
+        "permanentRings": 6,
+        "ringOffsets": [
+          0.011048543456039806,
+          0.011048543456039806,
+          0.011048543456039806,
+          0.011048543456039806,
+          0.011048543456039806,
+          0.011048543456039806
+        ],
+        "fallbackOffset": 884.2872572004361,
+        "overflow": false,
+        "extraCssRing": "none",
+        "ready": "true",
+        "mode": "autonomous",
+        "image": "https://db4b833b.cumulative-labs.pages.dev/visuals/hero-nexus-anchored-desktop.svg",
+        "draws": 14
+      },
+      "pointer": {
+        "active": "true",
+        "x": 940.8,
+        "y": 407.5,
+        "left": -281.8114013671875,
+        "top": -30.50262451171875
+      },
+      "errors": []
+    },
+    {
+      "label": "webkit-768x1024",
+      "status": 200,
+      "noindex": "noindex",
+      "initial": {
+        "center": {
+          "x": 602.7265625,
+          "y": 714.7265625
+        },
+        "artCenter": {
+          "x": 602.7399703624636,
+          "y": 714.8260917849657
+        },
+        "artOffset": 0.1004283293778387,
+        "flare": {
+          "x": 535.8602465252543,
+          "y": 714.8260917849657
+        },
+        "flareAxisOffset": 0.09952928496568347,
+        "flarePortError": 0.013407862463623132,
+        "ringCount": 1,
+        "permanentRings": 6,
+        "ringOffsets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "fallbackOffset": 934.9403019905243,
+        "overflow": false,
+        "extraCssRing": "none",
+        "ready": "true",
+        "mode": "autonomous",
+        "image": "https://db4b833b.cumulative-labs.pages.dev/visuals/hero-nexus-anchored-mobile.svg",
+        "draws": 7
+      },
+      "pointer": null,
+      "errors": []
+    },
+    {
+      "label": "webkit-430x932",
+      "status": 200,
+      "noindex": "noindex",
+      "initial": {
+        "center": {
+          "x": 301.9140625,
+          "y": 654.8203125
+        },
+        "artCenter": {
+          "x": 301.9487151389898,
+          "y": 654.611264707984
+        },
+        "artOffset": 0.2119004123066481,
+        "flare": {
+          "x": 236.5892674645712,
+          "y": 654.611264707984
+        },
+        "flareAxisOffset": 0.20904779201600832,
+        "flarePortError": 0.034652638989825846,
+        "ringCount": 1,
+        "permanentRings": 6,
+        "ringOffsets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "fallbackOffset": 721.0698598595365,
+        "overflow": false,
+        "extraCssRing": "none",
+        "ready": "true",
+        "mode": "autonomous",
+        "image": "https://db4b833b.cumulative-labs.pages.dev/visuals/hero-nexus-anchored-mobile.svg",
+        "draws": 7
+      },
+      "pointer": null,
+      "errors": []
+    },
+    {
+      "label": "webkit-390x844",
+      "status": 200,
+      "noindex": "noindex",
+      "initial": {
+        "center": {
+          "x": 266.3046875,
+          "y": 668.2890625
+        },
+        "artCenter": {
+          "x": 266.42419717478197,
+          "y": 668.106840998952
+        },
+        "artOffset": 0.21791566673989957,
+        "flare": {
+          "x": 207.14585415152615,
+          "y": 668.106840998952
+        },
+        "flareAxisOffset": 0.18222150104804768,
+        "flarePortError": 0.11950967478196617,
+        "ringCount": 1,
+        "permanentRings": 6,
+        "ringOffsets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "fallbackOffset": 719.394507653208,
+        "overflow": false,
+        "extraCssRing": "none",
+        "ready": "true",
+        "mode": "autonomous",
+        "image": "https://db4b833b.cumulative-labs.pages.dev/visuals/hero-nexus-anchored-mobile.svg",
+        "draws": 7
+      },
+      "pointer": null,
+      "errors": []
+    },
+    {
+      "label": "webkit-320x568",
+      "status": 200,
+      "noindex": "noindex",
+      "initial": {
+        "center": {
+          "x": 204.0078125,
+          "y": 706.0234375
+        },
+        "artCenter": {
+          "x": 203.946954913472,
+          "y": 706.2033846227134
+        },
+        "artOffset": 0.18995950308119194,
+        "flare": {
+          "x": 155.30847380882085,
+          "y": 706.2033846227134
+        },
+        "flareAxisOffset": 0.17994712271342905,
+        "flarePortError": 0.06085758652798745,
+        "ringCount": 1,
+        "permanentRings": 6,
+        "ringOffsets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "fallbackOffset": 734.9069885777054,
+        "overflow": false,
+        "extraCssRing": "none",
+        "ready": "true",
+        "mode": "autonomous",
+        "image": "https://db4b833b.cumulative-labs.pages.dev/visuals/hero-nexus-anchored-mobile.svg",
+        "draws": 8
+      },
+      "pointer": null,
+      "errors": []
+    },
+    {
+      "label": "webkit no-js",
+      "geometry": {
+        "center": {
+          "x": 266.3046875,
+          "y": 668.2890625
+        },
+        "artCenter": {
+          "x": 266.42419717478197,
+          "y": 668.106840998952
+        },
+        "artOffset": 0.21791566673989957,
+        "flare": {
+          "x": 207.14585415152615,
+          "y": 668.106840998952
+        },
+        "flareAxisOffset": 0.18222150104804768,
+        "flarePortError": 0.11950967478196617,
+        "ringCount": 0,
+        "permanentRings": 0,
+        "ringOffsets": [],
+        "fallbackOffset": 0.21405474829734686,
+        "overflow": false,
+        "extraCssRing": "none",
+        "image": "https://db4b833b.cumulative-labs.pages.dev/visuals/hero-nexus-anchored-mobile.svg",
+        "draws": 0
+      }
+    },
+    {
+      "label": "webkit no-canvas",
+      "geometry": {
+        "center": {
+          "x": 266.3046875,
+          "y": 668.2890625
+        },
+        "artCenter": {
+          "x": 266.42419717478197,
+          "y": 668.106840998952
+        },
+        "artOffset": 0.21791566673989957,
+        "flare": {
+          "x": 207.14585415152615,
+          "y": 668.106840998952
+        },
+        "flareAxisOffset": 0.18222150104804768,
+        "flarePortError": 0.11950967478196617,
+        "ringCount": 0,
+        "permanentRings": 0,
+        "ringOffsets": [],
+        "fallbackOffset": 0.21405474829734686,
+        "overflow": false,
+        "extraCssRing": "none",
+        "image": "https://db4b833b.cumulative-labs.pages.dev/visuals/hero-nexus-anchored-mobile.svg",
+        "draws": 0
+      }
+    }
+  ],
+  "failures": []
+}

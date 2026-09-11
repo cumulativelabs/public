@@ -1,0 +1,80 @@
+{
+  "url": "https://db4b833b.cumulative-labs.pages.dev/",
+  "sourceCommit": "e7540c4c443415249cecba7d77731f329ff1fcb5",
+  "method": "Fresh Chromium context, same-origin no-store fetch, full returned bytes compared with local production build.",
+  "assets": [
+    {
+      "path": "index.html",
+      "status": 200,
+      "noindex": "noindex",
+      "localSHA256": "be53037ce6de5ae589253771a9cc44a1f892f4491e5d14863219e684266b470e",
+      "remoteSHA256": "be53037ce6de5ae589253771a9cc44a1f892f4491e5d14863219e684266b470e",
+      "equal": true
+    },
+    {
+      "path": "visuals/hero-nexus-anchored-desktop.svg",
+      "status": 200,
+      "noindex": "noindex",
+      "localSHA256": "4a989b3c954b04a7aff69e9e74b1cca490874dcb93519ee93457a5c7eebc5ef8",
+      "remoteSHA256": "4a989b3c954b04a7aff69e9e74b1cca490874dcb93519ee93457a5c7eebc5ef8",
+      "equal": true
+    },
+    {
+      "path": "visuals/hero-nexus-anchored-mobile.svg",
+      "status": 200,
+      "noindex": "noindex",
+      "localSHA256": "ccee6d6018639288a2c47cd8ec2170208c14cd696f5c2907c7cb1930eeabe3db",
+      "remoteSHA256": "ccee6d6018639288a2c47cd8ec2170208c14cd696f5c2907c7cb1930eeabe3db",
+      "equal": true
+    },
+    {
+      "path": "favicons/apple-touch-icon.png",
+      "status": 200,
+      "noindex": "noindex",
+      "localSHA256": "266251f48a9518e2a1cf65fd3767c7ae74a598cf02081ee72fba58bb1ec0cbc2",
+      "remoteSHA256": "266251f48a9518e2a1cf65fd3767c7ae74a598cf02081ee72fba58bb1ec0cbc2",
+      "equal": true
+    },
+    {
+      "path": "favicons/favicon.svg",
+      "status": 200,
+      "noindex": "noindex",
+      "localSHA256": "c8e56446965a7881e9dc1b6e612d89a469d77ef27b0e7cbb661f572a18969be3",
+      "remoteSHA256": "c8e56446965a7881e9dc1b6e612d89a469d77ef27b0e7cbb661f572a18969be3",
+      "equal": true
+    },
+    {
+      "path": "brand/cumulative-labs-horizontal.svg",
+      "status": 200,
+      "noindex": "noindex",
+      "localSHA256": "24f32afc84a80cba6ff5a8a48e727670ce58cf1d83ef95f8356a2b2ea99ea85b",
+      "remoteSHA256": "24f32afc84a80cba6ff5a8a48e727670ce58cf1d83ef95f8356a2b2ea99ea85b",
+      "equal": true
+    },
+    {
+      "path": "brand/cumulative-labs-symbol.svg",
+      "status": 200,
+      "noindex": "noindex",
+      "localSHA256": "c8e56446965a7881e9dc1b6e612d89a469d77ef27b0e7cbb661f572a18969be3",
+      "remoteSHA256": "c8e56446965a7881e9dc1b6e612d89a469d77ef27b0e7cbb661f572a18969be3",
+      "equal": true
+    },
+    {
+      "path": "assets/index-DEsgdTzj.js",
+      "status": 200,
+      "noindex": "noindex",
+      "localSHA256": "aa8724a6ba71c4a09db7f3a91aa108487588e8bd22d8680b33e37ea0f5106ec4",
+      "remoteSHA256": "aa8724a6ba71c4a09db7f3a91aa108487588e8bd22d8680b33e37ea0f5106ec4",
+      "equal": true
+    },
+    {
+      "path": "assets/index-PQu7MiT7.css",
+      "status": 200,
+      "noindex": "noindex",
+      "localSHA256": "ea7e374c31c4fbd0807983fb5f5d84236a37788b28c56ce365123eb55b0437e1",
+      "remoteSHA256": "ea7e374c31c4fbd0807983fb5f5d84236a37788b28c56ce365123eb55b0437e1",
+      "equal": true
+    }
+  ],
+  "allEqual": true
+}

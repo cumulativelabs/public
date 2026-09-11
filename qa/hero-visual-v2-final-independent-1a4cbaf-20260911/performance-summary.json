@@ -1,0 +1,60 @@
+{
+  "method": "Fresh Chromium contexts, three alternating local production-build samples per viewport. Two-second idle windows. No network/CPU throttling. Not field data or battery measurement.",
+  "copyUnchanged": true,
+  "medians": [
+    {
+      "build": "baseline",
+      "width": 1440,
+      "lcpMs": 140,
+      "cls": 0,
+      "framesPerSecond": 0,
+      "scriptMsPerSecond": 0.16700000000000048,
+      "heapBytes": 2219024
+    },
+    {
+      "build": "candidate",
+      "width": 1440,
+      "lcpMs": 104,
+      "cls": 0,
+      "framesPerSecond": 30.87649402390438,
+      "scriptMsPerSecond": 14.969,
+      "heapBytes": 2891720
+    },
+    {
+      "build": "baseline",
+      "width": 768,
+      "lcpMs": 72,
+      "cls": 0,
+      "framesPerSecond": 0,
+      "scriptMsPerSecond": 0.1460000000000003,
+      "heapBytes": 2338108
+    },
+    {
+      "build": "candidate",
+      "width": 768,
+      "lcpMs": 60,
+      "cls": 0,
+      "framesPerSecond": 29.940119760479043,
+      "scriptMsPerSecond": 17.034000000000002,
+      "heapBytes": 2606328
+    },
+    {
+      "build": "baseline",
+      "width": 390,
+      "lcpMs": 52,
+      "cls": 0,
+      "framesPerSecond": 0,
+      "scriptMsPerSecond": 0.15100000000000008,
+      "heapBytes": 2153728
+    },
+    {
+      "build": "candidate",
+      "width": 390,
+      "lcpMs": 48,
+      "cls": 0,
+      "framesPerSecond": 13.452914798206278,
+      "scriptMsPerSecond": 14.195999999999998,
+      "heapBytes": 3202316
+    }
+  ]
+}
