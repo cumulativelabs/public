@@ -1,3 +1,68 @@
+# Cursor-reaching desktop intake correction
+
+The Founder rejected the preceding interaction: the broad production fan was restored, but the 155px local influence and roughly 21px maximum displacement could not visibly reach a cursor hundreds of pixels left of it. The screenshot supplied with this assignment showed no unmistakable cursor-reaching fibers. That feedback supersedes the historical assessment of the gentle attraction below.
+
+## Current candidate
+
+- Task: visibly reach the far-left desktop cursor while preserving the restored production fan.
+- Branch: `codex/hero-desktop-intake-polish-20260911`; existing draft PR #4.
+- Substantive commit: `34f62cf9feef658392b0b85ed8ec5855c7f93e54`
+- Substantive tree: `674de385a8daf9bba37030e2a4fa8c31869d98a2`
+- Parent: `afa0f333fccdfa6ed3b3a31c8407da8de4d893ea`
+- Creator validation passed; independent acceptance and Founder visual review remain pending. No merge or production deployment. Remote branch/preview readback is recorded in the draft PR after push.
+
+## What changed visually
+
+A separate interaction-only canvas paints 16 thin orange/pink fibers that bend from selected production starts into a small bundle at the eased cursor. Their initial tangents match the original curves in reverse, their controls vary deterministically, and their tips have a restrained 26px warm glow. The fibers fade along their length and ease away on exit. This layer is behind the unchanged copy scrim, with its own opacity so the old canvas mask does not suppress the distant reach.
+
+The production renderer, all original SVG paths, the original fan fixtures/parity tests and browser parity probe are unchanged. No original start or control is relocated. The core, mark, rings, purple output, copy, site layout, mobile artwork and dependencies are unchanged. Tethers fade out before the cursor enters the original starts, preventing backward loops into the core/output region. Mobile, touch, coarse-pointer, reduced-motion, Save-Data, low-core and no-canvas fallback cases paint no tether; switching to reduced motion while active clears it immediately.
+
+The [first visual pass](cursor-reach/first-pass-upper.png) was visible but too faint/diagonal behind the headline. The final pass increases strand opacity/width modestly and lengthens the handles so the curves relax more smoothly into the cursor. All eight final normal-motion screenshots below were inspected: the cursor bundle is visible, the original broad fan remains, the copy is readable, and the lower bundle has no oversized beam or hotspot.
+
+## Exact cursor-reach evidence
+
+[Rendered stroke instrumentation and measurements](cursor-reach/results.json) record actual `bezierCurveTo` paths submitted to the tether canvas and actually stroked with visible alpha, alongside the eased pointer, original production curves, core/ring geometry and canvas alpha pixels. Coordinates below are viewport CSS pixels; the raw evidence also includes the scene bounds for conversion.
+
+| Engine / viewport | Lower cursor | Upper cursor | Tips within 25px | Maximum tip distance | Exit residual |
+| --- | --- | --- | ---: | ---: | ---: |
+| Chromium 1440×900 | (120, 711.06) | (150, 221.06) | 16/16 in each | 19.935px | 0 alpha pixels |
+| Chromium 1280×800 | (120, 690) | (150, 208.14) | 16/16 in each | 19.935px | 0 alpha pixels |
+| WebKit 1440×900 | (120, 711.05) | (150, 221.05) | 16/16 in each | 19.935px | 0 alpha pixels |
+| WebKit 1280×800 | (120, 690) | (150, 208.11) | 16/16 in each | 19.935px | 0 alpha pixels |
+
+All 128 tip measurements pass. All 128 joins match production starts and tangents; maximum tangent cross-product error is below 1.8e-11. Active tethers cover 19,986–26,027 canvas pixels with alpha above 20/255. After 100ms outside the hero, 14–28% of active alpha remains; after another 1000ms, zero strokes and zero alpha remain. Original fan/output coordinates and core/rings are exactly unchanged in all eight active cases.
+
+| Engine / viewport | Baseline | Far-left lower | Far-left upper |
+| --- | --- | --- | --- |
+| Chromium 1440×900 | [Baseline](cursor-reach/chromium-1440-baseline.png) | [Normal motion](cursor-reach/chromium-1440-far-left-lower.png) | [Normal motion](cursor-reach/chromium-1440-far-left-upper.png) |
+| Chromium 1280×800 | [Baseline](cursor-reach/chromium-1280-baseline.png) | [Normal motion](cursor-reach/chromium-1280-far-left-lower.png) | [Normal motion](cursor-reach/chromium-1280-far-left-upper.png) |
+| WebKit 1440×900 | [Baseline](cursor-reach/webkit-1440-baseline.png) | [Normal motion](cursor-reach/webkit-1440-far-left-lower.png) | [Normal motion](cursor-reach/webkit-1440-far-left-upper.png) |
+| WebKit 1280×800 | [Baseline](cursor-reach/webkit-1280-baseline.png) | [Normal motion](cursor-reach/webkit-1280-far-left-lower.png) | [Normal motion](cursor-reach/webkit-1280-far-left-upper.png) |
+
+## Validation of this correction
+
+- `npm run lint`, `npm run typecheck`, `npm test -- --run`, `npm run build`, `npm run validate:build`, and `git diff --check`: passed. **34 tests / eight files.** No dependency changes.
+- [Unmodified production parity probe](cursor-reach/fan-parity.json): six cases, 78 fan-width comparisons, zero failures; all 115 static and 86 live originals remain. Existing production-fan geometry/parity unit tests pass unchanged.
+- [Cursor reach](cursor-reach/results.json): eight normal-motion cases at 1440×900 and 1280×800, Chromium and WebKit; 16 tips near the cursor in every case; all joins, exit fade/removal and fixed-coordinate assertions pass.
+- [Policy coverage](cursor-reach/capability-policy.json): 16 cases, zero failures; reduced motion, Save-Data, low core, touch, mobile, coarse pointer, no-canvas fallback, and active-to-reduced-motion switching in both engines.
+- [Alignment/access/motion matrix](cursor-reach/anchor.json): 18 cases, zero failures. All seven viewport sizes plus fallback checks; six permanent rings, fixed core/inlet, no overflow, accessible CTAs and no console/page errors.
+- [Cursor mapping](cursor-reach/cursor.json): initial, scrolled and resized mapping checks in both engines. Radius-only pulse collisions remain historical diagnostics, distinct from the six permanent rings.
+- [Source switching](cursor-reach/source-switch.json): four cases, zero failures, including delayed mobile artwork and no-canvas fallback.
+- [Contrast](cursor-reach/contrast.json): 124 engine/viewport/state combinations and 1,292 text measurements, including both far-left tether positions at all three desktop sizes. Zero failed sampled thresholds. Minimum large text **3.232:1**; normal text **7.936:1**. Sampling does not claim to cover every possible time or pointer position.
+- [Static screenshot hashes](cursor-reach/static-comparison.json): all 14 screenshots, including eight phone/tablet cases, are byte-identical to the retained corrected baseline. Those unchanged PNGs remain in `screenshots/` rather than being duplicated here.
+
+Two probe corrections are preserved: the [first probe](cursor-reach/first-pass-probe.json) tried to exit at the bottom-right viewport pixel, which still lies within the taller hero at 1280px; the final probe moves outside the viewport. The [event-rounding probe](cursor-reach/event-rounding-probe.json) compared fractional requested coordinates directly with WebKit's rounded event coordinate; the final probe checks settling against the received event within 0.1px, and requested-coordinate mapping within 0.75px. The 25px rendered-tip requirement never changed. The alignment and older visual helpers now explicitly select the original production canvas because the hero has a second decorative canvas.
+
+Reproduce with the existing external `PLAYWRIGHT_MODULE`, optional browser executable overrides and `HERO_URL`. Run `scripts/hero-tether-browser.mjs` with `TETHER_EVIDENCE_DIR`, plus the retained fan, policy, alignment, cursor, intake, source-switch and contrast helpers. The contrast helper uses the updated test-only `hero-contrast-renderer.ts` bundle, including the actual tether painter.
+
+Next action: review the exact draft preview with the cursor far left of the fan, then obtain separate acceptance QA bound to the substantive commit/tree above. Do not merge or deploy production during this review.
+
+---
+
+## Historical fan restoration evidence
+
+The remaining report describes the preceding candidate. Its geometry restoration is retained; its local-only interaction assessment is superseded by the cursor-reaching correction above.
+
 # Restore the production fan and retain leftward persistence
 
 The previous PR narrowed the visible intake because moving a cubic's start and first control point reshaped its entire span. This correction restores the production SVG paths and live curves unchanged, then prepends tangent-matched continuation segments. The broad original fan remains intact from each original start through convergence.
