@@ -1,0 +1,80 @@
+{
+  "url": "https://9a5c0834.cumulative-labs.pages.dev/",
+  "sourceCommit": "25e508b8301ecdc474821cc805095b68409819f4",
+  "method": "Fresh Chromium context, same-origin no-store fetch, full returned bytes compared with local production build. Initial Python urllib retrieval returned HTTP 403; browser retrieval used instead.",
+  "assets": [
+    {
+      "path": "index.html",
+      "status": 200,
+      "noindex": "noindex",
+      "localSHA256": "b24eaa5df78510baa185da3656b38a8653abb54ba2c28a0298018851b17f2d1b",
+      "remoteSHA256": "b24eaa5df78510baa185da3656b38a8653abb54ba2c28a0298018851b17f2d1b",
+      "equal": true
+    },
+    {
+      "path": "visuals/hero-nexus-anchored-desktop.svg",
+      "status": 200,
+      "noindex": "noindex",
+      "localSHA256": "4a989b3c954b04a7aff69e9e74b1cca490874dcb93519ee93457a5c7eebc5ef8",
+      "remoteSHA256": "4a989b3c954b04a7aff69e9e74b1cca490874dcb93519ee93457a5c7eebc5ef8",
+      "equal": true
+    },
+    {
+      "path": "visuals/hero-nexus-anchored-mobile.svg",
+      "status": 200,
+      "noindex": "noindex",
+      "localSHA256": "ccee6d6018639288a2c47cd8ec2170208c14cd696f5c2907c7cb1930eeabe3db",
+      "remoteSHA256": "ccee6d6018639288a2c47cd8ec2170208c14cd696f5c2907c7cb1930eeabe3db",
+      "equal": true
+    },
+    {
+      "path": "favicons/apple-touch-icon.png",
+      "status": 200,
+      "noindex": "noindex",
+      "localSHA256": "266251f48a9518e2a1cf65fd3767c7ae74a598cf02081ee72fba58bb1ec0cbc2",
+      "remoteSHA256": "266251f48a9518e2a1cf65fd3767c7ae74a598cf02081ee72fba58bb1ec0cbc2",
+      "equal": true
+    },
+    {
+      "path": "favicons/favicon.svg",
+      "status": 200,
+      "noindex": "noindex",
+      "localSHA256": "c8e56446965a7881e9dc1b6e612d89a469d77ef27b0e7cbb661f572a18969be3",
+      "remoteSHA256": "c8e56446965a7881e9dc1b6e612d89a469d77ef27b0e7cbb661f572a18969be3",
+      "equal": true
+    },
+    {
+      "path": "brand/cumulative-labs-horizontal.svg",
+      "status": 200,
+      "noindex": "noindex",
+      "localSHA256": "24f32afc84a80cba6ff5a8a48e727670ce58cf1d83ef95f8356a2b2ea99ea85b",
+      "remoteSHA256": "24f32afc84a80cba6ff5a8a48e727670ce58cf1d83ef95f8356a2b2ea99ea85b",
+      "equal": true
+    },
+    {
+      "path": "brand/cumulative-labs-symbol.svg",
+      "status": 200,
+      "noindex": "noindex",
+      "localSHA256": "c8e56446965a7881e9dc1b6e612d89a469d77ef27b0e7cbb661f572a18969be3",
+      "remoteSHA256": "c8e56446965a7881e9dc1b6e612d89a469d77ef27b0e7cbb661f572a18969be3",
+      "equal": true
+    },
+    {
+      "path": "assets/index-Ci2EbnBF.js",
+      "status": 200,
+      "noindex": "noindex",
+      "localSHA256": "0a7bb8979285166f3a1af5ebfe44bb0e8a32274d133c762ec1c35da5026c760c",
+      "remoteSHA256": "0a7bb8979285166f3a1af5ebfe44bb0e8a32274d133c762ec1c35da5026c760c",
+      "equal": true
+    },
+    {
+      "path": "assets/index-DeGKIzW2.css",
+      "status": 200,
+      "noindex": "noindex",
+      "localSHA256": "d75546afa57b38d15824714b80fa41b268cc9f6149fadccedef6c47363386d8a",
+      "remoteSHA256": "d75546afa57b38d15824714b80fa41b268cc9f6149fadccedef6c47363386d8a",
+      "equal": true
+    }
+  ],
+  "allEqual": true
+}

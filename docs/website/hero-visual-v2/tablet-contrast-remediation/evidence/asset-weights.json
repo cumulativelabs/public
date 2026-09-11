@@ -1,0 +1,46 @@
+{
+  "starting": [
+    {
+      "path": "assets/index-CExyCl8Q.css",
+      "bytes": 66474,
+      "sha256": "62205b2556214501fb14a5afe3e6b55489c62702a8d85d6215f22d402bdc6881"
+    },
+    {
+      "path": "assets/index-dNZCj2Up.js",
+      "bytes": 229084,
+      "sha256": "0a7bb8979285166f3a1af5ebfe44bb0e8a32274d133c762ec1c35da5026c760c"
+    },
+    {
+      "path": "visuals/hero-nexus-anchored-desktop.svg",
+      "bytes": 46830,
+      "sha256": "4a989b3c954b04a7aff69e9e74b1cca490874dcb93519ee93457a5c7eebc5ef8"
+    },
+    {
+      "path": "visuals/hero-nexus-anchored-mobile.svg",
+      "bytes": 33265,
+      "sha256": "ccee6d6018639288a2c47cd8ec2170208c14cd696f5c2907c7cb1930eeabe3db"
+    }
+  ],
+  "candidate": [
+    {
+      "path": "assets/index-Ci2EbnBF.js",
+      "bytes": 229084,
+      "sha256": "0a7bb8979285166f3a1af5ebfe44bb0e8a32274d133c762ec1c35da5026c760c"
+    },
+    {
+      "path": "assets/index-DeGKIzW2.css",
+      "bytes": 67228,
+      "sha256": "d75546afa57b38d15824714b80fa41b268cc9f6149fadccedef6c47363386d8a"
+    },
+    {
+      "path": "visuals/hero-nexus-anchored-desktop.svg",
+      "bytes": 46830,
+      "sha256": "4a989b3c954b04a7aff69e9e74b1cca490874dcb93519ee93457a5c7eebc5ef8"
+    },
+    {
+      "path": "visuals/hero-nexus-anchored-mobile.svg",
+      "bytes": 33265,
+      "sha256": "ccee6d6018639288a2c47cd8ec2170208c14cd696f5c2907c7cb1930eeabe3db"
+    }
+  ]
+}

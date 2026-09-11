@@ -1,0 +1,12 @@
+
+> cumulative-labs-public-website@0.1.0 test
+> vitest --run
+
+
+ RUN  v4.1.11 <checkout>
+
+
+ Test Files  6 passed (6)
+      Tests  29 passed (29)
+   Start at  06:59:05
+   Duration  1.03s (transform 699ms, setup 0ms, import 1.17s, tests 225ms, environment 1ms)

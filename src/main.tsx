@@ -15,6 +15,7 @@ import './styles/master-alignment.css';
 import './styles/master-mobile-geometry.css';
 import './styles/signal-performance.css';
 import './styles/homepage-refresh.css';
+import './styles/hero-visual-v2.css';
 
 const root = document.getElementById('root');
 if (!root) throw new Error('Root element not found.');

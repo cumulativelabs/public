@@ -1,0 +1,872 @@
+{
+  "url": "http://127.0.0.1:4179/",
+  "results": [
+    {
+      "label": "chromium-1440x900",
+      "geometry": {
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 834.125,
+          "top": 0,
+          "right": 1440,
+          "bottom": 834.125,
+          "left": 0
+        },
+        "copy": {
+          "x": 96,
+          "y": 164,
+          "width": 688,
+          "height": 534.125,
+          "top": 164,
+          "right": 784,
+          "bottom": 698.125,
+          "left": 96
+        },
+        "mark": {
+          "x": 869.265625,
+          "y": 215.0625,
+          "width": 432,
+          "height": 432,
+          "top": 215.0625,
+          "right": 1301.265625,
+          "bottom": 647.0625,
+          "left": 869.265625
+        },
+        "overflow": false,
+        "mode": "autonomous",
+        "vitals": {
+          "lcp": 152,
+          "cls": 0
+        },
+        "brokenLinks": 0
+      },
+      "pointer": {
+        "nodeIndex": 0,
+        "displacementCssPixels": 14.99045127643751,
+        "before": [
+          706.6502403846154,
+          314.9701923076923
+        ],
+        "after": [
+          721.5360230522226,
+          316.7385542174863
+        ],
+        "active": "true",
+        "scrollMappingError": 0.022699180407528274
+      },
+      "reducedMotionPixelIdentical": true,
+      "offscreenPaused": true,
+      "syntheticVisibilityPaused": true,
+      "resumed": true,
+      "menu": "desktop navigation",
+      "timing": {
+        "samples": 170,
+        "medianDrawMs": 0.2999999523162842,
+        "p95DrawMs": 0.40000009536743164
+      },
+      "errors": []
+    },
+    {
+      "label": "chromium-1280x800",
+      "geometry": {
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "width": 1280,
+          "height": 808.28125,
+          "top": 0,
+          "right": 1280,
+          "bottom": 808.28125,
+          "left": 0
+        },
+        "copy": {
+          "x": 40,
+          "y": 164,
+          "width": 670.96875,
+          "height": 508.28125,
+          "top": 164,
+          "right": 710.96875,
+          "bottom": 672.28125,
+          "left": 40
+        },
+        "mark": {
+          "x": 775.484375,
+          "y": 202.140625,
+          "width": 432,
+          "height": 432,
+          "top": 202.140625,
+          "right": 1207.484375,
+          "bottom": 634.140625,
+          "left": 775.484375
+        },
+        "overflow": false,
+        "mode": "autonomous",
+        "vitals": {
+          "lcp": 56,
+          "cls": 0
+        },
+        "brokenLinks": 0
+      },
+      "pointer": {
+        "nodeIndex": 0,
+        "displacementCssPixels": 14.98739927293218,
+        "before": [
+          612.8689903846154,
+          302.0483173076923
+        ],
+        "after": [
+          627.7543032450205,
+          303.7946271353415
+        ],
+        "active": "true",
+        "scrollMappingError": 0.04252775831241706
+      },
+      "reducedMotionPixelIdentical": true,
+      "offscreenPaused": true,
+      "syntheticVisibilityPaused": true,
+      "resumed": true,
+      "menu": "desktop navigation",
+      "timing": {
+        "samples": 163,
+        "medianDrawMs": 0.2999999523162842,
+        "p95DrawMs": 0.5
+      },
+      "errors": []
+    },
+    {
+      "label": "chromium-1024x768",
+      "geometry": {
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "width": 1024,
+          "height": 766.953125,
+          "top": 0,
+          "right": 1024,
+          "bottom": 766.953125,
+          "left": 0
+        },
+        "copy": {
+          "x": 40,
+          "y": 164,
+          "width": 523.90625,
+          "height": 466.953125,
+          "top": 164,
+          "right": 563.90625,
+          "bottom": 630.953125,
+          "left": 40
+        },
+        "mark": {
+          "x": 595.90625,
+          "y": 203.421875,
+          "width": 388.09375,
+          "height": 388.09375,
+          "top": 203.421875,
+          "right": 984,
+          "bottom": 591.515625,
+          "left": 595.90625
+        },
+        "overflow": false,
+        "mode": "autonomous",
+        "vitals": {
+          "lcp": 48,
+          "cls": 0
+        },
+        "brokenLinks": 0
+      },
+      "pointer": {
+        "nodeIndex": 1,
+        "displacementCssPixels": 14.983736341784338,
+        "before": [
+          494.39503205128204,
+          261.1286057692308
+        ],
+        "after": [
+          509.2713180699894,
+          262.91982575843406
+        ],
+        "active": "true",
+        "scrollMappingError": 0.04468309119380365
+      },
+      "reducedMotionPixelIdentical": true,
+      "offscreenPaused": true,
+      "syntheticVisibilityPaused": true,
+      "resumed": true,
+      "menu": "desktop navigation",
+      "timing": {
+        "samples": 165,
+        "medianDrawMs": 0.2999999523162842,
+        "p95DrawMs": 0.40000009536743164
+      },
+      "errors": []
+    },
+    {
+      "label": "chromium-768x1024",
+      "geometry": {
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "width": 768,
+          "height": 786.40625,
+          "top": 0,
+          "right": 768,
+          "bottom": 786.40625,
+          "left": 0
+        },
+        "copy": {
+          "x": 20,
+          "y": 112.796875,
+          "width": 688,
+          "height": 542.421875,
+          "top": 112.796875,
+          "right": 708,
+          "bottom": 655.21875,
+          "left": 20
+        },
+        "mark": {
+          "x": 516.96875,
+          "y": 664.015625,
+          "width": 100,
+          "height": 100,
+          "top": 664.015625,
+          "right": 616.96875,
+          "bottom": 764.015625,
+          "left": 516.96875
+        },
+        "overflow": false,
+        "mode": "autonomous",
+        "vitals": {
+          "lcp": 64,
+          "cls": 0
+        },
+        "brokenLinks": 0
+      },
+      "pointer": null,
+      "reducedMotionPixelIdentical": true,
+      "offscreenPaused": true,
+      "syntheticVisibilityPaused": true,
+      "resumed": true,
+      "menu": "open, Escape, focus restoration, Work navigation passed",
+      "timing": {
+        "samples": 65,
+        "medianDrawMs": 0.2999999523162842,
+        "p95DrawMs": 0.5
+      },
+      "errors": []
+    },
+    {
+      "label": "chromium-430x932",
+      "geometry": {
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "width": 430,
+          "height": 726.5,
+          "top": 0,
+          "right": 430,
+          "bottom": 726.5,
+          "left": 0
+        },
+        "copy": {
+          "x": 20,
+          "y": 112.796875,
+          "width": 390,
+          "height": 482.515625,
+          "top": 112.796875,
+          "right": 410,
+          "bottom": 595.3125,
+          "left": 20
+        },
+        "mark": {
+          "x": 239.8125,
+          "y": 604.109375,
+          "width": 100,
+          "height": 100,
+          "top": 604.109375,
+          "right": 339.8125,
+          "bottom": 704.109375,
+          "left": 239.8125
+        },
+        "overflow": false,
+        "mode": "autonomous",
+        "vitals": {
+          "lcp": 48,
+          "cls": 0
+        },
+        "brokenLinks": 0
+      },
+      "pointer": null,
+      "reducedMotionPixelIdentical": true,
+      "offscreenPaused": true,
+      "syntheticVisibilityPaused": true,
+      "resumed": true,
+      "menu": "open, Escape, focus restoration, Work navigation passed",
+      "timing": {
+        "samples": 62,
+        "medianDrawMs": 0.2999999523162842,
+        "p95DrawMs": 0.3999999761581421
+      },
+      "errors": []
+    },
+    {
+      "label": "chromium-390x844",
+      "geometry": {
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 740.015625,
+          "top": 0,
+          "right": 390,
+          "bottom": 740.015625,
+          "left": 0
+        },
+        "copy": {
+          "x": 20,
+          "y": 112.796875,
+          "width": 350,
+          "height": 496.03125,
+          "top": 112.796875,
+          "right": 370,
+          "bottom": 608.828125,
+          "left": 20
+        },
+        "mark": {
+          "x": 207,
+          "y": 617.625,
+          "width": 100,
+          "height": 100,
+          "top": 617.625,
+          "right": 307,
+          "bottom": 717.625,
+          "left": 207
+        },
+        "overflow": false,
+        "mode": "autonomous",
+        "vitals": {
+          "lcp": 48,
+          "cls": 0
+        },
+        "brokenLinks": 0
+      },
+      "pointer": null,
+      "reducedMotionPixelIdentical": true,
+      "offscreenPaused": true,
+      "syntheticVisibilityPaused": true,
+      "resumed": true,
+      "menu": "open, Escape, focus restoration, Work navigation passed",
+      "timing": {
+        "samples": 63,
+        "medianDrawMs": 0.2999999523162842,
+        "p95DrawMs": 0.6999999284744263
+      },
+      "errors": []
+    },
+    {
+      "label": "chromium-320x568",
+      "geometry": {
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 777.734375,
+          "top": 0,
+          "right": 320,
+          "bottom": 777.734375,
+          "left": 0
+        },
+        "copy": {
+          "x": 20,
+          "y": 112.796875,
+          "width": 280,
+          "height": 533.75,
+          "top": 112.796875,
+          "right": 300,
+          "bottom": 646.546875,
+          "left": 20
+        },
+        "mark": {
+          "x": 149.609375,
+          "y": 655.34375,
+          "width": 100,
+          "height": 100,
+          "top": 655.34375,
+          "right": 249.609375,
+          "bottom": 755.34375,
+          "left": 149.609375
+        },
+        "overflow": false,
+        "mode": "autonomous",
+        "vitals": {
+          "lcp": 40,
+          "cls": 0
+        },
+        "brokenLinks": 0
+      },
+      "pointer": null,
+      "reducedMotionPixelIdentical": true,
+      "offscreenPaused": true,
+      "syntheticVisibilityPaused": true,
+      "resumed": true,
+      "menu": "open, Escape, focus restoration, Work navigation passed",
+      "timing": {
+        "samples": 66,
+        "medianDrawMs": 0.8999999761581421,
+        "p95DrawMs": 1.6999999284744263
+      },
+      "errors": []
+    },
+    {
+      "label": "chromium-no-javascript",
+      "fallback": true
+    },
+    {
+      "label": "chromium-no-canvas",
+      "fallback": true
+    },
+    {
+      "label": "chromium-save-data",
+      "fallback": true
+    },
+    {
+      "label": "chromium-low-core",
+      "fallback": true
+    },
+    {
+      "label": "webkit-1440x900",
+      "geometry": {
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 834.109375,
+          "top": 0,
+          "right": 1440,
+          "bottom": 834.109375,
+          "left": 0
+        },
+        "copy": {
+          "x": 96,
+          "y": 164,
+          "width": 688,
+          "height": 534.109375,
+          "top": 164,
+          "right": 784,
+          "bottom": 698.109375,
+          "left": 96
+        },
+        "mark": {
+          "x": 869.265625,
+          "y": 215.046875,
+          "width": 432,
+          "height": 432,
+          "top": 215.046875,
+          "right": 1301.265625,
+          "bottom": 647.046875,
+          "left": 869.265625
+        },
+        "overflow": false,
+        "mode": "autonomous",
+        "vitals": {
+          "lcp": 179,
+          "cls": 0
+        },
+        "brokenLinks": 0
+      },
+      "pointer": {
+        "nodeIndex": 0,
+        "displacementCssPixels": 15.068139100640744,
+        "before": [
+          706.6502403846154,
+          314.9545673076923
+        ],
+        "after": [
+          721.6516836994826,
+          316.37072917241045
+        ],
+        "active": "true",
+        "scrollMappingError": 0.041436412340999595
+      },
+      "reducedMotionPixelIdentical": true,
+      "offscreenPaused": true,
+      "syntheticVisibilityPaused": true,
+      "resumed": true,
+      "menu": "desktop navigation",
+      "timing": {
+        "samples": 161,
+        "medianDrawMs": 0,
+        "p95DrawMs": 1
+      },
+      "errors": []
+    },
+    {
+      "label": "webkit-1280x800",
+      "geometry": {
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "width": 1280,
+          "height": 808.21875,
+          "top": 0,
+          "right": 1280,
+          "bottom": 808.21875,
+          "left": 0
+        },
+        "copy": {
+          "x": 40,
+          "y": 164,
+          "width": 670.96875,
+          "height": 508.21875,
+          "top": 164,
+          "right": 710.96875,
+          "bottom": 672.21875,
+          "left": 40
+        },
+        "mark": {
+          "x": 775.484375,
+          "y": 202.109375,
+          "width": 432,
+          "height": 432,
+          "top": 202.109375,
+          "right": 1207.484375,
+          "bottom": 634.109375,
+          "left": 775.484375
+        },
+        "overflow": false,
+        "mode": "autonomous",
+        "vitals": {
+          "lcp": 55,
+          "cls": 0
+        },
+        "brokenLinks": 0
+      },
+      "pointer": {
+        "nodeIndex": 0,
+        "displacementCssPixels": 15.102118764903068,
+        "before": [
+          612.8689903846154,
+          302.0170673076923
+        ],
+        "after": [
+          627.8680542121871,
+          303.7783382935622
+        ],
+        "active": "true",
+        "scrollMappingError": 0.01772029540273934
+      },
+      "reducedMotionPixelIdentical": true,
+      "offscreenPaused": true,
+      "syntheticVisibilityPaused": true,
+      "resumed": true,
+      "menu": "desktop navigation",
+      "timing": {
+        "samples": 164,
+        "medianDrawMs": 1,
+        "p95DrawMs": 1
+      },
+      "errors": []
+    },
+    {
+      "label": "webkit-1024x768",
+      "geometry": {
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "width": 1024,
+          "height": 766.890625,
+          "top": 0,
+          "right": 1024,
+          "bottom": 766.890625,
+          "left": 0
+        },
+        "copy": {
+          "x": 40,
+          "y": 164,
+          "width": 523.90625,
+          "height": 466.890625,
+          "top": 164,
+          "right": 563.90625,
+          "bottom": 630.890625,
+          "left": 40
+        },
+        "mark": {
+          "x": 595.90625,
+          "y": 203.390625,
+          "width": 388.09375,
+          "height": 388.09375,
+          "top": 203.390625,
+          "right": 984,
+          "bottom": 591.484375,
+          "left": 595.90625
+        },
+        "overflow": false,
+        "mode": "autonomous",
+        "vitals": {
+          "lcp": 53,
+          "cls": 0
+        },
+        "brokenLinks": 0
+      },
+      "pointer": {
+        "nodeIndex": 1,
+        "displacementCssPixels": 15.039498492854518,
+        "before": [
+          494.39503205128204,
+          261.0973557692308
+        ],
+        "after": [
+          509.33009240002804,
+          262.866674083127
+        ],
+        "active": "true",
+        "scrollMappingError": 0.03750942319840078
+      },
+      "reducedMotionPixelIdentical": true,
+      "offscreenPaused": true,
+      "syntheticVisibilityPaused": true,
+      "resumed": true,
+      "menu": "desktop navigation",
+      "timing": {
+        "samples": 165,
+        "medianDrawMs": 1,
+        "p95DrawMs": 1
+      },
+      "errors": []
+    },
+    {
+      "label": "webkit-768x1024",
+      "geometry": {
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "width": 768,
+          "height": 786.3125,
+          "top": 0,
+          "right": 768,
+          "bottom": 786.3125,
+          "left": 0
+        },
+        "copy": {
+          "x": 20,
+          "y": 112.796875,
+          "width": 688,
+          "height": 542.328125,
+          "top": 112.796875,
+          "right": 708,
+          "bottom": 655.125,
+          "left": 20
+        },
+        "mark": {
+          "x": 516.96875,
+          "y": 663.921875,
+          "width": 100,
+          "height": 100,
+          "top": 663.921875,
+          "right": 616.96875,
+          "bottom": 763.921875,
+          "left": 516.96875
+        },
+        "overflow": false,
+        "mode": "autonomous",
+        "vitals": {
+          "lcp": 55,
+          "cls": 0
+        },
+        "brokenLinks": 0
+      },
+      "pointer": null,
+      "reducedMotionPixelIdentical": true,
+      "offscreenPaused": true,
+      "syntheticVisibilityPaused": true,
+      "resumed": true,
+      "menu": "open, Escape, focus restoration, Work navigation passed",
+      "timing": {
+        "samples": 51,
+        "medianDrawMs": 1,
+        "p95DrawMs": 2
+      },
+      "errors": []
+    },
+    {
+      "label": "webkit-430x932",
+      "geometry": {
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "width": 430,
+          "height": 726.40625,
+          "top": 0,
+          "right": 430,
+          "bottom": 726.40625,
+          "left": 0
+        },
+        "copy": {
+          "x": 20,
+          "y": 112.796875,
+          "width": 390,
+          "height": 482.421875,
+          "top": 112.796875,
+          "right": 410,
+          "bottom": 595.21875,
+          "left": 20
+        },
+        "mark": {
+          "x": 239.8125,
+          "y": 604.015625,
+          "width": 100,
+          "height": 100,
+          "top": 604.015625,
+          "right": 339.8125,
+          "bottom": 704.015625,
+          "left": 239.8125
+        },
+        "overflow": false,
+        "mode": "autonomous",
+        "vitals": {
+          "lcp": 55,
+          "cls": 0
+        },
+        "brokenLinks": 0
+      },
+      "pointer": null,
+      "reducedMotionPixelIdentical": true,
+      "offscreenPaused": true,
+      "syntheticVisibilityPaused": true,
+      "resumed": true,
+      "menu": "open, Escape, focus restoration, Work navigation passed",
+      "timing": {
+        "samples": 50,
+        "medianDrawMs": 0,
+        "p95DrawMs": 1
+      },
+      "errors": []
+    },
+    {
+      "label": "webkit-390x844",
+      "geometry": {
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 739.875,
+          "top": 0,
+          "right": 390,
+          "bottom": 739.875,
+          "left": 0
+        },
+        "copy": {
+          "x": 20,
+          "y": 112.796875,
+          "width": 350,
+          "height": 495.890625,
+          "top": 112.796875,
+          "right": 370,
+          "bottom": 608.6875,
+          "left": 20
+        },
+        "mark": {
+          "x": 207,
+          "y": 617.484375,
+          "width": 100,
+          "height": 100,
+          "top": 617.484375,
+          "right": 307,
+          "bottom": 717.484375,
+          "left": 207
+        },
+        "overflow": false,
+        "mode": "autonomous",
+        "vitals": {
+          "lcp": 61,
+          "cls": 0
+        },
+        "brokenLinks": 0
+      },
+      "pointer": null,
+      "reducedMotionPixelIdentical": true,
+      "offscreenPaused": true,
+      "syntheticVisibilityPaused": true,
+      "resumed": true,
+      "menu": "open, Escape, focus restoration, Work navigation passed",
+      "timing": {
+        "samples": 50,
+        "medianDrawMs": 1,
+        "p95DrawMs": 2
+      },
+      "errors": []
+    },
+    {
+      "label": "webkit-320x568",
+      "geometry": {
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 777.609375,
+          "top": 0,
+          "right": 320,
+          "bottom": 777.609375,
+          "left": 0
+        },
+        "copy": {
+          "x": 20,
+          "y": 112.796875,
+          "width": 280,
+          "height": 533.625,
+          "top": 112.796875,
+          "right": 300,
+          "bottom": 646.421875,
+          "left": 20
+        },
+        "mark": {
+          "x": 149.609375,
+          "y": 655.21875,
+          "width": 100,
+          "height": 100,
+          "top": 655.21875,
+          "right": 249.609375,
+          "bottom": 755.21875,
+          "left": 149.609375
+        },
+        "overflow": false,
+        "mode": "autonomous",
+        "vitals": {
+          "lcp": 54,
+          "cls": 0
+        },
+        "brokenLinks": 0
+      },
+      "pointer": null,
+      "reducedMotionPixelIdentical": true,
+      "offscreenPaused": true,
+      "syntheticVisibilityPaused": true,
+      "resumed": true,
+      "menu": "open, Escape, focus restoration, Work navigation passed",
+      "timing": {
+        "samples": 51,
+        "medianDrawMs": 1,
+        "p95DrawMs": 2
+      },
+      "errors": []
+    },
+    {
+      "label": "webkit-no-javascript",
+      "fallback": true
+    },
+    {
+      "label": "webkit-no-canvas",
+      "fallback": true
+    },
+    {
+      "label": "webkit-save-data",
+      "fallback": true
+    },
+    {
+      "label": "webkit-low-core",
+      "fallback": true
+    }
+  ],
+  "failures": []
+}
