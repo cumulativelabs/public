@@ -1,0 +1,32 @@
+[
+  {
+    "command": "npm run lint",
+    "exitCode": 0,
+    "log": "lint.txt"
+  },
+  {
+    "command": "npm run typecheck",
+    "exitCode": 0,
+    "log": "typecheck.txt"
+  },
+  {
+    "command": "npm test -- --run",
+    "exitCode": 0,
+    "log": "test.txt"
+  },
+  {
+    "command": "npm run build",
+    "exitCode": 0,
+    "log": "build.txt"
+  },
+  {
+    "command": "npm run validate:build",
+    "exitCode": 0,
+    "log": "validate-build.txt"
+  },
+  {
+    "command": "git diff --check",
+    "exitCode": 0,
+    "log": "diff-check.txt"
+  }
+]

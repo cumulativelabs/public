@@ -1,0 +1,204 @@
+{
+  "method": "Fresh Chromium contexts, three alternating local production-build samples per viewport. Two-second idle windows. No network/CPU throttling. Not field data or battery measurement.",
+  "copyUnchanged": true,
+  "samples": [
+    {
+      "name": "starting",
+      "width": 1440,
+      "trial": 0,
+      "lcpMs": 208,
+      "cls": 0,
+      "heroHeight": 834.125,
+      "framesPerSecond": 30.90727816550349,
+      "scriptMsPerSecond": 15.099000000000002,
+      "heapBytes": 2605160
+    },
+    {
+      "name": "v2",
+      "width": 1440,
+      "trial": 0,
+      "lcpMs": 84,
+      "cls": 0,
+      "heroHeight": 834.125,
+      "framesPerSecond": 30.439121756487026,
+      "scriptMsPerSecond": 15.015500000000001,
+      "heapBytes": 2321996
+    },
+    {
+      "name": "starting",
+      "width": 1440,
+      "trial": 1,
+      "lcpMs": 96,
+      "cls": 0,
+      "heroHeight": 834.125,
+      "framesPerSecond": 30.78450844091361,
+      "scriptMsPerSecond": 15.279500000000002,
+      "heapBytes": 3174296
+    },
+    {
+      "name": "v2",
+      "width": 1440,
+      "trial": 1,
+      "lcpMs": 88,
+      "cls": 0,
+      "heroHeight": 834.125,
+      "framesPerSecond": 30.439121756487026,
+      "scriptMsPerSecond": 14.825499999999998,
+      "heapBytes": 2891316
+    },
+    {
+      "name": "starting",
+      "width": 1440,
+      "trial": 2,
+      "lcpMs": 100,
+      "cls": 0,
+      "heroHeight": 834.125,
+      "framesPerSecond": 30.92269326683292,
+      "scriptMsPerSecond": 15.33,
+      "heapBytes": 2320676
+    },
+    {
+      "name": "v2",
+      "width": 1440,
+      "trial": 2,
+      "lcpMs": 96,
+      "cls": 0,
+      "heroHeight": 834.125,
+      "framesPerSecond": 30.90727816550349,
+      "scriptMsPerSecond": 15.004499999999997,
+      "heapBytes": 3176036
+    },
+    {
+      "name": "starting",
+      "width": 768,
+      "trial": 0,
+      "lcpMs": 60,
+      "cls": 0,
+      "heroHeight": 802.40625,
+      "framesPerSecond": 29.910269192422735,
+      "scriptMsPerSecond": 16.624500000000005,
+      "heapBytes": 2889952
+    },
+    {
+      "name": "v2",
+      "width": 768,
+      "trial": 0,
+      "lcpMs": 56,
+      "cls": 0,
+      "heroHeight": 802.40625,
+      "framesPerSecond": 29.940119760479043,
+      "scriptMsPerSecond": 17.0635,
+      "heapBytes": 2891444
+    },
+    {
+      "name": "starting",
+      "width": 768,
+      "trial": 1,
+      "lcpMs": 56,
+      "cls": 0,
+      "heroHeight": 802.40625,
+      "framesPerSecond": 29.955067398901647,
+      "scriptMsPerSecond": 16.414499999999997,
+      "heapBytes": 2604872
+    },
+    {
+      "name": "v2",
+      "width": 768,
+      "trial": 1,
+      "lcpMs": 60,
+      "cls": 0,
+      "heroHeight": 802.40625,
+      "framesPerSecond": 29.925187032418954,
+      "scriptMsPerSecond": 17.132,
+      "heapBytes": 2891488
+    },
+    {
+      "name": "starting",
+      "width": 768,
+      "trial": 2,
+      "lcpMs": 56,
+      "cls": 0,
+      "heroHeight": 802.40625,
+      "framesPerSecond": 29.940119760479043,
+      "scriptMsPerSecond": 16.7655,
+      "heapBytes": 2604880
+    },
+    {
+      "name": "v2",
+      "width": 768,
+      "trial": 2,
+      "lcpMs": 60,
+      "cls": 0,
+      "heroHeight": 802.40625,
+      "framesPerSecond": 29.940119760479043,
+      "scriptMsPerSecond": 17.1515,
+      "heapBytes": 2890904
+    },
+    {
+      "name": "starting",
+      "width": 390,
+      "trial": 0,
+      "lcpMs": 52,
+      "cls": 0,
+      "heroHeight": 756.015625,
+      "framesPerSecond": 13.359722909450767,
+      "scriptMsPerSecond": 15.891499999999999,
+      "heapBytes": 3201052
+    },
+    {
+      "name": "v2",
+      "width": 390,
+      "trial": 0,
+      "lcpMs": 48,
+      "cls": 0,
+      "heroHeight": 756.015625,
+      "framesPerSecond": 13.339920948616601,
+      "scriptMsPerSecond": 17.612,
+      "heapBytes": 3159248
+    },
+    {
+      "name": "starting",
+      "width": 390,
+      "trial": 1,
+      "lcpMs": 52,
+      "cls": 0,
+      "heroHeight": 756.015625,
+      "framesPerSecond": 13.399503722084367,
+      "scriptMsPerSecond": 15.0005,
+      "heapBytes": 3201536
+    },
+    {
+      "name": "v2",
+      "width": 390,
+      "trial": 1,
+      "lcpMs": 52,
+      "cls": 0,
+      "heroHeight": 756.015625,
+      "framesPerSecond": 12.462612163509473,
+      "scriptMsPerSecond": 15.683499999999999,
+      "heapBytes": 2913216
+    },
+    {
+      "name": "starting",
+      "width": 390,
+      "trial": 2,
+      "lcpMs": 52,
+      "cls": 0,
+      "heroHeight": 756.015625,
+      "framesPerSecond": 13.392857142857142,
+      "scriptMsPerSecond": 14.504499999999998,
+      "heapBytes": 3201372
+    },
+    {
+      "name": "v2",
+      "width": 390,
+      "trial": 2,
+      "lcpMs": 48,
+      "cls": 0,
+      "heroHeight": 756.015625,
+      "framesPerSecond": 13.372956909361069,
+      "scriptMsPerSecond": 15.294000000000002,
+      "heapBytes": 2623960
+    }
+  ]
+}

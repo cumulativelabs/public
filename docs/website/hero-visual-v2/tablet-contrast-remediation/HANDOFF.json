@@ -4,11 +4,11 @@
   "TERMINAL_STATUS": "REMOTE_PERSISTED",
   "STARTING_COMMIT": "2a6905b6656052fe4cbadf64fc2e1d6ef223f771",
   "BRANCH": "hero-visual-v2",
-  "SUBSTANTIVE_COMMIT": "25e508b8301ecdc474821cc805095b68409819f4",
-  "TREE": "f6ae72efc1de33370eabe7f100a45da8a2c78a3a",
-  "PARENT": "2a6905b6656052fe4cbadf64fc2e1d6ef223f771",
+  "SUBSTANTIVE_COMMIT": "e7540c4c443415249cecba7d77731f329ff1fcb5",
+  "TREE": "4a405a1cd16e8d1a20ab7106e27bbeb0387f34c4",
+  "PARENT": "8ad80c7e9e0ada7c9b831ab2266d18fa6042ad1a",
   "FINAL_HEAD": {
-    "source_head": "25e508b8301ecdc474821cc805095b68409819f4",
+    "source_head": "e7540c4c443415249cecba7d77731f329ff1fcb5",
     "evidence_commit_receipt": "https://github.com/cumulativelabs/public/pull/3#issuecomment-5634224458",
     "semantics": "The exact containing report commit/tree is supplied by this external remote-readback receipt; a file cannot contain its own Git commit hash."
   },
@@ -20,7 +20,9 @@
     "scripts/hero-focus-browser.mjs",
     "scripts/hero-menu-focus-probe.mjs",
     "scripts/hero-remediation-performance.mjs",
+    "scripts/hero-source-switch-browser.mjs",
     "scripts/hero-tablet-browser.mjs",
+    "src/components/HeroKnowledgeField.tsx",
     "src/styles/hero-visual-v2.css",
     "docs/website/hero-visual-v2/tablet-contrast-remediation"
   ],
@@ -29,8 +31,8 @@
     "docs/website/hero-visual-v2/tablet-contrast-remediation/evidence"
   ],
   "QA_VIS_001_REPRODUCTION": "Both engines at 768x1024 before edits; plate left about 260px, width504.531px; before.json and screenshots.",
-  "SEAM_FIX": "431-780px shared-plane edge mask; geometry, artwork and ports unchanged.",
-  "CONTRAST_METHOD": "Frozen live renderer, actual composited hidden-text background; computed solid foreground/browser gradient; solid glyph interiors for gradient, conservative line rectangles otherwise. See contrast-summary.json.",
+  "SEAM_FIX": "431-780px shared-plane edge mask; geometry, artwork and ports unchanged. Image-readiness gate prevents the old responsive plate from painting in the new coordinate system while preserving the C/live/fallback.",
+  "CONTRAST_METHOD": "Frozen live renderer, actual composited hidden-text background; computed solid foreground/browser gradient; solid glyph interiors for gradient, conservative line rectangles otherwise. See contrast-gated-summary.json.",
   "CONTRAST_RESULTS": {
     "gradient_minimum": 3.231753928951826,
     "body_minimum": 11.492416591366094,
@@ -50,17 +52,17 @@
   "ALIGNMENT_RESULT": "18-case matrix no assertion failures; six permanent rings; no observed seam/overflow/detached output.",
   "CURSOR_RESULT": "Pointer checks passed; focused instrumentation mapping<0.045px/axis and stable C after scroll/resize.",
   "BUILD_RESULTS": "All requested commands exit0; 29 tests/6 files.",
-  "BROWSER_RESULTS": "Chromium/WebKit seven-size matrix plus fallbacks and breakpoint resize; no console/page errors. Independent retest required.",
-  "PERFORMANCE_RESULT": "Short alternating local samples show similar cost; JS/art unchanged, CSS+754B; zero CLS samples. No battery/device certification.",
+  "BROWSER_RESULTS": "Final 18-case Chromium/WebKit built matrix and delayed/cached source-switch tests: zero failures; no console/page errors. Focus/style and inherited menu comparison remain separately scoped.",
+  "PERFORMANCE_RESULT": "Fresh final alternating local samples: similar short-window cost, zero CLS; JS+554B, CSS+833B, art unchanged; no physical-device/battery certification.",
   "PUBLIC_CLAIM_REVIEW": "No public wording or claims changed.",
   "PRIVACY_REVIEW": "Public-safe source/evidence; no private governance/local identifiers added; public noreply commit identity.",
   "REMOTE_READBACK_STATUS": {
-    "source_commit_tree_parent": "VERIFIED via remote Git API",
-    "preview_bytes": "VERIFIED all9 returned files match local build",
-    "report_commit_bytes": "VERIFIED at a994d9d41c964ad7252cf12da2dd30e75b1861c7; full REPORT/HANDOFF/manifest bytes matched. Final evidence-only descendant readback is recorded in the external final-head receipt."
+    "source_commit_tree_parent": "VERIFIED e7540c4c443415249cecba7d77731f329ff1fcb5 / 4a405a1cd16e8d1a20ab7106e27bbeb0387f34c4, parent8ad80c7e9e0ada7c9b831ab2266d18fa6042ad1a via remote Git API.",
+    "preview_bytes": "VERIFIED new source preview: all9 files HTTP200/noindex and byte-identical; both-engine screenshots inspected.",
+    "report_commit_bytes": "Final report/JSON containing-commit bytes are verified in the external receipt; REMOTE_READBACK.json is preserved predecessor readback."
   },
-  "PREVIEW_URL": "https://9a5c0834.cumulative-labs.pages.dev/",
-  "PREVIEW_VERIFICATION": "HTTP200/noindex; HTML and8 assets byte-identical; both-engine tablet/desktop/phone screenshots inspected.",
+  "PREVIEW_URL": "https://c4f1eb37.cumulative-labs.pages.dev/",
+  "PREVIEW_VERIFICATION": "Exact new source preview byte/screenshot verification recorded in preview-gated.json and external final-head receipt.",
   "BLOCKERS": [
     "Independent exact-state QA and controller registration remain pending.",
     "Inherited reduced-motion WebKit automatic menu-entry focus requires independent adjudication; unchanged from starting candidate."
@@ -69,9 +71,10 @@
     "prior_QA": "WORK / SUBSTANTIVE FAILURE (tablet seam); EVIDENCE / SUPPORT FAILURE (contrast gap)",
     "remediation": "Sampled seam/contrast corrections verified by owner; not independent acceptance",
     "harness": "Two focus measurement failures preserved; target guard and Option-Tab correction implemented",
-    "inherited": "WebKit reduced-motion automatic menu-entry focus limitation reproduced on starting and candidate"
+    "inherited": "WebKit reduced-motion automatic menu-entry focus limitation reproduced on starting and candidate",
+    "responsive_followup": "Observed unsettled mixed desktop/mobile plate at predecessor; readiness gate implemented and tested with held/cached responses."
   },
-  "QA_STATE": "Independent retest required on new exact candidate; prior independent FAIL retained; never self-approved.",
+  "QA_STATE": "Independent retest required on e7540c4c443415249cecba7d77731f329ff1fcb5 / 4a405a1cd16e8d1a20ab7106e27bbeb0387f34c4; prior FAIL and intermediate transient evidence retained; never self-approved.",
   "CONTROLLER_REGISTRATION": "PENDING",
   "MERGE_STATE": "NOT MERGED",
   "DEPLOYMENT_STATE": "NOT DEPLOYED (production)",

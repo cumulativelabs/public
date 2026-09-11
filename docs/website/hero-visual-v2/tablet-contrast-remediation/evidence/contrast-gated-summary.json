@@ -1,0 +1,353 @@
+{
+  "source": "contrast-gated/contrast-results.json",
+  "sourceSHA256": "fb0912c952d8fba828deb0c7e81e64a5ed088535c49b517394944871526a39e6",
+  "states": 112,
+  "summary": {
+    "Cumulative intelligence, built to endure": {
+      "minimumRatio": 11.057774504330034,
+      "threshold": 4.5,
+      "fontSize": "11.2px",
+      "fontWeight": "400",
+      "engine": "webkit",
+      "width": 1024,
+      "state": {
+        "time": 14
+      },
+      "worst": {
+        "x": 316,
+        "y": 180,
+        "foreground": [
+          191,
+          200,
+          215
+        ],
+        "background": [
+          15,
+          19,
+          24
+        ]
+      },
+      "basis": "conservative text-line rectangles"
+    },
+    "Intelligence": {
+      "minimumRatio": 17.02311150615683,
+      "threshold": 3,
+      "fontSize": "74.879997px",
+      "fontWeight": "450",
+      "engine": "webkit",
+      "width": 1440,
+      "state": {
+        "time": 0
+      },
+      "worst": {
+        "x": 487,
+        "y": 267,
+        "foreground": [
+          248,
+          250,
+          252
+        ],
+        "background": [
+          28,
+          22,
+          26
+        ]
+      },
+      "basis": "conservative text-line rectangles"
+    },
+    "That": {
+      "minimumRatio": 18.890961826292926,
+      "threshold": 3,
+      "fontSize": "53.248px",
+      "fontWeight": "450",
+      "engine": "chromium",
+      "width": 1024,
+      "state": {
+        "time": 0
+      },
+      "worst": {
+        "x": 160,
+        "y": 257,
+        "foreground": [
+          248,
+          250,
+          252
+        ],
+        "background": [
+          8,
+          10,
+          18
+        ]
+      },
+      "basis": "conservative text-line rectangles"
+    },
+    "Compounds.": {
+      "minimumRatio": 3.231753928951826,
+      "threshold": 3,
+      "fontSize": "66.56px",
+      "fontWeight": "450",
+      "engine": "chromium",
+      "width": 1280,
+      "state": {
+        "time": 8,
+        "pointer": true
+      },
+      "worst": {
+        "x": 459,
+        "y": 391,
+        "foreground": [
+          149,
+          43,
+          218
+        ],
+        "background": [
+          19,
+          18,
+          21
+        ],
+        "coverage": 1.002751446728441
+      },
+      "basis": "solid glyph interiors; rectangular gradient-panel edge samples excluded"
+    },
+    "Cumulative Labs is developing AI research systems designed to preserve verified knowledge\u2014so each new task can build on useful findings from the last.": {
+      "minimumRatio": 11.492416591366094,
+      "threshold": 4.5,
+      "fontSize": "17.6px",
+      "fontWeight": "400",
+      "engine": "chromium",
+      "width": 1024,
+      "state": {
+        "time": 0
+      },
+      "worst": {
+        "x": 344,
+        "y": 454,
+        "foreground": [
+          212,
+          219,
+          229
+        ],
+        "background": [
+          30,
+          34,
+          37
+        ]
+      },
+      "basis": "conservative text-line rectangles"
+    },
+    "Our first applied proving ground: League Vector, a dynasty fantasy football product in development.": {
+      "minimumRatio": 7.935838742710886,
+      "threshold": 4.5,
+      "fontSize": "14.4px",
+      "fontWeight": "400",
+      "engine": "webkit",
+      "width": 430,
+      "state": {
+        "time": 14
+      },
+      "worst": {
+        "x": 95,
+        "y": 448,
+        "foreground": [
+          174,
+          185,
+          203
+        ],
+        "background": [
+          45,
+          32,
+          29
+        ]
+      },
+      "basis": "conservative text-line rectangles"
+    },
+    "See What We\u2019re Building\u2197": {
+      "minimumRatio": 17.294415913048788,
+      "threshold": 4.5,
+      "fontSize": "11.52px",
+      "fontWeight": "700",
+      "engine": "webkit",
+      "width": 1440,
+      "state": {
+        "time": 0
+      },
+      "worst": {
+        "x": 117,
+        "y": 671,
+        "foreground": [
+          248,
+          250,
+          252
+        ],
+        "background": [
+          17,
+          22,
+          33
+        ]
+      },
+      "basis": "conservative text-line rectangles"
+    },
+    "Contact the Lab": {
+      "minimumRatio": 9.478770407388414,
+      "threshold": 4.5,
+      "fontSize": "11.52px",
+      "fontWeight": "700",
+      "engine": "webkit",
+      "width": 768,
+      "state": {
+        "time": 0
+      },
+      "worst": {
+        "x": 419,
+        "y": 635,
+        "foreground": [
+          248,
+          250,
+          252
+        ],
+        "background": [
+          79,
+          63,
+          64
+        ]
+      },
+      "basis": "conservative text-line rectangles"
+    },
+    "Work": {
+      "minimumRatio": 15.740962418114584,
+      "threshold": 4.5,
+      "fontSize": "11.68px",
+      "fontWeight": "700",
+      "engine": "chromium",
+      "width": 1280,
+      "state": {
+        "time": 0
+      },
+      "worst": {
+        "x": 731,
+        "y": 44,
+        "foreground": [
+          226,
+          230,
+          237
+        ],
+        "background": [
+          6,
+          11,
+          20
+        ]
+      },
+      "basis": "conservative text-line rectangles"
+    },
+    "Why Cumulative": {
+      "minimumRatio": 15.700085342324332,
+      "threshold": 4.5,
+      "fontSize": "11.68px",
+      "fontWeight": "700",
+      "engine": "chromium",
+      "width": 1280,
+      "state": {
+        "time": 0
+      },
+      "worst": {
+        "x": 857,
+        "y": 44,
+        "foreground": [
+          226,
+          230,
+          237
+        ],
+        "background": [
+          7,
+          11,
+          22
+        ]
+      },
+      "basis": "conservative text-line rectangles"
+    },
+    "Approach": {
+      "minimumRatio": 15.612262536871885,
+      "threshold": 4.5,
+      "fontSize": "11.68px",
+      "fontWeight": "700",
+      "engine": "chromium",
+      "width": 1280,
+      "state": {
+        "time": 0
+      },
+      "worst": {
+        "x": 983,
+        "y": 44,
+        "foreground": [
+          226,
+          230,
+          237
+        ],
+        "background": [
+          8,
+          12,
+          22
+        ]
+      },
+      "basis": "conservative text-line rectangles"
+    },
+    "Principles": {
+      "minimumRatio": 15.600837650203543,
+      "threshold": 4.5,
+      "fontSize": "11.68px",
+      "fontWeight": "700",
+      "engine": "chromium",
+      "width": 1024,
+      "state": {
+        "time": 0
+      },
+      "worst": {
+        "x": 857,
+        "y": 44,
+        "foreground": [
+          226,
+          230,
+          237
+        ],
+        "background": [
+          8,
+          12,
+          23
+        ]
+      },
+      "basis": "conservative text-line rectangles"
+    },
+    "Contact": {
+      "minimumRatio": 15.600837650203543,
+      "threshold": 4.5,
+      "fontSize": "11.68px",
+      "fontWeight": "700",
+      "engine": "chromium",
+      "width": 1440,
+      "state": {
+        "time": 0
+      },
+      "worst": {
+        "x": 1298,
+        "y": 44,
+        "foreground": [
+          226,
+          230,
+          237
+        ],
+        "background": [
+          8,
+          12,
+          23
+        ]
+      },
+      "basis": "conservative text-line rectangles"
+    }
+  },
+  "failures": [],
+  "limitations": [
+    "Finite sampled renderer states and pointer position, not all possible states.",
+    "Gradient rectangle panel-edge minima are not glyph contrast; assessmentMinimum uses solid glyph interiors with authored/browser-painted gradient colors.",
+    "Focus was verified separately; no full accessibility/physical-device certification."
+  ]
+}
