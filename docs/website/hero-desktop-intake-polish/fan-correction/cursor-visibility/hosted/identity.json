@@ -1,0 +1,72 @@
+[
+  {
+    "path": "index.html",
+    "status": 200,
+    "noindex": "noindex",
+    "equal": true,
+    "sha256": "ab13b7d846574aeae651d42536a7fa5519230d1203c99b18474307e082a43d77"
+  },
+  {
+    "path": "visuals/hero-nexus-anchored-desktop.svg",
+    "status": 200,
+    "noindex": "noindex",
+    "equal": true,
+    "sha256": "ab8e1fde8f2e702333d38c08a3bfbc0149eb13a736675a8bc5da46f15ba4ca38"
+  },
+  {
+    "path": "visuals/hero-nexus-anchored-mobile.svg",
+    "status": 200,
+    "noindex": "noindex",
+    "equal": true,
+    "sha256": "ccee6d6018639288a2c47cd8ec2170208c14cd696f5c2907c7cb1930eeabe3db"
+  },
+  {
+    "path": "og/cumulative-labs-og.jpg",
+    "status": 200,
+    "noindex": "noindex",
+    "equal": true,
+    "sha256": "07efccf936ec9fc4315d3f2832572637e374336cd1418d252e30e1d4df0dc1e2"
+  },
+  {
+    "path": "favicons/apple-touch-icon.png",
+    "status": 200,
+    "noindex": "noindex",
+    "equal": true,
+    "sha256": "266251f48a9518e2a1cf65fd3767c7ae74a598cf02081ee72fba58bb1ec0cbc2"
+  },
+  {
+    "path": "favicons/favicon.svg",
+    "status": 200,
+    "noindex": "noindex",
+    "equal": true,
+    "sha256": "c8e56446965a7881e9dc1b6e612d89a469d77ef27b0e7cbb661f572a18969be3"
+  },
+  {
+    "path": "brand/cumulative-labs-horizontal.svg",
+    "status": 200,
+    "noindex": "noindex",
+    "equal": true,
+    "sha256": "24f32afc84a80cba6ff5a8a48e727670ce58cf1d83ef95f8356a2b2ea99ea85b"
+  },
+  {
+    "path": "brand/cumulative-labs-symbol.svg",
+    "status": 200,
+    "noindex": "noindex",
+    "equal": true,
+    "sha256": "c8e56446965a7881e9dc1b6e612d89a469d77ef27b0e7cbb661f572a18969be3"
+  },
+  {
+    "path": "assets/index-BYjBqNig.css",
+    "status": 200,
+    "noindex": "noindex",
+    "equal": true,
+    "sha256": "09342af51004da8a14dc0759331851ad8911455eff7e5fe228fe0add3b7bf2cc"
+  },
+  {
+    "path": "assets/index-CIZ7VDhw.js",
+    "status": 200,
+    "noindex": "noindex",
+    "equal": true,
+    "sha256": "1dd37278f64a22e0082efd6ac5de5abfc75e850e53a9793e102821d9bb466162"
+  }
+]

@@ -1,0 +1,67 @@
+[
+  {
+    "path": "assets/index-CD97eQ-w.css",
+    "bytes": 67724,
+    "sha256": "10db4ad9f2966fab201ff3f686b829904169e30688ca6c51eea2573504d39dad"
+  },
+  {
+    "path": "assets/index-ClHzxP5a.js",
+    "bytes": 233913,
+    "sha256": "1dd37278f64a22e0082efd6ac5de5abfc75e850e53a9793e102821d9bb466162"
+  },
+  {
+    "path": "brand/cumulative-labs-horizontal.svg",
+    "bytes": 6402,
+    "sha256": "24f32afc84a80cba6ff5a8a48e727670ce58cf1d83ef95f8356a2b2ea99ea85b"
+  },
+  {
+    "path": "brand/cumulative-labs-symbol.svg",
+    "bytes": 1953,
+    "sha256": "c8e56446965a7881e9dc1b6e612d89a469d77ef27b0e7cbb661f572a18969be3"
+  },
+  {
+    "path": "favicons/apple-touch-icon.png",
+    "bytes": 13045,
+    "sha256": "266251f48a9518e2a1cf65fd3767c7ae74a598cf02081ee72fba58bb1ec0cbc2"
+  },
+  {
+    "path": "favicons/favicon.svg",
+    "bytes": 1953,
+    "sha256": "c8e56446965a7881e9dc1b6e612d89a469d77ef27b0e7cbb661f572a18969be3"
+  },
+  {
+    "path": "index.html",
+    "bytes": 21640,
+    "sha256": "0d379e7bb8983c6d41daa03077ea20854573e95cee47511b7176af873fd86baf"
+  },
+  {
+    "path": "og/cumulative-labs-og.jpg",
+    "bytes": 40305,
+    "sha256": "07efccf936ec9fc4315d3f2832572637e374336cd1418d252e30e1d4df0dc1e2"
+  },
+  {
+    "path": "robots.txt",
+    "bytes": 72,
+    "sha256": "9a5bee5d89f2b1632053cd3c89e99717bdd473363ae93673c65793aa7aa6ea43"
+  },
+  {
+    "path": "site.webmanifest",
+    "bytes": 394,
+    "sha256": "934f4116800fb7c53d5e3046cf6eae7cf93b81a040654eccfd5e810afa3510a4"
+  },
+  {
+    "path": "sitemap.xml",
+    "bytes": 170,
+    "sha256": "e3fe20561b7c4de3c3b1125e76c306806755bd764f0125640d97d76810b1bb46"
+  },
+  {
+    "path": "visuals/hero-nexus-anchored-desktop.svg",
+    "bytes": 63174,
+    "sha256": "ab8e1fde8f2e702333d38c08a3bfbc0149eb13a736675a8bc5da46f15ba4ca38"
+  },
+  {
+    "path": "visuals/hero-nexus-anchored-mobile.svg",
+    "bytes": 33265,
+    "sha256": "ccee6d6018639288a2c47cd8ec2170208c14cd696f5c2907c7cb1930eeabe3db"
+  }
+]

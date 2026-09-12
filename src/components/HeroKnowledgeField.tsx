@@ -1,6 +1,7 @@
-import { useEffect, useId, useRef, type CSSProperties } from 'react';
+import { useEffect, useId, useRef, useState, type CSSProperties } from 'react';
+import { createPortal } from 'react-dom';
 import { createKnowledgeScene, mapPointer, type Pointer, type SceneLayout } from '../visuals/knowledgeScene';
-import { drawKnowledgeScene } from '../visuals/drawKnowledgeScene';
+import { drawIntakeTethers, drawKnowledgeScene } from '../visuals/drawKnowledgeScene';
 import { NEXUS_ART, nexusPlaneStyle } from '../visuals/nexusGeometry';
 const scene = createKnowledgeScene();
 type Connection = EventTarget & { saveData?: boolean };
@@ -10,6 +11,14 @@ export function HeroKnowledgeField() {
   const coreGradientId = `nexus-core-${useId().replaceAll(':', '')}`;
   const rootRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const tetherRef = useRef<HTMLCanvasElement>(null);
+  const [tetherHost, setTetherHost] = useState<HTMLElement | null>(null);
+  useEffect(() => {
+    const media = matchMedia('(max-width: 780px)');
+    const syncHost = () => setTetherHost(media.matches ? rootRef.current : rootRef.current?.closest('.hero-section')?.querySelector<HTMLElement>('.hero-section__copy') ?? null);
+    syncHost(); media.addEventListener('change', syncHost);
+    return () => media.removeEventListener('change', syncHost);
+  }, []);
   useEffect(() => {
     const root = rootRef.current;
     if (!root) return;
@@ -35,9 +44,11 @@ export function HeroKnowledgeField() {
   }, []);
   useEffect(() => {
     const root = rootRef.current; const canvas = canvasRef.current;
-    if (!root || !canvas) return;
+    if (!root || !canvas || !tetherHost) return;
     const context = canvas.getContext('2d', { alpha: true, desynchronized: true });
     if (!context) return; // Keep the server-rendered, decorative SVG composition.
+    const tetherCanvas = tetherRef.current;
+    const tetherContext = tetherCanvas?.getContext('2d', { alpha: true, desynchronized: true });
     const host = root.closest('section');
     const anchor = host?.querySelector<HTMLElement>('.hero-section__mark');
     if (!host || !anchor) return;
@@ -50,6 +61,7 @@ export function HeroKnowledgeField() {
     let bounds = root.getBoundingClientRect();
     let layout: SceneLayout = { cx: 0, cy: 0, scale: 1, flatten: 1 };
     let pointer: Pointer = { x: -1000, y: -1000, strength: 0 };
+    const intakePointer: Pointer = { x: -1000, y: -1000, strength: 0 };
     let target = 0; let pending: { x: number; y: number } | null = null;
     let boundsDirty = true; let visible = false; let disposed = false;
     let timer = 0; let raf = 0; let last = 0; let elapsed = 0;
@@ -61,7 +73,7 @@ export function HeroKnowledgeField() {
       clearTimeout(timer); cancelAnimationFrame(raf); timer = 0; raf = 0; last = 0;
     };
     const resetPointer = () => {
-      pending = null; target = 0; pointer.strength = 0;
+      pending = null; target = 0; pointer.strength = 0; intakePointer.strength = 0;
       root.dataset.pointerActive = 'false';
     };
     const mode = () => {
@@ -69,7 +81,14 @@ export function HeroKnowledgeField() {
       root.dataset.pointerInteraction = interactive() ? 'enabled' : 'disabled';
     };
     const render = () => {
-      drawKnowledgeScene(context, scene, layout, width, height, elapsed, pointer, staticOnly());
+      drawKnowledgeScene(context, scene, layout, width, height, elapsed, pointer, staticOnly(), intakePointer);
+      if (tetherCanvas && tetherContext) {
+        tetherCanvas.style.display = !layout.intakeExtension || (interactive() && intakePointer.strength >= 0.001) ? 'block' : 'none';
+        drawIntakeTethers(tetherContext, layout, width, height, intakePointer, !interactive());
+      }
+      root.dataset.intakePointerX = intakePointer.x.toFixed(3);
+      root.dataset.intakePointerY = intakePointer.y.toFixed(3);
+      root.dataset.intakeStrength = intakePointer.strength.toFixed(5);
       root.dataset.ready = 'true';
     };
     const frame = (now: number) => {
@@ -80,6 +99,7 @@ export function HeroKnowledgeField() {
       if (pending && interactive()) {
         if (boundsDirty) { bounds = root.getBoundingClientRect(); boundsDirty = false; }
         const p = mapPointer(pending, bounds, width, height);
+        if (intakePointer.strength < 0.01) { intakePointer.x = p.x; intakePointer.y = p.y; }
         pointer.x = p.x; pointer.y = p.y;
         target = p.x >= 0 && p.y >= 0 && p.x <= width && p.y <= height ? 1 : 0;
         pending = null;
@@ -88,6 +108,11 @@ export function HeroKnowledgeField() {
         mode();
       }
       pointer.strength += (target - pointer.strength) * (1 - Math.exp(-delta * 12));
+      // Only the new desktop continuations use this eased attractor.
+      const follow = 1 - Math.exp(-delta * 10);
+      intakePointer.x += (pointer.x - intakePointer.x) * follow;
+      intakePointer.y += (pointer.y - intakePointer.y) * follow;
+      intakePointer.strength = pointer.strength;
       const started = performance.now(); render();
       if (performance.now() - started > 8) expensiveFrames += 1;
       else expensiveFrames = Math.max(0, expensiveFrames - 1);
@@ -110,10 +135,62 @@ export function HeroKnowledgeField() {
         cy: box.top - bounds.top + box.height / 2,
         scale: width / (art.width * art.unitScale),
         flatten: 1,
+        intakeExtension: mobile ? 0 : 650,
       };
       const dpr = Math.min(devicePixelRatio || 1, mobile ? 1.4 : 1.5);
       canvas.width = Math.round(width * dpr); canvas.height = Math.round(height * dpr);
       context.setTransform(canvas.width / width, 0, 0, canvas.height / height, 0, 0);
+      if (tetherCanvas && tetherContext) {
+        // Keep the original artwork plane, but composite interaction above the
+        // broad copy scrim. Only glyphs and controls cut holes in this layer.
+        const copy = tetherHost.getBoundingClientRect();
+        tetherCanvas.style.left = `${bounds.left - copy.left}px`;
+        tetherCanvas.style.top = `${bounds.top - copy.top}px`;
+        tetherCanvas.style.width = `${width}px`;
+        tetherCanvas.style.height = `${height}px`;
+        tetherCanvas.style.opacity = mobile ? '0.9' : '1';
+        tetherCanvas.style.zIndex = mobile ? '1' : '0';
+        const mask = document.createElement('canvas');
+        mask.width = canvas.width; mask.height = canvas.height;
+        const ink = mask.getContext('2d');
+        if (ink && !mobile) {
+          ink.scale(canvas.width / width, canvas.height / height);
+          ink.fillStyle = 'white'; ink.fillRect(0, 0, width, height);
+          ink.globalCompositeOperation = 'destination-out';
+          ink.lineWidth = 4; ink.lineJoin = 'round';
+          tetherHost.querySelectorAll('h1, p').forEach(element => {
+            const walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT);
+            while (walker.nextNode()) {
+              const node = walker.currentNode;
+              const style = getComputedStyle(node.parentElement!);
+              ink.font = `${style.fontStyle} ${style.fontWeight} ${style.fontSize} ${style.fontFamily}`;
+              const text = node.textContent ?? '';
+              for (let i = 0; i < text.length; i += 1) {
+                if (!text[i].trim()) continue;
+                const range = document.createRange(); range.setStart(node, i); range.setEnd(node, i + 1);
+                const r = range.getBoundingClientRect();
+                if (!r.width || !r.height) continue;
+                const glyph = style.textTransform === 'uppercase' ? text[i].toUpperCase() : text[i];
+                const metrics = ink.measureText(glyph);
+                const ascent = metrics.fontBoundingBoxAscent;
+                const descent = metrics.fontBoundingBoxDescent;
+                const x = r.x - bounds.x;
+                const y = r.y - bounds.y + (r.height - ascent - descent) / 2 + ascent;
+                ink.fillText(glyph, x, y); ink.strokeText(glyph, x, y);
+              }
+            }
+          });
+          tetherHost.querySelectorAll('.button').forEach(element => {
+            const r = element.getBoundingClientRect();
+            ink.fillRect(r.x - bounds.x - 3, r.y - bounds.y - 3, r.width + 6, r.height + 6);
+          });
+          tetherCanvas.style.maskImage = `url("${mask.toDataURL()}")`;
+        }
+        if (mobile) tetherCanvas.style.maskImage = 'none';
+        tetherCanvas.style.webkitMaskImage = tetherCanvas.style.maskImage;
+        tetherCanvas.width = canvas.width; tetherCanvas.height = canvas.height;
+        tetherContext.setTransform(canvas.width / width, 0, 0, canvas.height / height, 0, 0);
+      }
       resetPointer(); mode(); if (!document.hidden) render(); schedule();
     };
     const onPointer = (event: PointerEvent) => {
@@ -145,6 +222,7 @@ export function HeroKnowledgeField() {
     motion.addEventListener('change', onPolicy); fine.addEventListener('change', onPolicy);
     connection?.addEventListener('change', onPolicy);
     resize();
+    void document.fonts.ready.then(() => { if (!disposed) resize(); });
     return () => {
       disposed = true; stop(); visibilityObserver.disconnect(); resizeObserver.disconnect();
       host.removeEventListener('pointermove', onPointer, true);
@@ -155,7 +233,7 @@ export function HeroKnowledgeField() {
       connection?.removeEventListener('change', onPolicy);
       delete root.dataset.ready;
     };
-  }, []);
+  }, [tetherHost]);
   return (
     <div ref={rootRef} className="hero-knowledge" style={nexusPlaneStyle as CSSProperties} data-visual-layer="knowledge" data-conceptual="true" aria-hidden="true">
       <picture className="hero-knowledge__plate">
@@ -174,6 +252,7 @@ export function HeroKnowledgeField() {
         ))}
       </svg>
       <canvas ref={canvasRef} className="hero-knowledge__canvas" />
+      {tetherHost && createPortal(<canvas ref={tetherRef} className="hero-knowledge__tethers" aria-hidden="true" />, tetherHost)}
     </div>
   );
 }

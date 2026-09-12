@@ -1,0 +1,666 @@
+{
+  "sourceCommit": "5c254645479892fdeed1bff4799b7c89f375e810",
+  "results": [
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "height": 900,
+      "parity": {
+        "originalStaticPaths": 115,
+        "originalLiveCurves": 86,
+        "staticSlices": [
+          {
+            "nativeX": 550,
+            "viewportX": 501.51713053385413,
+            "production": 608.034424060163,
+            "current": 608.034424060163
+          },
+          {
+            "nativeX": 650,
+            "viewportX": 612.2853597005209,
+            "production": 580.3082281222329,
+            "current": 580.3082281222329
+          },
+          {
+            "nativeX": 750,
+            "viewportX": 723.0535888671875,
+            "production": 465.64357604353444,
+            "current": 465.64357604353444
+          },
+          {
+            "nativeX": 850,
+            "viewportX": 833.8218180338541,
+            "production": 306.65968582322574,
+            "current": 306.65968582322574
+          },
+          {
+            "nativeX": 950,
+            "viewportX": 944.5900472005208,
+            "production": 127.94296313100736,
+            "current": 127.94296313100736
+          }
+        ],
+        "liveSlices": [
+          {
+            "sceneX": -460,
+            "viewportX": 575.7317708333333,
+            "production": 549.2612841937694,
+            "current": 549.2612841937683
+          },
+          {
+            "sceneX": -420,
+            "viewportX": 620.0390625,
+            "production": 536.0493483095049,
+            "current": 536.0493483095129
+          },
+          {
+            "sceneX": -360,
+            "viewportX": 686.5,
+            "production": 497.1659549782322,
+            "current": 497.16595497826785
+          },
+          {
+            "sceneX": -300,
+            "viewportX": 752.9609375,
+            "production": 434.6428750664477,
+            "current": 434.6428750665144
+          },
+          {
+            "sceneX": -240,
+            "viewportX": 819.421875,
+            "production": 347.57592854193064,
+            "current": 347.57592854201727
+          },
+          {
+            "sceneX": -180,
+            "viewportX": 885.8828125,
+            "production": 235.48578811891528,
+            "current": 235.4857881189966
+          },
+          {
+            "sceneX": -120,
+            "viewportX": 952.34375,
+            "production": 101.68925249813843,
+            "current": 101.68925249809077
+          },
+          {
+            "sceneX": -80,
+            "viewportX": 996.6510416666666,
+            "production": 9.607171868433209,
+            "current": 9.607171868434188
+          }
+        ],
+        "cx": 1192.9737548828125,
+        "cy": 476.30706787109375,
+        "scale": 1.1076822916666667,
+        "left": -107.7081298828125,
+        "top": -45.24456787109375
+      },
+      "attraction": {
+        "pointer": {
+          "x": 287.734375,
+          "y": 486.4466145833333
+        },
+        "earlyDelta": 8.836721024952169,
+        "activeDelta": 14.106047579690369,
+        "settledDelta": 0.0011678357287792096,
+        "changedCurves": 46,
+        "onlyExtensions": true,
+        "coreStable": true,
+        "active": "true"
+      },
+      "errors": []
+    },
+    {
+      "engine": "chromium",
+      "width": 1280,
+      "height": 800,
+      "parity": {
+        "originalStaticPaths": 115,
+        "originalLiveCurves": 86,
+        "staticSlices": [
+          {
+            "nativeX": 550,
+            "viewportX": 407.73588053385413,
+            "production": 608.034424060163,
+            "current": 608.034424060163
+          },
+          {
+            "nativeX": 650,
+            "viewportX": 518.5041097005209,
+            "production": 580.3082281222329,
+            "current": 580.3082281222329
+          },
+          {
+            "nativeX": 750,
+            "viewportX": 629.2723388671875,
+            "production": 465.64357604353444,
+            "current": 465.64357604353444
+          },
+          {
+            "nativeX": 850,
+            "viewportX": 740.0405680338541,
+            "production": 306.65968582322574,
+            "current": 306.65968582322574
+          },
+          {
+            "nativeX": 950,
+            "viewportX": 850.8087972005208,
+            "production": 127.94296313100736,
+            "current": 127.94296313100736
+          }
+        ],
+        "liveSlices": [
+          {
+            "sceneX": -460,
+            "viewportX": 481.9505208333333,
+            "production": 549.2612841937694,
+            "current": 549.2612841937683
+          },
+          {
+            "sceneX": -420,
+            "viewportX": 526.2578125,
+            "production": 536.0493483095049,
+            "current": 536.0493483095129
+          },
+          {
+            "sceneX": -360,
+            "viewportX": 592.71875,
+            "production": 497.1659549782322,
+            "current": 497.16595497826785
+          },
+          {
+            "sceneX": -300,
+            "viewportX": 659.1796875,
+            "production": 434.6428750664477,
+            "current": 434.6428750665144
+          },
+          {
+            "sceneX": -240,
+            "viewportX": 725.640625,
+            "production": 347.57592854193064,
+            "current": 347.57592854201727
+          },
+          {
+            "sceneX": -180,
+            "viewportX": 792.1015625,
+            "production": 235.48578811891528,
+            "current": 235.4857881189966
+          },
+          {
+            "sceneX": -120,
+            "viewportX": 858.5625,
+            "production": 101.68925249813843,
+            "current": 101.68925249809077
+          },
+          {
+            "sceneX": -80,
+            "viewportX": 902.8697916666666,
+            "production": 9.607171868433209,
+            "current": 9.607171868434188
+          }
+        ],
+        "cx": 1192.9737548828125,
+        "cy": 476.30706787109375,
+        "scale": 1.1076822916666667,
+        "left": -201.4893798828125,
+        "top": -58.16644287109375
+      },
+      "attraction": {
+        "pointer": {
+          "x": 193.953125,
+          "y": 473.5247395833333
+        },
+        "earlyDelta": 7.773577378250081,
+        "activeDelta": 14.104883735637316,
+        "settledDelta": 0,
+        "changedCurves": 46,
+        "onlyExtensions": true,
+        "coreStable": true,
+        "active": "true"
+      },
+      "errors": []
+    },
+    {
+      "engine": "chromium",
+      "width": 1024,
+      "height": 768,
+      "parity": {
+        "originalStaticPaths": 115,
+        "originalLiveCurves": 86,
+        "staticSlices": [
+          {
+            "nativeX": 550,
+            "viewportX": 265.53211805555554,
+            "production": 546.2386759544443,
+            "current": 546.2386759544443
+          },
+          {
+            "nativeX": 650,
+            "viewportX": 365.0427517361111,
+            "production": 521.3303484665752,
+            "current": 521.3303484665752
+          },
+          {
+            "nativeX": 750,
+            "viewportX": 464.55338541666674,
+            "production": 418.31929308585575,
+            "current": 418.31929308585575
+          },
+          {
+            "nativeX": 850,
+            "viewportX": 564.0640190972223,
+            "production": 275.4932519019847,
+            "current": 275.4932519019847
+          },
+          {
+            "nativeX": 950,
+            "viewportX": 663.5746527777778,
+            "production": 114.9398652656788,
+            "current": 114.9398652656788
+          }
+        ],
+        "liveSlices": [
+          {
+            "sceneX": -460,
+            "viewportX": 332.2042100694444,
+            "production": 493.43876721255435,
+            "current": 493.4387672125534
+          },
+          {
+            "sceneX": -420,
+            "viewportX": 372.00846354166663,
+            "production": 481.5695866552681,
+            "current": 481.56958665527526
+          },
+          {
+            "sceneX": -360,
+            "viewportX": 431.71484375,
+            "production": 446.6379899406244,
+            "current": 446.6379899406564
+          },
+          {
+            "sceneX": -300,
+            "viewportX": 491.4212239583333,
+            "production": 390.46925502007025,
+            "current": 390.4692550201303
+          },
+          {
+            "sceneX": -240,
+            "viewportX": 551.1276041666666,
+            "production": 312.25109547678306,
+            "current": 312.2510954768609
+          },
+          {
+            "sceneX": -180,
+            "viewportX": 610.833984375,
+            "production": 211.55289901059524,
+            "current": 211.5528990106683
+          },
+          {
+            "sceneX": -120,
+            "viewportX": 670.5403645833334,
+            "production": 91.35437147204046,
+            "current": 91.35437147199741
+          },
+          {
+            "sceneX": -80,
+            "viewportX": 710.3446180555555,
+            "production": 8.630775879492782,
+            "current": 8.630775879493553
+          }
+        ],
+        "cx": 1071.7294921875,
+        "cy": 427.891845703125,
+        "scale": 0.9951063368055556,
+        "left": -281.7763671875,
+        "top": -30.423095703125
+      },
+      "attraction": {
+        "pointer": {
+          "x": 73.4765625,
+          "y": 447.22406684027777
+        },
+        "earlyDelta": 10.05706960586275,
+        "activeDelta": 14.379536106936484,
+        "settledDelta": 0.0007811800645072253,
+        "changedCurves": 52,
+        "onlyExtensions": true,
+        "coreStable": true,
+        "active": "true"
+      },
+      "errors": []
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "height": 900,
+      "parity": {
+        "originalStaticPaths": 115,
+        "originalLiveCurves": 86,
+        "staticSlices": [
+          {
+            "nativeX": 550,
+            "viewportX": 501.56388346354163,
+            "production": 608.034424060163,
+            "current": 608.034424060163
+          },
+          {
+            "nativeX": 650,
+            "viewportX": 612.3321126302084,
+            "production": 580.3082281222329,
+            "current": 580.3082281222329
+          },
+          {
+            "nativeX": 750,
+            "viewportX": 723.100341796875,
+            "production": 465.64357604353444,
+            "current": 465.64357604353444
+          },
+          {
+            "nativeX": 850,
+            "viewportX": 833.8685709635416,
+            "production": 306.65968582322574,
+            "current": 306.65968582322574
+          },
+          {
+            "nativeX": 950,
+            "viewportX": 944.6368001302083,
+            "production": 127.94296313100736,
+            "current": 127.94296313100736
+          }
+        ],
+        "liveSlices": [
+          {
+            "sceneX": -460,
+            "viewportX": 575.7317708333333,
+            "production": 549.2612841937694,
+            "current": 549.2612841937694
+          },
+          {
+            "sceneX": -420,
+            "viewportX": 620.0390625,
+            "production": 536.0493483095049,
+            "current": 536.0493483095049
+          },
+          {
+            "sceneX": -360,
+            "viewportX": 686.5,
+            "production": 497.16595497823215,
+            "current": 497.1659549782321
+          },
+          {
+            "sceneX": -300,
+            "viewportX": 752.9609375,
+            "production": 434.6428750664477,
+            "current": 434.6428750664477
+          },
+          {
+            "sceneX": -240,
+            "viewportX": 819.421875,
+            "production": 347.57592854193064,
+            "current": 347.5759285419305
+          },
+          {
+            "sceneX": -180,
+            "viewportX": 885.8828125,
+            "production": 235.48578811891528,
+            "current": 235.48578811891525
+          },
+          {
+            "sceneX": -120,
+            "viewportX": 952.34375,
+            "production": 101.68925249813843,
+            "current": 101.68925249805207
+          },
+          {
+            "sceneX": -80,
+            "viewportX": 996.6510416666666,
+            "production": 9.607171868433209,
+            "current": 9.607171868470958
+          }
+        ],
+        "cx": 1192.927001953125,
+        "cy": 476.3472900390625,
+        "scale": 1.1076822916666667,
+        "left": -107.661376953125,
+        "top": -45.3004150390625
+      },
+      "attraction": {
+        "pointer": {
+          "x": 287.734375,
+          "y": 486.4309895833333
+        },
+        "earlyDelta": 9.98421226850337,
+        "activeDelta": 14.139077513607958,
+        "settledDelta": 0.0008394004212846085,
+        "changedCurves": 47,
+        "onlyExtensions": true,
+        "coreStable": true,
+        "active": "true"
+      },
+      "errors": []
+    },
+    {
+      "engine": "webkit",
+      "width": 1280,
+      "height": 800,
+      "parity": {
+        "originalStaticPaths": 115,
+        "originalLiveCurves": 86,
+        "staticSlices": [
+          {
+            "nativeX": 550,
+            "viewportX": 407.78263346354163,
+            "production": 608.034424060163,
+            "current": 608.034424060163
+          },
+          {
+            "nativeX": 650,
+            "viewportX": 518.5508626302084,
+            "production": 580.3082281222329,
+            "current": 580.3082281222329
+          },
+          {
+            "nativeX": 750,
+            "viewportX": 629.319091796875,
+            "production": 465.64357604353444,
+            "current": 465.64357604353444
+          },
+          {
+            "nativeX": 850,
+            "viewportX": 740.0873209635416,
+            "production": 306.65968582322574,
+            "current": 306.65968582322574
+          },
+          {
+            "nativeX": 950,
+            "viewportX": 850.8555501302083,
+            "production": 127.94296313100736,
+            "current": 127.94296313100736
+          }
+        ],
+        "liveSlices": [
+          {
+            "sceneX": -460,
+            "viewportX": 481.9505208333333,
+            "production": 549.2612841937694,
+            "current": 549.2612841937694
+          },
+          {
+            "sceneX": -420,
+            "viewportX": 526.2578125,
+            "production": 536.0493483095049,
+            "current": 536.0493483095049
+          },
+          {
+            "sceneX": -360,
+            "viewportX": 592.71875,
+            "production": 497.16595497823215,
+            "current": 497.1659549782321
+          },
+          {
+            "sceneX": -300,
+            "viewportX": 659.1796875,
+            "production": 434.6428750664477,
+            "current": 434.6428750664477
+          },
+          {
+            "sceneX": -240,
+            "viewportX": 725.640625,
+            "production": 347.57592854193064,
+            "current": 347.5759285419305
+          },
+          {
+            "sceneX": -180,
+            "viewportX": 792.1015625,
+            "production": 235.48578811891528,
+            "current": 235.48578811891525
+          },
+          {
+            "sceneX": -120,
+            "viewportX": 858.5625,
+            "production": 101.68925249813843,
+            "current": 101.68925249805207
+          },
+          {
+            "sceneX": -80,
+            "viewportX": 902.8697916666666,
+            "production": 9.607171868433209,
+            "current": 9.607171868470958
+          }
+        ],
+        "cx": 1192.927001953125,
+        "cy": 476.3472900390625,
+        "scale": 1.1076822916666667,
+        "left": -201.442626953125,
+        "top": -58.2379150390625
+      },
+      "attraction": {
+        "pointer": {
+          "x": 193.953125,
+          "y": 473.4934895833333
+        },
+        "earlyDelta": 8.996240427470354,
+        "activeDelta": 14.158947149881442,
+        "settledDelta": 0,
+        "changedCurves": 47,
+        "onlyExtensions": true,
+        "coreStable": true,
+        "active": "true"
+      },
+      "errors": []
+    },
+    {
+      "engine": "webkit",
+      "width": 1024,
+      "height": 768,
+      "parity": {
+        "originalStaticPaths": 115,
+        "originalLiveCurves": 86,
+        "staticSlices": [
+          {
+            "nativeX": 550,
+            "viewportX": 265.49708387586804,
+            "production": 546.2386759544443,
+            "current": 546.2386759544443
+          },
+          {
+            "nativeX": 650,
+            "viewportX": 365.0077175564236,
+            "production": 521.3303484665752,
+            "current": 521.3303484665752
+          },
+          {
+            "nativeX": 750,
+            "viewportX": 464.51835123697924,
+            "production": 418.31929308585575,
+            "current": 418.31929308585575
+          },
+          {
+            "nativeX": 850,
+            "viewportX": 564.0289849175348,
+            "production": 275.4932519019847,
+            "current": 275.4932519019847
+          },
+          {
+            "nativeX": 950,
+            "viewportX": 663.5396185980903,
+            "production": 114.9398652656788,
+            "current": 114.9398652656788
+          }
+        ],
+        "liveSlices": [
+          {
+            "sceneX": -460,
+            "viewportX": 332.2042100694444,
+            "production": 493.43876721255435,
+            "current": 493.43876721255435
+          },
+          {
+            "sceneX": -420,
+            "viewportX": 372.00846354166663,
+            "production": 481.5695866552681,
+            "current": 481.56958665526815
+          },
+          {
+            "sceneX": -360,
+            "viewportX": 431.71484375,
+            "production": 446.6379899406243,
+            "current": 446.63798994062427
+          },
+          {
+            "sceneX": -300,
+            "viewportX": 491.4212239583333,
+            "production": 390.46925502007025,
+            "current": 390.46925502007025
+          },
+          {
+            "sceneX": -240,
+            "viewportX": 551.1276041666666,
+            "production": 312.25109547678306,
+            "current": 312.25109547678306
+          },
+          {
+            "sceneX": -180,
+            "viewportX": 610.833984375,
+            "production": 211.55289901059524,
+            "current": 211.55289901059527
+          },
+          {
+            "sceneX": -120,
+            "viewportX": 670.5403645833334,
+            "production": 91.35437147204046,
+            "current": 91.35437147196264
+          },
+          {
+            "sceneX": -80,
+            "viewportX": 710.3446180555555,
+            "production": 8.630775879492782,
+            "current": 8.630775879526638
+          }
+        ],
+        "cx": 1071.7645263671875,
+        "cy": 427.94012451171875,
+        "scale": 0.9951063368055556,
+        "left": -281.8114013671875,
+        "top": -30.50262451171875
+      },
+      "attraction": {
+        "pointer": {
+          "x": 73.4765625,
+          "y": 447.19281684027777
+        },
+        "earlyDelta": 8.839854709833787,
+        "activeDelta": 14.426344078065142,
+        "settledDelta": 0.0004480674294313758,
+        "changedCurves": 52,
+        "onlyExtensions": true,
+        "coreStable": true,
+        "active": "true"
+      },
+      "errors": []
+    }
+  ],
+  "failures": []
+}

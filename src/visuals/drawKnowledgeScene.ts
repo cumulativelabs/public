@@ -15,14 +15,25 @@ function localPoint(point: { x: number; y: number }, layout: SceneLayout) {
   return { x: layout.cx + point.x * layout.scale, y: layout.cy + point.y * layout.scale * layout.flatten };
 }
 
-function traceCurve(context: CanvasRenderingContext2D, curve: Curve, layout: SceneLayout, pointer: Pointer, depth: number) {
+function traceCurve(context: CanvasRenderingContext2D, curve: Curve, layout: SceneLayout, pointer: Pointer, depth: number, intakePointer: Pointer) {
   const start = curve.x0 > 0 ? { ...localPoint({ x: curve.x0, y: curve.y0 }, layout), influence: 0 } : displace(localPoint({ x: curve.x0, y: curve.y0 }, layout), pointer, depth);
   const c1 = displace(localPoint({ x: curve.c1x, y: curve.c1y }, layout), pointer, depth * 0.8);
   const c2 = displace(localPoint({ x: curve.c2x, y: curve.c2y }, layout), pointer, depth * 0.5);
   const end = localPoint({ x: curve.x1, y: curve.y1 }, layout);
-  context.moveTo(start.x, start.y);
+  let extensionInfluence = 0;
+  if (curve.x0 < 0 && layout.intakeExtension) {
+    const run = layout.intakeExtension;
+    // Prepend a continuation; never relocate the production curve's controls.
+    const from = displace(localPoint({ x: curve.x0 - run, y: curve.y0 }, layout), intakePointer, depth);
+    const bend = displace(localPoint({ x: curve.x0 - run / 3, y: curve.y0 }, layout), intakePointer, depth);
+    // Match the original (possibly displaced) tangent at the join.
+    const ratio = 0.3;
+    context.moveTo(from.x, from.y);
+    context.bezierCurveTo(bend.x, bend.y, start.x - (c1.x - start.x) * ratio, start.y - (c1.y - start.y) * ratio, start.x, start.y);
+    extensionInfluence = Math.max(from.influence, bend.influence);
+  } else context.moveTo(start.x, start.y);
   context.bezierCurveTo(c1.x, c1.y, c2.x, c2.y, end.x, end.y);
-  return Math.max(start.influence, c1.influence, c2.influence);
+  return Math.max(start.influence, c1.influence, c2.influence, extensionInfluence);
 }
 
 function makeInbound(index: number, count: number): Curve {
@@ -58,20 +69,70 @@ function makeOutbound(index: number, count: number): Curve {
   };
 }
 
-function drawStream(context: CanvasRenderingContext2D, curve: Curve, layout: SceneLayout, pointer: Pointer, color: string, alpha: number, width: number, depth: number, luminous = false) {
+/** Interaction-only fibers: production starts/tangents are read, never deformed. */
+export function drawIntakeTethers(context: CanvasRenderingContext2D, layout: SceneLayout, width: number, height: number, pointer: Pointer, disabled: boolean) {
+  context.clearRect(0, 0, width, height);
+  const strength = disabled || !layout.intakeExtension ? 0 : pointer.strength * ease((layout.cx - 465 * layout.scale - pointer.x) / (70 * layout.scale));
+  if (strength < 0.001) return;
+  context.save();
+  context.lineCap = 'round';
+  for (let i = 0; i < 16; i += 1) {
+    const curve = makeInbound(5 + i * 5, 86);
+    const start = localPoint({ x: curve.x0, y: curve.y0 }, layout);
+    const tangent = localPoint({ x: curve.c1x, y: curve.c1y }, layout);
+    const angle = (i / 16) * Math.PI * 2;
+    const radius = 8 + randomUnit(i + 3100) * 12;
+    const tip = { x: pointer.x + Math.cos(angle) * radius, y: pointer.y + Math.sin(angle) * radius };
+    const run = Math.max(40, start.x - tip.x);
+    const color = i % 3 === 0 ? '255,102,137' : '255,151,77';
+    const gradient = context.createLinearGradient(start.x, start.y, tip.x, tip.y);
+    gradient.addColorStop(0, `rgba(${color},0.85)`);
+    gradient.addColorStop(0.28, `rgba(${color},0.95)`);
+    gradient.addColorStop(0.72, `rgba(${color},0.95)`);
+    gradient.addColorStop(1, `rgba(${color},0.90)`);
+    context.beginPath();
+    context.moveTo(start.x, start.y);
+    // Reverse the authored intake tangent, then relax into the cursor bundle.
+    context.bezierCurveTo(start.x - (tangent.x - start.x) * 0.5, start.y - (tangent.y - start.y) * 0.5,
+      tip.x + run * (0.48 + randomUnit(i + 3140) * 0.16), tip.y + (i - 7.5) * 3, tip.x, tip.y);
+    context.strokeStyle = gradient;
+    context.globalAlpha = strength * 0.10; context.lineWidth = 4; context.stroke();
+    context.globalAlpha = strength * 0.95; context.lineWidth = 0.9 + randomUnit(i + 3180) * 0.65; context.stroke();
+    // Carry the same selected filament into its existing intake path. This is
+    // an interaction highlight of unchanged production controls, not a new fan.
+    const end = localPoint({ x: curve.x1, y: curve.y1 }, layout);
+    const c2 = localPoint({ x: curve.c2x, y: curve.c2y }, layout);
+    const join = context.createLinearGradient(start.x, start.y, end.x, end.y);
+    join.addColorStop(0, `rgba(${color},0.85)`);
+    join.addColorStop(0.65, `rgba(${color},0.65)`);
+    join.addColorStop(1, `rgba(${color},0.15)`);
+    context.beginPath(); context.moveTo(start.x, start.y);
+    context.bezierCurveTo(tangent.x, tangent.y, c2.x, c2.y, end.x, end.y);
+    context.strokeStyle = join; context.stroke();
+  }
+  const glow = context.createRadialGradient(pointer.x, pointer.y, 0, pointer.x, pointer.y, 26);
+  glow.addColorStop(0, 'rgba(255,177,103,0.30)');
+  glow.addColorStop(0.35, 'rgba(255,120,73,0.14)');
+  glow.addColorStop(1, 'rgba(255,92,83,0)');
+  context.globalAlpha = strength; context.fillStyle = glow;
+  context.fillRect(pointer.x - 26, pointer.y - 26, 52, 52);
+  context.restore();
+}
+
+function drawStream(context: CanvasRenderingContext2D, curve: Curve, layout: SceneLayout, pointer: Pointer, color: string, alpha: number, width: number, depth: number, luminous = false, intakePointer = pointer) {
   context.beginPath();
-  const influence = traceCurve(context, curve, layout, pointer, depth);
+  const influence = traceCurve(context, curve, layout, pointer, depth, intakePointer);
   const boosted = clamp(alpha + influence * 0.2);
   if (luminous) {
     context.strokeStyle = color;
     context.globalAlpha = boosted * 0.07;
     context.lineWidth = width * 9 + influence * 2;
     context.stroke();
-    context.beginPath(); traceCurve(context, curve, layout, pointer, depth);
+    context.beginPath(); traceCurve(context, curve, layout, pointer, depth, intakePointer);
     context.globalAlpha = boosted * 0.16;
     context.lineWidth = width * 4.1 + influence;
     context.stroke();
-    context.beginPath(); traceCurve(context, curve, layout, pointer, depth);
+    context.beginPath(); traceCurve(context, curve, layout, pointer, depth, intakePointer);
   }
   context.strokeStyle = color;
   context.globalAlpha = boosted;
@@ -286,7 +347,7 @@ function drawEvidenceClusters(context: CanvasRenderingContext2D, layout: SceneLa
   }
 }
 
-export function drawKnowledgeScene(context: CanvasRenderingContext2D, scene: KnowledgeScene, layout: SceneLayout, width: number, height: number, time: number, pointer: Pointer, staticOnly: boolean) {
+export function drawKnowledgeScene(context: CanvasRenderingContext2D, scene: KnowledgeScene, layout: SceneLayout, width: number, height: number, time: number, pointer: Pointer, staticOnly: boolean, intakePointer = pointer) {
   context.clearRect(0, 0, width, height);
   const narrative = staticOnly ? STORY_DURATION : time;
   context.save(); context.globalCompositeOperation = 'lighter'; context.lineCap = 'round'; context.lineJoin = 'round';
@@ -298,7 +359,7 @@ export function drawKnowledgeScene(context: CanvasRenderingContext2D, scene: Kno
   inbound.forEach((curve, i) => {
     const tier = i % 11 === 0 ? 1 : i % 5 === 0 ? 0.72 : i % 2 === 0 ? 0.42 : 0.26;
     const hot = i % 6 === 0;
-    drawStream(context, curve, layout, pointer, hot ? '#ff9b51' : i % 3 === 0 ? '#ff654e' : '#dc4f83', 0.11 + tier * 0.34, 0.38 + tier * 0.82, 0.76, hot);
+    drawStream(context, curve, layout, pointer, hot ? '#ff9b51' : i % 3 === 0 ? '#ff654e' : '#dc4f83', 0.11 + tier * 0.34, 0.38 + tier * 0.82, 0.76, hot, intakePointer);
     if (i % 7 === 0) drawPulse(context, curve, layout, time, i * 0.11, '#ffd2b4');
   });
   drawMicroNodes(context, inbound, layout, 'in', time, staticOnly);

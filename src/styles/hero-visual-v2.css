@@ -13,6 +13,17 @@
 .hero-knowledge[data-art-ready='false'] .hero-knowledge__plate { visibility: hidden; }
 .hero-knowledge__plate img { width: 100%; height: 100%; display: block; object-fit: fill; opacity: .92; }
 .hero-knowledge__canvas { position: absolute; inset: 0; z-index: 1; width: 100%; height: 100%; contain: strict; opacity: .66; }
+.hero-knowledge__tethers {
+  position: absolute; z-index: 0; contain: strict; pointer-events: none;
+  /* Map the density-scaled glyph bitmap back onto the full CSS canvas plane. */
+  mask-size: 100% 100%; -webkit-mask-size: 100% 100%;
+  mask-position: 0 0; -webkit-mask-position: 0 0;
+  mask-origin: border-box; -webkit-mask-origin: border-box;
+  mask-repeat: no-repeat; -webkit-mask-repeat: no-repeat;
+}
+@media (min-width: 781px) {
+  .hero-section__copy > :not(.hero-knowledge__tethers) { position: relative; z-index: 1; }
+}
 .hero-knowledge__fallback { z-index: 0; }
 .hero-knowledge__canvas, .hero-knowledge__fallback {
   pointer-events: none;
@@ -42,8 +53,8 @@
 @media (min-width: 781px) {
   .hero-section__copy::before {
     content: ''; position: absolute; z-index: -1; pointer-events: none;
-    inset: -1rem -3rem -1rem -1rem;
-    background: linear-gradient(90deg, #030811d9 calc(100% - 3rem), transparent);
+    inset: -1rem -3rem -1rem -7rem;
+    background: linear-gradient(90deg, transparent, #030811d9 6rem, #030811d9 calc(100% - 3rem), transparent);
     mask-image: linear-gradient(transparent, #000 1rem, #000 calc(100% - 1rem), transparent);
     -webkit-mask-image: linear-gradient(transparent, #000 1rem, #000 calc(100% - 1rem), transparent);
   }

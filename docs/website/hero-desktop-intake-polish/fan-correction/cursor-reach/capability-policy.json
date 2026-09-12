@@ -1,0 +1,315 @@
+{
+  "results": [
+    {
+      "engine": "chromium",
+      "policy": "reduced-motion",
+      "pixelIdentical": true,
+      "tetherEmpty": true,
+      "activeBeforeDisable": null,
+      "data": {
+        "visualLayer": "knowledge",
+        "conceptual": "true",
+        "artReady": "true",
+        "pointerActive": "false",
+        "renderMode": "reduced-motion",
+        "pointerInteraction": "disabled",
+        "intakePointerX": "-1000.000",
+        "intakePointerY": "-1000.000",
+        "intakeStrength": "0.00000",
+        "ready": "true"
+      },
+      "pass": true
+    },
+    {
+      "engine": "chromium",
+      "policy": "save-data",
+      "pixelIdentical": true,
+      "tetherEmpty": true,
+      "activeBeforeDisable": null,
+      "data": {
+        "visualLayer": "knowledge",
+        "conceptual": "true",
+        "artReady": "true",
+        "pointerActive": "false",
+        "renderMode": "static-budget",
+        "pointerInteraction": "disabled",
+        "intakePointerX": "-1000.000",
+        "intakePointerY": "-1000.000",
+        "intakeStrength": "0.00000",
+        "ready": "true"
+      },
+      "pass": true
+    },
+    {
+      "engine": "chromium",
+      "policy": "low-core",
+      "pixelIdentical": true,
+      "tetherEmpty": true,
+      "activeBeforeDisable": null,
+      "data": {
+        "visualLayer": "knowledge",
+        "conceptual": "true",
+        "artReady": "true",
+        "pointerActive": "false",
+        "renderMode": "static-budget",
+        "pointerInteraction": "disabled",
+        "intakePointerX": "-1000.000",
+        "intakePointerY": "-1000.000",
+        "intakeStrength": "0.00000",
+        "ready": "true"
+      },
+      "pass": true
+    },
+    {
+      "engine": "chromium",
+      "policy": "touch",
+      "pixelIdentical": false,
+      "tetherEmpty": true,
+      "activeBeforeDisable": null,
+      "data": {
+        "visualLayer": "knowledge",
+        "conceptual": "true",
+        "artReady": "true",
+        "pointerActive": "false",
+        "renderMode": "autonomous",
+        "pointerInteraction": "enabled",
+        "intakePointerX": "-1000.000",
+        "intakePointerY": "-1000.000",
+        "intakeStrength": "0.00000",
+        "ready": "true"
+      },
+      "pass": true
+    },
+    {
+      "engine": "chromium",
+      "policy": "mobile",
+      "pixelIdentical": false,
+      "tetherEmpty": true,
+      "activeBeforeDisable": null,
+      "data": {
+        "visualLayer": "knowledge",
+        "conceptual": "true",
+        "artReady": "true",
+        "pointerActive": "false",
+        "renderMode": "autonomous",
+        "pointerInteraction": "disabled",
+        "intakePointerX": "-1000.000",
+        "intakePointerY": "-1000.000",
+        "intakeStrength": "0.00000",
+        "ready": "true"
+      },
+      "pass": true
+    },
+    {
+      "engine": "chromium",
+      "policy": "coarse",
+      "pixelIdentical": false,
+      "tetherEmpty": true,
+      "activeBeforeDisable": null,
+      "data": {
+        "visualLayer": "knowledge",
+        "conceptual": "true",
+        "artReady": "true",
+        "pointerActive": "false",
+        "renderMode": "autonomous",
+        "pointerInteraction": "disabled",
+        "intakePointerX": "-1000.000",
+        "intakePointerY": "-1000.000",
+        "intakeStrength": "0.00000",
+        "ready": "true"
+      },
+      "pass": true
+    },
+    {
+      "engine": "chromium",
+      "policy": "no-canvas",
+      "pixelIdentical": true,
+      "tetherEmpty": true,
+      "activeBeforeDisable": null,
+      "data": {
+        "visualLayer": "knowledge",
+        "conceptual": "true",
+        "artReady": "true"
+      },
+      "pass": true
+    },
+    {
+      "engine": "chromium",
+      "policy": "live-reduced-motion",
+      "pixelIdentical": false,
+      "tetherEmpty": true,
+      "activeBeforeDisable": true,
+      "data": {
+        "visualLayer": "knowledge",
+        "conceptual": "true",
+        "artReady": "true",
+        "pointerActive": "false",
+        "renderMode": "reduced-motion",
+        "pointerInteraction": "disabled",
+        "intakePointerX": "227.708",
+        "intakePointerY": "755.245",
+        "intakeStrength": "0.00000",
+        "ready": "true",
+        "pointerX": "227.7",
+        "pointerY": "755.2"
+      },
+      "pass": true
+    },
+    {
+      "engine": "webkit",
+      "policy": "reduced-motion",
+      "pixelIdentical": true,
+      "tetherEmpty": true,
+      "activeBeforeDisable": null,
+      "data": {
+        "visualLayer": "knowledge",
+        "conceptual": "true",
+        "artReady": "true",
+        "pointerActive": "false",
+        "renderMode": "reduced-motion",
+        "pointerInteraction": "disabled",
+        "intakePointerX": "-1000.000",
+        "intakePointerY": "-1000.000",
+        "intakeStrength": "0.00000",
+        "ready": "true"
+      },
+      "pass": true
+    },
+    {
+      "engine": "webkit",
+      "policy": "save-data",
+      "pixelIdentical": true,
+      "tetherEmpty": true,
+      "activeBeforeDisable": null,
+      "data": {
+        "visualLayer": "knowledge",
+        "conceptual": "true",
+        "artReady": "true",
+        "pointerActive": "false",
+        "renderMode": "static-budget",
+        "pointerInteraction": "disabled",
+        "intakePointerX": "-1000.000",
+        "intakePointerY": "-1000.000",
+        "intakeStrength": "0.00000",
+        "ready": "true"
+      },
+      "pass": true
+    },
+    {
+      "engine": "webkit",
+      "policy": "low-core",
+      "pixelIdentical": true,
+      "tetherEmpty": true,
+      "activeBeforeDisable": null,
+      "data": {
+        "visualLayer": "knowledge",
+        "conceptual": "true",
+        "artReady": "true",
+        "pointerActive": "false",
+        "renderMode": "static-budget",
+        "pointerInteraction": "disabled",
+        "intakePointerX": "-1000.000",
+        "intakePointerY": "-1000.000",
+        "intakeStrength": "0.00000",
+        "ready": "true"
+      },
+      "pass": true
+    },
+    {
+      "engine": "webkit",
+      "policy": "touch",
+      "pixelIdentical": false,
+      "tetherEmpty": true,
+      "activeBeforeDisable": null,
+      "data": {
+        "visualLayer": "knowledge",
+        "conceptual": "true",
+        "artReady": "true",
+        "pointerActive": "false",
+        "renderMode": "autonomous",
+        "pointerInteraction": "enabled",
+        "intakePointerX": "-1000.000",
+        "intakePointerY": "-1000.000",
+        "intakeStrength": "0.00000",
+        "ready": "true"
+      },
+      "pass": true
+    },
+    {
+      "engine": "webkit",
+      "policy": "mobile",
+      "pixelIdentical": false,
+      "tetherEmpty": true,
+      "activeBeforeDisable": null,
+      "data": {
+        "visualLayer": "knowledge",
+        "conceptual": "true",
+        "artReady": "true",
+        "pointerActive": "false",
+        "renderMode": "autonomous",
+        "pointerInteraction": "disabled",
+        "intakePointerX": "-1000.000",
+        "intakePointerY": "-1000.000",
+        "intakeStrength": "0.00000",
+        "ready": "true"
+      },
+      "pass": true
+    },
+    {
+      "engine": "webkit",
+      "policy": "coarse",
+      "pixelIdentical": false,
+      "tetherEmpty": true,
+      "activeBeforeDisable": null,
+      "data": {
+        "visualLayer": "knowledge",
+        "conceptual": "true",
+        "artReady": "true",
+        "pointerActive": "false",
+        "renderMode": "autonomous",
+        "pointerInteraction": "disabled",
+        "intakePointerX": "-1000.000",
+        "intakePointerY": "-1000.000",
+        "intakeStrength": "0.00000",
+        "ready": "true"
+      },
+      "pass": true
+    },
+    {
+      "engine": "webkit",
+      "policy": "no-canvas",
+      "pixelIdentical": true,
+      "tetherEmpty": true,
+      "activeBeforeDisable": null,
+      "data": {
+        "visualLayer": "knowledge",
+        "conceptual": "true",
+        "artReady": "true"
+      },
+      "pass": true
+    },
+    {
+      "engine": "webkit",
+      "policy": "live-reduced-motion",
+      "pixelIdentical": false,
+      "tetherEmpty": true,
+      "activeBeforeDisable": true,
+      "data": {
+        "visualLayer": "knowledge",
+        "conceptual": "true",
+        "artReady": "true",
+        "pointerActive": "false",
+        "renderMode": "reduced-motion",
+        "pointerInteraction": "disabled",
+        "intakePointerX": "227.661",
+        "intakePointerY": "755.300",
+        "intakeStrength": "0.00000",
+        "ready": "true",
+        "pointerX": "227.7",
+        "pointerY": "755.3"
+      },
+      "pass": true
+    }
+  ],
+  "failures": []
+}

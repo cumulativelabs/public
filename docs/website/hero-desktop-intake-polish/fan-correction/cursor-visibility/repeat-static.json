@@ -1,0 +1,32 @@
+[
+  {
+    "name": "baseline",
+    "trial": 0,
+    "sha256": "b0b6154cb5290a521ad62be9eecce6485969a2f92b70087b6b9c185af237a7e8"
+  },
+  {
+    "name": "candidate",
+    "trial": 0,
+    "sha256": "b0b6154cb5290a521ad62be9eecce6485969a2f92b70087b6b9c185af237a7e8"
+  },
+  {
+    "name": "baseline",
+    "trial": 1,
+    "sha256": "b0b6154cb5290a521ad62be9eecce6485969a2f92b70087b6b9c185af237a7e8"
+  },
+  {
+    "name": "candidate",
+    "trial": 1,
+    "sha256": "b0b6154cb5290a521ad62be9eecce6485969a2f92b70087b6b9c185af237a7e8"
+  },
+  {
+    "name": "baseline",
+    "trial": 2,
+    "sha256": "b0b6154cb5290a521ad62be9eecce6485969a2f92b70087b6b9c185af237a7e8"
+  },
+  {
+    "name": "candidate",
+    "trial": 2,
+    "sha256": "b0b6154cb5290a521ad62be9eecce6485969a2f92b70087b6b9c185af237a7e8"
+  }
+]

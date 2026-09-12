@@ -1,0 +1,35 @@
+[
+  {
+    "check": "npm ci",
+    "exit_code": 0,
+    "detail": "97 packages installed; terminal output retained in execution transcript; esbuild/fsevents allowScripts notices."
+  },
+  {
+    "check": "lint",
+    "exit_code": 0,
+    "seconds": 1.1
+  },
+  {
+    "check": "typecheck",
+    "exit_code": 0,
+    "seconds": 1.19
+  },
+  {
+    "check": "test",
+    "exit_code": 0,
+    "seconds": 0.97
+  },
+  {
+    "check": "diff-check",
+    "exit_code": 0,
+    "seconds": 0.02
+  },
+  {
+    "check": "build",
+    "exit_code": 0
+  },
+  {
+    "check": "validate-build",
+    "exit_code": 0
+  }
+]

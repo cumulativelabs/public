@@ -1,0 +1,394 @@
+[
+  {
+    "name": "chromium",
+    "width": 1440,
+    "height": 900,
+    "errors": [],
+    "overflow": false,
+    "plate": {
+      "x": -107.7081298828125,
+      "y": -45.24456787109375,
+      "width": 1595.0625,
+      "height": 924.921875,
+      "top": -45.24456787109375,
+      "right": 1487.3543701171875,
+      "bottom": 879.6773071289062,
+      "left": -107.7081298828125
+    },
+    "mark": {
+      "x": 869.265625,
+      "y": 215.0625,
+      "width": 432,
+      "height": 432,
+      "top": 215.0625,
+      "right": 1301.265625,
+      "bottom": 647.0625,
+      "left": 869.265625
+    },
+    "source": "/visuals/hero-nexus-anchored-desktop.svg"
+  },
+  {
+    "name": "chromium",
+    "width": 1280,
+    "height": 800,
+    "errors": [],
+    "overflow": false,
+    "plate": {
+      "x": -201.4893798828125,
+      "y": -58.16644287109375,
+      "width": 1595.0625,
+      "height": 924.921875,
+      "top": -58.16644287109375,
+      "right": 1393.5731201171875,
+      "bottom": 866.7554321289062,
+      "left": -201.4893798828125
+    },
+    "mark": {
+      "x": 775.484375,
+      "y": 202.140625,
+      "width": 432,
+      "height": 432,
+      "top": 202.140625,
+      "right": 1207.484375,
+      "bottom": 634.140625,
+      "left": 775.484375
+    },
+    "source": "/visuals/hero-nexus-anchored-desktop.svg"
+  },
+  {
+    "name": "chromium",
+    "width": 1024,
+    "height": 768,
+    "errors": [],
+    "overflow": false,
+    "plate": {
+      "x": -281.7763671875,
+      "y": -30.423095703125,
+      "width": 1432.953125,
+      "height": 830.90625,
+      "top": -30.423095703125,
+      "right": 1151.1767578125,
+      "bottom": 800.483154296875,
+      "left": -281.7763671875
+    },
+    "mark": {
+      "x": 595.90625,
+      "y": 203.421875,
+      "width": 388.09375,
+      "height": 388.09375,
+      "top": 203.421875,
+      "right": 984,
+      "bottom": 591.515625,
+      "left": 595.90625
+    },
+    "source": "/visuals/hero-nexus-anchored-desktop.svg"
+  },
+  {
+    "name": "chromium",
+    "width": 768,
+    "height": 1024,
+    "errors": [],
+    "overflow": false,
+    "plate": {
+      "x": 260.1068420410156,
+      "y": -111.20703125,
+      "width": 504.5312194824219,
+      "height": 962.125,
+      "top": -111.20703125,
+      "right": 764.6380615234375,
+      "bottom": 850.91796875,
+      "left": 260.1068420410156
+    },
+    "mark": {
+      "x": 537.53125,
+      "y": 649.625,
+      "width": 130.390625,
+      "height": 130.390625,
+      "top": 649.625,
+      "right": 667.921875,
+      "bottom": 780.015625,
+      "left": 537.53125
+    },
+    "source": "/visuals/hero-nexus-anchored-mobile.svg"
+  },
+  {
+    "name": "chromium",
+    "width": 430,
+    "height": 932,
+    "errors": [],
+    "overflow": false,
+    "plate": {
+      "x": -32.917572021484375,
+      "y": -152.34619140625,
+      "width": 493.0625,
+      "height": 940.265625,
+      "top": -152.34619140625,
+      "right": 460.1449279785156,
+      "bottom": 787.91943359375,
+      "left": -32.917572021484375
+    },
+    "mark": {
+      "x": 236.71875,
+      "y": 589.71875,
+      "width": 130.390625,
+      "height": 130.390625,
+      "top": 589.71875,
+      "right": 367.109375,
+      "bottom": 720.109375,
+      "left": 236.71875
+    },
+    "source": "/visuals/hero-nexus-anchored-mobile.svg"
+  },
+  {
+    "name": "chromium",
+    "width": 390,
+    "height": 844,
+    "errors": [],
+    "overflow": false,
+    "plate": {
+      "x": -37.3746337890625,
+      "y": -63.7354736328125,
+      "width": 447.1875,
+      "height": 852.796875,
+      "top": -63.7354736328125,
+      "right": 409.8128662109375,
+      "bottom": 789.0614013671875,
+      "left": -37.3746337890625
+    },
+    "mark": {
+      "x": 201.109375,
+      "y": 603.234375,
+      "width": 130.390625,
+      "height": 130.390625,
+      "top": 603.234375,
+      "right": 331.5,
+      "bottom": 733.625,
+      "left": 201.109375
+    },
+    "source": "/visuals/hero-nexus-anchored-mobile.svg"
+  },
+  {
+    "name": "chromium",
+    "width": 320,
+    "height": 568,
+    "errors": [],
+    "overflow": false,
+    "plate": {
+      "x": -45.16554260253906,
+      "y": 105.40643310546875,
+      "width": 366.921875,
+      "height": 699.71875,
+      "top": 105.40643310546875,
+      "right": 321.75633239746094,
+      "bottom": 805.1251831054688,
+      "left": -45.16554260253906
+    },
+    "mark": {
+      "x": 138.8125,
+      "y": 640.953125,
+      "width": 130.390625,
+      "height": 130.390625,
+      "top": 640.953125,
+      "right": 269.203125,
+      "bottom": 771.34375,
+      "left": 138.8125
+    },
+    "source": "/visuals/hero-nexus-anchored-mobile.svg"
+  },
+  {
+    "name": "webkit",
+    "width": 1440,
+    "height": 900,
+    "errors": [],
+    "overflow": false,
+    "plate": {
+      "x": -107.661376953125,
+      "y": -45.3004150390625,
+      "width": 1595.0625,
+      "height": 924.921875,
+      "top": -45.3004150390625,
+      "right": 1487.401123046875,
+      "bottom": 879.6214599609375,
+      "left": -107.661376953125
+    },
+    "mark": {
+      "x": 869.265625,
+      "y": 215.046875,
+      "width": 432,
+      "height": 432,
+      "top": 215.046875,
+      "right": 1301.265625,
+      "bottom": 647.046875,
+      "left": 869.265625
+    },
+    "source": "/visuals/hero-nexus-anchored-desktop.svg"
+  },
+  {
+    "name": "webkit",
+    "width": 1280,
+    "height": 800,
+    "errors": [],
+    "overflow": false,
+    "plate": {
+      "x": -201.442626953125,
+      "y": -58.2379150390625,
+      "width": 1595.0625,
+      "height": 924.921875,
+      "top": -58.2379150390625,
+      "right": 1393.619873046875,
+      "bottom": 866.6839599609375,
+      "left": -201.442626953125
+    },
+    "mark": {
+      "x": 775.484375,
+      "y": 202.109375,
+      "width": 432,
+      "height": 432,
+      "top": 202.109375,
+      "right": 1207.484375,
+      "bottom": 634.109375,
+      "left": 775.484375
+    },
+    "source": "/visuals/hero-nexus-anchored-desktop.svg"
+  },
+  {
+    "name": "webkit",
+    "width": 1024,
+    "height": 768,
+    "errors": [],
+    "overflow": false,
+    "plate": {
+      "x": -281.8114013671875,
+      "y": -30.50262451171875,
+      "width": 1432.953125,
+      "height": 830.90625,
+      "top": -30.50262451171875,
+      "right": 1151.1417236328125,
+      "bottom": 800.4036254882812,
+      "left": -281.8114013671875
+    },
+    "mark": {
+      "x": 595.90625,
+      "y": 203.390625,
+      "width": 388.09375,
+      "height": 388.09375,
+      "top": 203.390625,
+      "right": 984,
+      "bottom": 591.484375,
+      "left": 595.90625
+    },
+    "source": "/visuals/hero-nexus-anchored-desktop.svg"
+  },
+  {
+    "name": "webkit",
+    "width": 768,
+    "height": 1024,
+    "errors": [],
+    "overflow": false,
+    "plate": {
+      "x": 259.78851318359375,
+      "y": -111.19342041015625,
+      "width": 504.53125,
+      "height": 962.125,
+      "top": -111.19342041015625,
+      "right": 764.3197631835938,
+      "bottom": 850.9315795898438,
+      "left": 259.78851318359375
+    },
+    "mark": {
+      "x": 537.53125,
+      "y": 649.53125,
+      "width": 130.390625,
+      "height": 130.390625,
+      "top": 649.53125,
+      "right": 667.921875,
+      "bottom": 779.921875,
+      "left": 537.53125
+    },
+    "source": "/visuals/hero-nexus-anchored-mobile.svg"
+  },
+  {
+    "name": "webkit",
+    "width": 430,
+    "height": 932,
+    "errors": [],
+    "overflow": false,
+    "plate": {
+      "x": -32.8751220703125,
+      "y": -152.21185302734375,
+      "width": 493.0625,
+      "height": 940.265625,
+      "top": -152.21185302734375,
+      "right": 460.1873779296875,
+      "bottom": 788.0537719726562,
+      "left": -32.8751220703125
+    },
+    "mark": {
+      "x": 236.71875,
+      "y": 589.625,
+      "width": 130.390625,
+      "height": 130.390625,
+      "top": 589.625,
+      "right": 367.109375,
+      "bottom": 720.015625,
+      "left": 236.71875
+    },
+    "source": "/visuals/hero-nexus-anchored-mobile.svg"
+  },
+  {
+    "name": "webkit",
+    "width": 390,
+    "height": 844,
+    "errors": [],
+    "overflow": false,
+    "plate": {
+      "x": -37.247314453125,
+      "y": -64.05047607421875,
+      "width": 447.1875,
+      "height": 852.796875,
+      "top": -64.05047607421875,
+      "right": 409.940185546875,
+      "bottom": 788.7463989257812,
+      "left": -37.247314453125
+    },
+    "mark": {
+      "x": 201.109375,
+      "y": 603.09375,
+      "width": 130.390625,
+      "height": 130.390625,
+      "top": 603.09375,
+      "right": 331.5,
+      "bottom": 733.484375,
+      "left": 201.109375
+    },
+    "source": "/visuals/hero-nexus-anchored-mobile.svg"
+  },
+  {
+    "name": "webkit",
+    "width": 320,
+    "height": 568,
+    "errors": [],
+    "overflow": false,
+    "plate": {
+      "x": -45.218597412109375,
+      "y": 105.03997802734375,
+      "width": 366.921875,
+      "height": 699.71875,
+      "top": 105.03997802734375,
+      "right": 321.7032775878906,
+      "bottom": 804.7587280273438,
+      "left": -45.218597412109375
+    },
+    "mark": {
+      "x": 138.8125,
+      "y": 640.828125,
+      "width": 130.390625,
+      "height": 130.390625,
+      "top": 640.828125,
+      "right": 269.203125,
+      "bottom": 771.21875,
+      "left": 138.8125
+    },
+    "source": "/visuals/hero-nexus-anchored-mobile.svg"
+  }
+]

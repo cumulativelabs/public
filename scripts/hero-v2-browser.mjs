@@ -78,10 +78,10 @@ for (const [name,engine,executablePath] of [['chromium',chromium,process.env.CHR
     }
     await page.evaluate(()=>scrollTo(0,0)); await page.waitForTimeout(150);
     await page.emulateMedia({reducedMotion:'reduce'}); await page.waitForTimeout(200);
-    const staticBefore = await page.locator('.hero-knowledge canvas').evaluate(c=>c.toDataURL());
+    const staticBefore = await page.locator('.hero-knowledge__canvas').evaluate(c=>c.toDataURL());
     const staticCount = await page.evaluate(()=>window.__heroDraws);
     await page.mouse.move(width*0.75,height*0.5); await page.waitForTimeout(350);
-    const staticAfter = await page.locator('.hero-knowledge canvas').evaluate(c=>c.toDataURL());
+    const staticAfter = await page.locator('.hero-knowledge__canvas').evaluate(c=>c.toDataURL());
     const reduced = await page.evaluate(()=>({frames:window.__heroDraws,mode:document.querySelector('.hero-knowledge').dataset.renderMode,running:document.querySelector('.hero-section').getAnimations({subtree:true}).filter(a=>a.playState==='running').length}));
     check(staticBefore===staticAfter&&reduced.frames===staticCount,`${label}: reduced motion repaints`);
     check(reduced.mode==='reduced-motion'&&reduced.running===0,`${label}: reduced motion incomplete`);
