@@ -1,0 +1,235 @@
+{
+  "candidate": {
+    "candidate": "7a04b1a4d45f2cea525ffb5c70d4369d5021f9d1",
+    "tree": "78e1f6bbc7ae012d04d9f8f7c2aa6a73e6ae0a40",
+    "parent": "b624a80334aa4cecb1030aaee8ba52fd5d533cf8",
+    "substantive": "b624a80334aa4cecb1030aaee8ba52fd5d533cf8",
+    "substantive_tree": "bb9a0d5f6ed9959494e501df3be7e6df2fcc6a7a",
+    "substantive_parent": "97ea04ee7c1e80e5a047c278807b593131dbabd3",
+    "readback": [
+      {
+        "path": "docs/website/hero-desktop-intake-polish/fan-correction/dpr-mask-remediation/REPORT.md",
+        "blob": "09324e0b6da413a3d26472d71a14edbeb595dcb4",
+        "sha256": "aef4dfe3e4af72cbe325db56cc367d16a41e038971093fc9cc80939971cce677",
+        "bytes": 6972,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "docs/website/hero-desktop-intake-polish/fan-correction/dpr-mask-remediation/HANDOFF.json",
+        "blob": "0163a1af8176042f9df5b13ebca88938f557541f",
+        "sha256": "a7b7df00b99757312a11bd2bf5527683f0e38d7db1be92de47c3bd695fdfc28a",
+        "bytes": 5885,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "docs/website/hero-desktop-intake-polish/fan-correction/dpr-mask-remediation/after/results.json",
+        "blob": "695589a0bd69ba11690ff7291009e124feb03d1d",
+        "sha256": "fd7244481ef6daa8f9095fabb8e1aeab8042d82673c0e3ffe7cb49f96915a841",
+        "bytes": 391973,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "docs/website/hero-desktop-intake-polish/fan-correction/dpr-mask-remediation/regression/transitions-corrected.json",
+        "blob": "57d023e15aa91ec3bb8c2759f047079c5d6ee8bb",
+        "sha256": "c86a611c0a7dc678aa7289b6c154c4577d6b949f34a15677d07eac7d88746b57",
+        "bytes": 214166,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "docs/website/hero-desktop-intake-polish/fan-correction/dpr-mask-remediation/build-assets.json",
+        "blob": "ae182fc62e261e4a3c433405d2d1cf83755bbfbe",
+        "sha256": "48239e69ba7feaa3bce1e870c2e3940bd1bf590ca618d70d134d7a9579546821",
+        "bytes": 1947,
+        "remote_bytes_match": true
+      }
+    ],
+    "substantive_remote_identity_verified": true
+  },
+  "preview": {
+    "candidate": "7a04b1a4d45f2cea525ffb5c70d4369d5021f9d1",
+    "preview": "https://5b0eeaaa.cumulative-labs.pages.dev/",
+    "assets": [
+      {
+        "path": "assets/index-CD97eQ-w.css",
+        "bytes": 67724,
+        "sha256": "10db4ad9f2966fab201ff3f686b829904169e30688ca6c51eea2573504d39dad",
+        "url": "https://5b0eeaaa.cumulative-labs.pages.dev/assets/index-CD97eQ-w.css",
+        "remote_sha256": "10db4ad9f2966fab201ff3f686b829904169e30688ca6c51eea2573504d39dad",
+        "equal": true,
+        "noindex": true
+      },
+      {
+        "path": "assets/index-ClHzxP5a.js",
+        "bytes": 233913,
+        "sha256": "1dd37278f64a22e0082efd6ac5de5abfc75e850e53a9793e102821d9bb466162",
+        "url": "https://5b0eeaaa.cumulative-labs.pages.dev/assets/index-ClHzxP5a.js",
+        "remote_sha256": "1dd37278f64a22e0082efd6ac5de5abfc75e850e53a9793e102821d9bb466162",
+        "equal": true,
+        "noindex": true
+      },
+      {
+        "path": "brand/cumulative-labs-horizontal.svg",
+        "bytes": 6402,
+        "sha256": "24f32afc84a80cba6ff5a8a48e727670ce58cf1d83ef95f8356a2b2ea99ea85b",
+        "url": "https://5b0eeaaa.cumulative-labs.pages.dev/brand/cumulative-labs-horizontal.svg",
+        "remote_sha256": "24f32afc84a80cba6ff5a8a48e727670ce58cf1d83ef95f8356a2b2ea99ea85b",
+        "equal": true,
+        "noindex": true
+      },
+      {
+        "path": "brand/cumulative-labs-symbol.svg",
+        "bytes": 1953,
+        "sha256": "c8e56446965a7881e9dc1b6e612d89a469d77ef27b0e7cbb661f572a18969be3",
+        "url": "https://5b0eeaaa.cumulative-labs.pages.dev/brand/cumulative-labs-symbol.svg",
+        "remote_sha256": "c8e56446965a7881e9dc1b6e612d89a469d77ef27b0e7cbb661f572a18969be3",
+        "equal": true,
+        "noindex": true
+      },
+      {
+        "path": "favicons/apple-touch-icon.png",
+        "bytes": 13045,
+        "sha256": "266251f48a9518e2a1cf65fd3767c7ae74a598cf02081ee72fba58bb1ec0cbc2",
+        "url": "https://5b0eeaaa.cumulative-labs.pages.dev/favicons/apple-touch-icon.png",
+        "remote_sha256": "266251f48a9518e2a1cf65fd3767c7ae74a598cf02081ee72fba58bb1ec0cbc2",
+        "equal": true,
+        "noindex": true
+      },
+      {
+        "path": "favicons/favicon.svg",
+        "bytes": 1953,
+        "sha256": "c8e56446965a7881e9dc1b6e612d89a469d77ef27b0e7cbb661f572a18969be3",
+        "url": "https://5b0eeaaa.cumulative-labs.pages.dev/favicons/favicon.svg",
+        "remote_sha256": "c8e56446965a7881e9dc1b6e612d89a469d77ef27b0e7cbb661f572a18969be3",
+        "equal": true,
+        "noindex": true
+      },
+      {
+        "path": "index.html",
+        "bytes": 21640,
+        "sha256": "0d379e7bb8983c6d41daa03077ea20854573e95cee47511b7176af873fd86baf",
+        "url": "https://5b0eeaaa.cumulative-labs.pages.dev/",
+        "remote_sha256": "0d379e7bb8983c6d41daa03077ea20854573e95cee47511b7176af873fd86baf",
+        "equal": true,
+        "noindex": true
+      },
+      {
+        "path": "og/cumulative-labs-og.jpg",
+        "bytes": 40305,
+        "sha256": "07efccf936ec9fc4315d3f2832572637e374336cd1418d252e30e1d4df0dc1e2",
+        "url": "https://5b0eeaaa.cumulative-labs.pages.dev/og/cumulative-labs-og.jpg",
+        "remote_sha256": "07efccf936ec9fc4315d3f2832572637e374336cd1418d252e30e1d4df0dc1e2",
+        "equal": true,
+        "noindex": true
+      },
+      {
+        "path": "robots.txt",
+        "bytes": 72,
+        "sha256": "9a5bee5d89f2b1632053cd3c89e99717bdd473363ae93673c65793aa7aa6ea43",
+        "url": "https://5b0eeaaa.cumulative-labs.pages.dev/robots.txt",
+        "remote_sha256": "9a5bee5d89f2b1632053cd3c89e99717bdd473363ae93673c65793aa7aa6ea43",
+        "equal": true,
+        "noindex": true
+      },
+      {
+        "path": "site.webmanifest",
+        "bytes": 394,
+        "sha256": "934f4116800fb7c53d5e3046cf6eae7cf93b81a040654eccfd5e810afa3510a4",
+        "url": "https://5b0eeaaa.cumulative-labs.pages.dev/site.webmanifest",
+        "remote_sha256": "934f4116800fb7c53d5e3046cf6eae7cf93b81a040654eccfd5e810afa3510a4",
+        "equal": true,
+        "noindex": true
+      },
+      {
+        "path": "sitemap.xml",
+        "bytes": 170,
+        "sha256": "e3fe20561b7c4de3c3b1125e76c306806755bd764f0125640d97d76810b1bb46",
+        "url": "https://5b0eeaaa.cumulative-labs.pages.dev/sitemap.xml",
+        "remote_sha256": "e3fe20561b7c4de3c3b1125e76c306806755bd764f0125640d97d76810b1bb46",
+        "equal": true,
+        "noindex": true
+      },
+      {
+        "path": "visuals/hero-nexus-anchored-desktop.svg",
+        "bytes": 63174,
+        "sha256": "ab8e1fde8f2e702333d38c08a3bfbc0149eb13a736675a8bc5da46f15ba4ca38",
+        "url": "https://5b0eeaaa.cumulative-labs.pages.dev/visuals/hero-nexus-anchored-desktop.svg",
+        "remote_sha256": "ab8e1fde8f2e702333d38c08a3bfbc0149eb13a736675a8bc5da46f15ba4ca38",
+        "equal": true,
+        "noindex": true
+      },
+      {
+        "path": "visuals/hero-nexus-anchored-mobile.svg",
+        "bytes": 33265,
+        "sha256": "ccee6d6018639288a2c47cd8ec2170208c14cd696f5c2907c7cb1930eeabe3db",
+        "url": "https://5b0eeaaa.cumulative-labs.pages.dev/visuals/hero-nexus-anchored-mobile.svg",
+        "remote_sha256": "ccee6d6018639288a2c47cd8ec2170208c14cd696f5c2907c7cb1930eeabe3db",
+        "equal": true,
+        "noindex": true
+      }
+    ],
+    "verified": true
+  },
+  "qa": {
+    "qa_commit": "ea0464da63b0cefdd2dc22ea69b5803bb03c470c",
+    "qa_tree": "bec0b1eea46ecab111016305be516504880c5c7d",
+    "qa_parent": "7a04b1a4d45f2cea525ffb5c70d4369d5021f9d1",
+    "report_readbacks": [
+      {
+        "path": "qa/pr4-dpr-mask-retest-7a04b1a-20260911/REPORT.md",
+        "blob": "41801c529db467ca2cac15248067577e346236ac",
+        "sha256": "36c908dd97a4dc7284c64efe2d7d8f6b430125487ebfeb5f5ad96050a392d326",
+        "bytes": 7613,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "qa/pr4-dpr-mask-retest-7a04b1a-20260911/HANDOFF.json",
+        "blob": "899f5441b6c71a624c9ed0baa42a6d4406200561",
+        "sha256": "506b3dd84c19f6dc3f9c4c53564b9a94d578ede5fc6598bd8886a31fe0cb5cd4",
+        "bytes": 3545,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "qa/pr4-dpr-mask-retest-7a04b1a-20260911/acceptance-summary.json",
+        "blob": "80367205a711acd186e3c75fa75e2aa338475ef3",
+        "sha256": "a6bf13f1618aeae2f4aca70db50c2558e50a65e4bd0d3bda944e3668d99ba4f3",
+        "bytes": 9081,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "qa/pr4-dpr-mask-retest-7a04b1a-20260911/source-review.json",
+        "blob": "4900d3d4a64d46493df3fc6d5bfcb275fdd7a1d3",
+        "sha256": "d1d444cb4b3cbfee7b9c52b12abfd002af1f5818c257168a5140765e24d65fbf",
+        "bytes": 681,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "qa/pr4-dpr-mask-retest-7a04b1a-20260911/supplemental-results.json",
+        "blob": "e6aaf506e75b444e7a03e426701bb893427736c6",
+        "sha256": "ad8f34c3e9589c80364a0f32f0d7bb8cbc803433c8e54eb6806857e06f89bed3",
+        "bytes": 121980,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "qa/pr4-dpr-mask-retest-7a04b1a-20260911/OWNER_PUBLICATION_NORMALIZATION.json",
+        "blob": "e19319c96e27ec9ab7ced71f436992386c486a59",
+        "sha256": "30d2cdaa75d9360349a06de6913a533bf16e99c30dd594cfef3a3264f03a7eeb",
+        "bytes": 1254,
+        "remote_bytes_match": true
+      }
+    ],
+    "all_qa_blob_ids_match_local_bytes": true,
+    "qa_blob_count": 249,
+    "private_files_excluded": true,
+    "candidate_source_unchanged": true
+  },
+  "qa_launch": {
+    "thread_id": "01a09371-08fa-7052-aaa0-b1e3c491c474",
+    "project_id": "01a06810-fb9e-73a0-a5c4-3fb7bb49ae4c",
+    "title": "PR 4 - independent Retina mask release retest",
+    "post_exit_project_readback": true,
+    "post_exit_project_listing": true,
+    "desktop_pixels_verified": false,
+    "receipt": "20260911-212733-8dc79c066f.json"
+  },
+  "controller_registration": "PENDING"
+}
