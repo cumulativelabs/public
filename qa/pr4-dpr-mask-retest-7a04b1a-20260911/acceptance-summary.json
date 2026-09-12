@@ -1,0 +1,366 @@
+{
+  "candidateContrastStates": 26,
+  "targetMeasurements": [
+    {
+      "selector": ".hero-section__body",
+      "measurements": 26,
+      "minimumForegroundRatio": 8.33664489260508,
+      "minimumActualCompositedInteriorRatio": 8.33664489260508,
+      "minimumInteriorPixelsPerMeasurement": 574,
+      "totalInteriorPixelsAcrossMeasurements": 181739,
+      "allPass": true
+    },
+    {
+      "selector": ".hero-section__support",
+      "measurements": 26,
+      "minimumForegroundRatio": 7.260381974456481,
+      "minimumActualCompositedInteriorRatio": 7.260381974456481,
+      "minimumInteriorPixelsPerMeasurement": 90,
+      "totalInteriorPixelsAcrossMeasurements": 75649,
+      "allPass": true
+    },
+    {
+      "selector": ".hero-section h1 > span",
+      "measurements": 78,
+      "minimumForegroundRatio": 3.2445144919519455,
+      "minimumActualCompositedInteriorRatio": 3.1100023103298486,
+      "minimumInteriorPixelsPerMeasurement": 1891,
+      "totalInteriorPixelsAcrossMeasurements": 2005818,
+      "allPass": true
+    }
+  ],
+  "densityCaptures": [
+    {
+      "path": "density/chromium-1440-dpr1-center-text.png",
+      "engine": "chromium",
+      "version": "151.0.7922.34",
+      "requestedDpr": 1,
+      "pngWidth": 1440,
+      "pngHeight": 900,
+      "cssWidth": 1440,
+      "cssHeight": 900,
+      "actualScaleX": 1.0,
+      "actualScaleY": 1.0,
+      "recordedScale": {
+        "x": 1,
+        "y": 1
+      },
+      "maskSize": "100% 100%"
+    },
+    {
+      "path": "density/chromium-1440-dpr1.25-center-text.png",
+      "engine": "chromium",
+      "version": "151.0.7922.34",
+      "requestedDpr": 1.25,
+      "pngWidth": 1800,
+      "pngHeight": 1125,
+      "cssWidth": 1440,
+      "cssHeight": 900,
+      "actualScaleX": 1.25,
+      "actualScaleY": 1.25,
+      "recordedScale": {
+        "x": 1.25,
+        "y": 1.25
+      },
+      "maskSize": "100% 100%"
+    },
+    {
+      "path": "density/chromium-1440-dpr1.5-lower-text.png",
+      "engine": "chromium",
+      "version": "151.0.7922.34",
+      "requestedDpr": 1.5,
+      "pngWidth": 2160,
+      "pngHeight": 1350,
+      "cssWidth": 1440,
+      "cssHeight": 900,
+      "actualScaleX": 1.5,
+      "actualScaleY": 1.5,
+      "recordedScale": {
+        "x": 1.5,
+        "y": 1.5
+      },
+      "maskSize": "100% 100%"
+    },
+    {
+      "path": "density/chromium-1440-dpr2-lower-text.png",
+      "engine": "chromium",
+      "version": "151.0.7922.34",
+      "requestedDpr": 2,
+      "pngWidth": 2880,
+      "pngHeight": 1800,
+      "cssWidth": 1440,
+      "cssHeight": 900,
+      "actualScaleX": 2.0,
+      "actualScaleY": 2.0,
+      "recordedScale": {
+        "x": 2,
+        "y": 2
+      },
+      "maskSize": "100% 100%"
+    },
+    {
+      "path": "density/chromium-1440-dpr2-center-text.png",
+      "engine": "chromium",
+      "version": "151.0.7922.34",
+      "requestedDpr": 2,
+      "pngWidth": 2880,
+      "pngHeight": 1800,
+      "cssWidth": 1440,
+      "cssHeight": 900,
+      "actualScaleX": 2.0,
+      "actualScaleY": 2.0,
+      "recordedScale": {
+        "x": 2,
+        "y": 2
+      },
+      "maskSize": "100% 100%"
+    },
+    {
+      "path": "density/chromium-1440-dpr2-upper-text.png",
+      "engine": "chromium",
+      "version": "151.0.7922.34",
+      "requestedDpr": 2,
+      "pngWidth": 2880,
+      "pngHeight": 1800,
+      "cssWidth": 1440,
+      "cssHeight": 900,
+      "actualScaleX": 2.0,
+      "actualScaleY": 2.0,
+      "recordedScale": {
+        "x": 2,
+        "y": 2
+      },
+      "maskSize": "100% 100%"
+    },
+    {
+      "path": "density/chromium-1280-dpr2-center-text.png",
+      "engine": "chromium",
+      "version": "151.0.7922.34",
+      "requestedDpr": 2,
+      "pngWidth": 2560,
+      "pngHeight": 1600,
+      "cssWidth": 1280,
+      "cssHeight": 800,
+      "actualScaleX": 2.0,
+      "actualScaleY": 2.0,
+      "recordedScale": {
+        "x": 2,
+        "y": 2
+      },
+      "maskSize": "100% 100%"
+    },
+    {
+      "path": "density/chromium-1440-dpr3-center-text.png",
+      "engine": "chromium",
+      "version": "151.0.7922.34",
+      "requestedDpr": 3,
+      "pngWidth": 4320,
+      "pngHeight": 2700,
+      "cssWidth": 1440,
+      "cssHeight": 900,
+      "actualScaleX": 3.0,
+      "actualScaleY": 3.0,
+      "recordedScale": {
+        "x": 3,
+        "y": 3
+      },
+      "maskSize": "100% 100%"
+    },
+    {
+      "path": "density/webkit-1440-dpr1-center-text.png",
+      "engine": "webkit",
+      "version": "26.6",
+      "requestedDpr": 1,
+      "pngWidth": 1440,
+      "pngHeight": 900,
+      "cssWidth": 1440,
+      "cssHeight": 900,
+      "actualScaleX": 1.0,
+      "actualScaleY": 1.0,
+      "recordedScale": {
+        "x": 1,
+        "y": 1
+      },
+      "maskSize": "100% 100%"
+    },
+    {
+      "path": "density/webkit-1440-dpr1.25-center-text.png",
+      "engine": "webkit",
+      "version": "26.6",
+      "requestedDpr": 1.25,
+      "pngWidth": 1800,
+      "pngHeight": 1125,
+      "cssWidth": 1440,
+      "cssHeight": 900,
+      "actualScaleX": 1.25,
+      "actualScaleY": 1.25,
+      "recordedScale": {
+        "x": 1.25,
+        "y": 1.25
+      },
+      "maskSize": "100% 100%"
+    },
+    {
+      "path": "density/webkit-1440-dpr1.5-lower-text.png",
+      "engine": "webkit",
+      "version": "26.6",
+      "requestedDpr": 1.5,
+      "pngWidth": 2160,
+      "pngHeight": 1350,
+      "cssWidth": 1440,
+      "cssHeight": 900,
+      "actualScaleX": 1.5,
+      "actualScaleY": 1.5,
+      "recordedScale": {
+        "x": 1.5,
+        "y": 1.5
+      },
+      "maskSize": "100% 100%"
+    },
+    {
+      "path": "density/webkit-1440-dpr2-lower-text.png",
+      "engine": "webkit",
+      "version": "26.6",
+      "requestedDpr": 2,
+      "pngWidth": 2880,
+      "pngHeight": 1800,
+      "cssWidth": 1440,
+      "cssHeight": 900,
+      "actualScaleX": 2.0,
+      "actualScaleY": 2.0,
+      "recordedScale": {
+        "x": 2,
+        "y": 2
+      },
+      "maskSize": "100% 100%"
+    },
+    {
+      "path": "density/webkit-1440-dpr2-center-text.png",
+      "engine": "webkit",
+      "version": "26.6",
+      "requestedDpr": 2,
+      "pngWidth": 2880,
+      "pngHeight": 1800,
+      "cssWidth": 1440,
+      "cssHeight": 900,
+      "actualScaleX": 2.0,
+      "actualScaleY": 2.0,
+      "recordedScale": {
+        "x": 2,
+        "y": 2
+      },
+      "maskSize": "100% 100%"
+    },
+    {
+      "path": "density/webkit-1440-dpr2-upper-text.png",
+      "engine": "webkit",
+      "version": "26.6",
+      "requestedDpr": 2,
+      "pngWidth": 2880,
+      "pngHeight": 1800,
+      "cssWidth": 1440,
+      "cssHeight": 900,
+      "actualScaleX": 2.0,
+      "actualScaleY": 2.0,
+      "recordedScale": {
+        "x": 2,
+        "y": 2
+      },
+      "maskSize": "100% 100%"
+    },
+    {
+      "path": "density/webkit-1280-dpr2-center-text.png",
+      "engine": "webkit",
+      "version": "26.6",
+      "requestedDpr": 2,
+      "pngWidth": 2560,
+      "pngHeight": 1600,
+      "cssWidth": 1280,
+      "cssHeight": 800,
+      "actualScaleX": 2.0,
+      "actualScaleY": 2.0,
+      "recordedScale": {
+        "x": 2,
+        "y": 2
+      },
+      "maskSize": "100% 100%"
+    },
+    {
+      "path": "density/webkit-1440-dpr3-center-text.png",
+      "engine": "webkit",
+      "version": "26.6",
+      "requestedDpr": 3,
+      "pngWidth": 4320,
+      "pngHeight": 2700,
+      "cssWidth": 1440,
+      "cssHeight": 900,
+      "actualScaleX": 3.0,
+      "actualScaleY": 3.0,
+      "recordedScale": {
+        "x": 3,
+        "y": 3
+      },
+      "maskSize": "100% 100%"
+    }
+  ],
+  "negativeControls": [
+    {
+      "engine": "chromium",
+      "origin": "http://127.0.0.1:4322/",
+      "bodySupport": [
+        {
+          "selector": ".hero-section__body",
+          "assessmentMinimum": 1.8459814079595642,
+          "actualCompositedCoreMinimum": 1.8459814079595642,
+          "glyphCorePixels": 7245
+        },
+        {
+          "selector": ".hero-section__support",
+          "assessmentMinimum": 1.4788054474140437,
+          "actualCompositedCoreMinimum": 1.4788054474140437,
+          "glyphCorePixels": 3000
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "origin": "http://127.0.0.1:4322/",
+      "bodySupport": [
+        {
+          "selector": ".hero-section__body",
+          "assessmentMinimum": 1.882729873977479,
+          "actualCompositedCoreMinimum": 1.882729873977479,
+          "glyphCorePixels": 7046
+        },
+        {
+          "selector": ".hero-section__support",
+          "assessmentMinimum": 1.3930505693456117,
+          "actualCompositedCoreMinimum": 1.3893906139705383,
+          "glyphCorePixels": 2898
+        }
+      ]
+    }
+  ],
+  "maxTransitionPointerErrorCssPx": 0.001438143710402347,
+  "hostedAssetsCount": 13,
+  "hostedAssetsEqual": true,
+  "independentDistFileSetMatches": true,
+  "checks": {
+    "matrix/browser-results.json": {
+      "cases": 18,
+      "failures": []
+    },
+    "policy/results.json": {
+      "cases": 16,
+      "failures": []
+    },
+    "tether/results.json": {
+      "cases": 8,
+      "failures": []
+    },
+    "fan/results.json": {
+      "cases": 6,
+      "failures": []
+    }
+  }
+}

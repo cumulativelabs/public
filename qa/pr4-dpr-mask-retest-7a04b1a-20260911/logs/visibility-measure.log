@@ -1,0 +1,12 @@
+qa/pr4-dpr-mask-retest-7a04b1a-20260911/visibility chromium 1440 center150: 9/12/15/14
+chromium 1440 upper: 10/8/7/10
+chromium 1440 lower: 9/16/1/13
+chromium 1280 center150: 13/14/15/12
+chromium 1280 upper: 10/13/11/12
+chromium 1280 lower: 13/14/7/14
+webkit 1440 center150: 9/12/14/13
+webkit 1440 upper: 10/8/7/9
+webkit 1440 lower: 9/16/4/11
+webkit 1280 center150: 12/14/15/13
+webkit 1280 upper: 10/13/11/11
+webkit 1280 lower: 13/14/8/14

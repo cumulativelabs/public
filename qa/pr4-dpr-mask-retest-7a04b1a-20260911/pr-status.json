@@ -1,0 +1,9 @@
+{
+  "url": "https://github.com/cumulativelabs/public/pull/4",
+  "draft": true,
+  "state": "open",
+  "merged": false,
+  "head": "7a04b1a4d45f2cea525ffb5c70d4369d5021f9d1",
+  "base": "5c254645479892fdeed1bff4799b7c89f375e810",
+  "verification": "Direct GitHub API read during this QA run; no mutation"
+}

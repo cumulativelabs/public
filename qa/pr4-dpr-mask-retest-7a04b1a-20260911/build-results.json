@@ -1,0 +1,36 @@
+[
+  {
+    "check": "npm ci --fetch-retries=0 --fetch-timeout=15000",
+    "exit_code": 0
+  },
+  {
+    "check": "lint",
+    "exit_code": 0,
+    "seconds": 0.75
+  },
+  {
+    "check": "typecheck",
+    "exit_code": 0,
+    "seconds": 1.31
+  },
+  {
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 1.14
+  },
+  {
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 2.17
+  },
+  {
+    "check": "validate-build",
+    "exit_code": 0,
+    "seconds": 0.12
+  },
+  {
+    "check": "diff-check",
+    "exit_code": 0,
+    "seconds": 0.44
+  }
+]

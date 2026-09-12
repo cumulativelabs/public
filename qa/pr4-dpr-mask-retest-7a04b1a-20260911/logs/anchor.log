@@ -1,0 +1,18 @@
+chromium-1440x900
+chromium-1280x800
+chromium-1024x768
+chromium-768x1024
+chromium-430x932
+chromium-390x844
+chromium-320x568
+webkit-1440x900
+webkit-1280x800
+webkit-1024x768
+webkit-768x1024
+webkit-430x932
+webkit-390x844
+webkit-320x568
+{
+  "cases": 18,
+  "failures": []
+}

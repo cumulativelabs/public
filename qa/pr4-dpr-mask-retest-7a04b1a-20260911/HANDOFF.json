@@ -1,0 +1,67 @@
+{
+  "TASK_ID": "CL-PR4-DPR-MASK-RETEST-7A04B1A-20260911-001",
+  "TASK_TITLE": "PR 4 - independent Retina mask release retest",
+  "TERMINAL_STATUS": "QA_COMPLETE",
+  "workflow_status": [
+    "LOCAL_COMPLETE",
+    "QA_COMPLETE",
+    "QA_PASS",
+    "HANDOFF_CREATED"
+  ],
+  "QA_VERDICT": "PASS",
+  "BRANCH": "qa/pr4-dpr-mask-retest-7a04b1a-20260911",
+  "CANDIDATE_COMMIT": "7a04b1a4d45f2cea525ffb5c70d4369d5021f9d1",
+  "CANDIDATE_TREE": "78e1f6bbc7ae012d04d9f8f7c2aa6a73e6ae0a40",
+  "CANDIDATE_PARENT": "b624a80334aa4cecb1030aaee8ba52fd5d533cf8",
+  "SUBSTANTIVE_COMMIT": "b624a80334aa4cecb1030aaee8ba52fd5d533cf8",
+  "TREE": "bb9a0d5f6ed9959494e501df3be7e6df2fcc6a7a",
+  "PARENT": "97ea04ee7c1e80e5a047c278807b593131dbabd3",
+  "REPORT_PATH": "qa/pr4-dpr-mask-retest-7a04b1a-20260911/REPORT.md",
+  "QA_STATE": "PASS",
+  "BLOCKERS": [],
+  "FAILURE_CLASS": [],
+  "NEXT_ACTION": "Owner persists unchanged QA verdict/evidence to the designated QA-only branch, excludes private/, verifies remote commit/tree/full report bytes, registers and reads back the handoff. No duplicate substantive retest.",
+  "REMOTE_READBACK_STATUS": "PENDING_OWNER_PERSISTENCE",
+  "CONTROLLER_REGISTRATION": "PENDING",
+  "MERGE_STATE": "NOT_MERGED",
+  "DEPLOYMENT_STATE": "PRODUCTION_NOT_DEPLOYED",
+  "PUBLICATION_STATE": "LOCAL_QA_EVIDENCE_PENDING_OWNER",
+  "CHECKOUT_STATE": "DETACHED_EXACT_CANDIDATE",
+  "TESTED_PREVIEW": "https://5b0eeaaa.cumulative-labs.pages.dev/",
+  "CANDIDATE_SOURCE_CLEAN": true,
+  "REPORT_SHA256": "36c908dd97a4dc7284c64efe2d7d8f6b430125487ebfeb5f5ad96050a392d326",
+  "ARTIFACT_PATHS": [
+    "qa/pr4-dpr-mask-retest-7a04b1a-20260911/REPORT.md",
+    "qa/pr4-dpr-mask-retest-7a04b1a-20260911/HANDOFF.json",
+    "qa/pr4-dpr-mask-retest-7a04b1a-20260911/acceptance-summary.json",
+    "qa/pr4-dpr-mask-retest-7a04b1a-20260911/build-results.json",
+    "qa/pr4-dpr-mask-retest-7a04b1a-20260911/source-review.json",
+    "qa/pr4-dpr-mask-retest-7a04b1a-20260911/supplemental-results.json",
+    "qa/pr4-dpr-mask-retest-7a04b1a-20260911/cta-results.json",
+    "qa/pr4-dpr-mask-retest-7a04b1a-20260911/pr-status.json",
+    "qa/pr4-dpr-mask-retest-7a04b1a-20260911/density",
+    "qa/pr4-dpr-mask-retest-7a04b1a-20260911/transitions",
+    "qa/pr4-dpr-mask-retest-7a04b1a-20260911/visibility",
+    "qa/pr4-dpr-mask-retest-7a04b1a-20260911/matrix",
+    "qa/pr4-dpr-mask-retest-7a04b1a-20260911/policy",
+    "qa/pr4-dpr-mask-retest-7a04b1a-20260911/tether",
+    "qa/pr4-dpr-mask-retest-7a04b1a-20260911/fan",
+    "qa/pr4-dpr-mask-retest-7a04b1a-20260911/supplemental",
+    "qa/pr4-dpr-mask-retest-7a04b1a-20260911/logs",
+    "qa/pr4-dpr-mask-retest-7a04b1a-20260911/PUBLICATION_NORMALIZATION.json"
+  ],
+  "NITS": [
+    "Inherited WebKit reduced-motion menu-entry focus remains on BODY; traversal and Escape restoration pass."
+  ],
+  "COVERAGE_LIMITATIONS": [
+    "Finite native-pixel interiors and compositor path samples; no all-path/all-state certification.",
+    "Chromium CDP density transitions; no physical monitor switching verification.",
+    "Headless performance sample overlapped other probes; no field/battery/improvement claim."
+  ],
+  "RESOLVED_OPERATIONAL_FAILURES": [
+    "Sandbox local server listen EPERM",
+    "Sandbox Chromium launch SIGABRT/kill EPERM",
+    "Direct Python HTTP preview retrieval returned 403; browser asset retrieval succeeded"
+  ],
+  "HANDOFF_NOTE": "Local-only QA completion. Controller owns persistence and registration; no remote handoff claimed. Private control receipt and unredacted logs excluded from public package."
+}

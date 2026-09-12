@@ -1,0 +1,151 @@
+{
+  "rows": [
+    {
+      "engine": "chromium",
+      "sequence": [
+        {
+          "tag": "A",
+          "text": "Skip to content",
+          "href": "#main-content",
+          "hero": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "text": "",
+          "href": "#top",
+          "hero": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "text": "Work",
+          "href": "#work",
+          "hero": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "text": "Why Cumulative",
+          "href": "#mission",
+          "hero": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "text": "Approach",
+          "href": "#approach",
+          "hero": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "text": "Principles",
+          "href": "#principles",
+          "hero": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "text": "Contact",
+          "href": "mailto:accounts@cumulativelabs.ai",
+          "hero": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "text": "See What We’re Building↗",
+          "href": "#work",
+          "hero": true,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "text": "Contact the Lab",
+          "href": "#contact",
+          "hero": true,
+          "outline": "solid"
+        }
+      ],
+      "target": {
+        "hash": "#work",
+        "scrollY": 722,
+        "top": 112.125
+      }
+    },
+    {
+      "engine": "webkit",
+      "sequence": [
+        {
+          "tag": "A",
+          "text": "Skip to content",
+          "href": "#main-content",
+          "hero": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "text": "",
+          "href": "#top",
+          "hero": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "text": "Work",
+          "href": "#work",
+          "hero": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "text": "Why Cumulative",
+          "href": "#mission",
+          "hero": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "text": "Approach",
+          "href": "#approach",
+          "hero": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "text": "Principles",
+          "href": "#principles",
+          "hero": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "text": "Contact",
+          "href": "mailto:accounts@cumulativelabs.ai",
+          "hero": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "text": "See What We’re Building↗",
+          "href": "#work",
+          "hero": true,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "text": "Contact the Lab",
+          "href": "#contact",
+          "hero": true,
+          "outline": "solid"
+        }
+      ],
+      "target": {
+        "hash": "#work",
+        "scrollY": 722,
+        "top": 112.109375
+      }
+    }
+  ],
+  "failures": []
+}

@@ -1,0 +1,12 @@
+{
+  "candidate": "7a04b1a4d45f2cea525ffb5c70d4369d5021f9d1",
+  "tree": "78e1f6bbc7ae012d04d9f8f7c2aa6a73e6ae0a40",
+  "parent": "b624a80334aa4cecb1030aaee8ba52fd5d533cf8",
+  "sourceDeltaFiles": [
+    "src/styles/hero-visual-v2.css"
+  ],
+  "manifestLockTestsChanges": "",
+  "trackedDiff": "",
+  "publicCandidateScanFindings": [],
+  "review": "Only standard/WebKit tether mask sizing, positioning, origin and repeat CSS changed in source. Component bitmap generation, 16 strand geometry, broad fan, core/rings, output, copy and CTA unchanged. No telemetry or dependency change; no new product-copy claims. This is a bounded targeted source/privacy scan, not a full security audit."
+}

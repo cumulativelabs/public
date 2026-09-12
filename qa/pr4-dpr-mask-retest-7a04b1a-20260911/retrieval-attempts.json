@@ -1,0 +1,18 @@
+[
+  {
+    "check": "direct preview asset read",
+    "client": "Python urllib",
+    "outcome": "HTTP 403 Forbidden",
+    "next": "Browser request client; no asset mismatch inferred"
+  },
+  {
+    "check": "local server sandbox",
+    "outcome": "listen EPERM at 127.0.0.1:4337",
+    "resolution": "Authorized network execution succeeded"
+  },
+  {
+    "check": "Chromium sandbox launch",
+    "outcome": "SIGABRT / kill EPERM",
+    "resolution": "Authorized external browser execution succeeded"
+  }
+]

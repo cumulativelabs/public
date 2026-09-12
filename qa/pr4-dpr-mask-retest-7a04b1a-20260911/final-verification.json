@@ -1,0 +1,14 @@
+{
+  "headTreeParent": [
+    "7a04b1a4d45f2cea525ffb5c70d4369d5021f9d1",
+    "78e1f6bbc7ae012d04d9f8f7c2aa6a73e6ae0a40",
+    "b624a80334aa4cecb1030aaee8ba52fd5d533cf8"
+  ],
+  "trackedDiff": "",
+  "stagedDiff": "",
+  "status": "?? qa/",
+  "publicArtifactPrivacyFindings": [],
+  "reportHashMatchesHandoff": true,
+  "verdict": "PASS",
+  "allSourceWritesRestrictedToQAOutput": true
+}

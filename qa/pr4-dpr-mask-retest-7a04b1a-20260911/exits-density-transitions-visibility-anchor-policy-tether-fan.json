@@ -1,0 +1,37 @@
+[
+  {
+    "check": "density",
+    "exit_code": 0,
+    "seconds": 110.85
+  },
+  {
+    "check": "transitions",
+    "exit_code": 0,
+    "seconds": 55.68
+  },
+  {
+    "check": "visibility",
+    "exit_code": 0,
+    "seconds": 48.94
+  },
+  {
+    "check": "anchor",
+    "exit_code": 0,
+    "seconds": 45.55
+  },
+  {
+    "check": "policy",
+    "exit_code": 0,
+    "seconds": 28.42
+  },
+  {
+    "check": "tether",
+    "exit_code": 0,
+    "seconds": 31.03
+  },
+  {
+    "check": "fan",
+    "exit_code": 0,
+    "seconds": 22.34
+  }
+]

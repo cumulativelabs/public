@@ -1,0 +1,26 @@
+{
+  "changes": [
+    {
+      "path": "probe-runner.py",
+      "raw_sha256": "d73b588a52ad4a49d16d9ea072c09ea67af9c03fb31ce9bf373f8133c82f8dbd",
+      "public_sha256": "b7f09bc63b0d88449e2fb89e6b98a4b28f5146e48a78e83fdc9d915500a27522",
+      "change": "External test module path is supplied through PLAYWRIGHT_MODULE instead of a machine-specific temporary path. No assertions, data, verdict or report bytes changed."
+    },
+    {
+      "path": "logs/tests.log",
+      "raw_sha256": "457fff211d1babf089d2e0a89caae5d8af48be44d4b139b0465cbba9aca63462",
+      "public_sha256": "e35ab0ecd8dbb27a6efe9928d14bb660a88bd0b3c84b2273b5b7aeef60d5c9c0",
+      "change": "Remove extra blank EOF lines to satisfy git diff --check; content, exit status and verdict unchanged."
+    },
+    {
+      "path": "logs/typecheck.log",
+      "raw_sha256": "cd0773e4e8aba54763a976b58e4f8097a97ac5d943e77936fef6c96d532c75e1",
+      "public_sha256": "789e94d75a62dcade187014cee83ce5c986ac2542fa26f47db28121039fa0c30",
+      "change": "Remove extra blank EOF lines to satisfy git diff --check; content, exit status and verdict unchanged."
+    }
+  ],
+  "excluded": [
+    "private/"
+  ],
+  "report_sha256_unchanged": "36c908dd97a4dc7284c64efe2d7d8f6b430125487ebfeb5f5ad96050a392d326"
+}

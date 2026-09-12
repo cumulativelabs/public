@@ -1,0 +1,14 @@
+{
+  "excludeFromPublicPackage": [
+    "private/"
+  ],
+  "normalizations": [
+    {
+      "path": "logs/density-sandbox-failed.log",
+      "rawSha256": "0eab011fa14221e63adf0272f15b3e9a9e32dae84a17e704370d07e93c7cbce3",
+      "publicSha256": "c58e6d2f9a4f0d411d8e8529ccce8c7cb0342a70bf3505ec0e9b364176b70a2b",
+      "changes": "Home-directory prefix redaction and ANSI color removal only; raw retained privately."
+    }
+  ],
+  "instruction": "Owner must exclude private control readback and raw logs. Preserve REPORT.md and HANDOFF.json verdict and measurements unchanged; all PNGs are fresh browser evidence."
+}
