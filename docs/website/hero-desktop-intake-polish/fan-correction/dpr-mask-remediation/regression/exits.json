@@ -1,0 +1,22 @@
+[
+  {
+    "check": "matrix",
+    "exit_code": 0,
+    "seconds": 48.23
+  },
+  {
+    "check": "policy",
+    "exit_code": 0,
+    "seconds": 28.04
+  },
+  {
+    "check": "tether",
+    "exit_code": 0,
+    "seconds": 31.78
+  },
+  {
+    "check": "fan",
+    "exit_code": 0,
+    "seconds": 24.05
+  }
+]

@@ -1,0 +1,79 @@
+{
+  "TASK_ID": "CL-PR4-DPR-MASK-REMEDIATION-20260911-001",
+  "TASK_TITLE": "PR 4 - Retina text-mask scaling fix",
+  "TERMINAL_STATUS": "LOCAL_COMPLETE / HANDOFF_PENDING",
+  "BRANCH": "codex/hero-desktop-intake-polish-20260911",
+  "STARTING_HEAD": "97ea04ee7c1e80e5a047c278807b593131dbabd3",
+  "STARTING_TREE": "c0c592b283f03b53a032962accb005bc868c743f",
+  "QA_STATE": "PENDING_PERSISTED_CANDIDATE",
+  "CONTROLLER_REGISTRATION": "PENDING",
+  "MERGE_STATE": "NOT_MERGED",
+  "DEPLOYMENT_STATE": "PRODUCTION_NOT_DEPLOYED",
+  "PUBLICATION_STATE": "BRANCH_PREVIEW_AND_EVIDENCE_ONLY",
+  "REMOTE_READBACK_STATUS": "Starting branch and failed QA commit verified; remediation pending",
+  "BLOCKERS": [],
+  "NEXT_ACTION": "Persist candidate evidence, verify exact remote identity and new hosted assets; launch one separate independent retest.",
+  "FAILED_PREDECESSOR": "e083c1f5c9e1ec78a53c45448bce8baede1b4390",
+  "MEASUREMENT_QUALIFICATION": "Preliminary eight-state DPR sampler is diagnostic only; native paired comparison independently verifies failure.",
+  "RETRIEVAL_ATTEMPTS": [
+    "Sandbox GitHub connection failed once; authorized network retry succeeded.",
+    "Initial governance repository owner guess returned HTTP 404; discovery resolved correct repository."
+  ],
+  "SUBSTANTIVE_COMMIT": "b624a80334aa4cecb1030aaee8ba52fd5d533cf8",
+  "TREE": "bb9a0d5f6ed9959494e501df3be7e6df2fcc6a7a",
+  "PARENT": "97ea04ee7c1e80e5a047c278807b593131dbabd3",
+  "FINAL_HEAD": "PENDING_EVIDENCE_COMMIT",
+  "FINAL_TREE": "PENDING_EVIDENCE_COMMIT",
+  "FILES_CHANGED": [
+    "src/styles/hero-visual-v2.css",
+    "docs/website/hero-desktop-intake-polish/fan-correction/dpr-mask-remediation"
+  ],
+  "REPORT_PATH": "docs/website/hero-desktop-intake-polish/fan-correction/dpr-mask-remediation/REPORT.md",
+  "EVIDENCE_PATHS": [
+    "docs/website/hero-desktop-intake-polish/fan-correction/dpr-mask-remediation/before",
+    "docs/website/hero-desktop-intake-polish/fan-correction/dpr-mask-remediation/after",
+    "docs/website/hero-desktop-intake-polish/fan-correction/dpr-mask-remediation/checks",
+    "docs/website/hero-desktop-intake-polish/fan-correction/dpr-mask-remediation/regression",
+    "docs/website/hero-desktop-intake-polish/fan-correction/dpr-mask-remediation/visibility",
+    "docs/website/hero-desktop-intake-polish/fan-correction/dpr-mask-remediation/probes",
+    "docs/website/hero-desktop-intake-polish/fan-correction/dpr-mask-remediation/build-assets.json"
+  ],
+  "ROOT_CAUSE": "Density-scaled glyph/CTA PNG used intrinsic bitmap pixels because mask-size remained auto, displacing cutouts relative to CSS glyphs.",
+  "DPR_MASK_FIX": "CSS-only: standard/WebKit mask-size 100% 100%, position 0 0, border-box origin, no-repeat. No renderer, geometry, opacity, copy or capability change.",
+  "DPR_REPRODUCTION": "Six fresh DPR2 states fail on predecessor: Chromium/WebKit 1440 lower (120,711), 1440 center x150, 1280 center x280. Retained native paired pixels and actual screenshot/CSS ratios.",
+  "NATIVE_CONTRAST_RESULTS": {
+    "implementation_only": true,
+    "density_states": 16,
+    "densities": [
+      1,
+      1.25,
+      1.5,
+      2,
+      3
+    ],
+    "body_minimum": 9.728938402922424,
+    "support_minimum": 7.260381974456481,
+    "large_headline_minimum": 3.246461612958037,
+    "transition_states": 8,
+    "failed_corrected_measurements": 0,
+    "coverage": "Finite sampled glyph interiors. Foreground derived from computed solid color or exposed actual gradient; paired text-hidden composited background. Screenshot dimensions determine native coordinate mapping. Eyebrow at DPR1 lacks opaque cores; >=50% coverage samples used there; requested body/support/headline have opaque interiors."
+  },
+  "VISIBILITY_PRESERVATION": "12 paired Retina states; 16 tips per state within 25 CSS px; distinct visible samples join 9\u201313, gap 8\u201316, near 1\u201315, near32 4\u201310. Low eligible counts at specific positions reflect occlusion/overlap; no all-path claim. Ordinary center/upper/lower screenshots visually inspected. Production fan-width fixture and tangent tests pass unchanged.",
+  "MOBILE_RESULT": "8/8 reduced-motion phone/tablet before/after PNG hashes identical. Seven-viewport matrix passes.",
+  "BUILD_RESULTS": "npm ci, lint, typecheck, 34 tests / 8 files, build, validate:build, diff check all exit 0.",
+  "BROWSER_RESULTS": "Chromium and WebKit: matrix 18 cases, policy 16 cases, tether 8 cases, fan 6 cases pass. Fresh-page scroll, tablet/desktop, font reload, Chromium density transitions pass. Menu traversal/Escape pass; inherited WebKit reduced-motion entry-focus nit retained. No observed console/hydration errors in matrix.",
+  "PERFORMANCE_LIMITATIONS": "No physical-device, battery or field-performance certification. Existing hidden/offscreen pause checks pass. No exhaustive browser zoom: Chromium CDP density transitions supported; page-scale spot is pinch emulation, not desktop browser zoom.",
+  "PREVIEW_URL": "PENDING_NEW_CANDIDATE_PREVIEW",
+  "PREVIEW_VERIFICATION": "PENDING",
+  "PUBLIC_CLAIM_REVIEW": "No product copy or public claim changes. Bounded implementation evidence is not independent acceptance.",
+  "PRIVACY_REVIEW": "Public package excludes private control bundle and personal paths. No dependencies, telemetry, accounts or hosting changes.",
+  "QA_THREAD_ID": "NOT_LAUNCHED",
+  "QA_REPORT_REF": "PENDING",
+  "QA_VERDICT": "PENDING",
+  "FAILURE_CLASS": {
+    "WORK_SUBSTANTIVE": "Predecessor DPR2 defect reproduced; corrected implementation checks pass, independent acceptance pending.",
+    "HANDOFF": "Remote corrected candidate and QA pending.",
+    "EVIDENCE_SUPPORT": "Preliminary predecessor sampler invalid; retained qualification. Initial transition freeze/reuse harness failure retained; corrected fresh-page rerun passes.",
+    "STATE_PROVENANCE": "No starting drift found; remote candidate readback pending."
+  }
+}
